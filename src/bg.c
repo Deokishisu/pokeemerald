@@ -370,7 +370,7 @@ u16 LoadBgTiles(u8 bg, const void* src, u16 size, u16 destOffset)
     if (GetBgControlAttribute(bg, BG_CTRL_ATTR_PALETTEMODE) == 0)
     {
         tileOffset = (sGpuBgConfigs2[bg].baseTile + destOffset) * 0x20;
-    }
+	}
     else
     {
         tileOffset = (sGpuBgConfigs2[bg].baseTile + destOffset) * 0x40;

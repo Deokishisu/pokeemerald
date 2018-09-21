@@ -1,5 +1,6 @@
 #include "global.h"
 #include "battle.h"
+#include "bg.h"
 #include "main.h"
 #include "m4a.h"
 #include "palette.h"
@@ -1891,10 +1892,30 @@ void TextPrinterInitDownArrowCounters(struct TextPrinter *textPrinter)
     }
 }
 
+/*static const struct WindowTemplate DownArrowWindow[] =
+{
+    {
+        .priority = 0,
+        .tilemapLeft = 6,
+        .tilemapTop = 14,
+        .width = 17,
+        .height = 4,
+        .paletteNum = 15,
+        .baseBlock = 0
+    }
+};*/
+
 void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
 {
     struct TextPrinterSubStruct *subStruct = &textPrinter->sub_union.sub;
     const u8 *arrowTiles;
+	
+	u16 width = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_WIDTH);
+    u16 height = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_HEIGHT);
+	
+	//u16 downArrowWindowId = AddWindow(DownArrowWindow);
+	//FillWindowPixelBuffer(&DownArrowWindow, 0);
+	//PutWindowTilemap(&DownArrowWindow);
 
     if (gTextFlags.flag_2 == 0)
     {
@@ -1907,8 +1928,8 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
             FillWindowPixelRect(
                 textPrinter->subPrinter.windowId,
                 textPrinter->subPrinter.bgColor << 4 | textPrinter->subPrinter.bgColor,
-                textPrinter->subPrinter.currentX,
-                textPrinter->subPrinter.currentY,
+                (width * 8) - 8,
+                height + 24,
                 0x8,
                 0x10);
 
@@ -1930,8 +1951,8 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
                 gDownArrowYCoords[*(u32*)subStruct << 17 >> 30], // subStruct->field_1_upmid but again, stupidly retrieved
                 0x8,
                 0x10,
-                textPrinter->subPrinter.currentX,
-                textPrinter->subPrinter.currentY,
+                (width * 8) - 8,
+                height + 24,
                 0x8,
                 0x10);
             CopyWindowToVram(textPrinter->subPrinter.windowId, 0x2);
@@ -1944,11 +1965,13 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
 
 void TextPrinterClearDownArrow(struct TextPrinter *textPrinter)
 {
+	u16 width = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_WIDTH);
+	u16 height = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_HEIGHT);
     FillWindowPixelRect(
         textPrinter->subPrinter.windowId,
         textPrinter->subPrinter.bgColor << 4 | textPrinter->subPrinter.bgColor,
-        textPrinter->subPrinter.currentX,
-        textPrinter->subPrinter.currentY,
+        (width * 8) - 8,
+        height + 24,
         0x8,
         0x10);
     CopyWindowToVram(textPrinter->subPrinter.windowId, 0x2);
