@@ -616,7 +616,7 @@ void sub_8197BB4(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 p
                             gUnknown_0203CD9E);
     FillBgTilemapBufferRect(bg,
                             gUnknown_0203CD9C + 2,
-                            tilemapLeft + width,
+                            tilemapLeft + width + 1,
                             tilemapTop - 1,
                             1,
                             1,
@@ -637,7 +637,7 @@ void sub_8197BB4(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 p
                             gUnknown_0203CD9E);
     FillBgTilemapBufferRect(bg,
                             gUnknown_0203CD9C + 5,
-                            tilemapLeft + width,
+                            tilemapLeft + width + 1,
                             tilemapTop,
                             1,
                             5,
@@ -672,7 +672,7 @@ void sub_8197BB4(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 p
                             gUnknown_0203CD9E);
     FillBgTilemapBufferRect(bg,
                             gUnknown_0203CD9C + 8,
-                            tilemapLeft + width,
+                            tilemapLeft + width + 1,
                             tilemapTop + height,
                             1,
                             1,
