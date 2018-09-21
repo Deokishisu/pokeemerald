@@ -67,23 +67,23 @@ static const struct WindowTemplate gUnknown_0860F098[] =
 {
     {
         .priority = 0,
-        .tilemapLeft = 2,
-        .tilemapTop = 15,
-        .width = 27,
+        .tilemapLeft = 6,
+        .tilemapTop = 14,
+        .width = 17,
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x194
     },
     DUMMY_WIN_TEMPLATE
 };
-
+//YES/NO Menu --v
 static const struct WindowTemplate gUnknown_0860F0A8 =
 {
     .priority = 0,
-    .tilemapLeft = 21,
+    .tilemapLeft = 20,
     .tilemapTop = 9,
-    .width = 5,
-    .height = 4,
+    .width = 4,
+    .height = 3,
     .paletteNum = 15,
     .baseBlock = 0x125
 };
@@ -171,9 +171,9 @@ u16 AddTextPrinterParameterized2(u8 windowId, u8 fontId, const u8 *str, u8 speed
     printer.windowId = windowId;
     printer.fontId = fontId;
     printer.x = 0;
-    printer.y = 1;
+    printer.y = 8;
     printer.currentX = 0;
-    printer.currentY = 1;
+    printer.currentY = 8;
     printer.letterSpacing = 0;
     printer.lineSpacing = 0;
     printer.fontColor_l = 0;
@@ -246,7 +246,7 @@ void sub_819746C(u8 windowId, bool8 copyToVram)
         CopyWindowToVram(windowId, 3);
 }
 
-void DrawStandardFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum)
+void DrawStandardFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum) //used for start menu, big save menu popup, etc.
 {
     int i;
 
@@ -313,95 +313,95 @@ void DrawStandardFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height
                             STD_WINDOW_PALETTE_NUM);
 }
 
-void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum)
+void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum) //standard message box
 {
     FillBgTilemapBufferRect(bg,
+                            DLG_WINDOW_BASE_TILE_NUM,
+                            tilemapLeft - 1,
+                            tilemapTop - 1,
+                            1,
+                            1,
+                            DLG_WINDOW_PALETTE_NUM);
+    FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM + 1,
-                            tilemapLeft - 2,
-                            tilemapTop - 1,
-                            1,
-                            1,
-                            DLG_WINDOW_PALETTE_NUM);
-    FillBgTilemapBufferRect(bg,
-                            DLG_WINDOW_BASE_TILE_NUM + 3,
-                            tilemapLeft - 1,
-                            tilemapTop - 1,
-                            1,
-                            1,
-                            DLG_WINDOW_PALETTE_NUM);
-    FillBgTilemapBufferRect(bg,
-                            DLG_WINDOW_BASE_TILE_NUM + 4,
                             tilemapLeft,
+                            tilemapTop - 1,
+                            1,
+                            1,
+                            DLG_WINDOW_PALETTE_NUM);
+    FillBgTilemapBufferRect(bg,
+                            DLG_WINDOW_BASE_TILE_NUM + 1,
+                            tilemapLeft + 1,
                             tilemapTop - 1,
                             width - 1,
                             1,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            DLG_WINDOW_BASE_TILE_NUM + 5,
-                            tilemapLeft + width - 1,
-                            tilemapTop - 1,
-                            1,
-                            1,
-                            DLG_WINDOW_PALETTE_NUM);
-    FillBgTilemapBufferRect(bg,
-                            DLG_WINDOW_BASE_TILE_NUM + 6,
+                            DLG_WINDOW_BASE_TILE_NUM + 1,
                             tilemapLeft + width,
                             tilemapTop - 1,
                             1,
                             1,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            DLG_WINDOW_BASE_TILE_NUM + 7,
-                            tilemapLeft - 2,
-                            tilemapTop,
+                            DLG_WINDOW_BASE_TILE_NUM + 2,
+                            tilemapLeft + width + 1,
+                            tilemapTop - 1,
                             1,
-                            5,
+                            1,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            DLG_WINDOW_BASE_TILE_NUM + 9,
+                            DLG_WINDOW_BASE_TILE_NUM + 3, //left side tile
                             tilemapLeft - 1,
                             tilemapTop,
-                            width + 1,
+                            1,
                             5,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            DLG_WINDOW_BASE_TILE_NUM + 10,
-                            tilemapLeft + width,
+                            DLG_WINDOW_BASE_TILE_NUM + 4, //white tile
+                            23,
                             tilemapTop,
                             1,
                             5,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM + 1),
-                            tilemapLeft - 2,
+                            DLG_WINDOW_BASE_TILE_NUM + 5, //right side tile
+                            tilemapLeft + width + 1,
+                            tilemapTop,
+                            1,
+                            5,
+                            DLG_WINDOW_PALETTE_NUM);
+    FillBgTilemapBufferRect(bg,
+                            DLG_WINDOW_BASE_TILE_NUM + 6, //bottom left corner
+                            tilemapLeft - 1,
                             tilemapTop + height,
                             1,
                             1,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM + 3),
-                            tilemapLeft - 1,
-                            tilemapTop + height,
-                            1,
-                            1,
-                            DLG_WINDOW_PALETTE_NUM);
-    FillBgTilemapBufferRect(bg,
-                            BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM + 4),
+                            DLG_WINDOW_BASE_TILE_NUM + 1,
                             tilemapLeft,
+                            tilemapTop + height,
+                            1,
+                            1,
+                            DLG_WINDOW_PALETTE_NUM);
+    FillBgTilemapBufferRect(bg,
+                            DLG_WINDOW_BASE_TILE_NUM + 1,
+                            tilemapLeft + 1,
                             tilemapTop + height,
                             width - 1,
                             1,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM + 5),
-                            tilemapLeft + width - 1,
+                            DLG_WINDOW_BASE_TILE_NUM + 1,
+                            tilemapLeft + width,
                             tilemapTop + height,
                             1,
                             1,
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
-                            BG_TILE_V_FLIP(DLG_WINDOW_BASE_TILE_NUM + 6),
-                            tilemapLeft + width,
+                            DLG_WINDOW_BASE_TILE_NUM + 8,
+                            tilemapLeft + width + 1,
                             tilemapTop + height,
                             1,
                             1,
@@ -487,7 +487,7 @@ u8 GetPlayerTextSpeed(void)
 u8 sub_81979C4(u8 a1)
 {
     if (gStartMenuWindowId == 0xFF)
-        gStartMenuWindowId = sub_8198AA4(0, 0x16, 1, 7, (a1 * 2) + 2, 0xF, 0x139);
+        gStartMenuWindowId = sub_8198AA4(0, 16, 2, 8, (a1 * 2), 0xF, 0x139); //controls start menu positioning. Seems to be identical to WindowTemplate struct
     return gStartMenuWindowId;
 }
 
@@ -702,7 +702,7 @@ void sub_8197EC8(u8 windowId, bool8 copyToVram, u16 baseTileNum)
         CopyWindowToVram(windowId, 3);
 }
 
-void DrawWindowBorder(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum)
+void DrawWindowBorder(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum) //for YES/NO boxes?
 {
     FillBgTilemapBufferRect(bg,
                             gUnknown_0203CD9C + 0,
@@ -931,8 +931,8 @@ void RedrawMenuCursor(u8 oldPos, u8 newPos)
 
     width = GetMenuCursorDimensionByFont(gUnknown_0203CD90.fontId, 0);
     height = GetMenuCursorDimensionByFont(gUnknown_0203CD90.fontId, 1);
-    FillWindowPixelRect(gUnknown_0203CD90.windowId, 0x11, gUnknown_0203CD90.left, gUnknown_0203CD90.optionHeight * oldPos + gUnknown_0203CD90.top, width, height);
-    AddTextPrinterParameterized(gUnknown_0203CD90.windowId, gUnknown_0203CD90.fontId, gText_SelectorArrow3, gUnknown_0203CD90.left, gUnknown_0203CD90.optionHeight * newPos + gUnknown_0203CD90.top, 0, 0);
+    FillWindowPixelRect(gUnknown_0203CD90.windowId, 0x11, gUnknown_0203CD90.left, (gUnknown_0203CD90.optionHeight * oldPos + gUnknown_0203CD90.top) -1, width, height);
+    AddTextPrinterParameterized(gUnknown_0203CD90.windowId, gUnknown_0203CD90.fontId, gText_SelectorArrow3, gUnknown_0203CD90.left, (gUnknown_0203CD90.optionHeight * newPos + gUnknown_0203CD90.top) -1, 0, 0);
 }
 
 u8 MoveMenuCursor(s8 cursorDelta)
@@ -1198,7 +1198,7 @@ void sub_8198AF8(const struct WindowTemplate *window, u8 fontId, u8 left, u8 top
 
 void sub_8198C34(const struct WindowTemplate *window, u8 fontId, u16 baseTileNum, u8 paletteNum)
 {
-    sub_8198AF8(window, fontId, 0, 1, baseTileNum, paletteNum, 0);
+    sub_8198AF8(window, fontId, 0, 0, baseTileNum, paletteNum, 0);
 }
 
 s8 Menu_ProcessInputNoWrap_(void)
@@ -1646,7 +1646,7 @@ void CreateYesNoMenu(const struct WindowTemplate *window, u16 baseTileNum, u8 pa
     printer.windowId = gUnknown_0203CD9F;
     printer.fontId = 1;
     printer.x = 8;
-    printer.y = 1;
+    printer.y = 0;
     printer.currentX = printer.x;
     printer.currentY = printer.y;
     printer.fgColor = GetFontAttribute(1, 5);
