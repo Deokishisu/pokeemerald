@@ -69,7 +69,7 @@ static const struct WindowTemplate gUnknown_0860F098[] =
         .priority = 0,
         .tilemapLeft = 6,
         .tilemapTop = 14,
-        .width = 17,
+        .width = 18,
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x194
@@ -358,7 +358,7 @@ void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM + 2,
-                            tilemapLeft + width + 1,
+                            tilemapLeft + width,
                             tilemapTop - 1,
                             1,
                             1,
@@ -379,7 +379,7 @@ void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM + 5, //right side tile
-                            tilemapLeft + width + 1,
+                            tilemapLeft + width,
                             tilemapTop,
                             1,
                             5,
@@ -414,7 +414,7 @@ void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM + 8,
-                            tilemapLeft + width + 1,
+                            tilemapLeft + width,
                             tilemapTop + height,
                             1,
                             1,
@@ -616,7 +616,7 @@ void sub_8197BB4(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 p
                             gUnknown_0203CD9E);
     FillBgTilemapBufferRect(bg,
                             gUnknown_0203CD9C + 2,
-                            tilemapLeft + width + 1,
+                            tilemapLeft + width,
                             tilemapTop - 1,
                             1,
                             1,
@@ -637,7 +637,7 @@ void sub_8197BB4(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 p
                             gUnknown_0203CD9E);
     FillBgTilemapBufferRect(bg,
                             gUnknown_0203CD9C + 5,
-                            tilemapLeft + width + 1,
+                            tilemapLeft + width,
                             tilemapTop,
                             1,
                             5,
@@ -672,7 +672,7 @@ void sub_8197BB4(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 p
                             gUnknown_0203CD9E);
     FillBgTilemapBufferRect(bg,
                             gUnknown_0203CD9C + 8,
-                            tilemapLeft + width + 1,
+                            tilemapLeft + width,
                             tilemapTop + height,
                             1,
                             1,
