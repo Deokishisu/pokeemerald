@@ -52,7 +52,6 @@ static std::int32_t s_absoluteTime;
 static int s_blockCount = 0;
 static int s_minNote;
 static int s_maxNote;
-static int s_runningStatus;
 
 void Seek(long offset)
 {
@@ -171,7 +170,6 @@ void StartTrack()
 {
     Seek(s_trackDataStart);
     s_absoluteTime = 0;
-    s_runningStatus = 0;
 }
 
 void SkipEventData()
@@ -183,24 +181,15 @@ void DetermineEventCategory(MidiEventCategory& category, int& typeChan, int& siz
 {
     typeChan = ReadInt8();
 
-    if (typeChan < 0x80)
-    {
-        // If data byte was found, use the running status.
-        ungetc(typeChan, g_inputFile);
-        typeChan = s_runningStatus;
-    }
-
     if (typeChan == 0xFF)
     {
         category = MidiEventCategory::Meta;
         size = 0;
-        s_runningStatus = 0;
     }
     else if (typeChan >= 0xF0)
     {
         category = MidiEventCategory::SysEx;
         size = 0;
-        s_runningStatus = 0;
     }
     else if (typeChan >= 0x80)
     {
@@ -216,7 +205,6 @@ void DetermineEventCategory(MidiEventCategory& category, int& typeChan, int& siz
             size = 2;
             break;
         }
-        s_runningStatus = typeChan;
     }
     else
     {
@@ -433,10 +421,7 @@ bool CheckNoteEnd(Event& event)
 
 void FindNoteEnd(Event& event)
 {
-    // Save the current file position and running status
-    // which get modified by CheckNoteEnd.
     long startPos = ftell(g_inputFile);
-    int savedRunningStatus = s_runningStatus;
 
     event.param2 = 0;
 
@@ -444,7 +429,6 @@ void FindNoteEnd(Event& event)
         ;
 
     Seek(startPos);
-    s_runningStatus = savedRunningStatus;
 }
 
 bool ReadTrackEvent(Event& event)

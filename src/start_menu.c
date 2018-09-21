@@ -192,11 +192,28 @@ static const struct BgTemplate sUnknown_085105A8[] =
 
 static const struct WindowTemplate sUnknown_085105AC[] =
 {
-    {0, 2, 0xF, 0x1A, 4, 0xF, 0x194},
+	{
+        .priority = 0,
+        .tilemapLeft = 2,
+        .tilemapTop = 0xF,
+        .width = 0x1A,
+        .height = 4,
+        .paletteNum = 0xF,
+        .baseBlock = 0x194
+    },
     DUMMY_WIN_TEMPLATE
 };
 
-static const struct WindowTemplate sSaveInfoWindowTemplate = {0, 1, 1, 0xE, 0xA, 0xF, 8};
+static const struct WindowTemplate sSaveInfoWindowTemplate =
+{
+	.priority = 0,
+	.tilemapLeft = 10,
+	.tilemapTop = 2,
+	.width = 0xE,
+	.height = 0x8,
+	.paletteNum = 0xF,
+	.baseBlock = 8
+};
 
 // Local functions
 static void BuildStartMenuActions(void);
@@ -418,11 +435,11 @@ static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
     do
     {
         if (sStartMenuItems[sCurrentStartMenuActions[index]].func.u8_void == StartMenuPlayerNameCallback) {
-            PrintPlayerNameOnWindow(GetStartMenuWindowId(), sStartMenuItems[sCurrentStartMenuActions[index]].text, 8, (index << 4) + 9);
+            PrintPlayerNameOnWindow(GetStartMenuWindowId(), sStartMenuItems[sCurrentStartMenuActions[index]].text, 8, (index << 4) + 8);
         }
         else {
             StringExpandPlaceholders(gStringVar4, sStartMenuItems[sCurrentStartMenuActions[index]].text);
-            AddTextPrinterParameterized(GetStartMenuWindowId(), 1, gStringVar4, 8, (index << 4) + 9, 0xFF, NULL);
+            AddTextPrinterParameterized(GetStartMenuWindowId(), 1, gStringVar4, 8, (index << 4) + 8, 0xFF, NULL);
         }
 
         index++;
@@ -1319,40 +1336,33 @@ static void ShowSaveInfoWindow(void)
 {
     struct WindowTemplate saveInfoWindow = sSaveInfoWindowTemplate;
     u8 gender;
-    u8 color;
+	u8 color;
     u32 xOffset;
     u32 yOffset;
 
-    if (!FlagGet(FLAG_SYS_POKEDEX_GET))
+    /*if (!FlagGet(FLAG_SYS_POKEDEX_GET))
     {
         saveInfoWindow.height -= 2;
-    }
-
+    }*/
+	color = TEXT_COLOR_DARK_GREY;
     sSaveInfoWindowId = AddWindow(&saveInfoWindow);
     NewMenuHelpers_DrawStdWindowFrame(sSaveInfoWindowId, FALSE);
 
-    gender = gSaveBlock2Ptr->playerGender;
-    color = TEXT_COLOR_RED;  // Red when female, blue when male.
-
-    if (gender == MALE)
-    {
-        color = TEXT_COLOR_BLUE;
-    }
-
     // Print region name
-    yOffset = 1;
+    /*yOffset = 1;
     sub_819A344(3, gStringVar4, TEXT_COLOR_GREEN);
     AddTextPrinterParameterized(sSaveInfoWindowId, 1, gStringVar4, 0, yOffset, 0xFF, NULL);
+	*/
 
     // Print player name
-    yOffset = 0x11;
+    yOffset = 0x8;
     AddTextPrinterParameterized(sSaveInfoWindowId, 1, gText_SavingPlayer, 0, yOffset, 0xFF, NULL);
     sub_819A344(0, gStringVar4, color);
-    xOffset = GetStringRightAlignXOffset(1, gStringVar4, 0x70);
+    xOffset = 56; //TODO: If statements for international strings. "PLAYER" will be a different length in other languages
     PrintPlayerNameOnWindow(sSaveInfoWindowId, gStringVar4, xOffset, yOffset);
 
     // Print badge count
-    yOffset = 0x21;
+    yOffset = 0x18;
     AddTextPrinterParameterized(sSaveInfoWindowId, 1, gText_SavingBadges, 0, yOffset, 0xFF, NULL);
     sub_819A344(4, gStringVar4, color);
     xOffset = GetStringRightAlignXOffset(1, gStringVar4, 0x70);
@@ -1361,7 +1371,7 @@ static void ShowSaveInfoWindow(void)
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
     {
         // Print pokedex count
-        yOffset = 0x31;
+        yOffset = 0x26;
         AddTextPrinterParameterized(sSaveInfoWindowId, 1, gText_SavingPokedex, 0, yOffset, 0xFF, NULL);
         sub_819A344(1, gStringVar4, color);
         xOffset = GetStringRightAlignXOffset(1, gStringVar4, 0x70);
@@ -1369,7 +1379,7 @@ static void ShowSaveInfoWindow(void)
     }
 
     // Print play time
-    yOffset += 0x10;
+    yOffset = 0x38;
     AddTextPrinterParameterized(sSaveInfoWindowId, 1, gText_SavingTime, 0, yOffset, 0xFF, NULL);
     sub_819A344(2, gStringVar4, color);
     xOffset = GetStringRightAlignXOffset(1, gStringVar4, 0x70);
