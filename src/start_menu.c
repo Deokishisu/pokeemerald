@@ -93,6 +93,7 @@ extern void ScriptUnfreezeEventObjects(void);
 extern void sub_81A9EC8(void);
 extern void save_serialize_map(void);
 extern void sub_81A9E90(void);
+extern void CreateSaveYesNoMenu(u8);
 
 // Menu action callbacks
 static bool8 StartMenuPokedexCallback(void);
@@ -976,8 +977,8 @@ static bool8 SaveErrorTimer(void)
 
 static u8 SaveConfirmSaveCallback(void)
 {
-    sub_819746C(GetStartMenuWindowId(), FALSE);
-    RemoveStartMenuWindow();
+    //sub_819746C(GetStartMenuWindowId(), FALSE);
+    //RemoveStartMenuWindow();
     ShowSaveInfoWindow();
 
     if (InBattlePyramid())
@@ -994,7 +995,7 @@ static u8 SaveConfirmSaveCallback(void)
 
 static u8 SaveYesNoCallback(void)
 {
-    sub_8197930(); // Show Yes/No menu
+    CreateSaveYesNoMenu(0); // Show Yes/No menu
     sSaveDialogCallback = SaveConfirmInputCallback;
     return SAVE_IN_PROGRESS;
 }
@@ -1035,10 +1036,12 @@ static u8 SaveFileExistsCallback(void)
 {
     if (gDifferentSaveFile == TRUE)
     {
+		ShowSaveInfoWindow();
         ShowSaveMessage(gText_DifferentSaveFile, SaveConfirmOverwriteNoCallback);
     }
     else
     {
+		ShowSaveInfoWindow();
         ShowSaveMessage(gText_AlreadySavedFile, SaveConfirmOverwriteCallback);
     }
 
@@ -1047,14 +1050,14 @@ static u8 SaveFileExistsCallback(void)
 
 static u8 SaveConfirmOverwriteNoCallback(void)
 {
-    sub_8197948(1); // Show Yes/No menu (No selected as default)
+    CreateSaveYesNoMenu(1); // Show Yes/No menu (No selected as default)
     sSaveDialogCallback = SaveOverwriteInputCallback;
     return SAVE_IN_PROGRESS;
 }
 
 static u8 SaveConfirmOverwriteCallback(void)
 {
-    sub_8197930(); // Show Yes/No menu
+    CreateSaveYesNoMenu(0); // Show Yes/No menu
     sSaveDialogCallback = SaveOverwriteInputCallback;
     return SAVE_IN_PROGRESS;
 }
@@ -1078,6 +1081,7 @@ static u8 SaveOverwriteInputCallback(void)
 
 static u8 SaveSavingMessageCallback(void)
 {
+	ShowSaveInfoWindow();
     ShowSaveMessage(gText_SavingDontTurnOff, SaveDoSaveCallback);
     return SAVE_IN_PROGRESS;
 }
@@ -1127,6 +1131,8 @@ static u8 SaveReturnSuccessCallback(void)
 {
     if (!IsSEPlaying() && SaveSuccesTimer())
     {
+		sub_819746C(GetStartMenuWindowId(), FALSE);
+		RemoveStartMenuWindow();
         HideSaveInfoWindow();
         return SAVE_SUCCESS;
     }
@@ -1155,7 +1161,9 @@ static u8 SaveReturnErrorCallback(void)
     }
     else
     {
-        HideSaveInfoWindow();
+        sub_819746C(GetStartMenuWindowId(), FALSE);
+		RemoveStartMenuWindow();
+		HideSaveInfoWindow();
         return SAVE_ERROR;
     }
 }

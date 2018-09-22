@@ -88,6 +88,17 @@ static const struct WindowTemplate gUnknown_0860F0A8 =
     .baseBlock = 0x125
 };
 
+static const struct WindowTemplate SaveYesNoBox =
+{
+    .priority = 0,
+    .tilemapLeft = 6,
+    .tilemapTop = 9,
+    .width = 4,
+    .height = 3,
+    .paletteNum = 15,
+    .baseBlock = 0x125
+};
+
 const u16 gUnknown_0860F0B0[] = INCBIN_U16("graphics/interface/860F0B0.gbapal");
 const u8 gUnknown_0860F0D0[] = { 15, 1, 2 };
 
@@ -136,6 +147,8 @@ extern u8 MoveMenuCursor(s8);
 extern u8 sub_8199134(s8, s8);
 extern void sub_8198C78(void);
 extern void task_free_buf_after_copying_tile_data_to_vram(u8 taskId);
+void sub_8198AF8(const struct WindowTemplate*, u8, u8, u8, u16, u8, u8);
+void CreateSaveYesNoMenu(u8);
 
 void sub_81971D0(void)
 {
@@ -1170,6 +1183,11 @@ u16 sub_8198AA4(u8 bg, u8 left, u8 top, u8 width, u8 height, u8 paletteNum, u16 
     return AddWindow(&template);
 }
 
+void CreateSaveYesNoMenu(u8 initialCursorPos)
+{
+    sub_8198AF8(&SaveYesNoBox, 1, 0, 1, STD_WINDOW_BASE_TILE_NUM, STD_WINDOW_PALETTE_NUM, initialCursorPos);
+}
+
 void sub_8198AF8(const struct WindowTemplate *window, u8 fontId, u8 left, u8 top, u16 baseTileNum, u8 paletteNum, u8 initialCursorPos)
 {
     struct TextSubPrinter printer;
@@ -1179,17 +1197,17 @@ void sub_8198AF8(const struct WindowTemplate *window, u8 fontId, u8 left, u8 top
 
     printer.current_text_offset = gText_YesNo;
     printer.windowId = gUnknown_0203CD9F;
-    printer.fontId = fontId;
-    printer.x = GetFontAttribute(fontId, FONTATTR_MAX_LETTER_WIDTH) + left;
-    printer.y = top;
+    printer.fontId = 1;
+    printer.x = 8;
+    printer.y = 0;
     printer.currentX = printer.x;
     printer.currentY = printer.y;
-    printer.fgColor = GetFontAttribute(fontId, FONTATTR_COLOR_FOREGROUND);
-    printer.bgColor = GetFontAttribute(fontId, FONTATTR_COLOR_BACKGROUND);
-    printer.shadowColor = GetFontAttribute(fontId, FONTATTR_COLOR_SHADOW);
-    printer.fontColor_l = GetFontAttribute(fontId, FONTATTR_COLOR_LOWNIBBLE);
-    printer.letterSpacing = GetFontAttribute(fontId, FONTATTR_LETTER_SPACING);
-    printer.lineSpacing = GetFontAttribute(fontId, FONTATTR_LINE_SPACING);
+    printer.fgColor = GetFontAttribute(1, 5);
+    printer.bgColor = GetFontAttribute(1, 6);
+    printer.shadowColor = GetFontAttribute(1, 7);
+    printer.fontColor_l = GetFontAttribute(1, 4);
+    printer.letterSpacing = 0;
+    printer.lineSpacing = 0;
 
     AddTextPrinter(&printer, 0xFF, NULL);
 
