@@ -929,9 +929,9 @@ LittlerootTown_EventScript_1E8693:: @ 81E8693
 	return
 
 LittlerootTown_Text_1E86BC: @ 81E86BC
-	.string "MOM: {PLAYER}, we’re here, honey!\p"
-	.string "It must be tiring riding with our things\n"
-	.string "in the moving truck.\p"
+	.string "He said he wanted\n"
+	.string "you to do some-\l"
+	.string "thing for him.\p"
 	.string "Well, this is LITTLEROOT TOWN.\p"
 	.string "How do you like it?\n"
 	.string "This is our new home!\p"
@@ -977,9 +977,10 @@ LittlerootTown_Text_1E8A03: @ 81E8A03
 	.string "Go on, go get them, honey!$"
 
 LittlerootTown_Text_1E8ACF: @ 81E8ACF
-	.string "If you use a PC, you can store items\n"
-	.string "and POKéMON.\p"
-	.string "The power of science is staggering!$"
+	.string "Yo, {PLAYER}!\p"
+	.string "I hear PROF.ELM\n"
+	.string "discovered some\l"
+	.string "new POKéMON.$"
 
 LittlerootTown_Text_1E8B25: @ 81E8B25
 	.string "PROF. BIRCH spends days in his LAB\n"
