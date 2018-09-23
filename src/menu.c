@@ -69,7 +69,7 @@ static const struct WindowTemplate gUnknown_0860F098[] =
         .priority = 0,
         .tilemapLeft = 6,
         .tilemapTop = 14,
-        .width = 18,
+        .width = 17,
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x194
@@ -358,7 +358,7 @@ void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM + 2,
-                            tilemapLeft + width,
+                            tilemapLeft + width + 1,
                             tilemapTop - 1,
                             1,
                             1,
@@ -379,7 +379,7 @@ void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM + 5, //right side tile
-                            tilemapLeft + width,
+                            tilemapLeft + width + 1,
                             tilemapTop,
                             1,
                             5,
@@ -414,7 +414,7 @@ void DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height
                             DLG_WINDOW_PALETTE_NUM);
     FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM + 8,
-                            tilemapLeft + width,
+                            tilemapLeft + width + 1,
                             tilemapTop + height,
                             1,
                             1,
