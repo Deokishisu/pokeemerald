@@ -470,6 +470,7 @@ extern const u8 gText_99TimesPlus[];
 extern const u8 gText_1MinutePlus[];
 extern const u8 gText_SpaceSeconds[];
 extern const u8 gText_SpaceTimes[];
+extern const u8 gText_Space[];
 
 extern const u8 gText_BigGuy[];
 extern const u8 gText_BigGirl[];

@@ -69,6 +69,7 @@ static void ButtonMode_DrawChoices(u8 selection);
 static void DrawTextOption(void);
 static void DrawOptionMenuTexts(void);
 static void sub_80BB154(void);
+static void DrawCursor(u8);
 
 // EWRAM vars
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
@@ -89,14 +90,20 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     gText_OptionMenuCancel,
 };
 
+static const u8 *const sCursorText[] =
+{
+	gText_SelectorArrow,
+	gText_Space,
+};
+
 static const struct WindowTemplate sOptionMenuWinTemplates[] =
 {
     {
         .priority = 1,
-        .tilemapLeft = 2,
-        .tilemapTop = 1,
-        .width = 26,
-        .height = 2,
+        .tilemapLeft = 0,
+        .tilemapTop = 0,
+        .width = 0,
+        .height = 0,
         .paletteNum = 1,
         .baseBlock = 2
     },
@@ -104,8 +111,8 @@ static const struct WindowTemplate sOptionMenuWinTemplates[] =
         .priority = 0,
         .tilemapLeft = 6,
         .tilemapTop = 2,
-        .width = 16,
-        .height = 15,
+        .width = 18,
+        .height = 16,
         .paletteNum = 1,
         .baseBlock = 0x36
     },
@@ -182,7 +189,7 @@ void CB2_InitOptionMenu(void)
         SetGpuReg(REG_OFFSET_WIN0V, 0);
         SetGpuReg(REG_OFFSET_WININ, 1);
         SetGpuReg(REG_OFFSET_WINOUT, 35);
-        SetGpuReg(REG_OFFSET_BLDCNT, 193);
+        SetGpuReg(REG_OFFSET_BLDCNT, 0);
         SetGpuReg(REG_OFFSET_BLDALPHA, 0);
         SetGpuReg(REG_OFFSET_BLDY, 4);
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_WIN0_ON | DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
@@ -202,12 +209,12 @@ void CB2_InitOptionMenu(void)
         gMain.state++;
         break;
     case 4:
-        LoadPalette(sUnknown_0855C6A0, 0, sizeof(sUnknown_0855C6A0));
+        LoadPalette(sUnknown_0855C6A0, 0, sizeof(sUnknown_0855C6A0)); //background palette
         LoadPalette(GetWindowFrameTilesPal(gSaveBlock2Ptr->optionsWindowFrameType)->pal, 0x70, 0x20);
         gMain.state++;
         break;
     case 5:
-        LoadPalette(sUnknown_0855C604, 0x10, sizeof(sUnknown_0855C604));
+        LoadPalette(sUnknown_0855C604, 0x10, sizeof(sUnknown_0855C604)); //appears to be the text palettes
         gMain.state++;
         break;
     case 6:
@@ -244,7 +251,7 @@ void CB2_InitOptionMenu(void)
         Sound_DrawChoices(gTasks[taskId].data[TD_SOUND]);
         ButtonMode_DrawChoices(gTasks[taskId].data[TD_BUTTONMODE]);
         FrameType_DrawChoices(gTasks[taskId].data[TD_FRAMETYPE]);
-        HighlightOptionMenuItem(gTasks[taskId].data[TD_MENUSELECTION]);
+        DrawCursor(gTasks[taskId].data[TD_MENUSELECTION]);
 
         CopyWindowToVram(WIN_OPTIONS, 3);
         gMain.state++;
@@ -278,18 +285,26 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     else if (gMain.newKeys & DPAD_UP)
     {
         if (gTasks[taskId].data[TD_MENUSELECTION] > 0)
+		{
             gTasks[taskId].data[TD_MENUSELECTION]--;
+		}
         else
+		{
             gTasks[taskId].data[TD_MENUSELECTION] = 6;
-        HighlightOptionMenuItem(gTasks[taskId].data[TD_MENUSELECTION]);
+		}
+        DrawCursor(gTasks[taskId].data[TD_MENUSELECTION]);
     }
     else if (gMain.newKeys & DPAD_DOWN)
     {
         if (gTasks[taskId].data[TD_MENUSELECTION] <= 5)
+		{
             gTasks[taskId].data[TD_MENUSELECTION]++;
+		}
         else
+		{
             gTasks[taskId].data[TD_MENUSELECTION] = 0;
-        HighlightOptionMenuItem(gTasks[taskId].data[TD_MENUSELECTION]);
+		}
+        DrawCursor(gTasks[taskId].data[TD_MENUSELECTION]);
     }
     else
     {
@@ -374,10 +389,22 @@ static void Task_OptionMenuFadeOut(u8 taskId)
     }
 }
 
+static void DrawCursor(u8 index)
+{
+	int i;
+	
+	for (i = 0; i < MENUITEM_COUNT; i++)
+    {
+        AddTextPrinterParameterized(WIN_OPTIONS, 1, sCursorText[1], 0, (i * 16) + 8, TEXT_SPEED_FF, NULL);
+    }
+	AddTextPrinterParameterized(WIN_OPTIONS, 1, sCursorText[0], 0, (index * 16) + 8, TEXT_SPEED_FF, NULL);
+	CopyWindowToVram(WIN_OPTIONS, 3);
+}
+
 static void HighlightOptionMenuItem(u8 index)
 {
-    SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(16, 224));
-    SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(index * 16 + 40, index * 16 + 56));
+    //SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(8, 224));
+    //SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(index * 16 + 24, index * 16 + 40));
 }
 
 static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style)
@@ -395,7 +422,7 @@ static void DrawOptionMenuChoice(const u8 *text, u8 x, u8 y, u8 style)
     }
 
     dst[i] = EOS;
-    AddTextPrinterParameterized(WIN_OPTIONS, 1, dst, x, y + 1, TEXT_SPEED_FF, NULL);
+    AddTextPrinterParameterized(WIN_OPTIONS, 1, dst, x, y + 16, TEXT_SPEED_FF, NULL);
 }
 
 static u8 TextSpeed_ProcessInput(u8 selection)
@@ -430,18 +457,28 @@ static void TextSpeed_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[2] = 0;
     styles[selection] = 1;
-
-    DrawOptionMenuChoice(gText_TextSpeedSlow, 104, 0, styles[0]);
-
+	if(selection == 0)
+	{
+		DrawOptionMenuChoice(gText_TextSpeedSlow, 72, 0, styles[0]);
+	}
+	else if(selection == 1)
+	{
+		DrawOptionMenuChoice(gText_TextSpeedMid, 72, 0, styles[0]);
+	}
+	else
+	{
+		DrawOptionMenuChoice(gText_TextSpeedFast, 72, 0, styles[0]);
+	}
+	/*
     widthSlow = GetStringWidth(1, gText_TextSpeedSlow, 0);
     widthMid = GetStringWidth(1, gText_TextSpeedMid, 0);
     widthFast = GetStringWidth(1, gText_TextSpeedFast, 0);
 
     widthMid -= 94;
-    xMid = (widthSlow - widthMid - widthFast) / 2 + 104;
+    xMid = (widthSlow - widthMid - widthFast) / 2 + 108;
     DrawOptionMenuChoice(gText_TextSpeedMid, xMid, 0, styles[1]);
 
-    DrawOptionMenuChoice(gText_TextSpeedFast, GetStringRightAlignXOffset(1, gText_TextSpeedFast, 198), 0, styles[2]);
+    DrawOptionMenuChoice(gText_TextSpeedFast, GetStringRightAlignXOffset(1, gText_TextSpeedFast, 198), 0, styles[2]);*/
 }
 
 static u8 BattleScene_ProcessInput(u8 selection)
@@ -462,9 +499,18 @@ static void BattleScene_DrawChoices(u8 selection)
     styles[0] = 0;
     styles[1] = 0;
     styles[selection] = 1;
+	
+	if(selection == 0)
+	{
+		DrawOptionMenuChoice(gText_BattleSceneOn, 72, 16, styles[0]);
+	}
+	else
+	{
+		DrawOptionMenuChoice(gText_BattleSceneOff, 72, 16, styles[0]);
+	}
 
-    DrawOptionMenuChoice(gText_BattleSceneOn, 104, 16, styles[0]);
-    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), 16, styles[1]);
+    //DrawOptionMenuChoice(gText_BattleSceneOn, 72, 16, styles[0]);
+    //DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), 16, styles[1]);
 }
 
 static u8 BattleStyle_ProcessInput(u8 selection)
@@ -485,9 +531,18 @@ static void BattleStyle_DrawChoices(u8 selection)
     styles[0] = 0;
     styles[1] = 0;
     styles[selection] = 1;
+	
+	if(selection == 0)
+	{
+		DrawOptionMenuChoice(gText_BattleStyleShift, 72, 32, styles[0]);
+	}
+	else
+	{
+		DrawOptionMenuChoice(gText_BattleStyleSet, 72, 32, styles[0]);
+	}
 
-    DrawOptionMenuChoice(gText_BattleStyleShift, 104, 32, styles[0]);
-    DrawOptionMenuChoice(gText_BattleStyleSet, GetStringRightAlignXOffset(1, gText_BattleStyleSet, 198), 32, styles[1]);
+    //DrawOptionMenuChoice(gText_BattleStyleShift, 72, 32, styles[0]);
+    //DrawOptionMenuChoice(gText_BattleStyleSet, GetStringRightAlignXOffset(1, gText_BattleStyleSet, 198), 32, styles[1]);
 }
 
 static u8 Sound_ProcessInput(u8 selection)
@@ -510,15 +565,24 @@ static void Sound_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[selection] = 1;
 
-    DrawOptionMenuChoice(gText_SoundMono, 104, 48, styles[0]);
-    DrawOptionMenuChoice(gText_SoundStereo, GetStringRightAlignXOffset(1, gText_SoundStereo, 198), 48, styles[1]);
+	if(selection == 0)
+	{
+		DrawOptionMenuChoice(gText_SoundMono, 72, 48, styles[0]);
+	}
+	else
+	{
+		DrawOptionMenuChoice(gText_SoundStereo, 72, 48, styles[0]);
+	}
+	
+    //DrawOptionMenuChoice(gText_SoundMono, 72, 48, styles[0]);
+    //DrawOptionMenuChoice(gText_SoundStereo, GetStringRightAlignXOffset(1, gText_SoundStereo, 198), 48, styles[1]);
 }
 
 static u8 FrameType_ProcessInput(u8 selection)
 {
     if (gMain.newKeys & DPAD_RIGHT)
     {
-        if (selection < WINDOW_FRAMES_COUNT - 1)
+        if (selection < 8 - 1) //WINDOW_FRAMES_COUNT is 8 in Crystal
             selection++;
         else
             selection = 0;
@@ -532,7 +596,7 @@ static u8 FrameType_ProcessInput(u8 selection)
         if (selection != 0)
             selection--;
         else
-            selection = WINDOW_FRAMES_COUNT - 1;
+            selection = 8 - 1;
 
         LoadBgTiles(1, GetWindowFrameTilesPal(selection)->tiles, 0x120, 0x1A2);
         LoadPalette(GetWindowFrameTilesPal(selection)->pal, 0x70, 0x20);
@@ -568,8 +632,8 @@ static void FrameType_DrawChoices(u8 selection)
 
     text[i] = EOS;
 
-    DrawOptionMenuChoice(gText_FrameType, 104, 80, 0);
-    DrawOptionMenuChoice(text, 128, 80, 1);
+    DrawOptionMenuChoice(gText_FrameType, 72, 80, 0);
+    DrawOptionMenuChoice(text, 120, 80, 1);
 }
 
 static u8 ButtonMode_ProcessInput(u8 selection)
@@ -604,9 +668,20 @@ static void ButtonMode_DrawChoices(u8 selection)
     styles[1] = 0;
     styles[2] = 0;
     styles[selection] = 1;
-
-    DrawOptionMenuChoice(gText_ButtonTypeNormal, 104, 64, styles[0]);
-
+	
+	if(selection == 0)
+	{
+		DrawOptionMenuChoice(gText_ButtonTypeNormal, 72, 64, styles[0]);
+	}
+	else if(selection == 1)
+	{
+		DrawOptionMenuChoice(gText_ButtonTypeLR, 72, 64, styles[0]);
+	}
+	else
+	{
+		DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, 72, 64, styles[0]);
+	}
+	/*
     widthNormal = GetStringWidth(1, gText_ButtonTypeNormal, 0);
     widthLR = GetStringWidth(1, gText_ButtonTypeLR, 0);
     widthLA = GetStringWidth(1, gText_ButtonTypeLEqualsA, 0);
@@ -615,7 +690,7 @@ static void ButtonMode_DrawChoices(u8 selection)
     xLR = (widthNormal - widthLR - widthLA) / 2 + 104;
     DrawOptionMenuChoice(gText_ButtonTypeLR, xLR, 64, styles[1]);
 
-    DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(1, gText_ButtonTypeLEqualsA, 198), 64, styles[2]);
+    DrawOptionMenuChoice(gText_ButtonTypeLEqualsA, GetStringRightAlignXOffset(1, gText_ButtonTypeLEqualsA, 198), 64, styles[2]);*/
 }
 
 static void DrawTextOption(void)
@@ -632,7 +707,7 @@ static void DrawOptionMenuTexts(void)
     FillWindowPixelBuffer(WIN_OPTIONS, 0x11);
     for (i = 0; i < MENUITEM_COUNT; i++)
     {
-        AddTextPrinterParameterized(WIN_OPTIONS, 1, sOptionMenuItemsNames[i], 8, (i * 16) + 1, TEXT_SPEED_FF, NULL);
+        AddTextPrinterParameterized(WIN_OPTIONS, 1, sOptionMenuItemsNames[i], 8, (i * 16) + 8, TEXT_SPEED_FF, NULL);
     }
     CopyWindowToVram(WIN_OPTIONS, 3);
 }
@@ -640,22 +715,22 @@ static void DrawOptionMenuTexts(void)
 static void sub_80BB154(void)
 {
     //                   bg, tileNum, x,    y,    width, height,  pal
-    FillBgTilemapBufferRect(1, 0x1A2, 1,    0,      1,      1,      7);
+    /*FillBgTilemapBufferRect(1, 0x1A2, 1,    0,      1,      1,      7);
     FillBgTilemapBufferRect(1, 0x1A3, 2,    0,      0x1B,   1,      7);
     FillBgTilemapBufferRect(1, 0x1A4, 28,   0,      1,      1,      7);
     FillBgTilemapBufferRect(1, 0x1A5, 1,    1,      1,      2,      7);
     FillBgTilemapBufferRect(1, 0x1A7, 28,   1,      1,      2,      7);
     FillBgTilemapBufferRect(1, 0x1A8, 1,    3,      1,      1,      7);
     FillBgTilemapBufferRect(1, 0x1A9, 2,    3,      0x1B,   1,      7);
-    FillBgTilemapBufferRect(1, 0x1AA, 28,   3,      1,      1,      7);
-    FillBgTilemapBufferRect(1, 0x1A2, 1,    4,      1,      1,      7);
-    FillBgTilemapBufferRect(1, 0x1A3, 2,    4,      0x1A,   1,      7);
-    FillBgTilemapBufferRect(1, 0x1A4, 28,   4,      1,      1,      7);
-    FillBgTilemapBufferRect(1, 0x1A5, 1,    5,      1,      0x12,   7);
-    FillBgTilemapBufferRect(1, 0x1A7, 28,   5,      1,      0x12,   7);
-    FillBgTilemapBufferRect(1, 0x1A8, 1,    19,     1,      1,      7);
-    FillBgTilemapBufferRect(1, 0x1A9, 2,    19,     0x1A,   1,      7);
-    FillBgTilemapBufferRect(1, 0x1AA, 28,   19,     1,      1,      7);
+    FillBgTilemapBufferRect(1, 0x1AA, 28,   3,      1,      1,      7);*/
+    FillBgTilemapBufferRect(1, 0x1A2, 5,    1,      1,      1,      7); //start of second window? 4 is top y, should be 2 
+    FillBgTilemapBufferRect(1, 0x1A3, 6,    1,      18,     1,      7);
+    FillBgTilemapBufferRect(1, 0x1A4, 24,   1,      1,      1,      7);
+    FillBgTilemapBufferRect(1, 0x1A5, 5,    2,      1,      16,     7);
+    FillBgTilemapBufferRect(1, 0x1A7, 24,   2,      1,      16,     7);
+    FillBgTilemapBufferRect(1, 0x1A8, 5,    18,     1,      1,      7);
+    FillBgTilemapBufferRect(1, 0x1A9, 6,    18,     18,     1,      7);
+    FillBgTilemapBufferRect(1, 0x1AA, 24,   18,     1,      1,      7);
 
     CopyBgTilemapBufferToVram(1);
 }
