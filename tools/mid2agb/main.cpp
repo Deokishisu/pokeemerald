@@ -134,7 +134,6 @@ static Option ParseOption(int& index, const int argc, char** argv)
 
         retVal.arg = argv[index];
     }
-
     return retVal;
 }
 
