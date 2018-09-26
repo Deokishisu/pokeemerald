@@ -8,7 +8,6 @@ TODO: Down arrow in textbox needs to be spawned with a sprite. The Emerald behav
 TODO: Right-facing arrow cursor (used in start menu, Yes/No boxes, etc.) turns white in Crystal when A is pressed to select something.
 Need to replicate this behavior.
 
-TODO: BUG: Text from the option selections themselves (FAST, LR, etc.) overwrite the main choices. Need to figure out CpuCopy32 and only print the top 8 pixels of the choices to prevent the clipping.
 
 TODO: Update Options menu selections to Crystal equivalents when flags are figured out. Make the Menu Account option actually work for the start menu.
 

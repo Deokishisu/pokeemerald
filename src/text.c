@@ -3524,7 +3524,7 @@ u8 GetFontAttribute(u8 fontId, u8 attributeId)
             result = gFontInfos[fontId].maxLetterWidth;
             break;
         case FONTATTR_MAX_LETTER_HEIGHT:
-            result = gFontInfos[fontId].maxLetterHeight;
+		    result = gFontInfos[fontId].maxLetterHeight;
             break;
         case FONTATTR_LETTER_SPACING:
             result = gFontInfos[fontId].letterSpacing;
@@ -3755,7 +3755,7 @@ void DecompressGlyphFont1(u16 glyphId, bool32 isJapanese)
             DecompressGlyphTile(glyphs + 0x18, (u16 *)(gUnknown_03002F90 + 0x60));
         }
 
-        gUnknown_03002F90[0x81] = 15;
+        gUnknown_03002F90[0x81] = 8;
     }
 }
 
