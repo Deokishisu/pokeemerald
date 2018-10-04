@@ -56,6 +56,71 @@ const u8 gFontHalfRowOffsets[] = {
 };
 
 const u8 gDownArrowTiles[] = INCBIN_U8("data/graphics/fonts/down_arrow.4bpp");
+const u16 gDownArrowPal[] = INCBIN_U16("data/graphics/fonts/down_arrow.gbapal");
+
+static u8 sDownArrowSpriteId;
+
+#define DOWN_ARROW_TAG 0xD00D
+
+static const struct OamData gOamData_DownArrowTiles =
+{
+    .y = 0,
+    .affineMode = 0,
+    .objMode = 0,
+    .mosaic = 0,
+    .bpp = 0,
+    .shape = 0,
+    .x = 0,
+    .matrixNum = 0,
+    .size = 1,
+    .tileNum = 0,
+    .priority = 0,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static const struct SpriteSheet sSpriteSheet_DownArrow =
+{
+    .data = gDownArrowTiles,
+    .size = 192,
+    .tag = DOWN_ARROW_TAG,
+};
+
+static const struct SpritePalette sSpritePal_DownArrow =
+{
+    .data = gDownArrowPal,
+    .tag = DOWN_ARROW_TAG
+};
+
+static const union AnimCmd sSpriteAnim_DownArrow0[] =
+{
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sSpriteAnim_DownArrow1[] =
+{
+    ANIMCMD_FRAME(1, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd *const sSpriteAnimTable_DownArrow[] =
+{
+    sSpriteAnim_DownArrow0,
+    sSpriteAnim_DownArrow1,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_DownArrow =
+{
+    .tileTag = DOWN_ARROW_TAG,
+    .paletteTag = DOWN_ARROW_TAG,
+    .oam = &gOamData_DownArrowTiles,
+    .anims = sSpriteAnimTable_DownArrow,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+
 const u8 gDarkDownArrowTiles[] = INCBIN_U8("data/graphics/fonts/down_arrow_RS.4bpp");
 const u8 gUnusedFRLGBlankedDownArrow[] = INCBIN_U8("data/graphics/fonts/unused_frlg_blanked_down_arrow.4bpp");
 const u8 gUnusedFRLGDownArrow[] = INCBIN_U8("data/graphics/fonts/unused_frlg_down_arrow.4bpp");
@@ -1925,13 +1990,13 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
         }
         else
         {
-            FillWindowPixelRect(
+            /*FillWindowPixelRect(
                 textPrinter->subPrinter.windowId,
                 textPrinter->subPrinter.bgColor << 4 | textPrinter->subPrinter.bgColor,
                 (width * 8) - 8,
                 height + 24,
                 0x8,
-                0x10);
+                0x10);*/
 
             switch (gTextFlags.flag_1)
             {
@@ -1944,7 +2009,7 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
                     break;
             }
 
-            BlitBitmapRectToWindow(
+            /*BlitBitmapRectToWindow(
                 textPrinter->subPrinter.windowId,
                 arrowTiles,
                 0,
@@ -1955,7 +2020,22 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
                 height + 24,
                 0x8,
                 0x10);
-            CopyWindowToVram(textPrinter->subPrinter.windowId, 0x2);
+            CopyWindowToVram(textPrinter->subPrinter.windowId, 0x2);*/
+
+			if (IndexOfSpritePaletteTag(DOWN_ARROW_TAG) == 0xFF)
+			{
+				LoadSpritePalette(&sSpritePal_DownArrow);
+			}
+			if (GetSpriteTileStartByTag(DOWN_ARROW_TAG) == 0xFFFF)
+			{
+				LoadSpriteSheet(&sSpriteSheet_DownArrow);
+			}
+			if (sDownArrowSpriteId == 0xFF)
+			{
+				sDownArrowSpriteId = CreateSprite(&sSpriteTemplate_DownArrow, 192, 152, 0);
+			}
+
+			StartSpriteAnim(&gSprites[sDownArrowSpriteId], 0);
 
             subStruct->field_1 = 0x8;
             subStruct->field_1_upmid = (*(u32*)subStruct << 17 >> 30) + 1;
@@ -1965,16 +2045,23 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
 
 void TextPrinterClearDownArrow(struct TextPrinter *textPrinter)
 {
-	u16 width = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_WIDTH);
-	u16 height = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_HEIGHT);
-    FillWindowPixelRect(
+	//u16 width = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_WIDTH);
+	//u16 height = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_HEIGHT);
+    /*FillWindowPixelRect(
         textPrinter->subPrinter.windowId,
         textPrinter->subPrinter.bgColor << 4 | textPrinter->subPrinter.bgColor,
         (width * 8) - 8,
         height + 24,
         0x8,
         0x10);
-    CopyWindowToVram(textPrinter->subPrinter.windowId, 0x2);
+    CopyWindowToVram(textPrinter->subPrinter.windowId, 0x2);*/
+	FreeSpritePaletteByTag(DOWN_ARROW_TAG);
+    FreeSpriteTilesByTag(DOWN_ARROW_TAG);
+    if (sDownArrowSpriteId != 0xFF)
+	{
+        DestroySprite(&gSprites[sDownArrowSpriteId]);
+	}
+	sDownArrowSpriteId = 0xFF;
 }
 
 bool8 TextPrinterWaitAutoMode(struct TextPrinter *textPrinter)
@@ -2006,6 +2093,7 @@ bool16 TextPrinterWaitWithDownArrow(struct TextPrinter *textPrinter)
         {
             result = TRUE;
             PlaySE(SE_SELECT);
+			TextPrinterClearDownArrow(textPrinter);
         }
     }
     return result;
@@ -2032,6 +2120,8 @@ bool16 TextPrinterWait(struct TextPrinter *textPrinter)
 void DrawDownArrow(u8 windowId, u16 x, u16 y, u8 bgColor, bool8 drawArrow, u8 *counter, u8 *yCoordIndex)
 {
     const u8 *arrowTiles;
+	u16 width = GetWindowAttribute(windowId, WINDOW_WIDTH);
+    u16 height = GetWindowAttribute(windowId, WINDOW_HEIGHT);
 
     if (*counter != 0)
     {
@@ -2053,7 +2143,7 @@ void DrawDownArrow(u8 windowId, u16 x, u16 y, u8 bgColor, bool8 drawArrow, u8 *c
                     break;
             }
 
-            BlitBitmapRectToWindow(
+            /*BlitBitmapRectToWindow(
                 windowId,
                 arrowTiles,
                 0,
@@ -2064,7 +2154,22 @@ void DrawDownArrow(u8 windowId, u16 x, u16 y, u8 bgColor, bool8 drawArrow, u8 *c
                 y - 2,
                 0x8,
                 0x10);
-            CopyWindowToVram(windowId, 0x2);
+            CopyWindowToVram(windowId, 0x2);*/
+			if (IndexOfSpritePaletteTag(DOWN_ARROW_TAG) == 0xFF)
+			{
+				LoadSpritePalette(&sSpritePal_DownArrow);
+			}
+			if (GetSpriteTileStartByTag(DOWN_ARROW_TAG) == 0xFFFF)
+			{
+				LoadSpriteSheet(&sSpriteSheet_DownArrow);
+			}
+			if (sDownArrowSpriteId == 0xFF)
+			{
+				sDownArrowSpriteId = CreateSprite(&sSpriteTemplate_DownArrow, 188, 144, 0);
+			}
+
+			StartSpriteAnim(&gSprites[sDownArrowSpriteId], 0);
+			
             *counter = 8;
             ++*yCoordIndex;
         }
@@ -3756,6 +3861,7 @@ void DecompressGlyphFont1(u16 glyphId, bool32 isJapanese)
         }
 
         gUnknown_03002F90[0x81] = 8;
+		sDownArrowSpriteId = 0xFF;
     }
 }
 
