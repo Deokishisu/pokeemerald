@@ -983,11 +983,10 @@ LittlerootTown_Text_1E8ACF: @ 81E8ACF
 	.string "new POKéMON.$"
 
 LittlerootTown_Text_1E8B25: @ 81E8B25
-	.string "PROF. BIRCH spends days in his LAB\n"
-	.string "studying, then he’ll suddenly go out in\l"
-	.string "the wild to do more research…\p"
-	.string "When does PROF. BIRCH spend time\n"
-	.string "at home?$"
+	.string "Testing...\p"
+	.string "{PHONE_ICON} {U_APOS} {Y_APOS} {LONG_R_APOS} {APOS_D} {APOS_L} {APOS_M} {APOS_R} {APOS_S}\n"
+	.string "{APOS_T} {APOS_V} {C_APOS} {D_APOS} {J_APOS} {L_APOS} {M_APOS} {N_APOS} {P_APOS}\l"
+	.string "{S_APOS} {T_APOS}$"  
 
 LittlerootTown_Text_1E8BB8: @ 81E8BB8
 	.string "Um, um, um!\p"
