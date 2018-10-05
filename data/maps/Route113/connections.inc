@@ -1,9 +1,7 @@
-Route113_MapConnectionsList: @ 84869C8
-	connection down, 60, MAP_ROUTE112
+Route113_MapConnectionsList::
 	connection left, 0, MAP_FALLARBOR_TOWN
-	connection right, 0, MAP_ROUTE111
+	connection up, 30, MAP_ROUTE112
 
-Route113_MapConnections: @ 84869EC
-	.4byte 0x3
+Route113_MapConnections::
+	.4byte 2
 	.4byte Route113_MapConnectionsList
-

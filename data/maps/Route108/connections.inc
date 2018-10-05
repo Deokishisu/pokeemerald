@@ -1,8 +1,8 @@
-Route108_MapConnectionsList: @ 8486904
-	connection left, 0, MAP_ROUTE107
-	connection right, -40, MAP_ROUTE109
+Route108_MapConnectionsList::
+	connection right, 0, MAP_PETALBURG_CITY
+	connection down, 0, MAP_ROUTE107
+	connection up, 20, MAP_ROUTE109
 
-Route108_MapConnections: @ 848691C
-	.4byte 0x2
+Route108_MapConnections::
+	.4byte 3
 	.4byte Route108_MapConnectionsList
-

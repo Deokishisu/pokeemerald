@@ -1,9 +1,7 @@
-RustboroCity_MapConnectionsList: @ 8486758
-	connection up, 0, MAP_ROUTE115
-	connection down, 0, MAP_ROUTE104
-	connection right, 0, MAP_ROUTE116
+RustboroCity_MapConnectionsList::
+	connection up, 10, MAP_ROUTE111
+	connection left, 18, MAP_ROUTE112
 
-RustboroCity_MapConnections: @ 848677C
-	.4byte 0x3
+RustboroCity_MapConnections::
+	.4byte 2
 	.4byte RustboroCity_MapConnectionsList
-

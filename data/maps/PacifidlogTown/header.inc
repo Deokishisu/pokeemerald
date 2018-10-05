@@ -1,4 +1,4 @@
-PacifidlogTown: @ 848265C
+PacifidlogTown::
 	.4byte PacifidlogTown_Layout
 	.4byte PacifidlogTown_MapEvents
 	.4byte PacifidlogTown_MapScripts
@@ -12,4 +12,3 @@ PacifidlogTown: @ 848265C
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

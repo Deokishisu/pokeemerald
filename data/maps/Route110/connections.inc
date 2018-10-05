@@ -1,9 +1,7 @@
-Route110_MapConnectionsList: @ 8486944
-	connection up, 0, MAP_MAUVILLE_CITY
-	connection down, 0, MAP_SLATEPORT_CITY
-	connection left, 60, MAP_ROUTE103
+Route110_MapConnectionsList::
+	connection right, -10, MAP_MAUVILLE_CITY
+	connection left, 0, MAP_ROUTE111
 
-Route110_MapConnections: @ 8486968
-	.4byte 0x3
+Route110_MapConnections::
+	.4byte 2
 	.4byte Route110_MapConnectionsList
-

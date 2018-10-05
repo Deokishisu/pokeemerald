@@ -1,8 +1,7 @@
-Route103_MapConnectionsList: @ 848684C
-	connection down, 0, MAP_OLDALE_TOWN
-	connection right, -60, MAP_ROUTE110
+Route103_MapConnectionsList::
+	connection down, 20, MAP_ROUTE102
+	connection left, -18, MAP_PETALBURG_CITY
 
-Route103_MapConnections: @ 8486864
-	.4byte 0x2
+Route103_MapConnections::
+	.4byte 2
 	.4byte Route103_MapConnectionsList
-

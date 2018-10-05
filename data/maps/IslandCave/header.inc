@@ -1,4 +1,4 @@
-IslandCave: @ 8484614
+IslandCave::
 	.4byte IslandCave_Layout
 	.4byte IslandCave_MapEvents
 	.4byte IslandCave_MapScripts
@@ -12,4 +12,3 @@ IslandCave: @ 8484614
 	.2byte 0
 	.byte 15
 	.byte MAP_BATTLE_SCENE_NORMAL
-

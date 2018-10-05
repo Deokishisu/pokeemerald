@@ -145,7 +145,7 @@ static const u8 gRegionMapSectionId_To_PopUpThemeIdMapping[] =
     [MAPSEC_CAVE_OF_ORIGIN] = MAPPOPUP_THEME_STONE,
     [MAPSEC_SOUTHERN_ISLAND] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_FIERY_PATH] = MAPPOPUP_THEME_STONE,
-    [MAPSEC_FIERY_PATH2] = MAPPOPUP_THEME_STONE,
+    [MAPSEC_LAKE_OF_RAGE] = MAPPOPUP_THEME_UNDERWATER,
     [MAPSEC_JAGGED_PASS] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_JAGGED_PASS2] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_SEALED_CHAMBER] = MAPPOPUP_THEME_STONE,
@@ -534,13 +534,21 @@ static void LoadMapNamePopUpWindowBg(void)
     regionMapSectionId = gMapHeader.regionMapSectionId;
     if(regionMapSectionId > MAPSEC_DYNAMIC)
     {
-        if(regionMapSectionId > MAPSEC_SPECIAL_AREA)
+		if(regionMapSectionId > MAPSEC_TRAINER_HILL)
+			regionMapSectionId = regionMapSectionId + 0;
+        else if(regionMapSectionId > MAPSEC_SPECIAL_AREA)
             regionMapSectionId -= (MAPSEC_SPECIAL_AREA - MAPSEC_DYNAMIC);
         else
             regionMapSectionId = 0; //discard kanto region sections
     }
-    popUpThemeId = gRegionMapSectionId_To_PopUpThemeIdMapping[regionMapSectionId];
-
+	if(regionMapSectionId > MAPSEC_TRAINER_HILL)
+	{
+		popUpThemeId = gRegionMapSectionId_To_PopUpThemeIdMapping[0];
+	}
+	else
+	{
+		popUpThemeId = gRegionMapSectionId_To_PopUpThemeIdMapping[regionMapSectionId];
+	}
     LoadBgTiles(GetWindowAttribute(popupWindowId, WINDOW_PRIORITY), &(gMapPopUp_Outline_Table[popUpThemeId][0]), 0x400, 0x21D);
     CallWindowFunction(popupWindowId, sub_80D4A78);
     PutWindowTilemap(popupWindowId);

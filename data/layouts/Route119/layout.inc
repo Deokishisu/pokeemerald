@@ -6,8 +6,8 @@ Route119_MapBlockdata::
 
 	.align 2
 Route119_Layout::
-	.4byte 0x28
-	.4byte 0x8c
+	.4byte 80
+	.4byte 18
 	.4byte Route119_MapBorder
 	.4byte Route119_MapBlockdata
 	.4byte gTileset_General

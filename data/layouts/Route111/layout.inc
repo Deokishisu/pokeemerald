@@ -6,8 +6,8 @@ Route111_MapBlockdata::
 
 	.align 2
 Route111_Layout::
-	.4byte 0x28
-	.4byte 0x8c
+	.4byte 20
+	.4byte 36
 	.4byte Route111_MapBorder
 	.4byte Route111_MapBlockdata
 	.4byte gTileset_General

@@ -1,4 +1,4 @@
-LilycoveCity: @ 8482544
+LilycoveCity::
 	.4byte LilycoveCity_Layout
 	.4byte LilycoveCity_MapEvents
 	.4byte LilycoveCity_MapScripts
@@ -12,4 +12,3 @@ LilycoveCity: @ 8482544
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

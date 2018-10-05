@@ -1,4 +1,4 @@
-Route131: @ 84829C0
+Route131::
 	.4byte Route131_Layout
 	.4byte Route131_MapEvents
 	.4byte Route131_MapScripts
@@ -12,4 +12,3 @@ Route131: @ 84829C0
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

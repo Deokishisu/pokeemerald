@@ -1,4 +1,4 @@
-Route123: @ 84828E0
+Route123::
 	.4byte Route123_Layout
 	.4byte Route123_MapEvents
 	.4byte Route123_MapScripts
@@ -12,4 +12,3 @@ Route123: @ 84828E0
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

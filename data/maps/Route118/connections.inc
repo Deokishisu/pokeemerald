@@ -1,9 +1,7 @@
-Route118_MapConnectionsList: @ 8486A74
-	connection up, 40, MAP_ROUTE119
-	connection left, 0, MAP_MAUVILLE_CITY
-	connection right, 0, MAP_ROUTE123
+Route118_MapConnectionsList::
+	connection down, -20, MAP_ROUTE101
+	connection right, -72, MAP_ROUTE117
 
-Route118_MapConnections: @ 8486A98
-	.4byte 0x3
+Route118_MapConnections::
+	.4byte 2
 	.4byte Route118_MapConnectionsList
-

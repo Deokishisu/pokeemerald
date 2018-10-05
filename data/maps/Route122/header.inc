@@ -1,4 +1,4 @@
-Route122: @ 84828C4
+Route122::
 	.4byte Route122_Layout
 	.4byte Route122_MapEvents
 	.4byte Route122_MapScripts
@@ -12,4 +12,3 @@ Route122: @ 84828C4
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

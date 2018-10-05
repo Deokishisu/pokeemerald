@@ -14,8 +14,8 @@ Route105_MapScript1_1EE1EB: @ 81EE1EB
 	end
 
 Route105_EventScript_1EE20B:: @ 81EE20B
-	setmetatile 9, 19, 124, 1
-	setmetatile 9, 20, 145, 1
+	@ setmetatile 9, 19, 124, 1
+	@ setmetatile 9, 20, 145, 1
 	return
 
 Route105_MapScript1_1EE21E: @ 81EE21E

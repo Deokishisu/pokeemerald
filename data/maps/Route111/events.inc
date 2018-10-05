@@ -1,11 +1,11 @@
-Route111_EventObjects: @ 85291F0
+Route111_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_MAN_1, 0, 13, 114, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route111_EventScript_1F0FC5, 768
 	object_event 2, EVENT_OBJ_GFX_WOMAN_2, 0, 13, 113, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, 769
 	object_event 3, EVENT_OBJ_GFX_LASS, 0, 13, 113, 0, MOVEMENT_TYPE_FACE_DOWN, 1, 0, 0, 0, 0x0, 770
 	object_event 4, EVENT_OBJ_GFX_OLD_WOMAN_1, 0, 13, 113, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, 771
 	object_event 5, EVENT_OBJ_GFX_PICNICKER, 0, 28, 51, 3, MOVEMENT_TYPE_FACE_DOWN_AND_LEFT, 0, 0, 1, 3, Route111_EventScript_1F121B, 0
-	object_event 6, EVENT_OBJ_GFX_BERRY_TREE, 0, 22, 5, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 19, BerryTreeScript, 0
-	object_event 7, EVENT_OBJ_GFX_BERRY_TREE, 0, 23, 5, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 20, BerryTreeScript, 0
+	object_event 6, EVENT_OBJ_GFX_BERRY_TREE, 0, 17, 5, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 19, BerryTreeScript, 0
+	object_event 7, EVENT_OBJ_GFX_BERRY_TREE, 0, 16, 5, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 20, BerryTreeScript, 0
 	object_event 8, EVENT_OBJ_GFX_MAN_4, 0, 8, 91, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route111_EventScript_1F1189, 0
 	object_event 9, EVENT_OBJ_GFX_CAMPER, 0, 29, 37, 3, MOVEMENT_TYPE_FACE_DOWN_AND_LEFT, 0, 0, 1, 3, Route111_EventScript_1F1204, 0
 	object_event 10, EVENT_OBJ_GFX_HIKER, 0, 27, 69, 3, MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT, 2, 2, 1, 2, Route111_EventScript_1F1260, 0
@@ -15,7 +15,7 @@ Route111_EventObjects: @ 85291F0
 	object_event 14, EVENT_OBJ_GFX_REPORTER_F, 0, 13, 86, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route111_EventScript_28CDD6, 796
 	object_event 15, EVENT_OBJ_GFX_BREAKABLE_ROCK, 0, 18, 101, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route111_EventScript_2907A6, 17
 	object_event 16, EVENT_OBJ_GFX_BREAKABLE_ROCK, 0, 19, 100, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route111_EventScript_2907A6, 18
-	object_event 17, EVENT_OBJ_GFX_GIRL_1, 0, 23, 8, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, Route111_EventScript_1F0EB9, 0
+	object_event 17, EVENT_OBJ_GFX_GIRL_1, 0, 13, 4, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, Route111_EventScript_1F0EB9, 0
 	object_event 18, EVENT_OBJ_GFX_ITEM_BALL, 0, 33, 104, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route111_EventScript_290D9B, 1008
 	object_event 19, EVENT_OBJ_GFX_BERRY_TREE, 0, 18, 5, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 80, BerryTreeScript, 0
 	object_event 20, EVENT_OBJ_GFX_BERRY_TREE, 0, 19, 5, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 81, BerryTreeScript, 0
@@ -46,14 +46,14 @@ Route111_EventObjects: @ 85291F0
 	object_event 45, EVENT_OBJ_GFX_HIPSTER, 0, 19, 53, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, 0x0, 875
 	object_event 46, EVENT_OBJ_GFX_FAT_MAN, 0, 19, 101, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, Route111_EventScript_1F11E4, 843
 
-Route111_MapWarps: @ 8529640
+Route111_MapWarps::
 	warp_def 13, 113, 0, 0, MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE
 	warp_def 29, 87, 0, 0, MAP_DESERT_RUINS
 	warp_def 26, 18, 0, 0, MAP_ROUTE111_OLD_LADYS_REST_STOP
 	warp_def 19, 58, 0, 0, MAP_MIRAGE_TOWER_1F
 	warp_def 31, 113, 0, 0, MAP_TRAINER_HILL_ENTRANCE
 
-Route111_MapCoordEvents: @ 8529668
+Route111_MapCoordEvents::
 	coord_event 12, 62, 3, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 11, 61, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F0A
 	coord_event 12, 61, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F0A
@@ -62,14 +62,14 @@ Route111_MapCoordEvents: @ 8529668
 	coord_event 12, 44, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
 	coord_event 13, 43, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
 	coord_event 14, 42, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
-	coord_event 16, 40, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
+	coord_event 19, 35, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
 	coord_event 14, 61, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F0A
 	coord_event 18, 32, 3, 0, 0, Route111_EventScript_1F0FB0
 	coord_event 17, 31, 3, 0, 0, Route111_EventScript_1F0FB0
-	coord_event 9, 37, 3, 0, 0, Route111_EventScript_1F0FB0
-	coord_event 10, 36, 3, 0, 0, Route111_EventScript_1F0FB0
-	coord_event 17, 39, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
-	coord_event 18, 38, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
+	coord_event 16, 35, 3, 0, 0, Route111_EventScript_1F0FB0
+	coord_event 15, 35, 3, 0, 0, Route111_EventScript_1F0FB0
+	coord_event 17, 35, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
+	coord_event 17, 34, 3, VAR_TEMP_3, 0, Route111_EventScript_1F0F16
 	coord_event 8, 64, 3, 0, 0, Route111_EventScript_1F0FB0
 	coord_event 9, 65, 3, 0, 0, Route111_EventScript_1F0FB0
 	coord_event 10, 65, 3, 0, 0, Route111_EventScript_1F0FB0
@@ -81,15 +81,15 @@ Route111_MapCoordEvents: @ 8529668
 	coord_event 11, 62, 3, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 13, 62, 3, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 14, 62, 3, 0, 0, Route111_EventScript_1F0FBD
-	coord_event 17, 38, 3, 0, 0, Route111_EventScript_1F0FBD
-	coord_event 16, 39, 3, 0, 0, Route111_EventScript_1F0FBD
-	coord_event 15, 40, 3, 0, 0, Route111_EventScript_1F0FBD
-	coord_event 14, 41, 3, 0, 0, Route111_EventScript_1F0FBD
+	coord_event 19, 34, 3, 0, 0, Route111_EventScript_1F0FBD
+	coord_event 18, 34, 3, 0, 0, Route111_EventScript_1F0FBD
+	coord_event 18, 35, 3, 0, 0, Route111_EventScript_1F0FBD
+	coord_event 16, 34, 3, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 13, 42, 3, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 12, 43, 3, 0, 0, Route111_EventScript_1F0FBD
 	coord_event 11, 44, 3, 0, 0, Route111_EventScript_1F0FBD
 
-Route111_MapBGEvents: @ 8529888
+Route111_MapBGEvents::
 	bg_event 16, 114, 0, BG_EVENT_PLAYER_FACING_ANY, Route111_EventScript_1F115C
 	bg_event 24, 126, 0, BG_EVENT_PLAYER_FACING_ANY, Route111_EventScript_1F1153
 	bg_event 7, 66, 0, BG_EVENT_PLAYER_FACING_ANY, Route111_EventScript_1F1165
@@ -109,6 +109,5 @@ Route111_MapBGEvents: @ 8529888
 	bg_hidden_item_event 35, 66, 0, ITEM_RARE_CANDY, 57
 	bg_event 24, 116, 0, BG_EVENT_PLAYER_FACING_ANY, Route111_EventScript_1F146C
 
-Route111_MapEvents:: @ 8529960
+Route111_MapEvents::
 	map_events Route111_EventObjects, Route111_MapWarps, Route111_MapCoordEvents, Route111_MapBGEvents
-

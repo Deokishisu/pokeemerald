@@ -1,4 +1,4 @@
-Route134: @ 8482A14
+Route134::
 	.4byte Route134_Layout
 	.4byte Route134_MapEvents
 	.4byte Route134_MapScripts
@@ -12,4 +12,3 @@ Route134: @ 8482A14
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

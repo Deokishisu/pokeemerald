@@ -6,8 +6,8 @@ OldaleTown_MapBlockdata::
 
 	.align 2
 OldaleTown_Layout::
-	.4byte 0x14
-	.4byte 0x14
+	.4byte 40
+	.4byte 18
 	.4byte OldaleTown_MapBorder
 	.4byte OldaleTown_MapBlockdata
 	.4byte gTileset_General

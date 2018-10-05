@@ -6,8 +6,8 @@ FallarborTown_MapBlockdata::
 
 	.align 2
 FallarborTown_Layout::
-	.4byte 0x14
-	.4byte 0x14
+	.4byte 30
+	.4byte 54
 	.4byte FallarborTown_MapBorder
 	.4byte FallarborTown_MapBlockdata
 	.4byte gTileset_General

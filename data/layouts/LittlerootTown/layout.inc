@@ -6,8 +6,8 @@ LittlerootTown_MapBlockdata::
 
 	.align 2
 LittlerootTown_Layout::
-	.4byte 0x14
-	.4byte 0x14
+	.4byte 20
+	.4byte 18
 	.4byte LittlerootTown_MapBorder
 	.4byte LittlerootTown_MapBlockdata
 	.4byte gTileset_General

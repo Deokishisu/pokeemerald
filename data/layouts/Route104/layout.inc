@@ -6,8 +6,8 @@ Route104_MapBlockdata::
 
 	.align 2
 Route104_Layout::
-	.4byte 0x28
-	.4byte 0x50
+	.4byte 20
+	.4byte 90
 	.4byte Route104_MapBorder
 	.4byte Route104_MapBlockdata
 	.4byte gTileset_General

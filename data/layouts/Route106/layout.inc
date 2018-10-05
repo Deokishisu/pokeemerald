@@ -6,8 +6,8 @@ Route106_MapBlockdata::
 
 	.align 2
 Route106_Layout::
-	.4byte 0x50
-	.4byte 0x14
+	.4byte 20
+	.4byte 54
 	.4byte Route106_MapBorder
 	.4byte Route106_MapBlockdata
 	.4byte gTileset_General

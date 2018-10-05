@@ -1,4 +1,4 @@
-Route114_FossilManiacsHouse: @ 8483E18
+Route114_FossilManiacsHouse::
 	.4byte Route114_FossilManiacsHouse_Layout
 	.4byte Route114_FossilManiacsHouse_MapEvents
 	.4byte Route114_FossilManiacsHouse_MapScripts
@@ -12,4 +12,3 @@ Route114_FossilManiacsHouse: @ 8483E18
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

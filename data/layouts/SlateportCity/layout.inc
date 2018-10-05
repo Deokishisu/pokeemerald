@@ -6,8 +6,8 @@ SlateportCity_MapBlockdata::
 
 	.align 2
 SlateportCity_Layout::
-	.4byte 0x28
-	.4byte 0x3c
+	.4byte 40
+	.4byte 36
 	.4byte SlateportCity_MapBorder
 	.4byte SlateportCity_MapBlockdata
 	.4byte gTileset_General

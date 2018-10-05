@@ -1,4 +1,4 @@
-SootopolisCity: @ 848257C
+SootopolisCity::
 	.4byte SootopolisCity_Layout
 	.4byte SootopolisCity_MapEvents
 	.4byte SootopolisCity_MapScripts
@@ -12,4 +12,3 @@ SootopolisCity: @ 848257C
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

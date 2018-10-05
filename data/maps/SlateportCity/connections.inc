@@ -1,9 +1,7 @@
-SlateportCity_MapConnectionsList: @ 84866F4
-	connection up, 0, MAP_ROUTE110
-	connection down, 0, MAP_ROUTE109
-	connection right, 0, MAP_ROUTE134
+SlateportCity_MapConnectionsList::
+	connection down, 10, MAP_ROUTE106
+	connection up, 10, MAP_ROUTE107
 
-SlateportCity_MapConnections: @ 8486718
-	.4byte 0x3
+SlateportCity_MapConnections::
+	.4byte 2
 	.4byte SlateportCity_MapConnectionsList
-

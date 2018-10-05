@@ -6,8 +6,8 @@ VerdanturfTown_MapBlockdata::
 
 	.align 2
 VerdanturfTown_Layout::
-	.4byte 0x14
-	.4byte 0x14
+	.4byte 20
+	.4byte 18
 	.4byte VerdanturfTown_MapBorder
 	.4byte VerdanturfTown_MapBlockdata
 	.4byte gTileset_General

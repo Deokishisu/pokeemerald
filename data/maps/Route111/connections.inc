@@ -1,9 +1,7 @@
-Route111_MapConnectionsList: @ 8486970
-	connection down, 0, MAP_MAUVILLE_CITY
-	connection left, 0, MAP_ROUTE113
-	connection left, 20, MAP_ROUTE112
+Route111_MapConnectionsList::
+	connection right, 0, MAP_ROUTE110
+	connection down, -10, MAP_RUSTBORO_CITY
 
-Route111_MapConnections: @ 8486994
-	.4byte 0x3
+Route111_MapConnections::
+	.4byte 2
 	.4byte Route111_MapConnectionsList
-

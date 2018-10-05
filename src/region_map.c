@@ -136,8 +136,8 @@ static const u16 sRegionMap_SpecialPlaceLocations[][2] = {
     {MAPSEC_DESERT_UNDERPASS,          MAPSEC_ROUTE_114},
     {MAPSEC_ALTERING_CAVE_2,           MAPSEC_ROUTE_103},
     {MAPSEC_ARTISAN_CAVE,              MAPSEC_ROUTE_103},
-    {MAPSEC_ABANDONED_SHIP,            MAPSEC_ROUTE_108},
-    {MAPSEC_NONE,                      MAPSEC_NONE}
+    {MAPSEC_ABANDONED_SHIP,            MAPSEC_ROUTE_108}//,
+    //{MAPSEC_DYNAMIC,                      MAPSEC_DYNAMIC}
 };
 
 static const u16 sRegionMap_MarineCaveMapSecIds[] = {
@@ -331,7 +331,7 @@ static const struct SpritePalette gUnknown_085A1F10 = {
 
 static const u16 sUnknown_085A1F18[][2] = {
     {FLAG_LANDMARK_BATTLE_FRONTIER, MAPSEC_BATTLE_FRONTIER},
-    {-1, MAPSEC_NONE}
+    {-1, MAPSEC_DYNAMIC}
 };
 
 static const struct OamData gOamData_085A1F20 = {
@@ -856,7 +856,7 @@ static u16 GetRegionMapSectionIdAt_Internal(u16 x, u16 y)
 {
     if (y < MAPCURSOR_Y_MIN || y > MAPCURSOR_Y_MAX || x < MAPCURSOR_X_MIN || x > MAPCURSOR_X_MAX)
     {
-        return MAPSEC_NONE;
+        return MAPSEC_DYNAMIC;
     }
     y -= MAPCURSOR_Y_MIN;
     x -= MAPCURSOR_X_MIN;
@@ -1094,7 +1094,7 @@ static u8 get_flagnr_blue_points(u16 mapSecId)
 {
     switch (mapSecId)
     {
-        case MAPSEC_NONE:
+        case MAPSEC_DYNAMIC:
             return MAPSECTYPE_NONE;
         case MAPSEC_LITTLEROOT_TOWN:
             return FlagGet(FLAG_VISITED_LITTLEROOT_TOWN) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
@@ -1153,7 +1153,7 @@ static u16 CorrectSpecialMapSecId_Internal(u16 mapSecId)
             return RegionMap_GetTerraCaveMapSecId();
         }
     }
-    for (i = 0; sRegionMap_SpecialPlaceLocations[i][0] != MAPSEC_NONE; i++)
+    for (i = 0; sRegionMap_SpecialPlaceLocations[i][0] != MAPSEC_DYNAMIC; i++)
     {
         if (sRegionMap_SpecialPlaceLocations[i][0] == mapSecId)
         {
@@ -1214,7 +1214,7 @@ static void RegionMap_GetPositionOfCursorWithinMapSection(void)
     u16 y;
     u16 posWithinMapSec;
 
-    if (gRegionMap->mapSecId == MAPSEC_NONE)
+    if (gRegionMap->mapSecId == MAPSEC_DYNAMIC)
     {
         gRegionMap->posWithinMapSec = 0;
         return;
@@ -1490,7 +1490,7 @@ u8 *GetMapName(u8 *dest, u16 regionMapId, u16 padLength)
     {
         str = GetSecretBaseMapName(dest);
     }
-    else if (regionMapId < MAPSEC_NONE)
+    else if (regionMapId < MAPSEC_SPECIAL_EGG)
     {
         str = StringCopy(dest, gRegionMapEntries[regionMapId].name);
     }
@@ -1809,7 +1809,7 @@ static void sub_8124BE4(void)
     u16 mapSecId;
     u8 spriteId;
 
-    for (i = 0; sUnknown_085A1F18[i][1] != MAPSEC_NONE; i++)
+    for (i = 0; sUnknown_085A1F18[i][1] != MAPSEC_SPECIAL_EGG; i++)
     {
         if (FlagGet(sUnknown_085A1F18[i][0]))
         {

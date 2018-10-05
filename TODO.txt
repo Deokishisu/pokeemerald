@@ -3,12 +3,13 @@ TODO: Save info box uses wrong colon for playtime. Are all colons used in GSC th
 TODO: Save info box updates playtime because I am forced to reshow it between Yes/No boxes.
 Save playtime in variable and rewrite function to use it?
 
-TODO: Down arrow in textbox needs to be spawned with a sprite. The Emerald behavior needs to print it offscreen or not at all.
+TODO: Down arrow in textbox needs to blink on and off.
 
 TODO: Right-facing arrow cursor (used in start menu, Yes/No boxes, etc.) turns white in Crystal when A is pressed to select something.
 Need to replicate this behavior.
 
-
 TODO: Update Options menu selections to Crystal equivalents when flags are figured out. Make the Menu Account option actually work for the start menu.
 
 TODO: Black out the Options menu background; and decide if SGB borders are a thing and implement them.
+
+TODO: Add remaining Crystal tiles to outdoor tileset (new Ecruteak houses, Lighthouse roof, Burned Tower).

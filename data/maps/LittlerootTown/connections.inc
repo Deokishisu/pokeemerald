@@ -1,7 +1,7 @@
-LittlerootTown_MapConnectionsList: @ 8486600
-	connection up, 0, MAP_ROUTE101
+LittlerootTown_MapConnectionsList::
+	connection left, 0, MAP_ROUTE101
+	connection right, 0, MAP_ROUTE119
 
-LittlerootTown_MapConnections: @ 848660C
-	.4byte 0x1
+LittlerootTown_MapConnections::
+	.4byte 2
 	.4byte LittlerootTown_MapConnectionsList
-

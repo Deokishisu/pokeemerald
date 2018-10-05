@@ -1,4 +1,4 @@
-TerraCave_Entrance: @ 8484A20
+TerraCave_Entrance::
 	.4byte TerraCave_Entrance_Layout
 	.4byte TerraCave_Entrance_MapEvents
 	.4byte TerraCave_Entrance_MapScripts
@@ -12,4 +12,3 @@ TerraCave_Entrance: @ 8484A20
 	.2byte 0
 	.byte 15
 	.byte MAP_BATTLE_SCENE_NORMAL
-

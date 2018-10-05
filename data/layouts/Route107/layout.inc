@@ -6,8 +6,8 @@ Route107_MapBlockdata::
 
 	.align 2
 Route107_Layout::
-	.4byte 0x3c
-	.4byte 0x14
+	.4byte 20
+	.4byte 36
 	.4byte Route107_MapBorder
 	.4byte Route107_MapBlockdata
 	.4byte gTileset_General

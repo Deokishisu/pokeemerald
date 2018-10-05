@@ -1,4 +1,4 @@
-Route121: @ 84828A8
+Route121::
 	.4byte Route121_Layout
 	.4byte Route121_MapEvents
 	.4byte Route121_MapScripts
@@ -12,4 +12,3 @@ Route121: @ 84828A8
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

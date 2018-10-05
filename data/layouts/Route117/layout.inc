@@ -6,8 +6,8 @@ Route117_MapBlockdata::
 
 	.align 2
 Route117_Layout::
-	.4byte 0x3c
-	.4byte 0x14
+	.4byte 20
+	.4byte 90
 	.4byte Route117_MapBorder
 	.4byte Route117_MapBlockdata
 	.4byte gTileset_General

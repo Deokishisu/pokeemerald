@@ -1,4 +1,4 @@
-MossdeepCity: @ 8482560
+MossdeepCity::
 	.4byte MossdeepCity_Layout
 	.4byte MossdeepCity_MapEvents
 	.4byte MossdeepCity_MapScripts
@@ -12,4 +12,3 @@ MossdeepCity: @ 8482560
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

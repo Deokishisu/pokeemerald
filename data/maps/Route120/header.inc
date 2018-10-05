@@ -1,4 +1,4 @@
-Route120: @ 848288C
+Route120::
 	.4byte Route120_Layout
 	.4byte Route120_MapEvents
 	.4byte Route120_MapScripts
@@ -12,4 +12,3 @@ Route120: @ 848288C
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

@@ -1,4 +1,4 @@
-Route132: @ 84829DC
+Route132::
 	.4byte Route132_Layout
 	.4byte Route132_MapEvents
 	.4byte Route132_MapScripts
@@ -12,4 +12,3 @@ Route132: @ 84829DC
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

@@ -1,4 +1,4 @@
-Route124: @ 84828FC
+Route124::
 	.4byte Route124_Layout
 	.4byte Route124_MapEvents
 	.4byte Route124_MapScripts
@@ -12,4 +12,3 @@ Route124: @ 84828FC
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

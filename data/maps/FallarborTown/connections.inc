@@ -1,8 +1,6 @@
-FallarborTown_MapConnectionsList: @ 8486674
-	connection left, 0, MAP_ROUTE114
+FallarborTown_MapConnectionsList::
 	connection right, 0, MAP_ROUTE113
 
-FallarborTown_MapConnections: @ 848668C
-	.4byte 0x2
+FallarborTown_MapConnections::
+	.4byte 1
 	.4byte FallarborTown_MapConnectionsList
-

@@ -65,7 +65,7 @@
 #define MAPSEC_ABANDONED_SHIP               0x3D
 #define MAPSEC_NEW_MAUVILLE                 0x3E
 #define MAPSEC_METEOR_FALLS                 0x3F
-#define MAPSEC_METEOR_FALLS2                0x40
+#define MAPSEC_METEOR_FALLS2                0x40  //unused duplicate
 #define MAPSEC_MT_PYRE                      0x41
 #define MAPSEC_AQUA_HIDEOUT_OLD             0x42
 #define MAPSEC_SHOAL_CAVE                   0x43
@@ -76,9 +76,9 @@
 #define MAPSEC_CAVE_OF_ORIGIN               0x48
 #define MAPSEC_SOUTHERN_ISLAND              0x49
 #define MAPSEC_FIERY_PATH                   0x4A
-#define MAPSEC_FIERY_PATH2                  0x4B
+#define MAPSEC_LAKE_OF_RAGE                 0x4B  //replaced, was unused MAPSEC_FIERY_PATH2
 #define MAPSEC_JAGGED_PASS                  0x4C
-#define MAPSEC_JAGGED_PASS2                 0x4D
+#define MAPSEC_JAGGED_PASS2                 0x4D  //unused duplicate
 #define MAPSEC_SEALED_CHAMBER               0x4E
 #define MAPSEC_UNDERWATER_SEALED_CHAMBER    0x4F
 #define MAPSEC_SCORCHED_SLAB                0x50
@@ -100,8 +100,8 @@
 #define MAPSEC_CINNABAR_ISLAND              0x60
 #define MAPSEC_INDIGO_PLATEAU               0x61
 #define MAPSEC_SAFFRON_CITY                 0x62
-#define MAPSEC_ROUTE_4_FLYDUP               0x63
-#define MAPSEC_ROUTE_10_FLYDUP              0x64
+#define MAPSEC_RADIO_TOWER                  0x63  //replaced, was MAPSEC_ROUTE_4_FLYDUP
+#define MAPSEC_MT_MORTAR                    0x64  //replaced, was MAPSEC_ROUTE_10_FLYDUP
 #define MAPSEC_ROUTE_1                      0x65
 #define MAPSEC_ROUTE_2                      0x66
 #define MAPSEC_ROUTE_3                      0x67
@@ -156,10 +156,10 @@
 #define MAPSEC_CAPE_BRINK                   0x98
 #define MAPSEC_BOND_BRIDGE                  0x99
 #define MAPSEC_THREE_ISLE_PORT              0x9A
-#define MAPSEC_SEVII_ISLE_6                 0x9B
-#define MAPSEC_SEVII_ISLE_7                 0x9C
-#define MAPSEC_SEVII_ISLE_8                 0x9D
-#define MAPSEC_SEVII_ISLE_9                 0x9E
+#define MAPSEC_LIGHTHOUSE                   0x9B  //replaced, was MAPSEC_SEVII_ISLE_6 
+#define MAPSEC_ICE_PATH                     0x9C  //replaced, was MAPSEC_SEVII_ISLE_7 
+#define MAPSEC_DRAGONS_DEN                  0x9D  //replaced, was MAPSEC_SEVII_ISLE_8 
+#define MAPSEC_DARK_CAVE                    0x9E  //replaced, was MAPSEC_SEVII_ISLE_9 
 #define MAPSEC_RESORT_GORGEOUS              0x9F
 #define MAPSEC_WATER_LABYRINTH              0xA0
 #define MAPSEC_FIVE_ISLE_MEADOW             0xA1
@@ -172,9 +172,9 @@
 #define MAPSEC_CANYON_ENTRANCE              0xA8
 #define MAPSEC_SEVAULT_CANYON               0xA9
 #define MAPSEC_TANOBY_RUINS                 0xAA
-#define MAPSEC_SEVII_ISLE_22                0xAB
-#define MAPSEC_SEVII_ISLE_23                0xAC
-#define MAPSEC_SEVII_ISLE_24                0xAD
+#define MAPSEC_SILVER_CAVE                  0xAB  //replaced, was MAPSEC_SEVII_ISLE_22
+#define MAPSEC_TOHJO_FALLS                  0xAC  //replaced, was MAPSEC_SEVII_ISLE_23
+#define MAPSEC_FAST_SHIP                    0xAD  //replaced, was MAPSEC_SEVII_ISLE_24
 #define MAPSEC_NAVEL_ROCK                   0xAE
 #define MAPSEC_MT_EMBER                     0xAF
 #define MAPSEC_BERRY_FOREST                 0xB0
@@ -214,7 +214,46 @@
 #define MAPSEC_ALTERING_CAVE_2              0xD2
 #define MAPSEC_NAVEL_ROCK2                  0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+#define MAPSEC_NEW_BARK_TOWN                0xD5 //replaced, was MAPSEC_NONE
+#define MAPSEC_CHERRYGROVE_CITY             0xD6 //New entries start here
+#define MAPSEC_VIOLET_CITY                  0xD7
+#define MAPSEC_AZALEA_TOWN                  0xD8
+#define MAPSEC_GOLDENROD_CITY               0xD9
+#define MAPSEC_ECRUTEAK_CITY                0xDA
+#define MAPSEC_OLIVINE_CITY                 0xDB
+#define MAPSEC_CIANWOOD_CITY                0xDC
+#define MAPSEC_MAHOGANY_TOWN                0xDD
+#define MAPSEC_BLACKTHORN_CITY              0xDE
+#define MAPSEC_ROUTE_26                     0xDF
+#define MAPSEC_ROUTE_27                     0xE0
+#define MAPSEC_ROUTE_28                     0xE1
+#define MAPSEC_ROUTE_29                     0xE2
+#define MAPSEC_ROUTE_30                     0xE3
+#define MAPSEC_ROUTE_31                     0xE4
+#define MAPSEC_ROUTE_32                     0xE5
+#define MAPSEC_ROUTE_33                     0xE6
+#define MAPSEC_ROUTE_34                     0xE7
+#define MAPSEC_ROUTE_35                     0xE8
+#define MAPSEC_ROUTE_36                     0xE9
+#define MAPSEC_ROUTE_37                     0xEA
+#define MAPSEC_ROUTE_38                     0xEB
+#define MAPSEC_ROUTE_39                     0xEC
+#define MAPSEC_ROUTE_40                     0xED
+#define MAPSEC_ROUTE_41                     0xEE
+#define MAPSEC_ROUTE_42                     0xEF
+#define MAPSEC_ROUTE_43                     0xF0
+#define MAPSEC_ROUTE_44                     0xF1
+#define MAPSEC_ROUTE_45                     0xF2
+#define MAPSEC_ROUTE_46                     0xF3
+#define MAPSEC_SPROUT_TOWER                 0xF4
+#define MAPSEC_RUINS_OF_ALPH                0xF5
+#define MAPSEC_UNION_CAVE                   0xF6
+#define MAPSEC_SLOWPOKE_WELL                0xF7
+#define MAPSEC_ILEX_FOREST                  0xF8
+#define MAPSEC_NATIONAL_PARK                0xF9
+#define MAPSEC_TIN_TOWER                    0xFA
+#define MAPSEC_BURNED_TOWER                 0xFB
+#define MAPSEC_WHIRL_ISLANDS                0xFC
 
 #define MAPSEC_SPECIAL_EGG                  0xFD
 #define MAPSEC_IN_GAME_TRADE                0xFE

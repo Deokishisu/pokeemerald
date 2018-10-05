@@ -94,8 +94,8 @@ static const u8 sMapName_FuchsiaCity[] = _("FUCHSIA CITY");
 static const u8 sMapName_CinnabarIsland[] = _("CINNABAR ISLAND");
 static const u8 sMapName_IndigoPlateau[] = _("INDIGO PLATEAU");
 static const u8 sMapName_SaffronCity[] = _("SAFFRON CITY");
-static const u8 sMapName_Route4[] = _("ROUTE 4");
-static const u8 sMapName_Route10[] = _("ROUTE 10");
+static const u8 sMapName_RadioTower[] = _("RADIO TOWER");                        //replaced, was duplicate Route 4
+static const u8 sMapName_MtMortar[] = _("MT. MORTAR");                           //replaced, was duplicate Route 10
 static const u8 sMapName_Route1[] = _("ROUTE 1");
 static const u8 sMapName_Route2[] = _("ROUTE 2");
 static const u8 sMapName_Route3[] = _("ROUTE 3");
@@ -150,10 +150,10 @@ static const u8 sMapName_TreasureBeach[] = _("TREASURE BEACH");
 static const u8 sMapName_CapeBrink[] = _("CAPE BRINK");
 static const u8 sMapName_BondBridge[] = _("BOND BRIDGE");
 static const u8 sMapName_ThreeIslePort[] = _("THREE ISLE PORT");
-static const u8 sMapName_SeviiIsle6[] = _("SEVII ISLE 6");
-static const u8 sMapName_SeviiIsle7[] = _("SEVII ISLE 7");
-static const u8 sMapName_SeviiIsle8[] = _("SEVII ISLE 8");
-static const u8 sMapName_SeviiIsle9[] = _("SEVII ISLE 9");
+static const u8 sMapName_Lighthouse[] = _("LIGHTHOUSE");                         //replaced, was Sevii Isle 6
+static const u8 sMapName_IcePath[] = _("ICE PATH");                              //replaced, was Sevii Isle 7
+static const u8 sMapName_DragonsDen[] = _("DRAGON’S DEN");                       //replaced, was Sevii Isle 8
+static const u8 sMapName_DarkCave[] = _("DARK CAVE");                            //replaced, was Sevii Isle 9
 static const u8 sMapName_ResortGorgeous[] = _("RESORT GORGEOUS");
 static const u8 sMapName_WaterLabyrinth[] = _("WATER LABYRINTH");
 static const u8 sMapName_FiveIsleMeadow[] = _("FIVE ISLE MEADOW");
@@ -166,9 +166,9 @@ static const u8 sMapName_TrainerTower[] = _("TRAINER TOWER");
 static const u8 sMapName_CanyonEntrance[] = _("CANYON ENTRANCE");
 static const u8 sMapName_SevaultCanyon[] = _("SEVAULT CANYON");
 static const u8 sMapName_TanobyRuins[] = _("TANOBY RUINS");
-static const u8 sMapName_SeviiIsle22[] = _("SEVII ISLE 22");
-static const u8 sMapName_SeviiIsle23[] = _("SEVII ISLE 23");
-static const u8 sMapName_SeviiIsle24[] = _("SEVII ISLE 24");
+static const u8 sMapName_SilverCave[] = _("SILVER CAVE");                         //replaced, was Sevii Isle 22
+static const u8 sMapName_TohjoFalls[] = _("TOHJO FALLS");                         //replaced, was Sevii Isle 23
+static const u8 sMapName_FastShip[] = _("FAST SHIP");                             //replaced, was Sevii Isle 24
 static const u8 sMapName_NavelRock[] = _("NAVEL ROCK");
 static const u8 sMapName_MtEmber[] = _("MT. EMBER");
 static const u8 sMapName_BerryForest[] = _("BERRY FOREST");
@@ -201,6 +201,47 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
+static const u8 sMapName_NewBarkTown[] = _("NEW BARK TOWN");
+static const u8 sMapName_CherrygroveCity[] = _("CHERRYGROVE CITY");
+static const u8 sMapName_VioletCity[] = _("VIOLET CITY");
+static const u8 sMapName_AzaleaTown[] = _("AZALEA TOWN");
+static const u8 sMapName_GoldenrodCity[] = _("GOLDENROD CITY");
+static const u8 sMapName_EcruteakCity[] = _("ECRUTEAK CITY");
+static const u8 sMapName_OlivineCity[] = _("OLIVINE CITY");
+static const u8 sMapName_CianwoodCity[] = _("CIANWOOD CITY");
+static const u8 sMapName_MahoganyTown[] = _("MAHOGANY TOWN");
+static const u8 sMapName_BlackthornCity[] = _("BLACKTHORN CITY");
+static const u8 sMapName_Route26[] = _("ROUTE 26");
+static const u8 sMapName_Route27[] = _("ROUTE 27");
+static const u8 sMapName_Route28[] = _("ROUTE 28");
+static const u8 sMapName_Route29[] = _("ROUTE 29");
+static const u8 sMapName_Route30[] = _("ROUTE 30");
+static const u8 sMapName_Route31[] = _("ROUTE 31");
+static const u8 sMapName_Route32[] = _("ROUTE 32");
+static const u8 sMapName_Route33[] = _("ROUTE 33");
+static const u8 sMapName_Route34[] = _("ROUTE 34");
+static const u8 sMapName_Route35[] = _("ROUTE 35");
+static const u8 sMapName_Route36[] = _("ROUTE 36");
+static const u8 sMapName_Route37[] = _("ROUTE 37");
+static const u8 sMapName_Route38[] = _("ROUTE 38");
+static const u8 sMapName_Route39[] = _("ROUTE 39");
+static const u8 sMapName_Route40[] = _("ROUTE 40");
+static const u8 sMapName_Route41[] = _("ROUTE 41");
+static const u8 sMapName_Route42[] = _("ROUTE 42");
+static const u8 sMapName_Route43[] = _("ROUTE 43");
+static const u8 sMapName_Route44[] = _("ROUTE 44");
+static const u8 sMapName_Route45[] = _("ROUTE 45");
+static const u8 sMapName_Route46[] = _("ROUTE 46");
+static const u8 sMapName_SproutTower[] = _("SPROUT TOWER");
+static const u8 sMapName_RuinsOfAlph[] = _("RUINS OF ALPH");
+static const u8 sMapName_UnionCave[] = _("UNION CAVE");
+static const u8 sMapName_SlowpokeWell[] = _("SLOWPOKE WELL");
+static const u8 sMapName_IlexForest[] = _("ILEX FOREST");
+static const u8 sMapName_NationalPark[] = _("NATIONAL PARK");
+static const u8 sMapName_TinTower[] = _("TIN TOWER");
+static const u8 sMapName_BurnedTower[] = _("BURNED TOWER");
+static const u8 sMapName_WhirlIslands[] = _("WHIRL ISLANDS");
+static const u8 sMapName_LakeOfRage[] = _("LAKE OF RAGE");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -277,8 +318,8 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     {17, 10, 1, 1, sMapName_MirageIsland},
     {21,  7, 1, 1, sMapName_CaveOfOrigin},
     {12, 14, 1, 1, sMapName_SouthernIsland},
-    { 6,  3, 1, 1, sMapName_FieryPath},
-    { 7,  3, 1, 1, sMapName_FieryPath},
+    { 6,  3, 2, 1, sMapName_FieryPath},
+    { 0,  0, 1, 1, sMapName_LakeOfRage}, //replaced
     { 6,  3, 1, 1, sMapName_JaggedPass},
     { 7,  2, 1, 1, sMapName_JaggedPass},
     {11, 10, 1, 1, sMapName_SealedChamber},
@@ -302,8 +343,8 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     { 0,  0, 1, 1, sMapName_CinnabarIsland},
     { 0,  0, 1, 1, sMapName_IndigoPlateau},
     { 0,  0, 1, 1, sMapName_SaffronCity},
-    { 0,  0, 1, 1, sMapName_Route4},
-    { 0,  0, 1, 1, sMapName_Route10},
+    { 0,  0, 1, 1, sMapName_RadioTower},  //replaced
+    { 0,  0, 1, 1, sMapName_MtMortar},    //replaced
     { 0,  0, 1, 1, sMapName_Route1},
     { 0,  0, 1, 1, sMapName_Route2},
     { 0,  0, 1, 1, sMapName_Route3},
@@ -358,10 +399,10 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     { 0,  0, 1, 1, sMapName_CapeBrink},
     { 0,  0, 1, 1, sMapName_BondBridge},
     { 0,  0, 1, 1, sMapName_ThreeIslePort},
-    { 0,  0, 1, 1, sMapName_SeviiIsle6},
-    { 0,  0, 1, 1, sMapName_SeviiIsle7},
-    { 0,  0, 1, 1, sMapName_SeviiIsle8},
-    { 0,  0, 1, 1, sMapName_SeviiIsle9},
+    { 0,  0, 1, 1, sMapName_Lighthouse},  //replaced
+    { 0,  0, 1, 1, sMapName_IcePath},     //replaced
+    { 0,  0, 1, 1, sMapName_DragonsDen},  //replaced
+    { 0,  0, 1, 1, sMapName_DarkCave},    //replaced
     { 0,  0, 1, 1, sMapName_ResortGorgeous},
     { 0,  0, 1, 1, sMapName_WaterLabyrinth},
     { 0,  0, 1, 1, sMapName_FiveIsleMeadow},
@@ -374,9 +415,9 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     { 0,  0, 1, 1, sMapName_CanyonEntrance},
     { 0,  0, 1, 1, sMapName_SevaultCanyon},
     { 0,  0, 1, 1, sMapName_TanobyRuins},
-    { 0,  0, 1, 1, sMapName_SeviiIsle22},
-    { 0,  0, 1, 1, sMapName_SeviiIsle23},
-    { 0,  0, 1, 1, sMapName_SeviiIsle24},
+    { 0,  0, 1, 1, sMapName_SilverCave},  //replaced
+    { 0,  0, 1, 1, sMapName_TohjoFalls},  //replaced
+    { 0,  0, 1, 1, sMapName_FastShip},    //replaced
     { 0,  0, 1, 1, sMapName_NavelRock},
     { 0,  0, 1, 1, sMapName_MtEmber},
     { 0,  0, 1, 1, sMapName_BerryForest},
@@ -415,7 +456,48 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     { 2,  0, 1, 1, sMapName_DesertUnderpass},
     { 6,  8, 1, 1, sMapName_AlteringCave},
     { 0,  0, 1, 1, sMapName_NavelRock},
-    { 8,  4, 1, 1, sMapName_TrainerHill}
+    { 8,  4, 1, 1, sMapName_TrainerHill},
+    { 0,  0, 1, 1, sMapName_NewBarkTown},
+    { 0,  0, 1, 1, sMapName_CherrygroveCity},
+	{ 0,  0, 1, 1, sMapName_VioletCity},
+	{ 0,  0, 1, 1, sMapName_AzaleaTown},
+	{ 0,  0, 1, 1, sMapName_GoldenrodCity},
+	{ 0,  0, 1, 1, sMapName_EcruteakCity},
+	{ 0,  0, 1, 1, sMapName_OlivineCity},
+	{ 0,  0, 1, 1, sMapName_CianwoodCity},
+	{ 0,  0, 1, 1, sMapName_MahoganyTown},
+	{ 0,  0, 1, 1, sMapName_BlackthornCity},
+	{ 0,  0, 1, 1, sMapName_Route26},
+	{ 0,  0, 1, 1, sMapName_Route27},
+	{ 0,  0, 1, 1, sMapName_Route28},
+	{ 0,  0, 1, 1, sMapName_Route29},
+	{ 0,  0, 1, 1, sMapName_Route30},
+	{ 0,  0, 1, 1, sMapName_Route31},
+	{ 0,  0, 1, 1, sMapName_Route32},
+	{ 0,  0, 1, 1, sMapName_Route33},
+	{ 0,  0, 1, 1, sMapName_Route34},
+	{ 0,  0, 1, 1, sMapName_Route35},
+	{ 0,  0, 1, 1, sMapName_Route36},
+	{ 0,  0, 1, 1, sMapName_Route37},
+	{ 0,  0, 1, 1, sMapName_Route38},
+	{ 0,  0, 1, 1, sMapName_Route39},
+	{ 0,  0, 1, 1, sMapName_Route40},
+	{ 0,  0, 1, 1, sMapName_Route41},
+	{ 0,  0, 1, 1, sMapName_Route42},
+	{ 0,  0, 1, 1, sMapName_Route43},
+	{ 0,  0, 1, 1, sMapName_Route44},
+	{ 0,  0, 1, 1, sMapName_Route45},
+	{ 0,  0, 1, 1, sMapName_Route46},
+	{ 0,  0, 1, 1, sMapName_SproutTower},
+	{ 0,  0, 1, 1, sMapName_RuinsOfAlph},
+	{ 0,  0, 1, 1, sMapName_UnionCave},
+	{ 0,  0, 1, 1, sMapName_SlowpokeWell},
+	{ 0,  0, 1, 1, sMapName_IlexForest},
+	{ 0,  0, 1, 1, sMapName_NationalPark},
+	{ 0,  0, 1, 1, sMapName_TinTower},
+	{ 0,  0, 1, 1, sMapName_BurnedTower},
+	{ 0,  0, 1, 1, sMapName_WhirlIslands},
+	{ 0,  0, 1, 1, sMapName_LakeOfRage}
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H
