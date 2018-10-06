@@ -5,7 +5,7 @@ Route122::
 	.4byte Route122_MapConnections
 	.2byte MUS_DOORO_X4
 	.2byte 38
-	.byte MAPSEC_ROUTE_122
+	.byte MAPSEC_ROUTE_28
 	.byte 0
 	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_ROUTE

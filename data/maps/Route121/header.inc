@@ -5,7 +5,7 @@ Route121::
 	.4byte Route121_MapConnections
 	.2byte MUS_DOORO_X3
 	.2byte 37
-	.byte MAPSEC_ROUTE_121
+	.byte MAPSEC_ROUTE_23
 	.byte 0
 	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_ROUTE

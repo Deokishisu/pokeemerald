@@ -5,7 +5,7 @@ Route123::
 	.4byte Route123_MapConnections
 	.2byte MUS_DOORO_X4
 	.2byte 39
-	.byte MAPSEC_ROUTE_123
+	.byte MAPSEC_SILVER_CAVE
 	.byte 0
 	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_ROUTE

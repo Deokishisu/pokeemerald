@@ -1,8 +1,7 @@
 Route121_MapConnectionsList::
-	connection down, 20, MAP_ROUTE122
-	connection left, -80, MAP_ROUTE120
-	connection right, -10, MAP_LILYCOVE_CITY
+	connection down, 0, MAP_ROUTE120
+	connection left, 1, MAP_ROUTE122
 
 Route121_MapConnections::
-	.4byte 3
+	.4byte 2
 	.4byte Route121_MapConnectionsList

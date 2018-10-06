@@ -5,7 +5,7 @@ Route124::
 	.4byte Route124_MapConnections
 	.2byte MUS_DOORO_X3
 	.2byte 40
-	.byte MAPSEC_ROUTE_124
+	.byte MAPSEC_RUINS_OF_ALPH
 	.byte 0
 	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_6

@@ -6,8 +6,8 @@ Route121_MapBlockdata::
 
 	.align 2
 Route121_Layout::
-	.4byte 0x50
-	.4byte 0x14
+	.4byte 20
+	.4byte 18
 	.4byte Route121_MapBorder
 	.4byte Route121_MapBlockdata
 	.4byte gTileset_General

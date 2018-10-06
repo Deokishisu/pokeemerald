@@ -6,8 +6,8 @@ Route120_MapBlockdata::
 
 	.align 2
 Route120_Layout::
-	.4byte 0x28
-	.4byte 0x64
+	.4byte 20
+	.4byte 108
 	.4byte Route120_MapBorder
 	.4byte Route120_MapBlockdata
 	.4byte gTileset_General

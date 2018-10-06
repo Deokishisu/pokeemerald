@@ -1,5 +1,5 @@
 Route123_MapConnectionsList::
-	connection up, 100, MAP_ROUTE122
+	connection right, 18, MAP_ROUTE122
 
 Route123_MapConnections::
 	.4byte 1

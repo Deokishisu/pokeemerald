@@ -1,7 +1,8 @@
 Route122_MapConnectionsList::
-	connection up, -20, MAP_ROUTE121
-	connection down, -100, MAP_ROUTE123
+	connection right, 17, MAP_ROUTE120
+	connection left, -18, MAP_ROUTE123
+	connection right, -1, MAP_ROUTE121
 
 Route122_MapConnections::
-	.4byte 2
+	.4byte 3
 	.4byte Route122_MapConnectionsList
