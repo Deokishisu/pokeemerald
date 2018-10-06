@@ -2,7 +2,7 @@ LilycoveCity::
 	.4byte LilycoveCity_Layout
 	.4byte LilycoveCity_MapEvents
 	.4byte LilycoveCity_MapScripts
-	.4byte LilycoveCity_MapConnections
+	.4byte 0x0
 	.2byte MUS_MINAMO
 	.2byte 6
 	.byte MAPSEC_LILYCOVE_CITY

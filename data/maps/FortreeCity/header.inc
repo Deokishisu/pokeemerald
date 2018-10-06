@@ -3,7 +3,7 @@ FortreeCity::
 	.4byte FortreeCity_MapEvents
 	.4byte FortreeCity_MapScripts
 	.4byte FortreeCity_MapConnections
-	.2byte MUS_MACHI_S3
+	.2byte MUS_RG_NANA45
 	.2byte 5
 	.byte MAPSEC_BLACKTHORN_CITY
 	.byte 0

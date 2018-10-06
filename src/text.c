@@ -110,6 +110,12 @@ static const union AnimCmd *const sSpriteAnimTable_DownArrow[] =
     sSpriteAnim_DownArrow1,
 };
 
+void SpriteCb_Blink(struct Sprite *sprite)
+{
+    if (++sprite->data[0] % 15 == 0)
+        sprite->invisible ^= 1;
+}
+
 static const struct SpriteTemplate sSpriteTemplate_DownArrow =
 {
     .tileTag = DOWN_ARROW_TAG,
@@ -118,7 +124,7 @@ static const struct SpriteTemplate sSpriteTemplate_DownArrow =
     .anims = sSpriteAnimTable_DownArrow,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCallbackDummy
+    .callback = SpriteCb_Blink
 };
 
 const u8 gDarkDownArrowTiles[] = INCBIN_U8("data/graphics/fonts/down_arrow_RS.4bpp");

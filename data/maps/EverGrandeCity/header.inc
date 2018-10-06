@@ -1,4 +1,4 @@
-EverGrandeCity: @ 8482598
+EverGrandeCity::
 	.4byte EverGrandeCity_Layout
 	.4byte EverGrandeCity_MapEvents
 	.4byte EverGrandeCity_MapScripts
@@ -12,4 +12,3 @@ EverGrandeCity: @ 8482598
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

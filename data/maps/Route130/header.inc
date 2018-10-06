@@ -1,4 +1,4 @@
-Route130: @ 84829A4
+Route130::
 	.4byte Route130_Layout
 	.4byte Route130_MapEvents
 	.4byte Route130_MapScripts
@@ -12,4 +12,3 @@ Route130: @ 84829A4
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

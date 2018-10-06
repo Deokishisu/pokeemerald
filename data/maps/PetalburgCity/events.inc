@@ -13,9 +13,9 @@ PetalburgCity_MapWarps::
 	warp_def 10, 19, 0, 0, MAP_PETALBURG_CITY_HOUSE1
 	warp_def 7, 5, 0, 0, MAP_PETALBURG_CITY_WALLYS_HOUSE
 	warp_def 15, 8, 0, 0, MAP_PETALBURG_CITY_GYM
-	warp_def 20, 16, 0, 0, MAP_PETALBURG_CITY_POKEMON_CENTER_1F
+	warp_def 31, 25, 0, 0, MAP_PETALBURG_CITY_POKEMON_CENTER_1F
 	warp_def 20, 24, 0, 0, MAP_PETALBURG_CITY_HOUSE2
-	warp_def 25, 12, 0, 0, MAP_PETALBURG_CITY_MART
+	warp_def 9, 17, 0, 0, MAP_PETALBURG_CITY_MART
 
 PetalburgCity_MapCoordEvents::
 	coord_event 8, 10, 3, VAR_0x4057, 0, PetalburgCity_EventScript_1DC49A
@@ -29,11 +29,11 @@ PetalburgCity_MapCoordEvents::
 
 PetalburgCity_MapBGEvents::
 	bg_event 17, 10, 0, BG_EVENT_PLAYER_FACING_ANY, PetalburgCity_EventScript_1DC476
-	bg_event 26, 12, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E6A
-	bg_event 21, 16, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E73
+	bg_event 10, 17, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E6A
+	bg_event 32, 25, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E73
 	bg_event 17, 16, 0, BG_EVENT_PLAYER_FACING_ANY, PetalburgCity_EventScript_1DC47F
-	bg_event 22, 16, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E73
-	bg_event 27, 12, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E6A
+	bg_event 33, 25, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E73
+	bg_event 11, 17, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E6A
 	bg_event 8, 9, 0, BG_EVENT_PLAYER_FACING_ANY, PetalburgCity_EventScript_1DC491
 	bg_hidden_item_event 11, 29, 3, ITEM_RARE_CANDY, 95
 
