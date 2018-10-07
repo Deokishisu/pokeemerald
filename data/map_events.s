@@ -21,7 +21,7 @@
 	.include "data/maps/MossdeepCity/events.inc"
 	.include "data/maps/SootopolisCity/events.inc"
 	.include "data/maps/EverGrandeCity/events.inc"
-	.include "data/maps/LittlerootTown/events.inc"
+	.include "data/maps/NewBarkTown/events.inc"
 	.include "data/maps/OldaleTown/events.inc"
 	.include "data/maps/DewfordTown/events.inc"
 	.include "data/maps/LavaridgeTown/events.inc"

@@ -1,4 +1,4 @@
-LavaridgeTown_PokemonCenter_1F: @ 8482D40
+LavaridgeTown_PokemonCenter_1F::
 	.4byte LavaridgeTown_PokemonCenter_1F_Layout
 	.4byte LavaridgeTown_PokemonCenter_1F_MapEvents
 	.4byte LavaridgeTown_PokemonCenter_1F_MapScripts
@@ -12,4 +12,3 @@ LavaridgeTown_PokemonCenter_1F: @ 8482D40
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

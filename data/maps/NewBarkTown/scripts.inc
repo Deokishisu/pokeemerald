@@ -1,4 +1,4 @@
-LittlerootTown_MapScripts:: @ 81E7DCB
+NewBarkTown_MapScripts:: @ 81E7DCB
 	map_script 3, LittlerootTown_MapScript1_1E7DDB
 	map_script 2, LittlerootTown_MapScript2_1E7EC1
 	map_script 4, LittlerootTown_MapScript2_1E7FE2
@@ -649,7 +649,7 @@ LittlerootTown_EventScript_1E84A1:: @ 81E84A1
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -661,7 +661,7 @@ LittlerootTown_EventScript_1E84C7:: @ 81E84C7
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -673,7 +673,7 @@ LittlerootTown_EventScript_1E84ED:: @ 81E84ED
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -685,7 +685,7 @@ LittlerootTown_EventScript_1E8513:: @ 81E8513
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -697,7 +697,7 @@ LittlerootTown_EventScript_1E8539:: @ 81E8539
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -709,7 +709,7 @@ LittlerootTown_EventScript_1E855F:: @ 81E855F
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -721,7 +721,7 @@ LittlerootTown_EventScript_1E8585:: @ 81E8585
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -733,7 +733,7 @@ LittlerootTown_EventScript_1E85AB:: @ 81E85AB
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	return
@@ -903,7 +903,7 @@ LittlerootTown_EventScript_1E863D:: @ 81E863D
 	waitdooranim
 	applymovement 4, LittlerootTown_Movement_1E863B
 	waitmovement 0
-	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	hideobjectat 4, MAP_NEW_BARK_TOWN
 	closedoor VAR_0x8009, VAR_0x800A
 	waitdooranim
 	goto LittlerootTown_EventScript_1E8686

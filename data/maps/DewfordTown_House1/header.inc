@@ -1,4 +1,4 @@
-DewfordTown_House1: @ 8482C0C
+DewfordTown_House1::
 	.4byte House3_Layout
 	.4byte DewfordTown_House1_MapEvents
 	.4byte DewfordTown_House1_MapScripts
@@ -12,4 +12,3 @@ DewfordTown_House1: @ 8482C0C
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

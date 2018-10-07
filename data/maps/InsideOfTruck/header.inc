@@ -1,4 +1,4 @@
-InsideOfTruck: @ 8484EF0
+InsideOfTruck::
 	.4byte InsideOfTruck_Layout
 	.4byte InsideOfTruck_MapEvents
 	.4byte InsideOfTruck_MapScripts
@@ -12,4 +12,3 @@ InsideOfTruck: @ 8484EF0
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

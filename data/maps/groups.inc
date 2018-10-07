@@ -1,5 +1,7 @@
 	.align 2
 gMapGroup0::
+	.4byte NewBarkTown
+	.4byte OldaleTown
 	.4byte PetalburgCity
 	.4byte SlateportCity
 	.4byte MauvilleCity
@@ -9,8 +11,6 @@ gMapGroup0::
 	.4byte MossdeepCity
 	.4byte SootopolisCity
 	.4byte EverGrandeCity
-	.4byte LittlerootTown
-	.4byte OldaleTown
 	.4byte DewfordTown
 	.4byte LavaridgeTown
 	.4byte FallarborTown

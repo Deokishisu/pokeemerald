@@ -1,6 +1,6 @@
 Route101_MapConnectionsList::
 	connection left, 0, MAP_OLDALE_TOWN
-	connection right, 0, MAP_LITTLEROOT_TOWN
+	connection right, 0, MAP_NEW_BARK_TOWN
 	connection up, 20, MAP_ROUTE118
 
 Route101_MapConnections::

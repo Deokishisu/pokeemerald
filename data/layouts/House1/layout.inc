@@ -6,8 +6,8 @@ House1_MapBlockdata::
 
 	.align 2
 House1_Layout::
-	.4byte 0xa
-	.4byte 0x9
+	.4byte 8
+	.4byte 8
 	.4byte House1_MapBorder
 	.4byte House1_MapBlockdata
 	.4byte gTileset_Building

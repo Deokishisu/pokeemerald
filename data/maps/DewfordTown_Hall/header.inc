@@ -1,4 +1,4 @@
-DewfordTown_Hall: @ 8482C7C
+DewfordTown_Hall::
 	.4byte DewfordTown_Hall_Layout
 	.4byte DewfordTown_Hall_MapEvents
 	.4byte DewfordTown_Hall_MapScripts
@@ -12,4 +12,3 @@ DewfordTown_Hall: @ 8482C7C
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

@@ -6,10 +6,10 @@ LittlerootTown_MaysHouse_1F_MapBlockdata::
 
 	.align 2
 LittlerootTown_MaysHouse_1F_Layout::
-	.4byte 0xb
-	.4byte 0x9
+	.4byte 8
+	.4byte 8
 	.4byte LittlerootTown_MaysHouse_1F_MapBorder
 	.4byte LittlerootTown_MaysHouse_1F_MapBlockdata
 	.4byte gTileset_Building
-	.4byte gTileset_BrendansMaysHouse
+	.4byte gTileset_GenericBuilding
 

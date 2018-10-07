@@ -7,7 +7,7 @@
 	.include "data/layouts/MossdeepCity/layout.inc"
 	.include "data/layouts/SootopolisCity/layout.inc"
 	.include "data/layouts/EverGrandeCity/layout.inc"
-	.include "data/layouts/LittlerootTown/layout.inc"
+	.include "data/layouts/NewBarkTown/layout.inc"
 	.include "data/layouts/OldaleTown/layout.inc"
 	.include "data/layouts/DewfordTown/layout.inc"
 	.include "data/layouts/LavaridgeTown/layout.inc"

@@ -6,10 +6,10 @@ LittlerootTown_ProfessorBirchsLab_MapBlockdata::
 
 	.align 2
 LittlerootTown_ProfessorBirchsLab_Layout::
-	.4byte 0xd
-	.4byte 0xd
+	.4byte 10
+	.4byte 12
 	.4byte LittlerootTown_ProfessorBirchsLab_MapBorder
 	.4byte LittlerootTown_ProfessorBirchsLab_MapBlockdata
 	.4byte gTileset_Building
-	.4byte gTileset_Lab
+	.4byte gTileset_GenericBuilding
 

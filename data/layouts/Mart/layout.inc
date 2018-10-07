@@ -6,10 +6,10 @@ Mart_MapBlockdata::
 
 	.align 2
 Mart_Layout::
-	.4byte 0xb
-	.4byte 0x8
+	.4byte 12
+	.4byte 8
 	.4byte Mart_MapBorder
 	.4byte Mart_MapBlockdata
 	.4byte gTileset_Building
-	.4byte gTileset_Shop
+	.4byte gTileset_GenericBuilding
 

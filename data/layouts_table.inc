@@ -9,7 +9,7 @@ gMapLayouts::
 	.4byte MossdeepCity_Layout
 	.4byte SootopolisCity_Layout
 	.4byte EverGrandeCity_Layout
-	.4byte LittlerootTown_Layout
+	.4byte NewBarkTown_Layout
 	.4byte OldaleTown_Layout
 	.4byte DewfordTown_Layout
 	.4byte LavaridgeTown_Layout
