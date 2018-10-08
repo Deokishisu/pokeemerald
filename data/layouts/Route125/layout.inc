@@ -11,5 +11,5 @@ Route125_Layout::
 	.4byte Route125_MapBorder
 	.4byte Route125_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Mossdeep
+	.4byte gTileset_Petalburg
 

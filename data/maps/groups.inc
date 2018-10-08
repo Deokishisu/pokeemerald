@@ -1,7 +1,7 @@
 	.align 2
 gMapGroup0::
 	.4byte NewBarkTown
-	.4byte OldaleTown
+	.4byte CherrygroveCity
 	.4byte PetalburgCity
 	.4byte SlateportCity
 	.4byte MauvilleCity
@@ -68,11 +68,12 @@ gMapGroup1::
 
 	.align 2
 gMapGroup2::
-	.4byte OldaleTown_House1
-	.4byte OldaleTown_House2
-	.4byte OldaleTown_PokemonCenter_1F
-	.4byte OldaleTown_PokemonCenter_2F
-	.4byte OldaleTown_Mart
+	.4byte CherrygroveCity_House1
+	.4byte CherrygroveCity_House2
+	.4byte CherrygroveCity_Guide_Gents_House
+	.4byte CherrygroveCity_PokemonCenter_1F
+	.4byte CherrygroveCity_PokemonCenter_2F
+	.4byte CherrygroveCity_Mart
 
 	.align 2
 gMapGroup3::

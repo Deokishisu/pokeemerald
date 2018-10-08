@@ -1,10 +1,10 @@
-OldaleTown_PokemonCenter_1F_MapScripts:: @ 81FC006
+CherrygroveCity_PokemonCenter_1F_MapScripts::
 	map_script 3, OldaleTown_PokemonCenter_1F_MapScript1_1FC011
 	map_script 5, OldaleTown_PokemonCenter_1F_MapScript1_277C30
 	.byte 0
 
 OldaleTown_PokemonCenter_1F_MapScript1_1FC011: @ 81FC011
-	setrespawn HEAL_LOCATION_OLDALE_TOWN
+	setrespawn HEAL_LOCATION_CHERRYGROVE_CITY
 	call OldaleTown_PokemonCenter_1F_EventScript_2718DE
 	end
 

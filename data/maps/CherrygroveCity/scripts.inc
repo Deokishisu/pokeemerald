@@ -1,4 +1,4 @@
-OldaleTown_MapScripts:: @ 81E8EA2
+CherrygroveCity_MapScripts:: @ 81E8EA2
 	map_script 3, OldaleTown_MapScript1_1E8EA8
 	.byte 0
 

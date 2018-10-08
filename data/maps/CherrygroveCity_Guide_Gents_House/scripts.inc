@@ -1,4 +1,4 @@
-OldaleTown_House2_MapScripts:: @ 81FBF5A
+CherrygroveCity_Guide_Gents_House_MapScripts::
 	.byte 0
 
 OldaleTown_House2_EventScript_1FBF5B:: @ 81FBF5B

@@ -1,7 +1,7 @@
-OldaleTown_Mart::
+CherrygroveCity_Mart::
 	.4byte Mart_Layout
-	.4byte OldaleTown_Mart_MapEvents
-	.4byte OldaleTown_Mart_MapScripts
+	.4byte CherrygroveCity_Mart_MapEvents
+	.4byte CherrygroveCity_Mart_MapScripts
 	.4byte 0x0
 	.2byte MUS_FRIENDLY
 	.2byte 63

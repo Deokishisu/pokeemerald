@@ -11,5 +11,5 @@ MauvilleCity_Layout::
 	.4byte MauvilleCity_MapBorder
 	.4byte MauvilleCity_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Mauville
+	.4byte gTileset_Petalburg
 

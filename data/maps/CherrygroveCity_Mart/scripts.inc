@@ -1,4 +1,4 @@
-OldaleTown_Mart_MapScripts:: @ 81FC23F
+CherrygroveCity_Mart_MapScripts::
 	.byte 0
 
 OldaleTown_Mart_EventScript_1FC240:: @ 81FC240

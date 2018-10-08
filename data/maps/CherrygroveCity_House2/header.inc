@@ -1,7 +1,7 @@
-OldaleTown_House1::
+CherrygroveCity_House2::
 	.4byte House1_Layout
-	.4byte OldaleTown_House1_MapEvents
-	.4byte OldaleTown_House1_MapScripts
+	.4byte CherrygroveCity_House2_MapEvents
+	.4byte CherrygroveCity_House2_MapScripts
 	.4byte 0x0
 	.2byte MUS_MACHI_S4
 	.2byte 59

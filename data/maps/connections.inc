@@ -1,5 +1,5 @@
 	.include "data/maps/NewBarkTown/connections.inc"
-	.include "data/maps/OldaleTown/connections.inc"
+	.include "data/maps/CherrygroveCity/connections.inc"
 	.include "data/maps/DewfordTown/connections.inc"
 	.include "data/maps/FallarborTown/connections.inc"
 	.include "data/maps/VerdanturfTown/connections.inc"
