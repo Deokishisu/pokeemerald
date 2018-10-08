@@ -531,4 +531,7 @@
 	.include "data/maps/Route119_WeatherInstitute_2F/events.inc"
 	.include "data/maps/Route119_House/events.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/events.inc"
+	.include "data/maps/Route29_Gate/events.inc"
+	.include "data/maps/Route30_Berry_House/events.inc"
+	.include "data/maps/Route30_Mr_Pokemons_House/events.inc"
 

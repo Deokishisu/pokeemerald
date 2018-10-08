@@ -6,6 +6,9 @@ Route101_EventObjects::
 	object_event 5, EVENT_OBJ_GFX_PROF_BIRCH, 0, 5, 11, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route101_EventScript_272141, 897
 	object_event 6, EVENT_OBJ_GFX_BOY_2, 0, 2, 13, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 1, 0, 0, Route101_EventScript_1EBE04, 991
 
+Route101_MapWarps::
+	warp_def 27, 1, 3, 0, MAP_ROUTE29_GATE
+
 Route101_MapCoordEvents::
 	coord_event 10, 19, 3, VAR_0x4060, 1, Route101_EventScript_1EBCDE
 	coord_event 11, 19, 3, VAR_0x4060, 1, Route101_EventScript_1EBCDE
@@ -21,4 +24,4 @@ Route101_MapBGEvents::
 	bg_event 5, 9, 0, BG_EVENT_PLAYER_FACING_ANY, Route101_EventScript_1EBE0D
 
 Route101_MapEvents::
-	map_events Route101_EventObjects, 0x0, Route101_MapCoordEvents, Route101_MapBGEvents
+	map_events Route101_EventObjects, Route101_MapWarps, Route101_MapCoordEvents, Route101_MapBGEvents

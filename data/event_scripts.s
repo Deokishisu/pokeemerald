@@ -431,6 +431,9 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/SecretBase_YellowCave2/scripts.inc"
 	.include "data/maps/SecretBase_YellowCave3/scripts.inc"
 	.include "data/maps/SecretBase_YellowCave4/scripts.inc"
+	.include "data/maps/Route29_Gate/scripts.inc"
+	.include "data/maps/Route30_Berry_House/scripts.inc"
+	.include "data/maps/Route30_Mr_Pokemons_House/scripts.inc"
 
 gUnknown_0823B4BB:: @ 823B4BB
 	lockall

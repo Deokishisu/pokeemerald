@@ -9,9 +9,13 @@ Route102_EventObjects::
 	object_event 8, EVENT_OBJ_GFX_BERRY_TREE, 0, 25, 2, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 1, BerryTreeScript, 0
 	object_event 9, EVENT_OBJ_GFX_YOUNGSTER, 0, 19, 4, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 1, 3, Route102_EventScript_1EC1E1, 0
 
+Route102_MapWarps::
+	warp_def 7, 39, 3, 0, MAP_ROUTE30_BERRY_HOUSE
+	warp_def 17, 5, 3, 0, MAP_ROUTE30_MR_POKEMONS_HOUSE
+
 Route102_MapBGEvents::
 	bg_event 17, 2, 0, BG_EVENT_PLAYER_FACING_ANY, Route102_EventScript_1EC0F3
 	bg_event 40, 9, 0, BG_EVENT_PLAYER_FACING_ANY, Route102_EventScript_1EC0EA
 
 Route102_MapEvents::
-	map_events Route102_EventObjects, 0x0, 0x0, Route102_MapBGEvents
+	map_events Route102_EventObjects, Route102_MapWarps, 0x0, Route102_MapBGEvents

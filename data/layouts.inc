@@ -439,3 +439,5 @@
 	.include "data/layouts/SootopolisCity_MysteryEventsHouse_1F/layout.inc"
 	.include "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/layout.inc"
 	.include "data/layouts/UnknownMap_08481DBC/layout.inc"
+	.include "data/layouts/North_South_Gate/layout.inc"
+	.include "data/layouts/Route30_Mr_Pokemons_House/layout.inc"

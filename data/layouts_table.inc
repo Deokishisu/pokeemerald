@@ -441,3 +441,5 @@ gMapLayouts::
 	.4byte SootopolisCity_MysteryEventsHouse_1F_Layout
 	.4byte SootopolisCity_MysteryEventsHouse_B1F_Layout
 	.4byte UnknownMap_08481DBC_Layout
+	.4byte North_South_Gate_Layout
+	.4byte Route30_Mr_Pokemons_House_Layout

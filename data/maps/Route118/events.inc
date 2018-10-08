@@ -22,8 +22,8 @@ Route118_EventObjects::
 	object_event 21, EVENT_OBJ_GFX_YOUNGSTER, 0, 7, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 1, 4, Route118_EventScript_1F40A7, 0
 
 Route118_MapWarps::
-	warp_def 42, 6, 0, 0, MAP_TERRA_CAVE_ENTRANCE
-	warp_def 9, 6, 0, 0, MAP_TERRA_CAVE_ENTRANCE
+	warp_def 7, 33, 3, 1, MAP_ROUTE29_GATE
+	warp_def 8, 33, 3, 3, MAP_ROUTE29_GATE
 
 Route118_MapCoordEvents::
 	coord_event 43, 11, 3, VAR_0x4071, 0, Route118_EventScript_1F3E8E
