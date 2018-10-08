@@ -5,7 +5,7 @@ CherrygroveCity_PokemonCenter_2F_EventObjects::
 	object_event 4, EVENT_OBJ_GFX_MYSTERY_GIFT_MAN, 0, 0, 1, 0, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, OldaleTown_PokemonCenter_2F_EventScript_276B03, 702
 
 CherrygroveCity_PokemonCenter_2F_MapWarps::
-	warp_def 0, 7, 4, 2, MAP_CHERRYGROVE_CITY_POKEMON_CENTER_1F
+	warp_def 0, 7, 3, 2, MAP_CHERRYGROVE_CITY_POKEMON_CENTER_1F
 	warp_def 5, 0, 3, 0, MAP_UNION_ROOM
 	warp_def 9, 0, 3, 0, MAP_TRADE_CENTER
 

@@ -1,4 +1,4 @@
-MossdeepCity_PokemonCenter_2F: @ 848392C
+MossdeepCity_PokemonCenter_2F::
 	.4byte PokemonCenter_2F_Layout
 	.4byte MossdeepCity_PokemonCenter_2F_MapEvents
 	.4byte MossdeepCity_PokemonCenter_2F_MapScripts
@@ -12,4 +12,3 @@ MossdeepCity_PokemonCenter_2F: @ 848392C
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

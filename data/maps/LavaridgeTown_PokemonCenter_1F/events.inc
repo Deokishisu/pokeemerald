@@ -7,7 +7,7 @@ LavaridgeTown_PokemonCenter_1F_EventObjects::
 LavaridgeTown_PokemonCenter_1F_MapWarps::
 	warp_def 7, 8, 3, 3, MAP_LAVARIDGE_TOWN
 	warp_def 6, 8, 3, 3, MAP_LAVARIDGE_TOWN
-	warp_def 1, 6, 4, 0, MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F
+	warp_def 1, 6, 3, 0, MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F
 	warp_def 2, 1, 0, 5, MAP_LAVARIDGE_TOWN
 
 LavaridgeTown_PokemonCenter_1F_MapEvents::

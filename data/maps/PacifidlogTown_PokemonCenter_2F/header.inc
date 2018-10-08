@@ -1,4 +1,4 @@
-PacifidlogTown_PokemonCenter_2F: @ 8482F70
+PacifidlogTown_PokemonCenter_2F::
 	.4byte PokemonCenter_2F_Layout
 	.4byte PacifidlogTown_PokemonCenter_2F_MapEvents
 	.4byte PacifidlogTown_PokemonCenter_2F_MapScripts
@@ -12,4 +12,3 @@ PacifidlogTown_PokemonCenter_2F: @ 8482F70
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

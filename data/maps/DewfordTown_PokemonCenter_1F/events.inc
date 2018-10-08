@@ -6,7 +6,7 @@ DewfordTown_PokemonCenter_1F_EventObjects::
 DewfordTown_PokemonCenter_1F_MapWarps::
 	warp_def 3, 7, 3, 1, MAP_DEWFORD_TOWN
 	warp_def 4, 7, 3, 1, MAP_DEWFORD_TOWN
-	warp_def 0, 7, 4, 0, MAP_DEWFORD_TOWN_POKEMON_CENTER_2F
+	warp_def 0, 7, 3, 0, MAP_DEWFORD_TOWN_POKEMON_CENTER_2F
 
 DewfordTown_PokemonCenter_1F_MapEvents::
 	map_events DewfordTown_PokemonCenter_1F_EventObjects, DewfordTown_PokemonCenter_1F_MapWarps, 0x0, 0x0

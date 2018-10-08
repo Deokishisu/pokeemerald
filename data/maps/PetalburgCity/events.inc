@@ -11,7 +11,7 @@ PetalburgCity_EventObjects::
 
 PetalburgCity_MapWarps::
 	warp_def 3, 15, 0, 0, MAP_PETALBURG_CITY_HOUSE1
-	warp_def 30, 17, 0, 0, MAP_PETALBURG_CITY_WALLYS_HOUSE
+	warp_def 30, 17, 0, 0, MAP_RUSTBORO_CITY_POKEMON_SCHOOL
 	warp_def 18, 17, 0, 0, MAP_PETALBURG_CITY_GYM
 	warp_def 31, 25, 0, 0, MAP_PETALBURG_CITY_POKEMON_CENTER_1F
 	warp_def 21, 29, 0, 0, MAP_PETALBURG_CITY_HOUSE2

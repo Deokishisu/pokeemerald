@@ -3,7 +3,7 @@ PetalburgCity_House2::
 	.4byte PetalburgCity_House2_MapEvents
 	.4byte PetalburgCity_House2_MapScripts
 	.4byte 0x0
-	.2byte MUS_MACHI_S2
+	.2byte MUS_RG_NANA67
 	.2byte 60
 	.byte MAPSEC_PETALBURG_CITY
 	.byte 0

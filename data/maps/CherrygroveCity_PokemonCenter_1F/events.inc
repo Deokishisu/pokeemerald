@@ -7,7 +7,7 @@ CherrygroveCity_PokemonCenter_1F_EventObjects::
 CherrygroveCity_PokemonCenter_1F_MapWarps::
 	warp_def 3, 7, 3, 2, MAP_CHERRYGROVE_CITY
 	warp_def 4, 7, 3, 2, MAP_CHERRYGROVE_CITY
-	warp_def 0, 7, 4, 0, MAP_CHERRYGROVE_CITY_POKEMON_CENTER_2F
+	warp_def 0, 7, 3, 0, MAP_CHERRYGROVE_CITY_POKEMON_CENTER_2F
 
 CherrygroveCity_PokemonCenter_1F_MapEvents::
 	map_events CherrygroveCity_PokemonCenter_1F_EventObjects, CherrygroveCity_PokemonCenter_1F_MapWarps, 0x0, 0x0

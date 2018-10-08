@@ -1,4 +1,4 @@
-PetalburgCity_PokemonCenter_2F: @ 84830A4
+PetalburgCity_PokemonCenter_2F::
 	.4byte PokemonCenter_2F_Layout
 	.4byte PetalburgCity_PokemonCenter_2F_MapEvents
 	.4byte PetalburgCity_PokemonCenter_2F_MapScripts
@@ -12,4 +12,3 @@ PetalburgCity_PokemonCenter_2F: @ 84830A4
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

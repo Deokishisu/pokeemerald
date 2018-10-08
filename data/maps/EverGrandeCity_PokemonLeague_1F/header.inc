@@ -1,4 +1,4 @@
-EverGrandeCity_PokemonLeague_1F: @ 8483CE4
+EverGrandeCity_PokemonLeague_1F::
 	.4byte EverGrandeCity_PokemonLeague_1F_Layout
 	.4byte EverGrandeCity_PokemonLeague_1F_MapEvents
 	.4byte EverGrandeCity_PokemonLeague_1F_MapScripts
@@ -12,4 +12,3 @@ EverGrandeCity_PokemonLeague_1F: @ 8483CE4
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

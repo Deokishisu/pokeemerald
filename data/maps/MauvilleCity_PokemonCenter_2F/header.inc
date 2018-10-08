@@ -1,4 +1,4 @@
-MauvilleCity_PokemonCenter_2F: @ 848330C
+MauvilleCity_PokemonCenter_2F::
 	.4byte PokemonCenter_2F_Layout
 	.4byte MauvilleCity_PokemonCenter_2F_MapEvents
 	.4byte MauvilleCity_PokemonCenter_2F_MapScripts
@@ -12,4 +12,3 @@ MauvilleCity_PokemonCenter_2F: @ 848330C
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

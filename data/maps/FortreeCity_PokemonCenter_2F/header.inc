@@ -1,4 +1,4 @@
-FortreeCity_PokemonCenter_2F: @ 8483574
+FortreeCity_PokemonCenter_2F::
 	.4byte PokemonCenter_2F_Layout
 	.4byte FortreeCity_PokemonCenter_2F_MapEvents
 	.4byte FortreeCity_PokemonCenter_2F_MapScripts
@@ -12,4 +12,3 @@ FortreeCity_PokemonCenter_2F: @ 8483574
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

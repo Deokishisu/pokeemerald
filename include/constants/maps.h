@@ -123,7 +123,7 @@
 #define MAP_PACIFIDLOG_TOWN_HOUSE5            (6 | (7 << 8))
 
 // Map Group 8
-#define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))
+#define MAP_RUSTBORO_CITY_POKEMON_SCHOOL     (0 | (8 << 8))
 #define MAP_PETALBURG_CITY_GYM               (1 | (8 << 8))
 #define MAP_PETALBURG_CITY_HOUSE1            (2 | (8 << 8))
 #define MAP_PETALBURG_CITY_HOUSE2            (3 | (8 << 8))
@@ -162,7 +162,7 @@
 #define MAP_RUSTBORO_CITY_DEVON_CORP_2F     (1 | (11 << 8))
 #define MAP_RUSTBORO_CITY_DEVON_CORP_3F     (2 | (11 << 8))
 #define MAP_RUSTBORO_CITY_GYM               (3 | (11 << 8))
-#define MAP_RUSTBORO_CITY_POKEMON_SCHOOL    (4 | (11 << 8))
+#define MAP_PETALBURG_CITY_WALLYS_HOUSE     (4 | (11 << 8))
 #define MAP_RUSTBORO_CITY_POKEMON_CENTER_1F (5 | (11 << 8))
 #define MAP_RUSTBORO_CITY_POKEMON_CENTER_2F (6 | (11 << 8))
 #define MAP_RUSTBORO_CITY_MART              (7 | (11 << 8))

@@ -1,4 +1,4 @@
-MeteorFalls_1F_2R: @ 8483EDC
+MeteorFalls_1F_2R::
 	.4byte MeteorFalls_1F_2R_Layout
 	.4byte MeteorFalls_1F_2R_MapEvents
 	.4byte MeteorFalls_1F_2R_MapScripts
@@ -12,4 +12,3 @@ MeteorFalls_1F_2R: @ 8483EDC
 	.2byte 0
 	.byte 15
 	.byte MAP_BATTLE_SCENE_NORMAL
-

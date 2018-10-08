@@ -1,4 +1,4 @@
-RustboroCity_PokemonCenter_2F: @ 84833EC
+RustboroCity_PokemonCenter_2F::
 	.4byte PokemonCenter_2F_Layout
 	.4byte RustboroCity_PokemonCenter_2F_MapEvents
 	.4byte RustboroCity_PokemonCenter_2F_MapScripts
@@ -12,4 +12,3 @@ RustboroCity_PokemonCenter_2F: @ 84833EC
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

@@ -1,4 +1,4 @@
-LilycoveCity_PokemonCenter_1F: @ 84836E0
+LilycoveCity_PokemonCenter_1F::
 	.4byte PokemonCenter_1F_Layout
 	.4byte LilycoveCity_PokemonCenter_1F_MapEvents
 	.4byte LilycoveCity_PokemonCenter_1F_MapScripts
@@ -12,4 +12,3 @@ LilycoveCity_PokemonCenter_1F: @ 84836E0
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

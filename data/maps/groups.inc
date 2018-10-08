@@ -129,7 +129,7 @@ gMapGroup7::
 
 	.align 2
 gMapGroup8::
-	.4byte PetalburgCity_WallysHouse
+	.4byte RustboroCity_PokemonSchool
 	.4byte PetalburgCity_Gym
 	.4byte PetalburgCity_House1
 	.4byte PetalburgCity_House2
@@ -171,7 +171,7 @@ gMapGroup11::
 	.4byte RustboroCity_DevonCorp_2F
 	.4byte RustboroCity_DevonCorp_3F
 	.4byte RustboroCity_Gym
-	.4byte RustboroCity_PokemonSchool
+	.4byte PetalburgCity_WallysHouse
 	.4byte RustboroCity_PokemonCenter_1F
 	.4byte RustboroCity_PokemonCenter_2F
 	.4byte RustboroCity_Mart
