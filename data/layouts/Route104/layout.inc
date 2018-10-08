@@ -11,5 +11,5 @@ Route104_Layout::
 	.4byte Route104_MapBorder
 	.4byte Route104_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Rustboro
+	.4byte gTileset_Petalburg
 

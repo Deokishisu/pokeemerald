@@ -1,4 +1,4 @@
-BattleFrontier_OutsideWest: @ 84851AC
+BattleFrontier_OutsideWest::
 	.4byte BattleFrontier_OutsideWest_Layout
 	.4byte BattleFrontier_OutsideWest_MapEvents
 	.4byte BattleFrontier_OutsideWest_MapScripts
@@ -12,4 +12,3 @@ BattleFrontier_OutsideWest: @ 84851AC
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

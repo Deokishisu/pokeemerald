@@ -1,4 +1,4 @@
-BattleFrontier_BattleTowerCorridor2: @ 84852FC
+BattleFrontier_BattleTowerCorridor2::
 	.4byte BattleFrontier_BattleTowerCorridor2_Layout
 	.4byte BattleFrontier_BattleTowerCorridor2_MapEvents
 	.4byte BattleFrontier_BattleTowerCorridor2_MapScripts
@@ -12,4 +12,3 @@ BattleFrontier_BattleTowerCorridor2: @ 84852FC
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

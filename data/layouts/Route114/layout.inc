@@ -11,5 +11,5 @@ Route114_Layout::
 	.4byte Route114_MapBorder
 	.4byte Route114_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Fallarbor
+	.4byte gTileset_Petalburg
 

@@ -1,4 +1,4 @@
-SouthernIsland_Interior: @ 8485254
+SouthernIsland_Interior::
 	.4byte SouthernIsland_Interior_Layout
 	.4byte SouthernIsland_Interior_MapEvents
 	.4byte SouthernIsland_Interior_MapScripts
@@ -12,4 +12,3 @@ SouthernIsland_Interior: @ 8485254
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

@@ -11,5 +11,5 @@ Route121_Layout::
 	.4byte Route121_MapBorder
 	.4byte Route121_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Lilycove
+	.4byte gTileset_Petalburg
 

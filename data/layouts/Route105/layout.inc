@@ -11,5 +11,5 @@ Route105_Layout::
 	.4byte Route105_MapBorder
 	.4byte Route105_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Dewford
+	.4byte gTileset_Petalburg
 

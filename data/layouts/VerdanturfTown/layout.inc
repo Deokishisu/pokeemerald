@@ -11,5 +11,5 @@ VerdanturfTown_Layout::
 	.4byte VerdanturfTown_MapBorder
 	.4byte VerdanturfTown_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Mauville
+	.4byte gTileset_Petalburg
 

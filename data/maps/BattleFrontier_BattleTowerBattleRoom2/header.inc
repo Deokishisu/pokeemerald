@@ -1,4 +1,4 @@
-BattleFrontier_BattleTowerBattleRoom2: @ 8485318
+BattleFrontier_BattleTowerBattleRoom2::
 	.4byte BattleFrontier_BattleTowerBattleRoom_Layout
 	.4byte BattleFrontier_BattleTowerBattleRoom2_MapEvents
 	.4byte BattleFrontier_BattleTowerBattleRoom2_MapScripts
@@ -12,4 +12,3 @@ BattleFrontier_BattleTowerBattleRoom2: @ 8485318
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_FRONTIER
-

@@ -11,5 +11,5 @@ FortreeCity_Layout::
 	.4byte FortreeCity_MapBorder
 	.4byte FortreeCity_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Fortree
+	.4byte gTileset_Petalburg
 

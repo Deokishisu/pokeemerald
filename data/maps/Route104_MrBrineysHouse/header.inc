@@ -1,4 +1,4 @@
-Route104_MrBrineysHouse: @ 8483D70
+Route104_MrBrineysHouse::
 	.4byte Route104_MrBrineysHouse_Layout
 	.4byte Route104_MrBrineysHouse_MapEvents
 	.4byte Route104_MrBrineysHouse_MapScripts
@@ -12,4 +12,3 @@ Route104_MrBrineysHouse: @ 8483D70
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

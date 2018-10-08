@@ -1,4 +1,4 @@
-UnknownMap_25_30: @ 8484DD8
+UnknownMap_25_30::
 	.4byte UnknownMap_25_30_Layout
 	.4byte UnknownMap_25_30_MapEvents
 	.4byte UnknownMap_25_30_MapScripts
@@ -12,4 +12,3 @@ UnknownMap_25_30: @ 8484DD8
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

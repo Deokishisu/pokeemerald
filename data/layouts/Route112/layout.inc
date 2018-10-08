@@ -11,5 +11,5 @@ Route112_Layout::
 	.4byte Route112_MapBorder
 	.4byte Route112_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Lavaridge
+	.4byte gTileset_Petalburg
 

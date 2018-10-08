@@ -11,5 +11,5 @@ Route111_Layout::
 	.4byte Route111_MapBorder
 	.4byte Route111_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Mauville
+	.4byte gTileset_Petalburg
 

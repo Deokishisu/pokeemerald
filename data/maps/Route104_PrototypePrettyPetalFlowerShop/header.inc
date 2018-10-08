@@ -1,4 +1,4 @@
-Route104_PrototypePrettyPetalFlowerShop: @ 8485B14
+Route104_PrototypePrettyPetalFlowerShop::
 	.4byte Route104_PrettyPetalFlowerShop_Layout
 	.4byte Route104_PrototypePrettyPetalFlowerShop_MapEvents
 	.4byte Route104_PrototypePrettyPetalFlowerShop_MapScripts
@@ -12,4 +12,3 @@ Route104_PrototypePrettyPetalFlowerShop: @ 8485B14
 	.2byte 0
 	.byte 8
 	.byte MAP_BATTLE_SCENE_NORMAL
-

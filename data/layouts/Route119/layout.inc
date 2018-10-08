@@ -11,5 +11,5 @@ Route119_Layout::
 	.4byte Route119_MapBorder
 	.4byte Route119_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Fortree
+	.4byte gTileset_Petalburg
 

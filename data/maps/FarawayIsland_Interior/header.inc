@@ -1,4 +1,4 @@
-FarawayIsland_Interior: @ 8485778
+FarawayIsland_Interior::
 	.4byte FarawayIsland_Interior_Layout
 	.4byte FarawayIsland_Interior_MapEvents
 	.4byte FarawayIsland_Interior_MapScripts
@@ -12,4 +12,3 @@ FarawayIsland_Interior: @ 8485778
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

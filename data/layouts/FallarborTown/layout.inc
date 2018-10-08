@@ -11,5 +11,5 @@ FallarborTown_Layout::
 	.4byte FallarborTown_MapBorder
 	.4byte FallarborTown_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Fallarbor
+	.4byte gTileset_Petalburg
 

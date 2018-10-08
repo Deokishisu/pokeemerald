@@ -1,4 +1,4 @@
-FarawayIsland_Entrance: @ 848575C
+FarawayIsland_Entrance::
 	.4byte FarawayIsland_Entrance_Layout
 	.4byte FarawayIsland_Entrance_MapEvents
 	.4byte FarawayIsland_Entrance_MapScripts
@@ -12,4 +12,3 @@ FarawayIsland_Entrance: @ 848575C
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

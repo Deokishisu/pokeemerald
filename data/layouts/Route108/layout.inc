@@ -11,5 +11,5 @@ Route108_Layout::
 	.4byte Route108_MapBorder
 	.4byte Route108_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Slateport
+	.4byte gTileset_Petalburg
 

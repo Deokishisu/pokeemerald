@@ -1,4 +1,4 @@
-BattleFrontier_BattleDomeLobby: @ 8485334
+BattleFrontier_BattleDomeLobby::
 	.4byte BattleFrontier_BattleDomeLobby_Layout
 	.4byte BattleFrontier_BattleDomeLobby_MapEvents
 	.4byte BattleFrontier_BattleDomeLobby_MapScripts
@@ -12,4 +12,3 @@ BattleFrontier_BattleDomeLobby: @ 8485334
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

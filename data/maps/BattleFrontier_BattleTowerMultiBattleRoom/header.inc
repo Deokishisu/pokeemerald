@@ -1,4 +1,4 @@
-BattleFrontier_BattleTowerMultiBattleRoom: @ 84852E0
+BattleFrontier_BattleTowerMultiBattleRoom::
 	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Layout
 	.4byte BattleFrontier_BattleTowerMultiBattleRoom_MapEvents
 	.4byte BattleFrontier_BattleTowerMultiBattleRoom_MapScripts
@@ -12,4 +12,3 @@ BattleFrontier_BattleTowerMultiBattleRoom: @ 84852E0
 	.2byte 0
 	.byte 4
 	.byte MAP_BATTLE_SCENE_NORMAL
-

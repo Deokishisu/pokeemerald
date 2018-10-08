@@ -1,4 +1,4 @@
-SouthernIsland_Exterior: @ 8485238
+SouthernIsland_Exterior::
 	.4byte SouthernIsland_Exterior_Layout
 	.4byte SouthernIsland_Exterior_MapEvents
 	.4byte SouthernIsland_Exterior_MapScripts
@@ -12,4 +12,3 @@ SouthernIsland_Exterior: @ 8485238
 	.2byte 0
 	.byte 13
 	.byte MAP_BATTLE_SCENE_NORMAL
-

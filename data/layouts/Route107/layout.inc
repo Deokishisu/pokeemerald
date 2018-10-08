@@ -11,5 +11,5 @@ Route107_Layout::
 	.4byte Route107_MapBorder
 	.4byte Route107_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Dewford
+	.4byte gTileset_Petalburg
 

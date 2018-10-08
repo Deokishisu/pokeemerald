@@ -11,5 +11,5 @@ Route113_Layout::
 	.4byte Route113_MapBorder
 	.4byte Route113_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Fallarbor
+	.4byte gTileset_Petalburg
 

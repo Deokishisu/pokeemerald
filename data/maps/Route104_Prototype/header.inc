@@ -1,4 +1,4 @@
-Route104_Prototype: @ 8485AF8
+Route104_Prototype::
 	.4byte Route104_Prototype_Layout
 	.4byte Route104_Prototype_MapEvents
 	.4byte Route104_Prototype_MapScripts
@@ -12,4 +12,3 @@ Route104_Prototype: @ 8485AF8
 	.2byte 0
 	.byte 8
 	.byte MAP_BATTLE_SCENE_NORMAL
-

@@ -11,5 +11,5 @@ DewfordTown_Layout::
 	.4byte DewfordTown_MapBorder
 	.4byte DewfordTown_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Dewford
+	.4byte gTileset_Petalburg
 

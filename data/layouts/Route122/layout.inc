@@ -11,5 +11,5 @@ Route122_Layout::
 	.4byte Route122_MapBorder
 	.4byte Route122_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Lilycove
+	.4byte gTileset_Petalburg
 

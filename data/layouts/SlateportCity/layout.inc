@@ -11,5 +11,5 @@ SlateportCity_Layout::
 	.4byte SlateportCity_MapBorder
 	.4byte SlateportCity_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Slateport
+	.4byte gTileset_Petalburg
 
