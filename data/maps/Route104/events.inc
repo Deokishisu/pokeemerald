@@ -35,14 +35,10 @@ Route104_EventObjects::
 	object_event 34, EVENT_OBJ_GFX_HIPSTER, 0, 17, 50, 0, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_1ECC9E, 719
 
 Route104_MapWarps::
-	warp_def 17, 50, 0, 0, MAP_ROUTE104_MR_BRINEYS_HOUSE
-	warp_def 5, 18, 0, 0, MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP
-	warp_def 10, 30, 3, 0, MAP_PETALBURG_WOODS
-	warp_def 11, 30, 3, 1, MAP_PETALBURG_WOODS
-	warp_def 10, 38, 3, 2, MAP_PETALBURG_WOODS
-	warp_def 11, 38, 3, 3, MAP_PETALBURG_WOODS
-	warp_def 32, 42, 3, 4, MAP_PETALBURG_WOODS
-	warp_def 33, 42, 3, 5, MAP_PETALBURG_WOODS
+	warp_def 4, 2, 0, 0, MAP_ROUTE32_GATE
+	warp_def 4, 3, 0, 1, MAP_ROUTE32_GATE
+	warp_def 11, 73, 3, 0, MAP_ROUTE32_POKEMON_CENTER_1F
+	warp_def 7, 79, 3, 0, MAP_ROUTE105
 
 Route104_MapCoordEvents::
 	coord_event 17, 51, 3, VAR_0x4063, 1, Route104_EventScript_1ECCB3

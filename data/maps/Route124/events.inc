@@ -14,6 +14,17 @@ Route124_EventObjects::
 
 Route124_MapWarps::
 	warp_def 70, 48, 3, 0, MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE
+	warp_def 7, 5, 3, 0, MAP_ROUTE36_GATE
+	warp_def 14, 7, 3, 0, MAP_ROUTE124
+	warp_def 17, 11, 3, 0, MAP_ROUTE124
+	warp_def 10, 13, 3, 0, MAP_ROUTE124
+	warp_def 2, 17, 3, 0, MAP_ROUTE124
+	warp_def 6, 19, 3, 0, MAP_ROUTE124
+	warp_def 13, 20, 3, 2, MAP_ROUTE32_GATE
+	warp_def 13, 21, 3, 3, MAP_ROUTE32_GATE
+	warp_def 6, 27, 3, 0, MAP_ROUTE124
+	warp_def 2, 29, 3, 0, MAP_ROUTE124
+	warp_def 16, 33, 3, 0, MAP_ROUTE124
 
 Route124_MapBGEvents::
 	bg_event 73, 48, 3, BG_EVENT_PLAYER_FACING_ANY, Route124_EventScript_1F657C

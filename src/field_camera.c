@@ -66,7 +66,7 @@ static void tilemap_move_something(struct FieldCameraUnknownStruct *a, u32 b, u3
 
 static void coords8_add(struct FieldCameraUnknownStruct *a, u32 b, u32 c)
 {
-    a->unk0 += b;
+	a->unk0 += b;
     a->unk1 += c;
 }
 

@@ -21,7 +21,9 @@ Route103_EventObjects::
 	object_event 20, EVENT_OBJ_GFX_ITEM_BALL, 0, 64, 7, 0, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route103_EventScript_290CF2, 1137
 
 Route103_MapWarps::
-	warp_def 45, 6, 0, 0, MAP_ALTERING_CAVE
+	warp_def 34, 5, 0, 0, MAP_ALTERING_CAVE
+	warp_def 4, 6, 3, 0, MAP_ROUTE31_GATE
+	warp_def 4, 7, 3, 1, MAP_ROUTE31_GATE
 
 Route103_MapBGEvents::
 	bg_event 11, 9, 0, BG_EVENT_PLAYER_FACING_ANY, Route103_EventScript_1EC5EB

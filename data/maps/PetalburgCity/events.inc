@@ -16,6 +16,9 @@ PetalburgCity_MapWarps::
 	warp_def 31, 25, 0, 0, MAP_PETALBURG_CITY_POKEMON_CENTER_1F
 	warp_def 21, 29, 0, 0, MAP_PETALBURG_CITY_HOUSE2
 	warp_def 9, 17, 0, 0, MAP_PETALBURG_CITY_MART
+	warp_def 39, 24, 3, 2, MAP_ROUTE31_GATE
+	warp_def 39, 25, 3, 3, MAP_ROUTE31_GATE
+	warp_def 23, 5, 3, 0, MAP_PETALBURG_CITY
 
 PetalburgCity_MapCoordEvents::
 	coord_event 8, 10, 3, VAR_0x4057, 0, PetalburgCity_EventScript_1DC49A

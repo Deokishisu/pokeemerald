@@ -5,13 +5,11 @@ VerdanturfTown_EventObjects::
 	object_event 4, EVENT_OBJ_GFX_CAMPER, 0, 7, 6, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, VerdanturfTown_EventScript_1EB5B1, 0
 
 VerdanturfTown_MapWarps::
-	warp_def 3, 7, 0, 0, MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY
+	warp_def 9, 1, 0, 0, MAP_ROUTE43_GATE1
 	warp_def 11, 7, 0, 0, MAP_VERDANTURF_TOWN_MART
 	warp_def 15, 13, 0, 0, MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F
-	warp_def 10, 14, 0, 0, MAP_VERDANTURF_TOWN_WANDAS_HOUSE
-	warp_def 8, 1, 0, 1, MAP_RUSTURF_TUNNEL
-	warp_def 1, 14, 0, 0, MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE
-	warp_def 17, 15, 0, 0, MAP_VERDANTURF_TOWN_HOUSE
+	warp_def 6, 13, 0, 0, MAP_VERDANTURF_TOWN_WANDAS_HOUSE
+	warp_def 17, 7, 0, 1, MAP_RUSTURF_TUNNEL
 
 VerdanturfTown_MapBGEvents::
 	bg_event 12, 5, 0, BG_EVENT_PLAYER_FACING_NORTH, VerdanturfTown_EventScript_271E6A

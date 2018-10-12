@@ -5,7 +5,7 @@ Route30_Mr_Pokemons_House::
 	.4byte 0x0
 	.2byte MUS_NIBI
 	.2byte 443
-	.byte MAPSEC_DYNAMIC
+	.byte MAPSEC_ROUTE_30
 	.byte 0
 	.byte WEATHER_NONE
 	.byte MAP_TYPE_INDOOR

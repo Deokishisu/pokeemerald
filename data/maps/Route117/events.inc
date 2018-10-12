@@ -25,7 +25,7 @@ Route117_EventObjects::
 	object_event 24, EVENT_OBJ_GFX_RUNNING_TRIATHLETE_F, 0, 16, 4, 3, MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT, 4, 1, 1, 4, Route117_EventScript_1F3C37, 0
 
 Route117_MapWarps::
-	warp_def 51, 5, 0, 0, MAP_ROUTE117_POKEMON_DAY_CARE
+	warp_def 51, 5, 0, 0, MAP_ROUTE117
 
 Route117_MapBGEvents::
 	bg_event 16, 6, 0, BG_EVENT_PLAYER_FACING_ANY, Route117_EventScript_1F39B5

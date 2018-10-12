@@ -36,9 +36,9 @@ SlateportCity_EventObjects::
 	object_event 35, EVENT_OBJ_GFX_SCOTT, 0, 10, 12, 0, MOVEMENT_TYPE_FACE_DOWN, 1, 2, 0, 0, 0x0, 749
 
 SlateportCity_MapWarps::
-	warp_def 19, 19, 0, 0, MAP_SLATEPORT_CITY_POKEMON_CENTER_1F
+	warp_def 15, 27, 0, 0, MAP_SLATEPORT_CITY_POKEMON_CENTER_1F
 	warp_def 13, 26, 0, 0, MAP_SLATEPORT_CITY_MART
-	warp_def 26, 38, 0, 0, MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F
+	warp_def 19, 1, 0, 0, MAP_ROUTE35_GATE
 	warp_def 10, 12, 0, 0, MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY
 	warp_def 4, 26, 0, 0, MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB
 	warp_def 30, 26, 0, 0, MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F
@@ -53,8 +53,8 @@ SlateportCity_MapCoordEvents::
 
 SlateportCity_MapBGEvents::
 	bg_event 8, 19, 0, BG_EVENT_PLAYER_FACING_ANY, SlateportCity_EventScript_1DCFB2
-	bg_event 20, 19, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E73
-	bg_event 21, 19, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E73
+	bg_event 16, 27, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E73
+	bg_event 17, 27, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E73
 	bg_event 14, 26, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E6A
 	bg_event 24, 12, 0, BG_EVENT_PLAYER_FACING_ANY, SlateportCity_EventScript_1DCF94
 	bg_event 15, 26, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E6A

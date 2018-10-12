@@ -7,5 +7,10 @@ Route107_EventObjects::
 	object_event 6, EVENT_OBJ_GFX_TUBER_M_SWIMMING, 0, 32, 4, 1, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 1, 1, Route107_EventScript_1EE657, 0
 	object_event 7, EVENT_OBJ_GFX_SWIMMER_M, 0, 50, 5, 1, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN, 1, 1, 1, 5, Route107_EventScript_1EE672, 0
 
+Route107_MapWarps::
+	warp_def 9, 33, 3, 2, MAP_ROUTE35_GATE
+	warp_def 10, 33, 3, 3, MAP_ROUTE35_GATE
+	warp_def 3, 5, 3, 0, MAP_ROUTE35_NATIONAL_PARK_GATE
+
 Route107_MapEvents::
-	map_events Route107_EventObjects, 0x0, 0x0, 0x0
+	map_events Route107_EventObjects, Route107_MapWarps, 0x0, 0x0

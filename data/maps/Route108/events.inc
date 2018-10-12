@@ -8,7 +8,10 @@ Route108_EventObjects::
 	object_event 7, EVENT_OBJ_GFX_ITEM_BALL, 0, 42, 4, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route108_EventScript_290D4D, 1139
 
 Route108_MapWarps::
-	warp_def 29, 6, 3, 0, MAP_ABANDONED_SHIP_DECK
+	warp_def 18, 8, 3, 0, MAP_ROUTE36_NATIONAL_PARK_GATE
+	warp_def 18, 9, 3, 1, MAP_ROUTE36_NATIONAL_PARK_GATE
+	warp_def 47, 13, 3, 2, MAP_ROUTE36_GATE
+	warp_def 48, 13, 3, 3, MAP_ROUTE36_GATE
 
 Route108_MapBGEvents::
 	bg_hidden_item_event 38, 14, 3, ITEM_RARE_CANDY, 86

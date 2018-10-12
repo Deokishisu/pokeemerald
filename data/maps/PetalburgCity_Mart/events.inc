@@ -6,7 +6,7 @@ PetalburgCity_Mart_EventObjects::
 
 PetalburgCity_Mart_MapWarps::
 	warp_def 3, 7, 0, 5, MAP_PETALBURG_CITY
-	warp_def 4, 7, 0, 5, MAP_PETALBURG_CITY
+	warp_def 2, 7, 0, 5, MAP_PETALBURG_CITY
 
 PetalburgCity_Mart_MapEvents::
 	map_events PetalburgCity_Mart_EventObjects, PetalburgCity_Mart_MapWarps, 0x0, 0x0

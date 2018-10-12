@@ -189,6 +189,54 @@ gMapGroup12::
 
 	.align 2
 gMapGroup13::
+	.4byte Route31_Gate
+
+	.align 2
+gMapGroup14::
+	.4byte Route32_Gate
+	.4byte Route32_PokemonCenter_1F
+	.4byte Route32_PokemonCenter_2F
+
+	.align 2
+gMapGroup15::
+	.4byte Route34_Gate1
+	.4byte Route34_Gate2
+	.4byte Route34_PokemonDayCare
+
+	.align 2
+gMapGroup16::
+	.4byte Route35_Gate
+	.4byte Route35_National_Park_Gate
+
+	.align 2
+gMapGroup17::
+	.4byte Route36_Gate
+	.4byte Route36_National_Park_Gate
+
+	.align 2
+gMapGroup18::
+	.4byte Route38_Gate
+
+	.align 2
+gMapGroup19::
+	.4byte Route39_MooMooFarmHouse
+	.4byte Route39_MooMooFarmBarn
+
+	.align 2
+gMapGroup20::
+	.4byte Route40_BattleTower_Gate
+
+	.align 2
+gMapGroup21::
+	.4byte Route42_Gate
+
+	.align 2
+gMapGroup22::
+	.4byte Route43_Gate1
+	.4byte Route43_Gate2
+
+	.align 2
+gMapGroup23::
 	.4byte LavaridgeTown_HerbShop
 	.4byte LavaridgeTown_Gym_1F
 	.4byte LavaridgeTown_Gym_B1F
@@ -226,9 +274,6 @@ gMapGroup13::
 	.4byte LilycoveCity_DepartmentStore_5F
 	.4byte LilycoveCity_DepartmentStoreRooftop
 	.4byte LilycoveCity_DepartmentStoreElevator
-
-	.align 2
-gMapGroup14::
 	.4byte MossdeepCity_Gym
 	.4byte MossdeepCity_House1
 	.4byte MossdeepCity_House2
@@ -242,9 +287,6 @@ gMapGroup14::
 	.4byte MossdeepCity_SpaceCenter_2F
 	.4byte MossdeepCity_GameCorner_1F
 	.4byte MossdeepCity_GameCorner_B1F
-
-	.align 2
-gMapGroup15::
 	.4byte SootopolisCity_Gym_1F
 	.4byte SootopolisCity_Gym_B1F
 	.4byte SootopolisCity_PokemonCenter_1F
@@ -260,9 +302,6 @@ gMapGroup15::
 	.4byte SootopolisCity_LotadAndSeedotHouse
 	.4byte SootopolisCity_MysteryEventsHouse_1F
 	.4byte SootopolisCity_MysteryEventsHouse_B1F
-
-	.align 2
-gMapGroup16::
 	.4byte EverGrandeCity_SidneysRoom
 	.4byte EverGrandeCity_PhoebesRoom
 	.4byte EverGrandeCity_GlaciasRoom
@@ -278,38 +317,16 @@ gMapGroup16::
 	.4byte EverGrandeCity_PokemonCenter_1F
 	.4byte EverGrandeCity_PokemonCenter_2F
 	.4byte EverGrandeCity_PokemonLeague_2F
-
-	.align 2
-gMapGroup17::
 	.4byte Route104_MrBrineysHouse
 	.4byte Route104_PrettyPetalFlowerShop
-
-	.align 2
-gMapGroup18::
 	.4byte Route111_WinstrateFamilysHouse
 	.4byte Route111_OldLadysRestStop
-
-	.align 2
-gMapGroup19::
 	.4byte Route112_CableCarStation
 	.4byte MtChimney_CableCarStation
-
-	.align 2
-gMapGroup20::
 	.4byte Route114_FossilManiacsHouse
 	.4byte Route114_FossilManiacsTunnel
-	.4byte Route114_LanettesHouse
-
-	.align 2
-gMapGroup21::
 	.4byte Route116_TunnelersRestHouse
-
-	.align 2
-gMapGroup22::
-	.4byte Route117_PokemonDayCare
-
-	.align 2
-gMapGroup23::
+	.4byte Route114_LanettesHouse
 	.4byte Route121_SafariZoneEntrance
 
 	.align 2

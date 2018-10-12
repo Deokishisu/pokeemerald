@@ -122,7 +122,7 @@ gMapLayouts::
 	.4byte Route114_FossilManiacsTunnel_Layout
 	.4byte Route114_LanettesHouse_Layout
 	.4byte Route116_TunnelersRestHouse_Layout
-	.4byte Route117_PokemonDayCare_Layout
+	.4byte Route34_PokemonDayCare_Layout
 	.4byte Route121_SafariZoneEntrance_Layout
 	.4byte MeteorFalls_1F_1R_Layout
 	.4byte MeteorFalls_1F_2R_Layout
@@ -443,3 +443,6 @@ gMapLayouts::
 	.4byte UnknownMap_08481DBC_Layout
 	.4byte North_South_Gate_Layout
 	.4byte Route30_Mr_Pokemons_House_Layout
+	.4byte East_West_Gate_Layout
+	.4byte Route35_National_Park_Gate_Layout
+	.4byte Route36_National_Park_Gate_Layout

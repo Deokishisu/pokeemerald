@@ -6,11 +6,14 @@ DewfordTown_EventObjects::
 	object_event 5, EVENT_OBJ_GFX_BOY_1, 0, 1, 6, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, DewfordTown_EventScript_1E9922, 0
 
 DewfordTown_MapWarps::
-	warp_def 3, 3, 0, 0, MAP_DEWFORD_TOWN_HALL
+	warp_def 9, 5, 0, 0, MAP_DEWFORD_TOWN_HALL
 	warp_def 15, 9, 0, 0, MAP_DEWFORD_TOWN_POKEMON_CENTER_1F
-	warp_def 8, 17, 0, 0, MAP_DEWFORD_TOWN_GYM
-	warp_def 17, 14, 0, 0, MAP_DEWFORD_TOWN_HOUSE1
-	warp_def 8, 8, 0, 0, MAP_DEWFORD_TOWN_HOUSE2
+	warp_def 10, 15, 0, 0, MAP_DEWFORD_TOWN_GYM
+	warp_def 21, 13, 0, 0, MAP_DEWFORD_TOWN_HOUSE1
+	warp_def 21, 5, 0, 0, MAP_DEWFORD_TOWN_HOUSE2
+	warp_def 31, 7, 3, 0, MAP_DEWFORD_TOWN
+	warp_def 2, 10, 3, 0, MAP_ROUTE34_GATE1
+	warp_def 2, 11, 3, 1, MAP_ROUTE34_GATE1
 
 DewfordTown_MapBGEvents::
 	bg_event 10, 10, 0, BG_EVENT_PLAYER_FACING_ANY, DewfordTown_EventScript_1E95BA

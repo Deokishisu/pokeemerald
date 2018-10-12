@@ -15,12 +15,9 @@ Route112_EventObjects::
 	object_event 14, EVENT_OBJ_GFX_WOMAN_3, 0, 31, 11, 3, MOVEMENT_TYPE_FACE_UP_AND_LEFT, 1, 1, 1, 3, Route112_EventScript_1F1F28, 0
 
 Route112_MapWarps::
-	warp_def 28, 27, 0, 0, MAP_ROUTE112_CABLE_CAR_STATION
-	warp_def 29, 27, 0, 1, MAP_ROUTE112_CABLE_CAR_STATION
+	warp_def 9, 5, 0, 0, MAP_ROUTE40_BATTLE_TOWER_GATE
 	warp_def 6, 46, 3, 0, MAP_JAGGED_PASS
 	warp_def 7, 46, 3, 1, MAP_JAGGED_PASS
-	warp_def 11, 36, 0, 0, MAP_FIERY_PATH
-	warp_def 22, 10, 0, 1, MAP_FIERY_PATH
 
 Route112_MapBGEvents::
 	bg_event 19, 44, 3, BG_EVENT_PLAYER_FACING_ANY, Route112_EventScript_1F1E4F

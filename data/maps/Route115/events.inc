@@ -24,12 +24,14 @@ Route115_EventObjects::
 	object_event 23, EVENT_OBJ_GFX_ITEM_BALL, 0, 12, 14, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route115_EventScript_290E5E, 1144
 
 Route115_MapWarps::
-	warp_def 27, 37, 0, 1, MAP_METEOR_FALLS_1F_1R
-	warp_def 21, 6, 0, 0, MAP_TERRA_CAVE_ENTRANCE
-	warp_def 36, 10, 0, 0, MAP_TERRA_CAVE_ENTRANCE
+	warp_def 9, 51, 0, 2, MAP_ROUTE43_GATE1
+	warp_def 10, 51, 0, 3, MAP_ROUTE43_GATE1
+	warp_def 17, 35, 0, 0, MAP_ROUTE43_GATE2
+	warp_def 17, 31, 3, 2, MAP_ROUTE43_GATE2
+	warp_def 18, 31, 3, 3, MAP_ROUTE43_GATE2
 
 Route115_MapBGEvents::
-	bg_secret_base_event 32, 6, 0, SECRET_BASE_BROWN_CAVE4_2
+	bg_secret_base_event 3, 6, 0, SECRET_BASE_BROWN_CAVE4_2
 	bg_secret_base_event 21, 18, 0, SECRET_BASE_BROWN_CAVE3_2
 	bg_event 16, 64, 0, BG_EVENT_PLAYER_FACING_ANY, Route115_EventScript_1F297C
 	bg_event 25, 38, 3, BG_EVENT_PLAYER_FACING_ANY, Route115_EventScript_1F2985

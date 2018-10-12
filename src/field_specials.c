@@ -4039,6 +4039,7 @@ bool32 sub_813B9C0(void)
         MAP_TRADE_CENTER,
         MAP_RECORD_CORNER,
         MAP_DOUBLE_BATTLE_COLOSSEUM,
+		MAP_ROUTE32_POKEMON_CENTER_1F,
         0xffff
     };
 

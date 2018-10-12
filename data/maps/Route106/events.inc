@@ -6,7 +6,11 @@ Route106_EventObjects::
 	object_event 5, EVENT_OBJ_GFX_ITEM_BALL, 0, 29, 14, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route106_EventScript_290D40, 1004
 
 Route106_MapWarps::
-	warp_def 48, 16, 0, 0, MAP_GRANITE_CAVE_1F
+	warp_def 13, 37, 0, 2, MAP_ROUTE34_GATE2
+	warp_def 14, 37, 3, 3, MAP_ROUTE34_GATE2
+	warp_def 11, 14, 3, 2, MAP_ROUTE34_POKEMON_DAY_CARE
+	warp_def 11, 15, 3, 3, MAP_ROUTE34_POKEMON_DAY_CARE
+	warp_def 13, 15, 3, 0, MAP_ROUTE34_POKEMON_DAY_CARE
 
 Route106_MapBGEvents::
 	bg_hidden_item_event 41, 11, 3, ITEM_POKE_BALL, 63
