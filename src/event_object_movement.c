@@ -1525,7 +1525,7 @@ static u8 TrySetupEventObjectSprite(struct EventObjectTemplate *eventObjectTempl
     sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
     sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
     sprite->pos1.x += 8;
-    sprite->pos1.y += 16 + sprite->centerToCornerVecY;
+    sprite->pos1.y += 12 + sprite->centerToCornerVecY;
     sprite->oam.paletteNum = paletteSlot;
     sprite->coordOffsetEnabled = TRUE;
     sprite->data[0] = eventObjectId;
@@ -1724,7 +1724,7 @@ void TrySpawnEventObjects(s16 cameraX, s16 cameraY)
         left = gSaveBlock1Ptr->pos.x - 2;
         right = gSaveBlock1Ptr->pos.x + 17;
         top = gSaveBlock1Ptr->pos.y;
-        bottom = gSaveBlock1Ptr->pos.y + 16;
+        bottom = gSaveBlock1Ptr->pos.y + 12;
 
         if (InBattlePyramid())
         {
@@ -1786,7 +1786,7 @@ static void RemoveEventObjectIfOutsideView(struct EventObject *eventObject)
     left = gSaveBlock1Ptr->pos.x - 2;
     right = gSaveBlock1Ptr->pos.x + 17;
     top = gSaveBlock1Ptr->pos.y;
-    bottom = gSaveBlock1Ptr->pos.y + 16;
+    bottom = gSaveBlock1Ptr->pos.y + 12;
 
     if (eventObject->currentCoords.x >= left && eventObject->currentCoords.x <= right
         && eventObject->currentCoords.y >= top && eventObject->currentCoords.y <= bottom)
@@ -1863,7 +1863,7 @@ static void sub_808E1B8(u8 eventObjectId, s16 x, s16 y)
         sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
         sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
         sprite->pos1.x += 8;
-        sprite->pos1.y += 16 + sprite->centerToCornerVecY;
+        sprite->pos1.y += 12 + sprite->centerToCornerVecY;
         sprite->images = graphicsInfo->images;
         if (eventObject->movementType == 0x0b)
         {
@@ -1942,7 +1942,7 @@ void EventObjectSetGraphicsId(struct EventObject *eventObject, u8 graphicsId)
     sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
     sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
     sprite->pos1.x += 8;
-    sprite->pos1.y += 16 + sprite->centerToCornerVecY;
+    sprite->pos1.y += 12 + sprite->centerToCornerVecY;
     if (eventObject->trackedByCamera)
     {
         CameraObjectReset1();
@@ -2248,7 +2248,7 @@ void sub_808EB08(struct EventObject *eventObject, s16 x, s16 y)
     sprite->centerToCornerVecX = -(graphicsInfo->width >> 1);
     sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
     sprite->pos1.x += 8;
-    sprite->pos1.y += 16 + sprite->centerToCornerVecY;
+    sprite->pos1.y += 12 + sprite->centerToCornerVecY;
     sub_808E38C(eventObject);
     if (eventObject->trackedByCamera)
     {

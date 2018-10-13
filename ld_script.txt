@@ -276,7 +276,6 @@ SECTIONS {
         src/unk_transition.o(.text);
         src/international_string_util.o(.text);
         asm/international_string_util.o(.text);
-		src/field_camera.o(.text);
     } =0
 
     script_data :
@@ -561,8 +560,6 @@ SECTIONS {
         src/m4a_tables.o(.rodata);
         data/sound_data.o(.rodata);
 		src/text.o(.data);
-		src/field_camera.o(.data);
-		src/field_camera.o(.rodata);
     } =0
 
     song_data :

@@ -1,6 +1,6 @@
 LittlerootTown_ProfessorBirchsLab_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_SCIENTIST_1, 0, 9, 8, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, LittlerootTown_ProfessorBirchsLab_EventScript_1F9F84, 0
-	object_event 2, EVENT_OBJ_GFX_PROF_BIRCH, 0, 6, 4, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, LittlerootTown_ProfessorBirchsLab_EventScript_1FA25A, 721
+	object_event 2, EVENT_OBJ_GFX_PROF_BIRCH, 0, 5, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, LittlerootTown_ProfessorBirchsLab_EventScript_1FA25A, 721
 	object_event 3, EVENT_OBJ_GFX_HIPSTER, 0, 7, 4, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LittlerootTown_ProfessorBirchsLab_EventScript_1FA3EC, 889
 	object_event 4, EVENT_OBJ_GFX_ITEM_BALL, 0, 6, 8, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LittlerootTown_ProfessorBirchsLab_EventScript_1F9FBB, 811
 	object_event 5, EVENT_OBJ_GFX_ITEM_BALL, 0, 6, 8, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LittlerootTown_ProfessorBirchsLab_EventScript_1F9FEF, 812

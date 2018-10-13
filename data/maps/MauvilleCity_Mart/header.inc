@@ -1,4 +1,4 @@
-MauvilleCity_Mart: @ 8483328
+MauvilleCity_Mart::
 	.4byte Mart_Layout
 	.4byte MauvilleCity_Mart_MapEvents
 	.4byte MauvilleCity_Mart_MapScripts
@@ -12,4 +12,3 @@ MauvilleCity_Mart: @ 8483328
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-
