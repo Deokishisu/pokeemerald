@@ -291,7 +291,7 @@ $(EVENTOBJGFXDIR)/people/little_boy_2.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/little_girl_1.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/little_girl_2.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
@@ -300,13 +300,13 @@ $(EVENTOBJGFXDIR)/people/man_1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(EVENTOBJGFXDIR)/people/man_2.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/man_3.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/man_4.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/man_5.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
@@ -363,7 +363,7 @@ $(EVENTOBJGFXDIR)/people/quinty_plump.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(EVENTOBJGFXDIR)/people/red.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/reporter_f.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
@@ -435,7 +435,7 @@ $(EVENTOBJGFXDIR)/people/woman_1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(EVENTOBJGFXDIR)/people/woman_2.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/woman_3.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
@@ -450,10 +450,10 @@ $(EVENTOBJGFXDIR)/people/woman_6.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(EVENTOBJGFXDIR)/people/woman_7.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/youngster.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 
 

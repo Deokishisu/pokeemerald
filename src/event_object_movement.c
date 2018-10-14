@@ -1488,6 +1488,7 @@ static u8 TrySetupEventObjectSprite(struct EventObjectTemplate *eventObjectTempl
     u8 eventObjectId;
     u8 paletteSlot;
     u8 spriteId;
+	u8 overridePalette = eventObjectTemplate->unk2;
 
     eventObjectId = InitEventObjectStateFromTemplate(eventObjectTemplate, mapNum, mapGroup);
     if (eventObjectId == NUM_EVENT_OBJECTS)
@@ -1526,7 +1527,10 @@ static u8 TrySetupEventObjectSprite(struct EventObjectTemplate *eventObjectTempl
     sprite->centerToCornerVecY = -(graphicsInfo->height >> 1);
     sprite->pos1.x += 8;
     sprite->pos1.y += 12 + sprite->centerToCornerVecY;
-    sprite->oam.paletteNum = paletteSlot;
+	if(overridePalette != 0)
+		sprite->oam.paletteNum = overridePalette + 1;
+	else
+		sprite->oam.paletteNum = paletteSlot;
     sprite->coordOffsetEnabled = TRUE;
     sprite->data[0] = eventObjectId;
     eventObject->spriteId = spriteId;

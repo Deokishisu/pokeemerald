@@ -1,7 +1,7 @@
 NewBarkTown_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_NURSE, 0, 16, 10, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 2, 0, 0, LittlerootTown_EventScript_1E8034, 0
-	object_event 2, EVENT_OBJ_GFX_BEAUTY, 0, 11, 8, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, LittlerootTown_EventScript_1E8022, 868
-	object_event 3, EVENT_OBJ_GFX_BUG_CATCHER, 0, 15, 14, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, LittlerootTown_EventScript_1E802B, 0
+	object_event 2, EVENT_OBJ_GFX_BEAUTY, 2, 12, 8, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, LittlerootTown_EventScript_1E8022, 868
+	object_event 3, EVENT_OBJ_GFX_BUG_CATCHER, 3, 15, 14, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, LittlerootTown_EventScript_1E802B, 0
 	object_event 4, EVENT_OBJ_GFX_MOM, 0, 5, 8, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, LittlerootTown_EventScript_1E863D, 752
 	object_event 5, EVENT_OBJ_GFX_TRUCK, 0, 1, 2, 4, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, 0x0, 761
 	object_event 6, EVENT_OBJ_GFX_TRUCK, 0, 1, 2, 4, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, 0x0, 762

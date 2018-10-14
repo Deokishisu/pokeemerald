@@ -39,10 +39,9 @@ OldaleTown_PokemonCenter_1F_EventScript_1FC04F:: @ 81FC04F
 	end
 
 OldaleTown_PokemonCenter_1F_Text_1FC059: @ 81FC059
-	.string "That PC in the corner there is\n"
-	.string "for any POKéMON TRAINER to use.\p"
-	.string "Naturally, that means you’re welcome\n"
-	.string "to use it, too.$"
+	.string "That PC is free\n"
+	.string "for any trainer\l"
+	.string "to use.$"
 
 OldaleTown_PokemonCenter_1F_Text_1FC0CD: @ 81FC0CD
 	.string "POKéMON CENTERS are great!\p"

@@ -1,7 +1,7 @@
 CherrygroveCity_Mart_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_MART_EMPLOYEE, 0, 1, 3, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, OldaleTown_Mart_EventScript_1FC240, 0
-	object_event 2, EVENT_OBJ_GFX_WOMAN_7, 0, 2, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, OldaleTown_Mart_EventScript_1FC28A, 0
-	object_event 3, EVENT_OBJ_GFX_BOY_1, 0, 10, 3, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, 0, 0, OldaleTown_Mart_EventScript_1FC2A9, 0
+	object_event 1, EVENT_OBJ_GFX_MART_EMPLOYEE, 3, 1, 3, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, OldaleTown_Mart_EventScript_1FC240, 0
+	object_event 2, EVENT_OBJ_GFX_YOUNGSTER, 1, 2, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, OldaleTown_Mart_EventScript_1FC28A, 0
+	object_event 3, EVENT_OBJ_GFX_MAN_4, 2, 7, 6, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 1, 0, 0, OldaleTown_Mart_EventScript_1FC2A9, 0
 
 CherrygroveCity_Mart_MapWarps::
 	warp_def 3, 7, 0, 3, MAP_CHERRYGROVE_CITY
