@@ -710,11 +710,11 @@ void TilesetCb_General(void)
 
 void TilesetCb_InsideBuilding(void)
 {
-    static void sub_80A0BB4(u16);
+    //static void sub_80A0BB4(u16);
 
-    sPrimaryTilesetCBCounter = 0;
-    sPrimaryTilesetCBBufferSize = 0x100;
-    sPrimaryTilesetCB = sub_80A0BB4;
+    //sPrimaryTilesetCBCounter = 0;
+    //sPrimaryTilesetCBBufferSize = 0x100;
+    //sPrimaryTilesetCB = sub_80A0BB4;
 }
 
 static void sub_80A0B70(u16 timer)

@@ -1,5 +1,5 @@
 CherrygroveCity_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_LITTLE_GIRL_1, 0, 16, 11, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, OldaleTown_EventScript_1E8EF3, 0
+	object_event 1, EVENT_OBJ_GFX_TWIN, 0, 16, 11, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, OldaleTown_EventScript_1E8EF3, 0
 	object_event 2, EVENT_OBJ_GFX_MART_EMPLOYEE, 0, 13, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, OldaleTown_EventScript_1E8EFC, 0
 	object_event 3, EVENT_OBJ_GFX_MANIAC, 0, 8, 9, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, OldaleTown_EventScript_1E901F, 0
 	object_event 4, EVENT_OBJ_GFX_HIPSTER, 0, 11, 19, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, OldaleTown_EventScript_1E9070, 979

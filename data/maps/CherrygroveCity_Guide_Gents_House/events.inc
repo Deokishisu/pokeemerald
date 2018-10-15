@@ -1,6 +1,6 @@
 CherrygroveCity_Guide_Gents_House_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_WOMAN_2, 1, 2, 4, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, OldaleTown_House2_EventScript_1FBF5B, 0
-	object_event 2, EVENT_OBJ_GFX_WOMAN_2, 3, 5, 4, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, OldaleTown_House2_EventScript_1FBF64, 0
+	object_event 1, EVENT_OBJ_GFX_POKEFAN_F, 1, 2, 4, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, OldaleTown_House2_EventScript_1FBF5B, 0
+	object_event 2, EVENT_OBJ_GFX_POKEFAN_F, 3, 5, 4, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, OldaleTown_House2_EventScript_1FBF64, 0
 
 CherrygroveCity_Guide_Gents_House_MapWarps::
 	warp_def 2, 7, 0, 1, MAP_CHERRYGROVE_CITY
