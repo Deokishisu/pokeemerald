@@ -101,6 +101,7 @@ static void CameraObject_2(struct Sprite *);
 static struct EventObjectTemplate *FindEventObjectTemplateByLocalId(u8 localId, struct EventObjectTemplate *templates, u8 count);
 static void ClearEventObjectMovement(struct EventObject *, struct Sprite *);
 static void EventObjectSetSingleMovement(struct EventObject *, struct Sprite *, u8);
+struct EventObjectTemplate *GetBaseTemplateForEventObject(const struct EventObject *);
 
 const u8 gReflectionEffectPaletteMap[] = {1, 1, 6, 7, 8, 9, 6, 7, 8, 9, 11, 11, 0, 0, 0, 0};
 
@@ -1820,12 +1821,15 @@ static void sub_808E1B8(u8 eventObjectId, s16 x, s16 y)
 {
     u8 spriteId;
     u8 paletteSlot;
+	const struct EventObject *temp = &gEventObjects[eventObjectId];
     struct EventObject *eventObject;
     const struct SubspriteTable *subspriteTables;
     const struct EventObjectGraphicsInfo *graphicsInfo;
     struct SpriteFrameImage spriteFrameImage;
     struct SpriteTemplate spriteTemplate;
     struct Sprite *sprite;
+	struct EventObjectTemplate *eventObjectTemplate;
+	u8 paletteOverride;
 
 #define i spriteId
     for (i = 0; i < ARRAY_COUNT(gLinkPlayerEventObjects); i++)
@@ -1838,6 +1842,8 @@ static void sub_808E1B8(u8 eventObjectId, s16 x, s16 y)
 #undef i
 
     eventObject = &gEventObjects[eventObjectId];
+	eventObjectTemplate = GetBaseTemplateForEventObject(temp);
+	paletteOverride = eventObjectTemplate->unk2;
     subspriteTables = NULL;
     graphicsInfo = GetEventObjectGraphicsInfo(eventObject->graphicsId);
     spriteFrameImage.size = graphicsInfo->size;
@@ -1878,7 +1884,10 @@ static void sub_808E1B8(u8 eventObjectId, s16 x, s16 y)
         {
             SetSubspriteTables(sprite, subspriteTables);
         }
-        sprite->oam.paletteNum = paletteSlot;
+		if(paletteOverride != 0 && paletteSlot != 0) //paletteSlot condition needed to exclude player
+			sprite->oam.paletteNum = paletteOverride + 1;
+		else
+			sprite->oam.paletteNum = paletteSlot;
         sprite->coordOffsetEnabled = TRUE;
         sprite->data[0] = eventObjectId;
         eventObject->spriteId = spriteId;
