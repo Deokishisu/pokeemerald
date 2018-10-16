@@ -1,6 +1,6 @@
 SouthernIsland_Exterior_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_SAILOR, 0, 13, 23, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, SouthernIsland_Exterior_EventScript_2429D2, 0
-	object_event 2, EVENT_OBJ_GFX_SS_TIDAL, 0, 13, 25, 1, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, 0x0, 0
+	object_event 2, EVENT_OBJ_GFX_ZSS_TIDAL, 0, 13, 25, 1, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, 0x0, 0
 
 SouthernIsland_Exterior_MapWarps::
 	warp_def 14, 5, 3, 0, MAP_SOUTHERN_ISLAND_INTERIOR

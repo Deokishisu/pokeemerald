@@ -1,6 +1,6 @@
 PetalburgCity_House2_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_POKEFAN_F, 0, 2, 3, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, PetalburgCity_House2_EventScript_2078F3, 0
-	object_event 2, EVENT_OBJ_GFX_SCHOOL_KID_M, 0, 5, 4, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, PetalburgCity_House2_EventScript_2078FC, 0
+	object_event 2, EVENT_OBJ_GFX_ZSCHOOL_KID_M, 0, 5, 4, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, PetalburgCity_House2_EventScript_2078FC, 0
 
 PetalburgCity_House2_MapWarps::
 	warp_def 3, 7, 0, 4, MAP_PETALBURG_CITY

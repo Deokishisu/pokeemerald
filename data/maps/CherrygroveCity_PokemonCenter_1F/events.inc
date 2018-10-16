@@ -1,8 +1,8 @@
 CherrygroveCity_PokemonCenter_1F_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_NURSE, 1, 3, 1, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, OldaleTown_PokemonCenter_1F_EventScript_1FC01A, 0
 	object_event 2, EVENT_OBJ_GFX_GENTLEMAN, 2, 8, 6, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, OldaleTown_PokemonCenter_1F_EventScript_1FC028, 0
-	object_event 3, EVENT_OBJ_GFX_BOY_1, 1, 2, 3, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, OldaleTown_PokemonCenter_1F_EventScript_1FC031, 0
-	object_event 4, EVENT_OBJ_GFX_GIRL_3, 3, 1, 6, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, OldaleTown_PokemonCenter_1F_EventScript_1FC03A, 0
+	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 1, 2, 3, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, OldaleTown_PokemonCenter_1F_EventScript_1FC031, 0
+	object_event 4, EVENT_OBJ_GFX_ZGIRL_3, 3, 1, 6, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, OldaleTown_PokemonCenter_1F_EventScript_1FC03A, 0
 
 CherrygroveCity_PokemonCenter_1F_MapWarps::
 	warp_def 3, 7, 3, 2, MAP_CHERRYGROVE_CITY

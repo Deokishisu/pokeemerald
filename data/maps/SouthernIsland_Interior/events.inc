@@ -1,6 +1,6 @@
 SouthernIsland_Interior_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_HIPSTER, 0, 13, 12, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 910
-	object_event 2, EVENT_OBJ_GFX_TRADER, 0, 13, 2, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, 911
+	object_event 1, EVENT_OBJ_GFX_ZHIPSTER, 0, 13, 12, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 910
+	object_event 2, EVENT_OBJ_GFX_ZTRADER, 0, 13, 2, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, 911
 
 SouthernIsland_Interior_MapWarps::
 	warp_def 13, 18, 3, 0, MAP_SOUTHERN_ISLAND_EXTERIOR

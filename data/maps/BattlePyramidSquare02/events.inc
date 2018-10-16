@@ -1,5 +1,5 @@
 BattlePyramidSquare02_EventObjects: @ 853A51C
-	object_event 1, EVENT_OBJ_GFX_BOY_3, 0, 2, 1, 4, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT, 1, 1, 1, 5, BattleFrontier_BattlePyramidEmptySquare_EventScript_252C4F, 0
+	object_event 1, EVENT_OBJ_GFX_ZBOY_3, 0, 2, 1, 4, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT, 1, 1, 1, 5, BattleFrontier_BattlePyramidEmptySquare_EventScript_252C4F, 0
 	object_event 2, EVENT_OBJ_GFX_POKEFAN_F, 0, 5, 6, 4, MOVEMENT_TYPE_FACE_UP_AND_LEFT, 1, 1, 1, 5, BattleFrontier_BattlePyramidEmptySquare_EventScript_252C4F, 0
 	object_event 3, EVENT_OBJ_GFX_FAT_MAN, 0, 2, 6, 4, MOVEMENT_TYPE_FACE_UP_AND_RIGHT, 1, 1, 1, 5, BattleFrontier_BattlePyramidEmptySquare_EventScript_252C4F, 0
 	object_event 4, EVENT_OBJ_GFX_TWIN, 0, 5, 1, 4, MOVEMENT_TYPE_FACE_DOWN_AND_LEFT, 1, 1, 1, 5, BattleFrontier_BattlePyramidEmptySquare_EventScript_252C4F, 0

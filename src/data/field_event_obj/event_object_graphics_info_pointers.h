@@ -5,10 +5,10 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanNormal;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanMachBike;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanSurfing;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanFieldMove;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_QuintyPlump;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Surge;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_NinjaBoy;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Twin;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Boy1;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Blaine;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Girl1;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Boy2;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Girl2;
@@ -22,32 +22,32 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_FatMan;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_PokefanF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Man1;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Woman2;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ExpertM;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ExpertF;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Sage;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Teacher;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Man2;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Woman3;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_PokefanM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Woman4;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Cook;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_LinkReceptionist;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Captain;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Receptionist;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_OldMan;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_OldWoman;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RedsMom;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Camper;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Picnicker;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Man3;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Woman5;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_CooltrainerM;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_CooltrainerF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Youngster;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BugCatcher;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_PsychicM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SchoolKidM;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Maniac;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_HexManiac;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SuperNerd;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_OldWoman;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Rayquaza1;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SwimmerF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BlackBelt;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Beauty;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Scientist1;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Scientist;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Lass;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Gentleman;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Sailor;
@@ -57,15 +57,15 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RunningTriathleteF
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_TuberF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_TuberM;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Hiker;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_CyclingTriathleteM;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Biker;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_CyclingTriathleteF;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Nurse;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ItemBall;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BerryTree;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BerryTreeHoenn;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BerryTreeEarlyStages;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BerryTreeLateStages;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanAcroBike;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ProfBirch;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ProfElm;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Man4;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Man5;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ReporterM;
@@ -85,22 +85,22 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedPikachuDoll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedPorygon2Doll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_CuttableTree;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MartEmployee;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RooftopSaleWoman;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_KimonoGirl;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Teala;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BreakableRock;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_PushableBoulder;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MrBrineysBoat;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Sabrina;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayNormal;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayMachBike;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayAcroBike;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MaySurfing;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayFieldMove;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Truck;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_VigorothCarryingBox;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_VigorothFacingAway;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BirchsBag;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_EnemyZigzagoon;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Artist;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SNES;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_GoldTrophy;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SilverTrophy;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Paper;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Rhydon;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Erika;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RivalBrendanNormal;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RivalBrendanMachBike;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RivalBrendanAcroBike;
@@ -114,35 +114,35 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RivalMayFieldMove;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Cameraman;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanUnderwater;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayUnderwater;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MovingBox;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Book;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_CableCar;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Scientist2;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_DevonEmployee;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_AquaMemberM;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_AquaMemberF;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MagmaMemberM;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MagmaMemberF;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Sidney;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Phoebe;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Glacia;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Drake;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Roxanne;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Brawly;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Wattson;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Flannery;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Norman;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Winona;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Liza;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Tate;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Wallace;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Steven;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Wally;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RubySapphireLittleBoy;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ProfOak;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_FishingGuru;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Bill;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kurt;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RocketGruntM;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RocketGruntF;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Will;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Karen;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Bruno;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Koga;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Falkner;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Bugsy;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Whitney;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Morty;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Chuck;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Jasmine;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Pryce;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Clair;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Brock;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Lance;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Janine;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Officer;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanFishing;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayFishing;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_HotSpringsOldWoman;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Guitarist;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SSTidal;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SubmarineShadow;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_N64;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_PichuDoll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_PikachuDoll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MarillDoll;
@@ -191,43 +191,43 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BigRegisteelDoll;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Latias;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Latios;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_GameboyKid;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_ContestJudge;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Elder;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanWatering;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayWatering;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanDecorating;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MayDecorating;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Archie;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Maxie;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Daisy;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Rival;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kyogre1;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Groudon1;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Fossil;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Regirock;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Regice;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BerryTree;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BigOnixDoll;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_VirtualBoy;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Registeel;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Skitty;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kecleon1;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Slowpoke;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Suicune;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kyogre2;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Groudon2;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Rayquaza2;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Zigzagoon;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Pikachu;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Azumarill;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Wingull;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kecleon2;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_TuberMSwimming;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Azurill;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Raikou;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SurfingLapras;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Bird;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Cal;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Misty;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Entei;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Mom;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_LinkBrendan;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_LinkMay;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Juan;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Scott;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Poochyena;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Blue;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Pharmacist;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_SurfingPikachu;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kyogre3;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Groudon3;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_MysteryEventDeliveryman;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Statue;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kirlia;
-const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Dusclops;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Famicom;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Clefairy;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Dragonite;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnionRoomAttendant;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Sudowoodo;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Mew;
@@ -254,10 +254,10 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
 	&gEventObjectGraphicsInfo_BrendanMachBike,
 	&gEventObjectGraphicsInfo_BrendanSurfing,
 	&gEventObjectGraphicsInfo_BrendanFieldMove,
-	&gEventObjectGraphicsInfo_QuintyPlump,
+	&gEventObjectGraphicsInfo_Surge,
 	&gEventObjectGraphicsInfo_NinjaBoy,
 	&gEventObjectGraphicsInfo_Twin,
-	&gEventObjectGraphicsInfo_Boy1,
+	&gEventObjectGraphicsInfo_Blaine,
 	&gEventObjectGraphicsInfo_Girl1,
 	&gEventObjectGraphicsInfo_Boy2,
 	&gEventObjectGraphicsInfo_Girl2,
@@ -271,32 +271,32 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
 	&gEventObjectGraphicsInfo_PokefanF,
 	&gEventObjectGraphicsInfo_Man1,
 	&gEventObjectGraphicsInfo_Woman2,
-	&gEventObjectGraphicsInfo_ExpertM,
-	&gEventObjectGraphicsInfo_ExpertF,
+	&gEventObjectGraphicsInfo_Sage,
+	&gEventObjectGraphicsInfo_Teacher,
 	&gEventObjectGraphicsInfo_Man2,
 	&gEventObjectGraphicsInfo_Woman3,
 	&gEventObjectGraphicsInfo_PokefanM,
 	&gEventObjectGraphicsInfo_Woman4,
-	&gEventObjectGraphicsInfo_Cook,
-	&gEventObjectGraphicsInfo_LinkReceptionist,
+	&gEventObjectGraphicsInfo_Captain,
+	&gEventObjectGraphicsInfo_Receptionist,
 	&gEventObjectGraphicsInfo_OldMan,
-	&gEventObjectGraphicsInfo_OldWoman,
+	&gEventObjectGraphicsInfo_RedsMom,
 	&gEventObjectGraphicsInfo_Camper,
 	&gEventObjectGraphicsInfo_Picnicker,
-	&gEventObjectGraphicsInfo_Man3,
-	&gEventObjectGraphicsInfo_Woman5,
+	&gEventObjectGraphicsInfo_CooltrainerM,
+	&gEventObjectGraphicsInfo_CooltrainerF,
 	&gEventObjectGraphicsInfo_Youngster,
 	&gEventObjectGraphicsInfo_BugCatcher,
 	&gEventObjectGraphicsInfo_PsychicM,
 	&gEventObjectGraphicsInfo_SchoolKidM,
-	&gEventObjectGraphicsInfo_Maniac,
-	&gEventObjectGraphicsInfo_HexManiac,
+	&gEventObjectGraphicsInfo_SuperNerd,
+	&gEventObjectGraphicsInfo_OldWoman,
 	&gEventObjectGraphicsInfo_Rayquaza1,
 	&gEventObjectGraphicsInfo_SwimmerM,
 	&gEventObjectGraphicsInfo_SwimmerF,
 	&gEventObjectGraphicsInfo_BlackBelt,
 	&gEventObjectGraphicsInfo_Beauty,
-	&gEventObjectGraphicsInfo_Scientist1,
+	&gEventObjectGraphicsInfo_Scientist,
 	&gEventObjectGraphicsInfo_Lass,
 	&gEventObjectGraphicsInfo_Gentleman,
 	&gEventObjectGraphicsInfo_Sailor,
@@ -306,15 +306,15 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
 	&gEventObjectGraphicsInfo_TuberF,
 	&gEventObjectGraphicsInfo_TuberM,
 	&gEventObjectGraphicsInfo_Hiker,
-	&gEventObjectGraphicsInfo_CyclingTriathleteM,
+	&gEventObjectGraphicsInfo_Biker,
 	&gEventObjectGraphicsInfo_CyclingTriathleteF,
 	&gEventObjectGraphicsInfo_Nurse,
 	&gEventObjectGraphicsInfo_ItemBall,
-	&gEventObjectGraphicsInfo_BerryTree,
+	&gEventObjectGraphicsInfo_BerryTreeHoenn,
 	&gEventObjectGraphicsInfo_BerryTreeEarlyStages,
 	&gEventObjectGraphicsInfo_BerryTreeLateStages,
 	&gEventObjectGraphicsInfo_BrendanAcroBike,
-	&gEventObjectGraphicsInfo_ProfBirch,
+	&gEventObjectGraphicsInfo_ProfElm,
 	&gEventObjectGraphicsInfo_Man4,
 	&gEventObjectGraphicsInfo_Man5,
 	&gEventObjectGraphicsInfo_ReporterM,
@@ -334,22 +334,22 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
 	&gEventObjectGraphicsInfo_UnusedPorygon2Doll,
 	&gEventObjectGraphicsInfo_CuttableTree,
 	&gEventObjectGraphicsInfo_MartEmployee,
-	&gEventObjectGraphicsInfo_RooftopSaleWoman,
+	&gEventObjectGraphicsInfo_KimonoGirl,
 	&gEventObjectGraphicsInfo_Teala,
 	&gEventObjectGraphicsInfo_BreakableRock,
 	&gEventObjectGraphicsInfo_PushableBoulder,
-	&gEventObjectGraphicsInfo_MrBrineysBoat,
+	&gEventObjectGraphicsInfo_Sabrina,
 	&gEventObjectGraphicsInfo_MayNormal,
 	&gEventObjectGraphicsInfo_MayMachBike,
 	&gEventObjectGraphicsInfo_MayAcroBike,
 	&gEventObjectGraphicsInfo_MaySurfing,
 	&gEventObjectGraphicsInfo_MayFieldMove,
-	&gEventObjectGraphicsInfo_Truck,
-	&gEventObjectGraphicsInfo_VigorothCarryingBox,
-	&gEventObjectGraphicsInfo_VigorothFacingAway,
-	&gEventObjectGraphicsInfo_BirchsBag,
-	&gEventObjectGraphicsInfo_EnemyZigzagoon,
-	&gEventObjectGraphicsInfo_Artist,
+	&gEventObjectGraphicsInfo_SNES,
+	&gEventObjectGraphicsInfo_GoldTrophy,
+	&gEventObjectGraphicsInfo_SilverTrophy,
+	&gEventObjectGraphicsInfo_Paper,
+	&gEventObjectGraphicsInfo_Rhydon,
+	&gEventObjectGraphicsInfo_Erika,
 	&gEventObjectGraphicsInfo_RivalBrendanNormal,
 	&gEventObjectGraphicsInfo_RivalBrendanMachBike,
 	&gEventObjectGraphicsInfo_RivalBrendanAcroBike,
@@ -363,35 +363,35 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
 	&gEventObjectGraphicsInfo_Cameraman,
 	&gEventObjectGraphicsInfo_BrendanUnderwater,
 	&gEventObjectGraphicsInfo_MayUnderwater,
-	&gEventObjectGraphicsInfo_MovingBox,
+	&gEventObjectGraphicsInfo_Book,
 	&gEventObjectGraphicsInfo_CableCar,
-	&gEventObjectGraphicsInfo_Scientist2,
-	&gEventObjectGraphicsInfo_DevonEmployee,
-	&gEventObjectGraphicsInfo_AquaMemberM,
-	&gEventObjectGraphicsInfo_AquaMemberF,
-	&gEventObjectGraphicsInfo_MagmaMemberM,
-	&gEventObjectGraphicsInfo_MagmaMemberF,
-	&gEventObjectGraphicsInfo_Sidney,
-	&gEventObjectGraphicsInfo_Phoebe,
-	&gEventObjectGraphicsInfo_Glacia,
-	&gEventObjectGraphicsInfo_Drake,
-	&gEventObjectGraphicsInfo_Roxanne,
-	&gEventObjectGraphicsInfo_Brawly,
-	&gEventObjectGraphicsInfo_Wattson,
-	&gEventObjectGraphicsInfo_Flannery,
-	&gEventObjectGraphicsInfo_Norman,
-	&gEventObjectGraphicsInfo_Winona,
-	&gEventObjectGraphicsInfo_Liza,
-	&gEventObjectGraphicsInfo_Tate,
-	&gEventObjectGraphicsInfo_Wallace,
-	&gEventObjectGraphicsInfo_Steven,
-	&gEventObjectGraphicsInfo_Wally,
-	&gEventObjectGraphicsInfo_RubySapphireLittleBoy,
+	&gEventObjectGraphicsInfo_ProfOak,
+	&gEventObjectGraphicsInfo_FishingGuru,
+	&gEventObjectGraphicsInfo_Bill,
+	&gEventObjectGraphicsInfo_Kurt,
+	&gEventObjectGraphicsInfo_RocketGruntM,
+	&gEventObjectGraphicsInfo_RocketGruntF,
+	&gEventObjectGraphicsInfo_Will,
+	&gEventObjectGraphicsInfo_Karen,
+	&gEventObjectGraphicsInfo_Bruno,
+	&gEventObjectGraphicsInfo_Koga,
+	&gEventObjectGraphicsInfo_Falkner,
+	&gEventObjectGraphicsInfo_Bugsy,
+	&gEventObjectGraphicsInfo_Whitney,
+	&gEventObjectGraphicsInfo_Morty,
+	&gEventObjectGraphicsInfo_Chuck,
+	&gEventObjectGraphicsInfo_Jasmine,
+	&gEventObjectGraphicsInfo_Pryce,
+	&gEventObjectGraphicsInfo_Clair,
+	&gEventObjectGraphicsInfo_Brock,
+	&gEventObjectGraphicsInfo_Lance,
+	&gEventObjectGraphicsInfo_Janine,
+	&gEventObjectGraphicsInfo_Officer,
 	&gEventObjectGraphicsInfo_BrendanFishing,
 	&gEventObjectGraphicsInfo_MayFishing,
-	&gEventObjectGraphicsInfo_HotSpringsOldWoman,
+	&gEventObjectGraphicsInfo_Guitarist,
 	&gEventObjectGraphicsInfo_SSTidal,
-	&gEventObjectGraphicsInfo_SubmarineShadow,
+	&gEventObjectGraphicsInfo_N64,
 	&gEventObjectGraphicsInfo_PichuDoll,
 	&gEventObjectGraphicsInfo_PikachuDoll,
 	&gEventObjectGraphicsInfo_MarillDoll,
@@ -440,43 +440,43 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
 	&gEventObjectGraphicsInfo_Latias,
 	&gEventObjectGraphicsInfo_Latios,
 	&gEventObjectGraphicsInfo_GameboyKid,
-	&gEventObjectGraphicsInfo_ContestJudge,
+	&gEventObjectGraphicsInfo_Elder,
 	&gEventObjectGraphicsInfo_BrendanWatering,
 	&gEventObjectGraphicsInfo_MayWatering,
 	&gEventObjectGraphicsInfo_BrendanDecorating,
 	&gEventObjectGraphicsInfo_MayDecorating,
-	&gEventObjectGraphicsInfo_Archie,
-	&gEventObjectGraphicsInfo_Maxie,
+	&gEventObjectGraphicsInfo_Daisy,
+	&gEventObjectGraphicsInfo_Rival,
 	&gEventObjectGraphicsInfo_Kyogre1,
 	&gEventObjectGraphicsInfo_Groudon1,
-	&gEventObjectGraphicsInfo_Fossil,
-	&gEventObjectGraphicsInfo_Regirock,
-	&gEventObjectGraphicsInfo_Regice,
+	&gEventObjectGraphicsInfo_BerryTree,
+	&gEventObjectGraphicsInfo_BigOnixDoll,
+	&gEventObjectGraphicsInfo_VirtualBoy,
 	&gEventObjectGraphicsInfo_Registeel,
-	&gEventObjectGraphicsInfo_Skitty,
-	&gEventObjectGraphicsInfo_Kecleon1,
+	&gEventObjectGraphicsInfo_Slowpoke,
+	&gEventObjectGraphicsInfo_Suicune,
 	&gEventObjectGraphicsInfo_Kyogre2,
 	&gEventObjectGraphicsInfo_Groudon2,
 	&gEventObjectGraphicsInfo_Rayquaza2,
 	&gEventObjectGraphicsInfo_Zigzagoon,
-	&gEventObjectGraphicsInfo_Pikachu,
-	&gEventObjectGraphicsInfo_Azumarill,
-	&gEventObjectGraphicsInfo_Wingull,
-	&gEventObjectGraphicsInfo_Kecleon2,
-	&gEventObjectGraphicsInfo_TuberMSwimming,
-	&gEventObjectGraphicsInfo_Azurill,
+	&gEventObjectGraphicsInfo_Raikou,
+	&gEventObjectGraphicsInfo_SurfingLapras,
+	&gEventObjectGraphicsInfo_Bird,
+	&gEventObjectGraphicsInfo_Cal,
+	&gEventObjectGraphicsInfo_Misty,
+	&gEventObjectGraphicsInfo_Entei,
 	&gEventObjectGraphicsInfo_Mom,
 	&gEventObjectGraphicsInfo_LinkBrendan,
 	&gEventObjectGraphicsInfo_LinkMay,
-	&gEventObjectGraphicsInfo_Juan,
-	&gEventObjectGraphicsInfo_Scott,
-	&gEventObjectGraphicsInfo_Poochyena,
+	&gEventObjectGraphicsInfo_Blue,
+	&gEventObjectGraphicsInfo_Pharmacist,
+	&gEventObjectGraphicsInfo_SurfingPikachu,
 	&gEventObjectGraphicsInfo_Kyogre3,
 	&gEventObjectGraphicsInfo_Groudon3,
 	&gEventObjectGraphicsInfo_MysteryEventDeliveryman,
-	&gEventObjectGraphicsInfo_Statue,
-	&gEventObjectGraphicsInfo_Kirlia,
-	&gEventObjectGraphicsInfo_Dusclops,
+	&gEventObjectGraphicsInfo_Famicom,
+	&gEventObjectGraphicsInfo_Clefairy,
+	&gEventObjectGraphicsInfo_Dragonite,
 	&gEventObjectGraphicsInfo_UnionRoomAttendant,
 	&gEventObjectGraphicsInfo_Sudowoodo,
 	&gEventObjectGraphicsInfo_Mew,

@@ -2030,14 +2030,14 @@ const struct EventObjectGraphicsInfo *GetEventObjectGraphicsInfo(u8 graphicsId)
     {
         graphicsId = VarGetEventObjectGraphicsId(graphicsId - SPRITE_VAR);
     }
-    if (graphicsId == EVENT_OBJ_GFX_BARD)
+    if (graphicsId == EVENT_OBJ_GFX_ZBARD)
     {
         bard = GetCurrentMauvilleOldMan();
         return gMauvilleOldManGraphicsInfoPointers[bard];
     }
     if (graphicsId >= NUM_OBJECT_GRAPHICS_INFO)
     {
-        graphicsId = EVENT_OBJ_GFX_NINJA_BOY;
+        graphicsId = EVENT_OBJ_GFX_ZNINJA_BOY;
     }
     return gEventObjectGraphicsInfoPointers[graphicsId];
 }

@@ -1,10 +1,10 @@
 BattleFrontier_BattleTowerLobby_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_TEALA, 0, 6, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23E936, 0
-	object_event 2, EVENT_OBJ_GFX_MAN_4, 0, 23, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EEE7, 0
-	object_event 3, EVENT_OBJ_GFX_WOMAN_5, 0, 17, 8, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EFB5, 0
-	object_event 4, EVENT_OBJ_GFX_BOY_1, 0, 15, 9, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EFBE, 0
-	object_event 5, EVENT_OBJ_GFX_REPORTER_F, 0, 11, 9, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_28CB96, 918
-	object_event 6, EVENT_OBJ_GFX_HIPSTER, 0, 1, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, EventScript_Apprentice, 701
+	object_event 2, EVENT_OBJ_GFX_ZMAN_4, 0, 23, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EEE7, 0
+	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 17, 8, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EFB5, 0
+	object_event 4, EVENT_OBJ_GFX_YOUNGSTER, 0, 15, 9, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EFBE, 0
+	object_event 5, EVENT_OBJ_GFX_ZREPORTER_F, 0, 11, 9, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_28CB96, 918
+	object_event 6, EVENT_OBJ_GFX_ZHIPSTER, 0, 1, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, EventScript_Apprentice, 701
 	object_event 7, EVENT_OBJ_GFX_TEALA, 0, 10, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EA9F, 0
 	object_event 8, EVENT_OBJ_GFX_TEALA, 0, 14, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23EC08, 0
 	object_event 9, EVENT_OBJ_GFX_TEALA, 0, 18, 5, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, BattleFrontier_BattleTowerLobby_EventScript_23ED74, 0

@@ -333,7 +333,7 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_25D643:: @ 825D643
 	msgbox BattleFrontier_BattlePikeRandomRoom1_Text_25DBE4, 4
 	closemessage
 	waitse
-	playmoncry SPECIES_KIRLIA, 0
+	playmoncry SPECIES_CLEFABLE, 0
 	waitmoncry
 	setvar VAR_0x8004, 11
 	special sub_81A703C
@@ -353,11 +353,11 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_25D643:: @ 825D643
 	applymovement 2, BattleFrontier_BattlePikeRandomRoom1_Movement_25D7B1
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_KIRLIA, 0
+	playmoncry SPECIES_CLEFABLE, 0
 	waitmoncry
 	msgbox BattleFrontier_BattlePikeRandomRoom1_Text_25DCAF, 4
 	waitse
-	playmoncry SPECIES_KIRLIA, 0
+	playmoncry SPECIES_CLEFABLE, 0
 	waitmoncry
 	closemessage
 	applymovement 2, BattleFrontier_BattlePikeRandomRoom1_Movement_25D7B3
@@ -370,7 +370,7 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_25D6D5:: @ 825D6D5
 	msgbox BattleFrontier_BattlePikeRandomRoom1_Text_25DC01, 4
 	closemessage
 	waitse
-	playmoncry SPECIES_DUSCLOPS, 0
+	playmoncry SPECIES_DRAGONITE, 0
 	waitmoncry
 	setvar VAR_0x8004, 11
 	special sub_81A703C
@@ -386,11 +386,11 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_25D6D5:: @ 825D6D5
 	applymovement 2, BattleFrontier_BattlePikeRandomRoom1_Movement_25D7B1
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_DUSCLOPS, 0
+	playmoncry SPECIES_DRAGONITE, 0
 	waitmoncry
 	msgbox BattleFrontier_BattlePikeRandomRoom1_Text_25DCAF, 4
 	waitse
-	playmoncry SPECIES_DUSCLOPS, 0
+	playmoncry SPECIES_DRAGONITE, 0
 	waitmoncry
 	closemessage
 	applymovement 2, BattleFrontier_BattlePikeRandomRoom1_Movement_25D7B3
@@ -746,29 +746,29 @@ BattleFrontier_BattlePikeRandomRoom1_Text_25DBD1: @ 825DBD1
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DBE4: @ 825DBE4
 	.string "Now, now!\n"
-	.string "KIRLIA, stop that!$"
+	.string "CLEFABLE, stop that!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC01: @ 825DC01
 	.string "Now, now!\n"
-	.string "DUSCLOPS, stop that!$"
+	.string "DRAGONITE, stop that!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC20: @ 825DC20
-	.string "KIRLIA used TOXIC!$"
+	.string "CLEFABLE used TOXIC!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC33: @ 825DC33
-	.string "KIRLIA used HYPNOSIS!$"
+	.string "CLEFABLE used SING!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC49: @ 825DC49
-	.string "KIRLIA used THUNDER WAVE!$"
+	.string "CLEFABLE used THUNDER WAVE!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC63: @ 825DC63
-	.string "KIRLIA used WILL-O-WISP!$"
+	.string "CLEFABLE used FLAMETHROWER!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC7C: @ 825DC7C
-	.string "DUSCLOPS used WILL-O-WISP!$"
+	.string "DRAGONITE used FLAMETHROWER!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC97: @ 825DC97
-	.string "DUSCLOPS used ICE BEAM!$"
+	.string "DRAGONITE used ICE BEAM!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DCAF: @ 825DCAF
 	.string "Look here!\n"
@@ -776,11 +776,11 @@ BattleFrontier_BattlePikeRandomRoom1_Text_25DCAF: @ 825DCAF
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DCCF: @ 825DCCF
 	.string "I must apologize to you…\p"
-	.string "My KIRLIA has a TIMID nature…$"
+	.string "My CLEFABLE has a TIMID nature…$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DD06: @ 825DD06
 	.string "I must apologize to you…\p"
-	.string "My DUSCLOPS has a TIMID nature…$"
+	.string "My DRAGONITE has a TIMID nature…$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DD3F: @ 825DD3F
 	.string "It attacks without warning if it is\n"

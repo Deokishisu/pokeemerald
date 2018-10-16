@@ -1,8 +1,8 @@
 EverGrandeCity_PokemonLeague_1F_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_NURSE, 0, 3, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, EverGrandeCity_PokemonLeague_1F_EventScript_2295FC, 0
 	object_event 2, EVENT_OBJ_GFX_MART_EMPLOYEE, 0, 16, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, EverGrandeCity_PokemonLeague_1F_EventScript_22960A, 0
-	object_event 3, EVENT_OBJ_GFX_MAN_3, 0, 8, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, EverGrandeCity_PokemonLeague_1F_EventScript_229636, 0
-	object_event 4, EVENT_OBJ_GFX_MAN_3, 0, 11, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, EverGrandeCity_PokemonLeague_1F_EventScript_229636, 0
+	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_M, 0, 8, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, EverGrandeCity_PokemonLeague_1F_EventScript_229636, 0
+	object_event 4, EVENT_OBJ_GFX_COOLTRAINER_M, 0, 11, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, EverGrandeCity_PokemonLeague_1F_EventScript_229636, 0
 
 EverGrandeCity_PokemonLeague_1F_MapWarps::
 	warp_def 9, 11, 3, 0, MAP_EVER_GRANDE_CITY

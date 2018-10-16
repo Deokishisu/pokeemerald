@@ -1,8 +1,8 @@
 SafariZone_Northeast_EventObjects: @ 853B968
-	object_event 1, EVENT_OBJ_GFX_BOY_3, 0, 8, 20, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_23D3C6, 0
-	object_event 2, EVENT_OBJ_GFX_GIRL_3, 0, 30, 22, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_23D3D8, 0
+	object_event 1, EVENT_OBJ_GFX_ZBOY_3, 0, 8, 20, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_23D3C6, 0
+	object_event 2, EVENT_OBJ_GFX_ZGIRL_3, 0, 30, 22, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_23D3D8, 0
 	object_event 3, EVENT_OBJ_GFX_BREAKABLE_ROCK, 0, 11, 11, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_2907A6, 21
-	object_event 4, EVENT_OBJ_GFX_WOMAN_1, 0, 13, 35, 0, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_23D3CF, 0
+	object_event 4, EVENT_OBJ_GFX_ZWOMAN_1, 0, 13, 35, 0, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_23D3CF, 0
 	object_event 5, EVENT_OBJ_GFX_BREAKABLE_ROCK, 0, 8, 13, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_2907A6, 19
 	object_event 6, EVENT_OBJ_GFX_BREAKABLE_ROCK, 0, 9, 7, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_2907A6, 17
 	object_event 7, EVENT_OBJ_GFX_BREAKABLE_ROCK, 0, 8, 10, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SafariZone_Northeast_EventScript_2907A6, 20

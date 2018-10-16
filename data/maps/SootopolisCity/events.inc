@@ -1,22 +1,22 @@
 SootopolisCity_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_EXPERT_M, 0, 31, 18, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, SootopolisCity_EventScript_1E5E8D, 0
-	object_event 2, EVENT_OBJ_GFX_WOMAN_4, 0, 47, 33, 0, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, SootopolisCity_EventScript_1E5FE2, 854
-	object_event 3, EVENT_OBJ_GFX_GIRL_2, 0, 9, 43, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, SootopolisCity_EventScript_1E5ED8, 0
-	object_event 4, EVENT_OBJ_GFX_NINJA_BOY, 0, 51, 14, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, SootopolisCity_EventScript_1E608E, 0
-	object_event 5, EVENT_OBJ_GFX_BOY_1, 0, 43, 26, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, SootopolisCity_EventScript_1E60E3, 0
-	object_event 6, EVENT_OBJ_GFX_MAN_1, 0, 26, 4, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, SootopolisCity_EventScript_1E6017, 839
-	object_event 7, EVENT_OBJ_GFX_STEVEN, 0, 20, 36, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E6166, 973
-	object_event 8, EVENT_OBJ_GFX_WOMAN_5, 0, 49, 34, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E6038, 0
-	object_event 9, EVENT_OBJ_GFX_GROUDON_3, 0, 28, 44, 0, MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT, 1, 1, 0, 0, 0x0, 998
-	object_event 10, EVENT_OBJ_GFX_KYOGRE_3, 0, 34, 44, 1, MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT, 1, 1, 0, 0, 0x0, 997
-	object_event 11, EVENT_OBJ_GFX_RAYQUAZA_2, 0, 31, 41, 1, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, 0x0, 996
-	object_event 12, EVENT_OBJ_GFX_MANIAC, 0, 17, 44, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, SootopolisCity_EventScript_1E6411, 854
-	object_event 13, EVENT_OBJ_GFX_GIRL_3, 0, 14, 42, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, SootopolisCity_EventScript_1E63DB, 854
+	object_event 1, EVENT_OBJ_GFX_OLD_MAN, 0, 31, 18, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, SootopolisCity_EventScript_1E5E8D, 0
+	object_event 2, EVENT_OBJ_GFX_ZWOMAN_4, 0, 47, 33, 0, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, SootopolisCity_EventScript_1E5FE2, 854
+	object_event 3, EVENT_OBJ_GFX_ZGIRL_2, 0, 9, 43, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, SootopolisCity_EventScript_1E5ED8, 0
+	object_event 4, EVENT_OBJ_GFX_ZNINJA_BOY, 0, 51, 14, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, SootopolisCity_EventScript_1E608E, 0
+	object_event 5, EVENT_OBJ_GFX_YOUNGSTER, 0, 43, 26, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, SootopolisCity_EventScript_1E60E3, 0
+	object_event 6, EVENT_OBJ_GFX_ZMAN_1, 0, 26, 4, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, SootopolisCity_EventScript_1E6017, 839
+	object_event 7, EVENT_OBJ_GFX_LANCE, 0, 20, 36, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E6166, 973
+	object_event 8, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 49, 34, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E6038, 0
+	object_event 9, EVENT_OBJ_GFX_ZGROUDON_3, 0, 28, 44, 0, MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT, 1, 1, 0, 0, 0x0, 998
+	object_event 10, EVENT_OBJ_GFX_ZKYOGRE_3, 0, 34, 44, 1, MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT, 1, 1, 0, 0, 0x0, 997
+	object_event 11, EVENT_OBJ_GFX_ZRAYQUAZA_2, 0, 31, 41, 1, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, 0x0, 996
+	object_event 12, EVENT_OBJ_GFX_SUPER_NERD, 0, 17, 44, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, SootopolisCity_EventScript_1E6411, 854
+	object_event 13, EVENT_OBJ_GFX_ZGIRL_3, 0, 14, 42, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, SootopolisCity_EventScript_1E63DB, 854
 	object_event 14, EVENT_OBJ_GFX_BLACK_BELT, 0, 17, 40, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, SootopolisCity_EventScript_1E6393, 854
-	object_event 15, EVENT_OBJ_GFX_BOY_2, 0, 19, 37, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E635D, 854
-	object_event 16, EVENT_OBJ_GFX_MAXIE, 0, 29, 33, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E64F2, 827
-	object_event 17, EVENT_OBJ_GFX_ARCHIE, 0, 31, 33, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E651F, 826
-	object_event 18, EVENT_OBJ_GFX_WALLACE, 0, 31, 18, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E6446, 816
+	object_event 15, EVENT_OBJ_GFX_ZBOY_2, 0, 19, 37, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E635D, 854
+	object_event 16, EVENT_OBJ_GFX_RIVAL, 0, 29, 33, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E64F2, 827
+	object_event 17, EVENT_OBJ_GFX_DAISY, 0, 31, 33, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E651F, 826
+	object_event 18, EVENT_OBJ_GFX_BROCK, 0, 31, 18, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, SootopolisCity_EventScript_1E6446, 816
 
 SootopolisCity_MapWarps::
 	warp_def 43, 31, 0, 0, MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F

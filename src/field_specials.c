@@ -564,15 +564,15 @@ void SpawnLinkPartnerEventObject(void)
                     break;
                 case VERSION_EMERALD:
                     if (gLinkPlayers[i].gender == 0)
-                        linkSpriteId = EVENT_OBJ_GFX_RIVAL_BRENDAN_NORMAL;
+                        linkSpriteId = EVENT_OBJ_GFX_ZRIVAL_BRENDAN_NORMAL;
                     else
-                        linkSpriteId = EVENT_OBJ_GFX_RIVAL_MAY_NORMAL;
+                        linkSpriteId = EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL;
                     break;
                 default:
                     if (gLinkPlayers[i].gender == 0)
-                        linkSpriteId = EVENT_OBJ_GFX_RIVAL_BRENDAN_NORMAL;
+                        linkSpriteId = EVENT_OBJ_GFX_ZRIVAL_BRENDAN_NORMAL;
                     else
-                        linkSpriteId = EVENT_OBJ_GFX_RIVAL_MAY_NORMAL;
+                        linkSpriteId = EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL;
                     break;
             }
             SpawnSpecialEventObjectParameterized(linkSpriteId, gUnknown_085B2B5C[j], 0xf0 - i, gUnknown_085B2B60[j][0] + x + 7, gUnknown_085B2B60[j][1] + y + 7, 0);
@@ -591,8 +591,8 @@ static void LoadLinkPartnerEventObjectSpritePalette(u8 graphicsId, u8 localEvent
     paletteNum += 6;
     if (graphicsId == EVENT_OBJ_GFX_LINK_RS_BRENDAN ||
         graphicsId == EVENT_OBJ_GFX_LINK_RS_MAY ||
-        graphicsId == EVENT_OBJ_GFX_RIVAL_BRENDAN_NORMAL ||
-        graphicsId == EVENT_OBJ_GFX_RIVAL_MAY_NORMAL)
+        graphicsId == EVENT_OBJ_GFX_ZRIVAL_BRENDAN_NORMAL ||
+        graphicsId == EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL)
     {
         u8 obj = GetEventObjectIdByLocalIdAndMap(localEventId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
         if (obj != NUM_EVENT_OBJECTS)
@@ -609,10 +609,10 @@ static void LoadLinkPartnerEventObjectSpritePalette(u8 graphicsId, u8 localEvent
                 case EVENT_OBJ_GFX_LINK_RS_MAY:
                     LoadPalette(gEventObjectPalette34, 0x100 + paletteNum * 16, 0x20);
                     break;
-                case EVENT_OBJ_GFX_RIVAL_BRENDAN_NORMAL:
+                case EVENT_OBJ_GFX_ZRIVAL_BRENDAN_NORMAL:
                     LoadPalette(gEventObjectPalette8, 0x100 + paletteNum * 16, 0x20);
                     break;
-                case EVENT_OBJ_GFX_RIVAL_MAY_NORMAL:
+                case EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL:
                     LoadPalette(gEventObjectPalette17, 0x100 + paletteNum * 16, 0x20);
                     break;
             }
@@ -1280,7 +1280,7 @@ void IsGrassTypeInParty(void)
 
 void SpawnScriptEventObject(void)
 {
-    u8 obj = SpawnSpecialEventObjectParameterized(EVENT_OBJ_GFX_BOY_1, 8, 0x7F, gSaveBlock1Ptr->pos.x + 7, gSaveBlock1Ptr->pos.y + 7, 3);
+    u8 obj = SpawnSpecialEventObjectParameterized(EVENT_OBJ_GFX_BLAINE, 8, 0x7F, gSaveBlock1Ptr->pos.x + 7, gSaveBlock1Ptr->pos.y + 7, 3);
     gEventObjects[obj].invisible = TRUE;
     CameraObjectSetFollowedObjectId(gEventObjects[obj].spriteId);
 }
@@ -2934,11 +2934,11 @@ void sub_813A76C(void)
     {
         if (gLinkPlayers[i].gender == MALE)
         {
-            VarSet(VAR_OBJ_GFX_ID_F - i, EVENT_OBJ_GFX_BRENDAN_NORMAL);
+            VarSet(VAR_OBJ_GFX_ID_F - i, EVENT_OBJ_GFX_GOLD_NORMAL);
         }
         else
         {
-            VarSet(VAR_OBJ_GFX_ID_F - i, EVENT_OBJ_GFX_RIVAL_MAY_NORMAL);
+            VarSet(VAR_OBJ_GFX_ID_F - i, EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL);
         }
     }
 }

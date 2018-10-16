@@ -1,13 +1,13 @@
 PetalburgCity_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_WOMAN_4, 0, 16, 18, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, PetalburgCity_EventScript_1DC3FD, 728
-	object_event 2, EVENT_OBJ_GFX_WALLY, 0, 15, 10, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 726
-	object_event 3, EVENT_OBJ_GFX_BOY_1, 0, 8, 22, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, PetalburgCity_EventScript_1DC3E6, 0
+	object_event 1, EVENT_OBJ_GFX_ZWOMAN_4, 0, 16, 18, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, PetalburgCity_EventScript_1DC3FD, 728
+	object_event 2, EVENT_OBJ_GFX_JANINE, 0, 15, 10, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 726
+	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 0, 8, 22, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, PetalburgCity_EventScript_1DC3E6, 0
 	object_event 4, EVENT_OBJ_GFX_GENTLEMAN, 0, 20, 10, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, 0, 0, PetalburgCity_EventScript_1DC488, 0
 	object_event 5, EVENT_OBJ_GFX_POKEFAN_M, 0, 15, 10, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 830
 	object_event 6, EVENT_OBJ_GFX_ITEM_BALL, 1, 4, 1, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, PetalburgCity_EventScript_2910B4, 1039
 	object_event 7, EVENT_OBJ_GFX_ITEM_BALL, 1, 37, 14, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, PetalburgCity_EventScript_2910C1, 1040
-	object_event 8, EVENT_OBJ_GFX_BOY_2, 0, 12, 15, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, PetalburgCity_EventScript_1DC82E, 0
-	object_event 9, EVENT_OBJ_GFX_SCOTT, 0, 13, 12, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, 0x0, 995
+	object_event 8, EVENT_OBJ_GFX_ZBOY_2, 0, 12, 15, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, PetalburgCity_EventScript_1DC82E, 0
+	object_event 9, EVENT_OBJ_GFX_PHARMACIST, 0, 13, 12, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, 0x0, 995
 
 PetalburgCity_MapWarps::
 	warp_def 3, 15, 0, 0, MAP_PETALBURG_CITY_HOUSE1

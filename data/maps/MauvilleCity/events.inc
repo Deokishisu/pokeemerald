@@ -1,15 +1,15 @@
 MauvilleCity_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_BOY_3, 0, 29, 16, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 1, 0, 0, MauvilleCity_EventScript_1DF3B3, 0
-	object_event 2, EVENT_OBJ_GFX_RICH_BOY, 0, 24, 10, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, MauvilleCity_EventScript_1DF3CE, 0
-	object_event 3, EVENT_OBJ_GFX_MANIAC, 0, 14, 11, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3BC, 0
-	object_event 4, EVENT_OBJ_GFX_WOMAN_4, 0, 18, 6, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3C5, 0
-	object_event 5, EVENT_OBJ_GFX_SCHOOL_KID_M, 0, 17, 14, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3FB, 0
-	object_event 6, EVENT_OBJ_GFX_WALLY, 0, 10, 11, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, MauvilleCity_EventScript_1DF452, 804
+	object_event 1, EVENT_OBJ_GFX_ZBOY_3, 0, 29, 16, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 1, 0, 0, MauvilleCity_EventScript_1DF3B3, 0
+	object_event 2, EVENT_OBJ_GFX_ZRICH_BOY, 0, 24, 10, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, MauvilleCity_EventScript_1DF3CE, 0
+	object_event 3, EVENT_OBJ_GFX_SUPER_NERD, 0, 14, 11, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3BC, 0
+	object_event 4, EVENT_OBJ_GFX_ZWOMAN_4, 0, 18, 6, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3C5, 0
+	object_event 5, EVENT_OBJ_GFX_ZSCHOOL_KID_M, 0, 17, 14, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3FB, 0
+	object_event 6, EVENT_OBJ_GFX_JANINE, 0, 10, 11, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, MauvilleCity_EventScript_1DF452, 804
 	object_event 7, EVENT_OBJ_GFX_POKEFAN_M, 0, 9, 6, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_EventScript_1DF41D, 805
-	object_event 8, EVENT_OBJ_GFX_WATTSON, 0, 29, 9, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, MauvilleCity_EventScript_1DF73A, 912
+	object_event 8, EVENT_OBJ_GFX_WHITNEY, 0, 29, 9, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, MauvilleCity_EventScript_1DF73A, 912
 	object_event 9, EVENT_OBJ_GFX_ITEM_BALL, 0, 28, 19, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, MauvilleCity_EventScript_2910CE, 1116
 	object_event 10, EVENT_OBJ_GFX_FAT_MAN, 0, 13, 7, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_EventScript_2C7F7E, 0
-	object_event 11, EVENT_OBJ_GFX_SCOTT, 0, 12, 14, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 765
+	object_event 11, EVENT_OBJ_GFX_PHARMACIST, 0, 12, 14, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 765
 
 MauvilleCity_MapWarps::
 	warp_def 6, 27, 0, 0, MAP_MAUVILLE_CITY_GYM

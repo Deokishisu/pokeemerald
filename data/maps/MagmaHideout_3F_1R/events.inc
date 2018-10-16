@@ -1,6 +1,6 @@
 MagmaHideout_3F_1R_EventObjects: @ 85373D0
-	object_event 1, EVENT_OBJ_GFX_MAGMA_MEMBER_M, 0, 2, 7, 4, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 1, 5, MagmaHideout_3F_1R_EventScript_23A1B3, 857
-	object_event 2, EVENT_OBJ_GFX_MAGMA_MEMBER_F, 0, 21, 21, 0, MOVEMENT_TYPE_FACE_LEFT, 1, 1, 1, 4, MagmaHideout_3F_1R_EventScript_23A1CA, 857
+	object_event 1, EVENT_OBJ_GFX_ROCKET_GRUNT_M, 0, 2, 7, 4, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 1, 5, MagmaHideout_3F_1R_EventScript_23A1B3, 857
+	object_event 2, EVENT_OBJ_GFX_ROCKET_GRUNT_F, 0, 21, 21, 0, MOVEMENT_TYPE_FACE_LEFT, 1, 1, 1, 4, MagmaHideout_3F_1R_EventScript_23A1CA, 857
 	object_event 3, EVENT_OBJ_GFX_ITEM_BALL, 0, 9, 16, 0, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, MagmaHideout_3F_1R_EventScript_291505, 1166
 
 MagmaHideout_3F_1R_MapWarps: @ 8537418

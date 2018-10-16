@@ -1,5 +1,5 @@
 IslandCave_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_REGICE, 0, 8, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, IslandCave_EventScript_238F58, 936
+	object_event 1, EVENT_OBJ_GFX_FAMICOM, 0, 8, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, IslandCave_EventScript_238F58, 936
 
 IslandCave_MapWarps::
 	warp_def 8, 29, 3, 0, MAP_ROUTE105
