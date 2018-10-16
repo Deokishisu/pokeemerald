@@ -1,7 +1,7 @@
 EVENTOBJGFXDIR := graphics/event_objects/pics
 
 $(EVENTOBJGFXDIR)/people/brendan/walking.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/brendan/running.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
@@ -138,7 +138,7 @@ $(EVENTOBJGFXDIR)/people/blaine.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/may/walking.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/may/running.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
@@ -193,14 +193,14 @@ $(EVENTOBJGFXDIR)/people/kris/underwater.4bpp: %.4bpp: %.png
 
 	
 $(EVENTOBJGFXDIR)/people/ruby_sapphire_brendan/walking.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/ruby_sapphire_brendan/running.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 
 $(EVENTOBJGFXDIR)/people/ruby_sapphire_may/walking.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/ruby_sapphire_may/running.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
