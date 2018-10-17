@@ -1,8 +1,7 @@
 PetalburgCity_Mart_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_MART_EMPLOYEE, 0, 1, 3, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, PetalburgCity_Mart_EventScript_207D69, 0
-	object_event 2, EVENT_OBJ_GFX_ZMAN_1, 0, 9, 4, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, PetalburgCity_Mart_EventScript_207DE8, 0
-	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 0, 6, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, PetalburgCity_Mart_EventScript_207DDF, 0
-	object_event 4, EVENT_OBJ_GFX_ZWOMAN_2, 0, 5, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, PetalburgCity_Mart_EventScript_207DD6, 0
+	object_event 1, EVENT_OBJ_GFX_MART_EMPLOYEE, 3, 1, 3, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, PetalburgCity_Mart_EventScript_207D69, 0
+	object_event 2, EVENT_OBJ_GFX_OLD_WOMAN, 4, 7, 6, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, PetalburgCity_Mart_EventScript_207DE8, 0
+	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_M, 1, 5, 2, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, PetalburgCity_Mart_EventScript_207DDF, 0
 
 PetalburgCity_Mart_MapWarps::
 	warp_def 3, 7, 0, 5, MAP_PETALBURG_CITY

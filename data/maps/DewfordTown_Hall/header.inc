@@ -3,7 +3,7 @@ DewfordTown_Hall::
 	.4byte DewfordTown_Hall_MapEvents
 	.4byte DewfordTown_Hall_MapScripts
 	.4byte 0x0
-	.2byte MUS_HIGHTOWN
+	.2byte MUS_RG_NANA45
 	.2byte 66
 	.byte MAPSEC_DEWFORD_TOWN
 	.byte 0

@@ -90,7 +90,7 @@
 #define MAP_DEWFORD_TOWN_POKEMON_CENTER_2F (2 | (4 << 8))
 #define MAP_DEWFORD_TOWN_GYM               (3 | (4 << 8))
 #define MAP_DEWFORD_TOWN_HALL              (4 | (4 << 8))
-#define MAP_DEWFORD_TOWN_HOUSE2            (5 | (4 << 8))
+#define MAP_FALLARBOR_TOWN_MART            (5 | (4 << 8))
 
 // Map Group 5
 #define MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F      (0 | (5 << 8))
@@ -138,14 +138,14 @@
 #define MAP_RUSTBORO_CITY_HOUSE3            (16 | (7 << 8))
 
 // Map Group 8
-#define MAP_FALLARBOR_TOWN_MART                    (0 | (8 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY       (1 | (8 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR    (2 | (8 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM (3 | (8 << 8))
-#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F       (4 | (8 << 8))
-#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F       (5 | (8 << 8))
-#define MAP_FALLARBOR_TOWN_HOUSE1                  (6 | (8 << 8))
-#define MAP_FALLARBOR_TOWN_HOUSE2                  (7 | (8 << 8))
+#define MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY       (0 | (8 << 8))
+#define MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR    (1 | (8 << 8))
+#define MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM (2 | (8 << 8))
+#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F       (3 | (8 << 8))
+#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F       (4 | (8 << 8))
+#define MAP_FALLARBOR_TOWN_HOUSE1                  (5 | (8 << 8))
+#define MAP_FALLARBOR_TOWN_HOUSE2                  (6 | (8 << 8))
+#define MAP_DEWFORD_TOWN_HOUSE2                    (7 | (8 << 8))
 
 // Map Group 9
 #define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (9 << 8))

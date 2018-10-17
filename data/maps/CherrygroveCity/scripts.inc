@@ -18,13 +18,13 @@ OldaleTown_EventScript_1E8ECC:: @ 81E8ECC
 	return
 
 OldaleTown_EventScript_1E8ED2:: @ 81E8ED2
-	setobjectxyperm 3, 1, 11
-	setobjectmovementtype 3, 9
+	@setobjectxyperm 3, 1, 11
+	@setobjectmovementtype 3, 9
 	return
 
 OldaleTown_EventScript_1E8EDE:: @ 81E8EDE
-	setobjectxyperm 2, 13, 14
-	setobjectmovementtype 2, 8
+	@setobjectxyperm 2, 13, 14
+	@setobjectmovementtype 2, 8
 	return
 
 OldaleTown_EventScript_1E8EEA:: @ 81E8EEA

@@ -313,7 +313,7 @@ $(EVENTOBJGFXDIR)/people/little_girl.4bpp: %.4bpp: %.png
 $(EVENTOBJGFXDIR)/people/man_1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(EVENTOBJGFXDIR)/people/man_2.4bpp: %.4bpp: %.png
+$(EVENTOBJGFXDIR)/people/gym_guide.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/pokefan_m.4bpp: %.4bpp: %.png

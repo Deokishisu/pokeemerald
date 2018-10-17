@@ -1,16 +1,18 @@
-DewfordTown_EventObjects: @ 8527964
-	object_event 1, EVENT_OBJ_GFX_ZWOMAN_2, 0, 7, 12, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, DewfordTown_EventScript_1E95B1, 0
-	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 0, 12, 9, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 1, 0, 3, DewfordTown_EventScript_1E9511, 740
-	object_event 3, EVENT_OBJ_GFX_ZFISHERMAN, 0, 12, 14, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, DewfordTown_EventScript_1E95D5, 0
-	object_event 4, EVENT_OBJ_GFX_SABRINA, 0, 12, 8, 1, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, 743
-	object_event 5, EVENT_OBJ_GFX_YOUNGSTER, 0, 1, 6, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, DewfordTown_EventScript_1E9922, 0
+DewfordTown_EventObjects::
+	object_event 1, EVENT_OBJ_GFX_TEACHER, 2, 15, 13, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 1, 2, 0, 0, DewfordTown_EventScript_1E95B1, 0
+	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 4, 21, 9, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 2, 0, 3, DewfordTown_EventScript_1E9511, 0
+	object_event 3, EVENT_OBJ_GFX_SLOWPOKE, 1, 15, 15, 3, MOVEMENT_TYPE_NONE, 1, 0, 0, 0, DewfordTown_EventScript_1E95D5, 0
+	object_event 4, EVENT_OBJ_GFX_SLOWPOKE, 1, 18, 9, 1, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, NULL, 0
+	object_event 5, EVENT_OBJ_GFX_YOUNGSTER, 3, 7, 9, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, DewfordTown_EventScript_1E9922, 0
+	object_event 6, EVENT_OBJ_GFX_BERRY_TREE, 0, 8, 2, 3, MOVEMENT_TYPE_NONE, 0, 0, FALSE, 0, NULL, 0
+	object_event 7, EVENT_OBJ_GFX_SLOWPOKE, 1, 29, 9, 3, MOVEMENT_TYPE_NONE, 0, 0, FALSE, 0, NULL, 0
 
 DewfordTown_MapWarps::
 	warp_def 9, 5, 0, 0, MAP_DEWFORD_TOWN_HALL
 	warp_def 15, 9, 0, 0, MAP_DEWFORD_TOWN_POKEMON_CENTER_1F
 	warp_def 10, 15, 0, 0, MAP_DEWFORD_TOWN_GYM
 	warp_def 21, 13, 0, 0, MAP_DEWFORD_TOWN_HOUSE1
-	warp_def 21, 5, 0, 0, MAP_DEWFORD_TOWN_HOUSE2
+	warp_def 21, 5, 0, 0, MAP_FALLARBOR_TOWN_MART
 	warp_def 31, 7, 3, 0, MAP_DEWFORD_TOWN
 	warp_def 2, 10, 3, 0, MAP_ROUTE34_GATE1
 	warp_def 2, 11, 3, 1, MAP_ROUTE34_GATE1

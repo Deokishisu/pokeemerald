@@ -1,6 +1,7 @@
 PetalburgCity_House1_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_ZGIRL_1, 0, 5, 4, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, 0, 0, PetalburgCity_House1_EventScript_2077A3, 0
-	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 0, 2, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, PetalburgCity_House1_EventScript_20779A, 0
+	object_event 1, EVENT_OBJ_GFX_TEACHER, 1, 2, 3, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, PetalburgCity_House1_EventScript_2077A3, 0
+	object_event 2, EVENT_OBJ_GFX_LASS, 3, 6, 4, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, PetalburgCity_House1_EventScript_20779A, 0
+	object_event 3, EVENT_OBJ_GFX_BIRD, 4, 5, 2, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, PetalburgCity_House1_EventScript_20779A, 0
 
 PetalburgCity_House1_MapWarps::
 	warp_def 3, 7, 0, 0, MAP_PETALBURG_CITY

@@ -92,7 +92,7 @@ gMapGroup4::
 	.4byte DewfordTown_PokemonCenter_2F
 	.4byte DewfordTown_Gym
 	.4byte DewfordTown_Hall
-	.4byte DewfordTown_House2
+	.4byte FallarborTown_Mart
 
 	.align 2
 gMapGroup5::
@@ -144,7 +144,6 @@ gMapGroup7::
 
 	.align 2
 gMapGroup8::
-	.4byte FallarborTown_Mart
 	.4byte FallarborTown_BattleTentLobby
 	.4byte FallarborTown_BattleTentCorridor
 	.4byte FallarborTown_BattleTentBattleRoom
@@ -152,6 +151,7 @@ gMapGroup8::
 	.4byte FallarborTown_PokemonCenter_2F
 	.4byte FallarborTown_House1
 	.4byte FallarborTown_House2
+	.4byte DewfordTown_House2
 
 	.align 2
 gMapGroup9::

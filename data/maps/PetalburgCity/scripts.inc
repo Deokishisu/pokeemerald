@@ -11,7 +11,7 @@ PetalburgCity_MapScript1_1DC2D7: @ 81DC2D7
 	end
 
 PetalburgCity_EventScript_1DC307:: @ 81DC307
-	setobjectxyperm 8, 5, 11
+	@setobjectxyperm 8, 5, 11
 	return
 
 PetalburgCity_EventScript_1DC30F:: @ 81DC30F

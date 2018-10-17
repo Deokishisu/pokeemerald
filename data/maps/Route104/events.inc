@@ -1,38 +1,19 @@
 Route104_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_BUG_CATCHER, 0, 15, 60, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, Route104_EventScript_1ED00F, 0
-	object_event 2, EVENT_OBJ_GFX_ZGIRL_2, 0, 25, 49, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route104_EventScript_1ED006, 0
-	object_event 3, EVENT_OBJ_GFX_LASS, 0, 31, 24, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 1, 7, Route104_EventScript_1ED38D, 0
-	object_event 4, EVENT_OBJ_GFX_YOUNGSTER, 0, 27, 63, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, 0, 0, Route104_EventScript_1ED045, 0
-	object_event 5, EVENT_OBJ_GFX_ZWOMAN_2, 0, 30, 50, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route104_EventScript_1ED04E, 0
-	object_event 6, EVENT_OBJ_GFX_ZGIRL_3, 0, 28, 74, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, Route104_EventScript_1ED090, 0
-	object_event 7, EVENT_OBJ_GFX_SABRINA, 0, 12, 54, 1, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, 0x0, 742
-	object_event 8, EVENT_OBJ_GFX_OLD_MAN, 0, 12, 51, 4, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, 0x0, 738
-	object_event 9, EVENT_OBJ_GFX_ZFISHERMAN, 0, 29, 8, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 0, Route104_EventScript_1ED35F, 0
-	object_event 10, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 34, 6, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 8, BerryTreeScript, 0
-	object_event 11, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 35, 6, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 9, BerryTreeScript, 0
-	object_event 12, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 36, 6, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 10, BerryTreeScript, 0
-	object_event 13, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 22, 41, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 11, BerryTreeScript, 0
-	object_event 14, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 23, 41, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 12, BerryTreeScript, 0
-	object_event 15, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 24, 41, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 13, BerryTreeScript, 0
-	object_event 16, EVENT_OBJ_GFX_OLD_WOMAN, 0, 37, 8, 3, MOVEMENT_TYPE_FACE_LEFT, 1, 1, 0, 0, Route104_EventScript_1ECF8C, 0
-	object_event 17, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 3, 22, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 3, BerryTreeScript, 0
-	object_event 18, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 3, 23, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 4, BerryTreeScript, 0
-	object_event 19, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 3, 24, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 75, BerryTreeScript, 0
-	object_event 20, EVENT_OBJ_GFX_ZBERRY_TREE_HOENN, 0, 3, 25, 3, MOVEMENT_TYPE_BERRY_TREE_GROWTH, 0, 0, 0, 76, BerryTreeScript, 0
-	object_event 21, EVENT_OBJ_GFX_ITEM_BALL, 0, 39, 15, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route104_EventScript_290CFF, 1002
-	object_event 22, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 8, 19, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, Route104_EventScript_1ECFCD, 906
-	object_event 23, EVENT_OBJ_GFX_TWIN, 0, 27, 15, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 1, Route104_EventScript_1ED597, 0
-	object_event 24, EVENT_OBJ_GFX_TWIN, 0, 28, 15, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 1, Route104_EventScript_1ED5B6, 0
-	object_event 25, EVENT_OBJ_GFX_ZRICH_BOY, 0, 21, 25, 3, MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE, 0, 0, 1, 3, Route104_EventScript_1ED43B, 0
-	object_event 26, EVENT_OBJ_GFX_ZWOMAN_2, 0, 11, 44, 3, MOVEMENT_TYPE_FACE_UP_AND_RIGHT, 0, 0, 1, 3, Route104_EventScript_1ED4E9, 0
-	object_event 27, EVENT_OBJ_GFX_ITEM_BALL, 0, 29, 53, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_290D0C, 1057
-	object_event 28, EVENT_OBJ_GFX_YOUNGSTER, 0, 18, 67, 3, MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT, 5, 6, 1, 2, Route104_EventScript_1ED376, 0
-	object_event 29, EVENT_OBJ_GFX_ITEM_BALL, 0, 37, 22, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_290D19, 1115
-	object_event 30, EVENT_OBJ_GFX_CUTTABLE_TREE, 0, 35, 22, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_2906BB, 17
-	object_event 31, EVENT_OBJ_GFX_ITEM_BALL, 0, 5, 8, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_290D26, 1135
-	object_event 32, EVENT_OBJ_GFX_ZBOY_2, 0, 5, 26, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_1ED057, 0
-	object_event 33, EVENT_OBJ_GFX_ZFISHERMAN, 0, 15, 59, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 1, 0, Route104_EventScript_1ED5D5, 0
-	object_event 34, EVENT_OBJ_GFX_ZHIPSTER, 0, 17, 50, 0, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_1ECC9E, 719
+	object_event 1, EVENT_OBJ_GFX_FAT_MAN, 3, 8, 49, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 1, Route104_EventScript_1ED35F, 0
+	object_event 2, EVENT_OBJ_GFX_FAT_MAN, 3, 12, 56, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 1, 3, Route104_EventScript_1ED43B, 0
+	object_event 3, EVENT_OBJ_GFX_FAT_MAN, 3, 6, 48, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 1, 1, Route104_EventScript_1ED4E9, 0
+	object_event 4, EVENT_OBJ_GFX_YOUNGSTER, 2, 12, 22, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 3, Route104_EventScript_1ED597, 0
+	object_event 5, EVENT_OBJ_GFX_YOUNGSTER, 2, 4, 63, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 3, Route104_EventScript_1ED5B6, 0
+	object_event 6, EVENT_OBJ_GFX_YOUNGSTER, 3, 3, 45, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 1, 3, Route104_EventScript_1ED5D5, 0
+	object_event 7, EVENT_OBJ_GFX_LASS, 3, 10, 30, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 1, 1, Route104_EventScript_1ED376, 0
+	object_event 8, EVENT_OBJ_GFX_COOLTRAINER_M, 2, 19, 9, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, Route104_EventScript_1ED00F, 0
+	object_event 9, EVENT_OBJ_GFX_YOUNGSTER, 2, 11, 82, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 1, 3, Route104_EventScript_1ED38D, 0
+	object_event 10, EVENT_OBJ_GFX_FAT_MAN, 0, 7, 70, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route104_EventScript_1ED006, 0
+	object_event 11, EVENT_OBJ_GFX_ITEM_BALL, 1, 6, 53, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route104_EventScript_290CFF, 1002
+	object_event 12, EVENT_OBJ_GFX_FAT_MAN, 2, 15, 13, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, Route104_EventScript_1ED045, 0
+	object_event 13, EVENT_OBJ_GFX_LASS, 0, 12, 67, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, Route104_EventScript_1ED04E, 0
+	object_event 14, EVENT_OBJ_GFX_ITEM_BALL, 1, 3, 30, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route104_EventScript_290D0C, 1057
+	object_event 15, EVENT_OBJ_GFX_ITEM_BALL, 1, 0, 0, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route104_EventScript_290D19, 1115
 
 Route104_MapWarps::
 	warp_def 4, 2, 0, 0, MAP_ROUTE32_GATE
@@ -44,16 +25,15 @@ Route104_MapCoordEvents::
 	coord_event 17, 51, 3, VAR_0x4063, 1, Route104_EventScript_1ECCB3
 
 Route104_MapBGEvents::
-	bg_event 20, 50, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED018
-	bg_event 27, 66, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED021
-	bg_event 23, 5, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED02A
-	bg_event 7, 20, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED033
-	bg_event 17, 23, 3, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED03C
-	bg_hidden_item_event 7, 6, 3, ITEM_SUPER_POTION, 44
-	bg_hidden_item_event 3, 9, 3, ITEM_POKE_BALL, 62
-	bg_hidden_item_event 14, 55, 3, ITEM_POTION, 37
-	bg_hidden_item_event 16, 72, 3, ITEM_ANTIDOTE, 85
-	bg_hidden_item_event 16, 64, 3, ITEM_HEART_SCALE, 88
+	bg_event 13, 5, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED018
+	bg_event 9, 1, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED021
+	bg_event 10, 84, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED02A
+	bg_event 12, 73, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED033
+	bg_hidden_item_event 12, 67, 3, ITEM_SUPER_POTION, 44
+	bg_hidden_item_event 11, 40, 3, ITEM_POKE_BALL, 62
+	bg_hidden_item_event -6, -7, 3, ITEM_POTION, 37
+	bg_hidden_item_event -6, -6, 3, ITEM_ANTIDOTE, 85
+	bg_hidden_item_event -6, -6, 3, ITEM_HEART_SCALE, 88
 
 Route104_MapEvents::
 	map_events Route104_EventObjects, Route104_MapWarps, Route104_MapCoordEvents, Route104_MapBGEvents

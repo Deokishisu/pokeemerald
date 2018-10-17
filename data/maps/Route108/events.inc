@@ -1,11 +1,14 @@
 Route108_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 52, 13, 1, MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT, 3, 3, 1, 3, Route108_EventScript_1EE68A, 0
-	object_event 2, EVENT_OBJ_GFX_SWIMMER_F, 0, 24, 9, 1, MOVEMENT_TYPE_FACE_DOWN_AND_UP, 1, 1, 1, 3, Route108_EventScript_1EE6B8, 0
-	object_event 3, EVENT_OBJ_GFX_SWIMMER_M, 0, 13, 13, 1, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 0, 0, 1, 3, Route108_EventScript_1EE6A1, 0
-	object_event 4, EVENT_OBJ_GFX_SWIMMER_F, 0, 8, 7, 1, MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT, 6, 0, 1, 3, Route108_EventScript_1EE6CF, 0
-	object_event 5, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 41, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 1, 1, Route108_EventScript_1EE6E6, 0
-	object_event 6, EVENT_OBJ_GFX_SAILOR, 0, 43, 5, 3, MOVEMENT_TYPE_FACE_LEFT, 1, 1, 1, 1, Route108_EventScript_1EE6FD, 0
-	object_event 7, EVENT_OBJ_GFX_ITEM_BALL, 0, 42, 4, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route108_EventScript_290D4D, 1139
+	object_event 1, EVENT_OBJ_GFX_YOUNGSTER, 2, 20, 13, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 3, Route108_EventScript_1EE68A, 0
+	object_event 2, EVENT_OBJ_GFX_YOUNGSTER, 2, 31, 14, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 1, 5, Route108_EventScript_1EE6B8, 0
+	object_event 3, EVENT_OBJ_GFX_SUDOWOODO, 3, 35, 8, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route108_EventScript_1EE6A1, 0
+	object_event 4, EVENT_OBJ_GFX_LASS, 0, 51, 8, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 0, 0, 0, Route108_EventScript_1EE6CF, 0
+	object_event 5, EVENT_OBJ_GFX_FAT_MAN, 0, 44, 9, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, Route108_EventScript_1EE6E6, 0
+	object_event 6, EVENT_OBJ_GFX_BERRY_TREE, 0, 21, 4, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 7, EVENT_OBJ_GFX_YOUNGSTER, 0, 46, 6, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 8, EVENT_OBJ_GFX_LASS, 2, 33, 12, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 9, EVENT_OBJ_GFX_SUICUNE, 2, 21, 6, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 10, EVENT_OBJ_GFX_ITEM_BALL, 0, 0, 0, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route108_EventScript_290D4D, 1139
 
 Route108_MapWarps::
 	warp_def 18, 8, 3, 0, MAP_ROUTE36_NATIONAL_PARK_GATE
@@ -14,7 +17,11 @@ Route108_MapWarps::
 	warp_def 48, 13, 3, 3, MAP_ROUTE36_GATE
 
 Route108_MapBGEvents::
-	bg_hidden_item_event 38, 14, 3, ITEM_RARE_CANDY, 86
+	bg_hidden_item_event -6, -6, 3, ITEM_RARE_CANDY, 86
+	bg_event 29, 1, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
+	bg_event 21, 7, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
+	bg_event 45, 11, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
+	bg_event 55, 7, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
 
 Route108_MapEvents::
 	map_events Route108_EventObjects, Route108_MapWarps, 0x0, Route108_MapBGEvents
