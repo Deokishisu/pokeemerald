@@ -1,19 +1,16 @@
 Route105_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 19, 60, 1, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 6, Route105_EventScript_1EE261, 0
-	object_event 2, EVENT_OBJ_GFX_SWIMMER_M, 0, 27, 36, 1, MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT, 7, 0, 1, 3, Route105_EventScript_1EE278, 0
-	object_event 3, EVENT_OBJ_GFX_SWIMMER_F, 0, 8, 45, 1, MOVEMENT_TYPE_WALK_UP_AND_DOWN, 0, 7, 1, 3, Route105_EventScript_1EE28F, 0
-	object_event 4, EVENT_OBJ_GFX_SWIMMER_F, 0, 19, 9, 1, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 0, 5, 1, 3, Route105_EventScript_1EE2A6, 0
-	object_event 5, EVENT_OBJ_GFX_ITEM_BALL, 0, 8, 73, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route105_EventScript_290D33, 1003
-	object_event 6, EVENT_OBJ_GFX_ZHIKER, 0, 17, 48, 3, MOVEMENT_TYPE_WALK_DOWN_AND_UP, 0, 7, 1, 3, Route105_EventScript_1EE24A, 0
-	object_event 7, EVENT_OBJ_GFX_ZMAN_5, 0, 4, 54, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 2, 1, 2, Route105_EventScript_1EE2BD, 0
-	object_event 8, EVENT_OBJ_GFX_ZHIKER, 0, 4, 58, 3, MOVEMENT_TYPE_FACE_UP, 0, 2, 1, 4, Route105_EventScript_1EE2D4, 0
+	object_event 1, EVENT_OBJ_GFX_POKEFAN_M, 4, 6, 13, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 2, Route105_EventScript_1EE261, 0
+	object_event 2, EVENT_OBJ_GFX_LASS, 2, 13, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route105_EventScript_1EE278, 0
+	object_event 3, EVENT_OBJ_GFX_BERRY_TREE, 0, 14, 16, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route105_EventScript_1EE28F, 0
+	object_event 4, EVENT_OBJ_GFX_ITEM_BALL, 0, 0, 0, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route105_EventScript_290D33, 1003
 
 Route105_MapWarps::
 	warp_def 11, 9, 3, 3, MAP_ROUTE104
 
 Route105_MapBGEvents::
-	bg_hidden_item_event 15, 68, 3, ITEM_HEART_SCALE, 89
-	bg_hidden_item_event 5, 56, 3, ITEM_BIG_PEARL, 111
+	bg_hidden_item_event -6, -6, 3, ITEM_HEART_SCALE, 89
+	bg_hidden_item_event -6, -6, 3, ITEM_BIG_PEARL, 111
+	bg_event 11, 11, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
 
 Route105_MapEvents::
 	map_events Route105_EventObjects, Route105_MapWarps, 0x0, Route105_MapBGEvents

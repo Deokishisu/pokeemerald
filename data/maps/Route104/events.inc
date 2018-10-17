@@ -31,7 +31,6 @@ Route104_MapBGEvents::
 	bg_event 12, 73, 0, BG_EVENT_PLAYER_FACING_ANY, Route104_EventScript_1ED033
 	bg_hidden_item_event 12, 67, 3, ITEM_SUPER_POTION, 44
 	bg_hidden_item_event 11, 40, 3, ITEM_POKE_BALL, 62
-	bg_hidden_item_event -6, -7, 3, ITEM_POTION, 37
 	bg_hidden_item_event -6, -6, 3, ITEM_ANTIDOTE, 85
 	bg_hidden_item_event -6, -6, 3, ITEM_HEART_SCALE, 88
 

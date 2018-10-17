@@ -1,9 +1,17 @@
 Route106_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 18, 5, 1, MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT, 4, 0, 1, 3, Route106_EventScript_1EE493, 0
-	object_event 2, EVENT_OBJ_GFX_SWIMMER_F, 0, 29, 10, 1, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 3, Route106_EventScript_1EE4AA, 0
-	object_event 3, EVENT_OBJ_GFX_ZFISHERMAN, 0, 51, 14, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 4, Route106_EventScript_1EE4C1, 0
-	object_event 4, EVENT_OBJ_GFX_ZFISHERMAN, 0, 65, 14, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 3, Route106_EventScript_1EE523, 0
-	object_event 5, EVENT_OBJ_GFX_ITEM_BALL, 0, 29, 14, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route106_EventScript_290D40, 1004
+	object_event 1, EVENT_OBJ_GFX_YOUNGSTER, 3, 13, 7, 1, MOVEMENT_TYPE_FACE_LEFT, 4, 0, 1, 5, Route106_EventScript_1EE493, 0
+	object_event 2, EVENT_OBJ_GFX_YOUNGSTER, 2, 15, 32, 1, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 3, Route106_EventScript_1EE4AA, 0
+	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 2, 11, 20, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 3, Route106_EventScript_1EE4C1, 0
+	object_event 4, EVENT_OBJ_GFX_LASS, 3, 10, 26, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 3, Route106_EventScript_1EE523, 0
+	object_event 5, EVENT_OBJ_GFX_OFFICER, 2, 9, 11, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
+	object_event 6, EVENT_OBJ_GFX_POKEFAN_M, 1, 18, 28, 3, MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE, 0, 0, TRUE, 3, NULL, 0
+	object_event 7, EVENT_OBJ_GFX_OLD_MAN, 0, 15, 16, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
+	object_event 8, EVENT_OBJ_GFX_CAL, 0, 14, 18, 3, MOVEMENT_TYPE_NONE, 0, 0, FALSE, 0, NULL, 0
+	object_event 9, EVENT_OBJ_GFX_CAL, 0, 17, 19, 3, MOVEMENT_TYPE_NONE, 0, 0, FALSE, 0, NULL, 0
+	object_event 10, EVENT_OBJ_GFX_COOLTRAINER_F, 1, 11, 48, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, TRUE, 5, NULL, 0
+	object_event 11, EVENT_OBJ_GFX_COOLTRAINER_F, 1, 3, 48, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, TRUE, 3, NULL, 0
+	object_event 12, EVENT_OBJ_GFX_COOLTRAINER_F, 1, 6, 51, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, TRUE, 2, NULL, 0
+	object_event 13, EVENT_OBJ_GFX_ITEM_BALL, 1, 7, 30, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route106_EventScript_290D40, 1004
 
 Route106_MapWarps::
 	warp_def 13, 37, 0, 2, MAP_ROUTE34_GATE2
@@ -13,10 +21,12 @@ Route106_MapWarps::
 	warp_def 13, 15, 3, 0, MAP_ROUTE34_POKEMON_DAY_CARE
 
 Route106_MapBGEvents::
-	bg_hidden_item_event 41, 11, 3, ITEM_POKE_BALL, 63
-	bg_hidden_item_event 53, 12, 0, ITEM_STARDUST, 46
-	bg_hidden_item_event 68, 15, 3, ITEM_HEART_SCALE, 47
-	bg_event 59, 13, 3, BG_EVENT_PLAYER_FACING_ANY, Route106_EventScript_1EE48A
+	bg_event 12, 6, 3, BG_EVENT_PLAYER_FACING_ANY, Route106_EventScript_1EE48A
+	bg_event 13, 33, 3, BG_EVENT_PLAYER_FACING_ANY, Route106_EventScript_1EE48A
+	bg_event 10, 13, 3, BG_EVENT_PLAYER_FACING_ANY, Route106_EventScript_1EE48A
+	bg_hidden_item_event 8, 32, 3, ITEM_RARE_CANDY, 63
+	bg_hidden_item_event 17, 19, 0, ITEM_SUPER_POTION, 46
+	bg_hidden_item_event 25, 59, 3, ITEM_HEART_SCALE, 47
 
 Route106_MapEvents::
 	map_events Route106_EventObjects, Route106_MapWarps, 0x0, Route106_MapBGEvents
