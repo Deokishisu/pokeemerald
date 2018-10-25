@@ -8,7 +8,7 @@ Route103_EventObjects::
 	object_event 7, EVENT_OBJ_GFX_ITEM_BALL, 1, 19, 15, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route103_EventScript_290CF2, 1137
 
 Route103_MapWarps::
-	warp_def 34, 5, 0, 0, MAP_ALTERING_CAVE
+	warp_def 34, 5, 0, 2, MAP_BATTLE_FRONTIER_OUTSIDE_WEST
 	warp_def 4, 6, 3, 0, MAP_ROUTE31_GATE
 	warp_def 4, 7, 3, 1, MAP_ROUTE31_GATE
 

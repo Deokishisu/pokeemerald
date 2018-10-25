@@ -1405,7 +1405,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Nestor
 
 @ 54
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "DERRICK$", 8
 @ pre-battle speech
 	.2byte EC_WORD_LET_S
@@ -1431,7 +1431,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Derrick
 
 @ 55
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "BRYSON$", 8
 @ pre-battle speech
 	.2byte EC_MOVE2(POISON_POWDER)
@@ -1457,7 +1457,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Bryson
 
 @ 56
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "CLAYTON$", 8
 @ pre-battle speech
 	.2byte EC_WORD_HUH_QUES
@@ -1561,7 +1561,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Wesley
 
 @ 60
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "ANTON$", 8
 @ pre-battle speech
 	.2byte EC_WORD_GET
@@ -1587,7 +1587,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Anton
 
 @ 61
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "LAWSON$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM
@@ -1613,7 +1613,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Lawson
 
 @ 62
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "SAMMY$", 8
 @ pre-battle speech
 	.2byte EC_WORD_MY
@@ -2445,7 +2445,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Ellen
 
 @ 94
-	.4byte FACILITY_CLASS_TRIATHLETE_5
+	.4byte FACILITY_CLASS_SWIMMER_M
 	.string "RAMON$", 8
 @ pre-battle speech
 	.2byte EC_WORD_OKAY
@@ -2471,7 +2471,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Ramon
 
 @ 95
-	.4byte FACILITY_CLASS_TRIATHLETE_5
+	.4byte FACILITY_CLASS_SWIMMER_M
 	.string "ARTHUR$", 8
 @ pre-battle speech
 	.2byte EC_WORD_HERE_I_COME
@@ -2497,7 +2497,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Arthur
 
 @ 96
-	.4byte FACILITY_CLASS_TRIATHLETE_6
+	.4byte FACILITY_CLASS_SWIMMER_F
 	.string "ALONDRA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_EVERY
@@ -2523,7 +2523,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Alondra
 
 @ 97
-	.4byte FACILITY_CLASS_TRIATHLETE_6
+	.4byte FACILITY_CLASS_SWIMMER_F
 	.string "ADRIANA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_COME
@@ -2575,7 +2575,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Malik
 
 @ 99
-	.4byte FACILITY_CLASS_TRIATHLETE_2
+	.4byte FACILITY_CLASS_TRIATHLETE_1
 	.string "JILL$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM
@@ -2653,7 +2653,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Yazmin
 
 @ 102
-	.4byte FACILITY_CLASS_TRIATHLETE_5
+	.4byte FACILITY_CLASS_SWIMMER_M
 	.string "JAMAL$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM
@@ -2679,7 +2679,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Jamal
 
 @ 103
-	.4byte FACILITY_CLASS_TRIATHLETE_6
+	.4byte FACILITY_CLASS_SWIMMER_F
 	.string "LESLIE$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM
@@ -2757,7 +2757,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Carlo
 
 @ 106
-	.4byte FACILITY_CLASS_TRIATHLETE_2
+	.4byte FACILITY_CLASS_TRIATHLETE_1
 	.string "EMILIA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_ME
@@ -2783,7 +2783,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Emilia
 
 @ 107
-	.4byte FACILITY_CLASS_TRIATHLETE_2
+	.4byte FACILITY_CLASS_TRIATHLETE_1
 	.string "DALIA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_MY
@@ -3485,7 +3485,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Brennan
 
 @ 134
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "BALEY$", 8
 @ pre-battle speech
 	.2byte EC_MOVE(SCREECH)
@@ -3511,7 +3511,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Baley
 
 @ 135
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "ZACKARY$", 8
 @ pre-battle speech
 	.2byte EC_WORD_CAN
@@ -3797,7 +3797,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Lynn
 
 @ 146
-	.4byte FACILITY_CLASS_PKMN_RANGER_M
+	.4byte FACILITY_CLASS_CAMPER
 	.string "JOVAN$", 8
 @ pre-battle speech
 	.2byte EC_WORD_YOUR
@@ -3823,7 +3823,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Jovan
 
 @ 147
-	.4byte FACILITY_CLASS_PKMN_RANGER_M
+	.4byte FACILITY_CLASS_CAMPER
 	.string "DOMINIC$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I
@@ -3849,7 +3849,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Dominic
 
 @ 148
-	.4byte FACILITY_CLASS_PKMN_RANGER_M
+	.4byte FACILITY_CLASS_CAMPER
 	.string "NIKOLAS$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I
@@ -3875,7 +3875,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Nikolas
 
 @ 149
-	.4byte FACILITY_CLASS_PKMN_RANGER_F
+	.4byte FACILITY_CLASS_PICNICKER
 	.string "VALERIA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I
@@ -3901,7 +3901,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Valeria
 
 @ 150
-	.4byte FACILITY_CLASS_PKMN_RANGER_F
+	.4byte FACILITY_CLASS_PICNICKER
 	.string "DELANEY$", 8
 @ pre-battle speech
 	.2byte EC_WORD_SCHOOL
@@ -3927,7 +3927,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Delaney
 
 @ 151
-	.4byte FACILITY_CLASS_PKMN_RANGER_F
+	.4byte FACILITY_CLASS_PICNICKER
 	.string "MEGHAN$", 8
 @ pre-battle speech
 	.2byte EC_WORD_SCHOOL
@@ -4681,7 +4681,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Alison
 
 @ 180
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "HANK$", 8
 @ pre-battle speech
 	.2byte EC_WORD_THERE
@@ -4707,7 +4707,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Hank
 
 @ 181
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "EARL$", 8
 @ pre-battle speech
 	.2byte EC_WORD_THE
@@ -4785,7 +4785,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Hunter
 
 @ 184
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "AIDEN$", 8
 @ pre-battle speech
 	.2byte EC_WORD_MY
@@ -4811,7 +4811,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Aiden
 
 @ 185
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "XAVIER$", 8
 @ pre-battle speech
 	.2byte EC_WORD_HEY_THERE
@@ -5929,7 +5929,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Gillian2
 
 @ 228
-	.4byte FACILITY_CLASS_PKMN_RANGER_M
+	.4byte FACILITY_CLASS_CAMPER
 	.string "TYLER$", 8
 @ pre-battle speech
 	.2byte EC_WORD_YO
@@ -5955,7 +5955,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Tyler
 
 @ 229
-	.4byte FACILITY_CLASS_PKMN_RANGER_M
+	.4byte FACILITY_CLASS_CAMPER
 	.string "CHAZ$", 8
 @ pre-battle speech
 	.2byte EC_WORD_MY
@@ -5981,7 +5981,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Chaz
 
 @ 230
-	.4byte FACILITY_CLASS_PKMN_RANGER_M
+	.4byte FACILITY_CLASS_CAMPER
 	.string "NELSON$", 8
 @ pre-battle speech
 	.2byte EC_WORD_WELL_THEN
@@ -6007,7 +6007,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Nelson
 
 @ 231
-	.4byte FACILITY_CLASS_PKMN_RANGER_F
+	.4byte FACILITY_CLASS_PICNICKER
 	.string "SHANIA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_ALL
@@ -6033,7 +6033,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Shania
 
 @ 232
-	.4byte FACILITY_CLASS_PKMN_RANGER_F
+	.4byte FACILITY_CLASS_PICNICKER
 	.string "STELLA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I
@@ -6059,7 +6059,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Stella
 
 @ 233
-	.4byte FACILITY_CLASS_PKMN_RANGER_F
+	.4byte FACILITY_CLASS_PICNICKER
 	.string "DORINE$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM
@@ -6969,7 +6969,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Piper
 
 @ 268
-	.4byte FACILITY_CLASS_TRIATHLETE_5
+	.4byte FACILITY_CLASS_SWIMMER_M
 	.string "FINN$", 8
 @ pre-battle speech
 	.2byte EC_WORD_NOT
@@ -6995,7 +6995,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Finn
 
 @ 269
-	.4byte FACILITY_CLASS_TRIATHLETE_5
+	.4byte FACILITY_CLASS_SWIMMER_M
 	.string "SAMIR$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I
@@ -7021,7 +7021,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Samir
 
 @ 270
-	.4byte FACILITY_CLASS_TRIATHLETE_6
+	.4byte FACILITY_CLASS_SWIMMER_F
 	.string "FIONA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_DID
@@ -7047,7 +7047,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Fiona
 
 @ 271
-	.4byte FACILITY_CLASS_TRIATHLETE_6
+	.4byte FACILITY_CLASS_SWIMMER_F
 	.string "GLORIA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I
@@ -7125,7 +7125,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Jeremy
 
 @ 274
-	.4byte FACILITY_CLASS_TRIATHLETE_2
+	.4byte FACILITY_CLASS_LASS
 	.string "CAITLIN$", 8
 @ pre-battle speech
 	.2byte EC_WORD_DON_T
@@ -7151,7 +7151,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Caitlin
 
 @ 275
-	.4byte FACILITY_CLASS_TRIATHLETE_2
+	.4byte FACILITY_CLASS_TRIATHLETE_1
 	.string "REENA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM
@@ -7177,7 +7177,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Reena
 
 @ 276
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "AVERY$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_VE
@@ -7203,7 +7203,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Avery
 
 @ 277
-	.4byte FACILITY_CLASS_BUG_MANIAC
+	.4byte FACILITY_CLASS_BUG_CATCHER
 	.string "LIAM$", 8
 @ pre-battle speech
 	.2byte EC_WORD_WE
@@ -7281,7 +7281,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Bailey
 
 @ 280
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "HUGO$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I
@@ -7307,7 +7307,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Hugo
 
 @ 281
-	.4byte FACILITY_CLASS_RUIN_MANIAC
+	.4byte FACILITY_CLASS_HIKER
 	.string "BRYCE$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_WAS
