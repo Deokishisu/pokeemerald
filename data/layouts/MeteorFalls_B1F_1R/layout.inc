@@ -6,10 +6,10 @@ MeteorFalls_B1F_1R_MapBlockdata::
 
 	.align 2
 MeteorFalls_B1F_1R_Layout::
-	.4byte 0x1d
-	.4byte 0x26
+	.4byte 20
+	.4byte 16
 	.4byte MeteorFalls_B1F_1R_MapBorder
 	.4byte MeteorFalls_B1F_1R_MapBlockdata
-	.4byte gTileset_General
-	.4byte gTileset_MeteorFalls
+	.4byte gTileset_Building2
+	.4byte gTileset_BikeShop
 

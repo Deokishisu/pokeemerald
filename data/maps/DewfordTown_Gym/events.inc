@@ -1,5 +1,5 @@
 DewfordTown_Gym_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_BUGSY, 0, 4, 3, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, DewfordTown_Gym_EventScript_1FC7C2, 0
+	object_event 1, EVENT_OBJ_GFX_BUGSY, 0, 5, 7, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, DewfordTown_Gym_EventScript_1FC7C2, 0
 	object_event 2, EVENT_OBJ_GFX_BLACK_BELT, 0, 2, 18, 0, MOVEMENT_TYPE_FACE_UP, 0, 0, 1, 3, DewfordTown_Gym_EventScript_1FC8B7, 0
 	object_event 3, EVENT_OBJ_GFX_ZGIRL_3, 0, 15, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 3, DewfordTown_Gym_EventScript_1FC8D9, 0
 	object_event 4, EVENT_OBJ_GFX_ZGIRL_3, 0, 12, 25, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 1, 2, DewfordTown_Gym_EventScript_1FC8FB, 0
@@ -9,8 +9,8 @@ DewfordTown_Gym_EventObjects::
 	object_event 8, EVENT_OBJ_GFX_SAILOR, 0, 14, 12, 1, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 1, 2, DewfordTown_Gym_EventScript_1FC91D, 0
 
 DewfordTown_Gym_MapWarps::
-	warp_def 5, 27, 0, 2, MAP_DEWFORD_TOWN
-	warp_def 6, 27, 0, 2, MAP_DEWFORD_TOWN
+	warp_def 4, 15, 0, 2, MAP_DEWFORD_TOWN
+	warp_def 5, 15, 0, 2, MAP_DEWFORD_TOWN
 
 DewfordTown_Gym_MapBGEvents::
 	bg_event 4, 23, 3, BG_EVENT_PLAYER_FACING_NORTH, DewfordTown_Gym_EventScript_1FC9A2

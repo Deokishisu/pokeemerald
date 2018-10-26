@@ -6,10 +6,10 @@ DewfordTown_Gym_MapBlockdata::
 
 	.align 2
 DewfordTown_Gym_Layout::
-	.4byte 0x12
-	.4byte 0x1c
+	.4byte 10
+	.4byte 16
 	.4byte DewfordTown_Gym_MapBorder
 	.4byte DewfordTown_Gym_MapBlockdata
-	.4byte gTileset_Building
-	.4byte gTileset_DewfordGym
+	.4byte gTileset_Building2
+	.4byte gTileset_BikeShop
 

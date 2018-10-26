@@ -6,10 +6,10 @@ PetalburgCity_Gym_MapBlockdata::
 
 	.align 2
 PetalburgCity_Gym_Layout::
-	.4byte 0x9
-	.4byte 0x70
+	.4byte 10
+	.4byte 16
 	.4byte PetalburgCity_Gym_MapBorder
 	.4byte PetalburgCity_Gym_MapBlockdata
-	.4byte gTileset_Building
-	.4byte gTileset_PetalburgGym
+	.4byte gTileset_Building2
+	.4byte gTileset_BikeShop
 

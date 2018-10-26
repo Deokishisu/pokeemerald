@@ -830,3 +830,15 @@ gTileset_UnionRoom:: @ 83DFDFC
 	.4byte gMetatiles_UnionRoom
 	.4byte gMetatileAttributes_UnionRoom
 	.4byte NULL @ animation callback
+	
+gTileset_Building2:: @ 83DF704
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary tileset
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_Building2
+	.4byte gTilesetPalettes_Building2
+	.4byte gMetatiles_Building2
+	.4byte gMetatileAttributes_Building2
+	.4byte NULL
+
+	.align 2

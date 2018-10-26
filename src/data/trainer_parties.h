@@ -8150,13 +8150,13 @@ const struct TrainerMonNoItemDefaultMoves gTrainerParty_Crissy[] = {
 const struct TrainerMonNoItemDefaultMoves gTrainerParty_Rick[] = {
 	{
 	.iv = 0,
-	.lvl = 4,
-	.species = SPECIES_WURMPLE,
+	.lvl = 3,
+	.species = SPECIES_CATERPIE,
 	},
 	{
 	.iv = 0,
-	.lvl = 4,
-	.species = SPECIES_WURMPLE,
+	.lvl = 3,
+	.species = SPECIES_CATERPIE,
 	}
 };
 

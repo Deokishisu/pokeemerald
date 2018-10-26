@@ -1,16 +1,16 @@
-MeteorFalls_1F_2R_EventObjects: @ 85340C4
-	object_event 1, EVENT_OBJ_GFX_COOLTRAINER_M, 0, 13, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 1, MeteorFalls_1F_2R_EventScript_22C4DE, 0
-	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 0, 6, 12, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 1, 1, MeteorFalls_1F_2R_EventScript_22C540, 0
-	object_event 3, EVENT_OBJ_GFX_OLD_WOMAN, 0, 7, 12, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 1, 1, MeteorFalls_1F_2R_EventScript_22C5A4, 0
+MeteorFalls_1F_2R_EventObjects::
+	object_event 1, EVENT_OBJ_GFX_COOLTRAINER_M, 0, 0, 1, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 1, MeteorFalls_1F_2R_EventScript_22C4DE, 0
+	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 0, 0, 0, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 1, 1, MeteorFalls_1F_2R_EventScript_22C540, 0
+	object_event 3, EVENT_OBJ_GFX_OLD_WOMAN, 0, 1, 0, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 1, 1, MeteorFalls_1F_2R_EventScript_22C5A4, 0
 
 MeteorFalls_1F_2R_MapWarps::
-	warp_def 10, 29, 3, 2, MAP_METEOR_FALLS_1F_1R
-	warp_def 4, 14, 3, 0, MAP_METEOR_FALLS_B1F_1R
-	warp_def 7, 20, 3, 1, MAP_METEOR_FALLS_B1F_1R
-	warp_def 21, 23, 3, 2, MAP_METEOR_FALLS_B1F_1R
+	warp_def 6, 4, 3, 2, MAP_METEOR_FALLS_1F_1R
+	warp_def 17, 3, 3, 3, MAP_METEOR_FALLS_1F_1R
+	warp_def 2, 6, 3, 4, MAP_METEOR_FALLS_1F_1R
+	warp_def 10, 14, 3, 0, MAP_METEOR_FALLS_B1F_1R
 
 MeteorFalls_1F_2R_MapBGEvents::
-	bg_event 9, 58, 0, BG_EVENT_PLAYER_FACING_ANY, 0x0
+	bg_event 1, 1, 0, BG_EVENT_PLAYER_FACING_ANY, 0x0
 
 MeteorFalls_1F_2R_MapEvents::
 	map_events MeteorFalls_1F_2R_EventObjects, MeteorFalls_1F_2R_MapWarps, 0x0, MeteorFalls_1F_2R_MapBGEvents
