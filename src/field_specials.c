@@ -73,6 +73,8 @@ EWRAM_DATA u32 gUnknown_0203AB70 = 0;
 
 struct ListMenuTemplate gUnknown_030061D0;
 
+extern const u16 gEventObjectPalette0[];
+extern const u16 gEventObjectPalette2[];
 extern const u16 gEventObjectPalette8[];
 extern const u16 gEventObjectPalette17[];
 extern const u16 gEventObjectPalette33[];
@@ -604,16 +606,16 @@ static void LoadLinkPartnerEventObjectSpritePalette(u8 graphicsId, u8 localEvent
             switch (graphicsId)
             {
                 case EVENT_OBJ_GFX_LINK_RS_BRENDAN:
-                    LoadPalette(gEventObjectPalette33, 0x100 + paletteNum * 16, 0x20);
+                    LoadPalette(gEventObjectPalette0, 0x100 + paletteNum * 16, 0x20);
                     break;
                 case EVENT_OBJ_GFX_LINK_RS_MAY:
-                    LoadPalette(gEventObjectPalette34, 0x100 + paletteNum * 16, 0x20);
+                    LoadPalette(gEventObjectPalette0, 0x100 + paletteNum * 16, 0x20);
                     break;
                 case EVENT_OBJ_GFX_ZRIVAL_BRENDAN_NORMAL:
-                    LoadPalette(gEventObjectPalette8, 0x100 + paletteNum * 16, 0x20);
+                    LoadPalette(gEventObjectPalette2, 0x100 + paletteNum * 16, 0x20);
                     break;
                 case EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL:
-                    LoadPalette(gEventObjectPalette17, 0x100 + paletteNum * 16, 0x20);
+                    LoadPalette(gEventObjectPalette2, 0x100 + paletteNum * 16, 0x20);
                     break;
             }
         }

@@ -219,6 +219,7 @@ Route101_EventScript_1EBE16:: @ 81EBE16
 	lock
 	faceplayer
 	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
 	setflag FLAG_0x052
 	fadescreen 1
 	removeobject 4

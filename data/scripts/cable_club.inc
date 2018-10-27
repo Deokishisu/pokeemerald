@@ -1412,34 +1412,34 @@ EventScript_277BB4:: @ 8277BB4
 	end
 
 OldaleTown_PokemonCenter_2F_EventScript_277BBE:: @ 8277BBE
-	setmetatile 5, 2, 732, 0
-	setmetatile 5, 3, 740, 0
+	@setmetatile 5, 2, 732, 0
+	@setmetatile 5, 3, 740, 0
 	return
 
 OldaleTown_PokemonCenter_2F_EventScript_277BD1:: @ 8277BD1
-	setmetatile 5, 2, 542, 1
-	setmetatile 5, 3, 605, 1
+	@setmetatile 5, 2, 542, 1
+	@setmetatile 5, 3, 605, 1
 	return
 
 OldaleTown_PokemonCenter_2F_EventScript_277BE4:: @ 8277BE4
-	setmetatile 9, 2, 732, 0
-	setmetatile 9, 3, 740, 0
+	@setmetatile 9, 2, 732, 0
+	@setmetatile 9, 3, 740, 0
 	return
 
 OldaleTown_PokemonCenter_2F_EventScript_277BF7:: @ 8277BF7
-	setmetatile 9, 2, 542, 1
-	setmetatile 9, 3, 605, 1
+	@setmetatile 9, 2, 542, 1
+	@setmetatile 9, 3, 605, 1
 	return
 
 MossdeepCity_GameCorner_1F_EventScript_277C0A:: @ 8277C0A
 OldaleTown_PokemonCenter_2F_EventScript_277C0A:: @ 8277C0A
-	setmetatile 5, 2, 556, 0
-	setmetatile 5, 3, 564, 0
+	@setmetatile 5, 2, 556, 0
+	@setmetatile 5, 3, 564, 0
 	return
 
 OldaleTown_PokemonCenter_2F_EventScript_277C1D:: @ 8277C1D
-	setmetatile 5, 2, 554, 1
-	setmetatile 5, 3, 562, 1
+	@setmetatile 5, 2, 554, 1
+	@setmetatile 5, 3, 562, 1
 	return
 
 BattleFrontier_PokemonCenter_1F_MapScript1_277C30: @ 8277C30
