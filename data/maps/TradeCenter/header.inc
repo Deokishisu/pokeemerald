@@ -1,4 +1,4 @@
-TradeCenter: @ 8484D4C
+TradeCenter::
 	.4byte TradeCenter_Layout
 	.4byte TradeCenter_MapEvents
 	.4byte TradeCenter_MapScripts
@@ -12,4 +12,3 @@ TradeCenter: @ 8484D4C
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

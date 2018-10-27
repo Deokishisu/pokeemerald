@@ -11,5 +11,5 @@ DoubleBattleColosseum_Layout::
 	.4byte DoubleBattleColosseum_MapBorder
 	.4byte DoubleBattleColosseum_MapBlockdata
 	.4byte gTileset_Building
-	.4byte gTileset_CableClub
+	.4byte gTileset_GenericBuilding
 

@@ -1,4 +1,4 @@
-RecordCorner: @ 8484D68
+RecordCorner::
 	.4byte RecordCorner_Layout
 	.4byte RecordCorner_MapEvents
 	.4byte RecordCorner_MapScripts
@@ -12,4 +12,3 @@ RecordCorner: @ 8484D68
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

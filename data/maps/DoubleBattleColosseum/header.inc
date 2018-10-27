@@ -1,4 +1,4 @@
-DoubleBattleColosseum: @ 8484D84
+DoubleBattleColosseum::
 	.4byte DoubleBattleColosseum_Layout
 	.4byte DoubleBattleColosseum_MapEvents
 	.4byte DoubleBattleColosseum_MapScripts
@@ -12,4 +12,3 @@ DoubleBattleColosseum: @ 8484D84
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_FRONTIER
-

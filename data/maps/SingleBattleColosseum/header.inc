@@ -1,4 +1,4 @@
-SingleBattleColosseum: @ 8484D30
+SingleBattleColosseum::
 	.4byte SingleBattleColosseum_Layout
 	.4byte SingleBattleColosseum_MapEvents
 	.4byte SingleBattleColosseum_MapScripts
@@ -12,4 +12,3 @@ SingleBattleColosseum: @ 8484D30
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_FRONTIER
-
