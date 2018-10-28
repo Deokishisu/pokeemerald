@@ -6,23 +6,23 @@ LilycoveCity_ContestLobby_EventObjects: @ 8531534
 	object_event 5, EVENT_OBJ_GFX_BLACK_BELT, 0, 18, 8, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A708, 0
 	object_event 6, EVENT_OBJ_GFX_ZGIRL_2, 0, 4, 9, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 2, 0, 0, LilycoveCity_ContestLobby_EventScript_21A711, 0
 	object_event 7, EVENT_OBJ_GFX_ERIKA, 0, 3, 4, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A71A, 0
-	object_event 8, EVENT_OBJ_GFX_ZREPORTER_M, 0, 13, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_28CA59, 802
+	object_event 8, EVENT_OBJ_GFX_ZREPORTER_M, 0, 13, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_28CA59, FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER
 	object_event 9, EVENT_OBJ_GFX_YOUNGSTER, 0, 23, 8, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_21A768, 0
 	object_event 10, EVENT_OBJ_GFX_TWIN, 0, 28, 9, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_293FB4, 0
-	object_event 11, EVENT_OBJ_GFX_ERIKA, 0, 21, 1, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, 895
+	object_event 11, EVENT_OBJ_GFX_ERIKA, 0, 21, 1, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, FLAG_HIDE_LILYCOVE_CONTEST_HALL_CONTEST_ATTENDANT_2
 	object_event 12, EVENT_OBJ_GFX_ZFISHERMAN, 0, 5, 6, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A72C, 0
 	object_event 13, EVENT_OBJ_GFX_FAT_MAN, 0, 0, 8, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_21A723, 0
 	object_event 14, EVENT_OBJ_GFX_ZNINJA_BOY, 0, 8, 7, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A735, 0
 	object_event 15, EVENT_OBJ_GFX_POKEFAN_F, 0, 22, 9, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_293FAB, 0
-	object_event 16, EVENT_OBJ_GFX_OLD_MAN, 0, 26, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_293FBD, 873
+	object_event 16, EVENT_OBJ_GFX_OLD_MAN, 0, 26, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_293FBD, FLAG_HIDE_LILYCOVE_CONTEST_HALL_POKEBLOCK_EXPERT
 	object_event 17, EVENT_OBJ_GFX_ZGIRL_1, 0, 24, 9, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, LilycoveCity_ContestLobby_EventScript_21A771, 0
-	object_event 18, EVENT_OBJ_GFX_ZMAN_5, 0, 27, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7B3, 832
-	object_event 19, EVENT_OBJ_GFX_ZCAMPER, 0, 28, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7BE, 832
-	object_event 20, EVENT_OBJ_GFX_ZLITTLE_GIRL, 0, 28, 7, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7C9, 832
-	object_event 21, EVENT_OBJ_GFX_PROF_OAK, 0, 26, 7, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7D9, 832
-	object_event 22, EVENT_OBJ_GFX_ZWOMAN_1, 0, 27, 7, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7E9, 832
-	object_event 23, EVENT_OBJ_GFX_ZNINJA_BOY, 0, 26, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7A8, 832
-	object_event 24, EVENT_OBJ_GFX_OLD_MAN, 0, 26, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A798, 832
+	object_event 18, EVENT_OBJ_GFX_ZMAN_5, 0, 27, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7B3, FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_ONLOOKERS
+	object_event 19, EVENT_OBJ_GFX_ZCAMPER, 0, 28, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7BE, FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_ONLOOKERS
+	object_event 20, EVENT_OBJ_GFX_ZLITTLE_GIRL, 0, 28, 7, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7C9, FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_ONLOOKERS
+	object_event 21, EVENT_OBJ_GFX_PROF_OAK, 0, 26, 7, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7D9, FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_ONLOOKERS
+	object_event 22, EVENT_OBJ_GFX_ZWOMAN_1, 0, 27, 7, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7E9, FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_ONLOOKERS
+	object_event 23, EVENT_OBJ_GFX_ZNINJA_BOY, 0, 26, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A7A8, FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_ONLOOKERS
+	object_event 24, EVENT_OBJ_GFX_OLD_MAN, 0, 26, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, LilycoveCity_ContestLobby_EventScript_21A798, FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_ONLOOKERS
 	object_event 25, EVENT_OBJ_GFX_ZLITTLE_GIRL, 0, 9, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 2, 2, 0, 0, LilycoveCity_ContestLobby_EventScript_21ACF1, 0
 
 LilycoveCity_ContestLobby_MapWarps: @ 853178C

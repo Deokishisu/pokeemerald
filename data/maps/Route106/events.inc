@@ -11,7 +11,7 @@ Route106_EventObjects::
 	object_event 10, EVENT_OBJ_GFX_COOLTRAINER_F, 1, 11, 48, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, TRUE, 5, NULL, 0
 	object_event 11, EVENT_OBJ_GFX_COOLTRAINER_F, 1, 3, 48, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, TRUE, 3, NULL, 0
 	object_event 12, EVENT_OBJ_GFX_COOLTRAINER_F, 1, 6, 51, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, TRUE, 2, NULL, 0
-	object_event 13, EVENT_OBJ_GFX_ITEM_BALL, 1, 7, 30, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route106_EventScript_290D40, 1004
+	object_event 13, EVENT_OBJ_GFX_ITEM_BALL, 1, 7, 30, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route106_EventScript_290D40, FLAG_ITEM_ROUTE_106_PROTEIN
 
 Route106_MapWarps::
 	warp_def 13, 37, 0, 2, MAP_ROUTE34_GATE2
@@ -24,9 +24,9 @@ Route106_MapBGEvents::
 	bg_event 12, 6, 3, BG_EVENT_PLAYER_FACING_ANY, Route106_EventScript_1EE48A
 	bg_event 13, 33, 3, BG_EVENT_PLAYER_FACING_ANY, Route106_EventScript_1EE48A
 	bg_event 10, 13, 3, BG_EVENT_PLAYER_FACING_ANY, Route106_EventScript_1EE48A
-	bg_hidden_item_event 8, 32, 3, ITEM_RARE_CANDY, 63
-	bg_hidden_item_event 17, 19, 0, ITEM_SUPER_POTION, 46
-	bg_hidden_item_event 25, 59, 3, ITEM_HEART_SCALE, 47
+	bg_hidden_item_event 8, 32, 3, ITEM_RARE_CANDY, FLAG_HIDDEN_ITEM_ROUTE_106_POKE_BALL
+	bg_hidden_item_event 17, 19, 0, ITEM_SUPER_POTION, FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST
+	bg_hidden_item_event 25, 59, 3, ITEM_HEART_SCALE, FLAG_HIDDEN_ITEM_ROUTE_106_HEART_SCALE
 
 Route106_MapEvents::
 	map_events Route106_EventObjects, Route106_MapWarps, 0x0, Route106_MapBGEvents

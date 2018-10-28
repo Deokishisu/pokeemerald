@@ -5,8 +5,8 @@ PetalburgCity_EventObjects::
 	object_event 4, EVENT_OBJ_GFX_OLD_MAN, 4, 17, 20, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, PetalburgCity_EventScript_1DC488, 0
 	object_event 5, EVENT_OBJ_GFX_YOUNGSTER, 3, 5, 18, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, 0x0, 0
 	object_event 6, EVENT_OBJ_GFX_BERRY_TREE, 0, 14, 29, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, PetalburgCity_EventScript_1DC82E, 0
-	object_event 7, EVENT_OBJ_GFX_ITEM_BALL, 1, 4, 1, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, PetalburgCity_EventScript_2910B4, 1039
-	object_event 8, EVENT_OBJ_GFX_ITEM_BALL, 1, 35, 5, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, PetalburgCity_EventScript_2910C1, 1040
+	object_event 7, EVENT_OBJ_GFX_ITEM_BALL, 1, 4, 1, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, PetalburgCity_EventScript_2910B4, FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE
+	object_event 8, EVENT_OBJ_GFX_ITEM_BALL, 1, 35, 5, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, PetalburgCity_EventScript_2910C1, FLAG_ITEM_PETALBURG_CITY_ETHER
 
 PetalburgCity_MapWarps::
 	warp_def 3, 15, 0, 0, MAP_PETALBURG_CITY_HOUSE1
@@ -37,7 +37,7 @@ PetalburgCity_MapBGEvents::
 	bg_event 32, 23, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E73
 	bg_event 10, 15, 0, BG_EVENT_PLAYER_FACING_NORTH, PetalburgCity_EventScript_271E6A
 	bg_event 10, 9, 0, BG_EVENT_PLAYER_FACING_ANY, PetalburgCity_EventScript_1DC491
-	bg_hidden_item_event 37, 14, 3, ITEM_HYPER_POTION, 95
+	bg_hidden_item_event 37, 14, 3, ITEM_HYPER_POTION, FLAG_HIDDEN_ITEM_PETALBURG_CITY_RARE_CANDY
 
 PetalburgCity_MapEvents::
 	map_events PetalburgCity_EventObjects, PetalburgCity_MapWarps, PetalburgCity_MapCoordEvents, PetalburgCity_MapBGEvents
