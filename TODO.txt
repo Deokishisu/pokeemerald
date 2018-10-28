@@ -12,4 +12,4 @@ TODO: Black out the Options menu background; and decide if SGB borders are a thi
 
 TODO: Import the remaining tilesets (Battle Tower Outside, Cave, Dark Cave, Forest, Ice Path, Park, Port, Radio Tower, Ruins of Alph, and possibly PokeCom Center).
 
-TODO: Fix Linking. Relevant files are not yet decompiled. (From pokeruby) Will need to mess with SetCableClubWarp to get the warps set correctly before entering the link rooms. Gold & Kris don't show in link room when linking to Emerald (showing Brendan and May instead), OWs are aligned like Emerald, a copy of the link partner appears below the player sprites (using wrong base OAM?), and all player OW palettes are messed up. Can trade, at least. There doesn't appear to be logic for linking to FRLG, so field_specials.c may not be relevant for Emerald. Check CreateLinkPlayerSprite in overworld.c.
+TODO: Remove National Dex requirement for trading with FRLG, replace with Time Capsule check.

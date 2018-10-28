@@ -57,6 +57,7 @@
 #include "constants/maps.h"
 #include "constants/songs.h"
 #include "constants/species.h"
+#include "constants/event_objects.h"
 
 // event scripts
 extern const u8 EventScript_WhiteOut[];
@@ -3130,21 +3131,33 @@ static void CreateLinkPlayerSprite(u8 linkPlayerId, u8 gameVersion)
     u8 eventObjId = linkPlayerEventObj->eventObjId;
     struct EventObject *eventObj = &gEventObjects[eventObjId];
     struct Sprite *sprite;
-
-    if (linkPlayerEventObj->active)
+	u8 myLinkPlayerNumber;
+	
+	myLinkPlayerNumber = GetMultiplayerId();
+	
+    if (linkPlayerEventObj->active && linkPlayerEventObj != &gLinkPlayerEventObjects[myLinkPlayerNumber])
     {
         switch (gameVersion)
         {
         case VERSION_FIRE_RED:
         case VERSION_LEAF_GREEN:
-            eventObj->spriteId = AddPseudoEventObject(GetFRLGAvatarGraphicsIdByGender(eventObj->singleMovementActive), SpriteCB_LinkPlayer, 0, 0, 0);
+			if(eventObj->singleMovementActive == 0)
+				eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_RED, SpriteCB_LinkPlayer, 0, 0, 0);
+			else
+				eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_LEAF, SpriteCB_LinkPlayer, 0, 0, 0);
             break;
         case VERSION_RUBY:
         case VERSION_SAPPHIRE:
-            eventObj->spriteId = AddPseudoEventObject(GetRSAvatarGraphicsIdByGender(eventObj->singleMovementActive), SpriteCB_LinkPlayer, 0, 0, 0);
+			if(eventObj->singleMovementActive == 0)
+				eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_LINK_RS_BRENDAN, SpriteCB_LinkPlayer, 0, 0, 0);
+			else
+				eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_LINK_RS_MAY, SpriteCB_LinkPlayer, 0, 0, 0);
             break;
         case VERSION_EMERALD:
-            eventObj->spriteId = AddPseudoEventObject(GetRivalAvatarGraphicsIdByStateIdAndGender(0, eventObj->singleMovementActive), SpriteCB_LinkPlayer, 0, 0, 0);
+			if(eventObj->singleMovementActive == 0)
+				eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_LINK_BRENDAN, SpriteCB_LinkPlayer, 0, 0, 0);
+			else
+				eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_LINK_MAY, SpriteCB_LinkPlayer, 0, 0, 0);
             break;
         }
 
@@ -3153,6 +3166,17 @@ static void CreateLinkPlayerSprite(u8 linkPlayerId, u8 gameVersion)
         sprite->data[0] = linkPlayerId;
         eventObj->triggerGroundEffectsOnMove = 0;
     }
+	else
+	{
+		if(gPlayerAvatar.gender == 1)
+			eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_GOLD_NORMAL, SpriteCB_LinkPlayer, 0, 0, 0);
+		else
+			eventObj->spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_KRIS_NORMAL, SpriteCB_LinkPlayer, 0, 0, 0);
+		sprite = &gSprites[eventObj->spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->data[0] = linkPlayerId;
+        eventObj->triggerGroundEffectsOnMove = 0;
+	}
 }
 
 static void SpriteCB_LinkPlayer(struct Sprite *sprite)
@@ -3160,7 +3184,7 @@ static void SpriteCB_LinkPlayer(struct Sprite *sprite)
     struct LinkPlayerEventObject *linkPlayerEventObj = &gLinkPlayerEventObjects[sprite->data[0]];
     struct EventObject *eventObj = &gEventObjects[linkPlayerEventObj->eventObjId];
     sprite->pos1.x = eventObj->initialCoords.x;
-    sprite->pos1.y = eventObj->initialCoords.y;
+    sprite->pos1.y = eventObj->initialCoords.y +4;
     SetObjectSubpriorityByZCoord(eventObj->previousElevation, sprite, 1);
     sprite->oam.priority = ZCoordToPriority(eventObj->previousElevation);
 
