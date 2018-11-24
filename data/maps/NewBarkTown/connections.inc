@@ -1,5 +1,5 @@
 NewBarkTown_MapConnectionsList::
-	connection left, 0, MAP_ROUTE101
+	connection left, 0, MAP_ROUTE29
 	connection right, 0, MAP_ROUTE119
 
 NewBarkTown_MapConnections::

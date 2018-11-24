@@ -3,9 +3,9 @@ Route29_Gate_EventObjects::
 	object_event 2, EVENT_OBJ_GFX_YOUNGSTER, 3, 6, 4, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, FALSE, 0, NULL, 0
 
 Route29_Gate_MapWarps::
-	warp_def 4, 7, 3, 0, MAP_ROUTE101
+	warp_def 4, 7, 3, 0, MAP_ROUTE29
 	warp_def 4, 0, 3, 0, MAP_ROUTE118
-	warp_def 5, 7, 3, 0, MAP_ROUTE101
+	warp_def 5, 7, 3, 0, MAP_ROUTE29
 	warp_def 5, 0, 3, 1, MAP_ROUTE118
 
 Route29_Gate_MapEvents::

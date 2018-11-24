@@ -3273,8 +3273,8 @@ const struct WildPokemonInfo gMeteorFalls_StevensCave_LandMonsInfo = {10, gMeteo
 const struct WildPokemonHeader gWildMonHeaders[] =
 {
 	{
-		.mapGroup = MAP_GROUP(ROUTE101),
-		.mapNum = MAP_NUM(ROUTE101),
+		.mapGroup = MAP_GROUP(ROUTE29),
+		.mapNum = MAP_NUM(ROUTE29),
 		.landMonsInfo = &gRoute101_LandMonsInfo,
 		.waterMonsInfo = NULL,
 		.rockSmashMonsInfo = NULL,

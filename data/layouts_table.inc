@@ -16,7 +16,7 @@ gMapLayouts::
 	.4byte FallarborTown_Layout
 	.4byte VerdanturfTown_Layout
 	.4byte PacifidlogTown_Layout
-	.4byte Route101_Layout
+	.4byte Route29_Layout
 	.4byte Route102_Layout
 	.4byte Route103_Layout
 	.4byte Route104_Layout
@@ -53,11 +53,11 @@ gMapLayouts::
 	.4byte Underwater2_Layout
 	.4byte Underwater3_Layout
 	.4byte Underwater4_Layout
-	.4byte LittlerootTown_BrendansHouse_1F_Layout
-	.4byte LittlerootTown_BrendansHouse_2F_Layout
-	.4byte LittlerootTown_MaysHouse_1F_Layout
-	.4byte LittlerootTown_MaysHouse_2F_Layout
-	.4byte LittlerootTown_ProfessorBirchsLab_Layout
+	.4byte NewBarkTown_PlayersHouse_1F_Layout
+	.4byte NewBarkTown_PlayersHouse_2F_Layout
+	.4byte NewBarkTown_ProfElmsHouse_Layout
+	.4byte NewBarkTown_House_Layout
+	.4byte NewBarkTown_ProfElmsLab_Layout
 	.4byte House1_Layout
 	.4byte House2_Layout
 	.4byte PokemonCenter_1F_Layout
@@ -462,7 +462,7 @@ gMapLayouts::
 	.4byte FallarborTown_Layout
 	.4byte VerdanturfTown_Layout
 	.4byte PacifidlogTown_Layout
-	.4byte Route101_Layout
+	.4byte Route29_Layout
 	.4byte Route102_Layout
 	.4byte Route103_Layout
 	.4byte Route104_Layout
@@ -499,11 +499,11 @@ gMapLayouts::
 	.4byte Underwater2_Layout
 	.4byte Underwater3_Layout
 	.4byte Underwater4_Layout
-	.4byte LittlerootTown_BrendansHouse_1F_Layout
-	.4byte LittlerootTown_BrendansHouse_2F_Layout
-	.4byte LittlerootTown_MaysHouse_1F_Layout
-	.4byte LittlerootTown_MaysHouse_2F_Layout
-	.4byte LittlerootTown_ProfessorBirchsLab_Layout
+	.4byte NewBarkTown_PlayersHouse_1F_Layout
+	.4byte NewBarkTown_PlayersHouse_2F_Layout
+	.4byte NewBarkTown_ProfElmsHouse_Layout
+	.4byte NewBarkTown_House_Layout
+	.4byte NewBarkTown_ProfElmsLab_Layout
 	.4byte House1_Layout
 	.4byte House2_Layout
 	.4byte PokemonCenter_1F_Layout
@@ -908,7 +908,7 @@ gMapLayouts::
 	.4byte FallarborTown_Layout
 	.4byte VerdanturfTown_Layout
 	.4byte PacifidlogTown_Layout
-	.4byte Route101_Layout
+	.4byte Route29_Layout
 	.4byte Route102_Layout
 	.4byte Route103_Layout
 	.4byte Route104_Layout
@@ -945,11 +945,11 @@ gMapLayouts::
 	.4byte Underwater2_Layout
 	.4byte Underwater3_Layout
 	.4byte Underwater4_Layout
-	.4byte LittlerootTown_BrendansHouse_1F_Layout
-	.4byte LittlerootTown_BrendansHouse_2F_Layout
-	.4byte LittlerootTown_MaysHouse_1F_Layout
-	.4byte LittlerootTown_MaysHouse_2F_Layout
-	.4byte LittlerootTown_ProfessorBirchsLab_Layout
+	.4byte NewBarkTown_PlayersHouse_1F_Layout
+	.4byte NewBarkTown_PlayersHouse_2F_Layout
+	.4byte NewBarkTown_ProfElmsHouse_Layout
+	.4byte NewBarkTown_House_Layout
+	.4byte NewBarkTown_ProfElmsLab_Layout
 	.4byte House1_Layout
 	.4byte House2_Layout
 	.4byte PokemonCenter_1F_Layout

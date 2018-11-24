@@ -9,10 +9,10 @@ NewBarkTown_EventObjects::
 	object_event 8, EVENT_OBJ_GFX_PROF_ELM, 0, 16, 9, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, 0x0, 795
 
 NewBarkTown_MapWarps::
-	warp_def 11, 13, 0, 1, MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F
-	warp_def 13, 5, 0, 1, MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F
-	warp_def 6, 3, 0, 0, MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB
-	warp_def 3, 11, 3, 0, MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F
+	warp_def 11, 13, 0, 1, MAP_NEW_BARK_TOWN_PROF_ELMS_HOUSE
+	warp_def 13, 5, 0, 1, MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_1F
+	warp_def 6, 3, 0, 0, MAP_NEW_BARK_TOWN_PROF_ELMS_LAB
+	warp_def 3, 11, 3, 0, MAP_NEW_BARK_TOWN_HOUSE
 
 NewBarkTown_MapCoordEvents::
 	coord_event 10, 1, 3, VAR_0x4050, 0, LittlerootTown_EventScript_1E8091

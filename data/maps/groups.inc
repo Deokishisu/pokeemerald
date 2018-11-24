@@ -12,7 +12,7 @@ gMapGroup0::
 	.4byte FortreeCity
 	.4byte Route125
 	.4byte Route124
-	.4byte Route101
+	.4byte Route29
 	.4byte Route102
 	.4byte Route103
 	.4byte Route104
@@ -60,11 +60,11 @@ gMapGroup0::
 
 	.align 2
 gMapGroup1::
-	.4byte LittlerootTown_BrendansHouse_1F
-	.4byte LittlerootTown_BrendansHouse_2F
-	.4byte LittlerootTown_MaysHouse_1F
-	.4byte LittlerootTown_MaysHouse_2F
-	.4byte LittlerootTown_ProfessorBirchsLab
+	.4byte NewBarkTown_PlayersHouse_1F
+	.4byte NewBarkTown_PlayersHouse_2F
+	.4byte NewBarkTown_ProfElmsHouse
+	.4byte NewBarkTown_House
+	.4byte NewBarkTown_ProfElmsLab
 
 	.align 2
 gMapGroup2::

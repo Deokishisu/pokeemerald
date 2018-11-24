@@ -95,7 +95,7 @@ LittlerootTown_EventScript_1E7EDB:: @ 81E7EDB
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_1E7F17
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
-	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 255, 8, 8
+	warpsilent MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_1F, 255, 8, 8
 	waitstate
 	releaseall
 	end
@@ -106,7 +106,7 @@ LittlerootTown_EventScript_1E7EF9:: @ 81E7EF9
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_1E7F17
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
-	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 255, 2, 8
+	warpsilent MAP_NEW_BARK_TOWN_PROF_ELMS_HOUSE, 255, 2, 8
 	waitstate
 	releaseall
 	end
@@ -196,7 +196,7 @@ LittlerootTown_EventScript_1E7FB1:: @ 81E7FB1
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCH
 	delay 20
 	clearflag FLAG_SPECIAL_FLAG_0x4000
-	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 255, 6, 5
+	warp MAP_NEW_BARK_TOWN_PROF_ELMS_LAB, 255, 6, 5
 	waitstate
 	releaseall
 	end

@@ -1,5 +1,5 @@
 Route118_MapConnectionsList::
-	connection down, -20, MAP_ROUTE101
+	connection down, -20, MAP_ROUTE29
 	connection right, -72, MAP_ROUTE117
 
 Route118_MapConnections::
