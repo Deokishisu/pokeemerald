@@ -199,7 +199,7 @@ static const struct BgTemplate sUnknown_085105A8[] =
 static const struct WindowTemplate sUnknown_085105AC[] =
 {
 	{
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 0xF,
         .width = 0x1A,
@@ -212,7 +212,7 @@ static const struct WindowTemplate sUnknown_085105AC[] =
 
 static const struct WindowTemplate sSaveInfoWindowTemplate =
 {
-	.priority = 0,
+	.bg = 0,
 	.tilemapLeft = 10,
 	.tilemapTop = 2,
 	.width = 0xE,

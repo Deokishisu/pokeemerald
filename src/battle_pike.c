@@ -187,8 +187,8 @@ static void sub_81A7070(void)
     u32 person1;
     u16 person2;
 
-    VarSet(VAR_OBJ_GFX_ID_0, EVENT_OBJ_GFX_LINK_RECEPTIONIST);
-    VarSet(VAR_OBJ_GFX_ID_1, EVENT_OBJ_GFX_DUSCLOPS);
+    VarSet(VAR_OBJ_GFX_ID_0, EVENT_OBJ_GFX_TEALA);
+    VarSet(VAR_OBJ_GFX_ID_1, EVENT_OBJ_GFX_DRAGONITE );
     setPerson1 = TRUE;
     setPerson2 = FALSE;
     person1 = 0;
@@ -201,7 +201,7 @@ static void sub_81A7070(void)
         setPerson1 = FALSE;
         break;
     case PIKE_ROOM_HEAL_FULL:
-        person1 = EVENT_OBJ_GFX_LINK_RECEPTIONIST;
+        person1 = EVENT_OBJ_GFX_TEALA;
         break;
     case PIKE_ROOM_NPC:
         person1 = (u8)(sub_81A7B58());
@@ -209,9 +209,9 @@ static void sub_81A7070(void)
     case PIKE_ROOM_STATUS:
         person1 = EVENT_OBJ_GFX_GENTLEMAN;
         if (sStatusMon == PIKE_STATUS_DUSCLOPS)
-            person2 = EVENT_OBJ_GFX_DUSCLOPS;
+            person2 = EVENT_OBJ_GFX_DRAGONITE ;
         else
-            person2 = EVENT_OBJ_GFX_KIRLIA;
+            person2 = EVENT_OBJ_GFX_CLEFAIRY;
         setPerson2 = TRUE;
         break;
     case PIKE_ROOM_HEAL_PART:
@@ -222,7 +222,7 @@ static void sub_81A7070(void)
         break;
     case PIKE_ROOM_HARD_BATTLE:
         PrepareOneTrainer(TRUE);
-        person2 = EVENT_OBJ_GFX_LINK_RECEPTIONIST;
+        person2 = EVENT_OBJ_GFX_TEALA;
         setPerson1 = FALSE;
         setPerson2 = TRUE;
         break;
@@ -232,7 +232,7 @@ static void sub_81A7070(void)
         break;
     case PIKE_ROOM_BRAIN:
         SetFrontierBrainEventObjGfx(FRONTIER_FACILITY_PIKE);
-        person2 = EVENT_OBJ_GFX_LINK_RECEPTIONIST;
+        person2 = EVENT_OBJ_GFX_TEALA;
         setPerson1 = FALSE;
         setPerson2 = TRUE;
         break;

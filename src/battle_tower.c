@@ -586,13 +586,13 @@ void SetBattleFacilityTrainerGfxId(u16 trainerId, u8 tempVarId)
     {
     case 0:
     default:
-        VarSet(VAR_OBJ_GFX_ID_0, EVENT_OBJ_GFX_BOY_1);
+        VarSet(VAR_OBJ_GFX_ID_0, EVENT_OBJ_GFX_ZBOY_2);
         return;
     case 1:
-        VarSet(VAR_OBJ_GFX_ID_1, EVENT_OBJ_GFX_BOY_1);
+        VarSet(VAR_OBJ_GFX_ID_1, EVENT_OBJ_GFX_ZBOY_2);
         return;
     case 15:
-        VarSet(VAR_OBJ_GFX_ID_E, EVENT_OBJ_GFX_BOY_1);
+        VarSet(VAR_OBJ_GFX_ID_E, EVENT_OBJ_GFX_ZBOY_2);
         return;
     }
 }
@@ -651,7 +651,7 @@ u8 GetBattleFacilityTrainerGfxId(u16 trainerId)
     }
     else
     {
-        return EVENT_OBJ_GFX_BOY_1;
+        return EVENT_OBJ_GFX_ZBOY_2;
     }
 }
 
@@ -2797,7 +2797,7 @@ u8 sub_81660B8(u8 facilityClass)
     }
     else
     {
-        return EVENT_OBJ_GFX_BOY_1;
+        return EVENT_OBJ_GFX_ZBOY_2;
     }
 }
 

@@ -66,17 +66,10 @@ static const u8 gUnknown_0860F094[] = { 8, 4, 1 };
 static const struct WindowTemplate gUnknown_0860F098[] =
 { //standard textbox
     {
-<<<<<<< HEAD
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 6,
         .tilemapTop = 14,
         .width = 18,
-=======
-        .bg = 0,
-        .tilemapLeft = 2,
-        .tilemapTop = 15,
-        .width = 27,
->>>>>>> dc7764f60ce5c6278a1824f47cacf47362854d0e
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x194
@@ -86,8 +79,7 @@ static const struct WindowTemplate gUnknown_0860F098[] =
 //YES/NO Menu --v
 static const struct WindowTemplate gUnknown_0860F0A8 =
 {
-<<<<<<< HEAD
-    .priority = 0,
+    .bg = 0,
     .tilemapLeft = 20,
     .tilemapTop = 9,
     .width = 4,
@@ -98,12 +90,8 @@ static const struct WindowTemplate gUnknown_0860F0A8 =
 
 static const struct WindowTemplate SaveYesNoBox =
 {
-    .priority = 0,
-    .tilemapLeft = 6,
-=======
     .bg = 0,
-    .tilemapLeft = 21,
->>>>>>> dc7764f60ce5c6278a1824f47cacf47362854d0e
+    .tilemapLeft = 6,
     .tilemapTop = 9,
     .width = 4,
     .height = 3,
@@ -1214,21 +1202,12 @@ void sub_8198AF8(const struct WindowTemplate *window, u8 fontId, u8 left, u8 top
     printer.y = 0;
     printer.currentX = printer.x;
     printer.currentY = printer.y;
-<<<<<<< HEAD
     printer.fgColor = GetFontAttribute(1, 5);
     printer.bgColor = GetFontAttribute(1, 6);
     printer.shadowColor = GetFontAttribute(1, 7);
-    printer.fontColor_l = GetFontAttribute(1, 4);
+    printer.unk = GetFontAttribute(1, 4);
     printer.letterSpacing = 0;
     printer.lineSpacing = 0;
-=======
-    printer.fgColor = GetFontAttribute(fontId, FONTATTR_COLOR_FOREGROUND);
-    printer.bgColor = GetFontAttribute(fontId, FONTATTR_COLOR_BACKGROUND);
-    printer.shadowColor = GetFontAttribute(fontId, FONTATTR_COLOR_SHADOW);
-    printer.unk = GetFontAttribute(fontId, FONTATTR_UNKNOWN);
-    printer.letterSpacing = GetFontAttribute(fontId, FONTATTR_LETTER_SPACING);
-    printer.lineSpacing = GetFontAttribute(fontId, FONTATTR_LINE_SPACING);
->>>>>>> dc7764f60ce5c6278a1824f47cacf47362854d0e
 
     AddTextPrinter(&printer, 0xFF, NULL);
 

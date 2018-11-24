@@ -1823,8 +1823,8 @@ void TextPrinterDrawDownArrow(struct TextPrinter *textPrinter)
     struct TextPrinterSubStruct *subStruct = &textPrinter->subUnion.sub;
     const u8 *arrowTiles;
 	
-	u16 width = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_WIDTH);
-    u16 height = GetWindowAttribute(textPrinter->subPrinter.windowId, WINDOW_HEIGHT);
+	u16 width = GetWindowAttribute(textPrinter->printerTemplate.windowId, WINDOW_WIDTH);
+    u16 height = GetWindowAttribute(textPrinter->printerTemplate.windowId, WINDOW_HEIGHT);
 	
 	//u16 downArrowWindowId = AddWindow(DownArrowWindow);
 	//FillWindowPixelBuffer(&DownArrowWindow, 0);

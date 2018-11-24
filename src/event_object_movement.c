@@ -1491,10 +1491,6 @@ static u8 TrySetupEventObjectSprite(struct EventObjectTemplate *eventObjectTempl
     struct Sprite *sprite;
     struct EventObject *eventObject;
     const struct EventObjectGraphicsInfo *graphicsInfo;
-    struct Sprite *sprite;
-    u8 eventObjectId;
-    u8 paletteSlot;
-    u8 spriteId;
 	u8 overridePalette = eventObjectTemplate->unk2;
 
     eventObjectId = InitEventObjectStateFromTemplate(eventObjectTemplate, mapNum, mapGroup);
@@ -1824,8 +1820,6 @@ static void sub_808E1B8(u8 eventObjectId, s16 x, s16 y)
     struct SpriteFrameImage spriteFrameImage;
     const struct SubspriteTable *subspriteTables;
     const struct EventObjectGraphicsInfo *graphicsInfo;
-    struct SpriteFrameImage spriteFrameImage;
-    struct SpriteTemplate spriteTemplate;
     struct Sprite *sprite;
 	struct EventObjectTemplate *eventObjectTemplate;
 	u8 paletteOverride;
