@@ -130,11 +130,11 @@ DewfordTown_EventScript_1E9660:: @ 81E9660
 	applymovement 4, DewfordTown_Movement_1E97A2
 	applymovement 255, DewfordTown_Movement_1E97A2
 	waitmovement 0
-	showobjectat 255, MAP_ROUTE104
+	showobjectat 255, MAP_ROUTE32
 	call DewfordTown_EventScript_2720A8
 	applymovement 255, DewfordTown_Movement_1E9914
 	waitmovement 0
-	showobjectat 255, MAP_ROUTE104
+	showobjectat 255, MAP_ROUTE32
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT

@@ -4,7 +4,7 @@
 // Map Group 0
 #define MAP_NEW_BARK_TOWN    (0 | (0 << 8))
 #define MAP_CHERRYGROVE_CITY (1 | (0 << 8))
-#define MAP_PETALBURG_CITY   (2 | (0 << 8))
+#define MAP_VIOLET_CITY      (2 | (0 << 8))
 #define MAP_DEWFORD_TOWN     (3 | (0 << 8))
 #define MAP_SLATEPORT_CITY   (4 | (0 << 8))
 #define MAP_MAUVILLE_CITY    (5 | (0 << 8))
@@ -15,9 +15,9 @@
 #define MAP_ROUTE125         (10 | (0 << 8))
 #define MAP_ROUTE124         (11 | (0 << 8))
 #define MAP_ROUTE29          (12 | (0 << 8))
-#define MAP_ROUTE102         (13 | (0 << 8))
-#define MAP_ROUTE103         (14 | (0 << 8))
-#define MAP_ROUTE104         (15 | (0 << 8))
+#define MAP_ROUTE30          (13 | (0 << 8))
+#define MAP_ROUTE31          (14 | (0 << 8))
+#define MAP_ROUTE32          (15 | (0 << 8))
 #define MAP_ROUTE105         (16 | (0 << 8))
 #define MAP_ROUTE106         (17 | (0 << 8))
 #define MAP_ROUTE107         (18 | (0 << 8))
@@ -63,9 +63,9 @@
 // Map Group 1
 #define MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_1F    (0 | (1 << 8))
 #define MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_2F    (1 | (1 << 8))
-#define MAP_NEW_BARK_TOWN_PROF_ELMS_HOUSE        (2 | (1 << 8))
-#define MAP_NEW_BARK_TOWN_HOUSE        (3 | (1 << 8))
-#define MAP_NEW_BARK_TOWN_PROF_ELMS_LAB (4 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_PROF_ELMS_HOUSE     (2 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_HOUSE               (3 | (1 << 8))
+#define MAP_NEW_BARK_TOWN_PROF_ELMS_LAB       (4 | (1 << 8))
 
 // Map Group 2
 #define MAP_CHERRYGROVE_CITY_HOUSE1            (0 | (2 << 8))
@@ -76,13 +76,13 @@
 #define MAP_CHERRYGROVE_CITY_MART              (5 | (2 << 8))
 
 // Map Group 3
-#define MAP_RUSTBORO_CITY_POKEMON_SCHOOL     (0 | (3 << 8))
-#define MAP_PETALBURG_CITY_GYM               (1 | (3 << 8))
-#define MAP_PETALBURG_CITY_HOUSE1            (2 | (3 << 8))
-#define MAP_PETALBURG_CITY_HOUSE2            (3 | (3 << 8))
-#define MAP_PETALBURG_CITY_POKEMON_CENTER_1F (4 | (3 << 8))
-#define MAP_PETALBURG_CITY_POKEMON_CENTER_2F (5 | (3 << 8))
-#define MAP_PETALBURG_CITY_MART              (6 | (3 << 8))
+#define MAP_VIOLET_CITY_EARLS_POKEMON_ACADEMY (0 | (3 << 8))
+#define MAP_VIOLET_CITY_GYM                (1 | (3 << 8))
+#define MAP_VIOLET_CITY_HOUSE1                (2 | (3 << 8))
+#define MAP_VIOLET_CITY_HOUSE2                (3 | (3 << 8))
+#define MAP_VIOLET_CITY_POKEMON_CENTER_1F     (4 | (3 << 8))
+#define MAP_VIOLET_CITY_POKEMON_CENTER_2F     (5 | (3 << 8))
+#define MAP_VIOLET_CITY_MART                  (6 | (3 << 8))
 
 // Map Group 4
 #define MAP_DEWFORD_TOWN_HOUSE1            (0 | (4 << 8))
@@ -309,9 +309,9 @@
 #define MAP_ROUTE121_SAFARI_ZONE_ENTRANCE            (90 | (23 << 8))
 
 // Map Group 24
-#define MAP_METEOR_FALLS_1F_1R                       (0 | (24 << 8))
-#define MAP_METEOR_FALLS_1F_2R                       (1 | (24 << 8))
-#define MAP_METEOR_FALLS_B1F_1R                      (2 | (24 << 8))
+#define MAP_SPROUT_TOWER_1F                          (0 | (24 << 8))
+#define MAP_SPROUT_TOWER_2F                          (1 | (24 << 8))
+#define MAP_SPROUT_TOWER_3F                          (2 | (24 << 8))
 #define MAP_METEOR_FALLS_B1F_2R                      (3 | (24 << 8))
 #define MAP_RUSTURF_TUNNEL                           (4 | (24 << 8))
 #define MAP_UNDERWATER_SOOTOPOLIS_CITY               (5 | (24 << 8))

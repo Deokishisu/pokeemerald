@@ -5,7 +5,7 @@ Route105_EventObjects::
 	object_event 4, EVENT_OBJ_GFX_ITEM_BALL, 0, 0, 0, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route105_EventScript_290D33, FLAG_ITEM_ROUTE_105_IRON
 
 Route105_MapWarps::
-	warp_def 11, 9, 3, 3, MAP_ROUTE104
+	warp_def 11, 9, 3, 3, MAP_ROUTE32
 
 Route105_MapBGEvents::
 	bg_hidden_item_event -6, -6, 3, ITEM_HEART_SCALE, FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE

@@ -4,8 +4,8 @@ Route32_PokemonCenter_1F_EventObjects::
 	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_M, 1, 6, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
 
 Route32_PokemonCenter_1F_MapWarps::
-	warp_def 3, 7, 3, 2, MAP_ROUTE104
-	warp_def 4, 7, 3, 2, MAP_ROUTE104
+	warp_def 3, 7, 3, 2, MAP_ROUTE32
+	warp_def 4, 7, 3, 2, MAP_ROUTE32
 	warp_def 0, 7, 3, 0, MAP_ROUTE32_POKEMON_CENTER_2F
 
 Route32_PokemonCenter_1F_MapEvents::

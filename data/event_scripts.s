@@ -62,7 +62,7 @@ gStdScripts_End:: @ 81DC2CC
 	map_script 2, PetalburgCity_MapScript2_1DC31C
 	.byte 0
 
-	.include "data/maps/PetalburgCity/scripts.inc"
+	.include "data/maps/VioletCity/scripts.inc"
 	.include "data/maps/SlateportCity/scripts.inc"
 	.include "data/maps/MauvilleCity/scripts.inc"
 	.include "data/maps/RustboroCity/scripts.inc"
@@ -79,9 +79,9 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/VerdanturfTown/scripts.inc"
 	.include "data/maps/PacifidlogTown/scripts.inc"
 	.include "data/maps/Route29/scripts.inc"
-	.include "data/maps/Route102/scripts.inc"
-	.include "data/maps/Route103/scripts.inc"
-	.include "data/maps/Route104/scripts.inc"
+	.include "data/maps/Route30/scripts.inc"
+	.include "data/maps/Route31/scripts.inc"
+	.include "data/maps/Route32/scripts.inc"
 	.include "data/maps/Route105/scripts.inc"
 	.include "data/maps/Route106/scripts.inc"
 	.include "data/maps/Route107/scripts.inc"
@@ -168,12 +168,12 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/PacifidlogTown_House4/scripts.inc"
 	.include "data/maps/PacifidlogTown_House5/scripts.inc"
 	.include "data/maps/PetalburgCity_WallysHouse/scripts.inc"
-	.include "data/maps/PetalburgCity_Gym/scripts.inc"
-	.include "data/maps/PetalburgCity_House1/scripts.inc"
-	.include "data/maps/PetalburgCity_House2/scripts.inc"
-	.include "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/PetalburgCity_PokemonCenter_2F/scripts.inc"
-	.include "data/maps/PetalburgCity_Mart/scripts.inc"
+	.include "data/maps/VioletCity_Gym/scripts.inc"
+	.include "data/maps/VioletCity_House1/scripts.inc"
+	.include "data/maps/VioletCity_House2/scripts.inc"
+	.include "data/maps/VioletCity_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/VioletCity_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/VioletCity_Mart/scripts.inc"
 	.include "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
 	.include "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
 	.include "data/maps/SlateportCity_BattleTentLobby/scripts.inc"
@@ -200,7 +200,7 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/RustboroCity_DevonCorp_2F/scripts.inc"
 	.include "data/maps/RustboroCity_DevonCorp_3F/scripts.inc"
 	.include "data/maps/RustboroCity_Gym/scripts.inc"
-	.include "data/maps/RustboroCity_PokemonSchool/scripts.inc"
+	.include "data/maps/VioletCity_EarlsPokemonAcademy/scripts.inc"
 	.include "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc"
 	.include "data/maps/RustboroCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/RustboroCity_Mart/scripts.inc"
@@ -301,9 +301,9 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/Route116_TunnelersRestHouse/scripts.inc"
 	.include "data/maps/Route34_PokemonDayCare/scripts.inc"
 	.include "data/maps/Route121_SafariZoneEntrance/scripts.inc"
-	.include "data/maps/MeteorFalls_1F_1R/scripts.inc"
-	.include "data/maps/MeteorFalls_1F_2R/scripts.inc"
-	.include "data/maps/MeteorFalls_B1F_1R/scripts.inc"
+	.include "data/maps/SproutTower_1F/scripts.inc"
+	.include "data/maps/SproutTower_2F/scripts.inc"
+	.include "data/maps/SproutTower_3F/scripts.inc"
 	.include "data/maps/MeteorFalls_B1F_2R/scripts.inc"
 	.include "data/maps/RusturfTunnel/scripts.inc"
 	.include "data/maps/Underwater_SootopolisCity/scripts.inc"
@@ -2388,7 +2388,7 @@ EventScript_27222B:: @ 827222B
 	delay 30
 	applymovement 255, PetalburgCity_Movement_2725A6
 	waitmovement 0
-	showobjectat 255, MAP_PETALBURG_CITY
+	showobjectat 255, MAP_VIOLET_CITY
 	delay 30
 	applymovement 255, Movement_27224E
 	waitmovement 0
@@ -2409,7 +2409,7 @@ SouthernIsland_Exterior_EventScript_272250:: @ 8272250
 	compare VAR_FACING, 3
 	call_if 1, BattleFrontier_OutsideWest_EventScript_242A2C
 	delay 30
-	hideobjectat 255, MAP_PETALBURG_CITY
+	hideobjectat 255, MAP_VIOLET_CITY
 	call BattleFrontier_OutsideWest_EventScript_2721E2
 	return
 

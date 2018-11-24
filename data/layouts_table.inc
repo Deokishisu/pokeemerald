@@ -1,6 +1,6 @@
 	.align 2
 gMapLayouts::
-	.4byte PetalburgCity_Layout
+	.4byte VioletCity_Layout
 	.4byte SlateportCity_Layout
 	.4byte MauvilleCity_Layout
 	.4byte RustboroCity_Layout
@@ -17,9 +17,9 @@ gMapLayouts::
 	.4byte VerdanturfTown_Layout
 	.4byte PacifidlogTown_Layout
 	.4byte Route29_Layout
-	.4byte Route102_Layout
-	.4byte Route103_Layout
-	.4byte Route104_Layout
+	.4byte Route30_Layout
+	.4byte Route31_Layout
+	.4byte Route32_Layout
 	.4byte Route105_Layout
 	.4byte Route106_Layout
 	.4byte Route107_Layout
@@ -78,7 +78,7 @@ gMapLayouts::
 	.4byte VerdanturfTown_WandasHouse_Layout
 	.4byte PacifidlogTown_House1_Layout
 	.4byte PacifidlogTown_House2_Layout
-	.4byte PetalburgCity_Gym_Layout
+	.4byte VioletCity_Gym_Layout
 	.4byte HouseWithBed_Layout
 	.4byte SlateportCity_SternsShipyard_1F_Layout
 	.4byte SlateportCity_SternsShipyard_2F_Layout
@@ -94,7 +94,7 @@ gMapLayouts::
 	.4byte RustboroCity_DevonCorp_1F_Layout
 	.4byte RustboroCity_DevonCorp_2F_Layout
 	.4byte RustboroCity_Gym_Layout
-	.4byte RustboroCity_PokemonSchool_Layout
+	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
 	.4byte RustboroCity_House1_Layout
 	.4byte RustboroCity_CuttersHouse_Layout
@@ -124,9 +124,9 @@ gMapLayouts::
 	.4byte Route116_TunnelersRestHouse_Layout
 	.4byte Route34_PokemonDayCare_Layout
 	.4byte Route121_SafariZoneEntrance_Layout
-	.4byte MeteorFalls_1F_1R_Layout
-	.4byte MeteorFalls_1F_2R_Layout
-	.4byte MeteorFalls_B1F_1R_Layout
+	.4byte SproutTower_1F_Layout
+	.4byte SproutTower_2F_Layout
+	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
 	.4byte RusturfTunnel_Layout
 	.4byte Underwater_SootopolisCity_Layout
@@ -446,7 +446,7 @@ gMapLayouts::
 	.4byte East_West_Gate_Layout
 	.4byte Route35_National_Park_Gate_Layout
 	.4byte Route36_National_Park_Gate_Layout
-	.4byte PetalburgCity_Layout
+	.4byte VioletCity_Layout
 	.4byte SlateportCity_Layout
 	.4byte MauvilleCity_Layout
 	.4byte RustboroCity_Layout
@@ -463,9 +463,9 @@ gMapLayouts::
 	.4byte VerdanturfTown_Layout
 	.4byte PacifidlogTown_Layout
 	.4byte Route29_Layout
-	.4byte Route102_Layout
-	.4byte Route103_Layout
-	.4byte Route104_Layout
+	.4byte Route30_Layout
+	.4byte Route31_Layout
+	.4byte Route32_Layout
 	.4byte Route105_Layout
 	.4byte Route106_Layout
 	.4byte Route107_Layout
@@ -524,7 +524,7 @@ gMapLayouts::
 	.4byte VerdanturfTown_WandasHouse_Layout
 	.4byte PacifidlogTown_House1_Layout
 	.4byte PacifidlogTown_House2_Layout
-	.4byte PetalburgCity_Gym_Layout
+	.4byte VioletCity_Gym_Layout
 	.4byte HouseWithBed_Layout
 	.4byte SlateportCity_SternsShipyard_1F_Layout
 	.4byte SlateportCity_SternsShipyard_2F_Layout
@@ -540,7 +540,7 @@ gMapLayouts::
 	.4byte RustboroCity_DevonCorp_1F_Layout
 	.4byte RustboroCity_DevonCorp_2F_Layout
 	.4byte RustboroCity_Gym_Layout
-	.4byte RustboroCity_PokemonSchool_Layout
+	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
 	.4byte RustboroCity_House1_Layout
 	.4byte RustboroCity_CuttersHouse_Layout
@@ -570,9 +570,9 @@ gMapLayouts::
 	.4byte Route116_TunnelersRestHouse_Layout
 	.4byte Route34_PokemonDayCare_Layout
 	.4byte Route121_SafariZoneEntrance_Layout
-	.4byte MeteorFalls_1F_1R_Layout
-	.4byte MeteorFalls_1F_2R_Layout
-	.4byte MeteorFalls_B1F_1R_Layout
+	.4byte SproutTower_1F_Layout
+	.4byte SproutTower_2F_Layout
+	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
 	.4byte RusturfTunnel_Layout
 	.4byte Underwater_SootopolisCity_Layout
@@ -892,7 +892,7 @@ gMapLayouts::
 	.4byte East_West_Gate_Layout
 	.4byte Route35_National_Park_Gate_Layout
 	.4byte Route36_National_Park_Gate_Layout
-	.4byte PetalburgCity_Layout
+	.4byte VioletCity_Layout
 	.4byte SlateportCity_Layout
 	.4byte MauvilleCity_Layout
 	.4byte RustboroCity_Layout
@@ -909,9 +909,9 @@ gMapLayouts::
 	.4byte VerdanturfTown_Layout
 	.4byte PacifidlogTown_Layout
 	.4byte Route29_Layout
-	.4byte Route102_Layout
-	.4byte Route103_Layout
-	.4byte Route104_Layout
+	.4byte Route30_Layout
+	.4byte Route31_Layout
+	.4byte Route32_Layout
 	.4byte Route105_Layout
 	.4byte Route106_Layout
 	.4byte Route107_Layout
@@ -970,7 +970,7 @@ gMapLayouts::
 	.4byte VerdanturfTown_WandasHouse_Layout
 	.4byte PacifidlogTown_House1_Layout
 	.4byte PacifidlogTown_House2_Layout
-	.4byte PetalburgCity_Gym_Layout
+	.4byte VioletCity_Gym_Layout
 	.4byte HouseWithBed_Layout
 	.4byte SlateportCity_SternsShipyard_1F_Layout
 	.4byte SlateportCity_SternsShipyard_2F_Layout
@@ -986,7 +986,7 @@ gMapLayouts::
 	.4byte RustboroCity_DevonCorp_1F_Layout
 	.4byte RustboroCity_DevonCorp_2F_Layout
 	.4byte RustboroCity_Gym_Layout
-	.4byte RustboroCity_PokemonSchool_Layout
+	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
 	.4byte RustboroCity_House1_Layout
 	.4byte RustboroCity_CuttersHouse_Layout
@@ -1016,9 +1016,9 @@ gMapLayouts::
 	.4byte Route116_TunnelersRestHouse_Layout
 	.4byte Route34_PokemonDayCare_Layout
 	.4byte Route121_SafariZoneEntrance_Layout
-	.4byte MeteorFalls_1F_1R_Layout
-	.4byte MeteorFalls_1F_2R_Layout
-	.4byte MeteorFalls_B1F_1R_Layout
+	.4byte SproutTower_1F_Layout
+	.4byte SproutTower_2F_Layout
+	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
 	.4byte RusturfTunnel_Layout
 	.4byte Underwater_SootopolisCity_Layout

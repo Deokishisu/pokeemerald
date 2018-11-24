@@ -3,8 +3,8 @@ Route104_MrBrineysHouse_EventObjects::
 	object_event 2, EVENT_OBJ_GFX_BIRD, 0, 6, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 3, 3, 0, 0, Route104_MrBrineysHouse_EventScript_229E5D, FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 
 Route104_MrBrineysHouse_MapWarps::
-	warp_def 5, 8, 0, 0, MAP_ROUTE104
-	warp_def 6, 8, 0, 0, MAP_ROUTE104
+	warp_def 5, 8, 0, 0, MAP_ROUTE32
+	warp_def 6, 8, 0, 0, MAP_ROUTE32
 
 Route104_MrBrineysHouse_MapEvents::
 	map_events Route104_MrBrineysHouse_EventObjects, Route104_MrBrineysHouse_MapWarps, 0x0, 0x0

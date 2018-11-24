@@ -14,12 +14,12 @@ PetalburgWoods_EventObjects: @ 85345E4
 	object_event 13, EVENT_OBJ_GFX_ZGIRL_2, 0, 33, 5, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, PetalburgWoods_EventScript_22E222, 0
 
 PetalburgWoods_MapWarps: @ 853471C
-	warp_def 14, 5, 0, 2, MAP_ROUTE104
-	warp_def 15, 5, 0, 3, MAP_ROUTE104
-	warp_def 16, 38, 0, 4, MAP_ROUTE104
-	warp_def 17, 38, 0, 5, MAP_ROUTE104
-	warp_def 36, 38, 0, 6, MAP_ROUTE104
-	warp_def 37, 38, 0, 7, MAP_ROUTE104
+	warp_def 14, 5, 0, 2, MAP_ROUTE32
+	warp_def 15, 5, 0, 3, MAP_ROUTE32
+	warp_def 16, 38, 0, 4, MAP_ROUTE32
+	warp_def 17, 38, 0, 5, MAP_ROUTE32
+	warp_def 36, 38, 0, 6, MAP_ROUTE32
+	warp_def 37, 38, 0, 7, MAP_ROUTE32
 
 PetalburgWoods_MapCoordEvents: @ 853474C
 	coord_event 26, 23, 3, VAR_0x4098, 0, PetalburgWoods_EventScript_22DFD7

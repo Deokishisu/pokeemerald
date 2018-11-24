@@ -36,10 +36,7 @@ int GameClear(void)
 
     SetSecretBase2Field_9();
 
-    if (gSaveBlock2Ptr->playerGender == MALE)
-        sub_8084F6C(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F);
-    else
-        sub_8084F6C(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F);
+    sub_8084F6C(HEAL_LOCATION_NEW_BARK_TOWN_PLAYERS_HOUSE_2F);
 
     ribbonGet = FALSE;
 

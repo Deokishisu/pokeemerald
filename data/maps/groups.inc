@@ -2,7 +2,7 @@
 gMapGroup0::
 	.4byte NewBarkTown
 	.4byte CherrygroveCity
-	.4byte PetalburgCity
+	.4byte VioletCity
 	.4byte DewfordTown
 	.4byte SlateportCity
 	.4byte MauvilleCity
@@ -13,9 +13,9 @@ gMapGroup0::
 	.4byte Route125
 	.4byte Route124
 	.4byte Route29
-	.4byte Route102
-	.4byte Route103
-	.4byte Route104
+	.4byte Route30
+	.4byte Route31
+	.4byte Route32
 	.4byte Route105
 	.4byte Route106
 	.4byte Route107
@@ -77,13 +77,13 @@ gMapGroup2::
 
 	.align 2
 gMapGroup3::
-	.4byte RustboroCity_PokemonSchool
-	.4byte PetalburgCity_Gym
-	.4byte PetalburgCity_House1
-	.4byte PetalburgCity_House2
-	.4byte PetalburgCity_PokemonCenter_1F
-	.4byte PetalburgCity_PokemonCenter_2F
-	.4byte PetalburgCity_Mart
+	.4byte VioletCity_EarlsPokemonAcademy
+	.4byte VioletCity_Gym
+	.4byte VioletCity_House1
+	.4byte VioletCity_House2
+	.4byte VioletCity_PokemonCenter_1F
+	.4byte VioletCity_PokemonCenter_2F
+	.4byte VioletCity_Mart
 
 	.align 2
 gMapGroup4::
@@ -331,9 +331,9 @@ gMapGroup23::
 
 	.align 2
 gMapGroup24::
-	.4byte MeteorFalls_1F_1R
-	.4byte MeteorFalls_1F_2R
-	.4byte MeteorFalls_B1F_1R
+	.4byte SproutTower_1F
+	.4byte SproutTower_2F
+	.4byte SproutTower_3F
 	.4byte MeteorFalls_B1F_2R
 	.4byte RusturfTunnel
 	.4byte Underwater_SootopolisCity

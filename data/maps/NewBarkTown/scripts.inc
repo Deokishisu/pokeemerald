@@ -138,7 +138,7 @@ LittlerootTown_EventScript_1E7F17:: @ 81E7F17
 	waitmovement 0
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE
 	setvar VAR_0x4092, 3
-	hideobjectat 255, MAP_PETALBURG_CITY
+	hideobjectat 255, MAP_VIOLET_CITY
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN

@@ -1,5 +1,5 @@
 Route108_MapConnectionsList::
-	connection right, 0, MAP_PETALBURG_CITY
+	connection right, 0, MAP_VIOLET_CITY
 	connection down, 0, MAP_ROUTE107
 	connection up, 20, MAP_ROUTE109
 

@@ -1,5 +1,5 @@
 Route105_MapConnectionsList::
-	connection up, 0, MAP_ROUTE104
+	connection up, 0, MAP_ROUTE32
 	connection left, 0, MAP_DEWFORD_TOWN
 
 Route105_MapConnections::
