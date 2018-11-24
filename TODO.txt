@@ -13,3 +13,5 @@ TODO: Black out the Options menu background; and decide if SGB borders are a thi
 TODO: Import the remaining tilesets (Battle Tower Outside, Cave, Dark Cave, Forest, Ice Path, Park, Port, Radio Tower, Ruins of Alph, and possibly PokeCom Center).
 
 TODO: Remove National Dex requirement for trading with FRLG, replace with Time Capsule check.
+
+TODO: Fix other Metal Advance players appearing as Emerald players in link rooms.

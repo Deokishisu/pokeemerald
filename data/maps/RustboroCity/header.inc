@@ -3,7 +3,7 @@ RustboroCity::
 	.4byte RustboroCity_MapEvents
 	.4byte RustboroCity_MapScripts
 	.4byte RustboroCity_MapConnections
-	.2byte MUS_GOTOWN
+	.2byte MUS_RG_NANA67
 	.2byte 4
 	.byte MAPSEC_OLIVINE_CITY
 	.byte 0
