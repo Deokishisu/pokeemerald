@@ -99,7 +99,7 @@ static const u8 *const sCursorText[] =
 static const struct WindowTemplate sOptionMenuWinTemplates[] =
 {
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 0,
         .tilemapTop = 0,
         .width = 0,
@@ -108,7 +108,7 @@ static const struct WindowTemplate sOptionMenuWinTemplates[] =
         .baseBlock = 2
     },
     {
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 6,
         .tilemapTop = 2,
         .width = 18,

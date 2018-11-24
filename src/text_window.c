@@ -93,7 +93,7 @@ const struct TilesPal *GetWindowFrameTilesPal(u8 id)
 
 void LoadMessageBoxGfx(u8 windowId, u16 destOffset, u8 palOffset)
 {
-	LoadBgTiles(GetWindowAttribute(windowId, WINDOW_PRIORITY), sWindowFrames[gSaveBlock2Ptr->optionsWindowFrameType].tiles, 0x120, destOffset);
+	LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), sWindowFrames[gSaveBlock2Ptr->optionsWindowFrameType].tiles, 0x120, destOffset);
     //LoadPalette(GetWindowFrameTilesPal(gSaveBlock2Ptr->optionsWindowFrameType)->pal, palOffset, 0x20);
     //LoadBgTiles(GetWindowAttribute(windowId, WINDOW_PRIORITY), gMessageBox_Gfx, 0x1C0, destOffset);
     LoadPalette(GetOverworldTextboxPalettePtr(), palOffset, 0x20);
@@ -106,7 +106,7 @@ void LoadUserWindowBorderGfx_(u8 windowId, u16 destOffset, u8 palOffset)
 
 void LoadWindowGfx(u8 windowId, u8 frameId, u16 destOffset, u8 palOffset)
 {
-    LoadBgTiles(GetWindowAttribute(windowId, WINDOW_PRIORITY), sWindowFrames[frameId].tiles, 0x120, destOffset);
+    LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), sWindowFrames[frameId].tiles, 0x120, destOffset);
     LoadPalette(sWindowFrames[frameId].pal, palOffset, 0x20);
 }
 
@@ -117,7 +117,7 @@ void LoadUserWindowBorderGfx(u8 windowId, u16 destOffset, u8 palOffset)
 
 void sub_8098858(u8 windowId, u16 tileNum, u8 palNum)
 {
-    u8 bgLayer = GetWindowAttribute(windowId, WINDOW_PRIORITY);
+    u8 bgLayer = GetWindowAttribute(windowId, WINDOW_BG);
     u16 tilemapLeft = GetWindowAttribute(windowId, WINDOW_TILEMAP_LEFT);
     u16 tilemapTop = GetWindowAttribute(windowId, WINDOW_TILEMAP_TOP);
     u16 width = GetWindowAttribute(windowId, WINDOW_WIDTH);
@@ -135,7 +135,7 @@ void sub_8098858(u8 windowId, u16 tileNum, u8 palNum)
 
 void sub_80989E0(u8 windowId, u16 tileNum, u8 palNum)
 {
-    u8 bgLayer = GetWindowAttribute(windowId, WINDOW_PRIORITY);
+    u8 bgLayer = GetWindowAttribute(windowId, WINDOW_BG);
     u16 tilemapLeft = GetWindowAttribute(windowId, WINDOW_TILEMAP_LEFT);
     u16 tilemapTop = GetWindowAttribute(windowId, WINDOW_TILEMAP_TOP);
     u16 width = GetWindowAttribute(windowId, WINDOW_WIDTH);
@@ -153,7 +153,7 @@ void sub_80989E0(u8 windowId, u16 tileNum, u8 palNum)
 
 void rbox_fill_rectangle(u8 windowId)
 {
-    u8 bgLayer = GetWindowAttribute(windowId, WINDOW_PRIORITY);
+    u8 bgLayer = GetWindowAttribute(windowId, WINDOW_BG);
     u16 tilemapLeft = GetWindowAttribute(windowId, WINDOW_TILEMAP_LEFT);
     u16 tilemapTop = GetWindowAttribute(windowId, WINDOW_TILEMAP_TOP);
     u16 width = GetWindowAttribute(windowId, WINDOW_WIDTH);

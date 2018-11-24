@@ -1,43 +1,45 @@
 #include "global.h"
-#include "gba/m4a_internal.h"
-#include "pokedex.h"
-#include "sprite.h"
-#include "graphics.h"
-#include "decompress.h"
 #include "bg.h"
-#include "window.h"
-#include "event_data.h"
-#include "palette.h"
-#include "main.h"
-#include "sound.h"
-#include "task.h"
-#include "trainer_pokemon_sprites.h"
-#include "scanline_effect.h"
-#include "malloc.h"
-#include "gpu_regs.h"
-#include "constants/songs.h"
-#include "constants/species.h"
-#include "constants/rgb.h"
-#include "overworld.h"
-#include "menu.h"
-#include "text_window.h"
 #include "data2.h"
-#include "string_util.h"
-#include "trig.h"
+#include "decompress.h"
+#include "event_data.h"
+#include "gpu_regs.h"
+#include "graphics.h"
+#include "international_string_util.h"
+#include "main.h"
+#include "malloc.h"
+#include "menu.h"
+#include "m4a.h"
+#include "overworld.h"
+#include "palette.h"
+#include "pokedex.h"
 #include "pokedex_area_screen.h"
 #include "pokedex_cry_screen.h"
+#include "scanline_effect.h"
+#include "sound.h"
+#include "sprite.h"
+#include "string_util.h"
 #include "strings.h"
-#include "m4a.h"
-#include "international_string_util.h"
+#include "task.h"
+#include "text_window.h"
+#include "trainer_pokemon_sprites.h"
+#include "trig.h"
+#include "window.h"
+#include "constants/rgb.h"
+#include "constants/songs.h"
+#include "constants/species.h"
 
+extern u8 gUnknown_030061EC;
+
+// EWRAM
 static EWRAM_DATA struct PokedexView *gUnknown_02039B4C = NULL;
 static EWRAM_DATA u16 gUnknown_02039B50 = 0;
 static EWRAM_DATA u8 gUnknown_02039B52 = 0;
 static EWRAM_DATA struct PokedexListItem *gUnknown_02039B54 = NULL;
 
+// IWRAM common
 u8 gUnknown_030060B0;
-MainCallback gUnknown_030060B4;
-u8 gUnknown_030061EC;
+void (*gUnknown_030060B4)(void);
 
 struct PokedexEntry
 {

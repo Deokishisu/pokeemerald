@@ -1,41 +1,43 @@
 #include "global.h"
-#include "pokemon.h"
+#include "apprentice.h"
 #include "battle.h"
-#include "battle_setup.h"
-#include "battle_message.h"
-#include "random.h"
-#include "main.h"
-#include "constants/species.h"
-#include "constants/abilities.h"
-#include "constants/items.h"
-#include "constants/trainers.h"
-#include "constants/moves.h"
-#include "constants/hold_effects.h"
-#include "constants/battle_move_effects.h"
-#include "constants/songs.h"
-#include "constants/battle_frontier.h"
-#include "string_util.h"
-#include "text.h"
-#include "link.h"
-#include "event_data.h"
-#include "item.h"
 #include "battle_controllers.h"
 #include "battle_message.h"
+#include "battle_pike.h"
+#include "battle_pyramid.h"
+#include "battle_setup.h"
+#include "battle_tower.h"
+#include "event_data.h"
 #include "evolution_scene.h"
-#include "pokemon_animation.h"
+#include "item.h"
+#include "link.h"
+#include "main.h"
+#include "malloc.h"
+#include "m4a.h"
 #include "pokedex.h"
 #include "pokeblock.h"
-#include "sound.h"
-#include "task.h"
-#include "rtc.h"
-#include "m4a.h"
-#include "malloc.h"
-#include "util.h"
-#include "strings.h"
-#include "pokenav.h"
+#include "pokemon.h"
+#include "pokemon_animation.h"
 #include "pokemon_storage_system.h"
+#include "pokenav.h"
+#include "random.h"
 #include "recorded_battle.h"
-#include "apprentice.h"
+#include "rtc.h"
+#include "sound.h"
+#include "string_util.h"
+#include "strings.h"
+#include "task.h"
+#include "text.h"
+#include "util.h"
+#include "constants/abilities.h"
+#include "constants/battle_frontier.h"
+#include "constants/battle_move_effects.h"
+#include "constants/hold_effects.h"
+#include "constants/items.h"
+#include "constants/moves.h"
+#include "constants/songs.h"
+#include "constants/species.h"
+#include "constants/trainers.h"
 
 struct SpeciesItem
 {
@@ -80,14 +82,8 @@ extern u8 StorageGetCurrentBox(void);
 extern void set_unknown_box_id(u8);
 extern void sub_803FA70(u8 battlerId);
 extern u8 sav1_map_get_name(void);
-extern u8 GetFrontierEnemyMonLevel(u8);
-extern bool8 InBattlePyramid(void);
-extern bool8 InBattlePike(void);
 extern bool8 sub_806F104(void);
-extern u8 GetTrainerEncounterMusicIdInBattlePyramind(u16 trainerOpponentId);
 extern u8 sub_81D63C8(u16 trainerOpponentId);
-extern u8 GetFrontierOpponentClass(u16 trainerId);
-extern void GetFrontierTrainerName(u8* dest, u16 trainerId);
 extern void SummaryScreen_SetUnknownTaskId(u8);
 
 // this file's functions
@@ -2879,10 +2875,10 @@ void CreateApprenticeMon(struct Pokemon *mon, const struct Apprentice *src, u8 m
     u8 language;
     u32 otId = gApprentices[src->id].otId;
     u32 personality = ((gApprentices[src->id].otId >> 8) | ((gApprentices[src->id].otId & 0xFF) << 8))
-                    + src->monData[monId].species + src->number;
+                    + src->party[monId].species + src->number;
 
     CreateMon(mon,
-              src->monData[monId].species,
+              src->party[monId].species,
               GetFrontierEnemyMonLevel(src->lvlMode - 1),
               0x1F,
               TRUE,
@@ -2890,9 +2886,9 @@ void CreateApprenticeMon(struct Pokemon *mon, const struct Apprentice *src, u8 m
               TRUE,
               otId);
 
-    SetMonData(mon, MON_DATA_HELD_ITEM, &src->monData[monId].item);
+    SetMonData(mon, MON_DATA_HELD_ITEM, &src->party[monId].item);
     for (i = 0; i < 4; i++)
-        SetMonMoveSlot(mon, src->monData[monId].moves[i], i);
+        SetMonMoveSlot(mon, src->party[monId].moves[i], i);
 
     evAmount = MAX_TOTAL_EVS / NUM_STATS;
     for (i = 0; i < NUM_STATS; i++)
@@ -2904,7 +2900,7 @@ void CreateApprenticeMon(struct Pokemon *mon, const struct Apprentice *src, u8 m
     CalculateMonStats(mon);
 }
 
-void CreateMonWithEVSpreadPersonalityOTID(struct Pokemon *mon, u16 species, u8 level, u8 nature, u8 fixedIV, u8 evSpread, u32 otId)
+void CreateMonWithEVSpreadNatureOTID(struct Pokemon *mon, u16 species, u8 level, u8 nature, u8 fixedIV, u8 evSpread, u32 otId)
 {
     s32 i;
     s32 statCount = 0;

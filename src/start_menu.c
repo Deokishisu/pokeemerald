@@ -12,7 +12,7 @@
 #include "task.h"
 #include "overworld.h"
 #include "link.h"
-#include "battle_frontier_2.h"
+#include "frontier_util.h"
 #include "rom_818CFC8.h"
 #include "field_specials.h"
 #include "event_object_movement.h"
@@ -34,6 +34,8 @@
 #include "constants/songs.h"
 #include "field_player_avatar.h"
 #include "battle_pyramid_bag.h"
+#include "battle_pike.h"
+#include "new_game.h"
 
 // Menu actions
 enum
@@ -62,6 +64,10 @@ enum
     SAVE_ERROR
 };
 
+// IWRAM common
+bool8 (*gMenuCallback)(void);
+
+// EWRAM
 EWRAM_DATA static u8 sSafariBallsWindowId = 0;
 EWRAM_DATA static u8 sBattlePyramidFloorWindowId = 0;
 EWRAM_DATA static u8 sStartMenuCursorPos = 0;
@@ -75,7 +81,6 @@ EWRAM_DATA static bool8 sSavingComplete = FALSE;
 EWRAM_DATA static u8 sSaveInfoWindowId = 0;
 
 // Extern variables.
-extern u8 gDifferentSaveFile;
 extern u8 gUnknown_03005DB4;
 
 // Extern functions in not decompiled files.
@@ -401,14 +406,14 @@ static void ShowSafariBallsWindow(void)
 
 static void ShowPyramidFloorWindow(void)
 {
-    if (gSaveBlock2Ptr->frontier.field_CB2 == 7)
+    if (gSaveBlock2Ptr->frontier.curChallengeBattleNum == 7)
         sBattlePyramidFloorWindowId = AddWindow(&sPyramidFloorWindowTemplate_1);
     else
         sBattlePyramidFloorWindowId = AddWindow(&sPyramidFloorWindowTemplate_2);
 
     PutWindowTilemap(sBattlePyramidFloorWindowId);
     NewMenuHelpers_DrawStdWindowFrame(sBattlePyramidFloorWindowId, FALSE);
-    StringCopy(gStringVar1, sPyramindFloorNames[gSaveBlock2Ptr->frontier.field_CB2]);
+    StringCopy(gStringVar1, sPyramindFloorNames[gSaveBlock2Ptr->frontier.curChallengeBattleNum]);
     StringExpandPlaceholders(gStringVar4, gText_BattlePyramidFloor);
     AddTextPrinterParameterized(sBattlePyramidFloorWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
     CopyWindowToVram(sBattlePyramidFloorWindowId, 2);
@@ -477,18 +482,18 @@ static bool32 InitStartMenuStep(void)
         sUnknown_02037619[0]++;
         break;
     case 3:
-        if (GetSafariZoneFlag() != FALSE)
+        if (GetSafariZoneFlag())
         {
             ShowSafariBallsWindow();
         }
-        if (InBattlePyramid() != FALSE)
+        if (InBattlePyramid())
         {
             ShowPyramidFloorWindow();
         }
         sUnknown_02037619[0]++;
         break;
     case 4:
-        if (PrintStartMenuActions(&sUnknown_02037619[1], 2) == FALSE)
+        if (!PrintStartMenuActions(&sUnknown_02037619[1], 2))
         {
             break;
         }
@@ -1002,7 +1007,7 @@ static u8 SaveYesNoCallback(void)
 
 static u8 SaveConfirmInputCallback(void)
 {
-    switch (Menu_ProcessInputNoWrap_())
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0: // Yes
         switch (gSaveFileStatus)
@@ -1064,7 +1069,7 @@ static u8 SaveConfirmOverwriteCallback(void)
 
 static u8 SaveOverwriteInputCallback(void)
 {
-    switch (Menu_ProcessInputNoWrap_())
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0: // Yes
         sSaveDialogCallback = SaveSavingMessageCallback;
@@ -1193,7 +1198,7 @@ static u8 BattlePyramidRetireYesNoCallback(void)
 
 static u8 BattlePyramidRetireInputCallback(void)
 {
-    switch (Menu_ProcessInputNoWrap_())
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0: // Yes
         return SAVE_CANCELED;

@@ -1,35 +1,35 @@
 #include "global.h"
-#include "battle_pyramid_bag.h"
-#include "main.h"
+#include "battle.h"
 #include "battle_controllers.h"
+#include "battle_pyramid_bag.h"
 #include "bg.h"
+#include "decompress.h"
+#include "event_data.h"
 #include "field_effect.h"
 #include "field_weather.h"
+#include "graphics.h"
 #include "gpu_regs.h"
+#include "international_string_util.h"
+#include "item.h"
+#include "item_icon.h"
+#include "item_menu.h"
+#include "item_use.h"
+#include "list_menu.h"
+#include "mail.h"
+#include "main.h"
 #include "malloc.h"
 #include "menu.h"
-#include "overworld.h"
 #include "menu_helpers.h"
 #include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"
+#include "task.h"
+#include "text_window.h"
 #include "scanline_effect.h"
 #include "script.h"
-#include "task.h"
-#include "decompress.h"
-#include "graphics.h"
-#include "string_util.h"
-#include "list_menu.h"
-#include "strings.h"
-#include "item.h"
 #include "sound.h"
-#include "item_menu.h"
-#include "mail.h"
-#include "item_use.h"
-#include "event_data.h"
-#include "text_window.h"
-#include "international_string_util.h"
-#include "item_icon.h"
+#include "string_util.h"
+#include "strings.h"
 #include "constants/items.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
@@ -188,7 +188,7 @@ static const u8 sColorTable[][3] =
 static const struct WindowTemplate gUnknown_0861F328[] =
 {
     {
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 14,
         .tilemapTop = 2,
         .width = 15,
@@ -197,7 +197,7 @@ static const struct WindowTemplate gUnknown_0861F328[] =
         .baseBlock = 30
     },
     {
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 0,
         .tilemapTop = 13,
         .width = 14,
@@ -206,7 +206,7 @@ static const struct WindowTemplate gUnknown_0861F328[] =
         .baseBlock = 270
     },
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 2,
         .tilemapTop = 15,
         .width = 27,
@@ -215,7 +215,7 @@ static const struct WindowTemplate gUnknown_0861F328[] =
         .baseBlock = 354
     },
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 24,
         .tilemapTop = 17,
         .width = 5,
@@ -229,7 +229,7 @@ static const struct WindowTemplate gUnknown_0861F328[] =
 static const struct WindowTemplate gUnknown_0861F350[] =
 {
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 22,
         .tilemapTop = 17,
         .width = 7,
@@ -238,7 +238,7 @@ static const struct WindowTemplate gUnknown_0861F350[] =
         .baseBlock = 472
     },
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 22,
         .tilemapTop = 15,
         .width = 7,
@@ -247,7 +247,7 @@ static const struct WindowTemplate gUnknown_0861F350[] =
         .baseBlock = 472
     },
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 15,
         .tilemapTop = 15,
         .width = 14,
@@ -256,7 +256,7 @@ static const struct WindowTemplate gUnknown_0861F350[] =
         .baseBlock = 472
     },
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 15,
         .tilemapTop = 13,
         .width = 14,
@@ -265,7 +265,7 @@ static const struct WindowTemplate gUnknown_0861F350[] =
         .baseBlock = 472
     },
     {
-        .priority = 1,
+        .bg = 1,
         .tilemapLeft = 24,
         .tilemapTop = 15,
         .width = 5,
@@ -942,7 +942,7 @@ static void HandleFewMenuActionsInput(u8 taskId)
 {
     if (sub_81221EC() != TRUE)
     {
-        s32 id = Menu_ProcessInputNoWrapAround();
+        s32 id = Menu_ProcessInputNoWrap();
         switch (id)
         {
         case -2:
@@ -1457,7 +1457,7 @@ static void sub_81C6DAC(u8 taskId, const struct YesNoFuncTable *yesNoTable)
 void DisplayItemMessageInBattlePyramid(u8 taskId, const u8 *str, void (*callback)(u8 taskId))
 {
     FillWindowPixelBuffer(2, 0x11);
-    DisplayMessageAndContinueTask(taskId, 2, 0xA, 0xD, 1, GetPlayerTextSpeed(), str, callback);
+    DisplayMessageAndContinueTask(taskId, 2, 0xA, 0xD, 1, GetPlayerTextSpeedDelay(), str, callback);
     schedule_bg_copy_tilemap_to_vram(1);
 }
 

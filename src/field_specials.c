@@ -1,5 +1,4 @@
 #include "global.h"
-#include "main.h"
 #include "battle.h"
 #include "battle_tower.h"
 #include "cable_club.h"
@@ -13,7 +12,6 @@
 #include "field_effect.h"
 #include "field_message_box.h"
 #include "field_player_avatar.h"
-#include "field_region_map.h"
 #include "field_screen.h"
 #include "field_specials.h"
 #include "field_weather.h"
@@ -21,6 +19,7 @@
 #include "item_icon.h"
 #include "link.h"
 #include "list_menu.h"
+#include "main.h"
 #include "malloc.h"
 #include "match_call.h"
 #include "menu.h"
@@ -46,6 +45,7 @@
 #include "wallclock.h"
 #include "window.h"
 #include "constants/event_objects.h"
+#include "constants/field_effects.h"
 #include "constants/items.h"
 #include "constants/maps.h"
 #include "constants/songs.h"
@@ -82,6 +82,7 @@ extern const u16 gEventObjectPalette34[];
 
 extern void LoadPalette(const void *src, u32 offset, u16 size); // incorrect signature, needed to match
 extern void BlendPalettes(u32, u8, u16);
+extern void FieldInitRegionMap(MainCallback callback);
 
 void UpdateMovedLilycoveFanClubMembers(void);
 void sub_813BF60(void);
@@ -597,7 +598,7 @@ static void LoadLinkPartnerEventObjectSpritePalette(u8 graphicsId, u8 localEvent
         graphicsId == EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL)
     {
         u8 obj = GetEventObjectIdByLocalIdAndMap(localEventId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
-        if (obj != NUM_EVENT_OBJECTS)
+        if (obj != EVENT_OBJECTS_COUNT)
         {
             u8 spriteId = gEventObjects[obj].spriteId;
             struct Sprite *sprite = &gSprites[spriteId];
@@ -1515,7 +1516,7 @@ bool8 FoundBlackGlasses(void)
 
 void SetRoute119Weather(void)
 {
-    if (is_map_type_1_2_3_5_or_6(get_map_light_from_warp0()) != TRUE)
+    if (is_map_type_1_2_3_5_or_6(GetLastUsedWarpMapType()) != TRUE)
     {
         SetSav1Weather(20);
     }
@@ -1523,7 +1524,7 @@ void SetRoute119Weather(void)
 
 void SetRoute123Weather(void)
 {
-    if (is_map_type_1_2_3_5_or_6(get_map_light_from_warp0()) != TRUE)
+    if (is_map_type_1_2_3_5_or_6(GetLastUsedWarpMapType()) != TRUE)
     {
         SetSav1Weather(21);
     }
@@ -1682,7 +1683,7 @@ void sub_8139980(void)
 }
 
 const struct WindowTemplate gUnknown_085B2BAC = {
-    .priority = 0,
+    .bg = 0,
     .tilemapLeft = 21,
     .tilemapTop = 1,
     .width = 8,
@@ -2053,26 +2054,26 @@ _08139D7C:\n\
 void sub_8139D98(void)
 {
     u8 i;
-    u32 ivStorage[6];
+    u32 ivStorage[NUM_STATS];
 
-    ivStorage[0] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HP_IV);
-    ivStorage[1] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_ATK_IV);
-    ivStorage[2] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_DEF_IV);
-    ivStorage[3] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPEED_IV);
-    ivStorage[4] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPATK_IV);
-    ivStorage[5] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPDEF_IV);
+    ivStorage[STAT_HP] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HP_IV);
+    ivStorage[STAT_ATK] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_ATK_IV);
+    ivStorage[STAT_DEF] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_DEF_IV);
+    ivStorage[STAT_SPEED] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPEED_IV);
+    ivStorage[STAT_SPATK] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPATK_IV);
+    ivStorage[STAT_SPDEF] = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPDEF_IV);
 
     gSpecialVar_0x8005 = 0;
 
-    for (i = 0; i < ARRAY_COUNT(ivStorage); i++)
+    for (i = 0; i < NUM_STATS; i++)
     {
         gSpecialVar_0x8005 += ivStorage[i];
     }
 
     gSpecialVar_0x8006 = 0;
-    gSpecialVar_0x8007 = ivStorage[0];  // HP IV
+    gSpecialVar_0x8007 = ivStorage[STAT_HP]; 
 
-    for (i = 1; i < 6; i++)
+    for (i = 1; i < NUM_STATS; i++)
     {
         if (ivStorage[gSpecialVar_0x8006] < ivStorage[i])
         {
@@ -2082,7 +2083,7 @@ void sub_8139D98(void)
         else if (ivStorage[gSpecialVar_0x8006] == ivStorage[i])
         {
             u16 randomNumber = Random();
-            if ((randomNumber & 1) != 0)
+            if (randomNumber & 1)
             {
                 gSpecialVar_0x8006 = i;
                 gSpecialVar_0x8007 = ivStorage[i];
@@ -2160,73 +2161,73 @@ void sub_8139F20(void)
         case 1:
         case 2:
         case 3:
-            if (gSaveBlock2Ptr->frontier.field_CE0[var][0] >= gSaveBlock2Ptr->frontier.field_CE0[var][1])
+            if (gSaveBlock2Ptr->frontier.towerWinStreaks[var][0] >= gSaveBlock2Ptr->frontier.towerWinStreaks[var][1])
             {
-                unk = gSaveBlock2Ptr->frontier.field_CE0[var][0];
+                unk = gSaveBlock2Ptr->frontier.towerWinStreaks[var][0];
             }
             else
             {
-                unk = gSaveBlock2Ptr->frontier.field_CE0[var][1];
+                unk = gSaveBlock2Ptr->frontier.towerWinStreaks[var][1];
             }
             break;
         case 4:
-            if (gSaveBlock2Ptr->frontier.field_D0C[0][0] >= gSaveBlock2Ptr->frontier.field_D0C[0][1])
+            if (gSaveBlock2Ptr->frontier.domeWinStreaks[0][0] >= gSaveBlock2Ptr->frontier.domeWinStreaks[0][1])
             {
-                unk = gSaveBlock2Ptr->frontier.field_D0C[0][0];
+                unk = gSaveBlock2Ptr->frontier.domeWinStreaks[0][0];
             }
             else
             {
-                unk = gSaveBlock2Ptr->frontier.field_D0C[0][1];
+                unk = gSaveBlock2Ptr->frontier.domeWinStreaks[0][1];
             }
             break;
         case 5:
-            if (gSaveBlock2Ptr->frontier.field_DE2[0][0] >= gSaveBlock2Ptr->frontier.field_DE2[0][1])
+            if (gSaveBlock2Ptr->frontier.factoryWinStreaks[0][0] >= gSaveBlock2Ptr->frontier.factoryWinStreaks[0][1])
             {
-                unk = gSaveBlock2Ptr->frontier.field_DE2[0][0];
+                unk = gSaveBlock2Ptr->frontier.factoryWinStreaks[0][0];
             }
             else
             {
-                unk = gSaveBlock2Ptr->frontier.field_DE2[0][1];
+                unk = gSaveBlock2Ptr->frontier.factoryWinStreaks[0][1];
             }
             break;
         case 6:
-            if (gSaveBlock2Ptr->frontier.field_DC8[0][0] >= gSaveBlock2Ptr->frontier.field_DC8[0][1])
+            if (gSaveBlock2Ptr->frontier.palaceWinStreaks[0][0] >= gSaveBlock2Ptr->frontier.palaceWinStreaks[0][1])
             {
-                unk = gSaveBlock2Ptr->frontier.field_DC8[0][0];
+                unk = gSaveBlock2Ptr->frontier.palaceWinStreaks[0][0];
             }
             else
             {
-                unk = gSaveBlock2Ptr->frontier.field_DC8[0][1];
+                unk = gSaveBlock2Ptr->frontier.palaceWinStreaks[0][1];
             }
             break;
         case 7:
-            if (gSaveBlock2Ptr->frontier.field_DDA[0] >= gSaveBlock2Ptr->frontier.field_DDA[1])
+            if (gSaveBlock2Ptr->frontier.arenaWinStreaks[0] >= gSaveBlock2Ptr->frontier.arenaWinStreaks[1])
             {
-                unk = gSaveBlock2Ptr->frontier.field_DDA[0];
+                unk = gSaveBlock2Ptr->frontier.arenaWinStreaks[0];
             }
             else
             {
-                unk = gSaveBlock2Ptr->frontier.field_DDA[1];
+                unk = gSaveBlock2Ptr->frontier.arenaWinStreaks[1];
             }
             break;
         case 8:
-            if (gSaveBlock2Ptr->frontier.field_E04[0] >= gSaveBlock2Ptr->frontier.field_E04[1])
+            if (gSaveBlock2Ptr->frontier.pikeWinStreaks[0] >= gSaveBlock2Ptr->frontier.pikeWinStreaks[1])
             {
-                unk = gSaveBlock2Ptr->frontier.field_E04[0];
+                unk = gSaveBlock2Ptr->frontier.pikeWinStreaks[0];
             }
             else
             {
-                unk = gSaveBlock2Ptr->frontier.field_E04[1];
+                unk = gSaveBlock2Ptr->frontier.pikeWinStreaks[1];
             }
             break;
         case 9:
-            if (gSaveBlock2Ptr->frontier.field_E1A[0] >= gSaveBlock2Ptr->frontier.field_E1A[1])
+            if (gSaveBlock2Ptr->frontier.pyramidWinStreaks[0] >= gSaveBlock2Ptr->frontier.pyramidWinStreaks[1])
             {
-                unk = gSaveBlock2Ptr->frontier.field_E1A[0];
+                unk = gSaveBlock2Ptr->frontier.pyramidWinStreaks[0];
             }
             else
             {
-                unk = gSaveBlock2Ptr->frontier.field_E1A[1];
+                unk = gSaveBlock2Ptr->frontier.pyramidWinStreaks[1];
             }
             break;
     }
@@ -2246,7 +2247,7 @@ void sub_813A080(void)
     u16 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
     u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
 
-    if (battleMode == 2 && !FlagGet(FLAG_0x152))
+    if (battleMode == FRONTIER_MODE_MULTIS && !FlagGet(FLAG_0x152))
     {
         gSpecialVar_0x8005 = 5;
         gSpecialVar_0x8006 = 4;
@@ -2255,7 +2256,7 @@ void sub_813A080(void)
 
     for (i = 0; i < 9; i++)
     {
-        if (gUnknown_085B2CDC[i] > gSaveBlock2Ptr->frontier.field_CE0[battleMode][lvlMode])
+        if (gUnknown_085B2CDC[i] > gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][lvlMode])
         {
             gSpecialVar_0x8005 = 4;
             gSpecialVar_0x8006 = i + 5;
@@ -2735,8 +2736,6 @@ static void sub_813A46C(s32 itemIndex, bool8 onInit, struct ListMenu *list)
     }
 }
 
-// stupid r5<->r6 swap
-#ifdef NONMATCHING
 static void sub_813A4EC(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
@@ -2754,7 +2753,11 @@ static void sub_813A4EC(u8 taskId)
     default:
         gSpecialVar_Result = itemId;
         PlaySE(SE_SELECT);
-        if (!task->data[6] || itemId == task->data[1] - 1)
+        if (!task->data[6])
+        {
+            sub_813A570(taskId);
+        }
+        else if (itemId == task->data[1] - 1)
         {
             sub_813A570(taskId);
         }
@@ -2767,72 +2770,6 @@ static void sub_813A4EC(u8 taskId)
         break;
     }
 }
-#else
-NAKED
-static void sub_813A4EC(u8 taskId)
-{
-    asm_unified("push {r4-r6,lr}\n\
-	lsls r0, 24\n\
-	lsrs r5, r0, 24\n\
-	lsls r0, r5, 2\n\
-	adds r0, r5\n\
-	lsls r0, 3\n\
-	ldr r1, =gTasks\n\
-	adds r6, r0, r1\n\
-	ldrh r0, [r6, 0x24]\n\
-	lsls r0, 24\n\
-	lsrs r0, 24\n\
-	bl ListMenuHandleInputGetItemId\n\
-	adds r4, r0, 0\n\
-	movs r0, 0x2\n\
-	negs r0, r0\n\
-	cmp r4, r0\n\
-	beq _0813A51C\n\
-	adds r0, 0x1\n\
-	cmp r4, r0\n\
-	bne _0813A530\n\
-	b _0813A566\n\
-	.pool\n\
-_0813A51C:\n\
-	ldr r1, =gSpecialVar_Result\n\
-	movs r0, 0x7F\n\
-	strh r0, [r1]\n\
-	movs r0, 0x5\n\
-	bl PlaySE\n\
-	b _0813A54C\n\
-	.pool\n\
-_0813A530:\n\
-	ldr r0, =gSpecialVar_Result\n\
-	strh r4, [r0]\n\
-	movs r0, 0x5\n\
-	bl PlaySE\n\
-	movs r1, 0x14\n\
-	ldrsh r0, [r6, r1]\n\
-	cmp r0, 0\n\
-	beq _0813A54C\n\
-	movs r1, 0xA\n\
-	ldrsh r0, [r6, r1]\n\
-	subs r0, 0x1\n\
-	cmp r4, r0\n\
-	bne _0813A558\n\
-_0813A54C:\n\
-	adds r0, r5, 0\n\
-	bl sub_813A570\n\
-	b _0813A566\n\
-	.pool\n\
-_0813A558:\n\
-	adds r0, r5, 0\n\
-	bl sub_813A738\n\
-	ldr r0, =sub_813A600\n\
-	str r0, [r6]\n\
-	bl EnableBothScriptContexts\n\
-_0813A566:\n\
-	pop {r4-r6}\n\
-	pop {r0}\n\
-	bx r0\n\
-	.pool");
-}
-#endif // NONMATCHING
 
 static void sub_813A570(u8 taskId)
 {
@@ -3063,7 +3000,7 @@ void sub_813A8FC(void)
 {
     u8 string[32];
     u32 x;
-    StringCopy(ConvertIntToDecimalStringN(string, gSaveBlock2Ptr->frontier.frontierBattlePoints, STR_CONV_MODE_RIGHT_ALIGN, 4), gText_BP);
+    StringCopy(ConvertIntToDecimalStringN(string, gSaveBlock2Ptr->frontier.battlePoints, STR_CONV_MODE_RIGHT_ALIGN, 4), gText_BP);
     x = GetStringRightAlignXOffset(1, string, 48);
     AddTextPrinterParameterized(gUnknown_0203AB6D, 1, string, x, 1, 0, NULL);
 }
@@ -3071,7 +3008,7 @@ void sub_813A8FC(void)
 void sub_813A958(void)
 {
     static const struct WindowTemplate gUnknown_085B311C = {
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 1,
         .width = 6,
@@ -3094,37 +3031,37 @@ void sub_813A988(void)
 
 void sub_813A9A4(void)
 {
-    if (gSaveBlock2Ptr->frontier.frontierBattlePoints < gSpecialVar_0x8004)
+    if (gSaveBlock2Ptr->frontier.battlePoints < gSpecialVar_0x8004)
     {
-        gSaveBlock2Ptr->frontier.frontierBattlePoints = 0;
+        gSaveBlock2Ptr->frontier.battlePoints = 0;
     }
     else
     {
-        gSaveBlock2Ptr->frontier.frontierBattlePoints -= gSpecialVar_0x8004;
+        gSaveBlock2Ptr->frontier.battlePoints -= gSpecialVar_0x8004;
     }
 }
 
 void sub_813A9D0(void)
 {
-    if (gSaveBlock2Ptr->frontier.frontierBattlePoints + gSpecialVar_0x8004 > 0x270F)
+    if (gSaveBlock2Ptr->frontier.battlePoints + gSpecialVar_0x8004 > 9999)
     {
-        gSaveBlock2Ptr->frontier.frontierBattlePoints = 0x270f;
+        gSaveBlock2Ptr->frontier.battlePoints = 9999;
     }
     else
     {
-        gSaveBlock2Ptr->frontier.frontierBattlePoints = gSaveBlock2Ptr->frontier.frontierBattlePoints + gSpecialVar_0x8004;
+        gSaveBlock2Ptr->frontier.battlePoints = gSaveBlock2Ptr->frontier.battlePoints + gSpecialVar_0x8004;
     }
 }
 
 u16 sub_813AA04(void)
 {
-    return gSaveBlock2Ptr->frontier.frontierBattlePoints;
+    return gSaveBlock2Ptr->frontier.battlePoints;
 }
 
 void sub_813AA18(void)
 {
     static const struct WindowTemplate gUnknown_085B3124 = {
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 9,
         .width = 4,
@@ -3286,7 +3223,7 @@ void sub_813AC7C(void)
 static void sub_813ACE8(u8 a0, u16 a1)
 {
     static const struct WindowTemplate gUnknown_085B3220 = {
-        .priority = 0,
+        .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 7,
         .width = 12,

@@ -1,33 +1,31 @@
 #include "global.h"
 #include "battle.h"
+#include "battle_ai_script_commands.h"
+#include "battle_anim.h"
 #include "battle_controllers.h"
 #include "battle_message.h"
 #include "battle_interface.h"
-#include "battle_anim.h"
-#include "constants/battle_anim.h"
-#include "battle_ai_script_commands.h"
-#include "pokemon.h"
+#include "battle_setup.h"
+#include "bg.h"
+#include "data2.h"
+#include "item_use.h"
 #include "link.h"
-#include "util.h"
 #include "main.h"
-#include "constants/songs.h"
-#include "constants/trainers.h"
-#include "sound.h"
-#include "window.h"
 #include "m4a.h"
 #include "palette.h"
+#include "pokeball.h"
+#include "pokemon.h"
+#include "reshow_battle_screen.h"
+#include "sound.h"
+#include "string_util.h"
 #include "task.h"
 #include "text.h"
-#include "string_util.h"
-#include "bg.h"
-#include "reshow_battle_screen.h"
-#include "pokeball.h"
-#include "data2.h"
-#include "battle_setup.h"
-#include "item_use.h"
+#include "util.h"
+#include "window.h"
+#include "constants/battle_anim.h"
+#include "constants/songs.h"
+#include "constants/trainers.h"
 
-extern u16 gBattle_BG0_X;
-extern u16 gBattle_BG0_Y;
 extern struct UnusedControllerStruct gUnknown_02022D0C;
 
 extern const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[];
@@ -632,7 +630,7 @@ static void PlayerPartnerHandleGetMonData(void)
     else
     {
         monToCheck = gBattleBufferA[gActiveBattler][2];
-        for (i = 0; i < 6; i++)
+        for (i = 0; i < PARTY_SIZE; i++)
         {
             if (monToCheck & 1)
                 size += CopyPlayerPartnerMonData(i, monData + size);
@@ -966,7 +964,7 @@ static void PlayerPartnerHandleSetMonData(void)
     else
     {
         monToCheck = gBattleBufferA[gActiveBattler][2];
-        for (i = 0; i < 6; i++)
+        for (i = 0; i < PARTY_SIZE; i++)
         {
             if (monToCheck & 1)
                 SetPlayerPartnerMonData(i);

@@ -41,15 +41,6 @@ struct EvoInfo
 static EWRAM_DATA struct EvoInfo *sEvoStructPtr = NULL;
 static EWRAM_DATA u16 *sEvoMovingBgPtr = NULL;
 
-extern u16 gBattle_BG0_X;
-extern u16 gBattle_BG0_Y;
-extern u16 gBattle_BG1_X;
-extern u16 gBattle_BG1_Y;
-extern u16 gBattle_BG2_X;
-extern u16 gBattle_BG2_Y;
-extern u16 gBattle_BG3_X;
-extern u16 gBattle_BG3_Y;
-
 #define sEvoCursorPos           gBattleCommunication[1] // when learning a new move
 #define sEvoGraphicsTaskID      gBattleCommunication[2]
 
@@ -531,7 +522,7 @@ void TradeEvolutionScene(struct Pokemon* mon, u16 speciesToEvolve, u8 preEvoSpri
     gBattle_BG3_X = 256;
     gBattle_BG3_Y = 0;
 
-    gTextFlags.flag_1 = 1;
+    gTextFlags.useAlternateDownArrow = 1;
 
     SetVBlankCallback(VBlankCB_TradeEvolutionScene);
     SetMainCallback2(CB2_TradeEvolutionSceneUpdate);
@@ -1135,7 +1126,7 @@ static void Task_TradeEvolutionScene(u8 taskID)
             DestroyTask(taskID);
             Free(sEvoStructPtr);
             sEvoStructPtr = NULL;
-            gTextFlags.flag_1 = 0;
+            gTextFlags.useAlternateDownArrow = 0;
             SetMainCallback2(gCB2_AfterEvolution);
         }
         break;
@@ -1218,7 +1209,7 @@ static void Task_TradeEvolutionScene(u8 taskID)
             }
             break;
         case 4:
-            switch (Menu_ProcessInputNoWrap_())
+            switch (Menu_ProcessInputNoWrapClearOnChoose())
             {
             case 0:
                 sEvoCursorPos = 0;
