@@ -3948,7 +3948,7 @@ void sub_813B968(void)
 
 void sub_813B9A0(void)
 {
-    if (gSaveBlock1Ptr->lastHealLocation.mapGroup == MAP_GROUP(DEWFORD_TOWN) && gSaveBlock1Ptr->lastHealLocation.mapNum == MAP_NUM(DEWFORD_TOWN))
+    if (gSaveBlock1Ptr->lastHealLocation.mapGroup == MAP_GROUP(AZALEA_TOWN) && gSaveBlock1Ptr->lastHealLocation.mapNum == MAP_NUM(AZALEA_TOWN))
     {
         Overworld_SetHealLocationWarp(3);
     }
@@ -3958,7 +3958,7 @@ bool32 sub_813B9C0(void)
 {
     static const u16 gUnknown_085B3444[] = {
         MAP_CHERRYGROVE_CITY_POKEMON_CENTER_1F,
-        MAP_DEWFORD_TOWN_POKEMON_CENTER_1F,
+        MAP_AZALEA_TOWN_POKEMON_CENTER_1F,
         MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F,
         MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F,
         MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F,

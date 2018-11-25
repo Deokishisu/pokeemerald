@@ -1,10 +1,10 @@
 Route39_MooMooFarmBarn::
-	.4byte House1_Layout
+	.4byte Route39_MooMooFarmBarn_Layout
 	.4byte Route39_MooMooFarmBarn_MapEvents
 	.4byte Route39_MooMooFarmBarn_MapScripts
 	.4byte 0x0
 	.2byte MUS_NIBI
-	.2byte 59
+	.2byte 447
 	.byte MAPSEC_ROUTE_39
 	.byte 0
 	.byte WEATHER_NONE

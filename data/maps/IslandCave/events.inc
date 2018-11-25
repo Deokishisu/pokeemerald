@@ -2,7 +2,7 @@ IslandCave_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_FAMICOM, 0, 8, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, IslandCave_EventScript_238F58, FLAG_HIDE_REGICE
 
 IslandCave_MapWarps::
-	warp_def 8, 29, 3, 0, MAP_ROUTE105
+	warp_def 8, 29, 3, 0, MAP_ROUTE33
 	warp_def 8, 20, 0, 2, MAP_ISLAND_CAVE
 	warp_def 8, 11, 3, 1, MAP_ISLAND_CAVE
 

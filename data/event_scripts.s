@@ -73,7 +73,7 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/EverGrandeCity/scripts.inc"
 	.include "data/maps/NewBarkTown/scripts.inc"
 	.include "data/maps/CherrygroveCity/scripts.inc"
-	.include "data/maps/DewfordTown/scripts.inc"
+	.include "data/maps/AzaleaTown/scripts.inc"
 	.include "data/maps/LavaridgeTown/scripts.inc"
 	.include "data/maps/FallarborTown/scripts.inc"
 	.include "data/maps/VerdanturfTown/scripts.inc"
@@ -82,8 +82,8 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/Route30/scripts.inc"
 	.include "data/maps/Route31/scripts.inc"
 	.include "data/maps/Route32/scripts.inc"
-	.include "data/maps/Route105/scripts.inc"
-	.include "data/maps/Route106/scripts.inc"
+	.include "data/maps/Route33/scripts.inc"
+	.include "data/maps/Route34/scripts.inc"
 	.include "data/maps/Route107/scripts.inc"
 	.include "data/maps/Route108/scripts.inc"
 	.include "data/maps/Route109/scripts.inc"
@@ -130,11 +130,11 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/CherrygroveCity_PokemonCenter_1F/scripts.inc"
 	.include "data/maps/CherrygroveCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/CherrygroveCity_Mart/scripts.inc"
-	.include "data/maps/DewfordTown_House1/scripts.inc"
-	.include "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc"
-	.include "data/maps/DewfordTown_Gym/scripts.inc"
-	.include "data/maps/DewfordTown_Hall/scripts.inc"
+	.include "data/maps/AzaleaTown_CharcoalKiln/scripts.inc"
+	.include "data/maps/AzaleaTown_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/AzaleaTown_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/AzaleaTown_Gym/scripts.inc"
+	.include "data/maps/AzaleaTown_KurtsHouse/scripts.inc"
 	.include "data/maps/DewfordTown_House2/scripts.inc"
 	.include "data/maps/LavaridgeTown_HerbShop/scripts.inc"
 	.include "data/maps/LavaridgeTown_Gym_1F/scripts.inc"
@@ -143,7 +143,7 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/LavaridgeTown_Mart/scripts.inc"
 	.include "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc"
 	.include "data/maps/LavaridgeTown_PokemonCenter_2F/scripts.inc"
-	.include "data/maps/FallarborTown_Mart/scripts.inc"
+	.include "data/maps/AzaleaTown_Mart/scripts.inc"
 	.include "data/maps/FallarborTown_BattleTentLobby/scripts.inc"
 	.include "data/maps/FallarborTown_BattleTentCorridor/scripts.inc"
 	.include "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc"
@@ -4069,11 +4069,11 @@ Underwater7_EventScript_274223:: @ 8274223
 	return
 
 Underwater3_EventScript_274281:: @ 8274281
-	setescapewarp MAP_ROUTE105, 255, 11, 29
+	setescapewarp MAP_ROUTE33, 255, 11, 29
 	return
 
 Underwater3_EventScript_27428A:: @ 827428A
-	setescapewarp MAP_ROUTE105, 255, 21, 54
+	setescapewarp MAP_ROUTE33, 255, 21, 54
 	return
 
 Underwater3_EventScript_274293:: @ 8274293

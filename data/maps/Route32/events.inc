@@ -19,7 +19,7 @@ Route32_MapWarps::
 	warp_def 4, 2, 0, 0, MAP_ROUTE32_GATE
 	warp_def 4, 3, 0, 1, MAP_ROUTE32_GATE
 	warp_def 11, 73, 3, 0, MAP_ROUTE32_POKEMON_CENTER_1F
-	warp_def 7, 79, 3, 0, MAP_ROUTE105
+	warp_def 7, 79, 3, 0, MAP_ROUTE33
 
 Route32_MapCoordEvents::
 	coord_event 17, 51, 3, VAR_0x4063, 1, Route104_EventScript_1ECCB3

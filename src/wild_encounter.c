@@ -3305,8 +3305,8 @@ const struct WildPokemonHeader gWildMonHeaders[] =
 		.fishingMonsInfo = &gRoute104_FishingMonsInfo,
 	},
 	{
-		.mapGroup = MAP_GROUP(ROUTE105),
-		.mapNum = MAP_NUM(ROUTE105),
+		.mapGroup = MAP_GROUP(ROUTE33),
+		.mapNum = MAP_NUM(ROUTE33),
 		.landMonsInfo = NULL,
 		.waterMonsInfo = &gRoute105_WaterMonsInfo,
 		.rockSmashMonsInfo = NULL,
@@ -3489,8 +3489,8 @@ const struct WildPokemonHeader gWildMonHeaders[] =
 		.fishingMonsInfo = NULL,
 	},
 	{
-		.mapGroup = MAP_GROUP(ROUTE106),
-		.mapNum = MAP_NUM(ROUTE106),
+		.mapGroup = MAP_GROUP(ROUTE34),
+		.mapNum = MAP_NUM(ROUTE34),
 		.landMonsInfo = NULL,
 		.waterMonsInfo = &gRoute106_WaterMonsInfo,
 		.rockSmashMonsInfo = NULL,
@@ -3953,8 +3953,8 @@ const struct WildPokemonHeader gWildMonHeaders[] =
 		.fishingMonsInfo = &gLilycoveCity_FishingMonsInfo,
 	},
 	{
-		.mapGroup = MAP_GROUP(DEWFORD_TOWN),
-		.mapNum = MAP_NUM(DEWFORD_TOWN),
+		.mapGroup = MAP_GROUP(AZALEA_TOWN),
+		.mapNum = MAP_NUM(AZALEA_TOWN),
 		.landMonsInfo = NULL,
 		.waterMonsInfo = &gDewfordTown_WaterMonsInfo,
 		.rockSmashMonsInfo = NULL,

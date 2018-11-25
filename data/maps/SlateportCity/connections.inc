@@ -1,5 +1,5 @@
 SlateportCity_MapConnectionsList::
-	connection down, 10, MAP_ROUTE106
+	connection down, 10, MAP_ROUTE34
 	connection up, 10, MAP_ROUTE107
 
 SlateportCity_MapConnections::

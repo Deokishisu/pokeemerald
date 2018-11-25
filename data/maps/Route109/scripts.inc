@@ -40,14 +40,14 @@ Route109_EventScript_1EE7D5:: @ 81EE7D5
 	waitmovement 0
 	delay 50
 	call Route109_EventScript_2720A8
-	showobjectat 255, MAP_DEWFORD_TOWN
+	showobjectat 255, MAP_AZALEA_TOWN
 	applymovement 255, Route109_Movement_1EE900
 	waitmovement 0
 	addobject 4
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 	setobjectxyperm 2, 12, 8
 	addobject 2
-	setobjectpriority 2, MAP_DEWFORD_TOWN, 0
+	setobjectpriority 2, MAP_AZALEA_TOWN, 0
 	applymovement 2, Route109_Movement_1EE90D
 	waitmovement 0
 	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
@@ -57,7 +57,7 @@ Route109_EventScript_1EE7D5:: @ 81EE7D5
 	closemessage
 	copyvar VAR_0x4096, VAR_0x8008
 	resetobjectpriority 255, MAP_ROUTE109
-	resetobjectpriority 2, MAP_DEWFORD_TOWN
+	resetobjectpriority 2, MAP_AZALEA_TOWN
 	moveobjectoffscreen 2
 	release
 	end

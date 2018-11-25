@@ -3,7 +3,7 @@ gMapGroup0::
 	.4byte NewBarkTown
 	.4byte CherrygroveCity
 	.4byte VioletCity
-	.4byte DewfordTown
+	.4byte AzaleaTown
 	.4byte SlateportCity
 	.4byte MauvilleCity
 	.4byte RustboroCity
@@ -16,8 +16,8 @@ gMapGroup0::
 	.4byte Route30
 	.4byte Route31
 	.4byte Route32
-	.4byte Route105
-	.4byte Route106
+	.4byte Route33
+	.4byte Route34
 	.4byte Route107
 	.4byte Route108
 	.4byte Route109
@@ -87,12 +87,12 @@ gMapGroup3::
 
 	.align 2
 gMapGroup4::
-	.4byte DewfordTown_House1
-	.4byte DewfordTown_PokemonCenter_1F
-	.4byte DewfordTown_PokemonCenter_2F
-	.4byte DewfordTown_Gym
-	.4byte DewfordTown_Hall
-	.4byte FallarborTown_Mart
+	.4byte AzaleaTown_CharcoalKiln
+	.4byte AzaleaTown_PokemonCenter_1F
+	.4byte AzaleaTown_PokemonCenter_2F
+	.4byte AzaleaTown_Gym
+	.4byte AzaleaTown_KurtsHouse
+	.4byte AzaleaTown_Mart
 
 	.align 2
 gMapGroup5::

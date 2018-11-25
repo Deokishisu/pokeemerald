@@ -11,7 +11,7 @@ gMapLayouts::
 	.4byte EverGrandeCity_Layout
 	.4byte NewBarkTown_Layout
 	.4byte CherrygroveCity_Layout
-	.4byte DewfordTown_Layout
+	.4byte AzaleaTown_Layout
 	.4byte LavaridgeTown_Layout
 	.4byte FallarborTown_Layout
 	.4byte VerdanturfTown_Layout
@@ -20,8 +20,8 @@ gMapLayouts::
 	.4byte Route30_Layout
 	.4byte Route31_Layout
 	.4byte Route32_Layout
-	.4byte Route105_Layout
-	.4byte Route106_Layout
+	.4byte Route33_Layout
+	.4byte Route34_Layout
 	.4byte Route107_Layout
 	.4byte Route108_Layout
 	.4byte Route109_Layout
@@ -64,8 +64,8 @@ gMapLayouts::
 	.4byte PokemonCenter_2F_Layout
 	.4byte Mart_Layout
 	.4byte House3_Layout
-	.4byte DewfordTown_Gym_Layout
-	.4byte DewfordTown_Hall_Layout
+	.4byte AzaleaTown_Gym_Layout
+	.4byte AzaleaTown_KurtsHouse_Layout
 	.4byte House4_Layout
 	.4byte LavaridgeTown_HerbShop_Layout
 	.4byte LavaridgeTown_Gym_1F_Layout
@@ -446,6 +446,7 @@ gMapLayouts::
 	.4byte East_West_Gate_Layout
 	.4byte Route35_National_Park_Gate_Layout
 	.4byte Route36_National_Park_Gate_Layout
+	.4byte Route39_MooMooFarmBarn_Layout
 	.4byte VioletCity_Layout
 	.4byte SlateportCity_Layout
 	.4byte MauvilleCity_Layout
@@ -457,7 +458,7 @@ gMapLayouts::
 	.4byte EverGrandeCity_Layout
 	.4byte NewBarkTown_Layout
 	.4byte CherrygroveCity_Layout
-	.4byte DewfordTown_Layout
+	.4byte AzaleaTown_Layout
 	.4byte LavaridgeTown_Layout
 	.4byte FallarborTown_Layout
 	.4byte VerdanturfTown_Layout
@@ -466,8 +467,8 @@ gMapLayouts::
 	.4byte Route30_Layout
 	.4byte Route31_Layout
 	.4byte Route32_Layout
-	.4byte Route105_Layout
-	.4byte Route106_Layout
+	.4byte Route33_Layout
+	.4byte Route34_Layout
 	.4byte Route107_Layout
 	.4byte Route108_Layout
 	.4byte Route109_Layout
@@ -510,8 +511,8 @@ gMapLayouts::
 	.4byte PokemonCenter_2F_Layout
 	.4byte Mart_Layout
 	.4byte House3_Layout
-	.4byte DewfordTown_Gym_Layout
-	.4byte DewfordTown_Hall_Layout
+	.4byte AzaleaTown_Gym_Layout
+	.4byte AzaleaTown_KurtsHouse_Layout
 	.4byte House4_Layout
 	.4byte LavaridgeTown_HerbShop_Layout
 	.4byte LavaridgeTown_Gym_1F_Layout
@@ -892,6 +893,7 @@ gMapLayouts::
 	.4byte East_West_Gate_Layout
 	.4byte Route35_National_Park_Gate_Layout
 	.4byte Route36_National_Park_Gate_Layout
+	.4byte Route39_MooMooFarmBarn_Layout
 	.4byte VioletCity_Layout
 	.4byte SlateportCity_Layout
 	.4byte MauvilleCity_Layout
@@ -903,7 +905,7 @@ gMapLayouts::
 	.4byte EverGrandeCity_Layout
 	.4byte NewBarkTown_Layout
 	.4byte CherrygroveCity_Layout
-	.4byte DewfordTown_Layout
+	.4byte AzaleaTown_Layout
 	.4byte LavaridgeTown_Layout
 	.4byte FallarborTown_Layout
 	.4byte VerdanturfTown_Layout
@@ -912,8 +914,8 @@ gMapLayouts::
 	.4byte Route30_Layout
 	.4byte Route31_Layout
 	.4byte Route32_Layout
-	.4byte Route105_Layout
-	.4byte Route106_Layout
+	.4byte Route33_Layout
+	.4byte Route34_Layout
 	.4byte Route107_Layout
 	.4byte Route108_Layout
 	.4byte Route109_Layout
@@ -956,8 +958,8 @@ gMapLayouts::
 	.4byte PokemonCenter_2F_Layout
 	.4byte Mart_Layout
 	.4byte House3_Layout
-	.4byte DewfordTown_Gym_Layout
-	.4byte DewfordTown_Hall_Layout
+	.4byte AzaleaTown_Gym_Layout
+	.4byte AzaleaTown_KurtsHouse_Layout
 	.4byte House4_Layout
 	.4byte LavaridgeTown_HerbShop_Layout
 	.4byte LavaridgeTown_Gym_1F_Layout
@@ -1338,3 +1340,4 @@ gMapLayouts::
 	.4byte East_West_Gate_Layout
 	.4byte Route35_National_Park_Gate_Layout
 	.4byte Route36_National_Park_Gate_Layout
+	.4byte Route39_MooMooFarmBarn_Layout

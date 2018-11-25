@@ -5,7 +5,7 @@ FallarborTown_EventObjects::
 	object_event 4, EVENT_OBJ_GFX_ENTEI, 0, 8, 12, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 0, 0, 0, FallarborTown_EventScript_1EB23D, FLAG_HIDE_FALLARBOR_AZURILL
 
 FallarborTown_MapWarps::
-	warp_def 15, 15, 0, 0, MAP_FALLARBOR_TOWN_MART
+	warp_def 15, 15, 0, 0, MAP_FALLARBOR_TOWN
 	warp_def 8, 7, 0, 0, MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY
 	warp_def 14, 7, 0, 0, MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F
 	warp_def 6, 17, 0, 0, MAP_FALLARBOR_TOWN_HOUSE1
