@@ -97,7 +97,7 @@ static const u16 sLandmarkData[][2] = {
     {MAPSEC_MIRAGE_TOWER,     FLAG_LANDMARK_MIRAGE_TOWER},
     {MAPSEC_DESERT_UNDERPASS, FLAG_LANDMARK_DESERT_UNDERPASS},
     {MAPSEC_ARTISAN_CAVE,     FLAG_0x8DF},
-    {MAPSEC_NONE}
+    {MAPSEC_NEW_BARK_TOWN}
 };
 
 static const u8 sAreaGlowTilemapMapping[] = {
@@ -237,10 +237,10 @@ static void FindMapsWithMon(u16 species)
             {
                 switch (sFeebasData[i][1])
                 {
-                    case MAP_GROUP(PETALBURG_CITY):
+                    case MAP_GROUP(VIOLET_CITY):
                         SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                         break;
-                    case MAP_GROUP(METEOR_FALLS_1F_1R):
+                    case MAP_GROUP(SPROUT_TOWER_1F):
                     case MAP_GROUP(SAFARI_ZONE_NORTHWEST):
                         SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                         break;
@@ -254,10 +254,10 @@ static void FindMapsWithMon(u16 species)
             {
                 switch (gWildMonHeaders[i].mapGroup)
                 {
-                    case MAP_GROUP(PETALBURG_CITY):
+                    case MAP_GROUP(VIOLET_CITY):
                         SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                         break;
-                    case MAP_GROUP(METEOR_FALLS_1F_1R):
+                    case MAP_GROUP(SPROUT_TOWER_1F):
                     case MAP_GROUP(SAFARI_ZONE_NORTHWEST):
                         SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                         break;
@@ -299,7 +299,7 @@ static void SetSpecialMapHasMon(u16 mapGroup, u16 mapNum)
     if (sPokedexAreaScreen->numSpecialAreas < 0x20)
     {
         u16 regionMapSectionId = GetRegionMapSectionId(mapGroup, mapNum);
-        if (regionMapSectionId < MAPSEC_NONE)
+        if (regionMapSectionId < MAPSEC_NEW_BARK_TOWN)
         {
             for (i = 0; i < ARRAY_COUNT(sMovingRegionMapSections); i++)
             {
@@ -307,7 +307,7 @@ static void SetSpecialMapHasMon(u16 mapGroup, u16 mapNum)
                     return;
             }
 
-            for (i = 0; sLandmarkData[i][0] != MAPSEC_NONE; i++)
+            for (i = 0; sLandmarkData[i][0] != MAPSEC_NEW_BARK_TOWN; i++)
             {
                 if (regionMapSectionId == sLandmarkData[i][0] && !FlagGet(sLandmarkData[i][1]))
                     return;

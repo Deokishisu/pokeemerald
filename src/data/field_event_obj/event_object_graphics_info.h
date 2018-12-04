@@ -1,6 +1,3 @@
-#ifndef GUARD_EVENT_OBJECT_GRAPHICS_INFO_H
-#define GUARD_EVENT_OBJECT_GRAPHICS_INFO_H
-
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanNormal = {0xFFFF, EVENT_OBJ_PAL_TAG_0, EVENT_OBJ_PAL_TAG_10, 128, 16, 16, 0, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gEventObjectBaseOam_16x16, gEventObjectSpriteOamTables_16x16, gEventObjectImageAnimTable_BrendanMayNormal, gEventObjectPicTable_GoldNormal, gDummySpriteAffineAnimTable};
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanMachBike = {0xFFFF, EVENT_OBJ_PAL_TAG_0, EVENT_OBJ_PAL_TAG_10, 128, 16, 16, 0, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_BIKE_TIRE, &gEventObjectBaseOam_16x16, gEventObjectSpriteOamTables_16x16, gEventObjectImageAnimTable_Standard, gEventObjectPicTable_GoldMachBike, gDummySpriteAffineAnimTable};
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_BrendanAcroBike = {0xFFFF, EVENT_OBJ_PAL_TAG_8, EVENT_OBJ_PAL_TAG_10, 512, 32, 32, 0, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_BIKE_TIRE, &gEventObjectBaseOam_32x32, gEventObjectSpriteOamTables_32x32, gEventObjectImageAnimTable_AcroBike, gEventObjectPicTable_BrendanAcroBike, gDummySpriteAffineAnimTable};

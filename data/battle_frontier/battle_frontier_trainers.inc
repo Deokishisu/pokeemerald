@@ -2575,7 +2575,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Malik
 
 @ 99
-	.4byte FACILITY_CLASS_TRIATHLETE_1
+	.4byte FACILITY_CLASS_CYCLING_TRIATHLETE_M
 	.string "JILL$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM
@@ -2757,7 +2757,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Carlo
 
 @ 106
-	.4byte FACILITY_CLASS_TRIATHLETE_1
+	.4byte FACILITY_CLASS_CYCLING_TRIATHLETE_M
 	.string "EMILIA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_ME
@@ -2783,7 +2783,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Emilia
 
 @ 107
-	.4byte FACILITY_CLASS_TRIATHLETE_1
+	.4byte FACILITY_CLASS_CYCLING_TRIATHLETE_M
 	.string "DALIA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_MY
@@ -7151,7 +7151,7 @@ gBattleFrontierTrainers:: @ 85D5ACC
 	.4byte gBattleFrontierTrainerMons_Caitlin
 
 @ 275
-	.4byte FACILITY_CLASS_TRIATHLETE_1
+	.4byte FACILITY_CLASS_CYCLING_TRIATHLETE_M
 	.string "REENA$", 8
 @ pre-battle speech
 	.2byte EC_WORD_I_AM

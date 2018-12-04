@@ -1,6 +1,3 @@
-#ifndef GUARD_EVENT_OBJECT_PIC_TABLES_H
-#define GUARD_EVENT_OBJECT_PIC_TABLES_H
-
 const struct SpriteFrameImage gEventObjectPicTable_GoldNormal[] = {
     overworld_frame(gEventObjectPic_GoldNormal, 2, 2, 0),
     overworld_frame(gEventObjectPic_GoldNormal, 2, 2, 1),
