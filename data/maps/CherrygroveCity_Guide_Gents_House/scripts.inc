@@ -2,11 +2,11 @@ CherrygroveCity_Guide_Gents_House_MapScripts::
 	.byte 0
 
 OldaleTown_House2_EventScript_1FBF5B:: @ 81FBF5B
-	msgbox OldaleTown_House2_Text_1FBF6D, 2
+	msgbox OldaleTown_House2_Text_1FBF6D, MSGBOX_NPC
 	end
 
 OldaleTown_House2_EventScript_1FBF64:: @ 81FBF64
-	msgbox OldaleTown_House2_Text_1FBFB0, 2
+	msgbox OldaleTown_House2_Text_1FBFB0, MSGBOX_NPC
 	end
 
 OldaleTown_House2_Text_1FBF6D: @ 81FBF6D

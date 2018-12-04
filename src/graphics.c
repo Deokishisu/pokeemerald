@@ -1,8 +1,8 @@
 #include "global.h"
 
-const u32 gBattleTextboxTiles[] = INCBIN_U32("graphics/interface/menu.4bpp.lz");
-const u32 gBattleTextboxPalette[] = INCBIN_U32("graphics/interface/menu.gbapal.lz");
-const u32 gBattleTextboxTilemap[] = INCBIN_U32("graphics/interface/menu_map.bin.lz");
+const u32 gBattleTextboxTiles[] = INCBIN_U32("graphics/battle_interface/textbox.4bpp.lz");
+const u32 gBattleTextboxPalette[] = INCBIN_U32("graphics/battle_interface/textbox.gbapal.lz");
+const u32 gBattleTextboxTilemap[] = INCBIN_U32("graphics/battle_interface/textbox_map.bin.lz");
 
 const u32 gMonStillFrontPic_CircledQuestionMark[] = INCBIN_U32("graphics/pokemon/front_pics/circled_question_mark_still_front_pic.4bpp.lz");
 const u32 gMonBackPic_CircledQuestionMark[] = INCBIN_U32("graphics/pokemon/back_pics/circled_question_mark_back_pic.4bpp.lz");
@@ -1279,15 +1279,15 @@ const u32 gPokedexMenu2_Gfx[] = INCBIN_U32("graphics/pokedex/menu2.4bpp.lz");
 
 const u32 gUnused_PokedexNoBall[] = INCBIN_U32("graphics/pokedex/noball_unused.4bpp.lz");
 
-const u32 gUnknown_08DC2A08[] = INCBIN_U32("graphics/pokedex/tilemap1.bin.lz");
-const u32 gUnknown_08DC2B1C[] = INCBIN_U32("graphics/pokedex/tilemap2.bin.lz");
-const u32 gUnknown_08DC2C5C[] = INCBIN_U32("graphics/pokedex/tilemap3.bin.lz");
-const u32 gUnknown_08DC2DAC[] = INCBIN_U32("graphics/pokedex/tilemap4.bin.lz");
-const u32 gUnknown_08DC2E6C[] = INCBIN_U32("graphics/pokedex/tilemap5.bin.lz");
-const u32 gUnknown_08DC2F5C[] = INCBIN_U32("graphics/pokedex/tilemap6.bin.lz");
-const u32 gUnknown_08DC2FEC[] = INCBIN_U32("graphics/pokedex/tilemap7.bin.lz");
-const u32 gUnknown_08DC3080[] = INCBIN_U32("graphics/pokedex/tilemap8.bin.lz");
-const u32 gUnknown_08DC3198[] = INCBIN_U32("graphics/pokedex/tilemap9.bin.lz");
+const u32 gPokedexTilemap_StartMenu1[] = INCBIN_U32("graphics/pokedex/tilemap1.bin.lz");
+const u32 gPokedexTilemap_StartMenu2[] = INCBIN_U32("graphics/pokedex/tilemap2.bin.lz");
+const u32 gPokedexTilemap_Main[] = INCBIN_U32("graphics/pokedex/tilemap3.bin.lz");
+const u32 gPokedexTilemap_MainUnderlay[] = INCBIN_U32("graphics/pokedex/tilemap4.bin.lz");
+const u32 gPokedexTilemap_SizeScreen[] = INCBIN_U32("graphics/pokedex/tilemap5.bin.lz");
+const u32 gPokedexTilemap_ScreenSelectBar1[] = INCBIN_U32("graphics/pokedex/tilemap6.bin.lz");
+const u32 gPokedexTilemap_ScreenSelectBar2[] = INCBIN_U32("graphics/pokedex/tilemap7.bin.lz");
+const u32 gPokedexTilemap_DescriptionScreen[] = INCBIN_U32("graphics/pokedex/tilemap8.bin.lz");
+const u32 gPokedexTilemap_CryScreen[] = INCBIN_U32("graphics/pokedex/tilemap9.bin.lz");
 
 const u16 gPokedexSearchMenu_Pal[] = INCBIN_U16("graphics/pokedex/search_menu.gbapal");
 const u32 gPokedexSearchMenu_Gfx[] = INCBIN_U32("graphics/pokedex/search_menu.4bpp.lz");

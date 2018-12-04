@@ -246,5 +246,3 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RubySapphireBrenda
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_RubySapphireMay = {0xFFFF, EVENT_OBJ_PAL_TAG_0, EVENT_OBJ_PAL_TAG_NONE, 128, 16, 16, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gEventObjectBaseOam_16x16, gEventObjectSpriteOamTables_16x16, gEventObjectImageAnimTable_Standard, gEventObjectPicTable_RubySapphireMay, gDummySpriteAffineAnimTable};
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Lugia = {0xFFFF, EVENT_OBJ_PAL_TAG_32, EVENT_OBJ_PAL_TAG_NONE, 512, 32, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gEventObjectBaseOam_32x32, gEventObjectSpriteOamTables_32x32, gEventObjectImageAnimTable_Standard, gEventObjectPicTable_Lugia, gDummySpriteAffineAnimTable};
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_HoOh = {0xFFFF, EVENT_OBJ_PAL_TAG_31, EVENT_OBJ_PAL_TAG_NONE, 512, 32, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gEventObjectBaseOam_32x32, gEventObjectSpriteOamTables_32x32, gEventObjectImageAnimTable_HoOh, gEventObjectPicTable_HoOh, gDummySpriteAffineAnimTable};
-
-#endif //GUARD_EVENT_OBJECT_GRAPHICS_INFO_H
