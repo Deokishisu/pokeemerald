@@ -929,15 +929,9 @@ LittlerootTown_EventScript_1E8693:: @ 81E8693
 	return
 
 LittlerootTown_Text_1E86BC: @ 81E86BC
-<<<<<<< HEAD:data/maps/NewBarkTown/scripts.inc
 	.string "He said he wanted\n"
 	.string "you to do some-\l"
 	.string "thing for him.\p"
-=======
-	.string "MOM: {PLAYER}, we're here, honey!\p"
-	.string "It must be tiring riding with our things\n"
-	.string "in the moving truck.\p"
->>>>>>> d1e6e705ccf05f93933ae4494b1d388550d81d26:data/maps/LittlerootTown/scripts.inc
 	.string "Well, this is LITTLEROOT TOWN.\p"
 	.string "How do you like it?\n"
 	.string "This is our new home!\p"
