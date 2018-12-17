@@ -46,13 +46,13 @@ OldaleTown_PokemonCenter_1F_Text_1FC059: @ 81FC059
 OldaleTown_PokemonCenter_1F_Text_1FC0CD: @ 81FC0CD
 	.string "POKéMON CENTERS are great!\p"
 	.string "You can use their services as much\n"
-	.string "as you like, and it’s all for free.\l"
+	.string "as you like, and it's all for free.\l"
 	.string "You never have to worry!$"
 
 OldaleTown_PokemonCenter_1F_Text_1FC148: @ 81FC148
 	.string "The POKéMON WIRELESS CLUB on\n"
 	.string "the second floor was built recently.\p"
-	.string "But they say they’re still making\n"
+	.string "But they say they're still making\n"
 	.string "adjustments.$"
 
 OldaleTown_PokemonCenter_1F_Text_1FC1B9: @ 81FC1B9

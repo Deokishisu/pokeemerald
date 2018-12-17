@@ -88,7 +88,7 @@ extern void sub_80AF688(void);
 extern void var_800D_set_xB(void);
 extern void sub_808B864(void);
 extern void CB2_Pokedex(void);
-extern void play_some_sound(void);
+extern void PlayRainSoundEffect(void);
 extern void CB2_PartyMenuFromStartMenu(void);
 extern void CB2_PokeNav(void);
 extern void sub_80C4DDC(void (*)(void));
@@ -639,7 +639,7 @@ static bool8 StartMenuPokedexCallback(void)
     if (!gPaletteFade.active)
     {
         IncrementGameStat(GAME_STAT_CHECKED_POKEDEX);
-        play_some_sound();
+        PlayRainSoundEffect();
         RemoveExtraStartMenuWindows();
         overworld_free_bg_tilemaps();
         SetMainCallback2(CB2_Pokedex);
@@ -654,7 +654,7 @@ static bool8 StartMenuPokemonCallback(void)
 {
     if (!gPaletteFade.active)
     {
-        play_some_sound();
+        PlayRainSoundEffect();
         RemoveExtraStartMenuWindows();
         overworld_free_bg_tilemaps();
         SetMainCallback2(CB2_PartyMenuFromStartMenu); // Display party menu
@@ -669,7 +669,7 @@ static bool8 StartMenuBagCallback(void)
 {
     if (!gPaletteFade.active)
     {
-        play_some_sound();
+        PlayRainSoundEffect();
         RemoveExtraStartMenuWindows();
         overworld_free_bg_tilemaps();
         SetMainCallback2(CB2_BagMenuFromStartMenu); // Display bag menu
@@ -684,7 +684,7 @@ static bool8 StartMenuPokeNavCallback(void)
 {
     if (!gPaletteFade.active)
     {
-        play_some_sound();
+        PlayRainSoundEffect();
         RemoveExtraStartMenuWindows();
         overworld_free_bg_tilemaps();
         SetMainCallback2(CB2_PokeNav);  // Display PokeNav
@@ -699,7 +699,7 @@ static bool8 StartMenuPlayerNameCallback(void)
 {
     if (!gPaletteFade.active)
     {
-        play_some_sound();
+        PlayRainSoundEffect();
         RemoveExtraStartMenuWindows();
         overworld_free_bg_tilemaps();
 
@@ -738,7 +738,7 @@ static bool8 StartMenuOptionCallback(void)
 {
     if (!gPaletteFade.active)
     {
-        play_some_sound();
+        PlayRainSoundEffect();
         RemoveExtraStartMenuWindows();
         overworld_free_bg_tilemaps();
         SetMainCallback2(CB2_InitOptionMenu); // Display option menu
@@ -771,7 +771,7 @@ static bool8 StartMenuLinkModePlayerNameCallback(void)
 {
     if (!gPaletteFade.active)
     {
-        play_some_sound();
+        PlayRainSoundEffect();
         overworld_free_bg_tilemaps();
         TrainerCard_ShowLinkCard(gUnknown_03005DB4, CB2_ReturnToFieldWithOpenMenu);
 
@@ -800,7 +800,7 @@ static bool8 StartMenuBattlePyramidBagCallback(void)
 {
     if (!gPaletteFade.active)
     {
-        play_some_sound();
+        PlayRainSoundEffect();
         RemoveExtraStartMenuWindows();
         overworld_free_bg_tilemaps();
         SetMainCallback2(CB2_PyramidBagMenuFromStartMenu);
