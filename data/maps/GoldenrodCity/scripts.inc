@@ -1,4 +1,4 @@
-SlateportCity_MapScripts:: @ 81DCC61
+GoldenrodCity_MapScripts:: @ 81DCC61
 	map_script 3, SlateportCity_MapScript1_1DCC6C
 	map_script 2, SlateportCity_MapScript2_1DCD12
 	.byte 0

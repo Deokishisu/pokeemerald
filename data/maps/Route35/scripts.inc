@@ -1,4 +1,4 @@
-Route107_MapScripts:: @ 81EE594
+Route35_MapScripts:: @ 81EE594
 	.byte 0
 
 Route107_EventScript_1EE595:: @ 81EE595

@@ -10,8 +10,8 @@ SlateportCity_PokemonFanClub_EventObjects: @ 852F574
 	object_event 9, EVENT_OBJ_GFX_ZMAN_4, 0, 11, 8, 0, MOVEMENT_TYPE_FACE_LEFT, 0, 1, 0, 0, SlateportCity_PokemonFanClub_EventScript_2C7F16, 0
 
 SlateportCity_PokemonFanClub_MapWarps: @ 852F64C
-	warp_def 6, 10, 0, 4, MAP_SLATEPORT_CITY
-	warp_def 7, 10, 0, 4, MAP_SLATEPORT_CITY
+	warp_def 6, 10, 0, 4, MAP_GOLDENROD_CITY
+	warp_def 7, 10, 0, 4, MAP_GOLDENROD_CITY
 
 SlateportCity_PokemonFanClub_MapEvents:: @ 852F65C
 	map_events SlateportCity_PokemonFanClub_EventObjects, SlateportCity_PokemonFanClub_MapWarps, 0x0, 0x0

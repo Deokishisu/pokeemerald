@@ -13,7 +13,7 @@
 	.section .rodata
 
 	.include "data/maps/VioletCity/events.inc"
-	.include "data/maps/SlateportCity/events.inc"
+	.include "data/maps/GoldenrodCity/events.inc"
 	.include "data/maps/MauvilleCity/events.inc"
 	.include "data/maps/RustboroCity/events.inc"
 	.include "data/maps/FortreeCity/events.inc"
@@ -34,7 +34,7 @@
 	.include "data/maps/Route32/events.inc"
 	.include "data/maps/Route33/events.inc"
 	.include "data/maps/Route34/events.inc"
-	.include "data/maps/Route107/events.inc"
+	.include "data/maps/Route35/events.inc"
 	.include "data/maps/Route108/events.inc"
 	.include "data/maps/Route109/events.inc"
 	.include "data/maps/Route110/events.inc"
@@ -135,8 +135,8 @@
 	.include "data/maps/SlateportCity_OceanicMuseum_2F/events.inc"
 	.include "data/maps/SlateportCity_Harbor/events.inc"
 	.include "data/maps/SlateportCity_House2/events.inc"
-	.include "data/maps/SlateportCity_PokemonCenter_1F/events.inc"
-	.include "data/maps/SlateportCity_PokemonCenter_2F/events.inc"
+	.include "data/maps/GoldenrodCity_PokemonCenter_1F/events.inc"
+	.include "data/maps/GoldenrodCity_PokemonCenter_2F/events.inc"
 	.include "data/maps/SlateportCity_Mart/events.inc"
 	.include "data/maps/MauvilleCity_Gym/events.inc"
 	.include "data/maps/MauvilleCity_BikeShop/events.inc"

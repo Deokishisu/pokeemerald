@@ -1,7 +1,7 @@
 	.align 2
 gMapLayouts::
 	.4byte VioletCity_Layout
-	.4byte SlateportCity_Layout
+	.4byte GoldenrodCity_Layout
 	.4byte MauvilleCity_Layout
 	.4byte RustboroCity_Layout
 	.4byte FortreeCity_Layout
@@ -22,7 +22,7 @@ gMapLayouts::
 	.4byte Route32_Layout
 	.4byte Route33_Layout
 	.4byte Route34_Layout
-	.4byte Route107_Layout
+	.4byte Route35_Layout
 	.4byte Route108_Layout
 	.4byte Route109_Layout
 	.4byte Route110_Layout
@@ -448,7 +448,7 @@ gMapLayouts::
 	.4byte Route36_National_Park_Gate_Layout
 	.4byte Route39_MooMooFarmBarn_Layout
 	.4byte VioletCity_Layout
-	.4byte SlateportCity_Layout
+	.4byte GoldenrodCity_Layout
 	.4byte MauvilleCity_Layout
 	.4byte RustboroCity_Layout
 	.4byte FortreeCity_Layout
@@ -469,7 +469,7 @@ gMapLayouts::
 	.4byte Route32_Layout
 	.4byte Route33_Layout
 	.4byte Route34_Layout
-	.4byte Route107_Layout
+	.4byte Route35_Layout
 	.4byte Route108_Layout
 	.4byte Route109_Layout
 	.4byte Route110_Layout
@@ -895,7 +895,7 @@ gMapLayouts::
 	.4byte Route36_National_Park_Gate_Layout
 	.4byte Route39_MooMooFarmBarn_Layout
 	.4byte VioletCity_Layout
-	.4byte SlateportCity_Layout
+	.4byte GoldenrodCity_Layout
 	.4byte MauvilleCity_Layout
 	.4byte RustboroCity_Layout
 	.4byte FortreeCity_Layout
@@ -916,7 +916,7 @@ gMapLayouts::
 	.4byte Route32_Layout
 	.4byte Route33_Layout
 	.4byte Route34_Layout
-	.4byte Route107_Layout
+	.4byte Route35_Layout
 	.4byte Route108_Layout
 	.4byte Route109_Layout
 	.4byte Route110_Layout

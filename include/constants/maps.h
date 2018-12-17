@@ -6,7 +6,7 @@
 #define MAP_CHERRYGROVE_CITY (1 | (0 << 8))
 #define MAP_VIOLET_CITY      (2 | (0 << 8))
 #define MAP_AZALEA_TOWN      (3 | (0 << 8))
-#define MAP_SLATEPORT_CITY   (4 | (0 << 8))
+#define MAP_GOLDENROD_CITY   (4 | (0 << 8))
 #define MAP_MAUVILLE_CITY    (5 | (0 << 8))
 #define MAP_RUSTBORO_CITY    (6 | (0 << 8))
 #define MAP_FALLARBOR_TOWN   (7 | (0 << 8))
@@ -20,7 +20,7 @@
 #define MAP_ROUTE32          (15 | (0 << 8))
 #define MAP_ROUTE33          (16 | (0 << 8))
 #define MAP_ROUTE34          (17 | (0 << 8))
-#define MAP_ROUTE107         (18 | (0 << 8))
+#define MAP_ROUTE35          (18 | (0 << 8))
 #define MAP_ROUTE108         (19 | (0 << 8))
 #define MAP_ROUTE109         (20 | (0 << 8))
 #define MAP_ROUTE110         (21 | (0 << 8))
@@ -104,8 +104,8 @@
 #define MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F       (8 | (5 << 8))
 #define MAP_SLATEPORT_CITY_HARBOR                  (9 | (5 << 8))
 #define MAP_SLATEPORT_CITY_HOUSE2                  (10 | (5 << 8))
-#define MAP_SLATEPORT_CITY_POKEMON_CENTER_1F       (11 | (5 << 8))
-#define MAP_SLATEPORT_CITY_POKEMON_CENTER_2F       (12 | (5 << 8))
+#define MAP_GOLDENROD_CITY_POKEMON_CENTER_1F       (11 | (5 << 8))
+#define MAP_GOLDENROD_CITY_POKEMON_CENTER_2F       (12 | (5 << 8))
 #define MAP_SLATEPORT_CITY_MART                    (13 | (5 << 8))
 
 // Map Group 6

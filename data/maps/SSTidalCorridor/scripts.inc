@@ -133,7 +133,7 @@ SSTidalCorridor_EventScript_23C13B:: @ 823C13B
 	end
 
 SSTidalCorridor_EventScript_23C15A:: @ 823C15A
-	setrespawn HEAL_LOCATION_SLATEPORT_CITY
+	setrespawn HEAL_LOCATION_GOLDENROD_CITY
 	msgbox SSTidalCorridor_Text_23C64F, MSGBOX_DEFAULT
 	checkflag FLAG_0x104
 	call_if 1, SSTidalCorridor_EventScript_23C179

@@ -4,7 +4,7 @@ gMapGroup0::
 	.4byte CherrygroveCity
 	.4byte VioletCity
 	.4byte AzaleaTown
-	.4byte SlateportCity
+	.4byte GoldenrodCity
 	.4byte MauvilleCity
 	.4byte RustboroCity
 	.4byte FallarborTown
@@ -18,7 +18,7 @@ gMapGroup0::
 	.4byte Route32
 	.4byte Route33
 	.4byte Route34
-	.4byte Route107
+	.4byte Route35
 	.4byte Route108
 	.4byte Route109
 	.4byte Route110
@@ -107,8 +107,8 @@ gMapGroup5::
 	.4byte SlateportCity_OceanicMuseum_2F
 	.4byte SlateportCity_Harbor
 	.4byte SlateportCity_House2
-	.4byte SlateportCity_PokemonCenter_1F
-	.4byte SlateportCity_PokemonCenter_2F
+	.4byte GoldenrodCity_PokemonCenter_1F
+	.4byte GoldenrodCity_PokemonCenter_2F
 	.4byte SlateportCity_Mart
 
 	.align 2

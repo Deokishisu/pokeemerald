@@ -5,8 +5,8 @@ SlateportCity_SternsShipyard_1F_EventObjects: @ 852F318
 	object_event 4, EVENT_OBJ_GFX_OLD_MAN, 0, 12, 11, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 2, 0, 0, SlateportCity_SternsShipyard_1F_EventScript_207FFF, FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
 
 SlateportCity_SternsShipyard_1F_MapWarps: @ 852F378
-	warp_def 2, 14, 0, 2, MAP_SLATEPORT_CITY
-	warp_def 3, 14, 0, 2, MAP_SLATEPORT_CITY
+	warp_def 2, 14, 0, 2, MAP_GOLDENROD_CITY
+	warp_def 3, 14, 0, 2, MAP_GOLDENROD_CITY
 	warp_def 3, 1, 0, 0, MAP_SLATEPORT_CITY_STERNS_SHIPYARD_2F
 
 SlateportCity_SternsShipyard_1F_MapEvents:: @ 852F390

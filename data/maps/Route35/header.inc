@@ -1,8 +1,8 @@
-Route107::
-	.4byte Route107_Layout
-	.4byte Route107_MapEvents
-	.4byte Route107_MapScripts
-	.4byte Route107_MapConnections
+Route35::
+	.4byte Route35_Layout
+	.4byte Route35_MapEvents
+	.4byte Route35_MapScripts
+	.4byte Route35_MapConnections
 	.2byte MUS_NEXTROAD
 	.2byte 23
 	.byte MAPSEC_ROUTE_35

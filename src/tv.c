@@ -2807,7 +2807,7 @@ bool8 IsPriceDiscounted(u8 newsKind)
     switch (newsKind)
     {
         case POKENEWS_SLATEPORT:
-            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SLATEPORT_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SLATEPORT_CITY) && gSpecialVar_LastTalked == 25)
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(GOLDENROD_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(GOLDENROD_CITY) && gSpecialVar_LastTalked == 25)
             {
                 return TRUE;
             }

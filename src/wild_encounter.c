@@ -3497,8 +3497,8 @@ const struct WildPokemonHeader gWildMonHeaders[] =
 		.fishingMonsInfo = &gRoute106_FishingMonsInfo,
 	},
 	{
-		.mapGroup = MAP_GROUP(ROUTE107),
-		.mapNum = MAP_NUM(ROUTE107),
+		.mapGroup = MAP_GROUP(ROUTE35),
+		.mapNum = MAP_NUM(ROUTE35),
 		.landMonsInfo = NULL,
 		.waterMonsInfo = &gRoute107_WaterMonsInfo,
 		.rockSmashMonsInfo = NULL,
@@ -3961,8 +3961,8 @@ const struct WildPokemonHeader gWildMonHeaders[] =
 		.fishingMonsInfo = &gDewfordTown_FishingMonsInfo,
 	},
 	{
-		.mapGroup = MAP_GROUP(SLATEPORT_CITY),
-		.mapNum = MAP_NUM(SLATEPORT_CITY),
+		.mapGroup = MAP_GROUP(GOLDENROD_CITY),
+		.mapNum = MAP_NUM(GOLDENROD_CITY),
 		.landMonsInfo = NULL,
 		.waterMonsInfo = &gSlateportCity_WaterMonsInfo,
 		.rockSmashMonsInfo = NULL,

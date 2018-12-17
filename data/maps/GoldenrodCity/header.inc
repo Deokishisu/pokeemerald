@@ -1,8 +1,8 @@
-SlateportCity::
-	.4byte SlateportCity_Layout
-	.4byte SlateportCity_MapEvents
-	.4byte SlateportCity_MapScripts
-	.4byte SlateportCity_MapConnections
+GoldenrodCity::
+	.4byte GoldenrodCity_Layout
+	.4byte GoldenrodCity_MapEvents
+	.4byte GoldenrodCity_MapScripts
+	.4byte GoldenrodCity_MapConnections
 	.2byte MUS_FINECITY
 	.2byte 2
 	.byte MAPSEC_GOLDENROD_CITY

@@ -64,7 +64,7 @@ gStdScripts_End:: @ 81DC2CC
 	.byte 0
 
 	.include "data/maps/VioletCity/scripts.inc"
-	.include "data/maps/SlateportCity/scripts.inc"
+	.include "data/maps/GoldenrodCity/scripts.inc"
 	.include "data/maps/MauvilleCity/scripts.inc"
 	.include "data/maps/RustboroCity/scripts.inc"
 	.include "data/maps/FortreeCity/scripts.inc"
@@ -85,7 +85,7 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/Route32/scripts.inc"
 	.include "data/maps/Route33/scripts.inc"
 	.include "data/maps/Route34/scripts.inc"
-	.include "data/maps/Route107/scripts.inc"
+	.include "data/maps/Route35/scripts.inc"
 	.include "data/maps/Route108/scripts.inc"
 	.include "data/maps/Route109/scripts.inc"
 	.include "data/maps/Route110/scripts.inc"
@@ -186,8 +186,8 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/SlateportCity_OceanicMuseum_2F/scripts.inc"
 	.include "data/maps/SlateportCity_Harbor/scripts.inc"
 	.include "data/maps/SlateportCity_House2/scripts.inc"
-	.include "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/SlateportCity_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/GoldenrodCity_PokemonCenter_1F/scripts.inc"
+	.include "data/maps/GoldenrodCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/SlateportCity_Mart/scripts.inc"
 	.include "data/maps/MauvilleCity_Gym/scripts.inc"
 	.include "data/maps/MauvilleCity_BikeShop/scripts.inc"

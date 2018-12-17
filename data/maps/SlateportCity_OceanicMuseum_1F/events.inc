@@ -15,8 +15,8 @@ SlateportCity_OceanicMuseum_1F_EventObjects: @ 852F670
 	object_event 14, EVENT_OBJ_GFX_ZREPORTER_M, 0, 7, 4, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, SlateportCity_OceanicMuseum_1F_EventScript_28C883, FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION
 
 SlateportCity_OceanicMuseum_1F_MapWarps: @ 852F7C0
-	warp_def 9, 8, 0, 5, MAP_SLATEPORT_CITY
-	warp_def 10, 8, 0, 7, MAP_SLATEPORT_CITY
+	warp_def 9, 8, 0, 5, MAP_GOLDENROD_CITY
+	warp_def 10, 8, 0, 7, MAP_GOLDENROD_CITY
 	warp_def 6, 1, 0, 0, MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F
 
 SlateportCity_OceanicMuseum_1F_MapCoordEvents: @ 852F7D8

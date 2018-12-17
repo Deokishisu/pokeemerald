@@ -9,10 +9,10 @@ SlateportCity_Harbor_EventObjects: @ 852FA68
 	object_event 8, EVENT_OBJ_GFX_N64, 0, 7, 9, 1, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, 0x0, FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW
 
 SlateportCity_Harbor_MapWarps: @ 852FB28
-	warp_def 11, 14, 0, 8, MAP_SLATEPORT_CITY
-	warp_def 12, 14, 0, 8, MAP_SLATEPORT_CITY
-	warp_def 19, 15, 0, 9, MAP_SLATEPORT_CITY
-	warp_def 20, 15, 0, 9, MAP_SLATEPORT_CITY
+	warp_def 11, 14, 0, 8, MAP_GOLDENROD_CITY
+	warp_def 12, 14, 0, 8, MAP_GOLDENROD_CITY
+	warp_def 19, 15, 0, 9, MAP_GOLDENROD_CITY
+	warp_def 20, 15, 0, 9, MAP_GOLDENROD_CITY
 
 SlateportCity_Harbor_MapCoordEvents: @ 852FB48
 	coord_event 8, 11, 3, VAR_0x40A0, 1, SlateportCity_Harbor_EventScript_20C9BB
