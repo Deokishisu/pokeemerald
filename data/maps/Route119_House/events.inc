@@ -8,8 +8,8 @@ Route119_House_EventObjects: @ 853ECD0
 	object_event 7, EVENT_OBJ_GFX_BIRD, 0, 5, 3, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 3, 0, 0, Route119_House_EventScript_27096F, 0
 
 Route119_House_MapWarps: @ 853ED78
-	warp_def 3, 8, 0, 1, MAP_ROUTE119
-	warp_def 4, 8, 0, 1, MAP_ROUTE119
+	warp_def 3, 8, 0, 1, MAP_ROUTE27
+	warp_def 4, 8, 0, 1, MAP_ROUTE27
 
 Route119_House_MapEvents:: @ 853ED88
 	map_events Route119_House_EventObjects, Route119_House_MapWarps, 0x0, 0x0

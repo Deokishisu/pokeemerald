@@ -2,8 +2,8 @@ Route114_FossilManiacsHouse_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_ZNINJA_BOY, 0, 3, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, Route114_FossilManiacsHouse_EventScript_22AD3A, 0
 
 Route114_FossilManiacsHouse_MapWarps::
-	warp_def 4, 7, 0, 1, MAP_ROUTE114
-	warp_def 5, 7, 0, 1, MAP_ROUTE114
+	warp_def 4, 7, 0, 1, MAP_ROUTE42
+	warp_def 5, 7, 0, 1, MAP_ROUTE42
 	warp_def 4, 1, 0, 0, MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL
 
 Route114_FossilManiacsHouse_MapBGEvents::

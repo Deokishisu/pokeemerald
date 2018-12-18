@@ -9,8 +9,8 @@ FieryPath_EventObjects: @ 8534C80
 	object_event 8, EVENT_OBJ_GFX_ITEM_BALL, 0, 7, 32, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, FieryPath_EventScript_291191, FLAG_ITEM_FIERY_PATH_FIRE_STONE
 
 FieryPath_MapWarps: @ 8534D40
-	warp_def 26, 36, 3, 4, MAP_ROUTE112
-	warp_def 26, 4, 3, 5, MAP_ROUTE112
+	warp_def 26, 36, 3, 4, MAP_ROUTE40
+	warp_def 26, 4, 3, 5, MAP_ROUTE40
 
 FieryPath_MapEvents:: @ 8534D50
 	map_events FieryPath_EventObjects, FieryPath_MapWarps, 0x0, 0x0

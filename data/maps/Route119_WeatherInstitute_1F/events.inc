@@ -6,8 +6,8 @@ Route119_WeatherInstitute_1F_EventObjects: @ 853EB20
 	object_event 5, EVENT_OBJ_GFX_ZNINJA_BOY, 0, 14, 11, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route119_WeatherInstitute_1F_EventScript_26FAA4, 0
 
 Route119_WeatherInstitute_1F_MapWarps: @ 853EB98
-	warp_def 9, 12, 0, 0, MAP_ROUTE119
-	warp_def 10, 12, 0, 0, MAP_ROUTE119
+	warp_def 9, 12, 0, 0, MAP_ROUTE27
+	warp_def 10, 12, 0, 0, MAP_ROUTE27
 	warp_def 17, 1, 0, 0, MAP_ROUTE119_WEATHER_INSTITUTE_2F
 
 Route119_WeatherInstitute_1F_MapBGEvents: @ 853EBB0

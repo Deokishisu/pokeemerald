@@ -3,8 +3,8 @@ FortreeCity_House2_EventObjects: @ 8530F30
 	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 0, 6, 3, 3, MOVEMENT_TYPE_FACE_LEFT, 1, 0, 0, 0, FortreeCity_House2_EventScript_2C811E, 0
 
 FortreeCity_House2_MapWarps: @ 8530F60
-	warp_def 3, 5, 0, 4, MAP_FORTREE_CITY
-	warp_def 4, 5, 0, 4, MAP_FORTREE_CITY
+	warp_def 3, 5, 0, 4, MAP_BLACKTHORN_CITY
+	warp_def 4, 5, 0, 4, MAP_BLACKTHORN_CITY
 
 FortreeCity_House2_MapEvents:: @ 8530F70
 	map_events FortreeCity_House2_EventObjects, FortreeCity_House2_MapWarps, 0x0, 0x0

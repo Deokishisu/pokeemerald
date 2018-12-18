@@ -1,5 +1,5 @@
 Route35_MapConnectionsList::
-	connection up, 0, MAP_ROUTE108
+	connection up, 0, MAP_ROUTE36
 	connection down, -10, MAP_GOLDENROD_CITY
 
 Route35_MapConnections::

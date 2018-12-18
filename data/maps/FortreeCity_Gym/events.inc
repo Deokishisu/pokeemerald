@@ -9,8 +9,8 @@ FortreeCity_Gym_EventObjects::
 	object_event 8, EVENT_OBJ_GFX_ZMAN_5, 0, 1, 10, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 1, 3, FortreeCity_Gym_EventScript_21671B, 0
 
 FortreeCity_Gym_MapWarps::
-	warp_def 15, 24, 0, 2, MAP_FORTREE_CITY
-	warp_def 16, 24, 0, 2, MAP_FORTREE_CITY
+	warp_def 15, 24, 0, 2, MAP_BLACKTHORN_CITY
+	warp_def 16, 24, 0, 2, MAP_BLACKTHORN_CITY
 
 FortreeCity_Gym_MapBGEvents::
 	bg_event 14, 21, 0, BG_EVENT_PLAYER_FACING_NORTH, FortreeCity_Gym_EventScript_216751

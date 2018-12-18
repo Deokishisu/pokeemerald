@@ -2,8 +2,8 @@ Route110_TrickHouseEntrance_EventObjects: @ 853DE6C
 	object_event 1, EVENT_OBJ_GFX_ZMAN_1, 0, 6, 2, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, Route110_TrickHouseEntrance_EventScript_269D3B, FLAG_HIDE_TRICK_HOUSE_ENTRANCE_MAN
 
 Route110_TrickHouseEntrance_MapWarps: @ 853DE84
-	warp_def 5, 7, 3, 1, MAP_ROUTE110
-	warp_def 6, 7, 3, 1, MAP_ROUTE110
+	warp_def 5, 7, 3, 1, MAP_ROUTE38
+	warp_def 6, 7, 3, 1, MAP_ROUTE38
 	warp_def 5, 2, 3, 0, MAP_ROUTE110_TRICK_HOUSE_PUZZLE1
 
 Route110_TrickHouseEntrance_MapCoordEvents: @ 853DE9C

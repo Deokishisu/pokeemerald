@@ -11,9 +11,9 @@ RusturfTunnel_EventObjects: @ 85341C4
 	object_event 10, EVENT_OBJ_GFX_ZWOMAN_2, 0, 25, 4, 3, MOVEMENT_TYPE_FACE_LEFT, 1, 1, 0, 0, RusturfTunnel_EventScript_22CE5F, FLAG_HIDE_RUSTURF_TUNNEL_LOVER_WOMAN
 
 RusturfTunnel_MapWarps: @ 85342B4
-	warp_def 4, 10, 3, 0, MAP_ROUTE116
-	warp_def 29, 16, 3, 4, MAP_VERDANTURF_TOWN
-	warp_def 18, 20, 3, 2, MAP_ROUTE116
+	warp_def 4, 10, 3, 0, MAP_ROUTE44
+	warp_def 29, 16, 3, 4, MAP_MAHOGANY_TOWN
+	warp_def 18, 20, 3, 2, MAP_ROUTE44
 
 RusturfTunnel_MapCoordEvents: @ 85342CC
 	coord_event 23, 4, 3, 0, 0, RusturfTunnel_EventScript_22D071

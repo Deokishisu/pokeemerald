@@ -1,0 +1,14 @@
+EcruteakCity::
+	.4byte EcruteakCity_Layout
+	.4byte EcruteakCity_MapEvents
+	.4byte EcruteakCity_MapScripts
+	.4byte EcruteakCity_MapConnections
+	.2byte MUS_GOTOWN
+	.2byte 3
+	.byte MAPSEC_ECRUTEAK_CITY
+	.byte 0
+	.byte WEATHER_SUNNY
+	.byte MAP_TYPE_CITY
+	.2byte 0
+	.byte 13
+	.byte MAP_BATTLE_SCENE_NORMAL

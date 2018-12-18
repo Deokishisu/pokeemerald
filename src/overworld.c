@@ -1082,8 +1082,8 @@ static bool16 ShouldLegendaryMusicPlayAtLocation(struct WarpData *warp)
         case MAP_NUM(MOSSDEEP_CITY):
         case MAP_NUM(SOOTOPOLIS_CITY):
         case MAP_NUM(EVER_GRANDE_CITY):
-        case MAP_NUM(ROUTE124):
-        case MAP_NUM(ROUTE125):
+        case MAP_NUM(RUINS_OF_ALPH_EXTERIOR):
+        case MAP_NUM(LAKE_OF_RAGE):
         case MAP_NUM(ROUTE126):
         case MAP_NUM(ROUTE127):
         case MAP_NUM(ROUTE128):
@@ -1161,8 +1161,8 @@ u16 GetCurrLocationDefaultMusic(void)
     u16 music;
 
     // Play the desert music only when the sandstorm is active on Route 111.
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE111)
-     && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE111)
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE39)
+     && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE39)
      && GetSav1Weather() == 8)
         return MUS_ASHROAD;
 
@@ -1189,8 +1189,8 @@ u16 GetWarpDestinationMusic(void)
     }
     else
     {
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAUVILLE_CITY)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAUVILLE_CITY))
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ECRUTEAK_CITY)
+         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ECRUTEAK_CITY))
             return MUS_DOORO_X1;
         else
             return MUS_GRANROAD;

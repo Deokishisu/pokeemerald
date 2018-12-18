@@ -1,0 +1,14 @@
+Route40::
+	.4byte Route40_Layout
+	.4byte Route40_MapEvents
+	.4byte Route40_MapScripts
+	.4byte Route40_MapConnections
+	.2byte MUS_RG_NANASHIMA
+	.2byte 28
+	.byte MAPSEC_ROUTE_40
+	.byte 0
+	.byte WEATHER_SUNNY
+	.byte MAP_TYPE_ROUTE
+	.2byte 0
+	.byte 13
+	.byte MAP_BATTLE_SCENE_NORMAL

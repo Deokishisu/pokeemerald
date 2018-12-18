@@ -4,8 +4,8 @@ RustboroCity_DevonCorp_1F_EventObjects: @ 853037C
 	object_event 3, EVENT_OBJ_GFX_ZWOMAN_3, 0, 5, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, RustboroCity_DevonCorp_1F_EventScript_2112CE, 0
 
 RustboroCity_DevonCorp_1F_MapWarps: @ 85303C4
-	warp_def 5, 8, 0, 5, MAP_RUSTBORO_CITY
-	warp_def 6, 8, 0, 6, MAP_RUSTBORO_CITY
+	warp_def 5, 8, 0, 5, MAP_OLIVINE_CITY
+	warp_def 6, 8, 0, 6, MAP_OLIVINE_CITY
 	warp_def 14, 1, 0, 0, MAP_RUSTBORO_CITY_DEVON_CORP_2F
 
 RustboroCity_DevonCorp_1F_MapBGEvents: @ 85303DC

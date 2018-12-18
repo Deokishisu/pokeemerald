@@ -4,8 +4,8 @@ FortreeCity_House4_EventObjects: @ 8530FD8
 	object_event 3, EVENT_OBJ_GFX_BIRD, 0, 2, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, FortreeCity_House4_EventScript_217D20, FLAG_HIDE_FORTREE_CITY_HOUSE_4_WINGULL
 
 FortreeCity_House4_MapWarps: @ 8531020
-	warp_def 3, 5, 0, 6, MAP_FORTREE_CITY
-	warp_def 4, 5, 0, 6, MAP_FORTREE_CITY
+	warp_def 3, 5, 0, 6, MAP_BLACKTHORN_CITY
+	warp_def 4, 5, 0, 6, MAP_BLACKTHORN_CITY
 
 FortreeCity_House4_MapEvents:: @ 8531030
 	map_events FortreeCity_House4_EventObjects, FortreeCity_House4_MapWarps, 0x0, 0x0

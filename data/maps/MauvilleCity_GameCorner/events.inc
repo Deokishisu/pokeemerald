@@ -13,8 +13,8 @@ MauvilleCity_GameCorner_EventObjects: @ 852FF28
 	object_event 12, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 4, 6, 3, MOVEMENT_TYPE_FACE_LEFT, 1, 1, 0, 0, MauvilleCity_GameCorner_EventScript_2102C6, 0
 
 MauvilleCity_GameCorner_MapWarps: @ 8530048
-	warp_def 11, 10, 3, 5, MAP_MAUVILLE_CITY
-	warp_def 12, 10, 3, 5, MAP_MAUVILLE_CITY
+	warp_def 11, 10, 3, 5, MAP_ECRUTEAK_CITY
+	warp_def 12, 10, 3, 5, MAP_ECRUTEAK_CITY
 
 MauvilleCity_GameCorner_MapBGEvents: @ 8530058
 	bg_event 2, 6, 0, BG_EVENT_PLAYER_FACING_EAST, MauvilleCity_GameCorner_EventScript_2102D6

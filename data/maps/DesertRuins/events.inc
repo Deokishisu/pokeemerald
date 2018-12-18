@@ -2,7 +2,7 @@ DesertRuins_EventObjects: @ 8534354
 	object_event 1, EVENT_OBJ_GFX_BIG_ONIX_DOLL, 0, 8, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, DesertRuins_EventScript_22DA02, FLAG_HIDE_REGIROCK
 
 DesertRuins_MapWarps: @ 853436C
-	warp_def 8, 29, 3, 1, MAP_ROUTE111
+	warp_def 8, 29, 3, 1, MAP_ROUTE39
 	warp_def 8, 20, 0, 2, MAP_DESERT_RUINS
 	warp_def 8, 11, 3, 1, MAP_DESERT_RUINS
 

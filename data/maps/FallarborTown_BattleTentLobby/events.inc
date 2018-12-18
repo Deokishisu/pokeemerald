@@ -6,8 +6,8 @@ FallarborTown_BattleTentLobby_EventObjects: @ 852E370
 	object_event 5, EVENT_OBJ_GFX_PHARMACIST, 0, 0, 7, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, FallarborTown_BattleTentLobby_EventScript_200228, FLAG_HIDE_FALLORBOR_TOWN_BATTLE_TENT_SCOTT
 
 FallarborTown_BattleTentLobby_MapWarps: @ 852E3E8
-	warp_def 6, 9, 0, 1, MAP_FALLARBOR_TOWN
-	warp_def 7, 9, 0, 1, MAP_FALLARBOR_TOWN
+	warp_def 6, 9, 0, 1, MAP_CIANWOOD_CITY
+	warp_def 7, 9, 0, 1, MAP_CIANWOOD_CITY
 
 FallarborTown_BattleTentLobby_MapBGEvents: @ 852E3F8
 	bg_event 4, 5, 0, BG_EVENT_PLAYER_FACING_ANY, FallarborTown_BattleTentLobby_EventScript_20024F

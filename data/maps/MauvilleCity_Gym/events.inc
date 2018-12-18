@@ -8,8 +8,8 @@ MauvilleCity_Gym_EventObjects: @ 852FD5C
 	object_event 7, EVENT_OBJ_GFX_SUPER_NERD, 0, 7, 10, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 1, 1, MauvilleCity_Gym_EventScript_20E115, 0
 
 MauvilleCity_Gym_MapWarps: @ 852FE04
-	warp_def 4, 20, 0, 0, MAP_MAUVILLE_CITY
-	warp_def 5, 20, 0, 0, MAP_MAUVILLE_CITY
+	warp_def 4, 20, 0, 0, MAP_ECRUTEAK_CITY
+	warp_def 5, 20, 0, 0, MAP_ECRUTEAK_CITY
 
 MauvilleCity_Gym_MapCoordEvents: @ 852FE14
 	coord_event 4, 12, 3, VAR_TEMP_0, 0, MauvilleCity_Gym_EventScript_20E01E

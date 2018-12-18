@@ -1,5 +1,5 @@
 NewMauville_Entrance_MapWarps: @ 8536474
-	warp_def 4, 6, 3, 0, MAP_ROUTE110
+	warp_def 4, 6, 3, 0, MAP_ROUTE38
 	warp_def 4, 1, 3, 0, MAP_NEW_MAUVILLE_INSIDE
 
 NewMauville_Entrance_MapCoordEvents: @ 8536484

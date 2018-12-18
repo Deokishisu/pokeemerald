@@ -86,7 +86,7 @@ static const u16 sSpeciesHiddenFromAreaScreen[] = { SPECIES_WYNAUT };
 static const u16 sMovingRegionMapSections[3] = { MAPSEC_MARINE_CAVE, MAPSEC_UNDERWATER_MARINE_CAVE, MAPSEC_TERRA_CAVE };
 
 static const u16 sFeebasData[][3] = {
-    {SPECIES_FEEBAS, MAP_GROUP(ROUTE119), MAP_NUM(ROUTE119)},
+    //{SPECIES_FEEBAS, MAP_GROUP(ROUTE119), MAP_NUM(ROUTE119)},
     {NUM_SPECIES}
 };
 

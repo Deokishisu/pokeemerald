@@ -1,0 +1,27 @@
+Route36_EventObjects::
+	object_event 1, EVENT_OBJ_GFX_YOUNGSTER, 2, 20, 13, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 3, Route108_EventScript_1EE68A, 0
+	object_event 2, EVENT_OBJ_GFX_YOUNGSTER, 2, 31, 14, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 1, 5, Route108_EventScript_1EE6B8, 0
+	object_event 3, EVENT_OBJ_GFX_SUDOWOODO, 3, 35, 8, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route108_EventScript_1EE6A1, 0
+	object_event 4, EVENT_OBJ_GFX_LASS, 0, 51, 8, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 0, 0, 0, Route108_EventScript_1EE6CF, 0
+	object_event 5, EVENT_OBJ_GFX_FAT_MAN, 0, 44, 9, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, Route108_EventScript_1EE6E6, 0
+	object_event 6, EVENT_OBJ_GFX_BERRY_TREE, 0, 21, 4, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 7, EVENT_OBJ_GFX_YOUNGSTER, 0, 46, 6, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 8, EVENT_OBJ_GFX_LASS, 2, 33, 12, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 9, EVENT_OBJ_GFX_SUICUNE, 2, 21, 6, 3, MOVEMENT_TYPE_NONE, 0, 0, 0, 0, Route108_EventScript_1EE6FD, 0
+	object_event 10, EVENT_OBJ_GFX_ITEM_BALL, 0, 0, 0, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route108_EventScript_290D4D, FLAG_ITEM_ROUTE_108_STAR_PIECE
+
+Route36_MapWarps::
+	warp_def 18, 8, 3, 0, MAP_ROUTE36_NATIONAL_PARK_GATE
+	warp_def 18, 9, 3, 1, MAP_ROUTE36_NATIONAL_PARK_GATE
+	warp_def 47, 13, 3, 2, MAP_ROUTE36_GATE
+	warp_def 48, 13, 3, 3, MAP_ROUTE36_GATE
+
+Route36_MapBGEvents::
+	bg_hidden_item_event -6, -6, 3, ITEM_RARE_CANDY, FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY
+	bg_event 29, 1, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
+	bg_event 21, 7, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
+	bg_event 45, 11, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
+	bg_event 55, 7, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
+
+Route36_MapEvents::
+	map_events Route36_EventObjects, Route36_MapWarps, 0x0, Route36_MapBGEvents

@@ -8,8 +8,8 @@ JaggedPass_EventObjects: @ 8534AE4
 	object_event 7, EVENT_OBJ_GFX_BIKER, 0, 18, 25, 3, MOVEMENT_TYPE_FACE_LEFT, 1, 1, 1, 3, JaggedPass_EventScript_23085A, 0
 
 JaggedPass_MapWarps: @ 8534B8C
-	warp_def 14, 40, 3, 2, MAP_ROUTE112
-	warp_def 15, 40, 3, 3, MAP_ROUTE112
+	warp_def 14, 40, 3, 2, MAP_ROUTE40
+	warp_def 15, 40, 3, 3, MAP_ROUTE40
 	warp_def 13, 5, 3, 2, MAP_MT_CHIMNEY
 	warp_def 14, 5, 3, 3, MAP_MT_CHIMNEY
 	warp_def 16, 18, 0, 0, MAP_MAGMA_HIDEOUT_1F

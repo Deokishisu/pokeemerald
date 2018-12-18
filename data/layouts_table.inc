@@ -2,9 +2,9 @@
 gMapLayouts::
 	.4byte VioletCity_Layout
 	.4byte GoldenrodCity_Layout
-	.4byte MauvilleCity_Layout
-	.4byte RustboroCity_Layout
-	.4byte FortreeCity_Layout
+	.4byte EcruteakCity_Layout
+	.4byte OlivineCity_Layout
+	.4byte BlackthornCity_Layout
 	.4byte LilycoveCity_Layout
 	.4byte MossdeepCity_Layout
 	.4byte SootopolisCity_Layout
@@ -13,8 +13,8 @@ gMapLayouts::
 	.4byte CherrygroveCity_Layout
 	.4byte AzaleaTown_Layout
 	.4byte LavaridgeTown_Layout
-	.4byte FallarborTown_Layout
-	.4byte VerdanturfTown_Layout
+	.4byte CianwoodCity_Layout
+	.4byte MahoganyTown_Layout
 	.4byte PacifidlogTown_Layout
 	.4byte Route29_Layout
 	.4byte Route30_Layout
@@ -23,24 +23,24 @@ gMapLayouts::
 	.4byte Route33_Layout
 	.4byte Route34_Layout
 	.4byte Route35_Layout
-	.4byte Route108_Layout
-	.4byte Route109_Layout
-	.4byte Route110_Layout
-	.4byte Route111_Layout
-	.4byte Route112_Layout
-	.4byte Route113_Layout
-	.4byte Route114_Layout
-	.4byte Route115_Layout
-	.4byte Route116_Layout
-	.4byte Route117_Layout
-	.4byte Route118_Layout
-	.4byte Route119_Layout
-	.4byte Route120_Layout
-	.4byte Route121_Layout
-	.4byte Route122_Layout
-	.4byte Route123_Layout
-	.4byte Route124_Layout
-	.4byte Route125_Layout
+	.4byte Route36_Layout
+	.4byte Route37_Layout
+	.4byte Route38_Layout
+	.4byte Route39_Layout
+	.4byte Route40_Layout
+	.4byte Route41_Layout
+	.4byte Route42_Layout
+	.4byte Route43_Layout
+	.4byte Route44_Layout
+	.4byte Route45_Layout
+	.4byte Route46_Layout
+	.4byte Route27_Layout
+	.4byte Route26_Layout
+	.4byte Route23_Layout
+	.4byte Route28_Layout
+	.4byte SilverCave_Exterior_Layout
+	.4byte RuinsOfAlph_Exterior_Layout
+	.4byte LakeOfRage_Layout
 	.4byte Route126_Layout
 	.4byte Route127_Layout
 	.4byte Route128_Layout
@@ -449,9 +449,9 @@ gMapLayouts::
 	.4byte Route39_MooMooFarmBarn_Layout
 	.4byte VioletCity_Layout
 	.4byte GoldenrodCity_Layout
-	.4byte MauvilleCity_Layout
-	.4byte RustboroCity_Layout
-	.4byte FortreeCity_Layout
+	.4byte EcruteakCity_Layout
+	.4byte OlivineCity_Layout
+	.4byte BlackthornCity_Layout
 	.4byte LilycoveCity_Layout
 	.4byte MossdeepCity_Layout
 	.4byte SootopolisCity_Layout
@@ -460,8 +460,8 @@ gMapLayouts::
 	.4byte CherrygroveCity_Layout
 	.4byte AzaleaTown_Layout
 	.4byte LavaridgeTown_Layout
-	.4byte FallarborTown_Layout
-	.4byte VerdanturfTown_Layout
+	.4byte CianwoodCity_Layout
+	.4byte MahoganyTown_Layout
 	.4byte PacifidlogTown_Layout
 	.4byte Route29_Layout
 	.4byte Route30_Layout
@@ -470,24 +470,24 @@ gMapLayouts::
 	.4byte Route33_Layout
 	.4byte Route34_Layout
 	.4byte Route35_Layout
-	.4byte Route108_Layout
-	.4byte Route109_Layout
-	.4byte Route110_Layout
-	.4byte Route111_Layout
-	.4byte Route112_Layout
-	.4byte Route113_Layout
-	.4byte Route114_Layout
-	.4byte Route115_Layout
-	.4byte Route116_Layout
-	.4byte Route117_Layout
-	.4byte Route118_Layout
-	.4byte Route119_Layout
-	.4byte Route120_Layout
-	.4byte Route121_Layout
-	.4byte Route122_Layout
-	.4byte Route123_Layout
-	.4byte Route124_Layout
-	.4byte Route125_Layout
+	.4byte Route36_Layout
+	.4byte Route37_Layout
+	.4byte Route38_Layout
+	.4byte Route39_Layout
+	.4byte Route40_Layout
+	.4byte Route41_Layout
+	.4byte Route42_Layout
+	.4byte Route43_Layout
+	.4byte Route44_Layout
+	.4byte Route45_Layout
+	.4byte Route46_Layout
+	.4byte Route27_Layout
+	.4byte Route26_Layout
+	.4byte Route23_Layout
+	.4byte Route28_Layout
+	.4byte SilverCave_Exterior_Layout
+	.4byte RuinsOfAlph_Exterior_Layout
+	.4byte LakeOfRage_Layout
 	.4byte Route126_Layout
 	.4byte Route127_Layout
 	.4byte Route128_Layout
@@ -896,9 +896,9 @@ gMapLayouts::
 	.4byte Route39_MooMooFarmBarn_Layout
 	.4byte VioletCity_Layout
 	.4byte GoldenrodCity_Layout
-	.4byte MauvilleCity_Layout
-	.4byte RustboroCity_Layout
-	.4byte FortreeCity_Layout
+	.4byte EcruteakCity_Layout
+	.4byte OlivineCity_Layout
+	.4byte BlackthornCity_Layout
 	.4byte LilycoveCity_Layout
 	.4byte MossdeepCity_Layout
 	.4byte SootopolisCity_Layout
@@ -907,8 +907,8 @@ gMapLayouts::
 	.4byte CherrygroveCity_Layout
 	.4byte AzaleaTown_Layout
 	.4byte LavaridgeTown_Layout
-	.4byte FallarborTown_Layout
-	.4byte VerdanturfTown_Layout
+	.4byte CianwoodCity_Layout
+	.4byte MahoganyTown_Layout
 	.4byte PacifidlogTown_Layout
 	.4byte Route29_Layout
 	.4byte Route30_Layout
@@ -917,24 +917,24 @@ gMapLayouts::
 	.4byte Route33_Layout
 	.4byte Route34_Layout
 	.4byte Route35_Layout
-	.4byte Route108_Layout
-	.4byte Route109_Layout
-	.4byte Route110_Layout
-	.4byte Route111_Layout
-	.4byte Route112_Layout
-	.4byte Route113_Layout
-	.4byte Route114_Layout
-	.4byte Route115_Layout
-	.4byte Route116_Layout
-	.4byte Route117_Layout
-	.4byte Route118_Layout
-	.4byte Route119_Layout
-	.4byte Route120_Layout
-	.4byte Route121_Layout
-	.4byte Route122_Layout
-	.4byte Route123_Layout
-	.4byte Route124_Layout
-	.4byte Route125_Layout
+	.4byte Route36_Layout
+	.4byte Route37_Layout
+	.4byte Route38_Layout
+	.4byte Route39_Layout
+	.4byte Route40_Layout
+	.4byte Route41_Layout
+	.4byte Route42_Layout
+	.4byte Route43_Layout
+	.4byte Route44_Layout
+	.4byte Route45_Layout
+	.4byte Route46_Layout
+	.4byte Route27_Layout
+	.4byte Route26_Layout
+	.4byte Route23_Layout
+	.4byte Route28_Layout
+	.4byte SilverCave_Exterior_Layout
+	.4byte RuinsOfAlph_Exterior_Layout
+	.4byte LakeOfRage_Layout
 	.4byte Route126_Layout
 	.4byte Route127_Layout
 	.4byte Route128_Layout

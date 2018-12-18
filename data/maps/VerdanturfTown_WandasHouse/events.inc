@@ -6,8 +6,8 @@ VerdanturfTown_WandasHouse_EventObjects: @ 852E92C
 	object_event 5, EVENT_OBJ_GFX_ZWOMAN_2, 0, 5, 5, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, VerdanturfTown_WandasHouse_EventScript_20291C, FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_LOVER_WOMAN
 
 VerdanturfTown_WandasHouse_MapWarps: @ 852E9A4
-	warp_def 7, 7, 0, 3, MAP_VERDANTURF_TOWN
-	warp_def 8, 7, 0, 3, MAP_VERDANTURF_TOWN
+	warp_def 7, 7, 0, 3, MAP_MAHOGANY_TOWN
+	warp_def 8, 7, 0, 3, MAP_MAHOGANY_TOWN
 
 VerdanturfTown_WandasHouse_MapEvents:: @ 852E9B4
 	map_events VerdanturfTown_WandasHouse_EventObjects, VerdanturfTown_WandasHouse_MapWarps, 0x0, 0x0

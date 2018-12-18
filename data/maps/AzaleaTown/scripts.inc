@@ -163,12 +163,12 @@ DewfordTown_EventScript_1E96E7:: @ 81E96E7
 	applymovement 255, DewfordTown_Movement_1E9865
 	waitmovement 0
 	call DewfordTown_EventScript_2720A8
-	showobjectat 255, MAP_ROUTE109
+	showobjectat 255, MAP_ROUTE37
 	applymovement 255, DewfordTown_Movement_1E9918
 	waitmovement 0
 	setobjectxyperm 2, 21, 26
 	addobject 2
-	setobjectpriority 2, MAP_ROUTE109, 0
+	setobjectpriority 2, MAP_ROUTE37, 0
 	applymovement 2, DewfordTown_Movement_1E991F
 	waitmovement 0
 	clearflag FLAG_HIDE_ROUTE_108_MR_BRINEY
@@ -183,7 +183,7 @@ DewfordTown_EventScript_1E96E7:: @ 81E96E7
 	closemessage
 	copyvar VAR_0x4096, VAR_0x8008
 	resetobjectpriority 255, MAP_AZALEA_TOWN
-	resetobjectpriority 2, MAP_ROUTE109
+	resetobjectpriority 2, MAP_ROUTE37
 	moveobjectoffscreen 2
 	release
 	end

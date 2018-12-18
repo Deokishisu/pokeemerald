@@ -5,13 +5,13 @@ gMapGroup0::
 	.4byte VioletCity
 	.4byte AzaleaTown
 	.4byte GoldenrodCity
-	.4byte MauvilleCity
-	.4byte RustboroCity
-	.4byte FallarborTown
-	.4byte VerdanturfTown
-	.4byte FortreeCity
-	.4byte Route125
-	.4byte Route124
+	.4byte EcruteakCity
+	.4byte OlivineCity
+	.4byte CianwoodCity
+	.4byte MahoganyTown
+	.4byte BlackthornCity
+	.4byte LakeOfRage
+	.4byte RuinsOfAlph_Exterior
 	.4byte Route29
 	.4byte Route30
 	.4byte Route31
@@ -19,22 +19,22 @@ gMapGroup0::
 	.4byte Route33
 	.4byte Route34
 	.4byte Route35
-	.4byte Route108
-	.4byte Route109
-	.4byte Route110
-	.4byte Route111
-	.4byte Route112
-	.4byte Route113
-	.4byte Route114
-	.4byte Route115
-	.4byte Route116
-	.4byte Route117
-	.4byte Route118
-	.4byte Route119
-	.4byte Route120
-	.4byte Route121
-	.4byte Route122
-	.4byte Route123
+	.4byte Route36
+	.4byte Route37
+	.4byte Route38
+	.4byte Route39
+	.4byte Route40
+	.4byte Route41
+	.4byte Route42
+	.4byte Route43
+	.4byte Route44
+	.4byte Route45
+	.4byte Route46
+	.4byte Route27
+	.4byte Route26
+	.4byte Route23
+	.4byte Route28
+	.4byte SilverCave_Exterior
 	.4byte LilycoveCity
 	.4byte MossdeepCity
 	.4byte SootopolisCity
@@ -118,9 +118,9 @@ gMapGroup6::
 	.4byte MauvilleCity_House1
 	.4byte MauvilleCity_GameCorner
 	.4byte MauvilleCity_House2
-	.4byte MauvilleCity_PokemonCenter_1F
-	.4byte MauvilleCity_PokemonCenter_2F
-	.4byte MauvilleCity_Mart
+	.4byte EcruteakCity_PokemonCenter_1F
+	.4byte EcruteakCity_PokemonCenter_2F
+	.4byte EcruteakCity_Mart
 
 	.align 2
 gMapGroup7::
@@ -129,9 +129,9 @@ gMapGroup7::
 	.4byte RustboroCity_DevonCorp_3F
 	.4byte RustboroCity_Gym
 	.4byte PetalburgCity_WallysHouse
-	.4byte RustboroCity_PokemonCenter_1F
-	.4byte RustboroCity_PokemonCenter_2F
-	.4byte RustboroCity_Mart
+	.4byte OlivineCity_PokemonCenter_1F
+	.4byte OlivineCity_PokemonCenter_2F
+	.4byte OlivineCity_Mart
 	.4byte RustboroCity_Flat1_1F
 	.4byte RustboroCity_Flat1_2F
 	.4byte RustboroCity_House1
@@ -147,8 +147,8 @@ gMapGroup8::
 	.4byte FallarborTown_BattleTentLobby
 	.4byte FallarborTown_BattleTentCorridor
 	.4byte FallarborTown_BattleTentBattleRoom
-	.4byte FallarborTown_PokemonCenter_1F
-	.4byte FallarborTown_PokemonCenter_2F
+	.4byte CianwoodCity_PokemonCenter_1F
+	.4byte CianwoodCity_PokemonCenter_2F
 	.4byte FallarborTown_House1
 	.4byte FallarborTown_House2
 	.4byte DewfordTown_House2
@@ -159,8 +159,8 @@ gMapGroup9::
 	.4byte VerdanturfTown_BattleTentCorridor
 	.4byte VerdanturfTown_BattleTentBattleRoom
 	.4byte VerdanturfTown_Mart
-	.4byte VerdanturfTown_PokemonCenter_1F
-	.4byte VerdanturfTown_PokemonCenter_2F
+	.4byte MahoganyTown_PokemonCenter_1F
+	.4byte MahoganyTown_PokemonCenter_2F
 	.4byte VerdanturfTown_WandasHouse
 	.4byte VerdanturfTown_FriendshipRatersHouse
 	.4byte VerdanturfTown_House
@@ -169,9 +169,9 @@ gMapGroup9::
 gMapGroup10::
 	.4byte FortreeCity_House1
 	.4byte FortreeCity_Gym
-	.4byte FortreeCity_PokemonCenter_1F
-	.4byte FortreeCity_PokemonCenter_2F
-	.4byte FortreeCity_Mart
+	.4byte BlackthornCity_PokemonCenter_1F
+	.4byte BlackthornCity_PokemonCenter_2F
+	.4byte BlackthornCity_Mart
 	.4byte FortreeCity_House2
 	.4byte FortreeCity_House3
 	.4byte FortreeCity_House4

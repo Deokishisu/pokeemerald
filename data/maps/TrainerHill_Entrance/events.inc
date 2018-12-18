@@ -6,8 +6,8 @@ TrainerHill_Entrance_EventObjects: @ 853D874
 	object_event 5, EVENT_OBJ_GFX_COOLTRAINER_M, 0, 14, 15, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, TrainerHill_Entrance_EventScript_268391, 0
 
 TrainerHill_Entrance_MapWarps: @ 853D8EC
-	warp_def 9, 16, 3, 4, MAP_ROUTE111
-	warp_def 10, 16, 3, 4, MAP_ROUTE111
+	warp_def 9, 16, 3, 4, MAP_ROUTE39
+	warp_def 10, 16, 3, 4, MAP_ROUTE39
 	warp_def 9, 1, 3, 0, MAP_TRAINER_HILL_1F
 
 TrainerHill_Entrance_MapCoordEvents: @ 853D904

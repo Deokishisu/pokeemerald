@@ -6,8 +6,8 @@ Route121_SafariZoneEntrance_EventObjects: @ 8533EDC
 Route121_SafariZoneEntrance_MapWarps: @ 8533F24
 	warp_def 2, 5, 0, 0, MAP_SAFARI_ZONE_SOUTH
 	warp_def 3, 5, 0, 0, MAP_SAFARI_ZONE_SOUTH
-	warp_def 14, 13, 0, 0, MAP_ROUTE121
-	warp_def 15, 13, 0, 0, MAP_ROUTE121
+	warp_def 14, 13, 0, 0, MAP_ROUTE23
+	warp_def 15, 13, 0, 0, MAP_ROUTE23
 
 Route121_SafariZoneEntrance_MapCoordEvents: @ 8533F44
 	coord_event 8, 4, 3, VAR_TEMP_1, 0, Route121_SafariZoneEntrance_EventScript_22BC18
