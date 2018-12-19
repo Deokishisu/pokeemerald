@@ -1,4 +1,4 @@
-RustboroCity_CuttersHouse: @ 8483478
+RustboroCity_CuttersHouse::
 	.4byte RustboroCity_CuttersHouse_Layout
 	.4byte RustboroCity_CuttersHouse_MapEvents
 	.4byte RustboroCity_CuttersHouse_MapScripts
@@ -12,4 +12,3 @@ RustboroCity_CuttersHouse: @ 8483478
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

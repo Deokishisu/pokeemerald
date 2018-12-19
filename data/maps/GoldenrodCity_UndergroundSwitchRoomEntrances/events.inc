@@ -12,7 +12,7 @@ GoldenrodCity_UndergroundSwitchRoomEntrances_EventObjects::
 	object_event 11, EVENT_OBJ_GFX_RIVAL, 0, 23, 3, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 1, 0, 0, SlateportCity_PokemonFanClub_EventScript_2C7F16, 0
 
 GoldenrodCity_UndergroundSwitchRoomEntrances_MapWarps::
-	warp_def 23, 3, 0, 4, MAP_GOLDENROD_CITY
+	warp_def 23, 3, 0, 5, MAP_GOLDENROD_CITY_UNDERGROUND
 	warp_def 22, 10, 0, 0, MAP_GOLDENROD_CITY_UNDERGROUND_WAREHOUSE
 	warp_def 23, 10, 0, 1, MAP_GOLDENROD_CITY_UNDERGROUND_WAREHOUSE
 	warp_def 5, 24, 0, 1, MAP_GOLDENROD_CITY_UNDERGROUND

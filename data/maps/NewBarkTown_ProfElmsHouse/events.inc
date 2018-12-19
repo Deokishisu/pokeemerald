@@ -11,6 +11,7 @@ NewBarkTown_ProfElmsHouse_MapWarps::
 	warp_def 3, 7, 0, 0, MAP_NEW_BARK_TOWN
 	warp_def 2, 7, 0, 0, MAP_NEW_BARK_TOWN
 	warp_def 2, 2, 0, 0, MAP_NEW_BARK_TOWN_HOUSE
+
 NewBarkTown_ProfElmsHouse_MapCoordEvents::
 	coord_event 0, 8, 0, VAR_0x4092, 4, LittlerootTown_MaysHouse_1F_EventScript_1F8A4C
 	coord_event 1, 3, 0, VAR_0x408D, 2, LittlerootTown_MaysHouse_1F_EventScript_1F8A67

@@ -12,6 +12,9 @@ static void StartTeleportFieldEffect(void);
 
 bool8 SetUpFieldMove_Teleport(void)
 {
+	gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu; //REMOVE THIS BEFORE RELEASE
+    gPostMenuFieldCallback = FieldCallback_Teleport; //REMOVE THIS BEFORE RELEASE
+	return TRUE; //REMOVE THIS BEFORE RELEASE
     if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
     {
         gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
@@ -30,7 +33,7 @@ static void FieldCallback_Teleport(void)
 
 bool8 FldEff_UseTeleport(void)
 {
-    u8 taskId = oei_task_add();
+	u8 taskId = oei_task_add();
     gTasks[taskId].data[8] = (u32)StartTeleportFieldEffect >> 16;
     gTasks[taskId].data[9] = (u32)StartTeleportFieldEffect;
     SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ON_FOOT);

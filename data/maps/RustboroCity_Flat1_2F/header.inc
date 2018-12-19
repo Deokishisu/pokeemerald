@@ -1,4 +1,4 @@
-RustboroCity_Flat1_2F: @ 8483440
+RustboroCity_Flat1_2F::
 	.4byte RustboroCity_Flat1_2F_Layout
 	.4byte RustboroCity_Flat1_2F_MapEvents
 	.4byte RustboroCity_Flat1_2F_MapScripts
@@ -12,4 +12,3 @@ RustboroCity_Flat1_2F: @ 8483440
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

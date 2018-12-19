@@ -1,4 +1,4 @@
-RustboroCity_House1: @ 848345C
+RustboroCity_House1::
 	.4byte RustboroCity_House1_Layout
 	.4byte RustboroCity_House1_MapEvents
 	.4byte RustboroCity_House1_MapScripts
@@ -12,4 +12,3 @@ RustboroCity_House1: @ 848345C
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

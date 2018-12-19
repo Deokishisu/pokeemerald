@@ -67,8 +67,8 @@ gMapLayouts::
 	.4byte AzaleaTown_Gym_Layout
 	.4byte AzaleaTown_KurtsHouse_Layout
 	.4byte House4_Layout
-	.4byte LavaridgeTown_HerbShop_Layout
-	.4byte LavaridgeTown_Gym_1F_Layout
+	.4byte EcruteakCity_TinTowerGate_Layout
+	.4byte EcruteakCity_Gym_Layout
 	.4byte LavaridgeTown_Gym_B1F_Layout
 	.4byte LavaridgeTown_PokemonCenter_1F_Layout
 	.4byte FallarborTown_LeftoverRSContestLobby_Layout
@@ -268,7 +268,7 @@ gMapLayouts::
 	.4byte BattleElevator_Layout
 	.4byte BattleFrontier_BattleTowerCorridor_Layout
 	.4byte BattleFrontier_BattleTowerBattleRoom_Layout
-	.4byte RustboroCity_DevonCorp_3F_Layout
+	.4byte EcruteakCity_DanceTheater_Layout
 	.4byte EverGrandeCity_PokemonLeague_1F_Layout
 	.4byte Route119_WeatherInstitute_1F_Layout
 	.4byte Route119_WeatherInstitute_2F_Layout
@@ -298,7 +298,7 @@ gMapLayouts::
 	.4byte RustboroCity_Flat2_3F_Layout
 	.4byte SootopolisCity_LotadAndSeedotHouse_Layout
 	.4byte EverGrandeCity_HallOfFame_Layout
-	.4byte LilycoveCity_CoveLilyMotel_1F_Layout
+	.4byte EcruteakCity_WiseTriosRoom_Layout
 	.4byte LilycoveCity_CoveLilyMotel_2F_Layout
 	.4byte Route124_DivingTreasureHuntersHouse_Layout
 	.4byte MtPyre_Exterior_Layout
@@ -514,8 +514,8 @@ gMapLayouts::
 	.4byte AzaleaTown_Gym_Layout
 	.4byte AzaleaTown_KurtsHouse_Layout
 	.4byte House4_Layout
-	.4byte LavaridgeTown_HerbShop_Layout
-	.4byte LavaridgeTown_Gym_1F_Layout
+	.4byte EcruteakCity_TinTowerGate_Layout
+	.4byte EcruteakCity_Gym_Layout
 	.4byte LavaridgeTown_Gym_B1F_Layout
 	.4byte LavaridgeTown_PokemonCenter_1F_Layout
 	.4byte FallarborTown_LeftoverRSContestLobby_Layout
@@ -715,7 +715,7 @@ gMapLayouts::
 	.4byte BattleElevator_Layout
 	.4byte BattleFrontier_BattleTowerCorridor_Layout
 	.4byte BattleFrontier_BattleTowerBattleRoom_Layout
-	.4byte RustboroCity_DevonCorp_3F_Layout
+	.4byte EcruteakCity_DanceTheater_Layout
 	.4byte EverGrandeCity_PokemonLeague_1F_Layout
 	.4byte Route119_WeatherInstitute_1F_Layout
 	.4byte Route119_WeatherInstitute_2F_Layout
@@ -745,7 +745,7 @@ gMapLayouts::
 	.4byte RustboroCity_Flat2_3F_Layout
 	.4byte SootopolisCity_LotadAndSeedotHouse_Layout
 	.4byte EverGrandeCity_HallOfFame_Layout
-	.4byte LilycoveCity_CoveLilyMotel_1F_Layout
+	.4byte EcruteakCity_WiseTriosRoom_Layout
 	.4byte LilycoveCity_CoveLilyMotel_2F_Layout
 	.4byte Route124_DivingTreasureHuntersHouse_Layout
 	.4byte MtPyre_Exterior_Layout
@@ -961,8 +961,8 @@ gMapLayouts::
 	.4byte AzaleaTown_Gym_Layout
 	.4byte AzaleaTown_KurtsHouse_Layout
 	.4byte House4_Layout
-	.4byte LavaridgeTown_HerbShop_Layout
-	.4byte LavaridgeTown_Gym_1F_Layout
+	.4byte EcruteakCity_TinTowerGate_Layout
+	.4byte EcruteakCity_Gym_Layout
 	.4byte LavaridgeTown_Gym_B1F_Layout
 	.4byte LavaridgeTown_PokemonCenter_1F_Layout
 	.4byte FallarborTown_LeftoverRSContestLobby_Layout
@@ -1162,7 +1162,7 @@ gMapLayouts::
 	.4byte BattleElevator_Layout
 	.4byte BattleFrontier_BattleTowerCorridor_Layout
 	.4byte BattleFrontier_BattleTowerBattleRoom_Layout
-	.4byte RustboroCity_DevonCorp_3F_Layout
+	.4byte EcruteakCity_DanceTheater_Layout
 	.4byte EverGrandeCity_PokemonLeague_1F_Layout
 	.4byte Route119_WeatherInstitute_1F_Layout
 	.4byte Route119_WeatherInstitute_2F_Layout
@@ -1192,7 +1192,7 @@ gMapLayouts::
 	.4byte RustboroCity_Flat2_3F_Layout
 	.4byte SootopolisCity_LotadAndSeedotHouse_Layout
 	.4byte EverGrandeCity_HallOfFame_Layout
-	.4byte LilycoveCity_CoveLilyMotel_1F_Layout
+	.4byte EcruteakCity_WiseTriosRoom_Layout
 	.4byte LilycoveCity_CoveLilyMotel_2F_Layout
 	.4byte Route124_DivingTreasureHuntersHouse_Layout
 	.4byte MtPyre_Exterior_Layout

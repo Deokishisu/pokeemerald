@@ -829,7 +829,7 @@ void UpdateTVScreensOnMap(int width, int height)
         case 2:
             break;
         default:
-            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LILYCOVE_CITY_COVE_LILY_MOTEL_1F) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_COVE_LILY_MOTEL_1F))
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NONE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(NONE))
             {
                 SetTVMetatilesOnMap(width, height, 0x3);
             }

@@ -1,4 +1,4 @@
-LavaridgeTown_Gym_B1F: @ 8482CEC
+LavaridgeTown_Gym_B1F::
 	.4byte LavaridgeTown_Gym_B1F_Layout
 	.4byte LavaridgeTown_Gym_B1F_MapEvents
 	.4byte LavaridgeTown_Gym_B1F_MapScripts
@@ -12,4 +12,3 @@ LavaridgeTown_Gym_B1F: @ 8482CEC
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_GYM
-

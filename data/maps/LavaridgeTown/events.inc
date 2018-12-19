@@ -10,8 +10,8 @@ LavaridgeTown_EventObjects::
 	object_event 9, EVENT_OBJ_GFX_OLD_WOMAN, 0, 4, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LavaridgeTown_EventScript_1EA744, 0
 
 LavaridgeTown_MapWarps::
-	warp_def 12, 15, 0, 0, MAP_LAVARIDGE_TOWN_HERB_SHOP
-	warp_def 5, 15, 0, 0, MAP_LAVARIDGE_TOWN_GYM_1F
+	warp_def 12, 15, 0, 0, MAP_LAVARIDGE_TOWN_MART
+	warp_def 5, 15, 0, 0, MAP_LAVARIDGE_TOWN
 	warp_def 15, 5, 0, 0, MAP_LAVARIDGE_TOWN_MART
 	warp_def 9, 6, 0, 0, MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F
 	warp_def 16, 15, 0, 0, MAP_LAVARIDGE_TOWN_HOUSE

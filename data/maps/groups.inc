@@ -122,15 +122,18 @@ gMapGroup5::
 
 	.align 2
 gMapGroup6::
-	.4byte MauvilleCity_House1
-	.4byte MauvilleCity_House2
 	.4byte EcruteakCity_PokemonCenter_1F
 	.4byte EcruteakCity_PokemonCenter_2F
 	.4byte EcruteakCity_Mart
+	.4byte EcruteakCity_Gym
+	.4byte EcruteakCity_House1
+	.4byte EcruteakCity_House2
+	.4byte EcruteakCity_DanceTheater
+	.4byte EcruteakCity_TinTowerGate
+	.4byte EcruteakCity_WiseTriosRoom
 
 	.align 2
 gMapGroup7::
-	.4byte RustboroCity_DevonCorp_3F
 	.4byte RustboroCity_Gym
 	.4byte PetalburgCity_WallysHouse
 	.4byte OlivineCity_PokemonCenter_1F
@@ -242,8 +245,6 @@ gMapGroup22::
 
 	.align 2
 gMapGroup23::
-	.4byte LavaridgeTown_HerbShop
-	.4byte LavaridgeTown_Gym_1F
 	.4byte LavaridgeTown_Gym_B1F
 	.4byte LavaridgeTown_House
 	.4byte LavaridgeTown_Mart
@@ -256,7 +257,6 @@ gMapGroup23::
 	.4byte PacifidlogTown_House3
 	.4byte PacifidlogTown_House4
 	.4byte PacifidlogTown_House5
-	.4byte LilycoveCity_CoveLilyMotel_1F
 	.4byte LilycoveCity_CoveLilyMotel_2F
 	.4byte LilycoveCity_LilycoveMuseum_1F
 	.4byte LilycoveCity_LilycoveMuseum_2F

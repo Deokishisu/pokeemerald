@@ -17,3 +17,5 @@ TODO: Remove National Dex requirement for trading with FRLG, replace with Time C
 TODO: Fix other Metal Advance players appearing as Emerald players in link rooms.
 
 TODO: Add switching encounter tables by version and time of day.
+
+TODO: Remove the early return in src/fldeff_teleport.c in function SetUpFieldMove_Teleport(). It was changed to allow Teleport anywhere for debugging purposes.
