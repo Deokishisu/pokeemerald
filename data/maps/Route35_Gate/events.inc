@@ -1,6 +1,6 @@
 Route35_Gate_MapWarps::
-	warp_def 4, 7, 3, 2, MAP_GOLDENROD_CITY
-	warp_def 5, 7, 3, 2, MAP_GOLDENROD_CITY
+	warp_def 4, 7, 3, 11, MAP_GOLDENROD_CITY
+	warp_def 5, 7, 3, 11, MAP_GOLDENROD_CITY
 	warp_def 4, 0, 3, 0, MAP_ROUTE35
 	warp_def 5, 0, 3, 1, MAP_ROUTE35
 

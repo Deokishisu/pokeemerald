@@ -1,8 +1,8 @@
 CherrygroveCity_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_TEACHER, 2, 27, 12, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, OldaleTown_EventScript_1E8EF3, 0
-	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 4, 32, 6, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, OldaleTown_EventScript_1E8EFC, 0
-	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 1, 23, 7, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, OldaleTown_EventScript_1E901F, 0
-	object_event 4, EVENT_OBJ_GFX_FAT_MAN, 3, 7, 12, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, OldaleTown_EventScript_1E9070, 0
+	object_event 1, EVENT_OBJ_GFX_TEACHER, PAL_NPC_BLUE, 27, 12, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, OldaleTown_EventScript_1E8EF3, 0
+	object_event 2, EVENT_OBJ_GFX_OLD_MAN, PAL_NPC_BROWN, 32, 6, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, OldaleTown_EventScript_1E8EFC, 0
+	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_RED, 23, 7, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, OldaleTown_EventScript_1E901F, 0
+	object_event 4, EVENT_OBJ_GFX_FAT_MAN, PAL_NPC_GREEN, 7, 12, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, OldaleTown_EventScript_1E9070, 0
 
 CherrygroveCity_MapWarps::
 	warp_def 17, 7, 0, 0, MAP_CHERRYGROVE_CITY_HOUSE1

@@ -96,27 +96,33 @@ gMapGroup4::
 
 	.align 2
 gMapGroup5::
-	.4byte SlateportCity_SternsShipyard_1F
-	.4byte SlateportCity_SternsShipyard_2F
-	.4byte SlateportCity_BattleTentLobby
-	.4byte SlateportCity_BattleTentCorridor
-	.4byte SlateportCity_BattleTentBattleRoom
-	.4byte SlateportCity_House1
-	.4byte SlateportCity_PokemonFanClub
-	.4byte SlateportCity_OceanicMuseum_1F
-	.4byte SlateportCity_OceanicMuseum_2F
-	.4byte SlateportCity_Harbor
-	.4byte SlateportCity_House2
 	.4byte GoldenrodCity_PokemonCenter_1F
 	.4byte GoldenrodCity_PokemonCenter_2F
-	.4byte SlateportCity_Mart
+	.4byte GoldenrodCity_Gym
+	.4byte GoldenrodCity_House1
+	.4byte GoldenrodCity_House2
+	.4byte GoldenrodCity_NameRatersHouse
+	.4byte GoldenrodCity_BillsFamilysHouse
+	.4byte GoldenrodCity_FlowerShop
+	.4byte GoldenrodCity_BikeShop
+	.4byte GoldenrodCity_GameCorner
+	.4byte GoldenrodCity_MagnetTrainStation
+	.4byte GoldenrodCity_UndergroundSwitchRoomEntrances
+	.4byte GoldenrodCity_Underground
+	.4byte GoldenrodCity_UndergroundWarehouse
+	.4byte GoldenrodCity_DepartmentStore_B1F
+	.4byte GoldenrodCity_DepartmentStore_1F
+	.4byte GoldenrodCity_DepartmentStore_2F
+	.4byte GoldenrodCity_DepartmentStore_3F
+	.4byte GoldenrodCity_DepartmentStore_4F
+	.4byte GoldenrodCity_DepartmentStore_5F
+	.4byte GoldenrodCity_DepartmentStore_6F
+	.4byte GoldenrodCity_DepartmentStoreRooftop
+	.4byte GoldenrodCity_DepartmentStoreElevator
 
 	.align 2
 gMapGroup6::
-	.4byte MauvilleCity_Gym
-	.4byte MauvilleCity_BikeShop
 	.4byte MauvilleCity_House1
-	.4byte MauvilleCity_GameCorner
 	.4byte MauvilleCity_House2
 	.4byte EcruteakCity_PokemonCenter_1F
 	.4byte EcruteakCity_PokemonCenter_2F
@@ -124,8 +130,6 @@ gMapGroup6::
 
 	.align 2
 gMapGroup7::
-	.4byte RustboroCity_DevonCorp_1F
-	.4byte RustboroCity_DevonCorp_2F
 	.4byte RustboroCity_DevonCorp_3F
 	.4byte RustboroCity_Gym
 	.4byte PetalburgCity_WallysHouse
@@ -141,6 +145,7 @@ gMapGroup7::
 	.4byte RustboroCity_Flat2_2F
 	.4byte RustboroCity_Flat2_3F
 	.4byte RustboroCity_House3
+	.4byte SlateportCity_Harbor
 
 	.align 2
 gMapGroup8::
@@ -259,7 +264,6 @@ gMapGroup23::
 	.4byte LilycoveCity_ContestHall
 	.4byte LilycoveCity_PokemonCenter_1F
 	.4byte LilycoveCity_PokemonCenter_2F
-	.4byte LilycoveCity_UnusedMart
 	.4byte LilycoveCity_PokemonTrainerFanClub
 	.4byte LilycoveCity_Harbor
 	.4byte LilycoveCity_MoveDeletersHouse
@@ -267,13 +271,6 @@ gMapGroup23::
 	.4byte LilycoveCity_House2
 	.4byte LilycoveCity_House3
 	.4byte LilycoveCity_House4
-	.4byte LilycoveCity_DepartmentStore_1F
-	.4byte LilycoveCity_DepartmentStore_2F
-	.4byte LilycoveCity_DepartmentStore_3F
-	.4byte LilycoveCity_DepartmentStore_4F
-	.4byte LilycoveCity_DepartmentStore_5F
-	.4byte LilycoveCity_DepartmentStoreRooftop
-	.4byte LilycoveCity_DepartmentStoreElevator
 	.4byte MossdeepCity_Gym
 	.4byte MossdeepCity_House1
 	.4byte MossdeepCity_House2
@@ -328,6 +325,9 @@ gMapGroup23::
 	.4byte Route116_TunnelersRestHouse
 	.4byte Route114_LanettesHouse
 	.4byte Route121_SafariZoneEntrance
+	.4byte SlateportCity_BattleTentLobby
+	.4byte SlateportCity_BattleTentCorridor
+	.4byte SlateportCity_BattleTentBattleRoom
 
 	.align 2
 gMapGroup24::

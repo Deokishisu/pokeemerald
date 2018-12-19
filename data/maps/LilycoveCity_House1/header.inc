@@ -1,4 +1,4 @@
-LilycoveCity_House1: @ 8483788
+LilycoveCity_House1::
 	.4byte House1_Layout
 	.4byte LilycoveCity_House1_MapEvents
 	.4byte LilycoveCity_House1_MapScripts
@@ -12,4 +12,3 @@ LilycoveCity_House1: @ 8483788
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

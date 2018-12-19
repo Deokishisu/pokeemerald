@@ -1,4 +1,4 @@
-SlateportCity_Harbor: @ 84831D8
+SlateportCity_Harbor::
 	.4byte Harbor_Layout
 	.4byte SlateportCity_Harbor_MapEvents
 	.4byte SlateportCity_Harbor_MapScripts
@@ -12,4 +12,3 @@ SlateportCity_Harbor: @ 84831D8
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

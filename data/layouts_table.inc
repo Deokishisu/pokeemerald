@@ -80,19 +80,19 @@ gMapLayouts::
 	.4byte PacifidlogTown_House2_Layout
 	.4byte VioletCity_Gym_Layout
 	.4byte HouseWithBed_Layout
-	.4byte SlateportCity_SternsShipyard_1F_Layout
-	.4byte SlateportCity_SternsShipyard_2F_Layout
+	.4byte GoldenrodCity_MagnetTrainStation_Layout
+	.4byte GoldenrodCity_FlowerShop_Layout
 	.4byte UnknownMap_084294C4_Layout
 	.4byte UnknownMap_084294E8_Layout
-	.4byte SlateportCity_PokemonFanClub_Layout
-	.4byte SlateportCity_OceanicMuseum_1F_Layout
-	.4byte SlateportCity_OceanicMuseum_2F_Layout
+	.4byte GoldenrodCity_UndergroundSwitchRoomEntrances_Layout
+	.4byte GoldenrodCity_Underground_Layout
+	.4byte GoldenrodCity_UndergroundWarehouse_Layout
 	.4byte Harbor_Layout
-	.4byte MauvilleCity_Gym_Layout
-	.4byte MauvilleCity_BikeShop_Layout
-	.4byte MauvilleCity_GameCorner_Layout
-	.4byte RustboroCity_DevonCorp_1F_Layout
-	.4byte RustboroCity_DevonCorp_2F_Layout
+	.4byte GoldenrodCity_Gym_Layout
+	.4byte GoldenrodCity_BikeShop_Layout
+	.4byte GoldenrodCity_GameCorner_Layout
+	.4byte GoldenrodCity_DepartmentStore_6F_Layout
+	.4byte GoldenrodCity_DepartmentStore_B1F_Layout
 	.4byte RustboroCity_Gym_Layout
 	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
@@ -256,12 +256,12 @@ gMapLayouts::
 	.4byte Route110_TrickHousePuzzle8_Layout
 	.4byte FortreeCity_DecorationShop_Layout
 	.4byte Route110_SeasideCyclingRoadEntrance_Layout
-	.4byte LilycoveCity_DepartmentStore_1F_Layout
-	.4byte LilycoveCity_DepartmentStore_2F_Layout
-	.4byte LilycoveCity_DepartmentStore_3F_Layout
-	.4byte LilycoveCity_DepartmentStore_4F_Layout
-	.4byte LilycoveCity_DepartmentStore_5F_Layout
-	.4byte LilycoveCity_DepartmentStoreRooftop_Layout
+	.4byte GoldenrodCity_DepartmentStore_1F_Layout
+	.4byte GoldenrodCity_DepartmentStore_2F_Layout
+	.4byte GoldenrodCity_DepartmentStore_3F_Layout
+	.4byte GoldenrodCity_DepartmentStore_4F_Layout
+	.4byte GoldenrodCity_DepartmentStore_5F_Layout
+	.4byte GoldenrodCity_DepartmentStoreRooftop_Layout
 	.4byte Route130_Layout
 	.4byte BattleFrontier_BattleTowerLobby_Layout
 	.4byte BattleFrontier_OutsideWest_Layout
@@ -272,7 +272,7 @@ gMapLayouts::
 	.4byte EverGrandeCity_PokemonLeague_1F_Layout
 	.4byte Route119_WeatherInstitute_1F_Layout
 	.4byte Route119_WeatherInstitute_2F_Layout
-	.4byte LilycoveCity_DepartmentStoreElevator_Layout
+	.4byte GoldenrodCity_DepartmentStoreElevator_Layout
 	.4byte Underwater1_Layout
 	.4byte MossdeepCity_SpaceCenter_1F_Layout
 	.4byte MossdeepCity_SpaceCenter_2F_Layout
@@ -527,19 +527,19 @@ gMapLayouts::
 	.4byte PacifidlogTown_House2_Layout
 	.4byte VioletCity_Gym_Layout
 	.4byte HouseWithBed_Layout
-	.4byte SlateportCity_SternsShipyard_1F_Layout
-	.4byte SlateportCity_SternsShipyard_2F_Layout
+	.4byte GoldenrodCity_MagnetTrainStation_Layout
+	.4byte GoldenrodCity_FlowerShop_Layout
 	.4byte UnknownMap_084294C4_Layout
 	.4byte UnknownMap_084294E8_Layout
-	.4byte SlateportCity_PokemonFanClub_Layout
-	.4byte SlateportCity_OceanicMuseum_1F_Layout
-	.4byte SlateportCity_OceanicMuseum_2F_Layout
+	.4byte GoldenrodCity_UndergroundSwitchRoomEntrances_Layout
+	.4byte GoldenrodCity_Underground_Layout
+	.4byte GoldenrodCity_UndergroundWarehouse_Layout
 	.4byte Harbor_Layout
-	.4byte MauvilleCity_Gym_Layout
-	.4byte MauvilleCity_BikeShop_Layout
-	.4byte MauvilleCity_GameCorner_Layout
-	.4byte RustboroCity_DevonCorp_1F_Layout
-	.4byte RustboroCity_DevonCorp_2F_Layout
+	.4byte GoldenrodCity_Gym_Layout
+	.4byte GoldenrodCity_BikeShop_Layout
+	.4byte GoldenrodCity_GameCorner_Layout
+	.4byte GoldenrodCity_DepartmentStore_6F_Layout
+	.4byte GoldenrodCity_DepartmentStore_B1F_Layout
 	.4byte RustboroCity_Gym_Layout
 	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
@@ -703,12 +703,12 @@ gMapLayouts::
 	.4byte Route110_TrickHousePuzzle8_Layout
 	.4byte FortreeCity_DecorationShop_Layout
 	.4byte Route110_SeasideCyclingRoadEntrance_Layout
-	.4byte LilycoveCity_DepartmentStore_1F_Layout
-	.4byte LilycoveCity_DepartmentStore_2F_Layout
-	.4byte LilycoveCity_DepartmentStore_3F_Layout
-	.4byte LilycoveCity_DepartmentStore_4F_Layout
-	.4byte LilycoveCity_DepartmentStore_5F_Layout
-	.4byte LilycoveCity_DepartmentStoreRooftop_Layout
+	.4byte GoldenrodCity_DepartmentStore_1F_Layout
+	.4byte GoldenrodCity_DepartmentStore_2F_Layout
+	.4byte GoldenrodCity_DepartmentStore_3F_Layout
+	.4byte GoldenrodCity_DepartmentStore_4F_Layout
+	.4byte GoldenrodCity_DepartmentStore_5F_Layout
+	.4byte GoldenrodCity_DepartmentStoreRooftop_Layout
 	.4byte Route130_Layout
 	.4byte BattleFrontier_BattleTowerLobby_Layout
 	.4byte BattleFrontier_OutsideWest_Layout
@@ -719,7 +719,7 @@ gMapLayouts::
 	.4byte EverGrandeCity_PokemonLeague_1F_Layout
 	.4byte Route119_WeatherInstitute_1F_Layout
 	.4byte Route119_WeatherInstitute_2F_Layout
-	.4byte LilycoveCity_DepartmentStoreElevator_Layout
+	.4byte GoldenrodCity_DepartmentStoreElevator_Layout
 	.4byte Underwater1_Layout
 	.4byte MossdeepCity_SpaceCenter_1F_Layout
 	.4byte MossdeepCity_SpaceCenter_2F_Layout
@@ -974,19 +974,19 @@ gMapLayouts::
 	.4byte PacifidlogTown_House2_Layout
 	.4byte VioletCity_Gym_Layout
 	.4byte HouseWithBed_Layout
-	.4byte SlateportCity_SternsShipyard_1F_Layout
-	.4byte SlateportCity_SternsShipyard_2F_Layout
+	.4byte GoldenrodCity_MagnetTrainStation_Layout
+	.4byte GoldenrodCity_FlowerShop_Layout
 	.4byte UnknownMap_084294C4_Layout
 	.4byte UnknownMap_084294E8_Layout
-	.4byte SlateportCity_PokemonFanClub_Layout
-	.4byte SlateportCity_OceanicMuseum_1F_Layout
-	.4byte SlateportCity_OceanicMuseum_2F_Layout
+	.4byte GoldenrodCity_UndergroundSwitchRoomEntrances_Layout
+	.4byte GoldenrodCity_Underground_Layout
+	.4byte GoldenrodCity_UndergroundWarehouse_Layout
 	.4byte Harbor_Layout
-	.4byte MauvilleCity_Gym_Layout
-	.4byte MauvilleCity_BikeShop_Layout
-	.4byte MauvilleCity_GameCorner_Layout
-	.4byte RustboroCity_DevonCorp_1F_Layout
-	.4byte RustboroCity_DevonCorp_2F_Layout
+	.4byte GoldenrodCity_Gym_Layout
+	.4byte GoldenrodCity_BikeShop_Layout
+	.4byte GoldenrodCity_GameCorner_Layout
+	.4byte GoldenrodCity_DepartmentStore_6F_Layout
+	.4byte GoldenrodCity_DepartmentStore_B1F_Layout
 	.4byte RustboroCity_Gym_Layout
 	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
@@ -1150,12 +1150,12 @@ gMapLayouts::
 	.4byte Route110_TrickHousePuzzle8_Layout
 	.4byte FortreeCity_DecorationShop_Layout
 	.4byte Route110_SeasideCyclingRoadEntrance_Layout
-	.4byte LilycoveCity_DepartmentStore_1F_Layout
-	.4byte LilycoveCity_DepartmentStore_2F_Layout
-	.4byte LilycoveCity_DepartmentStore_3F_Layout
-	.4byte LilycoveCity_DepartmentStore_4F_Layout
-	.4byte LilycoveCity_DepartmentStore_5F_Layout
-	.4byte LilycoveCity_DepartmentStoreRooftop_Layout
+	.4byte GoldenrodCity_DepartmentStore_1F_Layout
+	.4byte GoldenrodCity_DepartmentStore_2F_Layout
+	.4byte GoldenrodCity_DepartmentStore_3F_Layout
+	.4byte GoldenrodCity_DepartmentStore_4F_Layout
+	.4byte GoldenrodCity_DepartmentStore_5F_Layout
+	.4byte GoldenrodCity_DepartmentStoreRooftop_Layout
 	.4byte Route130_Layout
 	.4byte BattleFrontier_BattleTowerLobby_Layout
 	.4byte BattleFrontier_OutsideWest_Layout
@@ -1166,7 +1166,7 @@ gMapLayouts::
 	.4byte EverGrandeCity_PokemonLeague_1F_Layout
 	.4byte Route119_WeatherInstitute_1F_Layout
 	.4byte Route119_WeatherInstitute_2F_Layout
-	.4byte LilycoveCity_DepartmentStoreElevator_Layout
+	.4byte GoldenrodCity_DepartmentStoreElevator_Layout
 	.4byte Underwater1_Layout
 	.4byte MossdeepCity_SpaceCenter_1F_Layout
 	.4byte MossdeepCity_SpaceCenter_2F_Layout

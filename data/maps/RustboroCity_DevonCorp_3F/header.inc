@@ -1,4 +1,4 @@
-RustboroCity_DevonCorp_3F: @ 848337C
+RustboroCity_DevonCorp_3F::
 	.4byte RustboroCity_DevonCorp_3F_Layout
 	.4byte RustboroCity_DevonCorp_3F_MapEvents
 	.4byte RustboroCity_DevonCorp_3F_MapScripts
@@ -12,4 +12,3 @@ RustboroCity_DevonCorp_3F: @ 848337C
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

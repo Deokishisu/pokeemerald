@@ -1,4 +1,4 @@
-VerdanturfTown_Mart: @ 8482EAC
+VerdanturfTown_Mart::
 	.4byte Mart_Layout
 	.4byte VerdanturfTown_Mart_MapEvents
 	.4byte VerdanturfTown_Mart_MapScripts
@@ -12,4 +12,3 @@ VerdanturfTown_Mart: @ 8482EAC
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

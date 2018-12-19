@@ -1729,22 +1729,22 @@ void SetDepartmentStoreFloorVar(void)
     u8 deptStoreFloor;
     switch (gSaveBlock1Ptr->warp2.mapNum)
     {
-        case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_1F):
+        case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_1F):
             deptStoreFloor = 4;
             break;
-        case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_2F):
+        case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_2F):
             deptStoreFloor = 5;
             break;
-        case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_3F):
+        case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_3F):
             deptStoreFloor = 6;
             break;
-        case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_4F):
+        case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_4F):
             deptStoreFloor = 7;
             break;
-        case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_5F):
+        case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_5F):
             deptStoreFloor = 8;
             break;
-        case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP):
+        case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_ROOFTOP):
             deptStoreFloor = 15;
             break;
         default:
@@ -1763,23 +1763,23 @@ u16 sub_81399F4(void)
     {
         switch (gSaveBlock1Ptr->warp2.mapNum)
         {
-            case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_5F):
+            case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_5F):
                 gUnknown_0203AB60 = 0;
                 gUnknown_0203AB62 = 0;
                 break;
-            case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_4F):
+            case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_4F):
                 gUnknown_0203AB60 = 0;
                 gUnknown_0203AB62 = 1;
                 break;
-            case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_3F):
+            case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_3F):
                 gUnknown_0203AB60 = 0;
                 gUnknown_0203AB62 = 2;
                 break;
-            case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_2F):
+            case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_2F):
                 gUnknown_0203AB60 = 0;
                 gUnknown_0203AB62 = 3;
                 break;
-            case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_1F):
+            case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_1F):
                 gUnknown_0203AB60 = 0;
                 gUnknown_0203AB62 = 4;
                 break;

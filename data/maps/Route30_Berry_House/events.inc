@@ -1,5 +1,5 @@
 Route30_Berry_House_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_POKEFAN_M, 4, 2, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
+	object_event 1, EVENT_OBJ_GFX_POKEFAN_M, PAL_NPC_BROWN, 2, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
 
 Route30_Berry_House_MapWarps::
 	warp_def 2, 7, 3, 0, MAP_ROUTE30

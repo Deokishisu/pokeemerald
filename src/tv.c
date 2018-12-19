@@ -2813,7 +2813,7 @@ bool8 IsPriceDiscounted(u8 newsKind)
             }
             return FALSE;
         case POKENEWS_LILYCOVE:
-            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP))
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(GOLDENROD_CITY_DEPARTMENT_STORE_ROOFTOP) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_ROOFTOP))
             {
                 return TRUE;
             }

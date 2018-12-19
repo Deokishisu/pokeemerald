@@ -1,4 +1,4 @@
-PacifidlogTown_House2: @ 8482FA8
+PacifidlogTown_House2::
 	.4byte PacifidlogTown_House2_Layout
 	.4byte PacifidlogTown_House2_MapEvents
 	.4byte PacifidlogTown_House2_MapScripts
@@ -12,4 +12,3 @@ PacifidlogTown_House2: @ 8482FA8
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_NORMAL
-

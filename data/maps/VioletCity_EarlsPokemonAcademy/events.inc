@@ -1,9 +1,9 @@
 VioletCity_EarlsPokemonAcademy_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_GAMEBOY_KID, 3, 3, 11, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F5F, 0
-	object_event 2, EVENT_OBJ_GFX_GAMEBOY_KID, 1, 4, 11, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F68, 0
-	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 2, 4, 7, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F71, 0
-	object_event 4, EVENT_OBJ_GFX_YOUNGSTER, 1, 2, 5, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F83, 0
-	object_event 5, EVENT_OBJ_GFX_FAT_MAN, 3, 4, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, RustboroCity_PokemonSchool_EventScript_213F95, 0
+	object_event 1, EVENT_OBJ_GFX_GAMEBOY_KID, PAL_NPC_GREEN, 3, 11, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F5F, 0
+	object_event 2, EVENT_OBJ_GFX_GAMEBOY_KID, PAL_NPC_RED, 4, 11, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F68, 0
+	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_BLUE, 4, 7, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F71, 0
+	object_event 4, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_RED, 2, 5, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, RustboroCity_PokemonSchool_EventScript_213F83, 0
+	object_event 5, EVENT_OBJ_GFX_FAT_MAN, PAL_NPC_GREEN, 4, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, RustboroCity_PokemonSchool_EventScript_213F95, 0
 	object_event 6, EVENT_OBJ_GFX_BOOK, 0, 2, 4, 3, MOVEMENT_TYPE_NONE, 0, 0, FALSE, 0, NULL, 0
 
 VioletCity_EarlsPokemonAcademy_MapWarps::

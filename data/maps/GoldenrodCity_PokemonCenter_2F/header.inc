@@ -5,7 +5,7 @@ GoldenrodCity_PokemonCenter_2F::
 	.4byte 0x0
 	.2byte MUS_POKECEN
 	.2byte 62
-	.byte MAPSEC_SLATEPORT_CITY
+	.byte MAPSEC_GOLDENROD_CITY
 	.byte 0
 	.byte WEATHER_NONE
 	.byte MAP_TYPE_INDOOR
