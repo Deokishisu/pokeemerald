@@ -1,5 +1,5 @@
 Route38_Gate_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_OFFICER, 0, 5, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
+	object_event 1, EVENT_OBJ_GFX_OFFICER, PAL_NPC_RED, 5, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
 
 Route38_Gate_MapWarps::
 	warp_def 9, 4, 3, 13, MAP_ECRUTEAK_CITY

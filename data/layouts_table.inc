@@ -93,11 +93,11 @@ gMapLayouts::
 	.4byte GoldenrodCity_GameCorner_Layout
 	.4byte GoldenrodCity_DepartmentStore_6F_Layout
 	.4byte GoldenrodCity_DepartmentStore_B1F_Layout
-	.4byte RustboroCity_Gym_Layout
+	.4byte OlivineCity_Gym_Layout
 	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
 	.4byte RustboroCity_House1_Layout
-	.4byte RustboroCity_CuttersHouse_Layout
+	.4byte OlivineCity_Cafe_Layout
 	.4byte FortreeCity_House1_Layout
 	.4byte FortreeCity_Gym_Layout
 	.4byte FortreeCity_House2_Layout
@@ -312,8 +312,8 @@ gMapLayouts::
 	.4byte AbandonedShip_HiddenFloorRooms_Layout
 	.4byte ScorchedSlab_Layout
 	.4byte UnknownMap_0845A394_Layout
-	.4byte RustboroCity_Flat1_1F_Layout
-	.4byte RustboroCity_Flat1_2F_Layout
+	.4byte OlivineCity_PortPassage_Layout
+	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
 	.4byte AquaHideout_UnusedRubyMap1_Layout
 	.4byte AquaHideout_UnusedRubyMap2_Layout
@@ -540,11 +540,11 @@ gMapLayouts::
 	.4byte GoldenrodCity_GameCorner_Layout
 	.4byte GoldenrodCity_DepartmentStore_6F_Layout
 	.4byte GoldenrodCity_DepartmentStore_B1F_Layout
-	.4byte RustboroCity_Gym_Layout
+	.4byte OlivineCity_Gym_Layout
 	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
 	.4byte RustboroCity_House1_Layout
-	.4byte RustboroCity_CuttersHouse_Layout
+	.4byte OlivineCity_Cafe_Layout
 	.4byte FortreeCity_House1_Layout
 	.4byte FortreeCity_Gym_Layout
 	.4byte FortreeCity_House2_Layout
@@ -759,8 +759,8 @@ gMapLayouts::
 	.4byte AbandonedShip_HiddenFloorRooms_Layout
 	.4byte ScorchedSlab_Layout
 	.4byte UnknownMap_0845A394_Layout
-	.4byte RustboroCity_Flat1_1F_Layout
-	.4byte RustboroCity_Flat1_2F_Layout
+	.4byte OlivineCity_PortPassage_Layout
+	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
 	.4byte AquaHideout_UnusedRubyMap1_Layout
 	.4byte AquaHideout_UnusedRubyMap2_Layout
@@ -987,11 +987,11 @@ gMapLayouts::
 	.4byte GoldenrodCity_GameCorner_Layout
 	.4byte GoldenrodCity_DepartmentStore_6F_Layout
 	.4byte GoldenrodCity_DepartmentStore_B1F_Layout
-	.4byte RustboroCity_Gym_Layout
+	.4byte OlivineCity_Gym_Layout
 	.4byte VioletCity_EarlsPokemonAcademy_Layout
 	.4byte RustboroCity_House_Layouts
 	.4byte RustboroCity_House1_Layout
-	.4byte RustboroCity_CuttersHouse_Layout
+	.4byte OlivineCity_Cafe_Layout
 	.4byte FortreeCity_House1_Layout
 	.4byte FortreeCity_Gym_Layout
 	.4byte FortreeCity_House2_Layout
@@ -1206,8 +1206,8 @@ gMapLayouts::
 	.4byte AbandonedShip_HiddenFloorRooms_Layout
 	.4byte ScorchedSlab_Layout
 	.4byte UnknownMap_0845A394_Layout
-	.4byte RustboroCity_Flat1_1F_Layout
-	.4byte RustboroCity_Flat1_2F_Layout
+	.4byte OlivineCity_PortPassage_Layout
+	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
 	.4byte AquaHideout_UnusedRubyMap1_Layout
 	.4byte AquaHideout_UnusedRubyMap2_Layout

@@ -134,21 +134,16 @@ gMapGroup6::
 
 	.align 2
 gMapGroup7::
-	.4byte RustboroCity_Gym
-	.4byte PetalburgCity_WallysHouse
 	.4byte OlivineCity_PokemonCenter_1F
 	.4byte OlivineCity_PokemonCenter_2F
 	.4byte OlivineCity_Mart
-	.4byte RustboroCity_Flat1_1F
-	.4byte RustboroCity_Flat1_2F
-	.4byte RustboroCity_House1
-	.4byte RustboroCity_CuttersHouse
-	.4byte RustboroCity_House2
-	.4byte RustboroCity_Flat2_1F
-	.4byte RustboroCity_Flat2_2F
-	.4byte RustboroCity_Flat2_3F
-	.4byte RustboroCity_House3
-	.4byte SlateportCity_Harbor
+	.4byte OlivineCity_Gym
+	.4byte OlivineCity_House1
+	.4byte OlivineCity_House2
+	.4byte OlivineCity_House3
+	.4byte OlivineCity_Cafe
+	.4byte OlivineCity_PortPassage
+	.4byte OlivineCity_Port
 
 	.align 2
 gMapGroup8::
@@ -245,6 +240,11 @@ gMapGroup22::
 
 	.align 2
 gMapGroup23::
+	.4byte PetalburgCity_WallysHouse
+	.4byte RustboroCity_Flat2_1F
+	.4byte RustboroCity_Flat2_2F
+	.4byte RustboroCity_Flat2_3F
+	.4byte SlateportCity_Harbor
 	.4byte LavaridgeTown_Gym_B1F
 	.4byte LavaridgeTown_House
 	.4byte LavaridgeTown_Mart
