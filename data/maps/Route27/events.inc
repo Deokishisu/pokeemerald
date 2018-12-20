@@ -43,10 +43,6 @@ Route27_EventObjects::
 	object_event 42, EVENT_OBJ_GFX_ITEM_BALL, 0, 24, 42, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route119_EventScript_290F3B, FLAG_ITEM_ROUTE_119_ELIXIR_2
 	object_event 43, EVENT_OBJ_GFX_PHARMACIST, 0, 28, 25, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, FLAG_HIDE_ROUTE_119_SCOTT
 
-Route27_MapWarps::
-	warp_def 6, 32, 0, 0, MAP_ROUTE119_WEATHER_INSTITUTE_1F
-	warp_def 33, 109, 0, 0, MAP_ROUTE119_HOUSE
-
 Route27_MapCoordEvents::
 	coord_event 25, 31, 0, VAR_0x4072, 0, Route119_EventScript_1F4472
 	coord_event 26, 31, 0, VAR_0x4072, 0, Route119_EventScript_1F447D
@@ -95,4 +91,4 @@ Route27_MapBGEvents::
 	bg_event 28, 9, 0, BG_EVENT_PLAYER_FACING_ANY, Route119_EventScript_1F49E3
 
 Route27_MapEvents::
-	map_events Route27_EventObjects, Route27_MapWarps, Route27_MapCoordEvents, Route27_MapBGEvents
+	map_events Route27_EventObjects, 0x0, Route27_MapCoordEvents, Route27_MapBGEvents

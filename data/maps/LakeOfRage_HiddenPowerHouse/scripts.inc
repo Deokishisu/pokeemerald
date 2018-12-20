@@ -1,4 +1,4 @@
-VerdanturfTown_FriendshipRatersHouse_MapScripts:: @ 8203030
+LakeOfRage_HiddenPowerHouse_MapScripts:: @ 8203030
 	.byte 0
 
 VerdanturfTown_FriendshipRatersHouse_EventScript_203031:: @ 8203031

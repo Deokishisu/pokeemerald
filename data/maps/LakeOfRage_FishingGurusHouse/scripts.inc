@@ -1,4 +1,4 @@
-VerdanturfTown_Mart_MapScripts:: @ 8202586
+LakeOfRage_FishingGurusHouse_MapScripts:: @ 8202586
 	.byte 0
 
 VerdanturfTown_Mart_EventScript_202587:: @ 8202587

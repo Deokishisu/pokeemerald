@@ -158,12 +158,10 @@ gMapGroup8::
 
 	.align 2
 gMapGroup9::
-	.4byte VerdanturfTown_Mart
 	.4byte MahoganyTown_PokemonCenter_1F
 	.4byte MahoganyTown_PokemonCenter_2F
 	.4byte MahoganyTown_Gym
 	.4byte VerdanturfTown_WandasHouse
-	.4byte VerdanturfTown_FriendshipRatersHouse
 	.4byte VerdanturfTown_House
 
 	.align 2
@@ -182,64 +180,72 @@ gMapGroup10::
 
 	.align 2
 gMapGroup11::
-	.4byte Route29_Gate
+	.4byte LakeOfRage_HiddenPowerHouse
+	.4byte LakeOfRage_FishingGurusHouse
 
 	.align 2
 gMapGroup12::
+	.4byte VerdanturfTown_BattleTentLobby
+
+	.align 2
+gMapGroup13::
+	.4byte Route29_Gate
+
+	.align 2
+gMapGroup14::
 	.4byte Route30_Berry_House
 	.4byte Route30_Mr_Pokemons_House
 
 	.align 2
-gMapGroup13::
+gMapGroup15::
 	.4byte Route31_Gate
 
 	.align 2
-gMapGroup14::
+gMapGroup16::
 	.4byte Route32_Gate
 	.4byte Route32_PokemonCenter_1F
 	.4byte Route32_PokemonCenter_2F
 
 	.align 2
-gMapGroup15::
+gMapGroup17::
 	.4byte Route34_Gate1
 	.4byte Route34_Gate2
 	.4byte Route34_PokemonDayCare
 
 	.align 2
-gMapGroup16::
+gMapGroup18::
 	.4byte Route35_Gate
 	.4byte Route35_National_Park_Gate
 
 	.align 2
-gMapGroup17::
+gMapGroup19::
 	.4byte Route36_Gate
 	.4byte Route36_National_Park_Gate
 
 	.align 2
-gMapGroup18::
+gMapGroup20::
 	.4byte Route38_Gate
 
 	.align 2
-gMapGroup19::
+gMapGroup21::
 	.4byte Route39_MooMooFarmHouse
 	.4byte Route39_MooMooFarmBarn
 
 	.align 2
-gMapGroup20::
+gMapGroup22::
 	.4byte Route40_BattleTower_Gate
 
 	.align 2
-gMapGroup21::
+gMapGroup23::
 	.4byte Route42_Gate
 
 	.align 2
-gMapGroup22::
+gMapGroup24::
 	.4byte Route43_Gate1
 	.4byte Route43_Gate2
 
 	.align 2
-gMapGroup23::
-	.4byte VerdanturfTown_BattleTentLobby
+gMapGroup25::
 	.4byte VerdanturfTown_BattleTentCorridor
 	.4byte VerdanturfTown_BattleTentBattleRoom
 	.4byte FallarborTown_BattleTentLobby
@@ -330,7 +336,7 @@ gMapGroup23::
 	.4byte SlateportCity_BattleTentBattleRoom
 
 	.align 2
-gMapGroup24::
+gMapGroup26::
 	.4byte SproutTower_1F
 	.4byte SproutTower_2F
 	.4byte SproutTower_3F
@@ -441,7 +447,7 @@ gMapGroup24::
 	.4byte MeteorFalls_StevensCave
 
 	.align 2
-gMapGroup25::
+gMapGroup27::
 	.4byte SecretBase_RedCave1
 	.4byte SecretBase_BrownCave1
 	.4byte SecretBase_BlueCave1
@@ -505,7 +511,7 @@ gMapGroup25::
 	.4byte UnionRoom
 
 	.align 2
-gMapGroup26::
+gMapGroup28::
 	.4byte SafariZone_Northwest
 	.4byte SafariZone_North
 	.4byte SafariZone_Southwest
@@ -597,16 +603,16 @@ gMapGroup26::
 	.4byte TrainerHill_Elevator
 
 	.align 2
-gMapGroup27::
+gMapGroup29::
 	.4byte Route104_Prototype
 	.4byte Route104_PrototypePrettyPetalFlowerShop
 
 	.align 2
-gMapGroup28::
+gMapGroup30::
 	.4byte Route109_SeashoreHouse
 
 	.align 2
-gMapGroup29::
+gMapGroup31::
 	.4byte Route110_TrickHouseEntrance
 	.4byte Route110_TrickHouseEnd
 	.4byte Route110_TrickHouseCorridor
@@ -622,21 +628,21 @@ gMapGroup29::
 	.4byte Route110_SeasideCyclingRoadSouthEntrance
 
 	.align 2
-gMapGroup30::
+gMapGroup32::
 	.4byte Route113_GlassWorkshop
 
 	.align 2
-gMapGroup31::
+gMapGroup33::
 	.4byte Route123_BerryMastersHouse
 
 	.align 2
-gMapGroup32::
+gMapGroup34::
 	.4byte Route119_WeatherInstitute_1F
 	.4byte Route119_WeatherInstitute_2F
 	.4byte Route119_House
 
 	.align 2
-gMapGroup33::
+gMapGroup35::
 	.4byte Route124_DivingTreasureHuntersHouse
 
 	.align 2
@@ -675,3 +681,5 @@ gMapGroups::
 	.4byte gMapGroup31
 	.4byte gMapGroup32
 	.4byte gMapGroup33
+	.4byte gMapGroup34
+	.4byte gMapGroup35

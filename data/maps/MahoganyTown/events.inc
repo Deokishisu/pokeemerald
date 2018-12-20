@@ -6,10 +6,10 @@ MahoganyTown_EventObjects::
 
 MahoganyTown_MapWarps::
 	warp_def 9, 1, 0, 0, MAP_ROUTE43_GATE1
-	warp_def 11, 7, 0, 0, MAP_VERDANTURF_TOWN_MART
+	warp_def 11, 7, 0, 0, MAP_MAHOGANY_TOWN
 	warp_def 15, 13, 0, 0, MAP_MAHOGANY_TOWN_POKEMON_CENTER_1F
-	warp_def 6, 13, 0, 0, MAP_VERDANTURF_TOWN_WANDAS_HOUSE
-	warp_def 17, 7, 0, 1, MAP_RUSTURF_TUNNEL
+	warp_def 6, 13, 0, 0, MAP_MAHOGANY_TOWN
+	warp_def 17, 7, 0, 1, MAP_MAHOGANY_TOWN
 
 MahoganyTown_MapBGEvents::
 	bg_event 12, 5, 0, BG_EVENT_PLAYER_FACING_NORTH, VerdanturfTown_EventScript_271E6A
