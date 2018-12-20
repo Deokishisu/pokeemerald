@@ -1,8 +1,8 @@
 CianwoodCity_PokemonCenter_1F_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_NURSE, 1, 3, 1, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, FallarborTown_PokemonCenter_1F_EventScript_200BE1, 0
-	object_event 2, EVENT_OBJ_GFX_ZGIRL_3, 0, 8, 6, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, FallarborTown_PokemonCenter_1F_EventScript_200BEF, 0
-	object_event 3, EVENT_OBJ_GFX_OLD_MAN, 0, 2, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, FallarborTown_PokemonCenter_1F_EventScript_200BF8, 0
-	object_event 4, EVENT_OBJ_GFX_ZWOMAN_2, 0, 7, 1, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, FallarborTown_PokemonCenter_1F_EventScript_200C01, FLAG_HIDE_FALLORBOR_POKEMON_CENTER_LANETTE
+	object_event 2, EVENT_OBJ_GFX_LASS, PAL_NPC_GREEN, 1, 5, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, 0, 0, FallarborTown_PokemonCenter_1F_EventScript_200BEF, 0
+	object_event 3, EVENT_OBJ_GFX_GYM_GUIDE, PAL_NPC_RED, 5, 3, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, FallarborTown_PokemonCenter_1F_EventScript_200BF8, 0
+	object_event 4, EVENT_OBJ_GFX_SUPER_NERD, PAL_NPC_BLUE, 8, 6, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, FallarborTown_PokemonCenter_1F_EventScript_200C01, FLAG_HIDE_FALLORBOR_POKEMON_CENTER_LANETTE
 
 CianwoodCity_PokemonCenter_1F_MapWarps::
 	warp_def 3, 7, 3, 2, MAP_CIANWOOD_CITY

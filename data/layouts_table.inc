@@ -99,7 +99,7 @@ gMapLayouts::
 	.4byte RustboroCity_House1_Layout
 	.4byte OlivineCity_Cafe_Layout
 	.4byte FortreeCity_House1_Layout
-	.4byte FortreeCity_Gym_Layout
+	.4byte CianwoodCity_Gym_Layout
 	.4byte FortreeCity_House2_Layout
 	.4byte Route104_MrBrineysHouse_Layout
 	.4byte LilycoveCity_LilycoveMuseum_1F_Layout
@@ -107,9 +107,9 @@ gMapLayouts::
 	.4byte LilycoveCity_ContestLobby_Layout
 	.4byte LilycoveCity_ContestHall_Layout
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
-	.4byte MossdeepCity_Gym_Layout
-	.4byte SootopolisCity_Gym_1F_Layout
-	.4byte SootopolisCity_Gym_B1F_Layout
+	.4byte MahoganyTown_Gym_Layout
+	.4byte BlackthornCity_Gym_1F_Layout
+	.4byte BlackthornCity_Gym_B1F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout
@@ -546,7 +546,7 @@ gMapLayouts::
 	.4byte RustboroCity_House1_Layout
 	.4byte OlivineCity_Cafe_Layout
 	.4byte FortreeCity_House1_Layout
-	.4byte FortreeCity_Gym_Layout
+	.4byte CianwoodCity_Gym_Layout
 	.4byte FortreeCity_House2_Layout
 	.4byte Route104_MrBrineysHouse_Layout
 	.4byte LilycoveCity_LilycoveMuseum_1F_Layout
@@ -554,9 +554,9 @@ gMapLayouts::
 	.4byte LilycoveCity_ContestLobby_Layout
 	.4byte LilycoveCity_ContestHall_Layout
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
-	.4byte MossdeepCity_Gym_Layout
-	.4byte SootopolisCity_Gym_1F_Layout
-	.4byte SootopolisCity_Gym_B1F_Layout
+	.4byte MahoganyTown_Gym_Layout
+	.4byte BlackthornCity_Gym_1F_Layout
+	.4byte BlackthornCity_Gym_B1F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout
@@ -993,7 +993,7 @@ gMapLayouts::
 	.4byte RustboroCity_House1_Layout
 	.4byte OlivineCity_Cafe_Layout
 	.4byte FortreeCity_House1_Layout
-	.4byte FortreeCity_Gym_Layout
+	.4byte CianwoodCity_Gym_Layout
 	.4byte FortreeCity_House2_Layout
 	.4byte Route104_MrBrineysHouse_Layout
 	.4byte LilycoveCity_LilycoveMuseum_1F_Layout
@@ -1001,9 +1001,9 @@ gMapLayouts::
 	.4byte LilycoveCity_ContestLobby_Layout
 	.4byte LilycoveCity_ContestHall_Layout
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
-	.4byte MossdeepCity_Gym_Layout
-	.4byte SootopolisCity_Gym_1F_Layout
-	.4byte SootopolisCity_Gym_B1F_Layout
+	.4byte MahoganyTown_Gym_Layout
+	.4byte BlackthornCity_Gym_1F_Layout
+	.4byte BlackthornCity_Gym_B1F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout

@@ -21,7 +21,7 @@ SootopolisCity_EventObjects::
 SootopolisCity_MapWarps::
 	warp_def 43, 31, 0, 0, MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F
 	warp_def 17, 29, 0, 0, MAP_SOOTOPOLIS_CITY_MART
-	warp_def 31, 32, 0, 0, MAP_SOOTOPOLIS_CITY_GYM_1F
+	warp_def 31, 32, 0, 0, MAP_BLACKTHORN_CITY_GYM_1F
 	warp_def 31, 16, 3, 0, MAP_CAVE_OF_ORIGIN_ENTRANCE
 	warp_def 9, 6, 0, 0, MAP_SOOTOPOLIS_CITY_HOUSE1
 	warp_def 45, 6, 0, 0, MAP_SOOTOPOLIS_CITY_HOUSE2

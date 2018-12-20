@@ -14,7 +14,6 @@ LavaridgeTown_MapWarps::
 	warp_def 5, 15, 0, 0, MAP_LAVARIDGE_TOWN
 	warp_def 15, 5, 0, 0, MAP_LAVARIDGE_TOWN_MART
 	warp_def 9, 6, 0, 0, MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F
-	warp_def 16, 15, 0, 0, MAP_LAVARIDGE_TOWN_HOUSE
 	warp_def 9, 2, 3, 3, MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F
 
 LavaridgeTown_MapCoordEvents::

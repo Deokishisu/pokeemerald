@@ -147,23 +147,21 @@ gMapGroup7::
 
 	.align 2
 gMapGroup8::
-	.4byte FallarborTown_BattleTentLobby
-	.4byte FallarborTown_BattleTentCorridor
-	.4byte FallarborTown_BattleTentBattleRoom
 	.4byte CianwoodCity_PokemonCenter_1F
 	.4byte CianwoodCity_PokemonCenter_2F
-	.4byte FallarborTown_House1
-	.4byte FallarborTown_House2
-	.4byte DewfordTown_House2
+	.4byte CianwoodCity_Gym
+	.4byte CianwoodCity_House
+	.4byte CianwoodCity_PhotoStudio
+	.4byte CianwoodCity_Pharmacy
+	.4byte CianwoodCity_ManiasHouse
+	.4byte CianwoodCity_PokeSeersHouse
 
 	.align 2
 gMapGroup9::
-	.4byte VerdanturfTown_BattleTentLobby
-	.4byte VerdanturfTown_BattleTentCorridor
-	.4byte VerdanturfTown_BattleTentBattleRoom
 	.4byte VerdanturfTown_Mart
 	.4byte MahoganyTown_PokemonCenter_1F
 	.4byte MahoganyTown_PokemonCenter_2F
+	.4byte MahoganyTown_Gym
 	.4byte VerdanturfTown_WandasHouse
 	.4byte VerdanturfTown_FriendshipRatersHouse
 	.4byte VerdanturfTown_House
@@ -171,10 +169,11 @@ gMapGroup9::
 	.align 2
 gMapGroup10::
 	.4byte FortreeCity_House1
-	.4byte FortreeCity_Gym
 	.4byte BlackthornCity_PokemonCenter_1F
 	.4byte BlackthornCity_PokemonCenter_2F
 	.4byte BlackthornCity_Mart
+	.4byte BlackthornCity_Gym_1F
+	.4byte BlackthornCity_Gym_B1F
 	.4byte FortreeCity_House2
 	.4byte FortreeCity_House3
 	.4byte FortreeCity_House4
@@ -240,13 +239,17 @@ gMapGroup22::
 
 	.align 2
 gMapGroup23::
-	.4byte PetalburgCity_WallysHouse
+	.4byte VerdanturfTown_BattleTentLobby
+	.4byte VerdanturfTown_BattleTentCorridor
+	.4byte VerdanturfTown_BattleTentBattleRoom
+	.4byte FallarborTown_BattleTentLobby
+	.4byte FallarborTown_BattleTentCorridor
+	.4byte FallarborTown_BattleTentBattleRoom
 	.4byte RustboroCity_Flat2_1F
 	.4byte RustboroCity_Flat2_2F
 	.4byte RustboroCity_Flat2_3F
 	.4byte SlateportCity_Harbor
 	.4byte LavaridgeTown_Gym_B1F
-	.4byte LavaridgeTown_House
 	.4byte LavaridgeTown_Mart
 	.4byte LavaridgeTown_PokemonCenter_1F
 	.4byte LavaridgeTown_PokemonCenter_2F
@@ -271,7 +274,6 @@ gMapGroup23::
 	.4byte LilycoveCity_House2
 	.4byte LilycoveCity_House3
 	.4byte LilycoveCity_House4
-	.4byte MossdeepCity_Gym
 	.4byte MossdeepCity_House1
 	.4byte MossdeepCity_House2
 	.4byte MossdeepCity_PokemonCenter_1F
@@ -284,8 +286,6 @@ gMapGroup23::
 	.4byte MossdeepCity_SpaceCenter_2F
 	.4byte MossdeepCity_GameCorner_1F
 	.4byte MossdeepCity_GameCorner_B1F
-	.4byte SootopolisCity_Gym_1F
-	.4byte SootopolisCity_Gym_B1F
 	.4byte SootopolisCity_PokemonCenter_1F
 	.4byte SootopolisCity_PokemonCenter_2F
 	.4byte SootopolisCity_Mart

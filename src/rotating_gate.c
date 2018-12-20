@@ -621,8 +621,8 @@ static EWRAM_DATA u8 gRotatingGate_PuzzleCount = 0;
 // text
 static s32 GetCurrentMapRotatingGatePuzzleType(void)
 {
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FORTREE_CITY_GYM) &&
-        gSaveBlock1Ptr->location.mapNum == MAP_NUM(FORTREE_CITY_GYM))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NONE) &&
+        gSaveBlock1Ptr->location.mapNum == MAP_NUM(NONE))
     {
         return PUZZLE_FORTREE_CITY_GYM;
     }

@@ -19,7 +19,7 @@ MossdeepCity_EventObjects::
 
 MossdeepCity_MapWarps::
 	warp_def 28, 9, 0, 0, MAP_MOSSDEEP_CITY_HOUSE1
-	warp_def 38, 9, 0, 0, MAP_MOSSDEEP_CITY_GYM
+	warp_def 38, 9, 0, 0, MAP_MAHOGANY_TOWN_GYM
 	warp_def 28, 16, 0, 0, MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F
 	warp_def 67, 25, 0, 0, MAP_MOSSDEEP_CITY_HOUSE2
 	warp_def 37, 18, 0, 0, MAP_MOSSDEEP_CITY_MART

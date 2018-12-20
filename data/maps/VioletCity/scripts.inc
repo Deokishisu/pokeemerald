@@ -74,7 +74,7 @@ PetalburgCity_EventScript_1DC390:: @ 81DC390
 	clearflag FLAG_SPECIAL_FLAG_0x4000
 	fadedefaultbgm
 	clearflag FLAG_SPECIAL_FLAG_0x4001
-	warp MAP_PETALBURG_CITY_WALLYS_HOUSE, 255, 2, 4
+	warp MAP_VIOLET_CITY, 255, 2, 4
 	waitstate
 	releaseall
 	end

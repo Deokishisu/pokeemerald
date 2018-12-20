@@ -1,0 +1,14 @@
+CianwoodCity_ManiasHouse::
+	.4byte House1_Layout
+	.4byte CianwoodCity_ManiasHouse_MapEvents
+	.4byte CianwoodCity_ManiasHouse_MapScripts
+	.4byte 0x0
+	.2byte MUS_MACHI_S2
+	.2byte 59
+	.byte MAPSEC_CIANWOOD_CITY
+	.byte 0
+	.byte WEATHER_NONE
+	.byte MAP_TYPE_INDOOR
+	.2byte 0
+	.byte 0
+	.byte MAP_BATTLE_SCENE_NORMAL

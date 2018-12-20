@@ -10,7 +10,7 @@ BlackthornCity_EventObjects::
 BlackthornCity_MapWarps::
 	warp_def 21, 29, 0, 0, MAP_BLACKTHORN_CITY_POKEMON_CENTER_1F
 	warp_def 10, 3, 0, 0, MAP_FORTREE_CITY_HOUSE1
-	warp_def 18, 11, 0, 0, MAP_FORTREE_CITY_GYM
+	warp_def 18, 11, 0, 0, MAP_CIANWOOD_CITY_GYM
 	warp_def 15, 29, 0, 0, MAP_BLACKTHORN_CITY_MART
 	warp_def 17, 3, 0, 0, MAP_FORTREE_CITY_HOUSE2
 	warp_def 25, 3, 0, 0, MAP_FORTREE_CITY_HOUSE3
