@@ -1,4 +1,4 @@
-VerdanturfTown_WandasHouse_MapScripts:: @ 82028BE
+MahoganyTown_Shop_MapScripts:: @ 82028BE
 	.byte 0
 
 VerdanturfTown_WandasHouse_EventScript_2028BF:: @ 82028BF

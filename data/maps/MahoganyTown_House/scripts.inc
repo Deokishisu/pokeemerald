@@ -1,4 +1,4 @@
-VerdanturfTown_House_MapScripts:: @ 820335E
+MahoganyTown_House_MapScripts:: @ 820335E
 	.byte 0
 
 VerdanturfTown_House_EventScript_20335F:: @ 820335F

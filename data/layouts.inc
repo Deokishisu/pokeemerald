@@ -73,7 +73,7 @@
 	.include "data/layouts/FallarborTown_LeftoverRSContestHall/layout.inc"
 	.include "data/layouts/LilycoveCity_House2/layout.inc"
 	.include "data/layouts/UnknownMap_08428450/layout.inc"
-	.include "data/layouts/VerdanturfTown_WandasHouse/layout.inc"
+	.include "data/layouts/MahoganyTown_Shop/layout.inc"
 	.include "data/layouts/PacifidlogTown_House1/layout.inc"
 	.include "data/layouts/PacifidlogTown_House2/layout.inc"
 	.include "data/layouts/VioletCity_Gym/layout.inc"

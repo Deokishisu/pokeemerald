@@ -1,4 +1,4 @@
-MahoganyTown_Gym: @ 84838BC
+MahoganyTown_Gym::
 	.4byte MahoganyTown_Gym_Layout
 	.4byte MahoganyTown_Gym_MapEvents
 	.4byte MahoganyTown_Gym_MapScripts
@@ -12,4 +12,3 @@ MahoganyTown_Gym: @ 84838BC
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_GYM
-

@@ -161,8 +161,8 @@ gMapGroup9::
 	.4byte MahoganyTown_PokemonCenter_1F
 	.4byte MahoganyTown_PokemonCenter_2F
 	.4byte MahoganyTown_Gym
-	.4byte VerdanturfTown_WandasHouse
-	.4byte VerdanturfTown_House
+	.4byte MahoganyTown_House
+	.4byte MahoganyTown_Shop
 
 	.align 2
 gMapGroup10::

@@ -154,8 +154,8 @@
 #define MAP_MAHOGANY_TOWN_POKEMON_CENTER_1F (0 | (9 << 8))
 #define MAP_MAHOGANY_TOWN_POKEMON_CENTER_2F (1 | (9 << 8))
 #define MAP_MAHOGANY_TOWN_GYM               (2 | (9 << 8))
-#define MAP_VERDANTURF_TOWN_WANDAS_HOUSE    (3 | (9 << 8))
-#define MAP_VERDANTURF_TOWN_HOUSE           (4 | (9 << 8))
+#define MAP_MAHOGANY_TOWN_HOUSE             (3 | (9 << 8))
+#define MAP_MAHOGANY_TOWN_SHOP              (4 | (9 << 8))
 
 // Map Group 10
 #define MAP_FORTREE_CITY_HOUSE1               (0 | (10 << 8))

@@ -6,10 +6,10 @@ MahoganyTown_Gym_MapBlockdata::
 
 	.align 2
 MahoganyTown_Gym_Layout::
-	.4byte 0x1a
-	.4byte 0x24
+	.4byte 10
+	.4byte 18
 	.4byte MahoganyTown_Gym_MapBorder
 	.4byte MahoganyTown_Gym_MapBlockdata
-	.4byte gTileset_Building
-	.4byte gTileset_MossdeepGym
+	.4byte gTileset_Building2
+	.4byte gTileset_BikeShop
 

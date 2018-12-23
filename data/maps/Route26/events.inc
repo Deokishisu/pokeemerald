@@ -46,7 +46,7 @@ Route26_EventObjects::
 
 Route26_MapWarps::
 	warp_def 7, 55, 0, 0, MAP_ANCIENT_TOMB
-	warp_def 19, 23, 1, 0, MAP_SCORCHED_SLAB
+	warp_def 7, 5, 3, 0, MAP_ROUTE23
 
 Route26_MapCoordEvents::
 	coord_weather_event 7, 15, 0, COORD_EVENT_WEATHER_RAIN_LIGHT

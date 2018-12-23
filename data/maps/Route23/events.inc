@@ -30,7 +30,8 @@ Route23_EventObjects::
 	object_event 29, EVENT_OBJ_GFX_ITEM_BALL, 1, 38, 13, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route121_EventScript_290FA3, FLAG_ITEM_ROUTE_121_ZINC
 
 Route23_MapWarps::
-	warp_def 37, 5, 0, 2, MAP_ROUTE121_SAFARI_ZONE_ENTRANCE
+	warp_def 9, 13, 3, 1, MAP_ROUTE26
+	warp_def 10, 13, 3, 1, MAP_ROUTE26
 
 Route23_MapCoordEvents::
 	coord_event 25, 5, 3, VAR_0x4074, 0, Route121_EventScript_1F5E18
@@ -39,7 +40,7 @@ Route23_MapCoordEvents::
 	coord_event 25, 8, 3, VAR_0x4074, 0, Route121_EventScript_1F5E18
 
 Route23_MapBGEvents::
-	bg_event 32, 14, 0, BG_EVENT_PLAYER_FACING_ANY, Route121_EventScript_1F5E06
+	bg_event 3, 1, 0, BG_EVENT_PLAYER_FACING_ANY, Route121_EventScript_1F5E06
 	bg_secret_base_event 40, 11, 0, SECRET_BASE_RED_CAVE2_2
 	bg_secret_base_event 18, 13, 0, SECRET_BASE_RED_CAVE3_2
 	bg_secret_base_event 43, 7, 0, SECRET_BASE_TREE1_2
