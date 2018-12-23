@@ -358,11 +358,11 @@ static bool8 MonListHasMon(const struct WildPokemonInfo *info, u16 species, u16 
     u16 i;
     if (info != NULL)
     {
-        for (i = 0; i < size; i++)
+        /*for (i = 0; i < size; i++)
         {
-            if (info->wildPokemon[i].species == species)
+            if (info->wildPokemon[0][0][i].species == species)
                 return TRUE;
-        }
+        }*/
     }
     return FALSE;
 }
