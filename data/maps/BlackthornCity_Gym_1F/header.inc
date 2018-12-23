@@ -1,4 +1,4 @@
-BlackthornCity_Gym_1F: @ 8483A28
+BlackthornCity_Gym_1F::
 	.4byte BlackthornCity_Gym_1F_Layout
 	.4byte BlackthornCity_Gym_1F_MapEvents
 	.4byte BlackthornCity_Gym_1F_MapScripts
@@ -12,4 +12,3 @@ BlackthornCity_Gym_1F: @ 8483A28
 	.2byte 0
 	.byte 0
 	.byte MAP_BATTLE_SCENE_GYM
-

@@ -1,4 +1,4 @@
-BlackthornCity_Gym_B1F_MapScripts:: @ 8225C8A
+BlackthornCity_Gym_2F_MapScripts:: @ 8225C8A
 	.byte 0
 
 SootopolisCity_Gym_B1F_EventScript_225C8B:: @ 8225C8B

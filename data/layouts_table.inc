@@ -109,7 +109,7 @@ gMapLayouts::
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
 	.4byte MahoganyTown_Gym_Layout
 	.4byte BlackthornCity_Gym_1F_Layout
-	.4byte BlackthornCity_Gym_B1F_Layout
+	.4byte BlackthornCity_Gym_2F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout
@@ -556,7 +556,7 @@ gMapLayouts::
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
 	.4byte MahoganyTown_Gym_Layout
 	.4byte BlackthornCity_Gym_1F_Layout
-	.4byte BlackthornCity_Gym_B1F_Layout
+	.4byte BlackthornCity_Gym_2F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout
@@ -1003,7 +1003,7 @@ gMapLayouts::
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
 	.4byte MahoganyTown_Gym_Layout
 	.4byte BlackthornCity_Gym_1F_Layout
-	.4byte BlackthornCity_Gym_B1F_Layout
+	.4byte BlackthornCity_Gym_2F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout
@@ -1450,7 +1450,7 @@ gMapLayouts::
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
 	.4byte MahoganyTown_Gym_Layout
 	.4byte BlackthornCity_Gym_1F_Layout
-	.4byte BlackthornCity_Gym_B1F_Layout
+	.4byte BlackthornCity_Gym_2F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout
@@ -1897,7 +1897,7 @@ gMapLayouts::
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
 	.4byte MahoganyTown_Gym_Layout
 	.4byte BlackthornCity_Gym_1F_Layout
-	.4byte BlackthornCity_Gym_B1F_Layout
+	.4byte BlackthornCity_Gym_2F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout
@@ -2344,7 +2344,7 @@ gMapLayouts::
 	.4byte LilycoveCity_PokemonTrainerFanClub_Layout
 	.4byte MahoganyTown_Gym_Layout
 	.4byte BlackthornCity_Gym_1F_Layout
-	.4byte BlackthornCity_Gym_B1F_Layout
+	.4byte BlackthornCity_Gym_2F_Layout
 	.4byte EverGrandeCity_SidneysRoom_Layout
 	.4byte EverGrandeCity_PhoebesRoom_Layout
 	.4byte EverGrandeCity_GlaciasRoom_Layout

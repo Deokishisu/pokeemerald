@@ -166,17 +166,14 @@ gMapGroup9::
 
 	.align 2
 gMapGroup10::
-	.4byte FortreeCity_House1
 	.4byte BlackthornCity_PokemonCenter_1F
 	.4byte BlackthornCity_PokemonCenter_2F
 	.4byte BlackthornCity_Mart
 	.4byte BlackthornCity_Gym_1F
-	.4byte BlackthornCity_Gym_B1F
-	.4byte FortreeCity_House2
-	.4byte FortreeCity_House3
-	.4byte FortreeCity_House4
-	.4byte FortreeCity_House5
-	.4byte FortreeCity_DecorationShop
+	.4byte BlackthornCity_Gym_2F
+	.4byte BlackthornCity_House1
+	.4byte BlackthornCity_House2
+	.4byte BlackthornCity_MoveDeletersHouse
 
 	.align 2
 gMapGroup11::
@@ -246,6 +243,9 @@ gMapGroup24::
 
 	.align 2
 gMapGroup25::
+	.4byte FortreeCity_House4
+	.4byte FortreeCity_House5
+	.4byte FortreeCity_DecorationShop
 	.4byte VerdanturfTown_BattleTentCorridor
 	.4byte VerdanturfTown_BattleTentBattleRoom
 	.4byte FallarborTown_BattleTentLobby

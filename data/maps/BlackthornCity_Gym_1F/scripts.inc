@@ -77,7 +77,7 @@ SootopolisCity_Gym_1F_EventScript_224F29:: @ 8224F29
 	waitmovement 0
 	playse SE_RU_HYUU
 	delay 60
-	warphole MAP_BLACKTHORN_CITY_GYM_B1F
+	warphole MAP_BLACKTHORN_CITY_GYM_2F
 	waitstate
 	end
 

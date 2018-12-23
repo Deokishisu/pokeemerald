@@ -1,30 +1,32 @@
 BlackthornCity_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_GYM_GUIDE, 0, 31, 3, 4, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, FortreeCity_EventScript_1E25B6, 0
-	object_event 2, EVENT_OBJ_GFX_ZGIRL_1, 0, 32, 16, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, FortreeCity_EventScript_1E25DE, 0
-	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 32, 10, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, 0, 0, FortreeCity_EventScript_1E25BF, 0
-	object_event 4, EVENT_OBJ_GFX_YOUNGSTER, 0, 11, 14, 4, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, FortreeCity_EventScript_1E25F0, 0
-	object_event 5, EVENT_OBJ_GFX_OLD_MAN, 0, 8, 10, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, FortreeCity_EventScript_1E25E7, 0
-	object_event 6, EVENT_OBJ_GFX_GAMEBOY_KID, 0, 9, 16, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, FortreeCity_EventScript_1E25F9, 0
-	object_event 7, EVENT_OBJ_GFX_SUICUNE, 0, 25, 8, 3, MOVEMENT_TYPE_INVISIBLE, 1, 1, 0, 0, FortreeCity_EventScript_1E2614, FLAG_HIDE_FORTREE_CITY_KECLEON
+	object_event 1, EVENT_OBJ_GFX_SUPER_NERD, PAL_NPC_RED, 18, 12, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, FortreeCity_EventScript_1E25B6, 0
+	object_event 2, EVENT_OBJ_GFX_SUPER_NERD, PAL_NPC_RED, 19, 12, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, FortreeCity_EventScript_1E25DE, 0
+	object_event 3, EVENT_OBJ_GFX_OLD_MAN, 0, 20, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 1, 0, 0, FortreeCity_EventScript_1E25BF, 0
+	object_event 4, EVENT_OBJ_GFX_OLD_MAN, 0, 21, 2, 4, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, FortreeCity_EventScript_1E25F0, 0
+	object_event 5, EVENT_OBJ_GFX_BLACK_BELT, PAL_NPC_BLUE, 24, 31, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, FortreeCity_EventScript_1E25E7, 0
+	object_event 6, EVENT_OBJ_GFX_COOLTRAINER_F, PAL_NPC_RED, 9, 25, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 0, 0, 0, FortreeCity_EventScript_1E25F9, 0
+	object_event 7, EVENT_OBJ_GFX_YOUNGSTER, 0, 13, 15, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, FortreeCity_EventScript_1E2614, 0
+	object_event 8, EVENT_OBJ_GFX_YOUNGSTER, 0, 22, 20, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, FortreeCity_EventScript_1E2614, 0
+	object_event 9, EVENT_OBJ_GFX_COOLTRAINER_F, PAL_NPC_GREEN, 35, 19, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, FortreeCity_EventScript_1E25F9, 0
 
 BlackthornCity_MapWarps::
-	warp_def 21, 29, 0, 0, MAP_BLACKTHORN_CITY_POKEMON_CENTER_1F
-	warp_def 10, 3, 0, 0, MAP_FORTREE_CITY_HOUSE1
-	warp_def 18, 11, 0, 0, MAP_CIANWOOD_CITY_GYM
+	warp_def 18, 11, 0, 0, MAP_BLACKTHORN_CITY_GYM_1F
+	warp_def 13, 21, 0, 0, MAP_BLACKTHORN_CITY_HOUSE1
+	warp_def 29, 23, 0, 0, MAP_BLACKTHORN_CITY_HOUSE2
 	warp_def 15, 29, 0, 0, MAP_BLACKTHORN_CITY_MART
-	warp_def 17, 3, 0, 0, MAP_FORTREE_CITY_HOUSE2
-	warp_def 25, 3, 0, 0, MAP_FORTREE_CITY_HOUSE3
-	warp_def 32, 2, 0, 0, MAP_FORTREE_CITY_HOUSE4
-	warp_def 12, 13, 0, 0, MAP_FORTREE_CITY_HOUSE5
-	warp_def 36, 9, 0, 2, MAP_ROUTE44
+	warp_def 21, 29, 0, 0, MAP_BLACKTHORN_CITY_POKEMON_CENTER_1F
+	warp_def 9, 31, 0, 0, MAP_BLACKTHORN_CITY_MOVE_DELETERS_HOUSE
+	warp_def 36, 9, 0, 0, MAP_ROUTE44
+	warp_def 20, 1, 0, 0, MAP_BLACKTHORN_CITY
 
 BlackthornCity_MapBGEvents::
-	bg_event 6, 9, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_1E2602
-	bg_event 7, 6, 0, BG_EVENT_PLAYER_FACING_NORTH, FortreeCity_EventScript_271E73
-	bg_event 16, 29, 0, BG_EVENT_PLAYER_FACING_NORTH, FortreeCity_EventScript_271E6A
-	bg_event 26, 10, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_1E260B
-	bg_event 22, 29, 0, BG_EVENT_PLAYER_FACING_NORTH, FortreeCity_EventScript_271E73
-	bg_event 6, 14, 0, BG_EVENT_PLAYER_FACING_NORTH, FortreeCity_EventScript_271E6A
+	bg_event 34, 24, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_1E2602
+	bg_event 17, 13, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_271E73
+	bg_event 7, 31, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_271E6A
+	bg_event 21, 3, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_1E260B
+	bg_event 5, 25, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_271E73
+	bg_event 16, 29, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_271E6A
+	bg_event 22, 29, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_271E6A
 
 BlackthornCity_MapEvents::
 	map_events BlackthornCity_EventObjects, BlackthornCity_MapWarps, 0x0, BlackthornCity_MapBGEvents

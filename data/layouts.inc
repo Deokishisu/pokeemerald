@@ -107,7 +107,7 @@
 	.include "data/layouts/LilycoveCity_PokemonTrainerFanClub/layout.inc"
 	.include "data/layouts/MahoganyTown_Gym/layout.inc"
 	.include "data/layouts/BlackthornCity_Gym_1F/layout.inc"
-	.include "data/layouts/BlackthornCity_Gym_B1F/layout.inc"
+	.include "data/layouts/BlackthornCity_Gym_2F/layout.inc"
 	.include "data/layouts/EverGrandeCity_SidneysRoom/layout.inc"
 	.include "data/layouts/EverGrandeCity_PhoebesRoom/layout.inc"
 	.include "data/layouts/EverGrandeCity_GlaciasRoom/layout.inc"

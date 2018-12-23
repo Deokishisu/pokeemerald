@@ -6,10 +6,10 @@ BlackthornCity_Gym_1F_MapBlockdata::
 
 	.align 2
 BlackthornCity_Gym_1F_Layout::
-	.4byte 0x11
-	.4byte 0x1a
+	.4byte 10
+	.4byte 18
 	.4byte BlackthornCity_Gym_1F_MapBorder
 	.4byte BlackthornCity_Gym_1F_MapBlockdata
-	.4byte gTileset_Building
-	.4byte gTileset_SootopolisGym
+	.4byte gTileset_Building2
+	.4byte gTileset_BikeShop
 

@@ -1,4 +1,4 @@
-FortreeCity_House1_MapScripts:: @ 82162BA
+BlackthornCity_House1_MapScripts:: @ 82162BA
 	.byte 0
 
 FortreeCity_House1_EventScript_2162BB:: @ 82162BB

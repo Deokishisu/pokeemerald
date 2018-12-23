@@ -1,4 +1,4 @@
-FortreeCity_House3_MapScripts:: @ 8217AE7
+BlackthornCity_MoveDeletersHouse_MapScripts:: @ 8217AE7
 	.byte 0
 
 FortreeCity_House3_EventScript_217AE8:: @ 8217AE8
