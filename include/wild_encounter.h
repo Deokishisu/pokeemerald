@@ -2,7 +2,7 @@
 #define GUARD_WILD_ENCOUNTER_H
 
 #define LAND_WILD_COUNT     7
-#define WATER_WILD_COUNT    5
+#define WATER_WILD_COUNT    3
 #define ROCK_WILD_COUNT     5
 #define FISH_WILD_COUNT     10
 
@@ -18,12 +18,18 @@ struct WildPokemonInfo
     const struct WildPokemon (*wildPokemon)[3][7];
 };
 
+struct WildWaterPokemonInfo
+{
+    u8 encounterRate;
+    const struct WildPokemon (*wildPokemon)[3];
+};
+
 struct WildPokemonHeader
 {
     u8 mapGroup;
     u8 mapNum;
     const struct WildPokemonInfo *landMonsInfo;
-    const struct WildPokemonInfo *waterMonsInfo;
+    const struct WildWaterPokemonInfo *waterMonsInfo;
     const struct WildPokemonInfo *rockSmashMonsInfo;
     const struct WildPokemonInfo *fishingMonsInfo;
 };

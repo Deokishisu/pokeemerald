@@ -167,12 +167,8 @@ static u8 ChooseWildMonIndex_WaterRock(void)
         return 0;
     else if (rand >= 60 && rand < 90)    // 30% chance
         return 1;
-    else if (rand >= 90 && rand < 95)    // 5% chance
+    else							   // 10% chance
         return 2;
-    else if (rand >= 95 && rand < 99)    // 4% chance
-        return 3;
-    else                            // 1% chance
-        return 4;
 }
 
 enum
@@ -308,6 +304,36 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
 	*/
 	// ^^^^This is some sort of check involving Shoal Cave's LowTideStairsRoom that wasn't present in pokeruby.^^^^
     CreateWildMon(wildMonInfo->wildPokemon[Random() % 3][Random() % 3][wildMonIndex].species, level);
+    return TRUE;
+}
+//dupe because water pokemon use a different struct
+static bool8 TryGenerateWildWaterMon(const struct WildWaterPokemonInfo *wildMonInfo, u8 area, u8 flags)
+{
+    u8 wildMonIndex = 0;
+    u8 level;
+
+    switch (area)
+    {
+    case WILD_AREA_LAND:
+        wildMonIndex = ChooseWildMonIndex_Land();
+        break;
+    case WILD_AREA_WATER:
+        wildMonIndex = ChooseWildMonIndex_WaterRock();
+        break;
+    case WILD_AREA_ROCKS:
+        wildMonIndex = ChooseWildMonIndex_WaterRock();
+        break;
+    }
+	//call to ChooseWildMonLevel removed for performance because
+	//it's just a straight struct read to one value now.
+    level = wildMonInfo->wildPokemon[Random() % 3][wildMonIndex].level;
+    if (flags & WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(level))
+        return FALSE;
+    /*if (gMapHeader.mapLayoutId != 0x166 && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
+        return FALSE;
+	*/
+	// ^^^^This is some sort of check involving Shoal Cave's LowTideStairsRoom that wasn't present in pokeruby.^^^^
+    CreateWildMon(wildMonInfo->wildPokemon[Random() % 3][wildMonIndex].species, level);
     return TRUE;
 }
 
@@ -506,7 +532,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
             }
             else // try a regular surfing encounter
             {
-                if (TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL) == TRUE)
+                if (TryGenerateWildWaterMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL) == TRUE)
                 {
                     BattleSetup_StartWildBattle();
                     return TRUE;
@@ -613,7 +639,7 @@ bool8 SweetScentWildEncounter(void)
                 return TRUE;
             }
 
-            TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, 0);
+            TryGenerateWildWaterMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, 0);
             BattleSetup_StartWildBattle();
             return TRUE;
         }
@@ -656,7 +682,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon) //version and time check
 {
     u16 headerId;
     const struct WildPokemonInfo *landMonsInfo;
-    const struct WildPokemonInfo *waterMonsInfo;
+    const struct WildWaterPokemonInfo *waterMonsInfo;
 
     *isWaterMon = FALSE;
     headerId = GetCurrentMapWildMonHeaderId();
@@ -674,7 +700,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon) //version and time check
     else if (landMonsInfo == NULL && waterMonsInfo != NULL)
     {
         *isWaterMon = TRUE;
-        return waterMonsInfo->wildPokemon[Random() % 3][Random() % 3][ChooseWildMonIndex_WaterRock()].species;
+        return waterMonsInfo->wildPokemon[Random() % 3][ChooseWildMonIndex_WaterRock()].species;
     }
     // Either land or water Pokemon
     if ((Random() % 100) < 80)
@@ -684,7 +710,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon) //version and time check
     else
     {
         *isWaterMon = TRUE;
-        return waterMonsInfo->wildPokemon[Random() % 3][Random() % 3][ChooseWildMonIndex_WaterRock()].species;
+        return waterMonsInfo->wildPokemon[Random() % 3][ChooseWildMonIndex_WaterRock()].species;
     }
 }
 
@@ -694,10 +720,10 @@ u16 GetLocalWaterMon(void)
 
     if (headerId != 0xFFFF)
     {
-        const struct WildPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].waterMonsInfo;
+        const struct WildWaterPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].waterMonsInfo;
 
         if (waterMonsInfo)
-            return waterMonsInfo->wildPokemon[Random() % 3][Random() % 3][ChooseWildMonIndex_WaterRock()].species;
+            return waterMonsInfo->wildPokemon[Random() % 3][ChooseWildMonIndex_WaterRock()].species;
     }
     return SPECIES_NONE;
 }
