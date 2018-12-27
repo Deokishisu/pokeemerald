@@ -1268,7 +1268,7 @@ void IsGrassTypeInParty(void)
     for (i = 0; i < PARTY_SIZE; i++)
     {
         pokemon = &gPlayerParty[i];
-        if (GetMonData(pokemon, MON_DATA_SANITY_BIT2) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
         {
             species = GetMonData(pokemon, MON_DATA_SPECIES);
             if (gBaseStats[species].type1 == TYPE_GRASS || gBaseStats[species].type2 == TYPE_GRASS)
@@ -1660,7 +1660,7 @@ bool8 sub_813990C(void)
 
     for (i = 0; i < partyCount; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_BIT1) == 1)
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_IS_BAD_EGG) == 1)
             return TRUE;
     }
 
@@ -3195,7 +3195,7 @@ void sub_813AEB4(void)
         i = 0;
         do
         {
-            if (gUnknown_0861500C[i] == gUnknown_085B320C[temp2])
+            if (gTutorMoves[i] == gUnknown_085B320C[temp2])
             {
                 gSpecialVar_0x8005 = i;
                 break;
@@ -3208,7 +3208,7 @@ void sub_813AEB4(void)
         i = 0;
         do
         {
-            if (gUnknown_0861500C[i] == gUnknown_085B31F8[temp2])
+            if (gTutorMoves[i] == gUnknown_085B31F8[temp2])
             {
                 gSpecialVar_0x8005 = i;
                 break;
@@ -3819,7 +3819,7 @@ void sub_813B9A0(void)
     }
 }
 
-bool32 sub_813B9C0(void)
+bool8 sub_813B9C0(void)
 {
     static const u16 gUnknown_085B3444[] = {
         MAP_CHERRYGROVE_CITY_POKEMON_CENTER_1F,

@@ -19,6 +19,7 @@
 #include "window.h"
 #include "palette.h"
 #include "decompress.h"
+#include "party_menu.h"
 #include "menu.h"
 #include "sound.h"
 #include "pokemon_icon.h"
@@ -56,12 +57,6 @@ struct UnkStruct_860DD10
     u8 y;
     u16 src;
 };
-
-extern void sub_81B8558(void);
-
-extern u8 gSelectedOrderFromParty[];
-
-extern const struct SpriteTemplate gUnknown_0860CFA8;
 
 // text
 extern const u8 gTrainerClassNames[][0xD];
@@ -2559,7 +2554,7 @@ static void InitDomeTrainers(void)
     for (i = 0; i < 3; i++)
     {
         gSaveBlock2Ptr->frontier.domeMonIds[0][i] = GetMonData(&gPlayerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1], MON_DATA_SPECIES, NULL);
-        for (j = 0; j < 4; j++)
+        for (j = 0; j < MAX_MON_MOVES; j++)
             gSaveBlock2Ptr->frontier.field_EFC[i].moves[j] = GetMonData(&gPlayerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1], MON_DATA_MOVE1 + j, NULL);
         for (j = 0; j < 6; j++)
             gSaveBlock2Ptr->frontier.field_EFC[i].evs[j] = GetMonData(&gPlayerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1], MON_DATA_HP_EV + j, NULL);
@@ -2819,7 +2814,7 @@ static void CreateDomeMon(u8 monPartyId, u16 tournamentTrainerId, u8 tournamentM
                                          gFacilityTrainerMons[gSaveBlock2Ptr->frontier.domeMonIds[tournamentTrainerId][tournamentMonId]].evSpread, otId);
 
     happiness = 0xFF;
-    for (i = 0; i < 4; i++)
+    for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetMonMoveSlot(&gEnemyParty[monPartyId],
                        gFacilityTrainerMons[gSaveBlock2Ptr->frontier.domeMonIds[tournamentTrainerId][tournamentMonId]].moves[i], i);
@@ -2894,7 +2889,7 @@ static s32 sub_818FCBC(u16 tournamentTrainerId, bool8 arg1)
     for (i = 0; i < 3; i++)
     {
         array[i] = 0;
-        for (moveId = 0; moveId < 4; moveId++)
+        for (moveId = 0; moveId < MAX_MON_MOVES; moveId++)
         {
             for (playerMonId = 0; playerMonId < 3; playerMonId++)
             {
@@ -2922,7 +2917,7 @@ static s32 sub_818FDB8(u16 tournamentTrainerId, bool8 arg1)
     for (i = 0; i < 3; i++)
     {
         array[i] = 0;
-        for (moveId = 0; moveId < 4; moveId++)
+        for (moveId = 0; moveId < MAX_MON_MOVES; moveId++)
         {
             for (playerMonId = 0; playerMonId < 3; playerMonId++)
             {
@@ -3536,7 +3531,7 @@ static void sub_8190400(u8 taskId)
         DecompressAndLoadBgGfxUsingHeap(2, gUnknown_08D83D50, 0x2000, 0, 0);
         DecompressAndLoadBgGfxUsingHeap(2, gUnknown_08D84970, 0x2000, 0, 1);
         DecompressAndLoadBgGfxUsingHeap(3, gUnknown_08D84F00, 0x800, 0, 1);
-        LoadCompressedObjectPic(gUnknown_0860CF50);
+        LoadCompressedSpriteSheet(gUnknown_0860CF50);
         LoadCompressedPalette(gUnknown_08D85358, 0, 0x200);
         LoadCompressedPalette(gUnknown_08D85444, 0x100, 0x200);
         LoadCompressedPalette(gUnknown_08D85600, 0xF0, 0x20);
@@ -4853,7 +4848,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTournamentId)
 
     for (i = 0; i < 3; i++)
     {
-        for (j = 0; j < 4; j++)
+        for (j = 0; j < MAX_MON_MOVES; j++)
         {
             for (k = 0; k < DOME_TOURNAMENT_TRAINERS_COUNT; k++)
             {
@@ -5543,8 +5538,9 @@ static u16 GetWinningMove(s32 winnerTournamentId, s32 loserTournamentId, u8 roun
     // Calc move points of all 4 moves for all 3 pokemon hitting all 3 target mons.
     for (i = 0; i < 3; i++)
     {
-        for (j = 0; j < 4; j++)
+        for (j = 0; j < MAX_MON_MOVES; j++)
         {
+            // TODO: Clean this up, looks like a different data structure
             moveScores[i * 4 + j] = 0;
             if (gSaveBlock2Ptr->frontier.domeTrainers[winnerTournamentId].trainerId == TRAINER_FRONTIER_BRAIN)
                 moveIds[i * 4 + j] = GetFrontierBrainMonMove(i, j);
@@ -5605,7 +5601,7 @@ static u16 GetWinningMove(s32 winnerTournamentId, s32 loserTournamentId, u8 roun
     goto LABEL;
     while (j != 0)
     {
-        for (j = 0, k = 0; k < 4 * 3; k++)
+        for (j = 0, k = 0; k < MAX_MON_MOVES * 3; k++)
         {
             if (bestScore < moveScores[k])
             {
@@ -5632,7 +5628,7 @@ static u16 GetWinningMove(s32 winnerTournamentId, s32 loserTournamentId, u8 roun
             moveScores[j] = 0;
             bestScore = 0;
             j = 0;
-            for (k = 0; k < 4 * 3; k++)
+            for (k = 0; k < MAX_MON_MOVES * 3; k++)
                 j += moveScores[k];
         }
     }
@@ -5707,7 +5703,7 @@ static void sub_8194220(u8 taskId)
         gTasks[taskId].data[0]++;
         break;
     case 3:
-        LoadCompressedObjectPic(gUnknown_0860CF50);
+        LoadCompressedSpriteSheet(gUnknown_0860CF50);
         if (r10 == 0)
         {
             for (i = 0; i < (unsigned) 31; i++)
@@ -6064,16 +6060,16 @@ static void sub_8194D68(void)
         s32 playerMonId = gSaveBlock2Ptr->frontier.selectedPartyMons[gSelectedOrderFromParty[i] - 1] - 1;
         s32 count;
 
-        for (moveSlot = 0; moveSlot < 4; moveSlot++)
+        for (moveSlot = 0; moveSlot < MAX_MON_MOVES; moveSlot++)
         {
             count = 0;
-            while (count < 4)
+            while (count < MAX_MON_MOVES)
             {
                 if (GetMonData(&gSaveBlock1Ptr->playerParty[playerMonId], MON_DATA_MOVE1 + count, NULL) == GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + moveSlot, NULL))
                     break;
                 count++;
             }
-            if (count == 4)
+            if (count == MAX_MON_MOVES)
                 SetMonMoveSlot(&gPlayerParty[i], MOVE_SKETCH, moveSlot);
         }
 
@@ -6326,7 +6322,7 @@ static void DecideRoundWinners(u8 roundId)
             // Calculate points for both trainers.
             for (monId1 = 0; monId1 < 3; monId1++)
             {
-                for (moveSlot = 0; moveSlot < 4; moveSlot++)
+                for (moveSlot = 0; moveSlot < MAX_MON_MOVES; moveSlot++)
                 {
                     for (monId2 = 0; monId2 < 3; monId2++)
                     {
@@ -6349,7 +6345,7 @@ static void DecideRoundWinners(u8 roundId)
 
             for (monId1 = 0; monId1 < 3; monId1++)
             {
-                for (moveSlot = 0; moveSlot < 4; moveSlot++)
+                for (moveSlot = 0; moveSlot < MAX_MON_MOVES; moveSlot++)
                 {
                     for (monId2 = 0; monId2 < 3; monId2++)
                     {

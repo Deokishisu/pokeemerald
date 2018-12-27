@@ -143,7 +143,7 @@ extern void sub_8197BB4(u8, u8, u8, u8, u8, u8);
 extern void sub_8197E30(u8, u8, u8, u8, u8, u8);
 extern void DrawWindowBorder(u8, u8, u8, u8, u8, u8);
 extern void sub_81980A8(u8, u8, u8, u8, u8, u8);
-extern u8 MoveMenuCursor(s8);
+extern u8 Menu_MoveCursor(s8);
 extern u8 sub_8199134(s8, s8);
 extern void sub_8198C78(void);
 extern void task_free_buf_after_copying_tile_data_to_vram(u8 taskId);
@@ -923,7 +923,7 @@ u8 sub_8198348(u8 windowId, u8 fontId, u8 left, u8 top, u8 cursorHeight, u8 numC
     else
         gUnknown_0203CD90.cursorPos = pos;
 
-    MoveMenuCursor(0);
+    Menu_MoveCursor(0);
     return gUnknown_0203CD90.cursorPos;
 }
 
@@ -948,7 +948,7 @@ void RedrawMenuCursor(u8 oldPos, u8 newPos)
     AddTextPrinterParameterized(gUnknown_0203CD90.windowId, gUnknown_0203CD90.fontId, gText_SelectorArrow3, gUnknown_0203CD90.left, (gUnknown_0203CD90.optionHeight * newPos + gUnknown_0203CD90.top) -1, 0, 0);
 }
 
-u8 MoveMenuCursor(s8 cursorDelta)
+u8 Menu_MoveCursor(s8 cursorDelta)
 {
     u8 oldPos = gUnknown_0203CD90.cursorPos;
     int newPos = gUnknown_0203CD90.cursorPos + cursorDelta;
@@ -964,7 +964,7 @@ u8 MoveMenuCursor(s8 cursorDelta)
     return gUnknown_0203CD90.cursorPos;
 }
 
-u8 MoveMenuCursorNoWrapAround(s8 cursorDelta)
+u8 Menu_MoveCursorNoWrapAround(s8 cursorDelta)
 {
     u8 oldPos = gUnknown_0203CD90.cursorPos;
     int newPos = gUnknown_0203CD90.cursorPos + cursorDelta;
@@ -980,7 +980,7 @@ u8 MoveMenuCursorNoWrapAround(s8 cursorDelta)
     return gUnknown_0203CD90.cursorPos;
 }
 
-u8 GetMenuCursorPos(void)
+u8 Menu_GetCursorPos(void)
 {
     return gUnknown_0203CD90.cursorPos;
 }
@@ -1000,13 +1000,13 @@ s8 Menu_ProcessInput(void)
     else if (gMain.newKeys & DPAD_UP)
     {
         PlaySE(SE_SELECT);
-        MoveMenuCursor(-1);
+        Menu_MoveCursor(-1);
         return MENU_NOTHING_CHOSEN;
     }
     else if (gMain.newKeys & DPAD_DOWN)
     {
         PlaySE(SE_SELECT);
-        MoveMenuCursor(1);
+        Menu_MoveCursor(1);
         return MENU_NOTHING_CHOSEN;
     }
 
@@ -1029,13 +1029,13 @@ s8 Menu_ProcessInputNoWrap(void)
     }
     else if (gMain.newKeys & DPAD_UP)
     {
-        if (oldPos != MoveMenuCursorNoWrapAround(-1))
+        if (oldPos != Menu_MoveCursorNoWrapAround(-1))
             PlaySE(SE_SELECT);
         return MENU_NOTHING_CHOSEN;
     }
     else if (gMain.newKeys & DPAD_DOWN)
     {
-        if (oldPos != MoveMenuCursorNoWrapAround(1))
+        if (oldPos != Menu_MoveCursorNoWrapAround(1))
             PlaySE(SE_SELECT);
         return MENU_NOTHING_CHOSEN;
     }
@@ -1058,13 +1058,13 @@ s8 ProcessMenuInput_other(void)
     else if ((gMain.newAndRepeatedKeys & DPAD_ANY) == DPAD_UP)
     {
         PlaySE(SE_SELECT);
-        MoveMenuCursor(-1);
+        Menu_MoveCursor(-1);
         return MENU_NOTHING_CHOSEN;
     }
     else if ((gMain.newAndRepeatedKeys & DPAD_ANY) == DPAD_DOWN)
     {
         PlaySE(SE_SELECT);
-        MoveMenuCursor(1);
+        Menu_MoveCursor(1);
         return MENU_NOTHING_CHOSEN;
     }
 
@@ -1087,13 +1087,13 @@ s8 Menu_ProcessInputNoWrapAround_other(void)
     }
     else if ((gMain.newAndRepeatedKeys & DPAD_ANY) == DPAD_UP)
     {
-        if (oldPos != MoveMenuCursorNoWrapAround(-1))
+        if (oldPos != Menu_MoveCursorNoWrapAround(-1))
             PlaySE(SE_SELECT);
         return MENU_NOTHING_CHOSEN;
     }
     else if ((gMain.newAndRepeatedKeys & DPAD_ANY) == DPAD_DOWN)
     {
-        if (oldPos != MoveMenuCursorNoWrapAround(1))
+        if (oldPos != Menu_MoveCursorNoWrapAround(1))
             PlaySE(SE_SELECT);
         return MENU_NOTHING_CHOSEN;
     }
@@ -1606,7 +1606,7 @@ u8 InitMenuInUpperLeftCorner(u8 windowId, u8 itemCount, u8 initialCursorPos, boo
     else
         gUnknown_0203CD90.cursorPos = pos;
 
-    return MoveMenuCursor(0);
+    return Menu_MoveCursor(0);
 }
 
 u8 InitMenuInUpperLeftCornerPlaySoundWhenAPressed(u8 windowId, u8 itemCount, u8 initialCursorPos)
@@ -1815,9 +1815,9 @@ bool8 free_temp_tile_data_buffers_if_possible(void)
     }
 }
 
-void *decompress_and_copy_tile_data_to_vram(u8 bgId, const void *src, int size, u16 offset, u8 mode)
+void *decompress_and_copy_tile_data_to_vram(u8 bgId, const void *src, u32 size, u16 offset, u8 mode)
 {
-    int sizeOut;
+    u32 sizeOut;
     if (gUnknown_0203CDA8 < ARRAY_COUNT(gUnknown_0203CDAC))
     {
         void *ptr = malloc_and_decompress(src, &sizeOut);
@@ -1833,9 +1833,9 @@ void *decompress_and_copy_tile_data_to_vram(u8 bgId, const void *src, int size, 
     return NULL;
 }
 
-void DecompressAndLoadBgGfxUsingHeap(u8 bgId, const void *src, int size, u16 offset, u8 mode)
+void DecompressAndLoadBgGfxUsingHeap(u8 bgId, const void *src, u32 size, u16 offset, u8 mode)
 {
-    int sizeOut;
+    u32 sizeOut;
     void *ptr = malloc_and_decompress(src, &sizeOut);
     if (!size)
         size = sizeOut;
@@ -1856,7 +1856,7 @@ void task_free_buf_after_copying_tile_data_to_vram(u8 taskId)
     }
 }
 
-void *malloc_and_decompress(const void *src, int *size)
+void *malloc_and_decompress(const void *src, u32 *size)
 {
     void *ptr;
     u8 *sizeAsBytes = (u8 *)size;
@@ -1952,8 +1952,8 @@ void sub_8199D98(void)
 
 void sub_8199DF0(u32 bg, u8 a1, int a2, int a3)
 {
-    int temp = (!GetBgAttribute(bg, 4)) ? 0x20 : 0x40;
-    void *addr = (void *)((GetBgAttribute(bg, 1) * 0x4000) + (GetBgAttribute(bg, 10) + a2) * temp);
+    int temp = (!GetBgAttribute(bg, BG_ATTR_PALETTEMODE)) ? 0x20 : 0x40;
+    void *addr = (void *)((GetBgAttribute(bg, BG_ATTR_CHARBASEINDEX) * 0x4000) + (GetBgAttribute(bg, BG_ATTR_BASETILE) + a2) * temp);
     RequestDma3Fill(a1 << 24 | a1 << 16 | a1 << 8 | a1, addr + VRAM, a3 * temp, 1);
 }
 

@@ -88,20 +88,12 @@ static bool8 CheckFeebas(void)
         x -= 7;
         y -= 7;
 
-#ifdef NONMATCHING
+        if (y >= gRoute119WaterTileData[3 * 0 + 0] && y <= gRoute119WaterTileData[3 * 0 + 1])
+            route119Section = 0;
         if (y >= gRoute119WaterTileData[3 * 1 + 0] && y <= gRoute119WaterTileData[3 * 1 + 1])
             route119Section = 1;
         if (y >= gRoute119WaterTileData[3 * 2 + 0] && y <= gRoute119WaterTileData[3 * 2 + 1])
             route119Section = 2;
-#else
-        {
-            register const u16 *arr asm("r0");
-            if (y >= (arr = gRoute119WaterTileData)[3 * 1 + 0] && y <= arr[3 * 1 + 1])
-                route119Section = 1;
-            if (y >= arr[3 * 2 + 0] && y <= arr[3 * 2 + 1])
-                route119Section = 2;
-        }
-#endif
 
         if (Random() % 100 > 49) // 50% chance of encountering Feebas
             return FALSE;
@@ -389,7 +381,7 @@ static bool8 DoWildEncounterRateTest(u32 encounterRate, bool8 ignoreAbility)
         encounterRate = encounterRate * 80 / 100;
     ApplyFluteEncounterRateMod(&encounterRate);
     ApplyCleanseTagEncounterRateMod(&encounterRate);
-    if (!ignoreAbility && !GetMonData(&gPlayerParty[0], MON_DATA_SANITY_BIT3))
+    if (!ignoreAbility && !GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
     {
         u32 ability = GetMonAbility(&gPlayerParty[0]);
 
@@ -779,7 +771,7 @@ static bool8 IsAbilityAllowingEncounter(u8 level)
 {
     u8 ability;
 
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SANITY_BIT3))
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
         return TRUE;
 
     ability = GetMonAbility(&gPlayerParty[0]);
@@ -816,7 +808,7 @@ static bool8 TryGetRandomWildMonIndexByType(const struct WildPokemon *wildMon, u
 
 static bool8 TryGetAbilityInfluencedWildMonIndex(const struct WildPokemon *wildMon, u8 type, u8 ability, u8 *monIndex)
 {
-    if (GetMonData(&gPlayerParty[0], MON_DATA_SANITY_BIT3))
+    if (GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
         return FALSE;
     else if (GetMonAbility(&gPlayerParty[0]) != ability)
         return FALSE;

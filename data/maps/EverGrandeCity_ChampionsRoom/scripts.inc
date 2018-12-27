@@ -13,7 +13,7 @@ EverGrandeCity_ChampionsRoom_MapScript2_228A05: @ 8228A05
 	.2byte 0
 
 EverGrandeCity_ChampionsRoom_EventScript_228A0F:: @ 8228A0F
-	turnobject 255, 2
+	turnobject EVENT_OBJ_ID_PLAYER, 2
 	end
 
 EverGrandeCity_ChampionsRoom_MapScript2_228A14: @ 8228A14
@@ -54,16 +54,16 @@ EverGrandeCity_ChampionsRoom_EventScript_228A61:: @ 8228A61
 	playse SE_DOOR
 	checkplayergender
 	compare VAR_RESULT, 0
-	call_if 1, EverGrandeCity_ChampionsRoom_EventScript_228ABC
+	call_if_eq EverGrandeCity_ChampionsRoom_EventScript_228ABC
 	compare VAR_RESULT, 1
-	call_if 1, EverGrandeCity_ChampionsRoom_EventScript_228AC1
+	call_if_eq EverGrandeCity_ChampionsRoom_EventScript_228AC1
 	addobject 2
 	call EverGrandeCity_ChampionsRoom_EventScript_228BFD
 	checkplayergender
 	compare VAR_RESULT, 0
-	goto_eq EverGrandeCity_ChampionsRoom_EventScript_228AC6
+	goto_if_eq EverGrandeCity_ChampionsRoom_EventScript_228AC6
 	compare VAR_RESULT, 1
-	goto_eq EverGrandeCity_ChampionsRoom_EventScript_228AFB
+	goto_if_eq EverGrandeCity_ChampionsRoom_EventScript_228AFB
 	end
 
 EverGrandeCity_ChampionsRoom_EventScript_228ABC:: @ 8228ABC
@@ -129,9 +129,9 @@ EverGrandeCity_ChampionsRoom_EventScript_228B30:: @ 8228B30
 	msgbox EverGrandeCity_ChampionsRoom_Text_2293EB, MSGBOX_DEFAULT
 	checkplayergender
 	compare VAR_RESULT, 0
-	call_if 1, EverGrandeCity_ChampionsRoom_EventScript_228BEB
+	call_if_eq EverGrandeCity_ChampionsRoom_EventScript_228BEB
 	compare VAR_RESULT, 1
-	call_if 1, EverGrandeCity_ChampionsRoom_EventScript_228BF4
+	call_if_eq EverGrandeCity_ChampionsRoom_EventScript_228BF4
 	closemessage
 	applymovement 1, EverGrandeCity_ChampionsRoom_Movement_228C3F
 	applymovement EVENT_OBJ_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_228C20
