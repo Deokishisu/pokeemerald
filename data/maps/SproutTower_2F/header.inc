@@ -10,5 +10,5 @@ SproutTower_2F::
 	.byte WEATHER_NONE
 	.byte MAP_TYPE_UNDERGROUND
 	.2byte 0
-	.byte 15
+	map_header_flags allow_bike=0, allow_escape_rope=1, allow_run=0, show_map_name=TRUE
 	.byte MAP_BATTLE_SCENE_NORMAL
