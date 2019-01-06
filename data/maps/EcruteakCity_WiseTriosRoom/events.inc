@@ -12,7 +12,7 @@ EcruteakCity_WiseTriosRoom_MapWarps::
 	warp_def 1, 4, 0, 4, MAP_ECRUTEAK_CITY_TIN_TOWER_GATE
 
 EcruteakCity_WiseTriosRoom_MapCoordEvents::
-	coord_event 7, 4, 3, VAR_TEMP_1, 0, LilycoveCity_CoveLilyMotel_1F_EventScript_218211
+	coord_event 0, 0, 3, VAR_TEMP_1, 0, LilycoveCity_CoveLilyMotel_1F_EventScript_218211
 
 EcruteakCity_WiseTriosRoom_MapEvents::
 	map_events EcruteakCity_WiseTriosRoom_EventObjects, EcruteakCity_WiseTriosRoom_MapWarps, EcruteakCity_WiseTriosRoom_MapCoordEvents, 0x0

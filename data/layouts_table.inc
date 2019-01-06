@@ -128,7 +128,7 @@ gMapLayouts::
 	.4byte SproutTower_2F_Layout
 	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
-	.4byte RusturfTunnel_Layout
+	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
 	.4byte GraniteCave_1F_Layout
@@ -143,19 +143,19 @@ gMapLayouts::
 	.4byte MtPyre_5F_Layout
 	.4byte MtPyre_6F_Layout
 	.4byte AquaHideout_1F_Layout
-	.4byte AquaHideout_B1F_Layout
-	.4byte AquaHideout_B2F_Layout
+	.4byte DragonsDen_Layout
+	.4byte DragonsDen_DragonShrine_Layout
 	.4byte Underwater_SeafloorCavern_Layout
-	.4byte SeafloorCavern_Entrance_Layout
-	.4byte SeafloorCavern_Room1_Layout
-	.4byte SeafloorCavern_Room2_Layout
-	.4byte SeafloorCavern_Room3_Layout
-	.4byte SeafloorCavern_Room4_Layout
-	.4byte SeafloorCavern_Room5_Layout
-	.4byte SeafloorCavern_Room6_Layout
-	.4byte SeafloorCavern_Room7_Layout
-	.4byte SeafloorCavern_Room8_Layout
-	.4byte SeafloorCavern_Room9_Layout
+	.4byte TinTower_1F_Layout
+	.4byte TinTower_2F_Layout
+	.4byte TinTower_3F_Layout
+	.4byte TinTower_4F_Layout
+	.4byte TinTower_5F_Layout
+	.4byte TinTower_6F_Layout
+	.4byte TinTower_7F_Layout
+	.4byte TinTower_8F_Layout
+	.4byte TinTower_9F_Layout
+	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
@@ -575,7 +575,7 @@ gMapLayouts::
 	.4byte SproutTower_2F_Layout
 	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
-	.4byte RusturfTunnel_Layout
+	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
 	.4byte GraniteCave_1F_Layout
@@ -590,19 +590,19 @@ gMapLayouts::
 	.4byte MtPyre_5F_Layout
 	.4byte MtPyre_6F_Layout
 	.4byte AquaHideout_1F_Layout
-	.4byte AquaHideout_B1F_Layout
-	.4byte AquaHideout_B2F_Layout
+	.4byte DragonsDen_Layout
+	.4byte DragonsDen_DragonShrine_Layout
 	.4byte Underwater_SeafloorCavern_Layout
-	.4byte SeafloorCavern_Entrance_Layout
-	.4byte SeafloorCavern_Room1_Layout
-	.4byte SeafloorCavern_Room2_Layout
-	.4byte SeafloorCavern_Room3_Layout
-	.4byte SeafloorCavern_Room4_Layout
-	.4byte SeafloorCavern_Room5_Layout
-	.4byte SeafloorCavern_Room6_Layout
-	.4byte SeafloorCavern_Room7_Layout
-	.4byte SeafloorCavern_Room8_Layout
-	.4byte SeafloorCavern_Room9_Layout
+	.4byte TinTower_1F_Layout
+	.4byte TinTower_2F_Layout
+	.4byte TinTower_3F_Layout
+	.4byte TinTower_4F_Layout
+	.4byte TinTower_5F_Layout
+	.4byte TinTower_6F_Layout
+	.4byte TinTower_7F_Layout
+	.4byte TinTower_8F_Layout
+	.4byte TinTower_9F_Layout
+	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
@@ -1022,7 +1022,7 @@ gMapLayouts::
 	.4byte SproutTower_2F_Layout
 	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
-	.4byte RusturfTunnel_Layout
+	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
 	.4byte GraniteCave_1F_Layout
@@ -1037,19 +1037,19 @@ gMapLayouts::
 	.4byte MtPyre_5F_Layout
 	.4byte MtPyre_6F_Layout
 	.4byte AquaHideout_1F_Layout
-	.4byte AquaHideout_B1F_Layout
-	.4byte AquaHideout_B2F_Layout
+	.4byte DragonsDen_Layout
+	.4byte DragonsDen_DragonShrine_Layout
 	.4byte Underwater_SeafloorCavern_Layout
-	.4byte SeafloorCavern_Entrance_Layout
-	.4byte SeafloorCavern_Room1_Layout
-	.4byte SeafloorCavern_Room2_Layout
-	.4byte SeafloorCavern_Room3_Layout
-	.4byte SeafloorCavern_Room4_Layout
-	.4byte SeafloorCavern_Room5_Layout
-	.4byte SeafloorCavern_Room6_Layout
-	.4byte SeafloorCavern_Room7_Layout
-	.4byte SeafloorCavern_Room8_Layout
-	.4byte SeafloorCavern_Room9_Layout
+	.4byte TinTower_1F_Layout
+	.4byte TinTower_2F_Layout
+	.4byte TinTower_3F_Layout
+	.4byte TinTower_4F_Layout
+	.4byte TinTower_5F_Layout
+	.4byte TinTower_6F_Layout
+	.4byte TinTower_7F_Layout
+	.4byte TinTower_8F_Layout
+	.4byte TinTower_9F_Layout
+	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
@@ -1469,7 +1469,7 @@ gMapLayouts::
 	.4byte SproutTower_2F_Layout
 	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
-	.4byte RusturfTunnel_Layout
+	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
 	.4byte GraniteCave_1F_Layout
@@ -1484,19 +1484,19 @@ gMapLayouts::
 	.4byte MtPyre_5F_Layout
 	.4byte MtPyre_6F_Layout
 	.4byte AquaHideout_1F_Layout
-	.4byte AquaHideout_B1F_Layout
-	.4byte AquaHideout_B2F_Layout
+	.4byte DragonsDen_Layout
+	.4byte DragonsDen_DragonShrine_Layout
 	.4byte Underwater_SeafloorCavern_Layout
-	.4byte SeafloorCavern_Entrance_Layout
-	.4byte SeafloorCavern_Room1_Layout
-	.4byte SeafloorCavern_Room2_Layout
-	.4byte SeafloorCavern_Room3_Layout
-	.4byte SeafloorCavern_Room4_Layout
-	.4byte SeafloorCavern_Room5_Layout
-	.4byte SeafloorCavern_Room6_Layout
-	.4byte SeafloorCavern_Room7_Layout
-	.4byte SeafloorCavern_Room8_Layout
-	.4byte SeafloorCavern_Room9_Layout
+	.4byte TinTower_1F_Layout
+	.4byte TinTower_2F_Layout
+	.4byte TinTower_3F_Layout
+	.4byte TinTower_4F_Layout
+	.4byte TinTower_5F_Layout
+	.4byte TinTower_6F_Layout
+	.4byte TinTower_7F_Layout
+	.4byte TinTower_8F_Layout
+	.4byte TinTower_9F_Layout
+	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
@@ -1916,7 +1916,7 @@ gMapLayouts::
 	.4byte SproutTower_2F_Layout
 	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
-	.4byte RusturfTunnel_Layout
+	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
 	.4byte GraniteCave_1F_Layout
@@ -1931,19 +1931,19 @@ gMapLayouts::
 	.4byte MtPyre_5F_Layout
 	.4byte MtPyre_6F_Layout
 	.4byte AquaHideout_1F_Layout
-	.4byte AquaHideout_B1F_Layout
-	.4byte AquaHideout_B2F_Layout
+	.4byte DragonsDen_Layout
+	.4byte DragonsDen_DragonShrine_Layout
 	.4byte Underwater_SeafloorCavern_Layout
-	.4byte SeafloorCavern_Entrance_Layout
-	.4byte SeafloorCavern_Room1_Layout
-	.4byte SeafloorCavern_Room2_Layout
-	.4byte SeafloorCavern_Room3_Layout
-	.4byte SeafloorCavern_Room4_Layout
-	.4byte SeafloorCavern_Room5_Layout
-	.4byte SeafloorCavern_Room6_Layout
-	.4byte SeafloorCavern_Room7_Layout
-	.4byte SeafloorCavern_Room8_Layout
-	.4byte SeafloorCavern_Room9_Layout
+	.4byte TinTower_1F_Layout
+	.4byte TinTower_2F_Layout
+	.4byte TinTower_3F_Layout
+	.4byte TinTower_4F_Layout
+	.4byte TinTower_5F_Layout
+	.4byte TinTower_6F_Layout
+	.4byte TinTower_7F_Layout
+	.4byte TinTower_8F_Layout
+	.4byte TinTower_9F_Layout
+	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
@@ -2363,7 +2363,7 @@ gMapLayouts::
 	.4byte SproutTower_2F_Layout
 	.4byte SproutTower_3F_Layout
 	.4byte MeteorFalls_B1F_2R_Layout
-	.4byte RusturfTunnel_Layout
+	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
 	.4byte GraniteCave_1F_Layout
@@ -2378,19 +2378,19 @@ gMapLayouts::
 	.4byte MtPyre_5F_Layout
 	.4byte MtPyre_6F_Layout
 	.4byte AquaHideout_1F_Layout
-	.4byte AquaHideout_B1F_Layout
-	.4byte AquaHideout_B2F_Layout
+	.4byte DragonsDen_Layout
+	.4byte DragonsDen_DragonShrine_Layout
 	.4byte Underwater_SeafloorCavern_Layout
-	.4byte SeafloorCavern_Entrance_Layout
-	.4byte SeafloorCavern_Room1_Layout
-	.4byte SeafloorCavern_Room2_Layout
-	.4byte SeafloorCavern_Room3_Layout
-	.4byte SeafloorCavern_Room4_Layout
-	.4byte SeafloorCavern_Room5_Layout
-	.4byte SeafloorCavern_Room6_Layout
-	.4byte SeafloorCavern_Room7_Layout
-	.4byte SeafloorCavern_Room8_Layout
-	.4byte SeafloorCavern_Room9_Layout
+	.4byte TinTower_1F_Layout
+	.4byte TinTower_2F_Layout
+	.4byte TinTower_3F_Layout
+	.4byte TinTower_4F_Layout
+	.4byte TinTower_5F_Layout
+	.4byte TinTower_6F_Layout
+	.4byte TinTower_7F_Layout
+	.4byte TinTower_8F_Layout
+	.4byte TinTower_9F_Layout
+	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout

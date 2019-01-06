@@ -12,7 +12,7 @@ Route44_EventObjects::
 	object_event 11, EVENT_OBJ_GFX_ITEM_BALL, 0, 14, 9, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route116_EventScript_290E78, FLAG_ITEM_ROUTE_116_X_SPECIAL
 
 Route44_MapWarps::
-	warp_def 56, 7, 0, 8, MAP_BLACKTHORN_CITY
+	warp_def 56, 7, 0, 6, MAP_BLACKTHORN_CITY
 
 Route44_MapBGEvents::
 	bg_event 53, 7, 0, BG_EVENT_PLAYER_FACING_ANY, Route116_EventScript_1F2D57

@@ -341,7 +341,7 @@ gMapGroup26::
 	.4byte SproutTower_2F
 	.4byte SproutTower_3F
 	.4byte MeteorFalls_B1F_2R
-	.4byte RusturfTunnel
+	.4byte NationalPark
 	.4byte Underwater_SootopolisCity
 	.4byte DesertRuins
 	.4byte GraniteCave_1F
@@ -361,19 +361,19 @@ gMapGroup26::
 	.4byte MtPyre_Exterior
 	.4byte MtPyre_Summit
 	.4byte AquaHideout_1F
-	.4byte AquaHideout_B1F
-	.4byte AquaHideout_B2F
+	.4byte DragonsDen
+	.4byte DragonsDen_DragonShrine
 	.4byte Underwater_SeafloorCavern
-	.4byte SeafloorCavern_Entrance
-	.4byte SeafloorCavern_Room1
-	.4byte SeafloorCavern_Room2
-	.4byte SeafloorCavern_Room3
-	.4byte SeafloorCavern_Room4
-	.4byte SeafloorCavern_Room5
-	.4byte SeafloorCavern_Room6
-	.4byte SeafloorCavern_Room7
-	.4byte SeafloorCavern_Room8
-	.4byte SeafloorCavern_Room9
+	.4byte TinTower_1F
+	.4byte TinTower_2F
+	.4byte TinTower_3F
+	.4byte TinTower_4F
+	.4byte TinTower_5F
+	.4byte TinTower_6F
+	.4byte TinTower_7F
+	.4byte TinTower_8F
+	.4byte TinTower_9F
+	.4byte TinTower_Roof
 	.4byte CaveOfOrigin_Entrance
 	.4byte CaveOfOrigin_1F
 	.4byte CaveOfOrigin_UnusedRubySapphireMap1
