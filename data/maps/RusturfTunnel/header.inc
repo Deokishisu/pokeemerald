@@ -1,15 +1,14 @@
-RusturfTunnel: @ 8483F30
+RusturfTunnel::
 	.4byte RusturfTunnel_Layout
 	.4byte RusturfTunnel_MapEvents
 	.4byte RusturfTunnel_MapScripts
 	.4byte 0x0
 	.2byte MUS_DAN01
 	.2byte 129
-	.byte MAPSEC_RUSTURF_TUNNEL
+	.byte MAPSEC_NATIONAL_PARK
 	.byte 0
-	.byte WEATHER_FOG_1
+	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_UNDERGROUND
-	.2byte 0
-	map_header_flags allow_bike=1, allow_escape_rope=1, allow_run=1, show_map_name=1
+	.2byte PAL_CYCLE
+	map_header_flags allow_bike=1, allow_escape_rope=1, allow_run=0, show_map_name=1
 	.byte MAP_BATTLE_SCENE_NORMAL
-

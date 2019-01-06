@@ -1,7 +1,7 @@
 CherrygroveCity_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_TEACHER, PAL_NPC_BLUE, 27, 12, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, OldaleTown_EventScript_1E8EF3, 0
+	object_event 1, EVENT_OBJ_GFX_TEACHER, PAL_NPC_BLUE, 27, 12, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, LittlerootTown_MaysHouse_2F_EventScript_292799, 0
 	object_event 2, EVENT_OBJ_GFX_OLD_MAN, PAL_NPC_BROWN, 32, 6, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, OldaleTown_EventScript_1E8EFC, 0
-	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_RED, 23, 7, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, OldaleTown_EventScript_1E901F, 0
+	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_RED, 23, 7, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, LittlerootTown_BrendansHouse_2F_EventScript_29283F, 0
 	object_event 4, EVENT_OBJ_GFX_FAT_MAN, PAL_NPC_GREEN, 7, 12, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, OldaleTown_EventScript_1E9070, 0
 
 CherrygroveCity_MapWarps::

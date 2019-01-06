@@ -59,7 +59,7 @@ LittlerootTown_MaysHouse_2F_EventScript_29278D:: @ 829278D
 
 LittlerootTown_BrendansHouse_2F_EventScript_292799:: @ 8292799
 LittlerootTown_MaysHouse_2F_EventScript_292799:: @ 8292799
-	goto_if_set FLAG_0x051, LittlerootTown_BrendansHouse_2F_EventScript_29283F
+	@goto_if_set FLAG_0x051, LittlerootTown_BrendansHouse_2F_EventScript_29283F
 	msgbox LittlerootTown_BrendansHouse_2F_Text_1F8668, MSGBOX_DEFAULT
 	call LittlerootTown_BrendansHouse_2F_EventScript_292849
 	delay 30

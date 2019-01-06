@@ -13,6 +13,7 @@
 #include "secret_base.h"
 #include "tv.h"
 #include "constants/rgb.h"
+#include "rtc.h"
 
 extern void sub_81AA078(u16*, u8);
 
@@ -970,23 +971,37 @@ void nullsub_90(void)
 void apply_map_tileset_palette(struct Tileset const *tileset, u16 destOffset, u16 size)
 {
     u16 black = RGB_BLACK;
-
+	u8 time = 0;
+	if(gMapHeader.timePaletteOverride == 0) //map's palette cycles with time of day
+	{
+		if(gLocalTime.hours >= 4 && gLocalTime.hours < 10)
+			time = 2; //morn
+		else if(gLocalTime.hours >= 10 && gLocalTime.hours < 18)
+			time = 0; //day
+		else
+			time = 1; //nite
+	}
+	else //map's palette is locked
+	{
+		time = gMapHeader.timePaletteOverride - 1;
+	}
+	
     if (tileset)
     {
         if (tileset->isSecondary == FALSE)
         {
             LoadPalette(&black, destOffset, 2);
-            LoadPalette(((u16*)tileset->palettes) + 1, destOffset + 1, size - 2);
+            LoadPalette(((u16*)tileset->palettes[time]) + 1, destOffset + 1, size - 2);
             nullsub_3(destOffset + 1, (size - 2) >> 1);
         }
         else if (tileset->isSecondary == TRUE)
         {
-            LoadPalette(((u16*)tileset->palettes) + (NUM_PALS_IN_PRIMARY * 16), destOffset, size);
+            LoadPalette(((u16*)tileset->palettes[time]) + (NUM_PALS_IN_PRIMARY * 16), destOffset, size);
             nullsub_3(destOffset, size >> 1);
         }
         else
         {
-            LoadCompressedPalette((u16*)tileset->palettes, destOffset, size);
+            LoadCompressedPalette((u16*)tileset->palettes[time], destOffset, size);
             nullsub_3(destOffset, size >> 1);
         }
     }
@@ -1033,4 +1048,10 @@ void apply_map_tileset1_tileset2_palette(struct MapLayout const *mapLayout)
         apply_map_tileset1_palette(mapLayout);
         apply_map_tileset2_palette(mapLayout);
     }
+}
+
+void refresh_map_palettes(struct MapLayout const *mapLayout)
+{
+    apply_map_tileset1_palette(mapLayout);
+    apply_map_tileset2_palette(mapLayout);
 }

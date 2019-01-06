@@ -287,6 +287,26 @@ void RtcCalcTimeDifference(struct SiiRtcInfo *rtc, struct Time *result, struct T
     }
 }
 
+bool8 RtcCheckHour(void)
+{
+	RtcGetInfo(&sRtc);
+	return RtcCheckHourChanged(&sRtc, &gLocalTime, &gSaveBlock2Ptr->localTimeOffset);
+}
+
+bool8 RtcCheckHourChanged(struct SiiRtcInfo *rtc, struct Time *result, struct Time *t)
+{
+	if(result->hours != (ConvertBcdToBinary(rtc->hour) - t->hours))
+	{
+		RtcCalcTimeDifference(&sRtc, &gLocalTime, &gSaveBlock2Ptr->localTimeOffset);
+		return TRUE;
+	}
+	else
+	{
+		RtcCalcTimeDifference(&sRtc, &gLocalTime, &gSaveBlock2Ptr->localTimeOffset);
+		return FALSE;
+	}
+}
+
 void RtcCalcLocalTime(void)
 {
     RtcGetInfo(&sRtc);

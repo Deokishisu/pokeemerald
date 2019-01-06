@@ -719,6 +719,7 @@ void TilesetCb_InsideBuilding(void)
 
 static void sub_80A0B70(u16 timer)
 {
+	/*DISABLE ANIMATIONS FOR GENERAL
     static void gTilesetAnims_Flower(u16);
     static void gTilesetAnims_Water(u16);
     static void gTilesetAnims_SandWaterEdge(u16);
@@ -735,6 +736,7 @@ static void sub_80A0B70(u16 timer)
         gTilesetAnims_Waterfall(timer >> 4);
     if ((timer & 0x0F) == 4)
         gTilesetAnims_LandWaterEdge (timer >> 4);
+	*/
 }
 
 static void sub_80A0BB4(u16 timer)

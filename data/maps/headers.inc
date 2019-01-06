@@ -1,3 +1,4 @@
+#include "constants/tileset_override_palettes.h"
 	.include "data/maps/VioletCity/header.inc"
 	.include "data/maps/GoldenrodCity/header.inc"
 	.include "data/maps/EcruteakCity/header.inc"

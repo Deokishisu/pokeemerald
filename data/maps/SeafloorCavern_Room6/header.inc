@@ -1,4 +1,4 @@
-SeafloorCavern_Room6: @ 848425C
+SeafloorCavern_Room6::
 	.4byte SeafloorCavern_Room6_Layout
 	.4byte SeafloorCavern_Room6_MapEvents
 	.4byte SeafloorCavern_Room6_MapScripts
@@ -12,4 +12,3 @@ SeafloorCavern_Room6: @ 848425C
 	.2byte 0
 	map_header_flags allow_bike=1, allow_escape_rope=1, allow_run=1, show_map_name=1
 	.byte MAP_BATTLE_SCENE_NORMAL
-

@@ -1,4 +1,4 @@
-SeafloorCavern_Room4: @ 8484224
+SeafloorCavern_Room4::
 	.4byte SeafloorCavern_Room4_Layout
 	.4byte SeafloorCavern_Room4_MapEvents
 	.4byte SeafloorCavern_Room4_MapScripts
@@ -12,4 +12,3 @@ SeafloorCavern_Room4: @ 8484224
 	.2byte 0
 	map_header_flags allow_bike=1, allow_escape_rope=1, allow_run=1, show_map_name=1
 	.byte MAP_BATTLE_SCENE_NORMAL
-

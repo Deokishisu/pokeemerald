@@ -7,8 +7,10 @@
 #include "field_weather.h"
 #include "main.h"
 #include "menu.h"
+#include "overworld.h"
 #include "palette.h"
 #include "random.h"
+#include "rtc.h"
 #include "script.h"
 #include "start_menu.h"
 #include "sound.h"
@@ -16,8 +18,13 @@
 #include "task.h"
 #include "trig.h"
 #include "gpu_regs.h"
+#include "save.h"
 
 #define MACRO1(color) ((((color) >> 1) & 0xF) | (((color) >> 2) & 0xF0) | (((color) >> 3) & 0xF00))
+
+extern struct SaveBlock2 gSaveblock2;
+extern bool8 RtcCheckHour(void);
+extern void refresh_map_palettes(const struct MapLayout *);
 
 enum
 {
@@ -235,6 +242,7 @@ static void Task_WeatherMain(u8 taskId)
             gWeatherPtr->palProcessingState = WEATHER_PAL_STATE_CHANGING_WEATHER;
             gWeatherPtr->currWeather = gWeatherPtr->nextWeather;
             gWeatherPtr->weatherChangeComplete = TRUE;
+			
         }
     }
     else
@@ -243,6 +251,11 @@ static void Task_WeatherMain(u8 taskId)
     }
 
     gWeatherPalStateFuncs[gWeatherPtr->palProcessingState]();
+	if (gMapHeader.timePaletteOverride == 0 && RtcCheckHour())
+    {
+		//Only change palettes if the hour has changed
+		refresh_map_palettes(gMapHeader.mapLayout);
+	}
 }
 
 static void None_Init(void)

@@ -22,6 +22,7 @@
 #include "battle_pyramid.h"
 #include "constants/items.h"
 #include "constants/maps.h"
+#include "rtc.h"
 
 extern const u8 EventScript_RepelWoreOff[];
 
@@ -273,6 +274,15 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
 {
     u8 wildMonIndex = 0;
     u8 level;
+	u8 time;
+
+	RtcCalcLocalTime();
+	if(gLocalTime.hours >= 4 && gLocalTime.hours < 10)
+		time = 0; //morn
+	else if(gLocalTime.hours >= 10 && gLocalTime.hours < 18)
+		time = 1; //day
+	else
+		time = 2; //nite
 
     switch (area)
     {
@@ -288,14 +298,14 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
     }
 	//call to ChooseWildMonLevel removed for performance because
 	//it's just a straight struct read to one value now.
-    level = wildMonInfo->wildPokemon[Random() % 3][Random() % 3][wildMonIndex].level;
+    level = wildMonInfo->wildPokemon[Random() % 3][time][wildMonIndex].level;
     if (flags & WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(level))
         return FALSE;
     /*if (gMapHeader.mapLayoutId != 0x166 && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
         return FALSE;
 	*/
 	// ^^^^This is some sort of check involving Shoal Cave's LowTideStairsRoom that wasn't present in pokeruby.^^^^
-    CreateWildMon(wildMonInfo->wildPokemon[Random() % 3][Random() % 3][wildMonIndex].species, level);
+    CreateWildMon(wildMonInfo->wildPokemon[Random() % 3][time][wildMonIndex].species, level);
     return TRUE;
 }
 //dupe because water pokemon use a different struct
@@ -675,6 +685,15 @@ u16 GetLocalWildMon(bool8 *isWaterMon) //version and time check
     u16 headerId;
     const struct WildPokemonInfo *landMonsInfo;
     const struct WildWaterPokemonInfo *waterMonsInfo;
+	u8 time;
+
+	RtcCalcLocalTime();
+	if(gLocalTime.hours >= 4 && gLocalTime.hours < 10)
+		time = 0; //morn
+	else if(gLocalTime.hours >= 10 && gLocalTime.hours < 18)
+		time = 1; //day
+	else
+		time = 2; //nite
 
     *isWaterMon = FALSE;
     headerId = GetCurrentMapWildMonHeaderId();
@@ -687,7 +706,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon) //version and time check
         return SPECIES_NONE;
     // Land Pokemon
     else if (landMonsInfo != NULL && waterMonsInfo == NULL)
-        return landMonsInfo->wildPokemon[Random() % 3][Random() % 3][ChooseWildMonIndex_Land()].species;
+        return landMonsInfo->wildPokemon[Random() % 3][time][ChooseWildMonIndex_Land()].species;
     // Water Pokemon
     else if (landMonsInfo == NULL && waterMonsInfo != NULL)
     {
@@ -697,7 +716,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon) //version and time check
     // Either land or water Pokemon
     if ((Random() % 100) < 80)
     {
-        return landMonsInfo->wildPokemon[Random() % 3][Random() % 3][ChooseWildMonIndex_Land()].species;
+        return landMonsInfo->wildPokemon[Random() % 3][time][ChooseWildMonIndex_Land()].species;
     }
     else
     {

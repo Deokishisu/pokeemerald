@@ -6,8 +6,8 @@ Route35_National_Park_Gate_EventObjects::
 Route35_National_Park_Gate_MapWarps::
 	warp_def 3, 7, 3, 2, MAP_ROUTE35
 	warp_def 4, 7, 3, 2, MAP_ROUTE35
-	warp_def 3, 0, 3, 2, MAP_ROUTE36_NATIONAL_PARK_GATE
-	warp_def 4, 0, 3, 3, MAP_ROUTE36_NATIONAL_PARK_GATE
+	warp_def 3, 0, 3, 0, MAP_RUSTURF_TUNNEL
+	warp_def 4, 0, 3, 1, MAP_RUSTURF_TUNNEL
 
 Route35_National_Park_Gate_MapBGEvents::
 	bg_event 5, 0, 3, BG_EVENT_PLAYER_FACING_ANY, NULL

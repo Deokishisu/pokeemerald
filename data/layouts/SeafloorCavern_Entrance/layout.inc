@@ -6,10 +6,10 @@ SeafloorCavern_Entrance_MapBlockdata::
 
 	.align 2
 SeafloorCavern_Entrance_Layout::
-	.4byte 0x14
-	.4byte 0x14
+	.4byte 20
+	.4byte 18
 	.4byte SeafloorCavern_Entrance_MapBorder
 	.4byte SeafloorCavern_Entrance_MapBlockdata
-	.4byte gTileset_General
-	.4byte gTileset_Cave
+	.4byte gTileset_Building2
+	.4byte gTileset_BikeShop
 

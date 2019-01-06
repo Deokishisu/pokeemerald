@@ -1,4 +1,42 @@
 	.align 2
+gTilesetPalettes_GeneralNite::
+	.incbin "data/tilesets/primary/general/palettes/nite/00.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/01.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/02.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/03.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/04.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/05.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/06.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/07.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/08.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/09.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/10.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/11.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/12.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/13.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/14.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/nite/15.gbapal"
+	
+	.align 2
+gTilesetPalettes_GeneralMorn::
+	.incbin "data/tilesets/primary/general/palettes/morn/00.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/01.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/02.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/03.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/04.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/05.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/06.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/07.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/08.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/09.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/10.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/11.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/12.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/13.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/14.gbapal"
+	.incbin "data/tilesets/primary/general/palettes/morn/15.gbapal"
+
+	.align 2
 gTilesetTiles_Petalburg:: @ 8339E08
 	.incbin "data/tilesets/secondary/petalburg/tiles.4bpp.lz"
 
@@ -366,6 +404,63 @@ gTilesetPalettes_InsideBuilding:: @ 83508BC
 	.incbin "data/tilesets/primary/building/palettes/14.gbapal"
 	.incbin "data/tilesets/primary/building/palettes/15.gbapal"
 
+	.align 2
+gTilesetPalettes_InsideBuilding_DungeonDay:: @ 83508BC
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/00.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/01.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/02.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/03.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/04.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/05.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/06.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/07.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/08.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/09.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/10.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/11.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/12.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/13.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/14.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_day/15.gbapal"
+
+	.align 2
+gTilesetPalettes_InsideBuilding_DungeonDark:: @ 83508BC
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/00.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/01.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/02.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/03.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/04.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/05.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/06.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/07.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/08.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/09.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/10.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/11.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/12.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/13.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/14.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/dungeon_dark/15.gbapal"
+
+	.align 2
+gTilesetPalettes_InsideBuilding_Nite:: @ 83508BC
+	.incbin "data/tilesets/primary/building/palettes/nite/00.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/01.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/02.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/03.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/04.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/05.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/06.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/07.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/08.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/09.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/10.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/11.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/12.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/13.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/14.gbapal"
+	.incbin "data/tilesets/primary/building/palettes/nite/15.gbapal"
+	
 	.align 2
 gTilesetTiles_Shop:: @ 8350ABC
 	.incbin "data/tilesets/secondary/shop/tiles.4bpp.lz"
