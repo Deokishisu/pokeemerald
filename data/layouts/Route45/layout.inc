@@ -11,5 +11,5 @@ Route45_Layout::
 	.4byte Route45_MapBorder
 	.4byte Route45_MapBlockdata
 	.4byte gTileset_General
-	.4byte gTileset_Mauville
+	.4byte gTileset_Petalburg
 
