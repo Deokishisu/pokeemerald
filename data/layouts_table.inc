@@ -158,8 +158,8 @@ gMapLayouts::
 	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap2_Layout
+	.4byte BurnedTower_1F_Layout
+	.4byte BurnedTower_B1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3_Layout
 	.4byte CaveOfOrigin_B1F_Layout
 	.4byte VictoryRoad_1F_Layout
@@ -321,16 +321,16 @@ gMapLayouts::
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
-	.4byte SkyPillar_1F_Layout
-	.4byte SkyPillar_2F_Layout
-	.4byte SkyPillar_3F_Layout
-	.4byte SkyPillar_4F_Layout
+	.4byte Lighthouse_1F_Layout
+	.4byte Lighthouse_2F_Layout
+	.4byte Lighthouse_3F_Layout
+	.4byte Lighthouse_4F_Layout
 	.4byte UnknownMap_0845ECB4_Layout
 	.4byte MossdeepCity_StevensHouse_Layout
 	.4byte ShoalCave_LowTideIceRoom_Layout
 	.4byte SafariZone_RestHouse_Layout
-	.4byte SkyPillar_5F_Layout
-	.4byte SkyPillar_Top_Layout
+	.4byte Lighthouse_5F_Layout
+	.4byte Lighthouse_6F_Layout
 	.4byte BattleFrontier_BattleDomeLobby_Layout
 	.4byte BattleFrontier_BattleDomeCorridor_Layout
 	.4byte BattleFrontier_BattleDomePreBattleRoom_Layout
@@ -605,8 +605,8 @@ gMapLayouts::
 	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap2_Layout
+	.4byte BurnedTower_1F_Layout
+	.4byte BurnedTower_B1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3_Layout
 	.4byte CaveOfOrigin_B1F_Layout
 	.4byte VictoryRoad_1F_Layout
@@ -768,16 +768,16 @@ gMapLayouts::
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
-	.4byte SkyPillar_1F_Layout
-	.4byte SkyPillar_2F_Layout
-	.4byte SkyPillar_3F_Layout
-	.4byte SkyPillar_4F_Layout
+	.4byte Lighthouse_1F_Layout
+	.4byte Lighthouse_2F_Layout
+	.4byte Lighthouse_3F_Layout
+	.4byte Lighthouse_4F_Layout
 	.4byte UnknownMap_0845ECB4_Layout
 	.4byte MossdeepCity_StevensHouse_Layout
 	.4byte ShoalCave_LowTideIceRoom_Layout
 	.4byte SafariZone_RestHouse_Layout
-	.4byte SkyPillar_5F_Layout
-	.4byte SkyPillar_Top_Layout
+	.4byte Lighthouse_5F_Layout
+	.4byte Lighthouse_6F_Layout
 	.4byte BattleFrontier_BattleDomeLobby_Layout
 	.4byte BattleFrontier_BattleDomeCorridor_Layout
 	.4byte BattleFrontier_BattleDomePreBattleRoom_Layout
@@ -1052,8 +1052,8 @@ gMapLayouts::
 	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap2_Layout
+	.4byte BurnedTower_1F_Layout
+	.4byte BurnedTower_B1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3_Layout
 	.4byte CaveOfOrigin_B1F_Layout
 	.4byte VictoryRoad_1F_Layout
@@ -1215,16 +1215,16 @@ gMapLayouts::
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
-	.4byte SkyPillar_1F_Layout
-	.4byte SkyPillar_2F_Layout
-	.4byte SkyPillar_3F_Layout
-	.4byte SkyPillar_4F_Layout
+	.4byte Lighthouse_1F_Layout
+	.4byte Lighthouse_2F_Layout
+	.4byte Lighthouse_3F_Layout
+	.4byte Lighthouse_4F_Layout
 	.4byte UnknownMap_0845ECB4_Layout
 	.4byte MossdeepCity_StevensHouse_Layout
 	.4byte ShoalCave_LowTideIceRoom_Layout
 	.4byte SafariZone_RestHouse_Layout
-	.4byte SkyPillar_5F_Layout
-	.4byte SkyPillar_Top_Layout
+	.4byte Lighthouse_5F_Layout
+	.4byte Lighthouse_6F_Layout
 	.4byte BattleFrontier_BattleDomeLobby_Layout
 	.4byte BattleFrontier_BattleDomeCorridor_Layout
 	.4byte BattleFrontier_BattleDomePreBattleRoom_Layout
@@ -1499,8 +1499,8 @@ gMapLayouts::
 	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap2_Layout
+	.4byte BurnedTower_1F_Layout
+	.4byte BurnedTower_B1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3_Layout
 	.4byte CaveOfOrigin_B1F_Layout
 	.4byte VictoryRoad_1F_Layout
@@ -1662,16 +1662,16 @@ gMapLayouts::
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
-	.4byte SkyPillar_1F_Layout
-	.4byte SkyPillar_2F_Layout
-	.4byte SkyPillar_3F_Layout
-	.4byte SkyPillar_4F_Layout
+	.4byte Lighthouse_1F_Layout
+	.4byte Lighthouse_2F_Layout
+	.4byte Lighthouse_3F_Layout
+	.4byte Lighthouse_4F_Layout
 	.4byte UnknownMap_0845ECB4_Layout
 	.4byte MossdeepCity_StevensHouse_Layout
 	.4byte ShoalCave_LowTideIceRoom_Layout
 	.4byte SafariZone_RestHouse_Layout
-	.4byte SkyPillar_5F_Layout
-	.4byte SkyPillar_Top_Layout
+	.4byte Lighthouse_5F_Layout
+	.4byte Lighthouse_6F_Layout
 	.4byte BattleFrontier_BattleDomeLobby_Layout
 	.4byte BattleFrontier_BattleDomeCorridor_Layout
 	.4byte BattleFrontier_BattleDomePreBattleRoom_Layout
@@ -1946,8 +1946,8 @@ gMapLayouts::
 	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap2_Layout
+	.4byte BurnedTower_1F_Layout
+	.4byte BurnedTower_B1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3_Layout
 	.4byte CaveOfOrigin_B1F_Layout
 	.4byte VictoryRoad_1F_Layout
@@ -2109,16 +2109,16 @@ gMapLayouts::
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
-	.4byte SkyPillar_1F_Layout
-	.4byte SkyPillar_2F_Layout
-	.4byte SkyPillar_3F_Layout
-	.4byte SkyPillar_4F_Layout
+	.4byte Lighthouse_1F_Layout
+	.4byte Lighthouse_2F_Layout
+	.4byte Lighthouse_3F_Layout
+	.4byte Lighthouse_4F_Layout
 	.4byte UnknownMap_0845ECB4_Layout
 	.4byte MossdeepCity_StevensHouse_Layout
 	.4byte ShoalCave_LowTideIceRoom_Layout
 	.4byte SafariZone_RestHouse_Layout
-	.4byte SkyPillar_5F_Layout
-	.4byte SkyPillar_Top_Layout
+	.4byte Lighthouse_5F_Layout
+	.4byte Lighthouse_6F_Layout
 	.4byte BattleFrontier_BattleDomeLobby_Layout
 	.4byte BattleFrontier_BattleDomeCorridor_Layout
 	.4byte BattleFrontier_BattleDomePreBattleRoom_Layout
@@ -2393,8 +2393,8 @@ gMapLayouts::
 	.4byte TinTower_Roof_Layout
 	.4byte CaveOfOrigin_Entrance_Layout
 	.4byte CaveOfOrigin_1F_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap1_Layout
-	.4byte CaveOfOrigin_UnusedRubySapphireMap2_Layout
+	.4byte BurnedTower_1F_Layout
+	.4byte BurnedTower_B1F_Layout
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3_Layout
 	.4byte CaveOfOrigin_B1F_Layout
 	.4byte VictoryRoad_1F_Layout
@@ -2556,16 +2556,16 @@ gMapLayouts::
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
-	.4byte SkyPillar_1F_Layout
-	.4byte SkyPillar_2F_Layout
-	.4byte SkyPillar_3F_Layout
-	.4byte SkyPillar_4F_Layout
+	.4byte Lighthouse_1F_Layout
+	.4byte Lighthouse_2F_Layout
+	.4byte Lighthouse_3F_Layout
+	.4byte Lighthouse_4F_Layout
 	.4byte UnknownMap_0845ECB4_Layout
 	.4byte MossdeepCity_StevensHouse_Layout
 	.4byte ShoalCave_LowTideIceRoom_Layout
 	.4byte SafariZone_RestHouse_Layout
-	.4byte SkyPillar_5F_Layout
-	.4byte SkyPillar_Top_Layout
+	.4byte Lighthouse_5F_Layout
+	.4byte Lighthouse_6F_Layout
 	.4byte BattleFrontier_BattleDomeLobby_Layout
 	.4byte BattleFrontier_BattleDomeCorridor_Layout
 	.4byte BattleFrontier_BattleDomePreBattleRoom_Layout

@@ -10,12 +10,12 @@ TODO: Update Options menu selections to Crystal equivalents when flags are figur
 
 TODO: Black out the Options menu background; and decide if SGB borders are a thing and implement them.
 
-TODO: Import the remaining tilesets (Battle Tower Outside, Cave, Dark Cave, Forest, Ice Path, Park, Port, Radio Tower, Ruins of Alph, and possibly PokeCom Center).
+TODO: Import the remaining tilesets (Battle Tower Outside, Cave, Dark Cave, Forest, Ice Path, Port, Radio Tower, Ruins of Alph, and possibly PokeCom Center).
 
 TODO: Remove National Dex requirement for trading with FRLG, replace with Time Capsule check.
 
 TODO: Fix other Metal Advance players appearing as Emerald players in link rooms.
 
-TODO: Add switching encounter tables by version and time of day.
+TODO: When flags are settled, make wild encounters depend on a version check instead of being random.
 
 TODO: Remove the early return in src/fldeff_teleport.c in function SetUpFieldMove_Teleport(). It was changed to allow Teleport anywhere for debugging purposes.

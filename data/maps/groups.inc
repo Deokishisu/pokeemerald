@@ -376,8 +376,8 @@ gMapGroup26::
 	.4byte TinTower_Roof
 	.4byte CaveOfOrigin_Entrance
 	.4byte CaveOfOrigin_1F
-	.4byte CaveOfOrigin_UnusedRubySapphireMap1
-	.4byte CaveOfOrigin_UnusedRubySapphireMap2
+	.4byte BurnedTower_1F
+	.4byte BurnedTower_B1F
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3
 	.4byte CaveOfOrigin_B1F
 	.4byte VictoryRoad_1F
@@ -416,13 +416,13 @@ gMapGroup26::
 	.4byte AquaHideout_UnusedRubyMap3
 	.4byte SkyPillar_Entrance
 	.4byte SkyPillar_Outside
-	.4byte SkyPillar_1F
-	.4byte SkyPillar_2F
-	.4byte SkyPillar_3F
-	.4byte SkyPillar_4F
+	.4byte Lighthouse_1F
+	.4byte Lighthouse_2F
+	.4byte Lighthouse_3F
+	.4byte Lighthouse_4F
+	.4byte Lighthouse_5F
+	.4byte Lighthouse_6F
 	.4byte ShoalCave_LowTideIceRoom
-	.4byte SkyPillar_5F
-	.4byte SkyPillar_Top
 	.4byte MagmaHideout_1F
 	.4byte MagmaHideout_2F_1R
 	.4byte MagmaHideout_2F_2R

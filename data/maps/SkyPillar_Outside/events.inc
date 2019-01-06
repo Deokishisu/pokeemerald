@@ -3,7 +3,7 @@ SkyPillar_Outside_EventObjects: @ 853701C
 
 SkyPillar_Outside_MapWarps: @ 8537034
 	warp_def 17, 13, 3, 1, MAP_SKY_PILLAR_ENTRANCE
-	warp_def 14, 5, 0, 0, MAP_SKY_PILLAR_1F
+	warp_def 14, 5, 0, 0, MAP_SKY_PILLAR_ENTRANCE
 
 SkyPillar_Outside_MapEvents:: @ 8537044
 	map_events SkyPillar_Outside_EventObjects, SkyPillar_Outside_MapWarps, 0x0, 0x0

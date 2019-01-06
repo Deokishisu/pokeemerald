@@ -13,7 +13,7 @@ OlivineCity_MapWarps::
 	warp_def 13, 15, 0, 0, MAP_OLIVINE_CITY_HOUSE1
 	warp_def 7, 21, 0, 0, MAP_OLIVINE_CITY_CAFE
 	warp_def 19, 17, 0, 0, MAP_OLIVINE_CITY_MART
-	warp_def 29, 27, 0, 0, MAP_CIANWOOD_CITY
+	warp_def 29, 27, 0, 0, MAP_LIGHTHOUSE_1F
 	warp_def 19, 27, 0, 0, MAP_OLIVINE_CITY_PORT_PASSAGE
 	warp_def 20, 27, 0, 1, MAP_OLIVINE_CITY_PORT_PASSAGE
 

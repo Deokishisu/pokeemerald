@@ -20,7 +20,7 @@ EcruteakCity_MapWarps::
 	warp_def 6, 27, 0, 0, MAP_ECRUTEAK_CITY_GYM
 	warp_def 13, 27, 0, 0, MAP_ECRUTEAK_CITY_HOUSE2
 	warp_def 37, 7, 0, 0, MAP_TIN_TOWER_1F
-	warp_def 5, 5, 0, 0, MAP_ECRUTEAK_CITY
+	warp_def 5, 5, 0, 0, MAP_BURNED_TOWER_1F
 	warp_def 0, 18, 3, 0, MAP_ROUTE38_GATE
 	warp_def 0, 19, 3, 1, MAP_ROUTE38_GATE
 
