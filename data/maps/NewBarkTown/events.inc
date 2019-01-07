@@ -5,7 +5,7 @@ NewBarkTown_EventObjects::
 	object_event 4, EVENT_OBJ_GFX_MOM, 0, 5, 8, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, LittlerootTown_EventScript_1E863D, 752
 	object_event 5, EVENT_OBJ_GFX_LINK_RS_BRENDAN, 0, 6, 6, 4, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 0, 0, 0, 0, NULL, 0
 	object_event 6, EVENT_OBJ_GFX_LINK_BRENDAN, 0, 7, 6, 4, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 0, 0, 0, 0, NULL, 0
-	object_event 7, EVENT_OBJ_GFX_ZHIPSTER, 0, 13, 10, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, 0x0, 794
+	object_event 7, EVENT_OBJ_GFX_VAR_0, 0, 13, 10, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, 0x0, 794
 	object_event 8, EVENT_OBJ_GFX_PROF_ELM, 0, 16, 9, 3, MOVEMENT_TYPE_FACE_UP, 1, 1, 0, 0, 0x0, 795
 
 NewBarkTown_MapWarps::

@@ -1760,7 +1760,7 @@ u16 sub_81399F4(void)
     gUnknown_0203AB60 = 0;
     gUnknown_0203AB62 = 0;
 
-    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(LILYCOVE_CITY_DEPARTMENT_STORE_1F))
+    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(GOLDENROD_CITY_DEPARTMENT_STORE_1F))
     {
         switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
         {
