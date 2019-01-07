@@ -1163,7 +1163,7 @@ static void sub_8161F94(void)
         gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][lvlMode] = 0;
 
     ValidateBattleTowerRecordChecksums();
-    saved_warp2_set(0, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, -1);
+    SetDynamicWarp(0, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, -1);
     gTrainerBattleOpponent_A = 0;
 }
 
@@ -2799,7 +2799,7 @@ static void sub_8164B74(void)
         if (battleMode == FRONTIER_MODE_LINK_MULTIS)
         {
             challengeNum = gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][lvlMode] / 7;
-            if (sub_800A520())
+            if (IsLinkTaskFinished())
             {
                 SendBlock(bitmask_all_link_players_but_self(), &challengeNum, sizeof(challengeNum));
                 gSpecialVar_Result = 1;
@@ -2836,7 +2836,7 @@ static void sub_8164B74(void)
         }
         break;
     case 2:
-        if (sub_800A520())
+        if (IsLinkTaskFinished())
         {
             SendBlock(bitmask_all_link_players_but_self(), &gSaveBlock2Ptr->frontier.field_CB4, sizeof(gSaveBlock2Ptr->frontier.field_CB4));
             gSpecialVar_Result = 3;
@@ -3158,10 +3158,10 @@ void sub_81653CC(void)
 {
     if (gSaveBlock2Ptr->frontier.field_CA8 == 1)
         sub_80F01B8();
-    if (FlagGet(FLAG_0x077) == TRUE)
+    if (FlagGet(FLAG_CANCEL_BATTLE_ROOM_CHALLENGE) == TRUE)
     {
         sub_80F01B8();
-        FlagClear(FLAG_0x077);
+        FlagClear(FLAG_CANCEL_BATTLE_ROOM_CHALLENGE);
     }
 }
 

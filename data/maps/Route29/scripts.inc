@@ -220,7 +220,7 @@ Route101_EventScript_1EBE16:: @ 81EBE16
 	faceplayer
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
-	setflag FLAG_0x052
+	setflag FLAG_RESCUED_BIRCH
 	fadescreen 1
 	removeobject 4
 	setobjectxy EVENT_OBJ_ID_PLAYER, 6, 13
@@ -239,9 +239,9 @@ Route101_EventScript_1EBE16:: @ 81EBE16
 	setvar VAR_0x4060, 3
 	clearflag FLAG_SPECIAL_FLAG_0x4000
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq Route101_EventScript_1EBE85
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq Route101_EventScript_1EBE89
 	warp MAP_NEW_BARK_TOWN_PROF_ELMS_LAB, 255, 6, 5
 	waitstate

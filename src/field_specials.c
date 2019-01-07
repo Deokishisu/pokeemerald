@@ -47,6 +47,7 @@
 #include "constants/event_objects.h"
 #include "constants/field_effects.h"
 #include "constants/items.h"
+#include "constants/map_types.h"
 #include "constants/maps.h"
 #include "constants/songs.h"
 #include "constants/species.h"
@@ -117,9 +118,9 @@ static void sub_813A738(u8 taskId);
 static void sub_813A600(u8 taskId);
 static void sub_813A664(u8 taskId);
 static void sub_813ABD4(u16 a0);
-static void task_deoxys_sound(u8 taskId);
-static void sub_813B0B4(u8 a0);
-static void sub_813B160(u8 taskId);
+static void Task_DeoxysRockInteraction(u8 taskId);
+static void ChangeDeoxysRockLevel(u8 a0);
+static void WaitForDeoxysRockMovement(u8 taskId);
 static void sub_813B57C(u8 taskId);
 static void sub_813B824(u8 taskId);
 static void _fwalk(u8 taskId);
@@ -362,7 +363,7 @@ u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
 
 bool32 is_tile_that_overrides_player_control(void)
 {
-    if (FlagGet(FLAG_0x088))
+    if (FlagGet(FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL))
     {
         switch (gMapHeader.mapType)
         {
@@ -389,15 +390,15 @@ bool32 is_tile_that_overrides_player_control(void)
 
 bool32 sub_8138120(void)
 {
-    if (FlagGet(FLAG_0x08A))
+    if (FlagGet(FLAG_REGISTER_WINONA_POKENAV))
     {
         switch (gMapHeader.mapType)
         {
-            case 1:
-            case 2:
-            case 3:
-            case 6:
-                if (++(*GetVarPointer(VAR_0x40F3)) < 0xA)
+            case MAP_TYPE_TOWN:
+            case MAP_TYPE_CITY:
+            case MAP_TYPE_ROUTE:
+            case MAP_TYPE_6:
+                if (++(*GetVarPointer(VAR_0x40F3)) < 10)
                 {
                     return FALSE;
                 }
@@ -416,7 +417,7 @@ bool32 sub_8138120(void)
 
 bool32 sub_8138168(void)
 {
-    if (FlagGet(FLAG_0x072))
+    if (FlagGet(FLAG_SCOTT_CALL_NATIONAL_DEX))
     {
         switch (gMapHeader.mapType)
         {
@@ -443,7 +444,7 @@ bool32 sub_8138168(void)
 
 bool32 sub_81381B0(void)
 {
-    if (FlagGet(FLAG_0x080))
+    if (FlagGet(FLAG_ENABLE_ROXANNE_FIRST_CALL))
     {
         switch (gMapHeader.mapType)
         {
@@ -470,7 +471,7 @@ bool32 sub_81381B0(void)
 
 bool32 sub_81381F8(void)
 {
-    if (FlagGet(FLAG_0x075))
+    if (FlagGet(FLAG_DEFEATED_MAGMA_SPACE_CENTER))
     {
         switch (gMapHeader.mapType)
         {
@@ -947,11 +948,11 @@ void CableCarWarp(void)
 {
     if (gSpecialVar_0x8004 != 0)
     {
-        Overworld_SetWarpDestination(MAP_GROUP(ROUTE112_CABLE_CAR_STATION), MAP_NUM(ROUTE112_CABLE_CAR_STATION), -1, 6, 4);
+        SetWarpDestination(MAP_GROUP(ROUTE112_CABLE_CAR_STATION), MAP_NUM(ROUTE112_CABLE_CAR_STATION), -1, 6, 4);
     }
     else
     {
-        Overworld_SetWarpDestination(MAP_GROUP(MT_CHIMNEY_CABLE_CAR_STATION), MAP_NUM(MT_CHIMNEY_CABLE_CAR_STATION), -1, 6, 4);
+        SetWarpDestination(MAP_GROUP(MT_CHIMNEY_CABLE_CAR_STATION), MAP_NUM(MT_CHIMNEY_CABLE_CAR_STATION), -1, 6, 4);
     }
 }
 
@@ -1202,7 +1203,7 @@ void EndLotteryCornerComputerEffect(void)
 void SetTrickHouseEndRoomFlag(void)
 {
     u16 *specVar = &gSpecialVar_0x8004;
-    u16 flag = FLAG_0x1F5;
+    u16 flag = FLAG_TRICK_HOUSE_END_ROOM;
     *specVar = flag;
     FlagSet(flag);
 }
@@ -1210,7 +1211,7 @@ void SetTrickHouseEndRoomFlag(void)
 void ResetTrickHouseEndRoomFlag(void)
 {
     u16 *specVar = &gSpecialVar_0x8004;
-    u16 flag = FLAG_0x1F5;
+    u16 flag = FLAG_TRICK_HOUSE_END_ROOM;
     *specVar = flag;
     FlagClear(flag);
 }
@@ -1727,7 +1728,7 @@ const u16 gUnknown_085B2C06[][3] =
 void SetDepartmentStoreFloorVar(void)
 {
     u8 deptStoreFloor;
-    switch (gSaveBlock1Ptr->warp2.mapNum)
+    switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
     {
         case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_1F):
             deptStoreFloor = 4;
@@ -1759,9 +1760,9 @@ u16 sub_81399F4(void)
     gUnknown_0203AB60 = 0;
     gUnknown_0203AB62 = 0;
 
-    if (gSaveBlock1Ptr->warp2.mapGroup == 13)
+    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(LILYCOVE_CITY_DEPARTMENT_STORE_1F))
     {
-        switch (gSaveBlock1Ptr->warp2.mapNum)
+        switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
         {
             case MAP_NUM(GOLDENROD_CITY_DEPARTMENT_STORE_5F):
                 gUnknown_0203AB60 = 0;
@@ -2112,7 +2113,7 @@ void sub_813A080(void)
     u16 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
     u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
 
-    if (battleMode == FRONTIER_MODE_MULTIS && !FlagGet(FLAG_0x152))
+    if (battleMode == FRONTIER_MODE_MULTIS && !FlagGet(FLAG_CHOSEN_MULTI_BATTLE_NPC_PARTNER))
     {
         gSpecialVar_0x8005 = 5;
         gSpecialVar_0x8006 = 4;
@@ -3235,12 +3236,12 @@ void sub_813AF48(void)
     }
 }
 
-void sub_813AFC8(void)
+void DoDeoxysRockInteraction(void)
 {
-    CreateTask(task_deoxys_sound, 8);
+    CreateTask(Task_DeoxysRockInteraction, 8);
 }
 
-static const u16 gUnknown_085B3280[][16] = {
+static const u16 sDeoxysRockPalettes[][16] = {
     INCBIN_U16("graphics/misc/deoxys1.gbapal"),
     INCBIN_U16("graphics/misc/deoxys2.gbapal"),
     INCBIN_U16("graphics/misc/deoxys3.gbapal"),
@@ -3254,25 +3255,25 @@ static const u16 gUnknown_085B3280[][16] = {
     INCBIN_U16("graphics/misc/deoxys11.gbapal"),
 };
 
-static const u8 gUnknown_085B33E0[][2] = {
-    { 0x0f, 0x0c },
-    { 0x0b, 0x0e },
-    { 0x0f, 0x08 },
-    { 0x13, 0x0e },
-    { 0x0c, 0x0b },
-    { 0x12, 0x0b },
-    { 0x0f, 0x0e },
-    { 0x0b, 0x0e },
-    { 0x13, 0x0e },
-    { 0x0f, 0x0f },
-    { 0x0f, 0x0a },
+static const u8 sDeoxysRockCoords[][2] = {
+    { 15, 12 },
+    { 11, 14 },
+    { 15,  8 },
+    { 19, 14 },
+    { 12, 11 },
+    { 18, 11 },
+    { 15, 14 },
+    { 11, 14 },
+    { 19, 14 },
+    { 15, 15 },
+    { 15, 10 },
 };
 
-static void task_deoxys_sound(u8 taskId)
+static void Task_DeoxysRockInteraction(u8 taskId)
 {
-    static const u8 gUnknown_085B33F6[] = { 0x04, 0x08, 0x08, 0x08, 0x04, 0x04, 0x04, 0x06, 0x03, 0x03 };
+    static const u8 sStoneMaxStepCounts[] = { 4, 8, 8, 8, 4, 4, 4, 6, 3, 3 };
 
-    if (FlagGet(FLAG_0x8D4) == TRUE)
+    if (FlagGet(FLAG_DEOXYS_ROCK_COMPLETE) == TRUE)
     {
         gSpecialVar_Result = 3;
         EnableBothScriptContexts();
@@ -3280,100 +3281,92 @@ static void task_deoxys_sound(u8 taskId)
     }
     else
     {
-        u16 temp1 = VarGet(VAR_0x4035);
-        u16 temp2 = VarGet(VAR_0x4034);
+        u16 rockLevel = VarGet(VAR_DEOXYS_ROCK_LEVEL);
+        u16 stepCount = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
 
-        VarSet(VAR_0x4034, 0);
-        if (temp1 != 0 && gUnknown_085B33F6[temp1 - 1] < temp2)
+        VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
+        if (rockLevel != 0 && sStoneMaxStepCounts[rockLevel - 1] < stepCount)
         {
-            sub_813B0B4(0);
-            VarSet(VAR_0x4035, 0);
+            // Player failed to take the shortest path to the stone, so it resets.
+            ChangeDeoxysRockLevel(0);
+            VarSet(VAR_DEOXYS_ROCK_LEVEL, 0);
             gSpecialVar_Result = 0;
             DestroyTask(taskId);
         }
-        else if (temp1 == 10)
+        else if (rockLevel == 10)
         {
-            FlagSet(FLAG_0x8D4);
+            FlagSet(FLAG_DEOXYS_ROCK_COMPLETE);
             gSpecialVar_Result = 2;
             EnableBothScriptContexts();
             DestroyTask(taskId);
         }
         else
         {
-            temp1++;
-            sub_813B0B4(temp1);
-            VarSet(VAR_0x4035, temp1);
+            rockLevel++;
+            ChangeDeoxysRockLevel(rockLevel);
+            VarSet(VAR_DEOXYS_ROCK_LEVEL, rockLevel);
             gSpecialVar_Result = 1;
             DestroyTask(taskId);
         }
     }
 }
 
-static void sub_813B0B4(u8 a0)
+static void ChangeDeoxysRockLevel(u8 rockLevel)
 {
     u8 eventObjectId;
-    LoadPalette(&gUnknown_085B3280[a0], 0x1A0, 8);
+    LoadPalette(&sDeoxysRockPalettes[rockLevel], 0x1A0, 8);
     TryGetEventObjectIdByLocalIdAndMap(1, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &eventObjectId);
 
-    if (a0 == 0)
-    {
+    if (rockLevel == 0)
         PlaySE(SE_W109);
-    }
     else
-    {
         PlaySE(SE_RG_DEOMOV);
-    }
 
-    CreateTask(sub_813B160, 8);
-
+    CreateTask(WaitForDeoxysRockMovement, 8);
     gFieldEffectArguments[0] = 1;
     gFieldEffectArguments[1] = 58;
     gFieldEffectArguments[2] = 26;
-    gFieldEffectArguments[3] = gUnknown_085B33E0[a0][0];
-    gFieldEffectArguments[4] = gUnknown_085B33E0[a0][1];
+    gFieldEffectArguments[3] = sDeoxysRockCoords[rockLevel][0];
+    gFieldEffectArguments[4] = sDeoxysRockCoords[rockLevel][1];
 
-    if (a0 == 0)
-    {
+    if (rockLevel == 0)
         gFieldEffectArguments[5] = 60;
-    }
     else
-    {
         gFieldEffectArguments[5] = 5;
-    }
 
-    FieldEffectStart(FLDEFF_66);
-    Overworld_SetEventObjTemplateCoords(1, gUnknown_085B33E0[a0][0], gUnknown_085B33E0[a0][1]);
+    FieldEffectStart(FLDEFF_MOVE_DEOXYS_ROCK);
+    Overworld_SetEventObjTemplateCoords(1, sDeoxysRockCoords[rockLevel][0], sDeoxysRockCoords[rockLevel][1]);
 }
 
-static void sub_813B160(u8 taskId)
+static void WaitForDeoxysRockMovement(u8 taskId)
 {
-    if (FieldEffectActiveListContains(FLDEFF_66) == FALSE)
+    if (FieldEffectActiveListContains(FLDEFF_MOVE_DEOXYS_ROCK) == FALSE)
     {
         EnableBothScriptContexts();
         DestroyTask(taskId);
     }
 }
 
-void increment_var_x4026_on_birth_island_modulo_100(void)
+void IncrementBirthIslandRockStepCount(void)
 {
-    u16 var = VarGet(VAR_0x4034);
+    u16 var = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
     if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(BIRTH_ISLAND_EXTERIOR) && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BIRTH_ISLAND_EXTERIOR))
     {
         var++;
         if (var > 99)
         {
-            VarSet(VAR_0x4034, 0);
+            VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
         }
         else
         {
-            VarSet(VAR_0x4034, var);
+            VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, var);
         }
     }
 }
 
 void sub_813B1D0(void)
 {
-    LoadPalette(&gUnknown_085B3280[(u8)VarGet(VAR_0x4035)], 0x1A0, 8);
+    LoadPalette(&sDeoxysRockPalettes[(u8)VarGet(VAR_DEOXYS_ROCK_LEVEL)], 0x1A0, 8);
     BlendPalettes(0x04000000, 16, 0);
 }
 
@@ -3434,11 +3427,11 @@ void sub_813B2E4(void)
     u16 randomValue = Random();
     VarSet(VAR_0x4038, 0);
 
-    if (FlagGet(FLAG_0x1BE) == TRUE)
+    if (FlagGet(FLAG_DEFEATED_KYOGRE) == TRUE)
     {
         VarSet(VAR_0x4037, (randomValue & 7) + 1);
     }
-    else if (FlagGet(FLAG_0x1BF) == TRUE)
+    else if (FlagGet(FLAG_DEFEATED_GROUDON) == TRUE)
     {
         VarSet(VAR_0x4037, (randomValue & 7) + 9);
     }
@@ -3618,7 +3611,7 @@ static void sub_813B57C(u8 taskId)
             }
             break;
         case 1:
-            if (sub_800A520() == TRUE)
+            if (IsLinkTaskFinished() == TRUE)
             {
                 if (GetMultiplayerId() == 0)
                 {
@@ -3659,7 +3652,7 @@ static void sub_813B57C(u8 taskId)
             }
             break;
         case 3:
-            if (sub_800A520() == TRUE)
+            if (IsLinkTaskFinished() == TRUE)
             {
                 if (GetMultiplayerId() != 0)
                 {
@@ -3711,14 +3704,14 @@ static void sub_813B57C(u8 taskId)
             }
             break;
         case 7:
-            if (sub_800A520() == 1)
+            if (IsLinkTaskFinished() == 1)
             {
                 sub_800ADF8();
                 gTasks[taskId].data[0]++;
             }
             break;
         case 8:
-            if (sub_800A520() == 1)
+            if (IsLinkTaskFinished() == 1)
             {
                 gTasks[taskId].data[0]++;
             }
@@ -3815,7 +3808,7 @@ void sub_813B9A0(void)
 {
     if (gSaveBlock1Ptr->lastHealLocation.mapGroup == MAP_GROUP(AZALEA_TOWN) && gSaveBlock1Ptr->lastHealLocation.mapNum == MAP_NUM(AZALEA_TOWN))
     {
-        Overworld_SetHealLocationWarp(3);
+        SetLastHealLocationWarp(3);
     }
 }
 

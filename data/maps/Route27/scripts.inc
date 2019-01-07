@@ -42,9 +42,9 @@ Route119_EventScript_1F4488:: @ 81F4488
 	lockall
 	addobject 25
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq Route119_EventScript_1F4501
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq Route119_EventScript_1F4506
 	delay 65
 	compare VAR_TEMP_1, 1
@@ -62,9 +62,9 @@ Route119_EventScript_1F4488:: @ 81F4488
 	addobject 16
 	delay 30
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	goto_if_eq Route119_EventScript_1F450B
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	goto_if_eq Route119_EventScript_1F4585
 	releaseall
 	end
@@ -139,7 +139,7 @@ Route119_EventScript_1F45E4:: @ 81F45E4
 
 Route119_EventScript_1F45FF:: @ 81F45FF
 	giveitem_std ITEM_HM02
-	setflag FLAG_0x06E
+	setflag FLAG_RECEIVED_HM02
 	return
 
 Route119_EventScript_1F460F:: @ 81F460F
@@ -490,7 +490,7 @@ Route119_EventScript_1F49EC:: @ 81F49EC
 	lockall
 	pokenavcall Route119_Text_1F4FBA
 	waitmessage
-	clearflag FLAG_0x08A
+	clearflag FLAG_REGISTER_WINONA_POKENAV
 	addvar VAR_0x40D1, 1
 	releaseall
 	end

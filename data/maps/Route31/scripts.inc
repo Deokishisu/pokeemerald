@@ -20,9 +20,9 @@ Route103_EventScript_1EC3AE:: @ 81EC3AE
 Route103_EventScript_1EC3C1:: @ 81EC3C1
 	lockall
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	goto_if_eq Route103_EventScript_1EC3DA
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	goto_if_eq Route103_EventScript_1EC434
 	end
 
@@ -142,7 +142,7 @@ Route103_EventScript_1EC5A2:: @ 81EC5A2
 	removeobject 2
 	setvar VAR_0x4084, 4
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
-	setflag FLAG_0x082
+	setflag FLAG_DEFEATED_RIVAL_ROUTE103
 	setvar VAR_0x40C7, 1
 	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
 	savebgm MUS_DUMMY

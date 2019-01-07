@@ -379,9 +379,9 @@ Route110_EventScript_1EF763:: @ 81EF763
 Route110_EventScript_1EF76E:: @ 81EF76E
 	lockall
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq Route110_EventScript_1EF7E1
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq Route110_EventScript_1EF7E6
 	applymovement 28, Route110_Movement_2725AA
 	waitmovement 0
@@ -397,9 +397,9 @@ Route110_EventScript_1EF76E:: @ 81EF76E
 	compare VAR_0x8008, 3
 	call_if_eq Route110_EventScript_1EF964
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	goto_if_eq Route110_EventScript_1EF7EB
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	goto_if_eq Route110_EventScript_1EF865
 	releaseall
 	end
@@ -648,7 +648,7 @@ Route110_EventScript_1EF9F7:: @ 81EF9F7
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_0x119
+	setflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL
 	msgbox Route110_Text_1F0C33, MSGBOX_DEFAULT
 	closemessage
 	compare VAR_0x8008, 1

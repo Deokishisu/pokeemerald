@@ -349,7 +349,7 @@ static void Task_BattleStart(u8 taskId)
     case 1:
         if (IsBattleTransitionDone() == TRUE)
         {
-            overworld_free_bg_tilemaps();
+            CleanupOverworldWindowsAndTilemaps();
             SetMainCallback2(CB2_InitBattle);
             RestartWildEncounterImmunitySteps();
             ClearPoisonStepCounter();
@@ -1557,7 +1557,7 @@ static bool32 sub_80B1D94(s32 rematchTableId)
     if (rematchTableId >= REMATCH_ELITE_FOUR_ENTRIES)
         return TRUE;
     else if (rematchTableId == REMATCH_WALLY_ENTRY)
-        return (FlagGet(FLAG_0x07E) == FALSE);
+        return (FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD) == FALSE);
     else
         return FALSE;
 }

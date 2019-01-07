@@ -9,7 +9,7 @@ LittlerootTown_MapScript1_1E7DDB: @ 81E7DDB
 	call LittlerootTown_EventScript_271ED7
 	compare VAR_0x4092, 2
 	call_if_eq LittlerootTown_EventScript_1E7E67
-	call_if_unset FLAG_0x052, LittlerootTown_EventScript_1E7E6F
+	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_1E7E6F
 	compare VAR_0x4050, 3
 	call_if_eq LittlerootTown_EventScript_1E7E92
 	compare VAR_0x4082, 4
@@ -35,7 +35,7 @@ LittlerootTown_EventScript_1E7E4B:: @ 81E7E4B
 	return
 
 LittlerootTown_EventScript_1E7E4F:: @ 81E7E4F
-	setflag FLAG_0x12D
+	setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
 	return
 
 LittlerootTown_EventScript_1E7E53:: @ 81E7E53
@@ -68,9 +68,9 @@ LittlerootTown_EventScript_1E7E92:: @ 81E7E92
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE
 	setobjectmovementtype 4, 8
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E7EB1
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E7EB9
 	return
 
@@ -234,8 +234,8 @@ LittlerootTown_EventScript_1E802B:: @ 81E802B
 LittlerootTown_EventScript_1E8034:: @ 81E8034
 	lock
 	faceplayer
-	goto_if_set FLAG_0x074, LittlerootTown_EventScript_1E8087
-	goto_if_set FLAG_0x052, LittlerootTown_EventScript_1E807A
+	goto_if_set FLAG_ADVENTURE_STARTED, LittlerootTown_EventScript_1E8087
+	goto_if_set FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_1E807A
 	compare VAR_0x4050, 0
 	goto_if_ne LittlerootTown_EventScript_1E805D
 	msgbox LittlerootTown_Text_1E8BB8, MSGBOX_DEFAULT
@@ -381,9 +381,9 @@ LittlerootTown_EventScript_1E815A:: @ 81E815A
 LittlerootTown_EventScript_1E8163:: @ 81E8163
 	lockall
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E817D
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E8186
 	releaseall
 	end
@@ -399,9 +399,9 @@ LittlerootTown_EventScript_1E8186:: @ 81E8186
 LittlerootTown_EventScript_1E818F:: @ 81E818F
 	lockall
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E81A9
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E81B2
 	releaseall
 	end
@@ -454,27 +454,27 @@ LittlerootTown_EventScript_1E8205:: @ 81E8205
 
 LittlerootTown_EventScript_1E8211:: @ 81E8211
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E8297
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E82A2
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E8281
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E828C
 	msgbox LittlerootTown_Text_1E87E1, MSGBOX_DEFAULT
 	closemessage
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E82AD
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E82F0
 	call LittlerootTown_EventScript_1E8693
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E8405
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E8448
 	goto LittlerootTown_EventScript_1E8686
 	end
@@ -889,9 +889,9 @@ LittlerootTown_EventScript_1E863D:: @ 81E863D
 	lock
 	faceplayer
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_1E8281
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_1E828C
 	call LittlerootTown_EventScript_1E8693
 	applymovement 4, LittlerootTown_Movement_2725A6
@@ -918,7 +918,7 @@ LittlerootTown_EventScript_1E8693:: @ 81E8693
 	playfanfare MUS_FANFA4
 	message LittlerootTown_Text_1E8925
 	waitfanfare
-	setflag FLAG_0x112
+	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_1E894F, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_1E8A03, MSGBOX_DEFAULT
 	closemessage

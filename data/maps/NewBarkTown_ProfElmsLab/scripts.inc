@@ -171,9 +171,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1F9E80:: @ 81F9E80
 	applymovement EVENT_OBJ_ID_PLAYER, LittlerootTown_ProfessorBirchsLab_Movement_2725A4
 	waitmovement 0
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1F9F32
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1F9F3C
 	playse SE_PC_ON
 	waitse
@@ -196,7 +196,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1F9E80:: @ 81F9E80
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
 	setvar VAR_0x40D3, 2
 	setvar VAR_0x40F5, 0
-	setflag FLAG_0x072
+	setflag FLAG_SCOTT_CALL_NATIONAL_DEX
 	releaseall
 	end
 
@@ -266,9 +266,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1F9F84:: @ 81F9F84
 	faceplayer
 	compare VAR_0x4084, 3
 	goto_if_ge LittlerootTown_ProfessorBirchsLab_EventScript_1F9FB1
-	goto_if_set FLAG_0x058, LittlerootTown_ProfessorBirchsLab_EventScript_1F9FA7
+	goto_if_set FLAG_BIRCH_AIDE_MET, LittlerootTown_ProfessorBirchsLab_EventScript_1F9FA7
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_1FA4E2, MSGBOX_DEFAULT
-	setflag FLAG_0x058
+	setflag FLAG_BIRCH_AIDE_MET
 	release
 	end
 
@@ -482,7 +482,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA25A:: @ 81FA25A
 	compare VAR_0x40D3, 2
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA294
 	goto_if_unset FLAG_HAS_MATCH_CALL, LittlerootTown_ProfessorBirchsLab_EventScript_1FA29E
-	goto_if_unset FLAG_0x119, LittlerootTown_ProfessorBirchsLab_EventScript_1FA2D2
+	goto_if_unset FLAG_ENABLE_PROF_BIRCH_MATCH_CALL, LittlerootTown_ProfessorBirchsLab_EventScript_1FA2D2
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_1FA29E
 	end
 
@@ -518,7 +518,7 @@ Route101_EventScript_1FA2D2:: @ 81FA2D2
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_0x119
+	setflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL
 	setvar VAR_0x40DA, 2
 	release
 	end
@@ -533,12 +533,12 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA2F8:: @ 81FA2F8
 	applymovement EVENT_OBJ_ID_PLAYER, LittlerootTown_ProfessorBirchsLab_Movement_2725A8
 	waitmovement 0
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA352
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA37F
 	setvar VAR_0x4084, 5
-	setflag FLAG_0x074
+	setflag FLAG_ADVENTURE_STARTED
 	setvar VAR_0x4051, 1
 	setvar VAR_0x408D, 4
 	setvar VAR_0x4050, 3
@@ -569,7 +569,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA3AC:: @ 81FA3AC
 	waitfanfare
 	setflag FLAG_SYS_POKEDEX_GET
 	special sub_81AFDA0
-	setflag FLAG_0x8E4
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
 	setvar VAR_0x40CD, 1
 	return
 
@@ -605,9 +605,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA3EC:: @ 81FA3EC
 	compare VAR_0x40D3, 2
 	goto_if_ge LittlerootTown_ProfessorBirchsLab_EventScript_1FA490
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA428
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA431
 	release
 	end
@@ -622,9 +622,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA431:: @ 81FA431
 
 LittlerootTown_ProfessorBirchsLab_EventScript_1FA43A:: @ 81FA43A
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA453
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA45C
 	release
 	end
@@ -639,9 +639,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA45C:: @ 81FA45C
 
 LittlerootTown_ProfessorBirchsLab_EventScript_1FA465:: @ 81FA465
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA47E
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA487
 	release
 	end
@@ -656,9 +656,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA487:: @ 81FA487
 
 LittlerootTown_ProfessorBirchsLab_EventScript_1FA490:: @ 81FA490
 	checkplayergender
-	compare VAR_RESULT, 0
+	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA4A9
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA4B2
 	release
 	end
@@ -687,7 +687,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA4D6:: @ 81FA4D6
 	lockall
 	pokenavcall LittlerootTown_ProfessorBirchsLab_Text_1FBD1A
 	waitmessage
-	clearflag FLAG_0x072
+	clearflag FLAG_SCOTT_CALL_NATIONAL_DEX
 	releaseall
 	end
 
