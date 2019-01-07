@@ -8,7 +8,7 @@ MahoganyTown_Shop_EventObjects::
 MahoganyTown_Shop_MapWarps::
 	warp_def 3, 7, 0, 0, MAP_MAHOGANY_TOWN
 	warp_def 4, 7, 0, 0, MAP_MAHOGANY_TOWN
-	warp_def 7, 3, 0, 0, MAP_MAHOGANY_TOWN
+	warp_def 7, 3, 0, 0, MAP_TEAM_ROCKET_BASE_B1F
 
 MahoganyTown_Shop_MapEvents::
 	map_events MahoganyTown_Shop_EventObjects, MahoganyTown_Shop_MapWarps, 0x0, 0x0

@@ -8,7 +8,7 @@ Route31_EventObjects::
 	object_event 7, EVENT_OBJ_GFX_ITEM_BALL, PAL_NPC_RED, 19, 15, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, Route103_EventScript_290CF2, FLAG_ITEM_ROUTE_103_PP_UP
 
 Route31_MapWarps::
-	warp_def 34, 5, 0, 0, MAP_DRAGONS_DEN
+	warp_def 34, 5, 0, 1, MAP_TEAM_ROCKET_BASE_B2F
 	warp_def 4, 6, 3, 0, MAP_ROUTE31_GATE
 	warp_def 4, 7, 3, 1, MAP_ROUTE31_GATE
 

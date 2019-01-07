@@ -411,9 +411,9 @@ gMapGroup26::
 	.4byte SealedChamber_OuterRoom
 	.4byte SealedChamber_InnerRoom
 	.4byte ScorchedSlab
-	.4byte AquaHideout_UnusedRubyMap1
-	.4byte AquaHideout_UnusedRubyMap2
-	.4byte AquaHideout_UnusedRubyMap3
+	.4byte TeamRocketBase_B1F
+	.4byte TeamRocketBase_B2F
+	.4byte TeamRocketBase_B3F
 	.4byte SkyPillar_Entrance
 	.4byte SkyPillar_Outside
 	.4byte Lighthouse_1F

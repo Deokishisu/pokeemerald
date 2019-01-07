@@ -315,9 +315,9 @@ gMapLayouts::
 	.4byte OlivineCity_PortPassage_Layout
 	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
-	.4byte AquaHideout_UnusedRubyMap1_Layout
-	.4byte AquaHideout_UnusedRubyMap2_Layout
-	.4byte AquaHideout_UnusedRubyMap3_Layout
+	.4byte TeamRocketBase_B1F_Layout
+	.4byte TeamRocketBase_B2F_Layout
+	.4byte TeamRocketBase_B3F_Layout
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
@@ -762,9 +762,9 @@ gMapLayouts::
 	.4byte OlivineCity_PortPassage_Layout
 	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
-	.4byte AquaHideout_UnusedRubyMap1_Layout
-	.4byte AquaHideout_UnusedRubyMap2_Layout
-	.4byte AquaHideout_UnusedRubyMap3_Layout
+	.4byte TeamRocketBase_B1F_Layout
+	.4byte TeamRocketBase_B2F_Layout
+	.4byte TeamRocketBase_B3F_Layout
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
@@ -1209,9 +1209,9 @@ gMapLayouts::
 	.4byte OlivineCity_PortPassage_Layout
 	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
-	.4byte AquaHideout_UnusedRubyMap1_Layout
-	.4byte AquaHideout_UnusedRubyMap2_Layout
-	.4byte AquaHideout_UnusedRubyMap3_Layout
+	.4byte TeamRocketBase_B1F_Layout
+	.4byte TeamRocketBase_B2F_Layout
+	.4byte TeamRocketBase_B3F_Layout
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
@@ -1656,9 +1656,9 @@ gMapLayouts::
 	.4byte OlivineCity_PortPassage_Layout
 	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
-	.4byte AquaHideout_UnusedRubyMap1_Layout
-	.4byte AquaHideout_UnusedRubyMap2_Layout
-	.4byte AquaHideout_UnusedRubyMap3_Layout
+	.4byte TeamRocketBase_B1F_Layout
+	.4byte TeamRocketBase_B2F_Layout
+	.4byte TeamRocketBase_B3F_Layout
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
@@ -2103,9 +2103,9 @@ gMapLayouts::
 	.4byte OlivineCity_PortPassage_Layout
 	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
-	.4byte AquaHideout_UnusedRubyMap1_Layout
-	.4byte AquaHideout_UnusedRubyMap2_Layout
-	.4byte AquaHideout_UnusedRubyMap3_Layout
+	.4byte TeamRocketBase_B1F_Layout
+	.4byte TeamRocketBase_B2F_Layout
+	.4byte TeamRocketBase_B3F_Layout
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
@@ -2550,9 +2550,9 @@ gMapLayouts::
 	.4byte OlivineCity_PortPassage_Layout
 	.4byte OlivineCity_Port_Layout
 	.4byte EverGrandeCity_Hall4_Layout
-	.4byte AquaHideout_UnusedRubyMap1_Layout
-	.4byte AquaHideout_UnusedRubyMap2_Layout
-	.4byte AquaHideout_UnusedRubyMap3_Layout
+	.4byte TeamRocketBase_B1F_Layout
+	.4byte TeamRocketBase_B2F_Layout
+	.4byte TeamRocketBase_B3F_Layout
 	.4byte UnknownMap_0845D470_Layout
 	.4byte SkyPillar_Entrance_Layout
 	.4byte SkyPillar_Outside_Layout
