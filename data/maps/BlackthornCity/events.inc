@@ -17,7 +17,7 @@ BlackthornCity_MapWarps::
 	warp_def 21, 29, 0, 0, MAP_BLACKTHORN_CITY_POKEMON_CENTER_1F
 	warp_def 9, 31, 0, 0, MAP_BLACKTHORN_CITY_MOVE_DELETERS_HOUSE
 	warp_def 36, 9, 0, 0, MAP_ROUTE44
-	warp_def 20, 1, 0, 0, MAP_DRAGONS_DEN
+	warp_def 20, 1, 0, 0, MAP_DRAGONS_DEN_ENTRANCE
 
 BlackthornCity_MapBGEvents::
 	bg_event 34, 24, 0, BG_EVENT_PLAYER_FACING_ANY, FortreeCity_EventScript_1E2602

@@ -951,11 +951,11 @@ void TilesetCb_MauvilleGym(void)
 
 void TilesetCb_BikeShop(void)
 {
-    static void sub_80A161C(u16);
+    //static void sub_80A161C(u16);
 
-    sSecondaryTilesetCBCounter = 0;
-    sSecondaryTilesetCBBufferSize = sPrimaryTilesetCBBufferSize;
-    sSecondaryTilesetCB = sub_80A161C;
+    //sSecondaryTilesetCBCounter = 0;
+    //sSecondaryTilesetCBBufferSize = sPrimaryTilesetCBBufferSize;
+    //sSecondaryTilesetCB = sub_80A161C;
 }
 
 void TilesetCb_BattlePyramid(void)

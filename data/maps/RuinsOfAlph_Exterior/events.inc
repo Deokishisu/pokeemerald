@@ -14,10 +14,10 @@ RuinsOfAlph_Exterior_MapWarps::
 	warp_def 17, 11, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
 	warp_def 10, 13, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
 	warp_def 2, 17, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
-	warp_def 6, 19, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
+	warp_def 6, 19, 3, 0, MAP_UNION_CAVE_B1F
 	warp_def 13, 20, 3, 2, MAP_ROUTE32_GATE
 	warp_def 13, 21, 3, 3, MAP_ROUTE32_GATE
-	warp_def 6, 27, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
+	warp_def 6, 27, 3, 1, MAP_UNION_CAVE_B1F
 	warp_def 2, 29, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
 	warp_def 16, 33, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
 

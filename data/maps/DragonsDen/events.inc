@@ -10,7 +10,7 @@ DragonsDen_EventObjects::
 	object_event 9, EVENT_OBJ_GFX_ITEM_BALL, 0, 5, 20, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, AquaHideout_B1F_EventScript_291365, FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET
 
 DragonsDen_MapWarps::
-	warp_def 20, 3, 3, 7, MAP_BLACKTHORN_CITY
+	warp_def 20, 3, 3, 2, MAP_DRAGONS_DEN_ENTRANCE
 	warp_def 19, 29, 3, 0, MAP_DRAGONS_DEN_DRAGON_SHRINE
 
 DragonsDen_MapCoordEvents::

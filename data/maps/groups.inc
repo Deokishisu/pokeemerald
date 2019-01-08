@@ -344,11 +344,11 @@ gMapGroup26::
 	.4byte NationalPark
 	.4byte Underwater_SootopolisCity
 	.4byte DesertRuins
-	.4byte GraniteCave_1F
-	.4byte GraniteCave_B1F
-	.4byte GraniteCave_B2F
+	.4byte UnionCave_1F
+	.4byte UnionCave_B1F
+	.4byte UnionCave_B2F
 	.4byte GraniteCave_StevensRoom
-	.4byte PetalburgWoods
+	.4byte IlexForest
 	.4byte MtChimney
 	.4byte JaggedPass
 	.4byte FieryPath
@@ -361,9 +361,9 @@ gMapGroup26::
 	.4byte MtPyre_Exterior
 	.4byte MtPyre_Summit
 	.4byte AquaHideout_1F
+	.4byte DragonsDen_Entrance
 	.4byte DragonsDen
 	.4byte DragonsDen_DragonShrine
-	.4byte Underwater_SeafloorCavern
 	.4byte TinTower_1F
 	.4byte TinTower_2F
 	.4byte TinTower_3F

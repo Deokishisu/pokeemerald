@@ -5,8 +5,8 @@ Route34_Gate2_EventObjects::
 	object_event 4, EVENT_OBJ_GFX_TEACHER, PAL_NPC_BLUE, 5, 7, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, FALSE, 0, NULL, 0
 
 Route34_Gate2_MapWarps::
-	warp_def 4, 7, 3, 2, MAP_ROUTE34_GATE1
-	warp_def 5, 7, 3, 3, MAP_ROUTE34_GATE1
+	warp_def 4, 7, 3, 0, MAP_ILEX_FOREST
+	warp_def 5, 7, 3, 0, MAP_ILEX_FOREST
 	warp_def 4, 0, 3, 0, MAP_ROUTE34
 	warp_def 5, 0, 3, 1, MAP_ROUTE34
 

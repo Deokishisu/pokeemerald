@@ -1,5 +1,5 @@
 Underwater4_MapWarps: @ 852CFEC
-	warp_def 38, 26, 3, 0, MAP_UNDERWATER_SEAFLOOR_CAVERN
+	warp_def 38, 26, 3, 0, MAP_NONE
 
 Underwater4_MapBGEvents: @ 852CFF4
 	bg_hidden_item_event 38, 19, 3, ITEM_PROTEIN, FLAG_HIDDEN_ITEM_UNDERWATER_4_PROTEIN

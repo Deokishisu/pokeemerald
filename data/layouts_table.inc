@@ -131,10 +131,10 @@ gMapLayouts::
 	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
-	.4byte GraniteCave_1F_Layout
-	.4byte GraniteCave_B1F_Layout
-	.4byte GraniteCave_B2F_Layout
-	.4byte PetalburgWoods_Layout
+	.4byte UnionCave_1F_Layout
+	.4byte UnionCave_B1F_Layout
+	.4byte UnionCave_B2F_Layout
+	.4byte IlexForest_Layout
 	.4byte MtChimney_Layout
 	.4byte MtPyre_1F_Layout
 	.4byte MtPyre_2F_Layout
@@ -145,7 +145,7 @@ gMapLayouts::
 	.4byte AquaHideout_1F_Layout
 	.4byte DragonsDen_Layout
 	.4byte DragonsDen_DragonShrine_Layout
-	.4byte Underwater_SeafloorCavern_Layout
+	.4byte DragonsDen_Entrance_Layout
 	.4byte TinTower_1F_Layout
 	.4byte TinTower_2F_Layout
 	.4byte TinTower_3F_Layout
@@ -578,10 +578,10 @@ gMapLayouts::
 	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
-	.4byte GraniteCave_1F_Layout
-	.4byte GraniteCave_B1F_Layout
-	.4byte GraniteCave_B2F_Layout
-	.4byte PetalburgWoods_Layout
+	.4byte UnionCave_1F_Layout
+	.4byte UnionCave_B1F_Layout
+	.4byte UnionCave_B2F_Layout
+	.4byte IlexForest_Layout
 	.4byte MtChimney_Layout
 	.4byte MtPyre_1F_Layout
 	.4byte MtPyre_2F_Layout
@@ -592,7 +592,7 @@ gMapLayouts::
 	.4byte AquaHideout_1F_Layout
 	.4byte DragonsDen_Layout
 	.4byte DragonsDen_DragonShrine_Layout
-	.4byte Underwater_SeafloorCavern_Layout
+	.4byte DragonsDen_Entrance_Layout
 	.4byte TinTower_1F_Layout
 	.4byte TinTower_2F_Layout
 	.4byte TinTower_3F_Layout
@@ -1025,10 +1025,10 @@ gMapLayouts::
 	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
-	.4byte GraniteCave_1F_Layout
-	.4byte GraniteCave_B1F_Layout
-	.4byte GraniteCave_B2F_Layout
-	.4byte PetalburgWoods_Layout
+	.4byte UnionCave_1F_Layout
+	.4byte UnionCave_B1F_Layout
+	.4byte UnionCave_B2F_Layout
+	.4byte IlexForest_Layout
 	.4byte MtChimney_Layout
 	.4byte MtPyre_1F_Layout
 	.4byte MtPyre_2F_Layout
@@ -1039,7 +1039,7 @@ gMapLayouts::
 	.4byte AquaHideout_1F_Layout
 	.4byte DragonsDen_Layout
 	.4byte DragonsDen_DragonShrine_Layout
-	.4byte Underwater_SeafloorCavern_Layout
+	.4byte DragonsDen_Entrance_Layout
 	.4byte TinTower_1F_Layout
 	.4byte TinTower_2F_Layout
 	.4byte TinTower_3F_Layout
@@ -1472,10 +1472,10 @@ gMapLayouts::
 	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
-	.4byte GraniteCave_1F_Layout
-	.4byte GraniteCave_B1F_Layout
-	.4byte GraniteCave_B2F_Layout
-	.4byte PetalburgWoods_Layout
+	.4byte UnionCave_1F_Layout
+	.4byte UnionCave_B1F_Layout
+	.4byte UnionCave_B2F_Layout
+	.4byte IlexForest_Layout
 	.4byte MtChimney_Layout
 	.4byte MtPyre_1F_Layout
 	.4byte MtPyre_2F_Layout
@@ -1486,7 +1486,7 @@ gMapLayouts::
 	.4byte AquaHideout_1F_Layout
 	.4byte DragonsDen_Layout
 	.4byte DragonsDen_DragonShrine_Layout
-	.4byte Underwater_SeafloorCavern_Layout
+	.4byte DragonsDen_Entrance_Layout
 	.4byte TinTower_1F_Layout
 	.4byte TinTower_2F_Layout
 	.4byte TinTower_3F_Layout
@@ -1919,10 +1919,10 @@ gMapLayouts::
 	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
-	.4byte GraniteCave_1F_Layout
-	.4byte GraniteCave_B1F_Layout
-	.4byte GraniteCave_B2F_Layout
-	.4byte PetalburgWoods_Layout
+	.4byte UnionCave_1F_Layout
+	.4byte UnionCave_B1F_Layout
+	.4byte UnionCave_B2F_Layout
+	.4byte IlexForest_Layout
 	.4byte MtChimney_Layout
 	.4byte MtPyre_1F_Layout
 	.4byte MtPyre_2F_Layout
@@ -1933,7 +1933,7 @@ gMapLayouts::
 	.4byte AquaHideout_1F_Layout
 	.4byte DragonsDen_Layout
 	.4byte DragonsDen_DragonShrine_Layout
-	.4byte Underwater_SeafloorCavern_Layout
+	.4byte DragonsDen_Entrance_Layout
 	.4byte TinTower_1F_Layout
 	.4byte TinTower_2F_Layout
 	.4byte TinTower_3F_Layout
@@ -2366,10 +2366,10 @@ gMapLayouts::
 	.4byte NationalPark_Layout
 	.4byte Underwater_SootopolisCity_Layout
 	.4byte DesertRuins_Layout
-	.4byte GraniteCave_1F_Layout
-	.4byte GraniteCave_B1F_Layout
-	.4byte GraniteCave_B2F_Layout
-	.4byte PetalburgWoods_Layout
+	.4byte UnionCave_1F_Layout
+	.4byte UnionCave_B1F_Layout
+	.4byte UnionCave_B2F_Layout
+	.4byte IlexForest_Layout
 	.4byte MtChimney_Layout
 	.4byte MtPyre_1F_Layout
 	.4byte MtPyre_2F_Layout
@@ -2380,7 +2380,7 @@ gMapLayouts::
 	.4byte AquaHideout_1F_Layout
 	.4byte DragonsDen_Layout
 	.4byte DragonsDen_DragonShrine_Layout
-	.4byte Underwater_SeafloorCavern_Layout
+	.4byte DragonsDen_Entrance_Layout
 	.4byte TinTower_1F_Layout
 	.4byte TinTower_2F_Layout
 	.4byte TinTower_3F_Layout

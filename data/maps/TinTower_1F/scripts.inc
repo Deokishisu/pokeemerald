@@ -3,8 +3,8 @@ TinTower_1F_MapScripts:: @ 823446E
 	.byte 0
 
 SeafloorCavern_Entrance_MapScript1_234474: @ 8234474
-	setdivewarp MAP_UNDERWATER_SEAFLOOR_CAVERN, 255, 6, 5
-	setescapewarp MAP_UNDERWATER_SEAFLOOR_CAVERN, 255, 6, 5
+	@setdivewarp MAP_UNDERWATER_SEAFLOOR_CAVERN, 255, 6, 5
+	@setescapewarp MAP_UNDERWATER_SEAFLOOR_CAVERN, 255, 6, 5
 	end
 
 SeafloorCavern_Entrance_EventScript_234485:: @ 8234485
