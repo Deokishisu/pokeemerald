@@ -14,7 +14,7 @@ Route45_EventObjects::
 	object_event 13, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_GREEN, 4, 70, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route117_EventScript_1F3C65, 0
 
 Route45_MapWarps::
-	warp_def 2, 5, 0, 0, MAP_ROUTE45
+	warp_def 2, 5, 0, 0, MAP_DARK_CAVE_BLACKTHORN
 
 Route45_MapBGEvents::
 	bg_event 10, 4, 0, BG_EVENT_PLAYER_FACING_ANY, Route117_EventScript_1F39B5

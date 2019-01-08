@@ -9,7 +9,7 @@ Route46_EventObjects::
 Route46_MapWarps::
 	warp_def 7, 33, 3, 1, MAP_ROUTE29_GATE
 	warp_def 8, 33, 3, 3, MAP_ROUTE29_GATE
-	warp_def 14, 5, 3, 2, MAP_ROUTE46
+	warp_def 14, 5, 3, 2, MAP_DARK_CAVE_VIOLET
 
 Route46_MapBGEvents::
 	bg_event 9, 27, 0, BG_EVENT_PLAYER_FACING_ANY, Route118_EventScript_1F3E7C

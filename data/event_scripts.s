@@ -7642,3 +7642,8 @@ gText_082C877B:: @ 82C877B
 	.align 2
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/SlowpokeWell_B1F/scripts.inc"
+	.include "data/maps/SlowpokeWell_B2F/scripts.inc"
+	.include "data/maps/DarkCave_Violet/scripts.inc"
+	.include "data/maps/DarkCave_Blackthorn/scripts.inc"

@@ -538,5 +538,7 @@
 	.include "data/maps/Route42_Gate/header.inc"
 	.include "data/maps/Route43_Gate1/header.inc"
 	.include "data/maps/Route43_Gate2/header.inc"
-	
-	
+	.include "data/maps/SlowpokeWell_B1F/header.inc"
+	.include "data/maps/SlowpokeWell_B2F/header.inc"
+	.include "data/maps/DarkCave_Violet/header.inc"
+	.include "data/maps/DarkCave_Blackthorn/header.inc"

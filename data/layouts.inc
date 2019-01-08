@@ -445,3 +445,7 @@
 	.include "data/layouts/Route35_National_Park_Gate/layout.inc"
 	.include "data/layouts/Route36_National_Park_Gate/layout.inc"
 	.include "data/layouts/Route39_MooMooFarmBarn/layout.inc"
+	.include "data/layouts/SlowpokeWell_B1F/layout.inc"
+	.include "data/layouts/SlowpokeWell_B2F/layout.inc"
+	.include "data/layouts/DarkCave_Violet/layout.inc"
+	.include "data/layouts/DarkCave_Blackthorn/layout.inc"

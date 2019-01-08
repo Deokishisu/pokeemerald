@@ -3480,6 +3480,7 @@ bool8 sub_813B3B0(void)
     if (++var1 > 999)
     {
         VarSet(VAR_0x4038, 0);
+		/*
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER_MARINE_CAVE))
         {
             switch (gSaveBlock1Ptr->location.mapNum)
@@ -3495,7 +3496,7 @@ bool8 sub_813B3B0(void)
                     break;
             }
         }
-
+		*/
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER3))
         {
             switch (gSaveBlock1Ptr->location.mapNum)

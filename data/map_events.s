@@ -552,3 +552,7 @@
 	.include "data/maps/Route42_Gate/events.inc"
 	.include "data/maps/Route43_Gate1/events.inc"
 	.include "data/maps/Route43_Gate2/events.inc"
+	.include "data/maps/SlowpokeWell_B1F/events.inc"
+	.include "data/maps/SlowpokeWell_B2F/events.inc"
+	.include "data/maps/DarkCave_Violet/events.inc"
+	.include "data/maps/DarkCave_Blackthorn/events.inc"

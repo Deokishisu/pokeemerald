@@ -243,6 +243,45 @@ gMapGroup24::
 
 	.align 2
 gMapGroup25::
+	.4byte DarkCave_Violet
+	.4byte DarkCave_Blackthorn
+	.4byte SproutTower_1F
+	.4byte SproutTower_2F
+	.4byte SproutTower_3F
+	.4byte UnionCave_1F
+	.4byte UnionCave_B1F
+	.4byte UnionCave_B2F
+	.4byte SlowpokeWell_B1F
+	.4byte SlowpokeWell_B2F
+	.4byte IlexForest
+	.4byte NationalPark
+	.4byte BurnedTower_1F
+	.4byte BurnedTower_B1F
+	.4byte TinTower_1F
+	.4byte TinTower_2F
+	.4byte TinTower_3F
+	.4byte TinTower_4F
+	.4byte TinTower_5F
+	.4byte TinTower_6F
+	.4byte TinTower_7F
+	.4byte TinTower_8F
+	.4byte TinTower_9F
+	.4byte TinTower_Roof
+	.4byte Lighthouse_1F
+	.4byte Lighthouse_2F
+	.4byte Lighthouse_3F
+	.4byte Lighthouse_4F
+	.4byte Lighthouse_5F
+	.4byte Lighthouse_6F
+	.4byte TeamRocketBase_B1F
+	.4byte TeamRocketBase_B2F
+	.4byte TeamRocketBase_B3F
+	.4byte DragonsDen_Entrance
+	.4byte DragonsDen
+	.4byte DragonsDen_DragonShrine
+
+	.align 2
+gMapGroup26::
 	.4byte FortreeCity_House4
 	.4byte FortreeCity_House5
 	.4byte FortreeCity_DecorationShop
@@ -334,21 +373,10 @@ gMapGroup25::
 	.4byte SlateportCity_BattleTentLobby
 	.4byte SlateportCity_BattleTentCorridor
 	.4byte SlateportCity_BattleTentBattleRoom
-
-	.align 2
-gMapGroup26::
-	.4byte SproutTower_1F
-	.4byte SproutTower_2F
-	.4byte SproutTower_3F
 	.4byte MeteorFalls_B1F_2R
-	.4byte NationalPark
 	.4byte Underwater_SootopolisCity
 	.4byte DesertRuins
-	.4byte UnionCave_1F
-	.4byte UnionCave_B1F
-	.4byte UnionCave_B2F
 	.4byte GraniteCave_StevensRoom
-	.4byte IlexForest
 	.4byte MtChimney
 	.4byte JaggedPass
 	.4byte FieryPath
@@ -361,23 +389,8 @@ gMapGroup26::
 	.4byte MtPyre_Exterior
 	.4byte MtPyre_Summit
 	.4byte AquaHideout_1F
-	.4byte DragonsDen_Entrance
-	.4byte DragonsDen
-	.4byte DragonsDen_DragonShrine
-	.4byte TinTower_1F
-	.4byte TinTower_2F
-	.4byte TinTower_3F
-	.4byte TinTower_4F
-	.4byte TinTower_5F
-	.4byte TinTower_6F
-	.4byte TinTower_7F
-	.4byte TinTower_8F
-	.4byte TinTower_9F
-	.4byte TinTower_Roof
 	.4byte CaveOfOrigin_Entrance
 	.4byte CaveOfOrigin_1F
-	.4byte BurnedTower_1F
-	.4byte BurnedTower_B1F
 	.4byte CaveOfOrigin_UnusedRubySapphireMap3
 	.4byte CaveOfOrigin_B1F
 	.4byte VictoryRoad_1F
@@ -411,17 +424,8 @@ gMapGroup26::
 	.4byte SealedChamber_OuterRoom
 	.4byte SealedChamber_InnerRoom
 	.4byte ScorchedSlab
-	.4byte TeamRocketBase_B1F
-	.4byte TeamRocketBase_B2F
-	.4byte TeamRocketBase_B3F
 	.4byte SkyPillar_Entrance
 	.4byte SkyPillar_Outside
-	.4byte Lighthouse_1F
-	.4byte Lighthouse_2F
-	.4byte Lighthouse_3F
-	.4byte Lighthouse_4F
-	.4byte Lighthouse_5F
-	.4byte Lighthouse_6F
 	.4byte ShoalCave_LowTideIceRoom
 	.4byte MagmaHideout_1F
 	.4byte MagmaHideout_2F_1R

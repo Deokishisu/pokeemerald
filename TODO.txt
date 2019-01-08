@@ -23,3 +23,5 @@ TODO: Remove the early return in src/fldeff_teleport.c in function SetUpFieldMov
 TODO: In Crystal, wild Pokemon can be encountered on the pink exit tiles in Ilex Forest. Need to replicate that.
 
 TODO: Fix water palettes on all tilesets.
+
+TODO: Get Flash working in the field and make cave exits flicker in dark caves.

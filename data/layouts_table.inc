@@ -2682,3 +2682,7 @@ gMapLayouts::
 	.4byte Route35_National_Park_Gate_Layout
 	.4byte Route36_National_Park_Gate_Layout
 	.4byte Route39_MooMooFarmBarn_Layout
+	.4byte SlowpokeWell_B1F_Layout
+	.4byte SlowpokeWell_B2F_Layout
+	.4byte DarkCave_Violet_Layout
+	.4byte DarkCave_Blackthorn_Layout
