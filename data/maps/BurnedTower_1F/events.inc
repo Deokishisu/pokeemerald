@@ -9,7 +9,7 @@ BurnedTower_1F_MapWarps::
 	warp_def 9, 15, 3, 12, MAP_ECRUTEAK_CITY
 	warp_def 10, 15, 3, 12, MAP_ECRUTEAK_CITY
 	warp_def 10, 9, 3, 0, MAP_BURNED_TOWER_B1F
-	warp_def 7, 15, 3, 0, MAP_BURNED_TOWER_B1F
+	warp_def 7, 15, 3, 1, MAP_BURNED_TOWER_B1F
 
 BurnedTower_1F_MapCoordEvents::
 	coord_event 11, 9, 3, VAR_TEMP_0, 0, NULL

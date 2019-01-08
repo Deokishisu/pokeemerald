@@ -10,6 +10,6 @@ BurnedTower_B1F_Layout::
 	.4byte 18
 	.4byte BurnedTower_B1F_MapBorder
 	.4byte BurnedTower_B1F_MapBlockdata
-	.4byte gTileset_General
-	.4byte gTileset_Petalburg
+	.4byte gTileset_Building2
+	.4byte gTileset_BikeShop
 

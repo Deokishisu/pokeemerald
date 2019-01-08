@@ -10,7 +10,7 @@ TODO: Update Options menu selections to Crystal equivalents when flags are figur
 
 TODO: Black out the Options menu background; and decide if SGB borders are a thing and implement them.
 
-TODO: Import the remaining tilesets (Battle Tower Outside, Ice Path, Port, Radio Tower, Ruins of Alph, and possibly PokeCom Center).
+TODO: Import the remaining tilesets (Battle Tower Outside, Ice Path, Port (Outdoor Only), Radio Tower, Ruins of Alph, and possibly PokeCom Center).
 
 TODO: Remove National Dex requirement for trading with FRLG, replace with Time Capsule check.
 
@@ -21,3 +21,5 @@ TODO: When flags are settled, make wild encounters depend on a version check ins
 TODO: Remove the early return in src/fldeff_teleport.c in function SetUpFieldMove_Teleport(). It was changed to allow Teleport anywhere for debugging purposes.
 
 TODO: In Crystal, wild Pokemon can be encountered on the pink exit tiles in Ilex Forest. Need to replicate that.
+
+TODO: Fix water palettes on all tilesets.
