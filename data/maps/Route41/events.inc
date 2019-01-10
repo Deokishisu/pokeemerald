@@ -11,10 +11,10 @@ Route41_EventObjects::
 	object_event 10, EVENT_OBJ_GFX_SWIMMER_F, PAL_NPC_GREEN, 9, 50, 1, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, TRUE, 2, Route113_EventScript_1F22FF, 0
 
 Route41_MapWarps::
-	warp_def 12, 17, 0, 0, MAP_TERRA_CAVE_ENTRANCE
-	warp_def 36, 19, 0, 0, MAP_TERRA_CAVE_ENTRANCE
-	warp_def 12, 37, 0, 0, MAP_TERRA_CAVE_ENTRANCE
-	warp_def 36, 45, 0, 0, MAP_TERRA_CAVE_ENTRANCE
+	warp_def 12, 17, 0, 0, MAP_WHIRL_ISLANDS_1F_NW
+	warp_def 36, 19, 0, 0, MAP_WHIRL_ISLANDS_1F_NE
+	warp_def 12, 37, 0, 0, MAP_WHIRL_ISLANDS_1F_SW
+	warp_def 36, 45, 0, 0, MAP_WHIRL_ISLANDS_1F_SE
 
 Route41_MapBGEvents::
 	bg_hidden_item_event 9, 35, 3, ITEM_MAX_ETHER, FLAG_HIDDEN_ITEM_ROUTE_113_ETHER

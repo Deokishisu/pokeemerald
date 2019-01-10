@@ -273,6 +273,18 @@ gMapGroup25::
 	.4byte Lighthouse_4F
 	.4byte Lighthouse_5F
 	.4byte Lighthouse_6F
+	.4byte WhirlIslands_1F_NE
+	.4byte WhirlIslands_1F_NW
+	.4byte WhirlIslands_1F_SE
+	.4byte WhirlIslands_1F_SW
+	.4byte WhirlIslands_B1F
+	.4byte WhirlIslands_B2F
+	.4byte WhirlIslands_Cave
+	.4byte WhirlIslands_LugiasChamber
+	.4byte MtMortar_1F_Outer
+	.4byte MtMortar_1F_Inner
+	.4byte MtMortar_2F
+	.4byte MtMortar_B1F
 	.4byte TeamRocketBase_B1F
 	.4byte TeamRocketBase_B2F
 	.4byte TeamRocketBase_B3F

@@ -2686,3 +2686,15 @@ gMapLayouts::
 	.4byte SlowpokeWell_B2F_Layout
 	.4byte DarkCave_Violet_Layout
 	.4byte DarkCave_Blackthorn_Layout
+	.4byte MtMortar_1F_Outer_Layout
+	.4byte MtMortar_1F_Inner_Layout
+	.4byte MtMortar_2F_Layout
+	.4byte MtMortar_B1F_Layout
+	.4byte WhirlIslands_1F_NE_Layout
+	.4byte WhirlIslands_1F_NW_Layout
+	.4byte WhirlIslands_1F_SE_Layout
+	.4byte WhirlIslands_1F_SW_Layout
+	.4byte WhirlIslands_B1F_Layout
+	.4byte WhirlIslands_B2F_Layout
+	.4byte WhirlIslands_Cave_Layout
+	.4byte WhirlIslands_LugiasChamber_Layout

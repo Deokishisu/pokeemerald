@@ -12,9 +12,9 @@ Route42_EventObjects::
 Route42_MapWarps::
 	warp_def 0, 8, 0, 0, MAP_ROUTE42_GATE
 	warp_def 0, 9, 0, 1, MAP_ROUTE42_GATE
-	warp_def 10, 5, 0, 3, MAP_ROUTE42
-	warp_def 28, 9, 0, 4, MAP_ROUTE42
-	warp_def 46, 7, 0, 2, MAP_ROUTE42
+	warp_def 10, 5, 0, 0, MAP_MT_MORTAR_1F_OUTER
+	warp_def 28, 9, 0, 1, MAP_MT_MORTAR_1F_OUTER
+	warp_def 46, 7, 0, 2, MAP_MT_MORTAR_1F_OUTER
 
 Route42_MapCoordEvents::
 	coord_event 24, 14, 3, VAR_TEMP_0, 0, NULL
