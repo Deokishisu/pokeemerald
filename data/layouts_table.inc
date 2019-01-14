@@ -2698,3 +2698,11 @@ gMapLayouts::
 	.4byte WhirlIslands_B2F_Layout
 	.4byte WhirlIslands_Cave_Layout
 	.4byte WhirlIslands_LugiasChamber_Layout
+	.4byte RuinsOfAlph_MainChamber_Layout
+	.4byte RuinsOfAlph_PuzzleChamber_Layout
+	.4byte RuinsOfAlph_ItemRoom_Layout
+	.4byte RuinsOfAlph_AerodactylWordRoom_Layout
+	.4byte RuinsOfAlph_KabutoWordRoom_Layout
+	.4byte RuinsOfAlph_OmanyteWordRoom_Layout
+	.4byte RuinsOfAlph_HoOhWordRoom_Layout
+	.4byte RuinsOfAlph_ResearchCenter_Layout

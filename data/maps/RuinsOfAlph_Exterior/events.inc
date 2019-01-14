@@ -10,16 +10,16 @@ RuinsOfAlph_Exterior_EventObjects::
 
 RuinsOfAlph_Exterior_MapWarps::
 	warp_def 7, 5, 3, 0, MAP_ROUTE36_GATE
-	warp_def 14, 7, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
-	warp_def 17, 11, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
-	warp_def 10, 13, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
-	warp_def 2, 17, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
+	warp_def 14, 7, 3, 0, MAP_RUINS_OF_ALPH_KABUTO_PUZZLE_CHAMBER
+	warp_def 17, 11, 3, 0, MAP_RUINS_OF_ALPH_RESEARCH_CENTER
+	warp_def 10, 13, 3, 0, MAP_RUINS_OF_ALPH_MAIN_CHAMBER
+	warp_def 2, 17, 3, 0, MAP_RUINS_OF_ALPH_HO_OH_PUZZLE_CHAMBER
 	warp_def 6, 19, 3, 0, MAP_UNION_CAVE_B1F
 	warp_def 13, 20, 3, 2, MAP_ROUTE32_GATE
 	warp_def 13, 21, 3, 3, MAP_ROUTE32_GATE
 	warp_def 6, 27, 3, 1, MAP_UNION_CAVE_B1F
-	warp_def 2, 29, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
-	warp_def 16, 33, 3, 0, MAP_RUINS_OF_ALPH_EXTERIOR
+	warp_def 2, 29, 3, 0, MAP_RUINS_OF_ALPH_OMANYTE_PUZZLE_CHAMBER
+	warp_def 16, 33, 3, 0, MAP_RUINS_OF_ALPH_AERODACTYL_PUZZLE_CHAMBER
 
 RuinsOfAlph_Exterior_MapBGEvents::
 	bg_event 16, 8, 3, BG_EVENT_PLAYER_FACING_ANY, Route124_EventScript_1F657C

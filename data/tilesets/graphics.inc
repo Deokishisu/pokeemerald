@@ -1849,3 +1849,24 @@ gTilesetPalettes_Building2:: @ 83508BC
 	.incbin "data/tilesets/primary/building2/palettes/15.gbapal"
 
 	.align 2
+gTilesetTiles_Special:: @ 834FB84
+	.incbin "data/tilesets/primary/special/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Special:: @ 83508BC
+	.incbin "data/tilesets/primary/special/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/11.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/12.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/13.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/14.gbapal"
+	.incbin "data/tilesets/primary/special/palettes/15.gbapal"

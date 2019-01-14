@@ -566,3 +566,9 @@ gMetatiles_Building2:: @ 83960F0
 gMetatileAttributes_Building2:: @ 83980F0
 	.incbin "data/tilesets/primary/building2/metatile_attributes.bin"
 
+	.align 1
+gMetatiles_Special:: @ 83960F0
+	.incbin "data/tilesets/primary/special/metatiles.bin"
+	.align 1
+gMetatileAttributes_Special:: @ 83960F0
+	.incbin "data/tilesets/primary/special/metatile_attributes.bin"

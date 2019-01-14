@@ -182,7 +182,7 @@ gMapGroup11::
 
 	.align 2
 gMapGroup12::
-	.4byte VerdanturfTown_BattleTentLobby
+	.4byte RuinsOfAlph_ResearchCenter
 
 	.align 2
 gMapGroup13::
@@ -248,6 +248,19 @@ gMapGroup25::
 	.4byte SproutTower_1F
 	.4byte SproutTower_2F
 	.4byte SproutTower_3F
+	.4byte RuinsOfAlph_MainChamber
+	.4byte RuinsOfAlph_KabutoPuzzleChamber
+	.4byte RuinsOfAlph_KabutoItemRoom
+	.4byte RuinsOfAlph_KabutoWordRoom
+	.4byte RuinsOfAlph_AerodactylPuzzleChamber
+	.4byte RuinsOfAlph_AerodactylItemRoom
+	.4byte RuinsOfAlph_AerodactylWordRoom
+	.4byte RuinsOfAlph_OmanytePuzzleChamber
+	.4byte RuinsOfAlph_OmanyteItemRoom
+	.4byte RuinsOfAlph_OmanyteWordRoom
+	.4byte RuinsOfAlph_HoOhPuzzleChamber
+	.4byte RuinsOfAlph_HoOhItemRoom
+	.4byte RuinsOfAlph_HoOhWordRoom
 	.4byte UnionCave_1F
 	.4byte UnionCave_B1F
 	.4byte UnionCave_B2F
@@ -297,6 +310,7 @@ gMapGroup26::
 	.4byte FortreeCity_House4
 	.4byte FortreeCity_House5
 	.4byte FortreeCity_DecorationShop
+	.4byte VerdanturfTown_BattleTentLobby
 	.4byte VerdanturfTown_BattleTentCorridor
 	.4byte VerdanturfTown_BattleTentBattleRoom
 	.4byte FallarborTown_BattleTentLobby
