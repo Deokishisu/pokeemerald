@@ -2716,3 +2716,4 @@ gMapLayouts::
 	.4byte RadioTower_3F_Layout
 	.4byte RadioTower_4F_Layout
 	.4byte RadioTower_5F_Layout
+	.4byte BattleTower_Exterior_Layout

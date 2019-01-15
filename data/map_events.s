@@ -592,3 +592,4 @@
 	.include "data/maps/RadioTower_3F/events.inc"
 	.include "data/maps/RadioTower_4F/events.inc"
 	.include "data/maps/RadioTower_5F/events.inc"
+	.include "data/maps/BattleTower_Exterior/events.inc"

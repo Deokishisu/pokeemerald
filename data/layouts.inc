@@ -479,3 +479,4 @@
 	.include "data/layouts/RadioTower_3F/layout.inc"
 	.include "data/layouts/RadioTower_4F/layout.inc"
 	.include "data/layouts/RadioTower_5F/layout.inc"
+	.include "data/layouts/BattleTower_Exterior/layout.inc"

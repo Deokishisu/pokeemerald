@@ -7683,3 +7683,4 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/RadioTower_3F/scripts.inc"
 	.include "data/maps/RadioTower_4F/scripts.inc"
 	.include "data/maps/RadioTower_5F/scripts.inc"
+	.include "data/maps/BattleTower_Exterior/scripts.inc"

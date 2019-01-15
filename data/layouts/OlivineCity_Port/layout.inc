@@ -10,6 +10,6 @@ OlivineCity_Port_Layout::
 	.4byte 36
 	.4byte OlivineCity_Port_MapBorder
 	.4byte OlivineCity_Port_MapBlockdata
-	.4byte gTileset_Building
-	.4byte gTileset_GenericBuilding
+	.4byte gTileset_General
+	.4byte gTileset_Petalburg
 

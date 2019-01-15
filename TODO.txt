@@ -10,8 +10,6 @@ TODO: Update Options menu selections to Crystal equivalents when flags are figur
 
 TODO: Black out the Options menu background; and decide if SGB borders are a thing and implement them.
 
-TODO: Import the remaining tilesets (Battle Tower Outside, Port (Outdoor Only), and possibly PokeCom Center).
-
 TODO: Remove National Dex requirement for trading with FRLG, replace with Time Capsule check.
 
 TODO: Fix other Metal Advance players appearing as Emerald players in link rooms.

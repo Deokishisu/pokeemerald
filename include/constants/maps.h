@@ -291,6 +291,7 @@
 #define MAP_DRAGONS_DEN_ENTRANCE                    (68 | (25 << 8))
 #define MAP_DRAGONS_DEN                             (69 | (25 << 8))
 #define MAP_DRAGONS_DEN_DRAGON_SHRINE               (70 | (25 << 8))
+#define MAP_BATTLE_TOWER_EXTERIOR                   (71 | (25 << 8))
 
 // Map Group 26
 #define MAP_FORTREE_CITY_HOUSE4                      (0 | (26 << 8))

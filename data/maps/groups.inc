@@ -314,6 +314,7 @@ gMapGroup25::
 	.4byte DragonsDen_Entrance
 	.4byte DragonsDen
 	.4byte DragonsDen_DragonShrine
+	.4byte BattleTower_Exterior
 
 	.align 2
 gMapGroup26::

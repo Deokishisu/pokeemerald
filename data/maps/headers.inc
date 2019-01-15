@@ -578,3 +578,4 @@
 	.include "data/maps/RadioTower_3F/header.inc"
 	.include "data/maps/RadioTower_4F/header.inc"
 	.include "data/maps/RadioTower_5F/header.inc"
+	.include "data/maps/BattleTower_Exterior/header.inc"
