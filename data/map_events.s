@@ -593,3 +593,8 @@
 	.include "data/maps/RadioTower_4F/events.inc"
 	.include "data/maps/RadioTower_5F/events.inc"
 	.include "data/maps/BattleTower_Exterior/events.inc"
+	.include "data/maps/FastShip_1F/events.inc"
+	.include "data/maps/FastShip_B1F/events.inc"
+	.include "data/maps/FastShip_Cabins_NNW_NNE_NE/events.inc"
+	.include "data/maps/FastShip_Cabins_SE_SSE_Captains/events.inc"
+	.include "data/maps/FastShip_Cabins_SW_SSW_NW/events.inc"

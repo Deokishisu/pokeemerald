@@ -2717,3 +2717,8 @@ gMapLayouts::
 	.4byte RadioTower_4F_Layout
 	.4byte RadioTower_5F_Layout
 	.4byte BattleTower_Exterior_Layout
+	.4byte FastShip_1F_Layout
+	.4byte FastShip_B1F_Layout
+	.4byte FastShip_Cabins_NNW_NNE_NE_Layout
+	.4byte FastShip_Cabins_SE_SSE_Captains_Layout
+	.4byte FastShip_Cabins_SW_SSW_NW_Layout

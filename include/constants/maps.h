@@ -291,7 +291,12 @@
 #define MAP_DRAGONS_DEN_ENTRANCE                    (68 | (25 << 8))
 #define MAP_DRAGONS_DEN                             (69 | (25 << 8))
 #define MAP_DRAGONS_DEN_DRAGON_SHRINE               (70 | (25 << 8))
-#define MAP_BATTLE_TOWER_EXTERIOR                   (71 | (25 << 8))
+#define MAP_FAST_SHIP_1F                            (71 | (25 << 8))
+#define MAP_FAST_SHIP_B1F                           (72 | (25 << 8))
+#define MAP_FAST_SHIP_CABINS_NNW_NNE_NE             (73 | (25 << 8))
+#define MAP_FAST_SHIP_CABINS_SE_SSE_CAPTAINS        (74 | (25 << 8))
+#define MAP_FAST_SHIP_CABINS_SW_SSW_NW              (75 | (25 << 8))
+#define MAP_BATTLE_TOWER_EXTERIOR                   (76 | (25 << 8))
 
 // Map Group 26
 #define MAP_FORTREE_CITY_HOUSE4                      (0 | (26 << 8))

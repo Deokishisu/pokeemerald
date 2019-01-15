@@ -314,6 +314,11 @@ gMapGroup25::
 	.4byte DragonsDen_Entrance
 	.4byte DragonsDen
 	.4byte DragonsDen_DragonShrine
+	.4byte FastShip_1F
+	.4byte FastShip_B1F
+	.4byte FastShip_Cabins_NNW_NNE_NE
+	.4byte FastShip_Cabins_SE_SSE_Captains
+	.4byte FastShip_Cabins_SW_SSW_NW
 	.4byte BattleTower_Exterior
 
 	.align 2

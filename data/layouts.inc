@@ -480,3 +480,8 @@
 	.include "data/layouts/RadioTower_4F/layout.inc"
 	.include "data/layouts/RadioTower_5F/layout.inc"
 	.include "data/layouts/BattleTower_Exterior/layout.inc"
+	.include "data/layouts/FastShip_1F/layout.inc"
+	.include "data/layouts/FastShip_B1F/layout.inc"
+	.include "data/layouts/FastShip_Cabins_NNW_NNE_NE/layout.inc"
+	.include "data/layouts/FastShip_Cabins_SE_SSE_Captains/layout.inc"
+	.include "data/layouts/FastShip_Cabins_SW_SSW_NW/layout.inc"

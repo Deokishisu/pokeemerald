@@ -579,3 +579,8 @@
 	.include "data/maps/RadioTower_4F/header.inc"
 	.include "data/maps/RadioTower_5F/header.inc"
 	.include "data/maps/BattleTower_Exterior/header.inc"
+	.include "data/maps/FastShip_1F/header.inc"
+	.include "data/maps/FastShip_B1F/header.inc"
+	.include "data/maps/FastShip_Cabins_NNW_NNE_NE/header.inc"
+	.include "data/maps/FastShip_Cabins_SE_SSE_Captains/header.inc"
+	.include "data/maps/FastShip_Cabins_SW_SSW_NW/header.inc"

@@ -7684,3 +7684,8 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/RadioTower_4F/scripts.inc"
 	.include "data/maps/RadioTower_5F/scripts.inc"
 	.include "data/maps/BattleTower_Exterior/scripts.inc"
+	.include "data/maps/FastShip_1F/scripts.inc"
+	.include "data/maps/FastShip_B1F/scripts.inc"
+	.include "data/maps/FastShip_Cabins_NNW_NNE_NE/scripts.inc"
+	.include "data/maps/FastShip_Cabins_SE_SSE_Captains/scripts.inc"
+	.include "data/maps/FastShip_Cabins_SW_SSW_NW/scripts.inc"
