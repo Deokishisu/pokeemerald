@@ -582,3 +582,8 @@
 	.include "data/maps/RuinsOfAlph_OmanyteWordRoom/events.inc"
 	.include "data/maps/RuinsOfAlph_HoOhWordRoom/events.inc"
 	.include "data/maps/RuinsOfAlph_ResearchCenter/events.inc"
+	.include "data/maps/IcePath_1F/events.inc"
+	.include "data/maps/IcePath_B1F/events.inc"
+	.include "data/maps/IcePath_B2F_Mahogany/events.inc"
+	.include "data/maps/IcePath_B2F_Blackthorn/events.inc"
+	.include "data/maps/IcePath_B3F/events.inc"

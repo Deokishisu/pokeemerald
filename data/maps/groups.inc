@@ -301,6 +301,11 @@ gMapGroup25::
 	.4byte TeamRocketBase_B1F
 	.4byte TeamRocketBase_B2F
 	.4byte TeamRocketBase_B3F
+	.4byte IcePath_1F
+	.4byte IcePath_B1F
+	.4byte IcePath_B2F_Mahogany
+	.4byte IcePath_B2F_Blackthorn
+	.4byte IcePath_B3F
 	.4byte DragonsDen_Entrance
 	.4byte DragonsDen
 	.4byte DragonsDen_DragonShrine

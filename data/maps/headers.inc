@@ -568,3 +568,8 @@
 	.include "data/maps/RuinsOfAlph_OmanyteWordRoom/header.inc"
 	.include "data/maps/RuinsOfAlph_HoOhWordRoom/header.inc"
 	.include "data/maps/RuinsOfAlph_ResearchCenter/header.inc"
+	.include "data/maps/IcePath_1F/header.inc"
+	.include "data/maps/IcePath_B1F/header.inc"
+	.include "data/maps/IcePath_B2F_Mahogany/header.inc"
+	.include "data/maps/IcePath_B2F_Blackthorn/header.inc"
+	.include "data/maps/IcePath_B3F/header.inc"

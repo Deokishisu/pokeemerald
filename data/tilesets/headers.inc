@@ -848,7 +848,7 @@ gTileset_Special:: @ 83DF884
 	.byte FALSE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_Special
-	.4byte gTilesetPalettes_InsideBuilding_DungeonDay, gTilesetPalettes_Special, gTilesetPalettes_Special, gTilesetPalettes_Special
+	.4byte gTilesetPalettes_Special, gTilesetPalettes_Special, gTilesetPalettes_Special, gTilesetPalettes_Special
 	.4byte gMetatiles_Special
 	.4byte gMetatileAttributes_Special
 	.4byte NULL

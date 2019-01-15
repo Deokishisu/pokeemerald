@@ -16,7 +16,7 @@ BlackthornCity_MapWarps::
 	warp_def 15, 29, 0, 0, MAP_BLACKTHORN_CITY_MART
 	warp_def 21, 29, 0, 0, MAP_BLACKTHORN_CITY_POKEMON_CENTER_1F
 	warp_def 9, 31, 0, 0, MAP_BLACKTHORN_CITY_MOVE_DELETERS_HOUSE
-	warp_def 36, 9, 0, 0, MAP_ROUTE44
+	warp_def 36, 9, 0, 1, MAP_ICE_PATH_1F
 	warp_def 20, 1, 0, 0, MAP_DRAGONS_DEN_ENTRANCE
 
 BlackthornCity_MapBGEvents::

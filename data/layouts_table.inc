@@ -2706,3 +2706,8 @@ gMapLayouts::
 	.4byte RuinsOfAlph_OmanyteWordRoom_Layout
 	.4byte RuinsOfAlph_HoOhWordRoom_Layout
 	.4byte RuinsOfAlph_ResearchCenter_Layout
+	.4byte IcePath_1F_Layout
+	.4byte IcePath_B1F_Layout
+	.4byte IcePath_B2F_Mahogany_Layout
+	.4byte IcePath_B2F_Blackthorn_Layout
+	.4byte IcePath_B3F_Layout

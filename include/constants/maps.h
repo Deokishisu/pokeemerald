@@ -278,9 +278,14 @@
 #define MAP_TEAM_ROCKET_BASE_B1F                    (55 | (25 << 8))
 #define MAP_TEAM_ROCKET_BASE_B2F                    (56 | (25 << 8))
 #define MAP_TEAM_ROCKET_BASE_B3F                    (57 | (25 << 8))
-#define MAP_DRAGONS_DEN_ENTRANCE                    (58 | (25 << 8))
-#define MAP_DRAGONS_DEN                             (59 | (25 << 8))
-#define MAP_DRAGONS_DEN_DRAGON_SHRINE               (60 | (25 << 8))
+#define MAP_ICE_PATH_1F                             (58 | (25 << 8))
+#define MAP_ICE_PATH_B1F                            (59 | (25 << 8))
+#define MAP_ICE_PATH_B2F_MAHOGANY                   (60 | (25 << 8))
+#define MAP_ICE_PATH_B2F_BLACKTHORN                 (61 | (25 << 8))
+#define MAP_ICE_PATH_B3F                            (62 | (25 << 8))
+#define MAP_DRAGONS_DEN_ENTRANCE                    (63 | (25 << 8))
+#define MAP_DRAGONS_DEN                             (64 | (25 << 8))
+#define MAP_DRAGONS_DEN_DRAGON_SHRINE               (65 | (25 << 8))
 
 // Map Group 26
 #define MAP_FORTREE_CITY_HOUSE4                      (0 | (26 << 8))

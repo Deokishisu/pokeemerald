@@ -7673,3 +7673,8 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/RuinsOfAlph_OmanyteWordRoom/scripts.inc"
 	.include "data/maps/RuinsOfAlph_HoOhWordRoom/scripts.inc"
 	.include "data/maps/RuinsOfAlph_ResearchCenter/scripts.inc"
+	.include "data/maps/IcePath_1F/scripts.inc"
+	.include "data/maps/IcePath_B1F/scripts.inc"
+	.include "data/maps/IcePath_B2F_Mahogany/scripts.inc"
+	.include "data/maps/IcePath_B2F_Blackthorn/scripts.inc"
+	.include "data/maps/IcePath_B3F/scripts.inc"

@@ -469,3 +469,8 @@
 	.include "data/layouts/RuinsOfAlph_OmanyteWordRoom/layout.inc"
 	.include "data/layouts/RuinsOfAlph_HoOhWordRoom/layout.inc"
 	.include "data/layouts/RuinsOfAlph_ResearchCenter/layout.inc"
+	.include "data/layouts/IcePath_1F/layout.inc"
+	.include "data/layouts/IcePath_B1F/layout.inc"
+	.include "data/layouts/IcePath_B2F_Mahogany/layout.inc"
+	.include "data/layouts/IcePath_B2F_Blackthorn/layout.inc"
+	.include "data/layouts/IcePath_B3F/layout.inc"
