@@ -7678,3 +7678,8 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/IcePath_B2F_Mahogany/scripts.inc"
 	.include "data/maps/IcePath_B2F_Blackthorn/scripts.inc"
 	.include "data/maps/IcePath_B3F/scripts.inc"
+	.include "data/maps/RadioTower_1F/scripts.inc"
+	.include "data/maps/RadioTower_2F/scripts.inc"
+	.include "data/maps/RadioTower_3F/scripts.inc"
+	.include "data/maps/RadioTower_4F/scripts.inc"
+	.include "data/maps/RadioTower_5F/scripts.inc"

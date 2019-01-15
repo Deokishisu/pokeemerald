@@ -474,3 +474,8 @@
 	.include "data/layouts/IcePath_B2F_Mahogany/layout.inc"
 	.include "data/layouts/IcePath_B2F_Blackthorn/layout.inc"
 	.include "data/layouts/IcePath_B3F/layout.inc"
+	.include "data/layouts/RadioTower_1F/layout.inc"
+	.include "data/layouts/RadioTower_2F/layout.inc"
+	.include "data/layouts/RadioTower_3F/layout.inc"
+	.include "data/layouts/RadioTower_4F/layout.inc"
+	.include "data/layouts/RadioTower_5F/layout.inc"

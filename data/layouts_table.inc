@@ -2711,3 +2711,8 @@ gMapLayouts::
 	.4byte IcePath_B2F_Mahogany_Layout
 	.4byte IcePath_B2F_Blackthorn_Layout
 	.4byte IcePath_B3F_Layout
+	.4byte RadioTower_1F_Layout
+	.4byte RadioTower_2F_Layout
+	.4byte RadioTower_3F_Layout
+	.4byte RadioTower_4F_Layout
+	.4byte RadioTower_5F_Layout

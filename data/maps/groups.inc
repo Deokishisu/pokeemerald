@@ -267,6 +267,11 @@ gMapGroup25::
 	.4byte SlowpokeWell_B1F
 	.4byte SlowpokeWell_B2F
 	.4byte IlexForest
+	.4byte RadioTower_1F
+	.4byte RadioTower_2F
+	.4byte RadioTower_3F
+	.4byte RadioTower_4F
+	.4byte RadioTower_5F
 	.4byte NationalPark
 	.4byte BurnedTower_1F
 	.4byte BurnedTower_B1F

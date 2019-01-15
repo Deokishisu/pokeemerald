@@ -573,3 +573,8 @@
 	.include "data/maps/IcePath_B2F_Mahogany/header.inc"
 	.include "data/maps/IcePath_B2F_Blackthorn/header.inc"
 	.include "data/maps/IcePath_B3F/header.inc"
+	.include "data/maps/RadioTower_1F/header.inc"
+	.include "data/maps/RadioTower_2F/header.inc"
+	.include "data/maps/RadioTower_3F/header.inc"
+	.include "data/maps/RadioTower_4F/header.inc"
+	.include "data/maps/RadioTower_5F/header.inc"
