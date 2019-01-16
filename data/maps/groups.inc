@@ -243,6 +243,11 @@ gMapGroup24::
 
 	.align 2
 gMapGroup25::
+	.4byte SilverCave_Exterior_PokemonCenter_1F
+	.4byte SilverCave_Exterior_PokemonCenter_2F
+
+	.align 2
+gMapGroup26::
 	.4byte DarkCave_Violet
 	.4byte DarkCave_Blackthorn
 	.4byte SproutTower_1F
@@ -319,10 +324,172 @@ gMapGroup25::
 	.4byte FastShip_Cabins_NNW_NNE_NE
 	.4byte FastShip_Cabins_SE_SSE_Captains
 	.4byte FastShip_Cabins_SW_SSW_NW
+	.4byte SilverCave_Room1
+	.4byte SilverCave_Room2
+	.4byte SilverCave_Room3
+	.4byte SilverCave_ItemRooms
 	.4byte BattleTower_Exterior
 
 	.align 2
-gMapGroup26::
+gMapGroup27::
+	.4byte SecretBase_RedCave1
+	.4byte SecretBase_BrownCave1
+	.4byte SecretBase_BlueCave1
+	.4byte SecretBase_YellowCave1
+	.4byte SecretBase_Tree1
+	.4byte SecretBase_Shrub1
+	.4byte SecretBase_RedCave2
+	.4byte SecretBase_BrownCave2
+	.4byte SecretBase_BlueCave2
+	.4byte SecretBase_YellowCave2
+	.4byte SecretBase_Tree2
+	.4byte SecretBase_Shrub2
+	.4byte SecretBase_RedCave3
+	.4byte SecretBase_BrownCave3
+	.4byte SecretBase_BlueCave3
+	.4byte SecretBase_YellowCave3
+	.4byte SecretBase_Tree3
+	.4byte SecretBase_Shrub3
+	.4byte SecretBase_RedCave4
+	.4byte SecretBase_BrownCave4
+	.4byte SecretBase_BlueCave4
+	.4byte SecretBase_YellowCave4
+	.4byte SecretBase_Tree4
+	.4byte SecretBase_Shrub4
+	.4byte SingleBattleColosseum
+	.4byte TradeCenter
+	.4byte RecordCorner
+	.4byte DoubleBattleColosseum
+	.4byte LinkContestRoom1
+	.4byte UnknownMap_25_29
+	.4byte UnknownMap_25_30
+	.4byte UnknownMap_25_31
+	.4byte UnknownMap_25_32
+	.4byte UnknownMap_25_33
+	.4byte UnknownMap_25_34
+	.4byte LinkContestRoom2
+	.4byte LinkContestRoom3
+	.4byte LinkContestRoom4
+	.4byte LinkContestRoom5
+	.4byte LinkContestRoom6
+	.4byte InsideOfTruck
+	.4byte SSTidalCorridor
+	.4byte SSTidalLowerDeck
+	.4byte SSTidalRooms
+	.4byte BattlePyramidSquare01
+	.4byte BattlePyramidSquare02
+	.4byte BattlePyramidSquare03
+	.4byte BattlePyramidSquare04
+	.4byte BattlePyramidSquare05
+	.4byte BattlePyramidSquare06
+	.4byte BattlePyramidSquare07
+	.4byte BattlePyramidSquare08
+	.4byte BattlePyramidSquare09
+	.4byte BattlePyramidSquare10
+	.4byte BattlePyramidSquare11
+	.4byte BattlePyramidSquare12
+	.4byte BattlePyramidSquare13
+	.4byte BattlePyramidSquare14
+	.4byte BattlePyramidSquare15
+	.4byte BattlePyramidSquare16
+	.4byte UnionRoom
+
+	.align 2
+gMapGroup28::
+	.4byte SafariZone_Northwest
+	.4byte SafariZone_North
+	.4byte SafariZone_Southwest
+	.4byte SafariZone_South
+	.4byte BattleFrontier_OutsideWest
+	.4byte BattleFrontier_BattleTowerLobby
+	.4byte BattleFrontier_BattleTowerElevator
+	.4byte BattleFrontier_BattleTowerCorridor
+	.4byte BattleFrontier_BattleTowerBattleRoom
+	.4byte SouthernIsland_Exterior
+	.4byte SouthernIsland_Interior
+	.4byte SafariZone_RestHouse
+	.4byte SafariZone_Northeast
+	.4byte SafariZone_Southeast
+	.4byte BattleFrontier_OutsideEast
+	.4byte BattleFrontier_BattleTowerMultiBattleRoom
+	.4byte BattleFrontier_BattleTowerCorridor2
+	.4byte BattleFrontier_BattleTowerBattleRoom2
+	.4byte BattleFrontier_BattleDomeLobby
+	.4byte BattleFrontier_BattleDomeCorridor
+	.4byte BattleFrontier_BattleDomePreBattleRoom
+	.4byte BattleFrontier_BattleDomeBattleRoom
+	.4byte BattleFrontier_BattlePalaceLobby
+	.4byte BattleFrontier_BattlePalaceCorridor
+	.4byte BattleFrontier_BattlePalaceBattleRoom
+	.4byte BattleFrontier_BattlePyramidLobby
+	.4byte BattleFrontier_BattlePyramidEmptySquare
+	.4byte BattleFrontier_BattlePyramidTop
+	.4byte BattleFrontier_BattleArenaLobby
+	.4byte BattleFrontier_BattleArenaCorridor
+	.4byte BattleFrontier_BattleArenaBattleRoom
+	.4byte BattleFrontier_BattleFactoryLobby
+	.4byte BattleFrontier_BattleFactoryPreBattleRoom
+	.4byte BattleFrontier_BattleFactoryBattleRoom
+	.4byte BattleFrontier_BattlePikeLobby
+	.4byte BattleFrontier_BattlePikeCorridor
+	.4byte BattleFrontier_BattlePikeThreePathRoom
+	.4byte BattleFrontier_BattlePikeRandomRoom1
+	.4byte BattleFrontier_BattlePikeRandomRoom2
+	.4byte BattleFrontier_BattlePikeRandomRoom3
+	.4byte BattleFrontier_RankingHall
+	.4byte BattleFrontier_Lounge1
+	.4byte BattleFrontier_BattlePointExchangeServiceCorner
+	.4byte BattleFrontier_Lounge2
+	.4byte BattleFrontier_Lounge3
+	.4byte BattleFrontier_Lounge4
+	.4byte BattleFrontier_ScottsHouse
+	.4byte BattleFrontier_Lounge5
+	.4byte BattleFrontier_Lounge6
+	.4byte BattleFrontier_Lounge7
+	.4byte BattleFrontier_ReceptionGate
+	.4byte BattleFrontier_Lounge8
+	.4byte BattleFrontier_Lounge9
+	.4byte BattleFrontier_PokemonCenter_1F
+	.4byte BattleFrontier_PokemonCenter_2F
+	.4byte BattleFrontier_Mart
+	.4byte FarawayIsland_Entrance
+	.4byte FarawayIsland_Interior
+	.4byte BirthIsland_Exterior
+	.4byte BirthIsland_Harbor
+	.4byte TrainerHill_Entrance
+	.4byte TrainerHill_1F
+	.4byte TrainerHill_2F
+	.4byte TrainerHill_3F
+	.4byte TrainerHill_4F
+	.4byte TrainerHill_Roof
+	.4byte NavelRock_Exterior
+	.4byte NavelRock_Harbor
+	.4byte NavelRock_Entrance
+	.4byte NavelRock_B1F
+	.4byte NavelRock_Fork
+	.4byte NavelRock_Up1
+	.4byte NavelRock_Up2
+	.4byte NavelRock_Up3
+	.4byte NavelRock_Up4
+	.4byte NavelRock_Top
+	.4byte NavelRock_Down01
+	.4byte NavelRock_Down02
+	.4byte NavelRock_Down03
+	.4byte NavelRock_Down04
+	.4byte NavelRock_Down05
+	.4byte NavelRock_Down06
+	.4byte NavelRock_Down07
+	.4byte NavelRock_Down08
+	.4byte NavelRock_Down09
+	.4byte NavelRock_Down10
+	.4byte NavelRock_Down11
+	.4byte NavelRock_Bottom
+	.4byte TrainerHill_Elevator
+
+	.align 2
+gMapGroup29::
+	.4byte Route104_Prototype
+	.4byte Route104_PrototypePrettyPetalFlowerShop
 	.4byte FortreeCity_House4
 	.4byte FortreeCity_House5
 	.4byte FortreeCity_DecorationShop
@@ -491,167 +658,6 @@ gMapGroup26::
 	.4byte TerraCave_End
 	.4byte AlteringCave
 	.4byte MeteorFalls_StevensCave
-
-	.align 2
-gMapGroup27::
-	.4byte SecretBase_RedCave1
-	.4byte SecretBase_BrownCave1
-	.4byte SecretBase_BlueCave1
-	.4byte SecretBase_YellowCave1
-	.4byte SecretBase_Tree1
-	.4byte SecretBase_Shrub1
-	.4byte SecretBase_RedCave2
-	.4byte SecretBase_BrownCave2
-	.4byte SecretBase_BlueCave2
-	.4byte SecretBase_YellowCave2
-	.4byte SecretBase_Tree2
-	.4byte SecretBase_Shrub2
-	.4byte SecretBase_RedCave3
-	.4byte SecretBase_BrownCave3
-	.4byte SecretBase_BlueCave3
-	.4byte SecretBase_YellowCave3
-	.4byte SecretBase_Tree3
-	.4byte SecretBase_Shrub3
-	.4byte SecretBase_RedCave4
-	.4byte SecretBase_BrownCave4
-	.4byte SecretBase_BlueCave4
-	.4byte SecretBase_YellowCave4
-	.4byte SecretBase_Tree4
-	.4byte SecretBase_Shrub4
-	.4byte SingleBattleColosseum
-	.4byte TradeCenter
-	.4byte RecordCorner
-	.4byte DoubleBattleColosseum
-	.4byte LinkContestRoom1
-	.4byte UnknownMap_25_29
-	.4byte UnknownMap_25_30
-	.4byte UnknownMap_25_31
-	.4byte UnknownMap_25_32
-	.4byte UnknownMap_25_33
-	.4byte UnknownMap_25_34
-	.4byte LinkContestRoom2
-	.4byte LinkContestRoom3
-	.4byte LinkContestRoom4
-	.4byte LinkContestRoom5
-	.4byte LinkContestRoom6
-	.4byte InsideOfTruck
-	.4byte SSTidalCorridor
-	.4byte SSTidalLowerDeck
-	.4byte SSTidalRooms
-	.4byte BattlePyramidSquare01
-	.4byte BattlePyramidSquare02
-	.4byte BattlePyramidSquare03
-	.4byte BattlePyramidSquare04
-	.4byte BattlePyramidSquare05
-	.4byte BattlePyramidSquare06
-	.4byte BattlePyramidSquare07
-	.4byte BattlePyramidSquare08
-	.4byte BattlePyramidSquare09
-	.4byte BattlePyramidSquare10
-	.4byte BattlePyramidSquare11
-	.4byte BattlePyramidSquare12
-	.4byte BattlePyramidSquare13
-	.4byte BattlePyramidSquare14
-	.4byte BattlePyramidSquare15
-	.4byte BattlePyramidSquare16
-	.4byte UnionRoom
-
-	.align 2
-gMapGroup28::
-	.4byte SafariZone_Northwest
-	.4byte SafariZone_North
-	.4byte SafariZone_Southwest
-	.4byte SafariZone_South
-	.4byte BattleFrontier_OutsideWest
-	.4byte BattleFrontier_BattleTowerLobby
-	.4byte BattleFrontier_BattleTowerElevator
-	.4byte BattleFrontier_BattleTowerCorridor
-	.4byte BattleFrontier_BattleTowerBattleRoom
-	.4byte SouthernIsland_Exterior
-	.4byte SouthernIsland_Interior
-	.4byte SafariZone_RestHouse
-	.4byte SafariZone_Northeast
-	.4byte SafariZone_Southeast
-	.4byte BattleFrontier_OutsideEast
-	.4byte BattleFrontier_BattleTowerMultiBattleRoom
-	.4byte BattleFrontier_BattleTowerCorridor2
-	.4byte BattleFrontier_BattleTowerBattleRoom2
-	.4byte BattleFrontier_BattleDomeLobby
-	.4byte BattleFrontier_BattleDomeCorridor
-	.4byte BattleFrontier_BattleDomePreBattleRoom
-	.4byte BattleFrontier_BattleDomeBattleRoom
-	.4byte BattleFrontier_BattlePalaceLobby
-	.4byte BattleFrontier_BattlePalaceCorridor
-	.4byte BattleFrontier_BattlePalaceBattleRoom
-	.4byte BattleFrontier_BattlePyramidLobby
-	.4byte BattleFrontier_BattlePyramidEmptySquare
-	.4byte BattleFrontier_BattlePyramidTop
-	.4byte BattleFrontier_BattleArenaLobby
-	.4byte BattleFrontier_BattleArenaCorridor
-	.4byte BattleFrontier_BattleArenaBattleRoom
-	.4byte BattleFrontier_BattleFactoryLobby
-	.4byte BattleFrontier_BattleFactoryPreBattleRoom
-	.4byte BattleFrontier_BattleFactoryBattleRoom
-	.4byte BattleFrontier_BattlePikeLobby
-	.4byte BattleFrontier_BattlePikeCorridor
-	.4byte BattleFrontier_BattlePikeThreePathRoom
-	.4byte BattleFrontier_BattlePikeRandomRoom1
-	.4byte BattleFrontier_BattlePikeRandomRoom2
-	.4byte BattleFrontier_BattlePikeRandomRoom3
-	.4byte BattleFrontier_RankingHall
-	.4byte BattleFrontier_Lounge1
-	.4byte BattleFrontier_BattlePointExchangeServiceCorner
-	.4byte BattleFrontier_Lounge2
-	.4byte BattleFrontier_Lounge3
-	.4byte BattleFrontier_Lounge4
-	.4byte BattleFrontier_ScottsHouse
-	.4byte BattleFrontier_Lounge5
-	.4byte BattleFrontier_Lounge6
-	.4byte BattleFrontier_Lounge7
-	.4byte BattleFrontier_ReceptionGate
-	.4byte BattleFrontier_Lounge8
-	.4byte BattleFrontier_Lounge9
-	.4byte BattleFrontier_PokemonCenter_1F
-	.4byte BattleFrontier_PokemonCenter_2F
-	.4byte BattleFrontier_Mart
-	.4byte FarawayIsland_Entrance
-	.4byte FarawayIsland_Interior
-	.4byte BirthIsland_Exterior
-	.4byte BirthIsland_Harbor
-	.4byte TrainerHill_Entrance
-	.4byte TrainerHill_1F
-	.4byte TrainerHill_2F
-	.4byte TrainerHill_3F
-	.4byte TrainerHill_4F
-	.4byte TrainerHill_Roof
-	.4byte NavelRock_Exterior
-	.4byte NavelRock_Harbor
-	.4byte NavelRock_Entrance
-	.4byte NavelRock_B1F
-	.4byte NavelRock_Fork
-	.4byte NavelRock_Up1
-	.4byte NavelRock_Up2
-	.4byte NavelRock_Up3
-	.4byte NavelRock_Up4
-	.4byte NavelRock_Top
-	.4byte NavelRock_Down01
-	.4byte NavelRock_Down02
-	.4byte NavelRock_Down03
-	.4byte NavelRock_Down04
-	.4byte NavelRock_Down05
-	.4byte NavelRock_Down06
-	.4byte NavelRock_Down07
-	.4byte NavelRock_Down08
-	.4byte NavelRock_Down09
-	.4byte NavelRock_Down10
-	.4byte NavelRock_Down11
-	.4byte NavelRock_Bottom
-	.4byte TrainerHill_Elevator
-
-	.align 2
-gMapGroup29::
-	.4byte Route104_Prototype
-	.4byte Route104_PrototypePrettyPetalFlowerShop
 
 	.align 2
 gMapGroup30::

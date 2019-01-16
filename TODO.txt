@@ -23,3 +23,5 @@ TODO: In Crystal, wild Pokemon can be encountered on the pink exit tiles in Ilex
 TODO: Fix water palettes on all tilesets.
 
 TODO: Get Flash working in the field and make cave exits flicker in dark caves.
+
+TODO: Move the camera 8 pixels to the right.

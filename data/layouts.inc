@@ -485,3 +485,7 @@
 	.include "data/layouts/FastShip_Cabins_NNW_NNE_NE/layout.inc"
 	.include "data/layouts/FastShip_Cabins_SE_SSE_Captains/layout.inc"
 	.include "data/layouts/FastShip_Cabins_SW_SSW_NW/layout.inc"
+	.include "data/layouts/SilverCave_Room1/layout.inc"
+	.include "data/layouts/SilverCave_Room2/layout.inc"
+	.include "data/layouts/SilverCave_Room3/layout.inc"
+	.include "data/layouts/SilverCave_ItemRooms/layout.inc"

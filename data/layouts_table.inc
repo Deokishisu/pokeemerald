@@ -2722,3 +2722,7 @@ gMapLayouts::
 	.4byte FastShip_Cabins_NNW_NNE_NE_Layout
 	.4byte FastShip_Cabins_SE_SSE_Captains_Layout
 	.4byte FastShip_Cabins_SW_SSW_NW_Layout
+	.4byte SilverCave_Room1_Layout
+	.4byte SilverCave_Room2_Layout
+	.4byte SilverCave_Room3_Layout
+	.4byte SilverCave_ItemRooms_Layout
