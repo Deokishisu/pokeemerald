@@ -1809,10 +1809,10 @@ static void RemoveEventObjectIfOutsideView(struct EventObject *eventObject)
     bottom = gSaveBlock1Ptr->pos.y + 12;
 
     if (eventObject->currentCoords.x >= left && eventObject->currentCoords.x <= right
-     && eventObject->currentCoords.y >= top && eventObject->currentCoords.y <= bottom)
+     && eventObject->currentCoords.y >= top - 1 && eventObject->currentCoords.y <= bottom + 1)
         return;
     if (eventObject->initialCoords.x >= left && eventObject->initialCoords.x <= right
-     && eventObject->initialCoords.y >= top && eventObject->initialCoords.y <= bottom)
+     && eventObject->initialCoords.y >= top - 1 && eventObject->initialCoords.y <= bottom + 1)
         return;
     RemoveEventObject(eventObject);
 }
