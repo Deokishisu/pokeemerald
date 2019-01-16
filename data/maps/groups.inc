@@ -329,6 +329,10 @@ gMapGroup26::
 	.4byte SilverCave_Room3
 	.4byte SilverCave_ItemRooms
 	.4byte BattleTower_Exterior
+	.4byte BattleTower_Lobby
+	.4byte BattleTower_Elevator
+	.4byte BattleTower_Hallway
+	.4byte BattleTower_BattleRoom
 
 	.align 2
 gMapGroup27::

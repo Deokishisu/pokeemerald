@@ -590,3 +590,7 @@
 	.include "data/maps/SilverCave_ItemRooms/header.inc"
 	.include "data/maps/SilverCave_Exterior_PokemonCenter_1F/header.inc"
 	.include "data/maps/SilverCave_Exterior_PokemonCenter_2F/header.inc"
+	.include "data/maps/BattleTower_Lobby/header.inc"
+	.include "data/maps/BattleTower_Elevator/header.inc"
+	.include "data/maps/BattleTower_Hallway/header.inc"
+	.include "data/maps/BattleTower_BattleRoom/header.inc"

@@ -7,8 +7,8 @@ BattleTower_Exterior_EventObjects::
 BattleTower_Exterior_MapWarps::
 	warp_def 8, 21, 3, 2, MAP_ROUTE40_BATTLE_TOWER_GATE
 	warp_def 9, 21, 3, 3, MAP_ROUTE40_BATTLE_TOWER_GATE
-	warp_def 8, 9, 3, 0, MAP_SILVER_CAVE_EXTERIOR
-	warp_def 9, 9, 3, 1, MAP_BATTLE_TOWER_EXTERIOR
+	warp_def 8, 9, 3, 0, MAP_BATTLE_TOWER_LOBBY
+	warp_def 9, 9, 3, 1, MAP_BATTLE_TOWER_LOBBY
 
 BattleTower_Exterior_MapBGEvents::
 	bg_event 10, 10, 3, BG_EVENT_PLAYER_FACING_ANY, NULL

@@ -305,6 +305,10 @@
 #define MAP_SILVER_CAVE_ROOM3                       (78 | (26 << 8))
 #define MAP_SILVER_CAVE_ITEM_ROOMS                  (79 | (26 << 8))
 #define MAP_BATTLE_TOWER_EXTERIOR                   (80 | (26 << 8))
+#define MAP_BATTLE_TOWER_LOBBY                      (81 | (26 << 8))
+#define MAP_BATTLE_TOWER_ELEVATOR                   (82 | (26 << 8))
+#define MAP_BATTLE_TOWER_HALLWAY                    (83 | (26 << 8))
+#define MAP_BATTLE_TOWER_BATTLE_ROOM                (84 | (26 << 8))
 
 // Map Group 27
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (27 << 8))

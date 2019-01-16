@@ -489,3 +489,7 @@
 	.include "data/layouts/SilverCave_Room2/layout.inc"
 	.include "data/layouts/SilverCave_Room3/layout.inc"
 	.include "data/layouts/SilverCave_ItemRooms/layout.inc"
+	.include "data/layouts/BattleTower_Lobby/layout.inc"
+	.include "data/layouts/BattleTower_Elevator/layout.inc"
+	.include "data/layouts/BattleTower_Hallway/layout.inc"
+	.include "data/layouts/BattleTower_BattleRoom/layout.inc"

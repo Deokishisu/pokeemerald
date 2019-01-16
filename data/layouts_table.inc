@@ -2726,3 +2726,7 @@ gMapLayouts::
 	.4byte SilverCave_Room2_Layout
 	.4byte SilverCave_Room3_Layout
 	.4byte SilverCave_ItemRooms_Layout
+	.4byte BattleTower_Lobby_Layout
+	.4byte BattleTower_Elevator_Layout
+	.4byte BattleTower_Hallway_Layout
+	.4byte BattleTower_BattleRoom_Layout

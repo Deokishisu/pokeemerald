@@ -604,3 +604,7 @@
 	.include "data/maps/SilverCave_ItemRooms/events.inc"
 	.include "data/maps/SilverCave_Exterior_PokemonCenter_1F/events.inc"
 	.include "data/maps/SilverCave_Exterior_PokemonCenter_2F/events.inc"
+	.include "data/maps/BattleTower_Lobby/events.inc"
+	.include "data/maps/BattleTower_Elevator/events.inc"
+	.include "data/maps/BattleTower_Hallway/events.inc"
+	.include "data/maps/BattleTower_BattleRoom/events.inc"

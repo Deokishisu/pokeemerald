@@ -7695,3 +7695,7 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/SilverCave_ItemRooms/scripts.inc"
 	.include "data/maps/SilverCave_Exterior_PokemonCenter_1F/scripts.inc"
 	.include "data/maps/SilverCave_Exterior_PokemonCenter_2F/scripts.inc"
+	.include "data/maps/BattleTower_Lobby/scripts.inc"
+	.include "data/maps/BattleTower_Elevator/scripts.inc"
+	.include "data/maps/BattleTower_Hallway/scripts.inc"
+	.include "data/maps/BattleTower_BattleRoom/scripts.inc"
