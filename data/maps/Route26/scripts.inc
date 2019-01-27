@@ -45,15 +45,15 @@ Route120_MapScript1_1F5474: @ 81F5474
 	end
 
 Route120_EventScript_1F5490:: @ 81F5490
-	setmetatile 7, 54, 124, 1
-	setmetatile 7, 55, 145, 1
+	@setmetatile 7, 54, 124, 1
+	@setmetatile 7, 55, 145, 1
 	return
 
 Route120_EventScript_1F54A3:: @ 81F54A3
-	setmetatile 13, 15, 663, 0
-	setmetatile 12, 16, 671, 0
-	setmetatile 12, 17, 161, 0
-	setmetatile 13, 17, 161, 0
+	@setmetatile 13, 15, 663, 0
+	@setmetatile 12, 16, 671, 0
+	@setmetatile 12, 17, 161, 0
+	@setmetatile 13, 17, 161, 0
 	return
 
 Route120_EventScript_1F54C8:: @ 81F54C8
@@ -76,11 +76,11 @@ Route120_EventScript_1F54D8:: @ 81F54D8
 	return
 
 Route120_EventScript_1F54FF:: @ 81F54FF
-	setweather WEATHER_CLOUDS
+	@setweather WEATHER_CLOUDS
 	return
 
 Route120_EventScript_1F5503:: @ 81F5503
-	setweather WEATHER_SUNNY
+	@setweather WEATHER_SUNNY
 	return
 
 Route120_EventScript_1F5507:: @ 81F5507
@@ -92,7 +92,7 @@ Route120_EventScript_1F5507:: @ 81F5507
 	end
 
 Route120_EventScript_1F5523:: @ 81F5523
-	setweather WEATHER_RAIN_LIGHT
+	@setweather WEATHER_RAIN_LIGHT
 	return
 
 Route120_EventScript_1F5527:: @ 81F5527
@@ -249,10 +249,10 @@ Route120_EventScript_1F572C:: @ 81F572C
 	delay 15
 	removeobject 31
 	waitfieldeffect 30
-	setmetatile 13, 15, 663, 0
-	setmetatile 12, 16, 671, 0
-	setmetatile 12, 17, 161, 0
-	setmetatile 13, 17, 161, 0
+	@setmetatile 13, 15, 663, 0
+	@setmetatile 12, 16, 671, 0
+	@setmetatile 12, 17, 161, 0
+	@setmetatile 13, 17, 161, 0
 	special DrawWholeMapView
 	release
 	end

@@ -333,6 +333,9 @@ gMapGroup26::
 	.4byte BattleTower_Elevator
 	.4byte BattleTower_Hallway
 	.4byte BattleTower_BattleRoom
+	.4byte TohjoFalls
+	.4byte VictoryRoad_Gate
+	.4byte VictoryRoad
 
 	.align 2
 gMapGroup27::
@@ -492,6 +495,45 @@ gMapGroup28::
 
 	.align 2
 gMapGroup29::
+	.4byte Route27_House
+
+	.align 2
+gMapGroup30::
+	.4byte Route26_House1
+	.4byte Route26_House2
+
+	.align 2
+gMapGroup31::
+	.4byte IndigoPlateau_PokemonCenter_1F
+	.4byte IndigoPlateau_PokemonCenter_2F
+	.4byte IndigoPlateau_WillsRoom
+	.4byte IndigoPlateau_KogasRoom
+	.4byte IndigoPlateau_BrunosRoom
+	.4byte IndigoPlateau_KarensRoom
+	.4byte IndigoPlateau_LancesRoom
+	.4byte IndigoPlateau_HallOfFame
+
+	.align 2
+gMapGroup32::
+	.4byte Route28_House
+
+	.align 2
+gMapGroup33::
+	.4byte Route123_BerryMastersHouse
+	.4byte Route109_SeashoreHouse
+	.4byte Route110_TrickHouseEntrance
+	.4byte Route110_TrickHouseEnd
+	.4byte Route110_TrickHouseCorridor
+	.4byte Route110_TrickHousePuzzle1
+	.4byte Route110_TrickHousePuzzle2
+	.4byte Route110_TrickHousePuzzle3
+	.4byte Route110_TrickHousePuzzle4
+	.4byte Route110_TrickHousePuzzle5
+	.4byte Route110_TrickHousePuzzle6
+	.4byte Route110_TrickHousePuzzle7
+	.4byte Route110_TrickHousePuzzle8
+	.4byte Route110_SeasideCyclingRoadNorthEntrance
+	.4byte Route110_SeasideCyclingRoadSouthEntrance
 	.4byte Route104_Prototype
 	.4byte Route104_PrototypePrettyPetalFlowerShop
 	.4byte FortreeCity_House4
@@ -662,34 +704,7 @@ gMapGroup29::
 	.4byte TerraCave_End
 	.4byte AlteringCave
 	.4byte MeteorFalls_StevensCave
-
-	.align 2
-gMapGroup30::
-	.4byte Route109_SeashoreHouse
-
-	.align 2
-gMapGroup31::
-	.4byte Route110_TrickHouseEntrance
-	.4byte Route110_TrickHouseEnd
-	.4byte Route110_TrickHouseCorridor
-	.4byte Route110_TrickHousePuzzle1
-	.4byte Route110_TrickHousePuzzle2
-	.4byte Route110_TrickHousePuzzle3
-	.4byte Route110_TrickHousePuzzle4
-	.4byte Route110_TrickHousePuzzle5
-	.4byte Route110_TrickHousePuzzle6
-	.4byte Route110_TrickHousePuzzle7
-	.4byte Route110_TrickHousePuzzle8
-	.4byte Route110_SeasideCyclingRoadNorthEntrance
-	.4byte Route110_SeasideCyclingRoadSouthEntrance
-
-	.align 2
-gMapGroup32::
 	.4byte Route113_GlassWorkshop
-
-	.align 2
-gMapGroup33::
-	.4byte Route123_BerryMastersHouse
 
 	.align 2
 gMapGroup34::

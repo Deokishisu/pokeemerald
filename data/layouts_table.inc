@@ -2730,3 +2730,13 @@ gMapLayouts::
 	.4byte BattleTower_Elevator_Layout
 	.4byte BattleTower_Hallway_Layout
 	.4byte BattleTower_BattleRoom_Layout
+	.4byte TohjoFalls_Layout
+	.4byte VictoryRoad_Gate_Layout
+	.4byte VictoryRoad_Layout
+	.4byte IndigoPlateau_PokemonCenter_1F_Layout
+	.4byte IndigoPlateau_WillsRoom_Layout
+	.4byte IndigoPlateau_KogasRoom_Layout
+	.4byte IndigoPlateau_KarensRoom_Layout
+	.4byte IndigoPlateau_BrunosRoom_Layout
+	.4byte IndigoPlateau_LancesRoom_Layout
+	.4byte IndigoPlateau_HallOfFame_Layout
