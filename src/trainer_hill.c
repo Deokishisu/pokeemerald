@@ -292,7 +292,7 @@ static const u8 *const sTagMatchStrings[] =
 
 static const struct EventObjectTemplate gUnknown_0862A670 =
 {
-    .graphicsId = EVENT_OBJ_GFX_RIVAL_BRENDAN_NORMAL,
+    .graphicsId = EVENT_OBJ_GFX_ZRIVAL_BRENDAN_NORMAL,
     .elevation = 3,
     .movementType = MOVEMENT_TYPE_LOOK_AROUND,
     .movementRangeX = 1,

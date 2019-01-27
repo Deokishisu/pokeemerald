@@ -1482,7 +1482,7 @@ u8 *GetMapName(u8 *dest, u16 regionMapId, u16 padLength)
     {
         str = GetSecretBaseMapName(dest);
     }
-    else if (regionMapId < MAPSEC_SPECIAL_EGG)
+    else if (regionMapId < METLOC_SPECIAL_EGG)
     {
         str = StringCopy(dest, gRegionMapEntries[regionMapId].name);
     }
@@ -1801,7 +1801,7 @@ static void sub_8124BE4(void)
     u16 mapSecId;
     u8 spriteId;
 
-    for (i = 0; sUnknown_085A1F18[i][1] != MAPSEC_SPECIAL_EGG; i++)
+    for (i = 0; sUnknown_085A1F18[i][1] != METLOC_SPECIAL_EGG; i++)
     {
         if (FlagGet(sUnknown_085A1F18[i][0]))
         {
