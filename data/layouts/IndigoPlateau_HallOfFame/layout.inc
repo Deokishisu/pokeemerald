@@ -11,5 +11,5 @@ IndigoPlateau_HallOfFame_Layout::
 	.4byte IndigoPlateau_HallOfFame_MapBorder
 	.4byte IndigoPlateau_HallOfFame_MapBlockdata
 	.4byte gTileset_Special
-	.4byte gTileset_BikeShop
+	.4byte gTileset_Petalburg
 
