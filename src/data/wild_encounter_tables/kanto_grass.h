@@ -2603,7 +2603,7 @@ const struct WildPokemon gRoute27_LandMons[3][3][7] =
 
 const struct WildPokemonInfo gRoute27_LandMonsInfo = {25, gRoute27_LandMons}; //10% encounter rate
 
-const struct WildPokemon gRoute_LandMons[3][3][7] = 
+const struct WildPokemon gRoute28_LandMons[3][3][7] = 
 {
 	{ 				//Gold    [0][?][?]
 		{			//Morn    [0][0][?]
@@ -2694,7 +2694,7 @@ const struct WildPokemon gRoute_LandMons[3][3][7] =
 	}
 };
 
-const struct WildPokemonInfo gRoute_LandMonsInfo = {25, gRoute_LandMons}; //10% encounter rate
+const struct WildPokemonInfo gRoute28_LandMonsInfo = {25, gRoute28_LandMons}; //10% encounter rate
 
 /* BLANK TEMPLATE
 
