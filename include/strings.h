@@ -1,6 +1,11 @@
 #ifndef GUARD_STRINGS_H
 #define GUARD_STRINGS_H
 
+extern const u8 gText_GSCTrainerCardName[];
+extern const u8 gText_TrainerCardPlayTime[];
+extern const u8 gText_TrainerCardBadgesArrow[];
+extern const u8 gText_TrainerCardColon[];
+
 extern const u8 gText_FromSpace[];
 
 extern const u8 gText_Lv50[];

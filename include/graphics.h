@@ -4859,6 +4859,13 @@ extern const u32 gUnknown_08DD2B78[];
 extern const u32 gUnknown_08DD228C[];
 extern const u32 gUnknown_08DD2E5C[];
 extern const u32 gUnknown_08DD1F78[];
+extern const u16 gJohtoTrainerCaseMale_Pal[];
+extern const u16 gJohtoTrainerCaseFemale_Pal[];
+extern const u32 gJohtoTrainerCase_Gfx[];
+extern const u16 gJohtoTrainerCaseLeaders_Pal[];
+extern const u32 gJohtoTrainerCaseLeaders_Gfx[];
+extern const u32 gJohtoTrainerCasePg1_Tilemap[];
+extern const u32 gJohtoTrainerCasePg2_Tilemap[];
 
 // Frontier Pass
 extern const u32 gUnknown_08DE08C8[];

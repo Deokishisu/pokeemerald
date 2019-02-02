@@ -35,6 +35,7 @@ enum
     CARD_TYPE_FRLG,
     CARD_TYPE_RS,
     CARD_TYPE_EMERALD,
+	CARD_TYPE_GSC,
 };
 
 struct TrainerCardData
@@ -190,6 +191,8 @@ static const u16 gUnknown_0856F58C[] = INCBIN_U16("graphics/trainer_card/sticker
 static const u16 gUnknown_0856F5AC[] = INCBIN_U16("graphics/trainer_card/stickers_fr4.gbapal");
 static const u32 gUnknown_0856F5CC[] = INCBIN_U32("graphics/trainer_card/badges.4bpp.lz");
 static const u32 gUnknown_0856F814[] = INCBIN_U32("graphics/trainer_card/badges_fr.4bpp.lz");
+static const u16 gJohtoBadges_Pal[] = INCBIN_U16("graphics/trainer_card/badges_gsc.gbapal");
+static const u32 gJohtoBadges_Gfx[] = INCBIN_U32("graphics/trainer_card/badges_gsc.4bpp.lz");
 
 static const struct BgTemplate gUnknown_0856FAB4[4] =
 {
@@ -235,28 +238,28 @@ static const struct WindowTemplate gUnknown_0856FAC4[] =
 {
     {
         .bg = 1,
-        .tilemapLeft = 2,
-        .tilemapTop = 15,
-        .width = 27,
-        .height = 4,
+        .tilemapLeft = 0,
+        .tilemapTop = 0,
+        .width = 0, //27
+        .height = 0, //4
         .paletteNum = 15,
         .baseBlock = 0x253,
     },
-    {
+    { //text
         .bg = 1,
         .tilemapLeft = 1,
         .tilemapTop = 1,
-        .width = 28,
-        .height = 18,
+        .width = 28, //28
+        .height = 18, //18
         .paletteNum = 15,
         .baseBlock = 0x1,
     },
-    {
+    { //Trainer Sprite
         .bg = 3,
-        .tilemapLeft = 19,
-        .tilemapTop = 5,
-        .width = 9,
-        .height = 10,
+        .tilemapLeft = 5,
+        .tilemapTop = 1,
+        .width = 23,
+        .height = 18,
         .paletteNum = 8,
         .baseBlock = 0x150,
     },
@@ -285,13 +288,13 @@ static const u8 gUnknown_0856FB0C[] = {0, 2, 3};
 static const u8 gUnknown_0856FB0F[] = {0, 4, 5};
 static const u8 gUnknown_0856FB12[6] = {0};
 
-static const u8 gUnknown_0856FB18[][2][2] =
+static const u8 gUnknown_0856FB18[][2][2] = //Player Trainer Pic; Sprite Positions? [sData->isHoenn][sData->trainerCard.gender][0]
 {
     {{0xD, 4}, {0xD, 4}},
     {{1, 0}, {1, 0}},
 };
 
-static const u8 gUnknown_0856FB20[][2] = {{0x4E, 0x4F}, {0x50, 0x51}, {0x3C, 0x3F}};
+static const u8 gUnknown_0856FB20[][2] = {{0x4E, 0x4F}, {0x50, 0x51}, {0x3C, 0x3F}, {0x2F, 0x2F}}; //Player Trainer Pics; Facility Class constants
 
 static bool8 (*const gUnknown_0856FB28[])(struct Task *) =
 {
@@ -504,16 +507,20 @@ static bool8 LoadCardGfx(void)
         else
             LZ77UnCompWram(gUnknown_08DD2AE0, sData->var_EF8);
         break;
-    case 1:
-        if (sData->cardType != CARD_TYPE_FRLG)
+    case 1: //loading tilemap for page 2
+			if(sData->cardType == CARD_TYPE_GSC)
+				LZ77UnCompWram(gJohtoTrainerCasePg2_Tilemap, sData->var_A48);
+			else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
             LZ77UnCompWram(gUnknown_08DD21B0, sData->var_A48);
         else
             LZ77UnCompWram(gUnknown_08DD2D30, sData->var_A48);
         break;
-    case 2:
+    case 2: //loading tilemap for page 1
         if (!sData->isLink)
         {
-            if (sData->cardType != CARD_TYPE_FRLG)
+			if(sData->cardType == CARD_TYPE_GSC)
+				LZ77UnCompWram(gJohtoTrainerCasePg1_Tilemap, sData->var_598);
+			else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
                 LZ77UnCompWram(gUnknown_08DD2010, sData->var_598);
             else
                 LZ77UnCompWram(gUnknown_08DD2B78, sData->var_598);
@@ -526,14 +533,18 @@ static bool8 LoadCardGfx(void)
                 LZ77UnCompWram(gUnknown_08DD2E5C, sData->var_598);
         }
         break;
-    case 3:
-        if (sData->cardType != CARD_TYPE_FRLG)
+    case 3: //loading badges
+		if(sData->cardType == CARD_TYPE_GSC)
+			LZ77UnCompWram(gJohtoBadges_Gfx, sData->var_13A8);
+        else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
             LZ77UnCompWram(gUnknown_0856F5CC, sData->var_13A8);
         else
             LZ77UnCompWram(gUnknown_0856F814, sData->var_13A8);
         break;
-    case 4:
-        if (sData->cardType != CARD_TYPE_FRLG)
+    case 4: //loading card's bg
+		if(sData->cardType == CARD_TYPE_GSC)
+			LZ77UnCompWram(gJohtoTrainerCase_Gfx, sData->var_19A8);
+        else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
             LZ77UnCompWram(gEmeraldTrainerCard_Gfx, sData->var_19A8);
         else
             LZ77UnCompWram(gFireRedTrainerCard_Gfx, sData->var_19A8);
@@ -725,8 +736,8 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
 static void sub_80C3020(struct TrainerCard *trainerCard)
 {
     memset(trainerCard, 0, sizeof(struct TrainerCard));
-    trainerCard->version = GAME_VERSION;
-    SetPlayerCardData(trainerCard, CARD_TYPE_EMERALD);
+    trainerCard->version = VERSION_HEART_GOLD;
+    SetPlayerCardData(trainerCard, CARD_TYPE_GSC);
     trainerCard->hasAllSymbols = HasAllFrontierSymbols();
     trainerCard->frontierBP = gSaveBlock2Ptr->frontier.field_EBA;
     if (trainerCard->hasAllSymbols)
@@ -969,13 +980,20 @@ static void PrintNameOnCard(void)
 {
     u8 buffer[32];
     u8* txtPtr;
-    txtPtr = StringCopy(buffer, gText_TrainerCardName);
+	if(sData->cardType == CARD_TYPE_GSC)
+		txtPtr = StringCopy(buffer, gText_GSCTrainerCardName);
+	else
+		txtPtr = StringCopy(buffer, gText_TrainerCardName);
     StringCopy(txtPtr, sData->trainerCard.playerName);
     ConvertInternationalString(txtPtr, sData->language);
     if (sData->cardType == CARD_TYPE_FRLG)
         AddTextPrinterParameterized3(1, 1, 20, 28, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
-    else
+    else if(sData->cardType == CARD_TYPE_EMERALD || sData->cardType == CARD_TYPE_RS)
         AddTextPrinterParameterized3(1, 1, 16, 33, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
+	else //GSC
+		AddTextPrinterParameterized3(1, 1, 48, 16, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
+    if (sData->cardType == CARD_TYPE_GSC) //print badges text
+		AddTextPrinterParameterized3(1, 1, 128, 120, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardBadgesArrow);
 }
 
 static void PrintIdOnCard(void)
@@ -984,18 +1002,31 @@ static void PrintIdOnCard(void)
     u8* txtPtr;
     s32 xPos;
     u32 top;
-    txtPtr = StringCopy(buffer, gText_TrainerCardIDNo);
-    ConvertIntToDecimalStringN(txtPtr, sData->trainerCard.trainerId, STR_CONV_MODE_LEADING_ZEROS, 5);
+	if(sData->cardType != CARD_TYPE_GSC)
+	{
+		txtPtr = StringCopy(buffer, gText_TrainerCardIDNo);
+		ConvertIntToDecimalStringN(txtPtr, sData->trainerCard.trainerId, STR_CONV_MODE_LEADING_ZEROS, 5);
+	}
+	else
+	{
+		txtPtr = buffer;
+		ConvertIntToDecimalStringN(txtPtr, sData->trainerCard.trainerId, STR_CONV_MODE_LEADING_ZEROS, 5);
+	}
     if (sData->cardType == CARD_TYPE_FRLG)
     {
         xPos = GetStringCenterAlignXOffset(1, buffer, 80) + 132;
         top = 9;
     }
-    else
+    else if(sData->cardType == CARD_TYPE_EMERALD || sData->cardType == CARD_TYPE_RS)
     {
         xPos = GetStringCenterAlignXOffset(1, buffer, 96) + 120;
         top = 9;
     }
+	else //GSC
+	{
+		xPos = 72;
+        top = 32;
+	}
 
     AddTextPrinterParameterized3(1, 1, xPos, top, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
 }
@@ -1004,15 +1035,21 @@ static void PrintMoneyOnCard(void)
 {
     s32 xOffset;
     u8 top;
-
-    if (!sData->isHoenn)
+	if(sData->cardType == CARD_TYPE_GSC)
+		AddTextPrinterParameterized3(1, 1, 48, 48, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardMoney);
+    else if (!sData->isHoenn && sData->cardType != CARD_TYPE_GSC)
         AddTextPrinterParameterized3(1, 1, 20, 56, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardMoney);
     else
         AddTextPrinterParameterized3(1, 1, 16, 57, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardMoney);
 
     ConvertIntToDecimalStringN(gStringVar1, sData->trainerCard.money, 0, 6);
     StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
-    if (!sData->isHoenn)
+    if (sData->cardType == CARD_TYPE_GSC)
+    {
+        xOffset = GetStringRightAlignXOffset(1, gStringVar4, 72) + 72;
+        top = 48;
+    }
+    else if (!sData->isHoenn && sData->cardType != CARD_TYPE_GSC)
     {
         xOffset = GetStringRightAlignXOffset(1, gStringVar4, 144);
         top = 56;
@@ -1039,12 +1076,19 @@ static void PrintPokedexOnCard(void)
     u8 top;
     if (FlagGet(FLAG_SYS_POKEDEX_GET))
     {
-        if (!sData->isHoenn)
+		if (sData->cardType == CARD_TYPE_GSC)
+		    AddTextPrinterParameterized3(1, 1, 48, 80, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardPokedex);
+        else if (!sData->isHoenn && sData->cardType != CARD_TYPE_GSC)
             AddTextPrinterParameterized3(1, 1, 20, 72, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardPokedex);
         else
             AddTextPrinterParameterized3(1, 1, 16, 73, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardPokedex);
         StringCopy(ConvertIntToDecimalStringN(gStringVar4, sData->trainerCard.caughtMonsCount, 0, 3), gText_EmptyString6);
-        if (!sData->isHoenn)
+        if (sData->cardType == CARD_TYPE_GSC)
+        {
+            xOffset = GetStringRightAlignXOffset(1, gStringVar4, 176);
+            top = 80;
+        }
+        else if (!sData->isHoenn && sData->cardType != CARD_TYPE_GSC)
         {
             xOffset = GetStringRightAlignXOffset(1, gStringVar4, 144);
             top = 72;
@@ -1066,8 +1110,9 @@ static void PrintTimeOnCard(void)
     u16 minutes;
     s32 width;
     u32 r7, r4, r10;
-
-    if (!sData->isHoenn)
+	if (sData->cardType == CARD_TYPE_GSC)
+		AddTextPrinterParameterized3(1, 1, 48, 96, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardPlayTime);
+    else if (!sData->isHoenn && sData->cardType != CARD_TYPE_GSC)
         AddTextPrinterParameterized3(1, 1, 20, 88, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardTime);
     else
         AddTextPrinterParameterized3(1, 1, 16, 89, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardTime);
@@ -1089,7 +1134,12 @@ static void PrintTimeOnCard(void)
         minutes = 59;
     width = GetStringWidth(1, gText_Colon2, 0);
 
-    if (!sData->isHoenn)
+	if (sData->cardType == CARD_TYPE_GSC)
+	{
+		r7 = 176;
+		r4 = 96;
+	}
+    else if (!sData->isHoenn && sData->cardType != CARD_TYPE_GSC)
     {
         r7 = 144;
         r4 = 88;
@@ -1099,14 +1149,23 @@ static void PrintTimeOnCard(void)
         r7 = 128;
         r4 = 89;
     }
-    r10 = width + 30;
+	if (sData->cardType == CARD_TYPE_GSC)
+		r10 = width + 40;
+	else
+		r10 = width + 30;
     r7 -= r10;
 
     FillWindowPixelRect(1, 0, r7, r4, r10, 15);
     ConvertIntToDecimalStringN(gStringVar4, hours, 1, 3);
     AddTextPrinterParameterized3(1, 1, r7, r4, gUnknown_0856FB0C, TEXT_SPEED_FF, gStringVar4);
-    r7 += 18;
-    AddTextPrinterParameterized3(1, 1, r7, r4, gUnknown_0856FB40[sData->var_7], TEXT_SPEED_FF, gText_Colon2);
+	if (sData->cardType == CARD_TYPE_GSC)
+		r7 += 24;
+	else
+		r7 += 18;
+	if (sData->cardType == CARD_TYPE_GSC)
+		AddTextPrinterParameterized3(1, 1, r7, r4, gUnknown_0856FB40[sData->var_7], TEXT_SPEED_FF, gText_TrainerCardColon);		
+	else
+		AddTextPrinterParameterized3(1, 1, r7, r4, gUnknown_0856FB40[sData->var_7], TEXT_SPEED_FF, gText_Colon2);
     r7 += width;
     ConvertIntToDecimalStringN(gStringVar4, minutes, 2, 2);
     AddTextPrinterParameterized3(1, 1, r7, r4, gUnknown_0856FB0C, TEXT_SPEED_FF, gStringVar4);
@@ -1389,7 +1448,17 @@ static u8 SetCardBgsAndPals(void)
         LoadBgTiles(0, sData->var_19A8, 6144, 0);
         break;
     case 2:
-        if (sData->cardType != CARD_TYPE_FRLG)
+		if (sData->cardType == CARD_TYPE_GSC)
+		{
+			if (sData->trainerCard.gender)
+				LoadPalette(gJohtoTrainerCaseFemale_Pal, 0, 32);
+			else
+	            LoadPalette(gJohtoTrainerCaseMale_Pal, 0, 32);
+            /*LoadPalette(gUnknown_0856F4EC, 48, 32);
+            if (sData->trainerCard.gender)
+                LoadPalette(gUnknown_0856F4AC, 16, 32);*/
+		}
+        else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
         {
             LoadPalette(gEmeraldTrainerCardStarPals[sData->trainerCard.stars], 0, 96);
             LoadPalette(gUnknown_0856F4EC, 48, 32);
@@ -1470,13 +1539,13 @@ static void sub_80C4630(void)
         x = 4;
         for (i = 0; i < 8; i++, tileNum += 2, x += 3)
         {
-            if (sData->badgeCount[i])
+            /*if (sData->badgeCount[i])
             {
                 FillBgTilemapBufferRect(3, tileNum, x, 15, 1, 1, palNum);
                 FillBgTilemapBufferRect(3, tileNum + 1, x + 1, 15, 1, 1, palNum);
                 FillBgTilemapBufferRect(3, tileNum + 16, x, 16, 1, 1, palNum);
                 FillBgTilemapBufferRect(3, tileNum + 17, x + 1, 16, 1, 1, palNum);
-            }
+            }*/
         }
     }
     CopyBgTilemapBufferToVram(3);
@@ -1543,9 +1612,9 @@ u8 sub_80C4904(u8 cardId)
 
 static void sub_80C4918(void)
 {
-    u8 taskId = CreateTask(sub_80C4960, 0);
-    sub_80C4960(taskId);
-    SetHBlankCallback(HblankCb_TrainerCard);
+    //u8 taskId = CreateTask(sub_80C4960, 0);
+    //sub_80C4960(taskId);
+    //SetHBlankCallback(HblankCb_TrainerCard);
 }
 
 static bool8 sub_80C4940(void)
@@ -1810,6 +1879,11 @@ static u8 GetSetCardType(void)
             sData->isHoenn = FALSE;
             return CARD_TYPE_FRLG;
         }
+		else if (sData->trainerCard.version == VERSION_HEART_GOLD)
+		{
+			sData->isHoenn = FALSE;
+			return CARD_TYPE_GSC;
+		}
         else if (sData->trainerCard.version == VERSION_EMERALD)
         {
             sData->isHoenn = TRUE;
@@ -1833,7 +1907,7 @@ static u8 VersionToCardType(u8 version)
         return CARD_TYPE_RS;
 }
 
-static void sub_80C4FF0(void)
+static void sub_80C4FF0(void) //prints Trainer front pic
 {
     if (InUnionRoom() == TRUE && gReceivedRemoteLinkPlayers == 1)
     {
@@ -1846,11 +1920,23 @@ static void sub_80C4FF0(void)
     }
     else
     {
-        sub_818D938(FacilityClassToPicIndex(gUnknown_0856FB20[sData->cardType][sData->trainerCard.gender]),
-                    TRUE,
-                    gUnknown_0856FB18[sData->isHoenn][sData->trainerCard.gender][0],
-                    gUnknown_0856FB18[sData->isHoenn][sData->trainerCard.gender][1],
-                    8,
-                    2);
+		if(sData->cardType == CARD_TYPE_GSC)
+		{
+			sub_818D938(FacilityClassToPicIndex(gUnknown_0856FB20[sData->cardType][sData->trainerCard.gender]),
+						TRUE,
+						100,
+						4,
+						8,
+						2);
+		}
+		else
+		{
+		    sub_818D938(FacilityClassToPicIndex(gUnknown_0856FB20[sData->cardType][sData->trainerCard.gender]),
+						TRUE,
+						gUnknown_0856FB18[sData->isHoenn][sData->trainerCard.gender][0],
+						gUnknown_0856FB18[sData->isHoenn][sData->trainerCard.gender][1],
+						8,
+						2);
+		}
     }
 }
