@@ -1,2 +1,2 @@
-UnknownMap_25_34_MapEvents::
-	map_events 0x0, 0x0, 0x0, 0x0
+
+

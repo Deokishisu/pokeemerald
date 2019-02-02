@@ -95,7 +95,7 @@ gMapLayouts::
 	.4byte GoldenrodCity_DepartmentStore_B1F_Layout
 	.4byte OlivineCity_Gym_Layout
 	.4byte VioletCity_EarlsPokemonAcademy_Layout
-	.4byte RustboroCity_House_Layouts
+	.4byte RustboroCity_House_Layout
 	.4byte RustboroCity_House1_Layout
 	.4byte OlivineCity_Cafe_Layout
 	.4byte FortreeCity_House1_Layout
