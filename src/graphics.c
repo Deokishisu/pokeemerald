@@ -1448,6 +1448,7 @@ const u32 gUnknown_08DD228C[] = INCBIN_U32("graphics/unknown/unknown_DD228C.bin.
 const u16 gFireRedTrainerCard0Star_Pal[] = INCBIN_U16("graphics/trainer_card/0star_fr.gbapal");
 const u32 gFireRedTrainerCard_Gfx[] = INCBIN_U32("graphics/trainer_card/card_fr.4bpp.lz");
 
+const u32 gJohtoTrainerCaseBlank_Tilemap[] = INCBIN_U32("graphics/trainer_card/blank_card_gsc.bin.lz");
 const u32 gJohtoTrainerCasePg1_Tilemap[] = INCBIN_U32("graphics/trainer_card/first_page_gsc.bin.lz");
 const u32 gJohtoTrainerCasePg2_Tilemap[] = INCBIN_U32("graphics/trainer_card/second_page_gsc.bin.lz");
 

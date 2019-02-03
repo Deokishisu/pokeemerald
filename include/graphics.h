@@ -4868,6 +4868,7 @@ extern const u16 gJohtoTrainerCaseFemale_Pal[];
 extern const u32 gJohtoTrainerCase_Gfx[];
 extern const u16 gJohtoTrainerCaseLeaders_Pal[];
 extern const u32 gJohtoTrainerCaseLeaders_Gfx[];
+extern const u32 gJohtoTrainerCaseBlank_Tilemap[];
 extern const u32 gJohtoTrainerCasePg1_Tilemap[];
 extern const u32 gJohtoTrainerCasePg2_Tilemap[];
 

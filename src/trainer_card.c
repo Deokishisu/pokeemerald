@@ -29,6 +29,7 @@
 #include "constants/flags.h"
 #include "constants/game_stat.h"
 #include "constants/battle_frontier.h"
+#include "decompress.h"
 
 enum
 {
@@ -193,6 +194,180 @@ static const u32 gUnknown_0856F5CC[] = INCBIN_U32("graphics/trainer_card/badges.
 static const u32 gUnknown_0856F814[] = INCBIN_U32("graphics/trainer_card/badges_fr.4bpp.lz");
 static const u16 gJohtoBadges_Pal[] = INCBIN_U16("graphics/trainer_card/badges_gsc.gbapal");
 static const u32 gJohtoBadges_Gfx[] = INCBIN_U32("graphics/trainer_card/badges_gsc.4bpp.lz");
+static const u32 gJohtoLeaders_Gfx[] = INCBIN_U32("graphics/trainer_card/leaders_gsc.4bpp.lz");
+static const u16 gJohtoLeaders_Pal[] = INCBIN_U16("graphics/trainer_card/leaders_gsc.gbapal");
+
+static const struct OamData gOamData_JohtoBadges =
+{
+    .y = 0,
+    .affineMode = 0,
+    .objMode = 0,
+    .mosaic = 0,
+    .bpp = 0,
+    .shape = 0,
+    .x = 0,
+    .matrixNum = 0,
+    .size = 1,
+    .tileNum = 0,
+    .priority = 4,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+#define JOHTO_BADGE_TAG 0xD00D
+
+EWRAM_DATA static u8 sBadgeSpriteId[8] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+
+static const struct CompressedSpriteSheet sSpriteSheet_JohtoBadges = 
+{
+	.data = gJohtoBadges_Gfx,
+	.size = 1408,
+	.tag JOHTO_BADGE_TAG,
+};
+
+static const struct SpritePalette sSpritePal_JohtoBadges = 
+{
+	.data = gJohtoBadges_Pal,
+	.tag JOHTO_BADGE_TAG
+};
+
+static const union AnimCmd sSpriteAnim_ZephyrBadge[] =
+{
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd sSpriteAnim_HiveBadge[] =
+{
+    ANIMCMD_FRAME(4, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd sSpriteAnim_PlainBadge[] =
+{
+    ANIMCMD_FRAME(8, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd sSpriteAnim_FogBadge[] =
+{
+    ANIMCMD_FRAME(12, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd sSpriteAnim_StormBadge[] =
+{
+    ANIMCMD_FRAME(16, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd sSpriteAnim_MineralBadge[] =
+{
+    ANIMCMD_FRAME(20, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd sSpriteAnim_GlacierBadge[] =
+{
+    ANIMCMD_FRAME(24, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd sSpriteAnim_RisingBadge[] =
+{
+    ANIMCMD_FRAME(28, 8),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(36, 8),
+    ANIMCMD_FRAME(40, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd *const sSpriteAnimTable_JohtoBadges[] =
+{
+    sSpriteAnim_ZephyrBadge,
+    sSpriteAnim_HiveBadge,
+	sSpriteAnim_PlainBadge,
+	sSpriteAnim_FogBadge,
+	sSpriteAnim_StormBadge,
+	sSpriteAnim_MineralBadge,
+	sSpriteAnim_GlacierBadge,
+	sSpriteAnim_RisingBadge,
+};
+
+void SpriteCb_AnimateBadge(struct Sprite *sprite)
+{
+	/*u8 x = 64;
+    if (++sprite->data[0] % 32 == 0)
+	{
+		if(sprite->data[0] < 60)
+			 sprite->invisible = 1;
+		else
+			 sprite->invisible = 0;
+		if(sprite->pos1.x == x)
+		{
+			if(sprite->pos1.y == 104)
+				StartSpriteAnim(sprite, 0);
+			else
+				StartSpriteAnim(sprite, 4);
+		}
+		else if(sprite->pos1.x == x + (8 * 4))
+		{
+			if(sprite->pos1.y == 104)
+				StartSpriteAnim(sprite, 1);
+			else
+				StartSpriteAnim(sprite, 5);
+			x = x + (8 * 4);
+		}
+		else if(sprite->pos1.x == x + 2 * (8 * 4))
+		{
+			if(sprite->pos1.y == 104)
+				StartSpriteAnim(sprite, 2);
+			else
+				StartSpriteAnim(sprite, 6);
+			x = x + (8 * 4);
+		}
+		else if(sprite->pos1.x == x + 3 * (8 * 4))
+		{
+			if(sprite->pos1.y == 104)
+				StartSpriteAnim(sprite, 3);
+			else
+				StartSpriteAnim(sprite, 7);
+			x = x + (8 * 4);
+		}
+	}*/
+}
+
+static const struct SpriteTemplate sSpriteTemplate_JohtoBadges =
+{
+    .tileTag = JOHTO_BADGE_TAG,
+    .paletteTag = JOHTO_BADGE_TAG,
+    .oam = &gOamData_JohtoBadges,
+    .anims = sSpriteAnimTable_JohtoBadges,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCb_AnimateBadge
+};
 
 static const struct BgTemplate gUnknown_0856FAB4[4] =
 {
@@ -294,7 +469,7 @@ static const u8 gUnknown_0856FB18[][2][2] = //Player Trainer Pic; Sprite Positio
     {{1, 0}, {1, 0}},
 };
 
-static const u8 gUnknown_0856FB20[][2] = {{0x4E, 0x4F}, {0x50, 0x51}, {0x3C, 0x3F}, {0x2F, 0x2F}}; //Player Trainer Pics; Facility Class constants
+static const u8 gUnknown_0856FB20[][2] = {{0x4E, 0x4F}, {0x50, 0x51}, {0x3C, 0x3F}, {0x11, 0x10}}; //Player Trainer Pics; Facility Class constants
 
 static bool8 (*const gUnknown_0856FB28[])(struct Task *) =
 {
@@ -379,7 +554,7 @@ static void sub_80C2760(u8 taskId)
         sData->var_0++;
         break;
     case 6:
-        sub_80C4630();
+		sub_80C4630();
         sData->var_0++;
         break;
     case 7:
@@ -411,7 +586,7 @@ static void sub_80C2760(u8 taskId)
             sub_80C438C(1);
             sData->var_529 = 0;
         }
-        if (gMain.newKeys & A_BUTTON)
+        if (gMain.newKeys & A_BUTTON || (gMain.newKeys & DPAD_RIGHT && sData->cardType == CARD_TYPE_GSC))
         {
             sub_80C4918();
             PlaySE(SE_RG_CARD1);
@@ -438,36 +613,50 @@ static void sub_80C2760(u8 taskId)
         }
         break;
     case 11:
-        if (gMain.newKeys & B_BUTTON)
-        {
-            if (gReceivedRemoteLinkPlayers && sData->isLink && InUnionRoom() == TRUE)
-            {
-                sData->var_0 = 15;
-            }
-            else if (gReceivedRemoteLinkPlayers)
-            {
-                BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, sData->var_52C);
-                sData->var_0 = 14;
-            }
-            else
-            {
-                sub_80C4918();
-                sData->var_0 = 13;
-                PlaySE(SE_RG_CARD1);
-            }
-        }
-        else if (gMain.newKeys & A_BUTTON)
-        {
-           if (gReceivedRemoteLinkPlayers && sData->isLink && InUnionRoom() == TRUE)
-           {
-               sData->var_0 = 15;
-           }
-           else
-           {
-               BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, sData->var_52C);
-               sData->var_0 = 14;
-           }
-        }
+		if (gMain.newKeys & B_BUTTON)
+		{
+			if (gReceivedRemoteLinkPlayers && sData->isLink && InUnionRoom() == TRUE)
+			{
+				sData->var_0 = 15;
+			}
+			else if (gReceivedRemoteLinkPlayers)
+			{
+				BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, sData->var_52C);
+				sData->var_0 = 14;
+			}
+			else
+			{
+				if(sData->cardType == CARD_TYPE_GSC)
+				{
+					BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, sData->var_52C);
+					sData->var_0 = 14;
+				}
+				else
+				{
+					sub_80C4918();
+					sData->var_0 = 13;
+					PlaySE(SE_RG_CARD1);
+				}
+			}
+		}
+		else if (gMain.newKeys & A_BUTTON)
+		{
+		   if (gReceivedRemoteLinkPlayers && sData->isLink && InUnionRoom() == TRUE)
+		   {
+			   sData->var_0 = 15;
+		   }
+		   else
+		   {
+			   BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, sData->var_52C);
+			   sData->var_0 = 14;
+		   }
+		}
+		else if (gMain.newKeys & DPAD_LEFT && sData->cardType == CARD_TYPE_GSC)
+		{
+				sub_80C4918();
+				sData->var_0 = 13;
+				PlaySE(SE_RG_CARD1);
+		}
         break;
     case 15:
         sub_800AC34();
@@ -501,17 +690,19 @@ static bool8 LoadCardGfx(void)
 {
     switch (sData->gfxLoadState)
     {
-    case 0:
-        if (sData->cardType != CARD_TYPE_FRLG)
+    case 0: //loading the background
+		if(sData->cardType == CARD_TYPE_GSC)
+			LZ77UnCompWram(gJohtoTrainerCaseBlank_Tilemap, sData->var_EF8);
+		else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
             LZ77UnCompWram(gUnknown_08DD1F78, sData->var_EF8);
         else
             LZ77UnCompWram(gUnknown_08DD2AE0, sData->var_EF8);
         break;
     case 1: //loading tilemap for page 2
-			if(sData->cardType == CARD_TYPE_GSC)
-				LZ77UnCompWram(gJohtoTrainerCasePg2_Tilemap, sData->var_A48);
-			else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
-            LZ77UnCompWram(gUnknown_08DD21B0, sData->var_A48);
+		if(sData->cardType == CARD_TYPE_GSC)
+			LZ77UnCompWram(gJohtoTrainerCasePg2_Tilemap, sData->var_A48);
+		else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
+			LZ77UnCompWram(gUnknown_08DD21B0, sData->var_A48);
         else
             LZ77UnCompWram(gUnknown_08DD2D30, sData->var_A48);
         break;
@@ -534,9 +725,7 @@ static bool8 LoadCardGfx(void)
         }
         break;
     case 3: //loading badges
-		if(sData->cardType == CARD_TYPE_GSC)
-			LZ77UnCompWram(gJohtoBadges_Gfx, sData->var_13A8);
-        else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
+        if (sData->cardType != CARD_TYPE_FRLG)
             LZ77UnCompWram(gUnknown_0856F5CC, sData->var_13A8);
         else
             LZ77UnCompWram(gUnknown_0856F814, sData->var_13A8);
@@ -605,8 +794,18 @@ static void CB2_InitTrainerCard(void)
         gMain.state++;
         break;
     case 9:
-        PrintAllVariableNumsOnCardPage2();
-        gMain.state++;
+		if(sData->cardType == CARD_TYPE_GSC)
+		{
+			FillWindowPixelBuffer(2, 0);
+			sub_80C4FF0();
+			//sData->printState = 0;
+			//PrintAllOnCardPage1();
+		}
+		else
+		{
+			PrintAllVariableNumsOnCardPage2();
+		}
+		gMain.state++;
         break;
     case 10:
         if (SetCardBgsAndPals() == TRUE)
@@ -848,8 +1047,11 @@ static void sub_80C32EC(u16 arg0)
     if (quotient <= 4)
         quotient = 0;
     sData->var_528 = quotient;
-    SetGpuReg(REG_OFFSET_BLDY, sData->var_528);
-    SetGpuReg(REG_OFFSET_WIN0V, (sData->var_7CA8 * 256) | (160 - sData->var_7CA8));
+	if(sData->cardType != CARD_TYPE_GSC)
+	{
+		SetGpuReg(REG_OFFSET_BLDY, sData->var_528); //dims for transition
+		SetGpuReg(REG_OFFSET_WIN0V, (sData->var_7CA8 * 256) | (160 - sData->var_7CA8)); //shows transition background
+	}
 }
 
 static void ResetGpuRegs(void)
@@ -908,13 +1110,44 @@ static bool8 PrintAllOnCardPage1(void)
         PrintMoneyOnCard();
         break;
     case 3:
-        PrintPokedexOnCard();
+		if(sData->var_8 || sData->var_0 == 1)
+		{
+			u8 i, j;
+			PrintPokedexOnCard();
+			if(sData->cardType == CARD_TYPE_GSC)
+			{
+				ShowBg(0);
+				for(i = 12, j = 7; i < 19; i++, j++) //prints status on back bg so it doesn't lag
+				{
+					FillBgTilemapBufferRect(0,
+											i,
+											j,
+											9,
+											1,
+											1,
+											0);
+					FillBgTilemapBufferRect(2,
+											i,
+											j,
+											9,
+											1,
+											1,
+											0);
+					if(i == 13 || i == 16)
+						i++;
+				}
+				CopyBgTilemapBufferToVram(2);
+				CopyBgTilemapBufferToVram(0);
+			}
+		}
         break;
     case 4:
-        PrintTimeOnCard();
+		if(sData->var_8 || sData->var_0 == 1)
+			PrintTimeOnCard();
         break;
     case 5:
-        PrintProfilePhraseOnCard();
+		if(sData->cardType != CARD_TYPE_GSC)
+			PrintProfilePhraseOnCard();
         break;
     default:
         sData->printState = 0;
@@ -964,16 +1197,18 @@ static bool8 PrintStringsOnCardPage2(void)
 }
 
 static void PrintAllVariableNumsOnCardPage2(void)
-{
-    PrintNameOnCard2();
-    PrintHofTimeOnCard();
-    PrintLinkResultsNumsOnCard();
-    PrintTradesNumOnCard();
-    PrintBerryCrushNumOnCard();
-    PrintUnionNumOnCard();
-    PrintPokeblocksNumOnCard();
-    PrintContestNumOnCard();
-    PrintBattleFacilityNumsOnCard();
+{	if(sData->cardType != CARD_TYPE_GSC)
+	{
+		PrintNameOnCard2();
+		PrintHofTimeOnCard();
+		PrintLinkResultsNumsOnCard();
+		PrintTradesNumOnCard();
+		PrintBerryCrushNumOnCard();
+		PrintUnionNumOnCard();
+		PrintPokeblocksNumOnCard();
+		PrintContestNumOnCard();
+		PrintBattleFacilityNumsOnCard();
+	}
 }
 
 static void PrintNameOnCard(void)
@@ -992,8 +1227,10 @@ static void PrintNameOnCard(void)
         AddTextPrinterParameterized3(1, 1, 16, 33, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
 	else //GSC
 		AddTextPrinterParameterized3(1, 1, 48, 16, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
-    if (sData->cardType == CARD_TYPE_GSC) //print badges text
+    if (sData->cardType == CARD_TYPE_GSC && (sData->var_8 || sData->var_0 == 1)) //print badges text on first page
+	{
 		AddTextPrinterParameterized3(1, 1, 128, 120, gUnknown_0856FB0C, TEXT_SPEED_FF, gText_TrainerCardBadgesArrow);
+	}
 }
 
 static void PrintIdOnCard(void)
@@ -1450,13 +1687,11 @@ static u8 SetCardBgsAndPals(void)
     case 2:
 		if (sData->cardType == CARD_TYPE_GSC)
 		{
+			LoadPalette(gJohtoLeaders_Pal, 16, 32);
 			if (sData->trainerCard.gender)
 				LoadPalette(gJohtoTrainerCaseFemale_Pal, 0, 32);
 			else
 	            LoadPalette(gJohtoTrainerCaseMale_Pal, 0, 32);
-            /*LoadPalette(gUnknown_0856F4EC, 48, 32);
-            if (sData->trainerCard.gender)
-                LoadPalette(gUnknown_0856F4AC, 16, 32);*/
 		}
         else if (sData->cardType != CARD_TYPE_FRLG && sData->cardType != CARD_TYPE_GSC)
         {
@@ -1489,7 +1724,7 @@ static u8 SetCardBgsAndPals(void)
     return 0;
 }
 
-static void sub_80C4550(u16 *ptr)
+static void sub_80C4550(u16 *ptr) //background tilemap?
 {
     s16 i, j;
     u16 *dst = sData->var_5CA8;
@@ -1507,9 +1742,9 @@ static void sub_80C4550(u16 *ptr)
     CopyBgTilemapBufferToVram(2);
 }
 
-static void sub_80C45C0(u16* ptr)
+static void sub_80C45C0(u16* ptr) //front and back tilemap?
 {
-    s16 i, j;
+    s16 i, j, k;
     u16 *dst = sData->var_3CA8;
 
     for (i = 0; i < 20; i++)
@@ -1523,6 +1758,40 @@ static void sub_80C45C0(u16* ptr)
         }
     }
     CopyBgTilemapBufferToVram(0);
+	if(ptr == sData->var_A48 && sData->cardType == CARD_TYPE_GSC) //if on second page && GSC
+	{
+		for(i = 63, j = 12, k = 15; i < 69; i++, j++)
+		{
+			if(i == 66 && j == 15)
+			{
+				j = 12;
+				k = 16;
+			}
+			FillBgTilemapBufferRect(0,
+									i,
+									j, //96
+									k, //120
+									1,
+									1,
+									1);
+		}
+		for(i = 69, j = 16, k = 15; i < 75; i++, j++)
+		{
+			if(i == 72 && j == 19)
+			{
+				j = 16;
+				k = 16;
+			}
+			FillBgTilemapBufferRect(0,
+									i,
+									j,
+									k,
+									1,
+									1,
+									1);
+		}
+	}
+	CopyBgTilemapBufferToVram(0);
 }
 
 static const u8 gUnknown_0856FB78[] = {7, 7};
@@ -1532,23 +1801,82 @@ static void sub_80C4630(void)
     s16 i, x;
     u16 tileNum = 192;
     u8 palNum = 3;
-
-    FillBgTilemapBufferRect(3, 143, 15, gUnknown_0856FB78[sData->isHoenn], sData->trainerCard.stars, 1, 4);
+	if(sData->cardType != CARD_TYPE_GSC)
+		FillBgTilemapBufferRect(3, 143, 15, gUnknown_0856FB78[sData->isHoenn], sData->trainerCard.stars, 1, 4);
     if (!sData->isLink)
     {
         x = 4;
         for (i = 0; i < 8; i++, tileNum += 2, x += 3)
         {
-            /*if (sData->badgeCount[i])
-            {
-                FillBgTilemapBufferRect(3, tileNum, x, 15, 1, 1, palNum);
-                FillBgTilemapBufferRect(3, tileNum + 1, x + 1, 15, 1, 1, palNum);
-                FillBgTilemapBufferRect(3, tileNum + 16, x, 16, 1, 1, palNum);
-                FillBgTilemapBufferRect(3, tileNum + 17, x + 1, 16, 1, 1, palNum);
-            }*/
+			if(sData->cardType != CARD_TYPE_GSC) //vanilla
+			{
+				if (sData->badgeCount[i])
+				{
+					FillBgTilemapBufferRect(3, tileNum, x, 15, 1, 1, palNum);
+					FillBgTilemapBufferRect(3, tileNum + 1, x + 1, 15, 1, 1, palNum);
+					FillBgTilemapBufferRect(3, tileNum + 16, x, 16, 1, 1, palNum);
+					FillBgTilemapBufferRect(3, tileNum + 17, x + 1, 16, 1, 1, palNum);
+				}
+			}
         }
     }
     CopyBgTilemapBufferToVram(3);
+}
+
+static void destroyJohtoBadges(void)
+{
+	u8 i;
+	if(sBadgeSpriteId[1] != 0xFF)
+	{
+		FreeSpritePaletteByTag(JOHTO_BADGE_TAG);
+		FreeSpriteTilesByTag(JOHTO_BADGE_TAG);
+	}
+	for(i = 0; i < 8; i++)
+	{
+		if(sBadgeSpriteId[i] != 0xFF)
+		{
+			DestroySprite(&gSprites[sBadgeSpriteId[i]]);
+			sBadgeSpriteId[i] = 0xFF;
+		}
+	}
+}
+
+static void showJohtoBadges(void)
+{
+	s16 i, x;
+	u8 y = 128;
+	if (IndexOfSpritePaletteTag(JOHTO_BADGE_TAG) == 0xFF)
+	{
+		LoadSpritePalette(&sSpritePal_JohtoBadges);
+	}
+	if (GetSpriteTileStartByTag(JOHTO_BADGE_TAG) == 0xFFFF)
+	{
+		LoadCompressedSpriteSheet(&sSpriteSheet_JohtoBadges);
+	}
+	
+	if (!sData->isLink)
+    {
+        x = 8 * 8;
+		y = 104;
+        for (i = 0; i < 8; i++, x += (8 * 4))
+        {
+			if (x > (20 * 8))
+			{
+				y = 128;
+				x = 8 * 8;
+				
+			}
+			if (sData->badgeCount[i])
+			{
+				if (sBadgeSpriteId[i] == 0xFF)
+				{
+					sBadgeSpriteId[i] = CreateSprite(&sSpriteTemplate_JohtoBadges, x, y, 0);
+					StartSpriteAnim(&gSprites[sBadgeSpriteId[i]], i);
+				}
+			}
+        }
+    }
+	StartSpriteAnim(&gSprites[sBadgeSpriteId[1]], 1);
 }
 
 static void sub_80C474C(void)
@@ -1591,7 +1919,8 @@ static void sub_80C474C(void)
             FillBgTilemapBufferRect(3, 156, 27, 16, 1, 1, 0);
         }
     }
-    CopyBgTilemapBufferToVram(3);
+	if(sData->cardType != CARD_TYPE_GSC)
+		CopyBgTilemapBufferToVram(3);
 }
 
 static void sub_80C48C8(void)
@@ -1612,9 +1941,9 @@ u8 sub_80C4904(u8 cardId)
 
 static void sub_80C4918(void)
 {
-    //u8 taskId = CreateTask(sub_80C4960, 0);
-    //sub_80C4960(taskId);
-    //SetHBlankCallback(HblankCb_TrainerCard);
+    u8 taskId = CreateTask(sub_80C4960, 0);
+    sub_80C4960(taskId);
+    SetHBlankCallback(HblankCb_TrainerCard);
 }
 
 static bool8 sub_80C4940(void)
@@ -1631,21 +1960,45 @@ static void sub_80C4960(u8 taskId)
         ;
 }
 
-static bool8 sub_80C4998(struct Task* task)
+static bool8 sub_80C4998(struct Task* task) //hides bgs on transition between pages
 {
     u32 i;
 
-    HideBg(1);
-    HideBg(3);
-    ScanlineEffect_Stop();
-    ScanlineEffect_Clear();
-    for (i = 0; i < 160; i++)
-        gScanlineEffectRegBuffers[1][i] = 0;
-    task->data[0]++;
+	if(sData->cardType != CARD_TYPE_GSC)
+	{
+		HideBg(1);
+		HideBg(3);
+		ScanlineEffect_Stop();
+		ScanlineEffect_Clear();
+		for (i = 0; i < 160; i++)
+			gScanlineEffectRegBuffers[1][i] = 0;
+	}
+	if(sData->cardType == CARD_TYPE_GSC) //hides bottom text
+	{
+		FillBgTilemapBufferRect(1,
+								0,
+								6,
+								11,
+								18,
+								6,
+								0);
+		CopyBgTilemapBufferToVram(1);
+		FillBgTilemapBufferRect(0,
+								0,
+								6,
+								11,
+								18,
+								6,
+								0);
+		CopyBgTilemapBufferToVram(0);
+		HideBg(0);
+		destroyJohtoBadges();
+	}
+	task->data[0]++;
     return FALSE;
 }
 
-static bool8 sub_80C49D8(struct Task* task)
+static bool8 sub_80C49D8(struct Task* task) //squish to center transition
 {
     u32 r4, r5, r10, r7, r6, var_24, r9, var;
     s16 i;
@@ -1672,17 +2025,20 @@ static bool8 sub_80C49D8(struct Task* task)
     r5 *= 2;
 
     for (i = 0; i < r7; i++)
-        gScanlineEffectRegBuffers[0][i] = -i;
+		if(sData->cardType != CARD_TYPE_GSC)
+			gScanlineEffectRegBuffers[0][i] = -i;
     for (; i < (s16)(r9); i++)
     {
         var = r6 >> 16;
         r6 += r5;
         r5 -= r10;
-        gScanlineEffectRegBuffers[0][i] = var;
+		if(sData->cardType != CARD_TYPE_GSC)
+			gScanlineEffectRegBuffers[0][i] = var;
     }
     var = var_24 >> 16;
     for (; i < 160; i++)
-        gScanlineEffectRegBuffers[0][i] = var;
+		if(sData->cardType != CARD_TYPE_GSC)
+			gScanlineEffectRegBuffers[0][i] = var;
 
     sData->allowDMACopy = TRUE;
     if (task->data[1] >= 77)
@@ -1708,8 +2064,20 @@ static bool8 sub_80C4B08(struct Task* task)
         case 1:
             if (!sData->var_8)
             {
-                if (!PrintStringsOnCardPage2())
-                    return FALSE;
+				if(sData->cardType != CARD_TYPE_GSC)
+				{
+					if (!PrintStringsOnCardPage2())
+					{
+						return FALSE;
+					}
+				}
+				else
+				{
+					if (!PrintAllOnCardPage1())
+					{
+						return FALSE;
+					}
+				}
             }
             else
             {
@@ -1763,7 +2131,7 @@ static bool8 sub_80C4C1C(struct Task* task)
     return FALSE;
 }
 
-static bool8 sub_80C4C84(struct Task* task)
+static bool8 sub_80C4C84(struct Task* task) //stretch back transition
 {
     u32 r4, r5, r10, r7, r6, var_24, r9, var;
     s16 i;
@@ -1790,17 +2158,20 @@ static bool8 sub_80C4C84(struct Task* task)
     r5 /= 2;
 
     for (i = 0; i < r7; i++)
-        gScanlineEffectRegBuffers[0][i] = -i;
+		if(sData->cardType != CARD_TYPE_GSC)
+			gScanlineEffectRegBuffers[0][i] = -i;
     for (; i < (s16)(r9); i++)
     {
         var = r6 >> 16;
         r6 += r5;
         r5 += r10;
-        gScanlineEffectRegBuffers[0][i] = var;
+		if(sData->cardType != CARD_TYPE_GSC)
+			gScanlineEffectRegBuffers[0][i] = var;
     }
     var = var_24 >> 16;
     for (; i < 160; i++)
-        gScanlineEffectRegBuffers[0][i] = var;
+		if(sData->cardType != CARD_TYPE_GSC)
+			gScanlineEffectRegBuffers[0][i] = var;
 
     sData->allowDMACopy = TRUE;
     if (task->data[1] <= 0)
@@ -1809,10 +2180,16 @@ static bool8 sub_80C4C84(struct Task* task)
     return FALSE;
 }
 
-static bool8 sub_80C4DB0(struct Task *task)
+static bool8 sub_80C4DB0(struct Task *task) //finishes transition
 {
     ShowBg(1);
     ShowBg(3);
+	if(sData->cardType == CARD_TYPE_GSC)
+	{
+		ShowBg(0);
+		if((sData->var_8 || sData->var_0 == 1))
+			showJohtoBadges();
+	}
     SetHBlankCallback(NULL);
     DestroyTask(FindTaskIdByFunc(sub_80C4960));
     return FALSE;
