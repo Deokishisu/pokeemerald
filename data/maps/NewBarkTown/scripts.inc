@@ -228,6 +228,7 @@ LittlerootTown_EventScript_1E8022:: @ 81E8022
 	end
 
 LittlerootTown_EventScript_1E802B:: @ 81E802B
+	setflag FLAG_SYS_POKENAV_GET
 	msgbox LittlerootTown_Text_1E8B25, MSGBOX_NPC
 	end
 

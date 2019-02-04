@@ -2740,3 +2740,37 @@ gMapLayouts::
 	.4byte IndigoPlateau_BrunosRoom_Layout
 	.4byte IndigoPlateau_LancesRoom_Layout
 	.4byte IndigoPlateau_HallOfFame_Layout
+	.4byte PalletTown_Layout
+	.4byte ViridianCity_Layout
+	.4byte PewterCity_Layout
+	.4byte CeruleanCity_Layout
+	.4byte VermilionCity_Layout
+	.4byte LavenderTown_Layout
+	.4byte CeladonCity_Layout
+	.4byte SaffronCity_Layout
+	.4byte FuchsiaCity_Layout
+	.4byte CinnabarIsland_Layout
+	.4byte Route1_Layout
+	.4byte Route2_Layout
+	.4byte Route3_Layout
+	.4byte Route4_Layout
+	.4byte Route5_Layout
+	.4byte Route6_Layout
+	.4byte Route7_Layout
+	.4byte Route8_Layout
+	.4byte Route9_Layout
+	.4byte Route10_Layout
+	.4byte Route11_Layout
+	.4byte Route12_Layout
+	.4byte Route13_Layout
+	.4byte Route14_Layout
+	.4byte Route15_Layout
+	.4byte Route16_Layout
+	.4byte Route17_Layout
+	.4byte Route18_Layout
+	.4byte Route19_Layout
+	.4byte Route20_Layout
+	.4byte Route21_Layout
+	.4byte Route22_Layout
+	.4byte Route24_Layout
+	.4byte Route25_Layout

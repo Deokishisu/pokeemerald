@@ -1,11 +1,11 @@
 VictoryRoad_Gate_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_OFFICER, 0, 8, 11, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, FALSE, 0, NULL, 0
-	object_event 2, EVENT_OBJ_GFX_BLACK_BELT, 0, 7, 5, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, FALSE, 0, NULL, 0
-	object_event 3, EVENT_OBJ_GFX_BLACK_BELT, 0, 12, 5, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, FALSE, 0, NULL, 0
+	object_event 2, EVENT_OBJ_GFX_BLACK_BELT, 0, 7, 4, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, FALSE, 0, NULL, 0
+	object_event 3, EVENT_OBJ_GFX_BLACK_BELT, 0, 12, 4, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, FALSE, 0, NULL, 0
 
 VictoryRoad_Gate_MapWarps::
-	warp_def 17, 7, 3, 0, MAP_VICTORY_ROAD_GATE
-	warp_def 18, 7, 3, 0, MAP_VICTORY_ROAD_GATE
+	warp_def 17, 7, 3, 0, MAP_ROUTE22
+	warp_def 18, 7, 3, 0, MAP_ROUTE22
 	warp_def 9, 17, 3, 0, MAP_ROUTE26
 	warp_def 10, 17, 3, 0, MAP_ROUTE26
 	warp_def 9, 0, 3, 0, MAP_VICTORY_ROAD

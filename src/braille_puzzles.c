@@ -243,8 +243,8 @@ void SealedChamberShakingEffect(u8 taskId)
 bool8 ShouldDoBrailleStrengthEffect(void)
 {
     if (!FlagGet(FLAG_SYS_BRAILLE_STRENGTH)
-        && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DESERT_RUINS)
-        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DESERT_RUINS))
+        && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NONE)
+        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(NONE))
     {
         if (gSaveBlock1Ptr->pos.x == 6 && gSaveBlock1Ptr->pos.y == 23)
         {

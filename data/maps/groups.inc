@@ -30,33 +30,45 @@ gMapGroup0::
 	.4byte Route44
 	.4byte Route45
 	.4byte Route46
-	.4byte Route27
-	.4byte Route26
-	.4byte Route23
-	.4byte Route28
 	.4byte SilverCave_Exterior
-	.4byte LilycoveCity
-	.4byte MossdeepCity
-	.4byte SootopolisCity
-	.4byte EverGrandeCity
-	.4byte LavaridgeTown
-	.4byte PacifidlogTown
-	.4byte Route126
-	.4byte Route127
-	.4byte Route128
-	.4byte Route129
-	.4byte Route130
-	.4byte Route131
-	.4byte Route132
-	.4byte Route133
-	.4byte Route134
-	.4byte Underwater1
-	.4byte Underwater2
-	.4byte Underwater3
-	.4byte Underwater4
-	.4byte Underwater5
-	.4byte Underwater6
-	.4byte Underwater7
+	.4byte PalletTown
+	.4byte ViridianCity
+	.4byte PewterCity
+	.4byte CeruleanCity
+	.4byte VermilionCity
+	.4byte LavenderTown
+	.4byte CeladonCity
+	.4byte SaffronCity
+	.4byte FuchsiaCity
+	.4byte CinnabarIsland
+	.4byte Route1
+	.4byte Route2
+	.4byte Route3
+	.4byte Route4
+	.4byte Route5
+	.4byte Route6
+	.4byte Route7
+	.4byte Route8
+	.4byte Route9
+	.4byte Route10
+	.4byte Route11
+	.4byte Route12
+	.4byte Route13
+	.4byte Route14
+	.4byte Route15
+	.4byte Route16
+	.4byte Route17
+	.4byte Route18
+	.4byte Route19
+	.4byte Route20
+	.4byte Route21
+	.4byte Route22
+	.4byte Route23
+	.4byte Route24
+	.4byte Route25
+	.4byte Route26
+	.4byte Route27
+	.4byte Route28
 
 	.align 2
 gMapGroup1::
@@ -519,6 +531,28 @@ gMapGroup32::
 
 	.align 2
 gMapGroup33::
+	.4byte LilycoveCity
+	.4byte MossdeepCity
+	.4byte SootopolisCity
+	.4byte EverGrandeCity
+	.4byte LavaridgeTown
+	.4byte PacifidlogTown
+	.4byte Route126
+	.4byte Route127
+	.4byte Route128
+	.4byte Route129
+	.4byte Route130
+	.4byte Route131
+	.4byte Route132
+	.4byte Route133
+	.4byte Route134
+	.4byte Underwater1
+	.4byte Underwater2
+	.4byte Underwater3
+	.4byte Underwater4
+	.4byte Underwater5
+	.4byte Underwater6
+	.4byte Underwater7
 	.4byte Route123_BerryMastersHouse
 	.4byte Route109_SeashoreHouse
 	.4byte Route110_TrickHouseEntrance

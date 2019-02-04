@@ -1,7 +1,7 @@
 NewBarkTown_EventObjects::
 	object_event 1, EVENT_OBJ_GFX_LINK_MAY, 0, 9, 6, 3, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 1, 2, 0, 0, LittlerootTown_EventScript_1E8034, 0
 	object_event 2, EVENT_OBJ_GFX_LINK_RS_MAY, 0, 8, 6, 3, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 2, 1, 0, 0, LittlerootTown_EventScript_1E8022, 868
-	object_event 3, EVENT_OBJ_GFX_SUICUNE, 3, 15, 14, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, LittlerootTown_EventScript_1E802B, 0
+	object_event 3, EVENT_OBJ_GFX_LEAF, 3, 15, 14, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, LittlerootTown_EventScript_1E802B, 0
 	object_event 4, EVENT_OBJ_GFX_MOM, 0, 5, 8, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, LittlerootTown_EventScript_1E863D, 752
 	object_event 5, EVENT_OBJ_GFX_LINK_RS_BRENDAN, 0, 6, 6, 4, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 0, 0, 0, 0, NULL, 0
 	object_event 6, EVENT_OBJ_GFX_LINK_BRENDAN, 0, 7, 6, 4, MOVEMENT_TYPE_ROTATE_CLOCKWISE, 0, 0, 0, 0, NULL, 0
