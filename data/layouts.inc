@@ -537,3 +537,6 @@
 	.include "data/layouts/Route22/layout.inc"
 	.include "data/layouts/Route24/layout.inc"
 	.include "data/layouts/Route25/layout.inc"
+	.include "data/layouts/PalletTown_RedsHouse_1F/layout.inc"
+	.include "data/layouts/PalletTown_RedsHouse_2F/layout.inc"
+	.include "data/layouts/PalletTown_ProfOaksLab/layout.inc"

@@ -531,6 +531,20 @@ gMapGroup32::
 
 	.align 2
 gMapGroup33::
+	.4byte PalletTown_RedsHouse_1F
+	.4byte PalletTown_RedsHouse_2F
+	.4byte PalletTown_BluesHouse
+	.4byte PalletTown_ProfOaksLab
+
+	.align 2
+gMapGroup34::
+	.4byte Route119_WeatherInstitute_1F
+
+	.align 2
+gMapGroup35::
+	.4byte Route119_WeatherInstitute_2F
+	.4byte Route119_House
+	.4byte Route124_DivingTreasureHuntersHouse
 	.4byte LilycoveCity
 	.4byte MossdeepCity
 	.4byte SootopolisCity
@@ -739,16 +753,6 @@ gMapGroup33::
 	.4byte AlteringCave
 	.4byte MeteorFalls_StevensCave
 	.4byte Route113_GlassWorkshop
-
-	.align 2
-gMapGroup34::
-	.4byte Route119_WeatherInstitute_1F
-	.4byte Route119_WeatherInstitute_2F
-	.4byte Route119_House
-
-	.align 2
-gMapGroup35::
-	.4byte Route124_DivingTreasureHuntersHouse
 
 	.align 2
 gMapGroups::

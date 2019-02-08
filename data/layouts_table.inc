@@ -2774,3 +2774,6 @@ gMapLayouts::
 	.4byte Route22_Layout
 	.4byte Route24_Layout
 	.4byte Route25_Layout
+	.4byte PalletTown_RedsHouse_1F_Layout
+	.4byte PalletTown_RedsHouse_2F_Layout
+	.4byte PalletTown_ProfOaksLab_Layout

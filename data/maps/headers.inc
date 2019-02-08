@@ -643,3 +643,7 @@
 	.include "data/maps/Route22/header.inc"
 	.include "data/maps/Route24/header.inc"
 	.include "data/maps/Route25/header.inc"
+	.include "data/maps/PalletTown_RedsHouse_1F/header.inc"
+	.include "data/maps/PalletTown_RedsHouse_2F/header.inc"
+	.include "data/maps/PalletTown_BluesHouse/header.inc"
+	.include "data/maps/PalletTown_ProfOaksLab/header.inc"

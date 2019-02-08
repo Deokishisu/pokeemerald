@@ -657,3 +657,7 @@
 	.include "data/maps/Route22/events.inc"
 	.include "data/maps/Route24/events.inc"
 	.include "data/maps/Route25/events.inc"
+	.include "data/maps/PalletTown_RedsHouse_1F/events.inc"
+	.include "data/maps/PalletTown_RedsHouse_2F/events.inc"
+	.include "data/maps/PalletTown_BluesHouse/events.inc"
+	.include "data/maps/PalletTown_ProfOaksLab/events.inc"

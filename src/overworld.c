@@ -1072,8 +1072,8 @@ static bool16 ShouldLegendaryMusicPlayAtLocation(struct WarpData *warp)
         case MAP_NUM(RUINS_OF_ALPH_EXTERIOR):
         case MAP_NUM(LAKE_OF_RAGE):
         case MAP_NUM(ROUTE126):
-        case MAP_NUM(ROUTE127):
-        case MAP_NUM(ROUTE128):
+        //case MAP_NUM(ROUTE127):
+        //case MAP_NUM(ROUTE128):
             return TRUE;
         default:
             if (VarGet(VAR_0x405E) < 4)

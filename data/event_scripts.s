@@ -7745,3 +7745,7 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/Route22/scripts.inc"
 	.include "data/maps/Route24/scripts.inc"
 	.include "data/maps/Route25/scripts.inc"
+	.include "data/maps/PalletTown_RedsHouse_1F/scripts.inc"
+	.include "data/maps/PalletTown_RedsHouse_2F/scripts.inc"
+	.include "data/maps/PalletTown_BluesHouse/scripts.inc"
+	.include "data/maps/PalletTown_ProfOaksLab/scripts.inc"
