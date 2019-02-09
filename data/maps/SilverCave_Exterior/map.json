@@ -1,0 +1,59 @@
+{
+  "id": "MAP_SILVER_CAVE_EXTERIOR",
+  "name": "SilverCave_Exterior",
+  "layout": "LAYOUT_SILVER_CAVE_EXTERIOR",
+  "music": "MUS_DOORO_X4",
+  "region_map_section": "MAPSEC_SILVER_CAVE",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "map_palette": "PAL_CYCLE",
+  "allow_bike": true,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 18,
+      "map": "MAP_ROUTE28"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 23,
+      "y": 19,
+      "elevation": 3,
+      "dest_map": "MAP_SILVER_CAVE_EXTERIOR_POKEMON_CENTER_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 18,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_SILVER_CAVE_ROOM1",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 13,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 25,
+      "elevation": 3,
+      "item": "ITEM_FULL_RESTORE",
+      "flag": "FLAG_TEMP_1"
+    }
+  ]
+}

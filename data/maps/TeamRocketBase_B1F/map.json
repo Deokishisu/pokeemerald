@@ -1,0 +1,463 @@
+{
+  "id": "MAP_TEAM_ROCKET_BASE_B1F",
+  "name": "TeamRocketBase_B1F",
+  "layout": "LAYOUT_TEAM_ROCKET_BASE_B1F",
+  "music": "MUS_AJITO",
+  "region_map_section": "MAPSEC_MAHOGANY_TOWN",
+  "requires_flash": 0,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "map_palette": "PAL_DUNGEON_DAY",
+  "allow_bike": false,
+  "allow_escape_rope": true,
+  "allow_running": false,
+  "show_map_name": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_MAGMA",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 0,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 2,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SCIENTIST",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 18,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 27,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 14,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 21,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_MAHOGANY_TOWN_SHOP",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_TEAM_ROCKET_BASE_B2F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 5,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_TEAM_ROCKET_BASE_B1F",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 25,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_TEAM_ROCKET_BASE_B1F",
+      "dest_warp_id": 2
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 3,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 3,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 11,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 1,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 1,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 15,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 15,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 5,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 3,
+      "y": 11,
+      "elevation": 3,
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_TEMP_1"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "MAP_SPROUT_TOWER_1F",
+  "name": "SproutTower_1F",
+  "layout": "LAYOUT_SPROUT_TOWER_1F",
+  "music": "MUS_DAN03",
+  "region_map_section": "MAPSEC_SPROUT_TOWER",
+  "requires_flash": 0,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_palette": "PAL_DUNGEON_DAY",
+  "allow_bike": false,
+  "allow_escape_rope": true,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 2,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "MeteorFalls_1F_1R_EventScript_2911AB",
+      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_TM_23"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 3,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "MeteorFalls_1F_1R_EventScript_2911C5",
+      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 4,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "MeteorFalls_1F_1R_EventScript_2911B8",
+      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 5,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "MeteorFalls_1F_1R_EventScript_2911D2",
+      "flag": "FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 4,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 3,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_DAISY",
+      "npc_palette": "0",
+      "x": 6,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_METEOR_FALLS_TEAM_AQUA"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 5,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_METEOR_FALLS_TEAM_AQUA"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 7,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_METEOR_FALLS_TEAM_AQUA"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SCIENTIST",
+      "npc_palette": "0",
+      "x": 8,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "MeteorFalls_1F_1R_EventScript_22BF25",
+      "flag": "FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_VIOLET_CITY",
+      "dest_warp_id": 8
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_VIOLET_CITY",
+      "dest_warp_id": 8
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_SPROUT_TOWER_2F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 17,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_SPROUT_TOWER_2F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_SPROUT_TOWER_2F",
+      "dest_warp_id": 2
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 0,
+      "elevation": 4,
+      "var": "VAR_0x40BF",
+      "var_value": 0,
+      "script": "MeteorFalls_1F_1R_EventScript_22BD5F"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "0x0"
+    }
+  ]
+}

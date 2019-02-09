@@ -1,0 +1,142 @@
+{
+  "id": "MAP_GOLDENROD_CITY_UNDERGROUND_WAREHOUSE",
+  "name": "GoldenrodCity_UndergroundWarehouse",
+  "layout": "LAYOUT_GOLDENROD_CITY_UNDERGROUND_WAREHOUSE",
+  "music": "MUS_FUNE_KAN",
+  "region_map_section": "MAPSEC_GOLDENROD_CITY",
+  "requires_flash": 0,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "map_palette": "PAL_DUNGEON_DAY",
+  "allow_bike": false,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 9,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BB00",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 8,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
+      "npc_palette": "0",
+      "x": 14,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_GENTLEMAN",
+      "npc_palette": "0",
+      "x": 12,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "0x0",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_2"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 18,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BD64",
+      "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 13,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BD6D",
+      "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 2,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BD76",
+      "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND_SWITCH_ROOM_ENTRANCES",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND_SWITCH_ROOM_ENTRANCES",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_DEPARTMENT_STORE_B1F",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,72 @@
+{
+  "id": "MAP_TIN_TOWER_7F",
+  "name": "TinTower_7F",
+  "layout": "LAYOUT_TIN_TOWER_7F",
+  "music": "MUS_TOZAN",
+  "region_map_section": "MAPSEC_TIN_TOWER",
+  "requires_flash": 0,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_palette": "PAL_DUNGEON_DAY",
+  "allow_bike": false,
+  "allow_escape_rope": true,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 16,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_TIN_TOWER_6F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_TIN_TOWER_8F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_TIN_TOWER_7F",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_TIN_TOWER_7F",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_TIN_TOWER_9F",
+      "dest_warp_id": 4
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

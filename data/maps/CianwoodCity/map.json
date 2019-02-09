@@ -1,0 +1,321 @@
+{
+  "id": "MAP_CIANWOOD_CITY",
+  "name": "CianwoodCity",
+  "layout": "LAYOUT_CIANWOOD_CITY",
+  "music": "MUS_TONEKUSA",
+  "region_map_section": "MAPSEC_CIANWOOD_CITY",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "map_palette": "PAL_CYCLE",
+  "allow_bike": true,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_ROUTE41"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+      "npc_palette": "PAL_NPC_GREEN",
+      "x": 21,
+      "y": 37,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB22B",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_POKEFAN_M",
+      "npc_palette": "0",
+      "x": 17,
+      "y": 33,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB20C",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_LASS",
+      "npc_palette": "0",
+      "x": 14,
+      "y": 42,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 2,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB234",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
+      "npc_palette": "0",
+      "x": 8,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB23D",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
+      "npc_palette": "0",
+      "x": 9,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB23D",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
+      "npc_palette": "0",
+      "x": 4,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB23D",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
+      "npc_palette": "0",
+      "x": 5,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB23D",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
+      "npc_palette": "0",
+      "x": 10,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB23D",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_BREAKABLE_ROCK",
+      "npc_palette": "0",
+      "x": 4,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB23D",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_POKEFAN_F",
+      "npc_palette": "0",
+      "x": 10,
+      "y": 46,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB22B",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 11,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB20C",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUICUNE",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 10,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FallarborTown_EventScript_1EB234",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 17,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_CIANWOOD_CITY_MANIAS_HOUSE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 8,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_CIANWOOD_CITY_GYM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 23,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_CIANWOOD_CITY_POKEMON_CENTER_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 15,
+      "y": 47,
+      "elevation": 0,
+      "dest_map": "MAP_CIANWOOD_CITY_PHARMACY",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 9,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_CIANWOOD_CITY_PHOTO_STUDIO",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 15,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_CIANWOOD_CITY_HOUSE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 5,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_CIANWOOD_CITY_POKE_SEERS_HOUSE",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": 0,
+      "script": "NULL"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 34,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_271E6A"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 45,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_271E73"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 43,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_1EB250"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 47,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_271E73"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_1EB259"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_271E6A"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FallarborTown_EventScript_1EB262"
+    },
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 29,
+      "elevation": 3,
+      "item": "ITEM_MAX_ETHER",
+      "flag": "FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET"
+    }
+  ]
+}

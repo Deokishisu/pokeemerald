@@ -1,0 +1,21 @@
+{
+  "id": "MAP_ROUTE104_PROTOTYPE",
+  "name": "Route104_Prototype",
+  "layout": "LAYOUT_ROUTE104_PROTOTYPE",
+  "music": "MUS_NEXTROAD",
+  "region_map_section": "MAPSEC_ROUTE_104",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "map_palette": "0",
+  "allow_bike": false,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

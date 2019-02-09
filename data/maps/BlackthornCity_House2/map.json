@@ -1,0 +1,51 @@
+{
+  "id": "MAP_BLACKTHORN_CITY_HOUSE2",
+  "name": "BlackthornCity_House2",
+  "layout": "LAYOUT_HOUSE1",
+  "music": "MUS_MACHI_S3",
+  "region_map_section": "MAPSEC_BLACKTHORN_CITY",
+  "requires_flash": 0,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "map_palette": "PAL_INDOOR",
+  "allow_bike": false,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_LASS",
+      "npc_palette": "PAL_NPC_GREEN",
+      "x": 2,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "FortreeCity_House2_EventScript_2177CB",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_BLACKTHORN_CITY",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_BLACKTHORN_CITY",
+      "dest_warp_id": 2
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

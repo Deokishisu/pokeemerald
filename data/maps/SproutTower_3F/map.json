@@ -1,0 +1,29 @@
+{
+  "id": "MAP_SPROUT_TOWER_3F",
+  "name": "SproutTower_3F",
+  "layout": "LAYOUT_SPROUT_TOWER_3F",
+  "music": "MUS_DAN03",
+  "region_map_section": "MAPSEC_SPROUT_TOWER",
+  "requires_flash": 0,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_palette": "PAL_DUNGEON_DAY",
+  "allow_bike": false,
+  "allow_escape_rope": true,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_SPROUT_TOWER_2F",
+      "dest_warp_id": 3
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

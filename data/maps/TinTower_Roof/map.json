@@ -1,0 +1,54 @@
+{
+  "id": "MAP_TIN_TOWER_ROOF",
+  "name": "TinTower_Roof",
+  "layout": "LAYOUT_TIN_TOWER_ROOF",
+  "music": "MUS_TOZAN",
+  "region_map_section": "MAPSEC_TIN_TOWER",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "map_palette": "PAL_CYCLE",
+  "allow_bike": false,
+  "allow_escape_rope": true,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_CAL",
+      "npc_palette": "PAL_NPC_RED",
+      "x": 9,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "0x0",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_TIN_TOWER_9F",
+      "dest_warp_id": 3
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_0x40A2",
+      "var_value": 0,
+      "script": "SeafloorCavern_Room9_EventScript_234DC9"
+    }
+  ],
+  "bg_events": []
+}

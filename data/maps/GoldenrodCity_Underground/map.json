@@ -1,0 +1,232 @@
+{
+  "id": "MAP_GOLDENROD_CITY_UNDERGROUND",
+  "name": "GoldenrodCity_Underground",
+  "layout": "LAYOUT_GOLDENROD_CITY_UNDERGROUND",
+  "music": "MUS_FUNE_KAN",
+  "region_map_section": "MAPSEC_GOLDENROD_CITY",
+  "requires_flash": 0,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "map_palette": "PAL_DUNGEON_DAY",
+  "allow_bike": false,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 0,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_BROWN",
+      "x": 5,
+      "y": 31,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AD96",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_BROWN",
+      "x": 6,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 2,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE5F",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 3,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 2,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE68",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 2,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE56",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+      "npc_palette": "0",
+      "x": 7,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE4D",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_OLD_MAN",
+      "npc_palette": "PAL_NPC_BROWN",
+      "x": 7,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE71",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 7,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AD96",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_GREEN",
+      "x": 7,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE7A",
+      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_OLD_WOMAN",
+      "npc_palette": "PAL_NPC_BROWN",
+      "x": 7,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AED4",
+      "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND_SWITCH_ROOM_ENTRANCES",
+      "dest_warp_id": 6
+    },
+    {
+      "x": 3,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND_SWITCH_ROOM_ENTRANCES",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 21,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 22,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 22,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_GOLDENROD_CITY_UNDERGROUND_SWITCH_ROOM_ENTRANCES",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE83"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE8C"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE95"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE9E"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SlateportCity_OceanicMuseum_1F_EventScript_20AE95"
+    }
+  ]
+}

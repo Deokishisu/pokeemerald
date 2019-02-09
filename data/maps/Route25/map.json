@@ -1,0 +1,27 @@
+{
+  "id": "MAP_ROUTE25",
+  "name": "Route25",
+  "layout": "LAYOUT_ROUTE25",
+  "music": "MUS_DAN02",
+  "region_map_section": "MAPSEC_ROUTE_25",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "map_palette": "0",
+  "allow_bike": true,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_ROUTE24"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

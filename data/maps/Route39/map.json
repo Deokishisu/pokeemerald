@@ -1,0 +1,221 @@
+{
+  "id": "MAP_ROUTE39",
+  "name": "Route39",
+  "layout": "LAYOUT_ROUTE39",
+  "music": "MUS_DOORO_X1",
+  "region_map_section": "MAPSEC_ROUTE_39",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "map_palette": "PAL_CYCLE",
+  "allow_bike": true,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_ROUTE38"
+    },
+    {
+      "direction": "down",
+      "offset": -10,
+      "map": "MAP_OLIVINE_CITY"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SAILOR",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 13,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 5,
+      "script": "Route111_EventScript_1F121B",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_POKEFAN_M",
+      "npc_palette": "PAL_NPC_RED",
+      "x": 10,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 4,
+      "script": "Route111_EventScript_1F1260",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_POKEFAN_F",
+      "npc_palette": "PAL_NPC_RED",
+      "x": 11,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 4,
+      "script": "Route111_EventScript_1F1249",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_CAL",
+      "npc_palette": "0",
+      "x": 3,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_CAL",
+      "npc_palette": "0",
+      "x": 6,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "Route111_EventScript_1F0EB9",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_CAL",
+      "npc_palette": "0",
+      "x": 4,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "Route111_EventScript_1F0EB9",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_CAL",
+      "npc_palette": "0",
+      "x": 8,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "Route111_EventScript_1F0EB9",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 13,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 1,
+      "script": "Route111_EventScript_1F12D9",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
+      "npc_palette": "0",
+      "x": 9,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_POKEFAN_F",
+      "npc_palette": "PAL_NPC_RED",
+      "x": 4,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE39_MOO_MOO_FARM_HOUSE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE39_MOO_MOO_FARM_BARN",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route111_EventScript_1F115C"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route111_EventScript_1F1153"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route111_EventScript_1F1165"
+    },
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST"
+    }
+  ]
+}

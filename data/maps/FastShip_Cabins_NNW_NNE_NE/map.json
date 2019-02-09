@@ -1,0 +1,167 @@
+{
+  "id": "MAP_FAST_SHIP_CABINS_NNW_NNE_NE",
+  "name": "FastShip_Cabins_NNW_NNE_NE",
+  "layout": "LAYOUT_FAST_SHIP_CABINS_NNW_NNE_NE",
+  "music": "MUS_DAN02",
+  "region_map_section": "MAPSEC_FAST_SHIP",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "map_palette": "PAL_INDOOR",
+  "allow_bike": false,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "EVENT_OBJ_GFX_COOLTRAINER_M",
+      "npc_palette": "PAL_NPC_RED",
+      "x": 4,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 2,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_COOLTRAINER_F",
+      "npc_palette": "PAL_NPC_RED",
+      "x": 1,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 1,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_POKEFAN_M",
+      "npc_palette": "PAL_NPC_BROWN",
+      "x": 4,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_SAILOR",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 4,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_GENTLEMAN",
+      "npc_palette": "PAL_NPC_BLUE",
+      "x": 7,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 1,
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "EVENT_OBJ_GFX_PHARMACIST",
+      "npc_palette": "PAL_NPC_GREEN",
+      "x": 2,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 4,
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 0,
+      "elevation": 3,
+      "dest_map": "MAP_FAST_SHIP_1F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_FAST_SHIP_1F",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 2,
+      "y": 26,
+      "elevation": 3,
+      "dest_map": "MAP_FAST_SHIP_1F",
+      "dest_warp_id": 3
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 14,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 20,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 33,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
+  ]
+}

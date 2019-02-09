@@ -1,0 +1,32 @@
+{
+  "id": "MAP_ROUTE8",
+  "name": "Route8",
+  "layout": "LAYOUT_ROUTE8",
+  "music": "MUS_DAN02",
+  "region_map_section": "MAPSEC_ROUTE_8",
+  "requires_flash": 0,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "map_palette": "0",
+  "allow_bike": true,
+  "allow_escape_rope": false,
+  "allow_running": false,
+  "show_map_name": 1,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_LAVENDER_TOWN"
+    },
+    {
+      "direction": "left",
+      "offset": -18,
+      "map": "MAP_SAFFRON_CITY"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}
