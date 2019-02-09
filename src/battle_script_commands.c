@@ -4233,13 +4233,13 @@ static void atk3D_end(void)
 
     gMoveResultFlags = 0;
     gActiveBattler = 0;
-    gCurrentActionFuncId = 0xB;
+    gCurrentActionFuncId = B_ACTION_TRY_FINISH;
 }
 
 static void atk3E_end2(void)
 {
     gActiveBattler = 0;
-    gCurrentActionFuncId = 0xB;
+    gCurrentActionFuncId = B_ACTION_TRY_FINISH;
 }
 
 static void atk3F_end3(void) // pops the main function stack
@@ -6721,10 +6721,10 @@ static void atk76_various(void)
         MarkBattlerForControllerExec(gActiveBattler);
         break;
     case 14:
-        sub_81A5BF8();
+        DrawArenaRefereeTextBox();
         break;
     case 15:
-        sub_81A5D44();
+        RemoveArenaRefereeTextBox();
         break;
     case VARIOUS_ARENA_JUDGMENT_STRING:
         BattleStringExpandPlaceholdersToDisplayedString(gRefereeStringsTable[gBattlescriptCurrInstr[1]]);

@@ -1,6 +1,7 @@
 #include "global.h"
 #include "item_use.h"
 #include "battle.h"
+#include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
 #include "berry.h"
 #include "bike.h"
@@ -24,7 +25,6 @@
 #include "party_menu.h"
 #include "pokeblock.h"
 #include "pokemon.h"
-#include "rom_818CFC8.h"
 #include "script.h"
 #include "sound.h"
 #include "strings.h"
@@ -38,8 +38,6 @@
 #include "constants/songs.h"
 #include "constants/vars.h"
 
-extern void(*gUnknown_0203A0F4)(u8 taskId);
-extern void (*gUnknown_03006328)(u8, TaskFunc);
 extern void unknown_ItemMenu_Confirm(u8 taskId);
 extern void sub_81C5B14(u8 taskId);
 extern void ScriptUnfreezeEventObjects(void);
@@ -99,6 +97,9 @@ void sub_80FD8E0(u8 taskId, s16 x, s16 y);
 void sub_80FDBEC(void);
 bool8 sub_80FDE2C(void);
 void ItemUseOutOfBattle_CannotUse(u8 taskId);
+
+// EWRAM variables
+EWRAM_DATA static void(*gUnknown_0203A0F4)(u8 taskId) = NULL;
 
 // .rodata
 

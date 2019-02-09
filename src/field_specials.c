@@ -1958,7 +1958,7 @@ void sub_8139D98(void)
     }
 }
 
-bool32 warp0_in_pokecenter(void)
+bool8 warp0_in_pokecenter(void)
 {
     static const u16 gUnknown_085B2C2A[] = { 0x0202, 0x0301, 0x0405, 0x0504, 0x0604, 0x0700, 0x0804, 0x090b, 0x0a05, 0x0b05, 0x0c02, 0x0d06, 0x0e03, 0x0f02, 0x100c, 0x100a, 0x1a35, 0x193c, 0xFFFF };
 
@@ -2605,9 +2605,9 @@ static void sub_813A46C(s32 itemIndex, bool8 onInit, struct ListMenu *list)
 static void sub_813A4EC(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
-    s32 itemId = ListMenuHandleInputGetItemId(task->data[14]);
+    s32 input = ListMenu_ProcessInput(task->data[14]);
 
-    switch (itemId)
+    switch (input)
     {
     case LIST_NOTHING_CHOSEN:
         break;
@@ -2617,13 +2617,13 @@ static void sub_813A4EC(u8 taskId)
         sub_813A570(taskId);
         break;
     default:
-        gSpecialVar_Result = itemId;
+        gSpecialVar_Result = input;
         PlaySE(SE_SELECT);
         if (!task->data[6])
         {
             sub_813A570(taskId);
         }
-        else if (itemId == task->data[1] - 1)
+        else if (input == task->data[1] - 1)
         {
             sub_813A570(taskId);
         }
