@@ -1,4 +1,4 @@
-LavaridgeTown_EventObjects::
+LavaridgeTown_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_OLD_WOMAN, 0, 8, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, LavaridgeTown_EventScript_1EA73B, 0
 	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 0, 5, 1, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, LavaridgeTown_EventScript_1EA70E, 0
 	object_event 3, EVENT_OBJ_GFX_OLD_MAN, 0, 5, 8, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, LavaridgeTown_EventScript_1EA717, 0
@@ -9,17 +9,17 @@ LavaridgeTown_EventObjects::
 	object_event 8, EVENT_OBJ_GFX_VAR_0, 0, 12, 15, 0, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, 0x0, FLAG_HIDE_LAVARIDGE_TOWN_RIVAL_1
 	object_event 9, EVENT_OBJ_GFX_OLD_WOMAN, 0, 4, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, LavaridgeTown_EventScript_1EA744, 0
 
-LavaridgeTown_MapWarps::
+LavaridgeTown_MapWarps:
 	warp_def 12, 15, 0, 0, MAP_LAVARIDGE_TOWN_MART
 	warp_def 5, 15, 0, 0, MAP_LAVARIDGE_TOWN
 	warp_def 15, 5, 0, 0, MAP_LAVARIDGE_TOWN_MART
 	warp_def 9, 6, 0, 0, MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F
 	warp_def 9, 2, 3, 3, MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F
 
-LavaridgeTown_MapCoordEvents::
+LavaridgeTown_MapCoordEvents:
 	coord_event 6, 3, 3, 0, 0, LavaridgeTown_EventScript_1EA6FA
 
-LavaridgeTown_MapBGEvents::
+LavaridgeTown_MapBGEvents:
 	bg_event 14, 16, 0, BG_EVENT_PLAYER_FACING_ANY, LavaridgeTown_EventScript_1EA7B7
 	bg_event 7, 15, 0, BG_EVENT_PLAYER_FACING_ANY, LavaridgeTown_EventScript_1EA7AE
 	bg_event 17, 5, 0, BG_EVENT_PLAYER_FACING_NORTH, LavaridgeTown_EventScript_271E6A
@@ -31,3 +31,4 @@ LavaridgeTown_MapBGEvents::
 
 LavaridgeTown_MapEvents::
 	map_events LavaridgeTown_EventObjects, LavaridgeTown_MapWarps, LavaridgeTown_MapCoordEvents, LavaridgeTown_MapBGEvents
+

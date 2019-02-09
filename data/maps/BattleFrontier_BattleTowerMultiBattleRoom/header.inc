@@ -1,10 +1,10 @@
-BattleFrontier_BattleTowerMultiBattleRoom::
+BattleFrontier_BattleTowerMultiBattleRoom:
 	.4byte BattleFrontier_BattleTowerMultiBattleRoom_Layout
 	.4byte BattleFrontier_BattleTowerMultiBattleRoom_MapEvents
 	.4byte BattleFrontier_BattleTowerMultiBattleRoom_MapScripts
 	.4byte 0x0
 	.2byte MUS_SATTOWER
-	.2byte 390
+	.2byte LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM
 	.byte MAPSEC_BATTLE_FRONTIER
 	.byte 0
 	.byte WEATHER_NONE
@@ -12,3 +12,4 @@ BattleFrontier_BattleTowerMultiBattleRoom::
 	.2byte 0
 	map_header_flags allow_bike=0, allow_escape_rope=0, allow_run=1, show_map_name=0
 	.byte MAP_BATTLE_SCENE_NORMAL
+

@@ -1,10 +1,10 @@
-MossdeepCity_PokemonCenter_2F::
+MossdeepCity_PokemonCenter_2F:
 	.4byte PokemonCenter_2F_Layout
 	.4byte MossdeepCity_PokemonCenter_2F_MapEvents
 	.4byte MossdeepCity_PokemonCenter_2F_MapScripts
 	.4byte 0x0
 	.2byte MUS_POKECEN
-	.2byte 62
+	.2byte LAYOUT_POKEMON_CENTER_2F
 	.byte MAPSEC_MOSSDEEP_CITY
 	.byte 0
 	.byte WEATHER_NONE
@@ -12,3 +12,4 @@ MossdeepCity_PokemonCenter_2F::
 	.2byte 0
 	map_header_flags allow_bike=0, allow_escape_rope=0, allow_run=0, show_map_name=0
 	.byte MAP_BATTLE_SCENE_NORMAL
+

@@ -1,13 +1,13 @@
-EcruteakCity_EventObjects::
+EcruteakCity_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_OLD_MAN, 0, 18, 15, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, MauvilleCity_EventScript_1DF3B3, 0
 	object_event 2, EVENT_OBJ_GFX_OLD_MAN, 0, 20, 21, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3CE, 0
-	object_event 3, EVENT_OBJ_GFX_LASS, PAL_NPC_BLUE, 21, 29, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 0, 0, 0, MauvilleCity_EventScript_1DF3BC, 0
+	object_event 3, EVENT_OBJ_GFX_LASS, 0, 21, 29, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 0, 0, 0, MauvilleCity_EventScript_1DF3BC, 0
 	object_event 4, EVENT_OBJ_GFX_LASS, 0, 3, 9, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, MauvilleCity_EventScript_1DF3C5, 0
-	object_event 5, EVENT_OBJ_GFX_FAT_MAN, PAL_NPC_GREEN, 9, 22, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, MauvilleCity_EventScript_1DF3FB, 0
-	object_event 6, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_RED, 10, 14, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, MauvilleCity_EventScript_1DF452, FLAG_HIDE_MAUVILLE_CITY_WALLY
-	object_event 7, EVENT_OBJ_GFX_OLD_MAN, PAL_NPC_GREEN, 3, 7, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, MauvilleCity_EventScript_1DF41D, FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE
+	object_event 5, EVENT_OBJ_GFX_FAT_MAN, 0, 9, 22, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, MauvilleCity_EventScript_1DF3FB, 0
+	object_event 6, EVENT_OBJ_GFX_YOUNGSTER, 0, 10, 14, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, MauvilleCity_EventScript_1DF452, FLAG_HIDE_MAUVILLE_CITY_WALLY
+	object_event 7, EVENT_OBJ_GFX_OLD_MAN, 0, 3, 7, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, MauvilleCity_EventScript_1DF41D, FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE
 
-EcruteakCity_MapWarps::
+EcruteakCity_MapWarps:
 	warp_def 35, 26, 3, 2, MAP_ROUTE42_GATE
 	warp_def 35, 27, 3, 3, MAP_ROUTE42_GATE
 	warp_def 18, 11, 0, 0, MAP_ECRUTEAK_CITY_TIN_TOWER_GATE
@@ -24,7 +24,7 @@ EcruteakCity_MapWarps::
 	warp_def 0, 18, 3, 0, MAP_ROUTE38_GATE
 	warp_def 0, 19, 3, 1, MAP_ROUTE38_GATE
 
-EcruteakCity_MapBGEvents::
+EcruteakCity_MapBGEvents:
 	bg_event 15, 21, 0, BG_EVENT_PLAYER_FACING_ANY, MauvilleCity_EventScript_271E73
 	bg_event 38, 10, 3, BG_EVENT_PLAYER_FACING_ANY, MauvilleCity_EventScript_1DF3E0
 	bg_event 8, 28, 0, BG_EVENT_PLAYER_FACING_ANY, MauvilleCity_EventScript_271E6A
@@ -36,3 +36,4 @@ EcruteakCity_MapBGEvents::
 
 EcruteakCity_MapEvents::
 	map_events EcruteakCity_EventObjects, EcruteakCity_MapWarps, 0x0, EcruteakCity_MapBGEvents
+

@@ -1,14 +1,15 @@
-Route30_Mr_Pokemons_House::
+Route30_Mr_Pokemons_House:
 	.4byte Route30_Mr_Pokemons_House_Layout
 	.4byte Route30_Mr_Pokemons_House_MapEvents
 	.4byte Route30_Mr_Pokemons_House_MapScripts
 	.4byte 0x0
 	.2byte MUS_NIBI
-	.2byte 443
+	.2byte LAYOUT_ROUTE30_MR_POKEMONS_HOUSE
 	.byte MAPSEC_ROUTE_30
 	.byte 0
 	.byte WEATHER_NONE
 	.byte MAP_TYPE_INDOOR
-	.2byte PAL_INDOOR
-	map_header_flags allow_bike=0, allow_escape_rope=0, allow_run=0, show_map_name=FALSE
+	.2byte 0
+	map_header_flags allow_bike=0, allow_escape_rope=0, allow_run=0, show_map_name=0
 	.byte MAP_BATTLE_SCENE_NORMAL
+

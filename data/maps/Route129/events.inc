@@ -1,4 +1,4 @@
-Route129_EventObjects::
+Route129_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 28, 16, 1, MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT, 3, 4, 1, 3, Route129_EventScript_1F72EC, 0
 	object_event 2, EVENT_OBJ_GFX_SWIMMER_F, 0, 10, 14, 1, MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP, 5, 2, 1, 2, Route129_EventScript_1F7303, 0
 	object_event 3, EVENT_OBJ_GFX_SWIMMER_F, 0, 13, 22, 1, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN, 1, 1, 1, 5, Route129_EventScript_1F7331, 0
@@ -7,3 +7,4 @@ Route129_EventObjects::
 
 Route129_MapEvents::
 	map_events Route129_EventObjects, 0x0, 0x0, 0x0
+

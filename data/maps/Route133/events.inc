@@ -1,4 +1,4 @@
-Route133_EventObjects::
+Route133_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 68, 27, 1, MOVEMENT_TYPE_WALK_UP_AND_DOWN, 0, 2, 1, 3, Route133_EventScript_1F75A3, 0
 	object_event 2, EVENT_OBJ_GFX_SWIMMER_F, 0, 13, 3, 1, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 3, Route133_EventScript_1F75D1, 0
 	object_event 3, EVENT_OBJ_GFX_SWIMMER_F, 0, 68, 28, 1, MOVEMENT_TYPE_WALK_DOWN_AND_UP, 0, 2, 1, 3, Route133_EventScript_1F75BA, 0
@@ -12,3 +12,4 @@ Route133_EventObjects::
 
 Route133_MapEvents::
 	map_events Route133_EventObjects, 0x0, 0x0, 0x0
+

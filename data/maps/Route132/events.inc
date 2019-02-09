@@ -1,4 +1,4 @@
-Route132_EventObjects::
+Route132_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 40, 13, 1, MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT, 3, 3, 1, 2, Route132_EventScript_1F74EA, 0
 	object_event 2, EVENT_OBJ_GFX_SWIMMER_F, 0, 10, 6, 1, MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT, 3, 3, 1, 2, Route132_EventScript_1F7501, 0
 	object_event 3, EVENT_OBJ_GFX_ITEM_BALL, 0, 10, 11, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, Route132_EventScript_291059, FLAG_ITEM_ROUTE_132_RARE_CANDY
@@ -12,3 +12,4 @@ Route132_EventObjects::
 
 Route132_MapEvents::
 	map_events Route132_EventObjects, 0x0, 0x0, 0x0
+

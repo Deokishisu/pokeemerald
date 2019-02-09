@@ -1,14 +1,15 @@
-RuinsOfAlph_OmanytePuzzleChamber::
+RuinsOfAlph_OmanytePuzzleChamber:
 	.4byte RuinsOfAlph_PuzzleChamber_Layout
 	.4byte RuinsOfAlph_OmanytePuzzleChamber_MapEvents
 	.4byte RuinsOfAlph_OmanytePuzzleChamber_MapScripts
 	.4byte 0x0
 	.2byte MUS_DAN02
-	.2byte 2700
+	.2byte LAYOUT_RUINS_OF_ALPH_PUZZLE_CHAMBER
 	.byte MAPSEC_RUINS_OF_ALPH
-	.byte FALSE
+	.byte 0
 	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_UNDERGROUND
-	.2byte 1
-	map_header_flags allow_bike=0, allow_escape_rope=1, allow_run=0, show_map_name=TRUE
+	.2byte 0
+	map_header_flags allow_bike=0, allow_escape_rope=1, allow_run=0, show_map_name=0
 	.byte MAP_BATTLE_SCENE_NORMAL
+

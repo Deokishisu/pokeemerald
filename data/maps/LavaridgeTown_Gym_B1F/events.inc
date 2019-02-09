@@ -1,10 +1,10 @@
-LavaridgeTown_Gym_B1F_EventObjects::
+LavaridgeTown_Gym_B1F_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_ZMAN_5, 0, 4, 18, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 3, 1, LavaridgeTown_Gym_B1F_EventScript_1FE91B, 0
 	object_event 2, EVENT_OBJ_GFX_ZMAN_5, 0, 3, 6, 0, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 3, 1, LavaridgeTown_Gym_B1F_EventScript_1FE8CA, 0
 	object_event 3, EVENT_OBJ_GFX_ZMAN_5, 0, 13, 17, 0, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 3, 1, LavaridgeTown_Gym_B1F_EventScript_1FE936, 0
 	object_event 4, EVENT_OBJ_GFX_ZHIKER, 0, 4, 16, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 3, 1, LavaridgeTown_Gym_B1F_EventScript_1FE951, 0
 
-LavaridgeTown_Gym_B1F_MapWarps::
+LavaridgeTown_Gym_B1F_MapWarps:
 	warp_def 10, 18, 3, 2, MAP_LAVARIDGE_TOWN
 	warp_def 0, 17, 3, 6, MAP_LAVARIDGE_TOWN
 	warp_def 8, 9, 3, 3, MAP_LAVARIDGE_TOWN
@@ -32,3 +32,4 @@ LavaridgeTown_Gym_B1F_MapWarps::
 
 LavaridgeTown_Gym_B1F_MapEvents::
 	map_events LavaridgeTown_Gym_B1F_EventObjects, LavaridgeTown_Gym_B1F_MapWarps, 0x0, 0x0
+

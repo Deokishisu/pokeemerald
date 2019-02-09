@@ -1,4 +1,4 @@
-Route134_EventObjects::
+Route134_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_SWIMMER_M, 0, 49, 9, 1, MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT, 3, 5, 1, 2, Route134_EventScript_1F7653, 0
 	object_event 2, EVENT_OBJ_GFX_SWIMMER_F, 0, 58, 7, 1, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 3, Route134_EventScript_1F766A, 0
 	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_M, 0, 41, 23, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 2, Route134_EventScript_1F7698, 0
@@ -13,3 +13,4 @@ Route134_EventObjects::
 
 Route134_MapEvents::
 	map_events Route134_EventObjects, 0x0, 0x0, 0x0
+

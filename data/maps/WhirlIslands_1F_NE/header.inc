@@ -1,14 +1,15 @@
-WhirlIslands_1F_NE::
+WhirlIslands_1F_NE:
 	.4byte WhirlIslands_1F_NE_Layout
 	.4byte WhirlIslands_1F_NE_MapEvents
 	.4byte WhirlIslands_1F_NE_MapScripts
 	.4byte 0x0
 	.2byte MUS_DAN02
-	.2byte 2691
+	.2byte LAYOUT_WHIRL_ISLANDS_1F_NE
 	.byte MAPSEC_WHIRL_ISLANDS
-	.byte FALSE
+	.byte 0
 	.byte WEATHER_SUNNY
 	.byte MAP_TYPE_UNDERGROUND
-	.2byte PAL_DUNGEON_DARK
-	map_header_flags allow_bike=1, allow_escape_rope=1, allow_run=0, show_map_name=TRUE
+	.2byte 0
+	map_header_flags allow_bike=1, allow_escape_rope=1, allow_run=0, show_map_name=0
 	.byte MAP_BATTLE_SCENE_NORMAL
+

@@ -1,10 +1,10 @@
-GoldenrodCity_EventObjects::
+GoldenrodCity_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_POKEFAN_M, 0, 7, 18, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, SlateportCity_EventScript_1DCED9, 0
 	object_event 2, EVENT_OBJ_GFX_YOUNGSTER, 0, 30, 17, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, SlateportCity_EventScript_1DCEF6, 0
-	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_F, PAL_NPC_GREEN, 12, 16, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, SlateportCity_EventScript_1DCEB8, 0
+	object_event 3, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 12, 16, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, SlateportCity_EventScript_1DCEB8, 0
 	object_event 4, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 20, 26, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 2, 0, 0, SlateportCity_EventScript_1DCF17, 0
-	object_event 5, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_RED, 19, 17, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, SlateportCity_EventScript_1DD009, FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
-	object_event 6, EVENT_OBJ_GFX_LASS, PAL_NPC_GREEN, 17, 10, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 0, 0, 0, SlateportCity_EventScript_1DCE42, 0
+	object_event 5, EVENT_OBJ_GFX_YOUNGSTER, 0, 19, 17, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, SlateportCity_EventScript_1DD009, FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
+	object_event 6, EVENT_OBJ_GFX_LASS, 0, 17, 10, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 2, 0, 0, 0, SlateportCity_EventScript_1DCE42, 0
 	object_event 7, EVENT_OBJ_GFX_OLD_MAN, 0, 11, 27, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, SlateportCity_EventScript_1DCE63, 0
 	object_event 8, EVENT_OBJ_GFX_ROCKET_GRUNT_M, 0, 4, 16, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, SlateportCity_EventScript_1DD020, FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
 	object_event 9, EVENT_OBJ_GFX_ROCKET_GRUNT_M, 0, 28, 20, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, SlateportCity_EventScript_1DD037, FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
@@ -13,9 +13,9 @@ GoldenrodCity_EventObjects::
 	object_event 12, EVENT_OBJ_GFX_ROCKET_GRUNT_M, 0, 29, 20, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, SlateportCity_EventScript_1DD07C, FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
 	object_event 13, EVENT_OBJ_GFX_ROCKET_GRUNT_M, 0, 29, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, SlateportCity_EventScript_1DD093, FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
 	object_event 14, EVENT_OBJ_GFX_ROCKET_GRUNT_M, 0, 31, 10, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, SlateportCity_EventScript_1DD0AA, FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
-	object_event 15, EVENT_OBJ_GFX_POKEFAN_M, PAL_NPC_RED, 12, 22, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, SlateportCity_EventScript_1DCE84, 0
+	object_event 15, EVENT_OBJ_GFX_POKEFAN_M, 0, 12, 22, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, SlateportCity_EventScript_1DCE84, 0
 
-GoldenrodCity_MapWarps::
+GoldenrodCity_MapWarps:
 	warp_def 24, 7, 0, 0, MAP_GOLDENROD_CITY_GYM
 	warp_def 29, 29, 0, 0, MAP_GOLDENROD_CITY_BIKE_SHOP
 	warp_def 31, 21, 0, 0, MAP_GOLDENROD_CITY_HOUSE2
@@ -32,7 +32,7 @@ GoldenrodCity_MapWarps::
 	warp_def 11, 29, 0, 4, MAP_GOLDENROD_CITY_UNDERGROUND_SWITCH_ROOM_ENTRANCES
 	warp_def 15, 27, 0, 0, MAP_GOLDENROD_CITY_POKEMON_CENTER_1F
 
-GoldenrodCity_MapBGEvents::
+GoldenrodCity_MapBGEvents:
 	bg_event 10, 14, 0, BG_EVENT_PLAYER_FACING_ANY, SlateportCity_EventScript_1DCFB2
 	bg_event 4, 17, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E73
 	bg_event 26, 27, 0, BG_EVENT_PLAYER_FACING_NORTH, SlateportCity_EventScript_271E73
@@ -48,3 +48,4 @@ GoldenrodCity_MapBGEvents::
 
 GoldenrodCity_MapEvents::
 	map_events GoldenrodCity_EventObjects, GoldenrodCity_MapWarps, 0x0, GoldenrodCity_MapBGEvents
+

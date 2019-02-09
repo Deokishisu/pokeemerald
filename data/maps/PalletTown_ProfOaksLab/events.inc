@@ -1,14 +1,14 @@
-PalletTown_ProfOaksLab_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_PROF_OAK, 0, 4, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, NULL, 0
-	object_event 2, EVENT_OBJ_GFX_SCIENTIST, PAL_NPC_BLUE, 1, 8, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, FALSE, 0, NULL, 0
-	object_event 3, EVENT_OBJ_GFX_SCIENTIST, PAL_NPC_BLUE, 8, 9, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, FALSE, 0, NULL, 0
-	object_event 4, EVENT_OBJ_GFX_SCIENTIST, PAL_NPC_BLUE, 1, 4, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, FALSE, 0, NULL, 0
+PalletTown_ProfOaksLab_EventObjects:
+	object_event 1, EVENT_OBJ_GFX_PROF_OAK, 0, 4, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, NULL, 0
+	object_event 2, EVENT_OBJ_GFX_SCIENTIST, 0, 1, 8, 3, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT, 1, 0, 0, 0, NULL, 0
+	object_event 3, EVENT_OBJ_GFX_SCIENTIST, 0, 8, 9, 3, MOVEMENT_TYPE_WANDER_UP_AND_DOWN, 0, 1, 0, 0, NULL, 0
+	object_event 4, EVENT_OBJ_GFX_SCIENTIST, 0, 1, 4, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, NULL, 0
 
-PalletTown_ProfOaksLab_MapWarps::
+PalletTown_ProfOaksLab_MapWarps:
 	warp_def 4, 11, 3, 2, MAP_PALLET_TOWN
 	warp_def 5, 11, 3, 2, MAP_PALLET_TOWN
 
-PalletTown_ProfOaksLab_MapBGEvents::
+PalletTown_ProfOaksLab_MapBGEvents:
 	bg_event 6, 1, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
 	bg_event 7, 1, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
 	bg_event 8, 1, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
@@ -28,3 +28,4 @@ PalletTown_ProfOaksLab_MapBGEvents::
 
 PalletTown_ProfOaksLab_MapEvents::
 	map_events PalletTown_ProfOaksLab_EventObjects, PalletTown_ProfOaksLab_MapWarps, 0x0, PalletTown_ProfOaksLab_MapBGEvents
+

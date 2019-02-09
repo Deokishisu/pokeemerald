@@ -1,9 +1,9 @@
-RuinsOfAlph_MainChamber_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_FAT_MAN, PAL_NPC_GREEN, 3, 7, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, FALSE, 0, NULL, 0
-	object_event 2, EVENT_OBJ_GFX_TEACHER, 0, 14, 13, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, FALSE, 0, NULL, 0
-	object_event 3, EVENT_OBJ_GFX_OLD_MAN, PAL_NPC_BROWN, 11, 19, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, FALSE, 0, NULL, 0
+RuinsOfAlph_MainChamber_EventObjects:
+	object_event 1, EVENT_OBJ_GFX_FAT_MAN, 0, 3, 7, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, NULL, 0
+	object_event 2, EVENT_OBJ_GFX_TEACHER, 0, 14, 13, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, NULL, 0
+	object_event 3, EVENT_OBJ_GFX_OLD_MAN, 0, 11, 19, 3, MOVEMENT_TYPE_FACE_UP, 0, 0, 0, 0, NULL, 0
 
-RuinsOfAlph_MainChamber_MapWarps::
+RuinsOfAlph_MainChamber_MapWarps:
 	warp_def 10, 13, 3, 3, MAP_RUINS_OF_ALPH_EXTERIOR
 	warp_def 3, 15, 3, 0, MAP_RUINS_OF_ALPH_MAIN_CHAMBER
 	warp_def 4, 15, 3, 0, MAP_RUINS_OF_ALPH_MAIN_CHAMBER
@@ -14,7 +14,7 @@ RuinsOfAlph_MainChamber_MapWarps::
 	warp_def 15, 24, 3, 0, MAP_RUINS_OF_ALPH_MAIN_CHAMBER
 	warp_def 16, 24, 3, 0, MAP_RUINS_OF_ALPH_MAIN_CHAMBER
 
-RuinsOfAlph_MainChamber_MapBGEvents::
+RuinsOfAlph_MainChamber_MapBGEvents:
 	bg_event 2, 3, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
 	bg_event 5, 3, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
 	bg_event 8, 3, 3, BG_EVENT_PLAYER_FACING_ANY, NULL
@@ -44,3 +44,4 @@ RuinsOfAlph_MainChamber_MapBGEvents::
 
 RuinsOfAlph_MainChamber_MapEvents::
 	map_events RuinsOfAlph_MainChamber_EventObjects, RuinsOfAlph_MainChamber_MapWarps, 0x0, RuinsOfAlph_MainChamber_MapBGEvents
+

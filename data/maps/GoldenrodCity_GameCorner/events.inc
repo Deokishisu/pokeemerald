@@ -1,22 +1,22 @@
-GoldenrodCity_GameCorner_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_MART_EMPLOYEE, PAL_NPC_RED, 3, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210125, 0
-	object_event 2, EVENT_OBJ_GFX_RECEPTIONIST, PAL_NPC_RED, 16, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_21012E, 0
-	object_event 3, EVENT_OBJ_GFX_RECEPTIONIST, PAL_NPC_RED, 18, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_20FBB9, 0
-	object_event 4, EVENT_OBJ_GFX_PHARMACIST, PAL_NPC_BLUE, 8, 7, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_20FCF1, 0 //DAY
-	object_event 5, EVENT_OBJ_GFX_PHARMACIST, PAL_NPC_BLUE, 8, 7, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210137, 0 //NIGHT
-	object_event 6, EVENT_OBJ_GFX_POKEFAN_M, PAL_NPC_BROWN, 11, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_21021D, 0
-	object_event 7, EVENT_OBJ_GFX_COOLTRAINER_M, PAL_NPC_BLUE, 14, 8, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210279, 0
-	object_event 8, EVENT_OBJ_GFX_POKEFAN_F, PAL_NPC_RED, 17, 6, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210289, 0
-	object_event 9, EVENT_OBJ_GFX_COOLTRAINER_F, PAL_NPC_GREEN, 10, 3, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, MauvilleCity_GameCorner_EventScript_20FE9F, 0
-	object_event 10, EVENT_OBJ_GFX_GENTLEMAN, PAL_NPC_BLUE, 5, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210299, 0
-	object_event 11, EVENT_OBJ_GFX_POKEFAN_M, PAL_NPC_BROWN, 2, 9, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, MauvilleCity_GameCorner_EventScript_2102B6, 0
-	object_event 12, EVENT_OBJ_GFX_POKEFAN_M, PAL_NPC_RED, 17, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, MauvilleCity_GameCorner_EventScript_2102C6, 0
+GoldenrodCity_GameCorner_EventObjects:
+	object_event 1, EVENT_OBJ_GFX_MART_EMPLOYEE, 0, 3, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210125, 0
+	object_event 2, EVENT_OBJ_GFX_RECEPTIONIST, 0, 16, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_21012E, 0
+	object_event 3, EVENT_OBJ_GFX_RECEPTIONIST, 0, 18, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_20FBB9, 0
+	object_event 4, EVENT_OBJ_GFX_PHARMACIST, 0, 8, 7, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_20FCF1, 0 //DAY
+	object_event 5, EVENT_OBJ_GFX_PHARMACIST, 0, 8, 7, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210137, 0 //NIGHT
+	object_event 6, EVENT_OBJ_GFX_POKEFAN_M, 0, 11, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_21021D, 0
+	object_event 7, EVENT_OBJ_GFX_COOLTRAINER_M, 0, 14, 8, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210279, 0
+	object_event 8, EVENT_OBJ_GFX_POKEFAN_F, 0, 17, 6, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210289, 0
+	object_event 9, EVENT_OBJ_GFX_COOLTRAINER_F, 0, 10, 3, 3, MOVEMENT_TYPE_WANDER_AROUND, 2, 1, 0, 0, MauvilleCity_GameCorner_EventScript_20FE9F, 0
+	object_event 10, EVENT_OBJ_GFX_GENTLEMAN, 0, 5, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 0, 0, MauvilleCity_GameCorner_EventScript_210299, 0
+	object_event 11, EVENT_OBJ_GFX_POKEFAN_M, 0, 2, 9, 3, MOVEMENT_TYPE_WANDER_AROUND, 1, 1, 0, 0, MauvilleCity_GameCorner_EventScript_2102B6, 0
+	object_event 12, EVENT_OBJ_GFX_POKEFAN_M, 0, 17, 10, 3, MOVEMENT_TYPE_FACE_RIGHT, 1, 1, 0, 0, MauvilleCity_GameCorner_EventScript_2102C6, 0
 
-GoldenrodCity_GameCorner_MapWarps::
+GoldenrodCity_GameCorner_MapWarps:
 	warp_def 2, 13, 3, 9, MAP_GOLDENROD_CITY
 	warp_def 3, 13, 3, 9, MAP_GOLDENROD_CITY
 
-GoldenrodCity_GameCorner_MapBGEvents::
+GoldenrodCity_GameCorner_MapBGEvents:
 	bg_event 6, 6, 0, BG_EVENT_PLAYER_FACING_ANY, MauvilleCity_GameCorner_EventScript_2102D6
 	bg_event 6, 7, 0, BG_EVENT_PLAYER_FACING_ANY, MauvilleCity_GameCorner_EventScript_2102F6
 	bg_event 6, 8, 0, BG_EVENT_PLAYER_FACING_ANY, MauvilleCity_GameCorner_EventScript_210316
@@ -51,3 +51,4 @@ GoldenrodCity_GameCorner_MapBGEvents::
 
 GoldenrodCity_GameCorner_MapEvents::
 	map_events GoldenrodCity_GameCorner_EventObjects, GoldenrodCity_GameCorner_MapWarps, 0x0, GoldenrodCity_GameCorner_MapBGEvents
+

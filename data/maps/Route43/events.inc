@@ -1,24 +1,25 @@
-Route43_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_SUPER_NERD, PAL_NPC_BLUE, 13, 5, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, TRUE, 2, Route115_EventScript_1F2B3E, 0
-	object_event 2, EVENT_OBJ_GFX_SUPER_NERD, PAL_NPC_BLUE, 13, 20, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, TRUE, 3, Route115_EventScript_1F298E, 0
-	object_event 3, EVENT_OBJ_GFX_SUPER_NERD, PAL_NPC_BLUE, 14, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, TRUE, 2, Route115_EventScript_1F2A07, 0
-	object_event 4, EVENT_OBJ_GFX_FAT_MAN, PAL_NPC_GREEN, 4, 16, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, TRUE, 4, Route115_EventScript_1F2A69, 0
-	object_event 5, EVENT_OBJ_GFX_LASS, PAL_NPC_GREEN, 9, 25, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, TRUE, 2, Route115_EventScript_1F29F0, 0
-	object_event 6, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_GREEN, 13, 40, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, TRUE, 3, Route115_EventScript_1F2ACB, 0
-	object_event 7, EVENT_OBJ_GFX_BERRY_TREE, 0, 1, 26, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, Route115_EventScript_2907A6, 0
-	object_event 8, EVENT_OBJ_GFX_ITEM_BALL, 0, 12, 32, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, FALSE, 0, Route115_EventScript_290E2A, FLAG_ITEM_ROUTE_115_SUPER_POTION
+Route43_EventObjects:
+	object_event 1, EVENT_OBJ_GFX_SUPER_NERD, 0, 13, 5, 3, MOVEMENT_TYPE_FACE_LEFT, 0, 0, 1, 2, Route115_EventScript_1F2B3E, 0
+	object_event 2, EVENT_OBJ_GFX_SUPER_NERD, 0, 13, 20, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 3, Route115_EventScript_1F298E, 0
+	object_event 3, EVENT_OBJ_GFX_SUPER_NERD, 0, 14, 7, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 2, Route115_EventScript_1F2A07, 0
+	object_event 4, EVENT_OBJ_GFX_FAT_MAN, 0, 4, 16, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 4, Route115_EventScript_1F2A69, 0
+	object_event 5, EVENT_OBJ_GFX_LASS, 0, 9, 25, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 2, Route115_EventScript_1F29F0, 0
+	object_event 6, EVENT_OBJ_GFX_YOUNGSTER, 0, 13, 40, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 3, Route115_EventScript_1F2ACB, 0
+	object_event 7, EVENT_OBJ_GFX_BERRY_TREE, 0, 1, 26, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route115_EventScript_2907A6, 0
+	object_event 8, EVENT_OBJ_GFX_ITEM_BALL, 0, 12, 32, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route115_EventScript_290E2A, FLAG_ITEM_ROUTE_115_SUPER_POTION
 
-Route43_MapWarps::
+Route43_MapWarps:
 	warp_def 9, 51, 0, 2, MAP_ROUTE43_GATE1
 	warp_def 10, 51, 0, 3, MAP_ROUTE43_GATE1
 	warp_def 17, 35, 0, 0, MAP_ROUTE43_GATE2
 	warp_def 17, 31, 3, 2, MAP_ROUTE43_GATE2
 	warp_def 18, 31, 3, 3, MAP_ROUTE43_GATE2
 
-Route43_MapBGEvents::
+Route43_MapBGEvents:
 	bg_event 13, 3, 0, BG_EVENT_PLAYER_FACING_ANY, Route115_EventScript_1F297C
 	bg_event 11, 49, 3, BG_EVENT_PLAYER_FACING_ANY, Route115_EventScript_1F2985
 	bg_event 16, 38, 3, BG_EVENT_PLAYER_FACING_ANY, Route115_EventScript_1F2985
 
 Route43_MapEvents::
 	map_events Route43_EventObjects, Route43_MapWarps, 0x0, Route43_MapBGEvents
+

@@ -1,4 +1,4 @@
-NewBarkTown_PlayersHouse_2F_EventObjects::
+NewBarkTown_PlayersHouse_2F_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_VAR_0, 0, 0, 0, 0, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, 0x0, FLAG_DECORATION_1
 	object_event 2, EVENT_OBJ_GFX_VAR_1, 0, 0, 1, 0, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, 0x0, FLAG_DECORATION_2
 	object_event 3, EVENT_OBJ_GFX_VAR_2, 0, 0, 2, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 0, 0, 0x0, FLAG_DECORATION_3
@@ -15,13 +15,14 @@ NewBarkTown_PlayersHouse_2F_EventObjects::
 	object_event 14, EVENT_OBJ_GFX_ITEM_BALL, 0, 3, 4, 0, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, LittlerootTown_BrendansHouse_2F_EventScript_1F8481, FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 	object_event 15, EVENT_OBJ_GFX_ZSWABLU_DOLL, 0, 5, 5, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, 0x0, FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL
 
-NewBarkTown_PlayersHouse_2F_MapWarps::
+NewBarkTown_PlayersHouse_2F_MapWarps:
 	warp_def 7, 0, 0, 2, MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_1F
 
-NewBarkTown_PlayersHouse_2F_MapBGEvents::
+NewBarkTown_PlayersHouse_2F_MapBGEvents:
 	bg_event 1, 1, 0, BG_EVENT_PLAYER_FACING_ANY, LittlerootTown_BrendansHouse_2F_EventScript_1F8656
 	bg_event 5, 1, 0, BG_EVENT_PLAYER_FACING_ANY, LittlerootTown_BrendansHouse_2F_EventScript_292781
 	bg_event 2, 1, 0, BG_EVENT_PLAYER_FACING_ANY, LittlerootTown_BrendansHouse_2F_EventScript_1F865F
 
 NewBarkTown_PlayersHouse_2F_MapEvents::
 	map_events NewBarkTown_PlayersHouse_2F_EventObjects, NewBarkTown_PlayersHouse_2F_MapWarps, 0x0, NewBarkTown_PlayersHouse_2F_MapBGEvents
+

@@ -1,4 +1,4 @@
-BattleFrontier_BattleTowerMultiBattleRoom_EventObjects::
+BattleFrontier_BattleTowerMultiBattleRoom_EventObjects:
 	object_event 1, EVENT_OBJ_GFX_TEALA, 0, 11, 2, 3, MOVEMENT_TYPE_FACE_DOWN, 1, 1, 0, 0, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_243E7A, 0
 	object_event 2, EVENT_OBJ_GFX_VAR_0, 0, 2, 10, 3, MOVEMENT_TYPE_LOOK_AROUND, 1, 1, 0, 0, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_243F29, FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1
 	object_event 3, EVENT_OBJ_GFX_VAR_1, 0, 17, 11, 3, MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT, 1, 1, 0, 0, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_243FFB, FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2
@@ -11,3 +11,4 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventObjects::
 
 BattleFrontier_BattleTowerMultiBattleRoom_MapEvents::
 	map_events BattleFrontier_BattleTowerMultiBattleRoom_EventObjects, 0x0, 0x0, 0x0
+

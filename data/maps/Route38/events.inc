@@ -1,19 +1,20 @@
-Route38_EventObjects::
-	object_event 1, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_BLUE, 4, 1, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, TRUE, 1, Route110_EventScript_1EF64A, 0
-	object_event 2, EVENT_OBJ_GFX_LASS, PAL_NPC_BLUE, 15, 3, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, TRUE, 2, Route110_EventScript_1EF540, 0
-	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, PAL_NPC_BLUE, 12, 15, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, TRUE, 1, Route110_EventScript_1EF4C7, 0
-	object_event 4, EVENT_OBJ_GFX_BEAUTY, PAL_NPC_BLUE, 19, 9, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, TRUE, 1, Route110_EventScript_1EF499, 0
-	object_event 5, EVENT_OBJ_GFX_SAILOR, PAL_NPC_BLUE, 24, 5, 3, MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE, 0, 0, TRUE, 2, Route110_EventScript_1EF604, 0
+Route38_EventObjects:
+	object_event 1, EVENT_OBJ_GFX_YOUNGSTER, 0, 4, 1, 3, MOVEMENT_TYPE_FACE_RIGHT, 0, 0, 1, 1, Route110_EventScript_1EF64A, 0
+	object_event 2, EVENT_OBJ_GFX_LASS, 0, 15, 3, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 2, Route110_EventScript_1EF540, 0
+	object_event 3, EVENT_OBJ_GFX_YOUNGSTER, 0, 12, 15, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 1, Route110_EventScript_1EF4C7, 0
+	object_event 4, EVENT_OBJ_GFX_BEAUTY, 0, 19, 9, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 1, 1, Route110_EventScript_1EF499, 0
+	object_event 5, EVENT_OBJ_GFX_SAILOR, 0, 24, 5, 3, MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE, 0, 0, 1, 2, Route110_EventScript_1EF604, 0
 	object_event 6, EVENT_OBJ_GFX_BERRY_TREE, 0, 12, 10, 3, MOVEMENT_TYPE_FACE_DOWN, 0, 0, 0, 0, Route110_EventScript_1EF30B, 0
-	object_event 7, EVENT_OBJ_GFX_BEAUTY, PAL_NPC_BLUE, 5, 8, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, TRUE, 1, Route110_EventScript_1EF61C, 0
+	object_event 7, EVENT_OBJ_GFX_BEAUTY, 0, 5, 8, 3, MOVEMENT_TYPE_LOOK_AROUND, 0, 0, 1, 1, Route110_EventScript_1EF61C, 0
 
-Route38_MapWarps::
+Route38_MapWarps:
 	warp_def 35, 8, 3, 2, MAP_ROUTE38_GATE
 	warp_def 35, 9, 0, 3, MAP_ROUTE38_GATE
 
-Route38_MapBGEvents::
+Route38_MapBGEvents:
 	bg_event 33, 7, 0, BG_EVENT_PLAYER_FACING_ANY, Route110_EventScript_1EF353
 	bg_event 5, 13, 0, BG_EVENT_PLAYER_FACING_ANY, Route110_EventScript_1EF365
 
 Route38_MapEvents::
 	map_events Route38_EventObjects, Route38_MapWarps, 0x0, Route38_MapBGEvents
+

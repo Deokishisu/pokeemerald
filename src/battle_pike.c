@@ -286,7 +286,7 @@ static const struct PikeRoomNPC sNPCTable[] =
         .speechId3 = 6
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_NINJA_BOY,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 13,
         .speechId2 = 32,
         .speechId3 = 37
@@ -304,7 +304,7 @@ static const struct PikeRoomNPC sNPCTable[] =
         .speechId3 = 33
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_EXPERT_M,
+        .graphicsId = EVENT_OBJ_GFX_OLD_MAN,
         .speechId1 = 0,
         .speechId2 = 0,
         .speechId3 = 0
@@ -322,43 +322,43 @@ static const struct PikeRoomNPC sNPCTable[] =
         .speechId3 = 27
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_HIKER,
+        .graphicsId = EVENT_OBJ_GFX_POKEFAN_M,
         .speechId1 = 8,
         .speechId2 = 22,
         .speechId3 = 31
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_GIRL_3,
+        .graphicsId = EVENT_OBJ_GFX_TEACHER,
         .speechId1 = 13,
         .speechId2 = 39,
         .speechId3 = 21
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_WOMAN_2,
+        .graphicsId = EVENT_OBJ_GFX_TEACHER,
         .speechId1 = 2,
         .speechId2 = 4,
         .speechId3 = 17
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_CYCLING_TRIATHLETE_M,
+        .graphicsId = EVENT_OBJ_GFX_BIKER,
         .speechId1 = 30,
         .speechId2 = 20,
         .speechId3 = 36
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_MAN_5,
+        .graphicsId = EVENT_OBJ_GFX_POKEFAN_M,
         .speechId1 = 28,
         .speechId2 = 34,
         .speechId3 = 25
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_SCHOOL_KID_M,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 23,
         .speechId2 = 38,
         .speechId3 = 26
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_FISHERMAN,
+        .graphicsId = EVENT_OBJ_GFX_FAT_MAN,
         .speechId1 = 23,
         .speechId2 = 30,
         .speechId3 = 11
@@ -370,37 +370,37 @@ static const struct PikeRoomNPC sNPCTable[] =
         .speechId3 = 14
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_MANIAC,
+        .graphicsId = EVENT_OBJ_GFX_SUPER_NERD,
         .speechId1 = 2,
         .speechId2 = 29,
         .speechId3 = 26
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_RUNNING_TRIATHLETE_M,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 37,
         .speechId2 = 12,
         .speechId3 = 32
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_MAN_3,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 24,
         .speechId2 = 23,
         .speechId3 = 38
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_WOMAN_3,
+        .graphicsId = EVENT_OBJ_GFX_TEACHER,
         .speechId1 = 5,
         .speechId2 = 22,
         .speechId3 = 4
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_LITTLE_BOY,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 41,
         .speechId2 = 37,
         .speechId3 = 35
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_TUBER_F,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 39,
         .speechId2 = 14,
         .speechId3 = 13
@@ -412,19 +412,19 @@ static const struct PikeRoomNPC sNPCTable[] =
         .speechId3 = 9
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_LITTLE_GIRL,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 40,
         .speechId2 = 20,
         .speechId3 = 16
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_RUNNING_TRIATHLETE_F,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 18,
         .speechId2 = 13,
         .speechId3 = 21
     },
     {
-        .graphicsId = EVENT_OBJ_GFX_MAN_1,
+        .graphicsId = EVENT_OBJ_GFX_CAL,
         .speechId1 = 22,
         .speechId2 = 31,
         .speechId3 = 27

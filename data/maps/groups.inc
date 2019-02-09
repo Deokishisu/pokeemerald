@@ -1,4 +1,3 @@
-	.align 2
 gMapGroup0::
 	.4byte NewBarkTown
 	.4byte CherrygroveCity
@@ -70,7 +69,6 @@ gMapGroup0::
 	.4byte Route27
 	.4byte Route28
 
-	.align 2
 gMapGroup1::
 	.4byte NewBarkTown_PlayersHouse_1F
 	.4byte NewBarkTown_PlayersHouse_2F
@@ -78,7 +76,6 @@ gMapGroup1::
 	.4byte NewBarkTown_House
 	.4byte NewBarkTown_ProfElmsLab
 
-	.align 2
 gMapGroup2::
 	.4byte CherrygroveCity_House1
 	.4byte CherrygroveCity_House2
@@ -87,7 +84,6 @@ gMapGroup2::
 	.4byte CherrygroveCity_PokemonCenter_2F
 	.4byte CherrygroveCity_Mart
 
-	.align 2
 gMapGroup3::
 	.4byte VioletCity_EarlsPokemonAcademy
 	.4byte VioletCity_Gym
@@ -97,7 +93,6 @@ gMapGroup3::
 	.4byte VioletCity_PokemonCenter_2F
 	.4byte VioletCity_Mart
 
-	.align 2
 gMapGroup4::
 	.4byte AzaleaTown_CharcoalKiln
 	.4byte AzaleaTown_PokemonCenter_1F
@@ -106,7 +101,6 @@ gMapGroup4::
 	.4byte AzaleaTown_KurtsHouse
 	.4byte AzaleaTown_Mart
 
-	.align 2
 gMapGroup5::
 	.4byte GoldenrodCity_PokemonCenter_1F
 	.4byte GoldenrodCity_PokemonCenter_2F
@@ -132,7 +126,6 @@ gMapGroup5::
 	.4byte GoldenrodCity_DepartmentStoreRooftop
 	.4byte GoldenrodCity_DepartmentStoreElevator
 
-	.align 2
 gMapGroup6::
 	.4byte EcruteakCity_PokemonCenter_1F
 	.4byte EcruteakCity_PokemonCenter_2F
@@ -144,7 +137,6 @@ gMapGroup6::
 	.4byte EcruteakCity_TinTowerGate
 	.4byte EcruteakCity_WiseTriosRoom
 
-	.align 2
 gMapGroup7::
 	.4byte OlivineCity_PokemonCenter_1F
 	.4byte OlivineCity_PokemonCenter_2F
@@ -157,7 +149,6 @@ gMapGroup7::
 	.4byte OlivineCity_PortPassage
 	.4byte OlivineCity_Port
 
-	.align 2
 gMapGroup8::
 	.4byte CianwoodCity_PokemonCenter_1F
 	.4byte CianwoodCity_PokemonCenter_2F
@@ -168,7 +159,6 @@ gMapGroup8::
 	.4byte CianwoodCity_ManiasHouse
 	.4byte CianwoodCity_PokeSeersHouse
 
-	.align 2
 gMapGroup9::
 	.4byte MahoganyTown_PokemonCenter_1F
 	.4byte MahoganyTown_PokemonCenter_2F
@@ -176,7 +166,6 @@ gMapGroup9::
 	.4byte MahoganyTown_House
 	.4byte MahoganyTown_Shop
 
-	.align 2
 gMapGroup10::
 	.4byte BlackthornCity_PokemonCenter_1F
 	.4byte BlackthornCity_PokemonCenter_2F
@@ -187,78 +176,62 @@ gMapGroup10::
 	.4byte BlackthornCity_House2
 	.4byte BlackthornCity_MoveDeletersHouse
 
-	.align 2
 gMapGroup11::
 	.4byte LakeOfRage_HiddenPowerHouse
 	.4byte LakeOfRage_FishingGurusHouse
 
-	.align 2
 gMapGroup12::
 	.4byte RuinsOfAlph_ResearchCenter
 
-	.align 2
 gMapGroup13::
 	.4byte Route29_Gate
 
-	.align 2
 gMapGroup14::
 	.4byte Route30_Berry_House
 	.4byte Route30_Mr_Pokemons_House
 
-	.align 2
 gMapGroup15::
 	.4byte Route31_Gate
 
-	.align 2
 gMapGroup16::
 	.4byte Route32_Gate
 	.4byte Route32_PokemonCenter_1F
 	.4byte Route32_PokemonCenter_2F
 
-	.align 2
 gMapGroup17::
 	.4byte Route34_Gate1
 	.4byte Route34_Gate2
 	.4byte Route34_PokemonDayCare
 
-	.align 2
 gMapGroup18::
 	.4byte Route35_Gate
 	.4byte Route35_National_Park_Gate
 
-	.align 2
 gMapGroup19::
 	.4byte Route36_Gate
 	.4byte Route36_National_Park_Gate
 
-	.align 2
 gMapGroup20::
 	.4byte Route38_Gate
 
-	.align 2
 gMapGroup21::
 	.4byte Route39_MooMooFarmHouse
 	.4byte Route39_MooMooFarmBarn
 
-	.align 2
 gMapGroup22::
 	.4byte Route40_BattleTower_Gate
 
-	.align 2
 gMapGroup23::
 	.4byte Route42_Gate
 
-	.align 2
 gMapGroup24::
 	.4byte Route43_Gate1
 	.4byte Route43_Gate2
 
-	.align 2
 gMapGroup25::
 	.4byte SilverCave_Exterior_PokemonCenter_1F
 	.4byte SilverCave_Exterior_PokemonCenter_2F
 
-	.align 2
 gMapGroup26::
 	.4byte DarkCave_Violet
 	.4byte DarkCave_Blackthorn
@@ -349,7 +322,6 @@ gMapGroup26::
 	.4byte VictoryRoad_Gate
 	.4byte VictoryRoad
 
-	.align 2
 gMapGroup27::
 	.4byte SecretBase_RedCave1
 	.4byte SecretBase_BrownCave1
@@ -380,12 +352,12 @@ gMapGroup27::
 	.4byte RecordCorner
 	.4byte DoubleBattleColosseum
 	.4byte LinkContestRoom1
-	.4byte UnknownMap_25_29
-	.4byte UnknownMap_25_30
-	.4byte UnknownMap_25_31
-	.4byte UnknownMap_25_32
-	.4byte UnknownMap_25_33
-	.4byte UnknownMap_25_34
+	.4byte UnknownLinkContestRoom_25_29
+	.4byte UnknownLinkContestRoom_25_30
+	.4byte UnknownLinkContestRoom_25_31
+	.4byte UnknownLinkContestRoom_25_32
+	.4byte UnknownLinkContestRoom_25_33
+	.4byte UnknownLinkContestRoom_25_34
 	.4byte LinkContestRoom2
 	.4byte LinkContestRoom3
 	.4byte LinkContestRoom4
@@ -413,7 +385,6 @@ gMapGroup27::
 	.4byte BattlePyramidSquare16
 	.4byte UnionRoom
 
-	.align 2
 gMapGroup28::
 	.4byte SafariZone_Northwest
 	.4byte SafariZone_North
@@ -505,16 +476,13 @@ gMapGroup28::
 	.4byte NavelRock_Bottom
 	.4byte TrainerHill_Elevator
 
-	.align 2
 gMapGroup29::
 	.4byte Route27_House
 
-	.align 2
 gMapGroup30::
 	.4byte Route26_House1
 	.4byte Route26_House2
 
-	.align 2
 gMapGroup31::
 	.4byte IndigoPlateau_PokemonCenter_1F
 	.4byte IndigoPlateau_PokemonCenter_2F
@@ -525,22 +493,18 @@ gMapGroup31::
 	.4byte IndigoPlateau_LancesRoom
 	.4byte IndigoPlateau_HallOfFame
 
-	.align 2
 gMapGroup32::
 	.4byte Route28_House
 
-	.align 2
 gMapGroup33::
 	.4byte PalletTown_RedsHouse_1F
 	.4byte PalletTown_RedsHouse_2F
 	.4byte PalletTown_BluesHouse
 	.4byte PalletTown_ProfOaksLab
 
-	.align 2
 gMapGroup34::
 	.4byte Route119_WeatherInstitute_1F
 
-	.align 2
 gMapGroup35::
 	.4byte Route119_WeatherInstitute_2F
 	.4byte Route119_House
@@ -792,3 +756,4 @@ gMapGroups::
 	.4byte gMapGroup33
 	.4byte gMapGroup34
 	.4byte gMapGroup35
+
