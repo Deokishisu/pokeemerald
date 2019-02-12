@@ -7,3 +7,4 @@ Route32_PokemonCenter_1F_MapScript1_1FC011: @ 81FC011
 	setrespawn HEAL_LOCATION_ROUTE32
 	call OldaleTown_PokemonCenter_1F_EventScript_2718DE
 	end
+	
