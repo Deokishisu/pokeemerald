@@ -24,8 +24,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerHill_Entrance_EventScript_2681FD",
       "flag": "0"
     },
@@ -38,8 +38,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerHill_Entrance_EventScript_2681EF",
       "flag": "0"
     },
@@ -52,8 +52,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerHill_Entrance_EventScript_2683C7",
       "flag": "0"
     },
@@ -66,8 +66,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerHill_Entrance_EventScript_2683AC",
       "flag": "0"
     },
@@ -80,8 +80,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerHill_Entrance_EventScript_268391",
       "flag": "0"
     }
@@ -115,8 +115,8 @@
       "x": 9,
       "y": 6,
       "elevation": 3,
-      "var": "VAR_0x40D6",
-      "var_value": 0,
+      "var": "VAR_TRAINER_HILL_IS_ACTIVE",
+      "var_value": "0",
       "script": "TrainerHill_Entrance_EventScript_268229"
     }
   ],

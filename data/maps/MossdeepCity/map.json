@@ -30,8 +30,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4AD1",
       "flag": "0"
     },
@@ -44,8 +44,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4AF9",
       "flag": "0"
     },
@@ -58,8 +58,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4AB2",
       "flag": "0"
     },
@@ -72,8 +72,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4AF0",
       "flag": "0"
     },
@@ -86,8 +86,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4B02",
       "flag": "0"
     },
@@ -100,8 +100,8 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_2910F5",
       "flag": "FLAG_ITEM_MOSSDEEP_CITY_NET_BALL"
     },
@@ -114,8 +114,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4C10",
       "flag": "0"
     },
@@ -128,8 +128,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4B0B",
       "flag": "0"
     },
@@ -142,8 +142,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4C26",
       "flag": "0"
     },
@@ -156,8 +156,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA"
     },
@@ -170,8 +170,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA"
     },
@@ -184,8 +184,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA"
     },
@@ -198,8 +198,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA"
     },
@@ -212,8 +212,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA"
     },
@@ -226,8 +226,8 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 3,
       "movement_range_y": 3,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_2C81EE",
       "flag": "0"
     },
@@ -240,8 +240,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4C85",
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_SCOTT"
     },
@@ -254,8 +254,8 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 3,
       "movement_range_y": 3,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_1E4C7C",
       "flag": "0"
     }
@@ -339,7 +339,7 @@
       "y": 25,
       "elevation": 0,
       "var": "VAR_TEMP_1",
-      "var_value": 0,
+      "var_value": "0",
       "script": "MossdeepCity_EventScript_1E4B38"
     },
     {
@@ -348,7 +348,7 @@
       "y": 25,
       "elevation": 0,
       "var": "VAR_TEMP_1",
-      "var_value": 0,
+      "var_value": "0",
       "script": "MossdeepCity_EventScript_1E4B38"
     },
     {
@@ -357,7 +357,7 @@
       "y": 27,
       "elevation": 0,
       "var": "VAR_TEMP_1",
-      "var_value": 0,
+      "var_value": "0",
       "script": "MossdeepCity_EventScript_1E4B38"
     },
     {
@@ -366,7 +366,7 @@
       "y": 27,
       "elevation": 0,
       "var": "VAR_TEMP_1",
-      "var_value": 0,
+      "var_value": "0",
       "script": "MossdeepCity_EventScript_1E4B38"
     },
     {
@@ -374,8 +374,8 @@
       "x": 42,
       "y": 21,
       "elevation": 5,
-      "var": "VAR_0x405D",
-      "var_value": 1,
+      "var": "VAR_MOSSDEEP_STATE",
+      "var_value": "1",
       "script": "MossdeepCity_EventScript_1E4B41"
     },
     {
@@ -383,8 +383,8 @@
       "x": 41,
       "y": 22,
       "elevation": 5,
-      "var": "VAR_0x405D",
-      "var_value": 1,
+      "var": "VAR_MOSSDEEP_STATE",
+      "var_value": "1",
       "script": "MossdeepCity_EventScript_1E4B41"
     },
     {
@@ -392,8 +392,8 @@
       "x": 41,
       "y": 23,
       "elevation": 5,
-      "var": "VAR_0x405D",
-      "var_value": 1,
+      "var": "VAR_MOSSDEEP_STATE",
+      "var_value": "1",
       "script": "MossdeepCity_EventScript_1E4B41"
     },
     {
@@ -401,8 +401,8 @@
       "x": 41,
       "y": 24,
       "elevation": 5,
-      "var": "VAR_0x405D",
-      "var_value": 1,
+      "var": "VAR_MOSSDEEP_STATE",
+      "var_value": "1",
       "script": "MossdeepCity_EventScript_1E4B41"
     },
     {
@@ -410,8 +410,8 @@
       "x": 40,
       "y": 25,
       "elevation": 5,
-      "var": "VAR_0x405D",
-      "var_value": 1,
+      "var": "VAR_MOSSDEEP_STATE",
+      "var_value": "1",
       "script": "MossdeepCity_EventScript_1E4B41"
     },
     {
@@ -419,8 +419,8 @@
       "x": 40,
       "y": 26,
       "elevation": 5,
-      "var": "VAR_0x405D",
-      "var_value": 1,
+      "var": "VAR_MOSSDEEP_STATE",
+      "var_value": "1",
       "script": "MossdeepCity_EventScript_1E4B41"
     }
   ],
@@ -447,7 +447,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MossdeepCity_EventScript_271E73"
+      "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
@@ -455,7 +455,7 @@
       "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MossdeepCity_EventScript_271E6A"
+      "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
@@ -471,7 +471,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MossdeepCity_EventScript_271E73"
+      "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
@@ -479,7 +479,7 @@
       "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "MossdeepCity_EventScript_271E6A"
+      "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",

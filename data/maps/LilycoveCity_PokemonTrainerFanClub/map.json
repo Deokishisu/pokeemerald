@@ -24,8 +24,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CA8E",
       "flag": "0"
     },
@@ -38,8 +38,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CA17",
       "flag": "0"
     },
@@ -52,8 +52,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CB05",
       "flag": "0"
     },
@@ -66,8 +66,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CB7C",
       "flag": "0"
     },
@@ -80,8 +80,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CBF3",
       "flag": "FLAG_LINK_CONTEST_POKE_BALL"
     },
@@ -94,8 +94,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CC55",
       "flag": "FLAG_HIDE_FANCLUB_BOY"
     },
@@ -108,8 +108,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CCB7",
       "flag": "FLAG_HIDE_FANCLUB_LADY"
     },
@@ -122,8 +122,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CD19",
       "flag": "FLAG_HIDE_FANCLUB_OLD_LADY"
     },
@@ -136,8 +136,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_PokemonTrainerFanClub_EventScript_21CD7B",
       "flag": "FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER"
     }

@@ -240,12 +240,6 @@ static IWRAM_DATA u8 sActiveList[32];
 
 extern u8 *gFieldEffectScriptPointers[];
 extern const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[];
-extern void sub_81555D8(u8, u8);
-extern void pal_fill_for_maplights(void);
-extern void sub_80E1558(u8);
-extern void sub_80E1570(void);
-extern bool8 sub_80E1584(void);
-extern void WarpFadeScreen(void);
 
 // .rodata
 const u32 gNewGameBirchPic[] = INCBIN_U32("graphics/birch_speech/birch.4bpp");
@@ -2443,7 +2437,7 @@ static void sub_80B8410(struct Task *task)
 bool8 FldEff_FieldMoveShowMon(void)
 {
     u8 taskId;
-    if (is_map_type_1_2_3_5_or_6(GetCurrentMapType()) == TRUE)
+    if (IsMapTypeOutdoors(GetCurrentMapType()) == TRUE)
     {
         taskId = CreateTask(sub_80B8554, 0xff);
     } else
@@ -2620,7 +2614,7 @@ static void sub_80B8874(u16 offs)
     dest = (u16 *)(VRAM + 0x140 + offs);
     for (i = 0; i < 0x140; i++, dest++)
     {
-        *dest = gFieldMoveStreaksTilemap[i] | 0xf000;
+        *dest = gFieldMoveStreaksTilemap[i] | METATILE_ELEVATION_MASK;
     }
 }
 
@@ -2953,15 +2947,15 @@ u8 sub_80B8F98(void)
     {
         for (j = 12; j < 18; j++)
         {
-            ((u16*)(VRAM + 0xF800))[i * 32 + j] = 0xBFF4 + i * 6 + j + 1;
+            ((u16*)(BG_SCREEN_ADDR(31)))[i * 32 + j] = 0xBFF4 + i * 6 + j + 1;
         }
     }
     for (k = 0; k < 90; k++)
     {
         for (i = 0; i < 8; i++)
         {
-            *(u16*)(VRAM + 0x8000 + (k + 1) * 32 + i * 4) = (gUnknown_0855B630[k * 32 + i * 4 + 1] << 8) + gUnknown_0855B630[k * 32 + i * 4];
-            *(u16*)(VRAM + 0x8000 + (k + 1) * 32 + i * 4 + 2) = (gUnknown_0855B630[k * 32 + i * 4 + 3] << 8) + gUnknown_0855B630[k * 32 + i * 4 + 2];
+            *(u16*)(BG_CHAR_ADDR(2) + (k + 1) * 32 + i * 4) = (gUnknown_0855B630[k * 32 + i * 4 + 1] << 8) + gUnknown_0855B630[k * 32 + i * 4];
+            *(u16*)(BG_CHAR_ADDR(2) + (k + 1) * 32 + i * 4 + 2) = (gUnknown_0855B630[k * 32 + i * 4 + 3] << 8) + gUnknown_0855B630[k * 32 + i * 4 + 2];
         }
     }
     return spriteId;
