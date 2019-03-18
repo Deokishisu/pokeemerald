@@ -1107,7 +1107,7 @@ static u8 SaveReturnSuccessCallback(void)
 {
     if (!IsSEPlaying() && SaveSuccesTimer())
     {
-		sub_819746C(GetStartMenuWindowId(), FALSE);
+		//sub_819746C(GetStartMenuWindowId(), FALSE);
 		RemoveStartMenuWindow();
         HideSaveInfoWindow();
         return SAVE_SUCCESS;
@@ -1137,7 +1137,7 @@ static u8 SaveReturnErrorCallback(void)
     }
     else
     {
-        sub_819746C(GetStartMenuWindowId(), FALSE);
+        //sub_819746C(GetStartMenuWindowId(), FALSE);
 		RemoveStartMenuWindow();
 		HideSaveInfoWindow();
         return SAVE_ERROR;

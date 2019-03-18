@@ -35,8 +35,8 @@
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 1,
       "movement_range_y": 2,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootTown_EventScript_1E8034",
       "flag": "0"
     },
@@ -49,8 +49,8 @@
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 2,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootTown_EventScript_1E8022",
       "flag": "868"
     },
@@ -63,8 +63,8 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootTown_EventScript_1E802B",
       "flag": "0"
     },
@@ -77,8 +77,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootTown_EventScript_1E863D",
       "flag": "752"
     },
@@ -91,8 +91,8 @@
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
     },
@@ -105,8 +105,8 @@
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
     },
@@ -119,8 +119,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "794"
     },
@@ -133,8 +133,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": 0,
-      "trainer_sight_or_berry_tree_id": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "795"
     }
@@ -176,7 +176,7 @@
       "y": 1,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 0,
+      "var_value": "0",
       "script": "LittlerootTown_EventScript_1E8091"
     },
     {
@@ -185,7 +185,7 @@
       "y": 1,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 0,
+      "var_value": "0",
       "script": "LittlerootTown_EventScript_1E80EF"
     },
     {
@@ -194,7 +194,7 @@
       "y": 1,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 1,
+      "var_value": "1",
       "script": "LittlerootTown_EventScript_1E811F"
     },
     {
@@ -203,7 +203,7 @@
       "y": 9,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 3,
+      "var_value": "3",
       "script": "LittlerootTown_EventScript_1E81F9"
     },
     {
@@ -212,7 +212,7 @@
       "y": 9,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 3,
+      "var_value": "3",
       "script": "LittlerootTown_EventScript_1E8205"
     },
     {
@@ -221,7 +221,7 @@
       "y": 9,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 3,
+      "var_value": "3",
       "script": "LittlerootTown_EventScript_1E81E1"
     },
     {
@@ -230,7 +230,7 @@
       "y": 9,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 3,
+      "var_value": "3",
       "script": "LittlerootTown_EventScript_1E81ED"
     },
     {
@@ -239,7 +239,7 @@
       "y": 2,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 3,
+      "var_value": "3",
       "script": "LittlerootTown_EventScript_1E81BB"
     },
     {
@@ -248,7 +248,7 @@
       "y": 2,
       "elevation": 3,
       "var": "VAR_0x4050",
-      "var_value": 3,
+      "var_value": "3",
       "script": "LittlerootTown_EventScript_1E81CE"
     }
   ],

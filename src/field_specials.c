@@ -3453,22 +3453,22 @@ void CreateUnusualWeatherEvent(void)
 bool32 GetUnusualWeatherMapNameAndType(void)
 {
     static const u8 sUnusualWeatherMapNumbers[] = {
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE129),
-        MAP_NUM(ROUTE129)
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE)
     };
 
     u16 unusualWeather = VarGet(VAR_UNUSUAL_WEATHER_LOCATION);
@@ -3489,22 +3489,22 @@ bool8 UnusualWeatherHasExpired(void)
 {
     // Duplicate array.
     static const u8 sUnusualWeatherMapNumbers_2[] = {
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE129),
-        MAP_NUM(ROUTE129)
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE),
+        MAP_NUM(NONE)
     };
 
     u16 steps = VarGet(VAR_UNUSUAL_WEATHER_STEP_COUNTER);

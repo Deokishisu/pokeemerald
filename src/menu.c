@@ -138,7 +138,6 @@ const struct MoveMenuInfoIcon gMoveMenuInfoIcons[] =
 //old
 extern void sub_81973A4(void);
 extern void DrawStandardFrame(u8, u8, u8, u8, u8, u8);
-extern void DrawDialogueFrame(u8, u8, u8, u8, u8, u8);
 extern void sub_81977BC(u8, u8, u8, u8, u8, u8);
 extern void sub_8197804(u8, u8, u8, u8, u8, u8);
 extern void sub_8197BB4(u8, u8, u8, u8, u8, u8);
