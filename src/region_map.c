@@ -400,11 +400,6 @@ static const struct SpritePalette gUnknown_085A1F10 =
     .tag = 2
 };
 
-<<<<<<< HEAD
-static const u16 sUnknown_085A1F18[][2] = {
-    {FLAG_LANDMARK_BATTLE_FRONTIER, MAPSEC_BATTLE_FRONTIER},
-    {-1, MAPSEC_DYNAMIC}
-=======
 static const u16 sUnknown_085A1F18[][2] =
 {
     {
@@ -413,9 +408,8 @@ static const u16 sUnknown_085A1F18[][2] =
     },
     {
         -1,
-        MAPSEC_NONE
+        MAPSEC_NEW_BARK_TOWN
     }
->>>>>>> 7154d2614d21c5a5931fc944e247059d49cda782
 };
 
 static const struct OamData gOamData_085A1F20 =
