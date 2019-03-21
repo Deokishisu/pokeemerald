@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_MaysHouse_2F_EventScript_292799",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "OldaleTown_EventScript_1E8EFC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_29283F",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "OldaleTown_EventScript_1E9070",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -126,36 +126,36 @@
       "x": 0,
       "y": 10,
       "elevation": 3,
-      "var": "VAR_0x4051",
+      "var": "0",
       "var_value": "0",
-      "script": "OldaleTown_EventScript_1E903F"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 8,
       "y": 19,
       "elevation": 3,
-      "var": "VAR_0x40C7",
+      "var": "0",
       "var_value": "1",
-      "script": "OldaleTown_EventScript_1E9086"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 9,
       "y": 19,
       "elevation": 3,
-      "var": "VAR_0x40C7",
+      "var": "0",
       "var_value": "1",
-      "script": "OldaleTown_EventScript_1E90A6"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 10,
       "y": 19,
       "elevation": 3,
-      "var": "VAR_0x40C7",
+      "var": "0",
       "var_value": "1",
-      "script": "OldaleTown_EventScript_1E90C6"
+      "script": "0x0"
     }
   ],
   "bg_events": [
@@ -165,7 +165,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "OldaleTown_EventScript_1E8EEA"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -173,7 +173,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "OldaleTown_EventScript_271E73"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -181,7 +181,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "OldaleTown_EventScript_271E6A"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -189,7 +189,7 @@
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "OldaleTown_EventScript_271E73"
+      "script": "0x0"
     }
   ]
 }

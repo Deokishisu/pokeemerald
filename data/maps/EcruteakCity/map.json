@@ -42,7 +42,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_1DF3B3",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -56,7 +56,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_1DF3CE",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -70,7 +70,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_1DF3BC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -84,7 +84,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_1DF3C5",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -98,7 +98,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_1DF3FB",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -112,8 +112,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_1DF452",
-      "flag": "FLAG_HIDE_MAUVILLE_CITY_WALLY"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_OLD_MAN",
@@ -126,8 +126,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MauvilleCity_EventScript_1DF41D",
-      "flag": "FLAG_HIDE_MAUVILLE_CITY_WALLYS_UNCLE"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -245,7 +245,7 @@
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_271E73"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -253,7 +253,7 @@
       "y": 10,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_1DF3E0"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -261,7 +261,7 @@
       "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_271E6A"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -269,7 +269,7 @@
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_271E6A"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -277,7 +277,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_271E73"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -285,7 +285,7 @@
       "y": 27,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_1DF3D7"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -293,7 +293,7 @@
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_1DF3E9"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -301,7 +301,7 @@
       "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "MauvilleCity_EventScript_1DF3F2"
+      "script": "0x0"
     }
   ]
 }

@@ -26,8 +26,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_2929C5",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_BIG_ONIX_DOLL",
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_292ACD",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_292ABA",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,8 +68,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_1F89F3",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_CHUCK",
@@ -83,7 +83,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_PLAYERS_HOUSE_DAD"
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ZNINJA_BOY",
@@ -96,8 +96,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_1F8A3D",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ZRIVAL_BRENDAN_NORMAL",
@@ -111,7 +111,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN"
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -143,36 +143,36 @@
       "x": 6,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_0x4092",
+      "var": "VAR_TEMP_0",
       "var_value": "4",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_1F78A3"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 8,
       "y": 1,
       "elevation": 0,
-      "var": "VAR_0x408D",
+      "var": "VAR_TEMP_0",
       "var_value": "2",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_1F78BE"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 9,
       "y": 2,
       "elevation": 0,
-      "var": "VAR_0x408D",
+      "var": "VAR_TEMP_0",
       "var_value": "2",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_1F78CA"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 6,
       "y": 0,
       "elevation": 0,
-      "var": "VAR_0x408D",
+      "var": "VAR_TEMP_0",
       "var_value": "2",
-      "script": "LittlerootTown_BrendansHouse_1F_EventScript_1F78D6"
+      "script": "0x0"
     }
   ],
   "bg_events": []

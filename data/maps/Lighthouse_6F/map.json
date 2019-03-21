@@ -87,9 +87,9 @@
       "x": 14,
       "y": 9,
       "elevation": 3,
-      "var": "VAR_0x40D7",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "SkyPillar_Top_EventScript_23979A"
+      "script": "0x0"
     }
   ],
   "bg_events": []

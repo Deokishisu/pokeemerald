@@ -26,7 +26,7 @@
       "movement_range_y": 1,
       "trainer_type": "3",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "LavaridgeTown_Gym_B1F_EventScript_1FE91B",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "3",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "LavaridgeTown_Gym_B1F_EventScript_1FE8CA",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 1,
       "trainer_type": "3",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "LavaridgeTown_Gym_B1F_EventScript_1FE936",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 1,
       "trainer_type": "3",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "LavaridgeTown_Gym_B1F_EventScript_1FE951",
+      "script": "0x0",
       "flag": "0"
     }
   ],

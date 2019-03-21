@@ -195,7 +195,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLE_ROOT_TOWN_PLAYERS_BEDROOM_MOM"
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -208,8 +208,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_1F8481",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ZSWABLU_DOLL",
@@ -223,7 +223,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL"
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -243,7 +243,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_1F8656"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -251,7 +251,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_292781"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -259,7 +259,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_BrendansHouse_2F_EventScript_1F865F"
+      "script": "0x0"
     }
   ]
 }

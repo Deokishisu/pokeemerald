@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_EventScript_1E088A",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_EventScript_1E085F",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_EventScript_1E08DA",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_EventScript_1E08D1",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -168,18 +168,18 @@
       "x": 13,
       "y": 12,
       "elevation": 3,
-      "var": "VAR_0x405A",
+      "var": "VAR_TEMP_0",
       "var_value": "1",
-      "script": "RustboroCity_EventScript_1E095A"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 13,
       "y": 13,
       "elevation": 3,
-      "var": "VAR_0x405A",
+      "var": "VAR_TEMP_0",
       "var_value": "1",
-      "script": "RustboroCity_EventScript_1E0971"
+      "script": "0x0"
     }
   ],
   "bg_events": [
@@ -189,7 +189,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_EventScript_1E08F5"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -197,7 +197,7 @@
       "y": 24,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_EventScript_1E0910"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -205,7 +205,7 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_EventScript_271E6A"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -213,7 +213,7 @@
       "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_EventScript_271E73"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -221,7 +221,7 @@
       "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_EventScript_1E0907"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -229,7 +229,7 @@
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_EventScript_271E6A"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -237,7 +237,7 @@
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_EventScript_271E73"
+      "script": "0x0"
     }
   ]
 }

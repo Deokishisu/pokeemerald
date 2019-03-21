@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route109_EventScript_1EE910",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route109_EventScript_1EEA3D",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route109_EventScript_1EEA54",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route109_EventScript_1EEA6B",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route109_EventScript_1EEA82",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -121,7 +121,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route109_EventScript_1EEA99",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -134,7 +134,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route109_EventScript_1EEA2B"
+      "script": "0x0"
     },
     {
       "type": "hidden_item",
@@ -142,7 +142,7 @@
       "y": 2,
       "elevation": 0,
       "item": "ITEM_ETHER",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_109_REVIVE"
+      "flag": "0"
     }
   ]
 }

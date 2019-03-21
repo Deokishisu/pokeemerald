@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "DewfordTown_Gym_EventScript_1FC7C2",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "DewfordTown_Gym_EventScript_1FC8B7",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "DewfordTown_Gym_EventScript_1FC8D9",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "DewfordTown_Gym_EventScript_1FC8FB",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "DewfordTown_Gym_EventScript_1FC93F",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "DewfordTown_Gym_EventScript_1FC961",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "DewfordTown_Gym_EventScript_1FC983",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -138,7 +138,7 @@
       "y": 13,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "DewfordTown_Gym_EventScript_1FC9A2"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -146,7 +146,7 @@
       "y": 13,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "DewfordTown_Gym_EventScript_1FC9B2"
+      "script": "0x0"
     }
   ]
 }

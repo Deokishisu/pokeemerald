@@ -26,8 +26,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AquaHideout_B1F_EventScript_291358",
-      "flag": "FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_CLAIR",
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AquaHideout_B1F_EventScript_233AEC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 2,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AquaHideout_B1F_EventScript_233AEC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "AquaHideout_B1F_EventScript_233AEC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "AquaHideout_B1F_EventScript_233AEC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "AquaHideout_B1F_EventScript_233AEC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "AquaHideout_B1F_EventScript_233AEC",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -124,8 +124,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AquaHideout_B1F_EventScript_2339EB",
-      "flag": "FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_1"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -138,8 +138,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "AquaHideout_B1F_EventScript_291365",
-      "flag": "FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [

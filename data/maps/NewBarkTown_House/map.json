@@ -27,7 +27,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLE_ROOT_TOWN_PLAYERS_BEDROOM_MOM"
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ZPICHU_DOLL",
@@ -41,7 +41,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_PICHU_DOLL"
+      "flag": "0"
     }
   ],
   "warp_events": [

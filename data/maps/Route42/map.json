@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route114_EventScript_1F27F2",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route114_EventScript_1F27C4",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route114_EventScript_1F2640",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_1F2657",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_1F266E",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_1F2685",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -121,8 +121,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_290E03",
-      "flag": "FLAG_ITEM_ROUTE_114_RARE_CANDY"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -135,8 +135,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_290E10",
-      "flag": "FLAG_ITEM_ROUTE_114_PROTEIN"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_SUICUNE",
@@ -149,7 +149,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route114_EventScript_1F25D1",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -208,7 +208,7 @@
       "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route114_EventScript_1F2625"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -216,7 +216,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route114_EventScript_1F262E"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -224,7 +224,7 @@
       "y": 9,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route114_EventScript_1F2637"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -232,7 +232,7 @@
       "y": 8,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route114_EventScript_1F2637"
+      "script": "0x0"
     },
     {
       "type": "hidden_item",
@@ -240,7 +240,7 @@
       "y": 11,
       "elevation": 3,
       "item": "ITEM_MAX_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS"
+      "flag": "0"
     }
   ]
 }

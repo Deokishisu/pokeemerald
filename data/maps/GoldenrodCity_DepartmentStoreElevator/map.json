@@ -39,7 +39,7 @@
       "y": 0,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LilycoveCity_DepartmentStoreElevator_EventScript_220624"
+      "script": "0x0"
     }
   ]
 }

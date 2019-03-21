@@ -1946,6 +1946,24 @@ EventScript_RegionMap:: @ 827208F
 	releaseall
 	end
 
+Common_Text_LookCloserAtMap: @ 81F8820
+	.string "{PLAYER} took a closer look at the\n"
+	.string "HOENN region map.$"
+
+LittlerootTown_BrendansHouse_2F_EventScript_1F863F:: @ 81F863F
+	setvar VAR_0x8004, 1
+	playse SE_PC_OFF
+	special DoPCTurnOffEffect
+	releaseall
+	end
+
+LittlerootTown_MaysHouse_2F_EventScript_1F958F:: @ 81F958F
+	setvar VAR_0x8004, 2
+	playse SE_PC_OFF
+	special DoPCTurnOffEffect
+	releaseall
+	end
+
 DewfordTown_EventScript_2720A0:: @ 82720A0
 Route104_EventScript_2720A0:: @ 82720A0
 Route109_EventScript_2720A0:: @ 82720A0
@@ -2007,11 +2025,6 @@ Route101_EventScript_272134:: @ 8272134
 
 LittlerootTown_ProfessorBirchsLab_EventScript_272141:: @ 8272141
 Route101_EventScript_272141:: @ 8272141
-Route103_EventScript_272141:: @ 8272141
-	lock
-	faceplayer
-	goto_if_unset FLAG_HAS_MATCH_CALL, Route101_EventScript_272155
-	goto_if_unset FLAG_ENABLE_PROF_BIRCH_MATCH_CALL, Route101_EventScript_1FA2D2
 
 Route101_EventScript_272155:: @ 8272155
 	msgbox gUnknown_082A5C9C, MSGBOX_YESNO
@@ -2170,100 +2183,6 @@ CaveOfOrigin_UnusedRubySapphireMap3_EventScript_2722C1:: @ 82722C1
 	setvar VAR_TEMP_4, 1
 	setvar VAR_TEMP_5, 1
 	return
-
-Route120_EventScript_2722DB:: @ 82722DB
-	lock
-	faceplayer
-	setvar VAR_0x8009, 1
-	goto Route120_EventScript_272336
-	end
-
-Route120_EventScript_2722E8:: @ 82722E8
-	lock
-	faceplayer
-	setvar VAR_0x8009, 2
-	goto Route120_EventScript_272336
-	end
-
-Route120_EventScript_2722F5:: @ 82722F5
-	lock
-	faceplayer
-	setvar VAR_0x8009, 3
-	goto Route120_EventScript_272336
-	end
-
-Route120_EventScript_272302:: @ 8272302
-	lock
-	faceplayer
-	setvar VAR_0x8009, 4
-	goto Route120_EventScript_272336
-	end
-
-Route120_EventScript_27230F:: @ 827230F
-	lock
-	faceplayer
-	setvar VAR_0x8009, 5
-	goto Route120_EventScript_272336
-	end
-
-Route119_EventScript_27231C:: @ 827231C
-	lock
-	faceplayer
-	setvar VAR_0x8009, 6
-	goto Route119_EventScript_272336
-	end
-
-Route119_EventScript_272329:: @ 8272329
-	lock
-	faceplayer
-	setvar VAR_0x8009, 7
-	goto Route119_EventScript_272336
-	end
-
-Route119_EventScript_272336:: @ 8272336
-Route120_EventScript_272336:: @ 8272336
-	checkitem ITEM_DEVON_SCOPE, 1
-	compare VAR_RESULT, 1
-	goto_if_eq Route119_EventScript_272350
-	msgbox Route119_Text_1F5D00, MSGBOX_DEFAULT
-	release
-	end
-
-Route119_EventScript_272350:: @ 8272350
-	msgbox Route119_Text_1F5D23, MSGBOX_YESNO
-	compare VAR_RESULT, 1
-	goto_if_eq Route119_EventScript_272365
-	release
-	end
-
-Route119_EventScript_272365:: @ 8272365
-	msgbox Route119_Text_1F5D63, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
-	waitmovement 0
-	applymovement VAR_LAST_TALKED, Route119_Movement_2723C7
-	waitmovement 0
-	waitse
-	playmoncry SPECIES_KECLEON, 2
-	delay 40
-	waitmoncry
-	setwildbattle SPECIES_KECLEON, 30, ITEM_NONE
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	dowildbattle
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, 1
-	goto_if_eq Route119_EventScript_2723C1
-	compare VAR_RESULT, 4
-	goto_if_eq Route119_EventScript_2723C1
-	compare VAR_RESULT, 5
-	goto_if_eq Route119_EventScript_2723C1
-	release
-	end
-
-Route119_EventScript_2723C1:: @ 82723C1
-	goto Route119_EventScript_27376D
-	end
 
 FortreeCity_Movement_2723C7: @ 82723C7
 Route119_Movement_2723C7: @ 82723C7
@@ -4109,10 +4028,8 @@ EventScript_2926F8:: @ 82926F8
 	setflashradius 1
 	end
 
-	.include "data/scripts/players_house.inc"
-
 EventScript_RunningShoesManual:: @ 8292DE5
-	msgbox LittlerootTown_BrendansHouse_1F_Text_1F7F66, MSGBOX_SIGN
+	//msgbox LittlerootTown_BrendansHouse_1F_Text_1F7F66, MSGBOX_SIGN
 	end
 
 	.include "data/scripts/pokeblocks.inc"
@@ -4190,36 +4107,6 @@ Text_RepelWoreOff: @ 82A4B33
 	.string "REPEL's effect wore off…$"
 
 	.include "data/scripts/safari_zone.inc"
-
-MauvilleCity_GameCorner_EventScript_2A5AB1:: @ 82A5AB1
-	checkitem ITEM_COIN_CASE, 1
-	compare VAR_RESULT, 0
-	goto_if_eq MauvilleCity_GameCorner_EventScript_210456
-	setvar VAR_0x8004, 0
-	getpricereduction 2
-	compare VAR_RESULT, 0
-	goto_if_eq MauvilleCity_GameCorner_EventScript_2A5B0D
-	addvar VAR_0x8004, 128
-	goto MauvilleCity_GameCorner_EventScript_2A5B0D
-	end
-
-MauvilleCity_GameCorner_EventScript_2A5ADF:: @ 82A5ADF
-	checkitem ITEM_COIN_CASE, 1
-	compare VAR_RESULT, 0
-	goto_if_eq MauvilleCity_GameCorner_EventScript_210456
-	setvar VAR_0x8004, 1
-	getpricereduction 2
-	compare VAR_RESULT, 0
-	goto_if_eq MauvilleCity_GameCorner_EventScript_2A5B0D
-	addvar VAR_0x8004, 128
-	goto MauvilleCity_GameCorner_EventScript_2A5B0D
-	end
-
-MauvilleCity_GameCorner_EventScript_2A5B0D:: @ 82A5B0D
-	special PlayRoulette
-	waitstate
-	end
-
 	.include "data/text/roulette.inc"
 	.include "data/text/pokedex_rating.inc"
 	.include "data/text/lottery_corner.inc"

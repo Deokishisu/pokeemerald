@@ -26,8 +26,8 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BB00",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
@@ -41,7 +41,7 @@
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE"
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ROCKET_GRUNT_M",
@@ -55,7 +55,7 @@
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1"
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_GENTLEMAN",
@@ -69,7 +69,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_2"
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -82,8 +82,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BD64",
-      "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -96,8 +96,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BD6D",
-      "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -110,8 +110,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_OceanicMuseum_2F_EventScript_20BD76",
-      "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [

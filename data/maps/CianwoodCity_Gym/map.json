@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_Gym_EventScript_2165C8",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "FortreeCity_Gym_EventScript_2166A8",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "FortreeCity_Gym_EventScript_2166D6",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "FortreeCity_Gym_EventScript_2166ED",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "FortreeCity_Gym_EventScript_2166BF",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_Gym_EventScript_216704",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_Gym_EventScript_21671B",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_Gym_EventScript_216732",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FortreeCity_Gym_EventScript_216732",
+      "script": "0x0",
       "flag": "0"
     }
   ],
@@ -166,7 +166,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "FortreeCity_Gym_EventScript_216751"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -174,7 +174,7 @@
       "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "FortreeCity_Gym_EventScript_216761"
+      "script": "0x0"
     }
   ]
 }

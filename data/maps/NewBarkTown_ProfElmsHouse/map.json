@@ -26,8 +26,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_2929C5",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_SILVER_TROPHY",
@@ -40,8 +40,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_292ABA",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_GOLD_TROPHY",
@@ -54,8 +54,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_292ACD",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ZWOMAN_4",
@@ -68,8 +68,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_1F89F3",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_CHUCK",
@@ -83,7 +83,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_PLAYERS_HOUSE_DAD"
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ZNINJA_BOY",
@@ -96,8 +96,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_1F8A3D",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ZRIVAL_MAY_NORMAL",
@@ -111,7 +111,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_BRENDAN"
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -143,36 +143,36 @@
       "x": 0,
       "y": 8,
       "elevation": 0,
-      "var": "VAR_0x4092",
+      "var": "VAR_TEMP_0",
       "var_value": "4",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_1F8A4C"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 1,
       "y": 3,
       "elevation": 0,
-      "var": "VAR_0x408D",
+      "var": "VAR_TEMP_0",
       "var_value": "2",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_1F8A67"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 2,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_0x408D",
+      "var": "VAR_TEMP_0",
       "var_value": "2",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_1F8A73"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 3,
       "y": 3,
       "elevation": 0,
-      "var": "VAR_0x408D",
+      "var": "VAR_TEMP_0",
       "var_value": "2",
-      "script": "LittlerootTown_MaysHouse_1F_EventScript_1F8A7F"
+      "script": "0x0"
     }
   ],
   "bg_events": []

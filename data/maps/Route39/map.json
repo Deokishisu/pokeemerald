@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route111_EventScript_1F121B",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route111_EventScript_1F1260",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route111_EventScript_1F1249",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route111_EventScript_1F0EB9",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route111_EventScript_1F0EB9",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -121,7 +121,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route111_EventScript_1F0EB9",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -135,7 +135,7 @@
       "movement_range_y": 1,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route111_EventScript_1F12D9",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -191,7 +191,7 @@
       "y": 31,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route111_EventScript_1F115C"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -199,7 +199,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route111_EventScript_1F1153"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -207,7 +207,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route111_EventScript_1F1165"
+      "script": "0x0"
     },
     {
       "type": "hidden_item",
@@ -215,7 +215,7 @@
       "y": 13,
       "elevation": 0,
       "item": "ITEM_NUGGET",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST"
+      "flag": "0x0"
     }
   ]
 }

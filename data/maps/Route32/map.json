@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route104_EventScript_1ED35F",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route104_EventScript_1ED43B",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route104_EventScript_1ED4E9",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -79,7 +79,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route104_EventScript_1ED597",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -93,7 +93,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route104_EventScript_1ED5B6",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -107,7 +107,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route104_EventScript_1ED5D5",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -121,7 +121,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route104_EventScript_1ED376",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -135,7 +135,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_1ED00F",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -149,7 +149,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route104_EventScript_1ED38D",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -163,7 +163,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_1ED006",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -177,8 +177,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_290CFF",
-      "flag": "FLAG_ITEM_ROUTE_104_PP_UP"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_FAT_MAN",
@@ -191,7 +191,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_1ED045",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -205,7 +205,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_1ED04E",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -219,8 +219,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_290D0C",
-      "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -233,8 +233,8 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_290D19",
-      "flag": "FLAG_ITEM_ROUTE_104_X_ACCURACY"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -285,7 +285,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route104_EventScript_1ED018"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -293,7 +293,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route104_EventScript_1ED021"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -301,7 +301,7 @@
       "y": 84,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route104_EventScript_1ED02A"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -309,7 +309,7 @@
       "y": 73,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route104_EventScript_1ED033"
+      "script": "0x0"
     },
     {
       "type": "hidden_item",
@@ -317,7 +317,7 @@
       "y": 67,
       "elevation": 3,
       "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -325,7 +325,7 @@
       "y": 40,
       "elevation": 3,
       "item": "ITEM_POKE_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -333,7 +333,7 @@
       "y": -6,
       "elevation": 3,
       "item": "ITEM_ANTIDOTE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -341,7 +341,7 @@
       "y": -6,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
+      "flag": "0"
     }
   ]
 }

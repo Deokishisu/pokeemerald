@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_PokemonSchool_EventScript_213F5F",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_PokemonSchool_EventScript_213F68",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_PokemonSchool_EventScript_213F71",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_PokemonSchool_EventScript_213F83",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RustboroCity_PokemonSchool_EventScript_213F95",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_PokemonSchool_EventScript_213EA9"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -132,7 +132,7 @@
       "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "RustboroCity_PokemonSchool_EventScript_213EA9"
+      "script": "0x0"
     }
   ]
 }

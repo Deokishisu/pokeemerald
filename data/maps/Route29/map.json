@@ -42,7 +42,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route101_EventScript_1EBE04",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -56,7 +56,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route101_EventScript_1EBDFB",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -84,7 +84,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route101_EventScript_272141",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -140,8 +140,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route104_EventScript_290D26",
-      "flag": "FLAG_ITEM_ROUTE_104_POTION"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_PAPER",
@@ -154,8 +154,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route101_EventScript_1EBE16",
-      "flag": "FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -173,81 +173,81 @@
       "x": 10,
       "y": 19,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "1",
-      "script": "Route101_EventScript_1EBCDE"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 11,
       "y": 19,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "1",
-      "script": "Route101_EventScript_1EBCDE"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 10,
       "y": 18,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "2",
-      "script": "Route101_EventScript_1EBD4E"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 11,
       "y": 18,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "2",
-      "script": "Route101_EventScript_1EBD4E"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 6,
       "y": 16,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "2",
-      "script": "Route101_EventScript_1EBD64"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 6,
       "y": 15,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "2",
-      "script": "Route101_EventScript_1EBD64"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 6,
       "y": 17,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "2",
-      "script": "Route101_EventScript_1EBD64"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 6,
       "y": 18,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "2",
-      "script": "Route101_EventScript_1EBD64"
+      "script": "0x0"
     },
     {
       "type": "trigger",
       "x": 7,
       "y": 13,
       "elevation": 3,
-      "var": "VAR_0x4060",
+      "var": "0",
       "var_value": "2",
-      "script": "Route101_EventScript_1EBD7A"
+      "script": "0x0"
     }
   ],
   "bg_events": [
@@ -257,7 +257,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route101_EventScript_1EBE0D"
+      "script": "0x0"
     }
   ]
 }

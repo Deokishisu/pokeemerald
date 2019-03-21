@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route105_EventScript_1EE261",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -51,7 +51,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route105_EventScript_1EE278",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -65,7 +65,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route105_EventScript_1EE28F",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -79,8 +79,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route105_EventScript_290D33",
-      "flag": "FLAG_ITEM_ROUTE_105_IRON"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -100,7 +100,7 @@
       "y": -6,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -108,7 +108,7 @@
       "y": -6,
       "elevation": 3,
       "item": "ITEM_BIG_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL"
+      "flag": "0"
     },
     {
       "type": "sign",

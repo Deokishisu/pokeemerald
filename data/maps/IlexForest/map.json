@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_22E210",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_22E26D",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -82,8 +82,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_291129",
-      "flag": "FLAG_ITEM_PETALBURD_WOODS_PARALYZE_HEAL"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_KURT",
@@ -96,7 +96,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_22E222",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_22E222",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -138,8 +138,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_29110F",
-      "flag": "FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -152,8 +152,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_291102",
-      "flag": "FLAG_ITEM_PETALBURG_WOODS_X_ATTACK"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
@@ -166,8 +166,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgWoods_EventScript_29111C",
-      "flag": "FLAG_ITEM_PETALBURG_WOODS_ETHER"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -201,7 +201,7 @@
       "y": 17,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PetalburgWoods_EventScript_22E25B"
+      "script": "0x0"
     },
     {
       "type": "hidden_item",
@@ -209,7 +209,7 @@
       "y": 7,
       "elevation": 3,
       "item": "ITEM_ETHER",
-      "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POTION"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -217,7 +217,7 @@
       "y": 14,
       "elevation": 3,
       "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_TINY_MUSHROOM_1"
+      "flag": "0"
     },
     {
       "type": "hidden_item",
@@ -225,7 +225,7 @@
       "y": 17,
       "elevation": 3,
       "item": "ITEM_FULL_HEAL",
-      "flag": "FLAG_HIDDEN_ITEM_PETALBURG_WOODS_TINY_MUSHROOM_2"
+      "flag": "0"
     },
     {
       "type": "sign",
@@ -233,7 +233,7 @@
       "y": 22,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "PetalburgWoods_EventScript_22E264"
+      "script": "0x0"
     }
   ]
 }

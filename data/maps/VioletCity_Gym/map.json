@@ -26,8 +26,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_Gym_EventScript_2049F1",
-      "flag": "FLAG_HIDE_PETALYBURG_GYM_NORMAN"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "PetalburgCity_Gym_EventScript_2054AA",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -54,7 +54,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "PetalburgCity_Gym_EventScript_2053BA",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,8 +68,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_Gym_EventScript_20574F",
-      "flag": "FLAG_HIDE_PETALBURG_GYM_GREETER"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -96,7 +96,7 @@
       "y": 13,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PetalburgCity_Gym_EventScript_20576E"
+      "script": "0x0"
     },
     {
       "type": "sign",
@@ -104,7 +104,7 @@
       "y": 13,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "PetalburgCity_Gym_EventScript_20577E"
+      "script": "0x0"
     }
   ]
 }

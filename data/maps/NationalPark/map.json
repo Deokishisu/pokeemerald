@@ -26,7 +26,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_22CE76",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_2907A6",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -68,7 +68,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_22D0C2",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_22D0AF",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -96,7 +96,7 @@
       "movement_range_y": 2,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_2907A6",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "movement_range_y": 1,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "RusturfTunnel_EventScript_22D1B1",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -124,7 +124,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "RusturfTunnel_EventScript_22D1B1",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -138,7 +138,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "RusturfTunnel_EventScript_22D1B1",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -152,7 +152,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "RusturfTunnel_EventScript_22D1B1",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -166,7 +166,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "RusturfTunnel_EventScript_22D1B1",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -180,8 +180,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_291136",
-      "flag": "FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL"
+      "script": "0x0",
+      "flag": "0"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_GAMEBOY_KID",
@@ -194,7 +194,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_22CE76",
+      "script": "0x0",
       "flag": "0"
     },
     {
@@ -208,8 +208,8 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RusturfTunnel_EventScript_291143",
-      "flag": "FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER"
+      "script": "0x0",
+      "flag": "0"
     }
   ],
   "warp_events": [
