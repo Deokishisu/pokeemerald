@@ -1,289 +1,156 @@
 {
-  "id": "MAP_NEW_BARK_TOWN",
-  "name": "NewBarkTown",
-  "layout": "LAYOUT_NEW_BARK_TOWN",
-  "music": "MUS_MISHIRO",
-  "region_map_section": "MAPSEC_NEW_BARK_TOWN",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_TOWN",
-  "map_palette": "PAL_CYCLE",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "left",
-      "offset": 0,
-      "map": "MAP_ROUTE29"
-    },
-    {
-      "direction": "right",
-      "offset": 0,
-      "map": "MAP_ROUTE27"
-    }
-  ],
-  "object_events": [
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LINK_MAY",
-      "npc_palette": "0",
-      "x": 9,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
-      "movement_range_x": 1,
-      "movement_range_y": 2,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LINK_RS_MAY",
-      "npc_palette": "0",
-      "x": 8,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
-      "movement_range_x": 2,
-      "movement_range_y": 1,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LEAF",
-      "npc_palette": "3",
-      "x": 15,
-      "y": 14,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 2,
-      "movement_range_y": 1,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_MOM",
-      "npc_palette": "0",
-      "x": 5,
-      "y": 8,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LINK_RS_BRENDAN",
-      "npc_palette": "0",
-      "x": 6,
-      "y": 6,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LINK_BRENDAN",
-      "npc_palette": "0",
-      "x": 7,
-      "y": 6,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_VAR_0",
-      "npc_palette": "0",
-      "x": 13,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_PROF_ELM",
-      "npc_palette": "0",
-      "x": 16,
-      "y": 9,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    }
-  ],
-  "warp_events": [
-    {
-      "x": 11,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_NEW_BARK_TOWN_PROF_ELMS_HOUSE",
-      "dest_warp_id": 1
-    },
-    {
-      "x": 13,
-      "y": 5,
-      "elevation": 0,
-      "dest_map": "MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_1F",
-      "dest_warp_id": 1
-    },
-    {
-      "x": 6,
-      "y": 3,
-      "elevation": 0,
-      "dest_map": "MAP_NEW_BARK_TOWN_PROF_ELMS_LAB",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 3,
-      "y": 11,
-      "elevation": 3,
-      "dest_map": "MAP_NEW_BARK_TOWN_HOUSE",
-      "dest_warp_id": 0
-    }
-  ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 1,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 1,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 1,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "1",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "3",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "3",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "3",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "3",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 2,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "3",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 2,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "3",
-      "script": "0x0"
-    }
-  ],
-  "bg_events": [
-    {
-      "type": "sign",
-      "x": 8,
-      "y": 8,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 3,
-      "y": 3,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 11,
-      "y": 5,
-      "elevation": 3,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 9,
-      "y": 13,
-      "elevation": 3,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    }
-  ]
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 8,
+            "y": 8
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 3,
+            "y": 3
+        },
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 11,
+            "y": 5
+        },
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 9,
+            "y": 13
+        }
+    ],
+    "connections": [
+        {
+            "direction": "left",
+            "map": "MAP_ROUTE29",
+            "offset": 0
+        },
+        {
+            "direction": "right",
+            "map": "MAP_ROUTE27",
+            "offset": 0
+        }
+    ],
+    "coord_events": [
+        {
+            "elevation": 3,
+            "script": "NULL",
+            "type": "trigger",
+            "var": "VAR_TEMP_0",
+            "var_value": "0",
+            "x": 1,
+            "y": 8
+        },
+        {
+            "elevation": 3,
+            "script": "NULL",
+            "type": "trigger",
+            "var": "VAR_TEMP_0",
+            "var_value": "0",
+            "x": 1,
+            "y": 9
+        }
+    ],
+    "id": "MAP_NEW_BARK_TOWN",
+    "layout": "LAYOUT_NEW_BARK_TOWN",
+    "map_palette": "PAL_CYCLE",
+    "map_type": "MAP_TYPE_TOWN",
+    "music": "MUS_MISHIRO",
+    "name": "NewBarkTown",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_TEACHER",
+            "npc_palette": "0",
+            "movement_range_x": 1,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 6,
+            "y": 8
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_FAT_MAN",
+            "npc_palette": "NPC_PAL_GREEN",
+            "movement_range_x": 0,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 12,
+            "y": 9
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_RIVAL",
+            "npc_palette": "0",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 3,
+            "y": 2
+        }
+    ],
+    "region_map_section": "MAPSEC_NEW_BARK_TOWN",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_NEW_BARK_TOWN_PROF_ELMS_HOUSE",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 11,
+            "y": 13
+        },
+        {
+            "dest_map": "MAP_NEW_BARK_TOWN_PLAYERS_HOUSE_1F",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 13,
+            "y": 5
+        },
+        {
+            "dest_map": "MAP_NEW_BARK_TOWN_PROF_ELMS_LAB",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 6,
+            "y": 3
+        },
+        {
+            "dest_map": "MAP_NEW_BARK_TOWN_HOUSE",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 3,
+            "y": 11
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
 }
