@@ -13,13 +13,7 @@
   "allow_running": false,
   "show_map_name": 1,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "dive",
-      "offset": 0,
-      "map": "MAP_UNDERWATER1"
-    }
-  ],
+  "connections": [],
   "object_events": [
     {
       "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",

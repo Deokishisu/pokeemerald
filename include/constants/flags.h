@@ -1269,7 +1269,7 @@
 #define FLAG_SYS_CHAT_USED                             (SYSTEM_FLAGS + 5)
 #define FLAG_SYS_HIPSTER_MEET                          (SYSTEM_FLAGS + 6)
 
-// Badges
+// Badges. Use Trainer flags to track Kanto Badges?
 #define FLAG_BADGE01_GET                               (SYSTEM_FLAGS + 7)
 #define FLAG_BADGE02_GET                               (SYSTEM_FLAGS + 8)
 #define FLAG_BADGE03_GET                               (SYSTEM_FLAGS + 9)
@@ -1279,7 +1279,8 @@
 #define FLAG_BADGE07_GET                             (SYSTEM_FLAGS + 0xD)
 #define FLAG_BADGE08_GET                             (SYSTEM_FLAGS + 0xE)
 
-// Towns and Cities
+// Towns and Cities. 12 flight points in Johto, 11 in Kanto.
+// Need 15 if assuming player must've visited first 8 cities before getting Fly.
 #define FLAG_VISITED_LITTLEROOT_TOWN                 (SYSTEM_FLAGS + 0xF)
 #define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x10)
 #define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x11)
@@ -1300,9 +1301,12 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
-#define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
-#define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
+//Version flags. Only one version flag should be on at a time.
+#define FLAG_IS_VERSION_GOLD                        (SYSTEM_FLAGS + 0x21) // Marks version set to Gold.
+#define FLAG_IS_VERSION_SILVER                      (SYSTEM_FLAGS + 0x22) // Marks version set to Silver.
+#define FLAG_IS_VERSION_CRYSTAL                     (SYSTEM_FLAGS + 0x23) // Marks version set to Crystal.
+
+//unused
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag

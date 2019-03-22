@@ -363,10 +363,6 @@ gMapGroup27::
 	.4byte LinkContestRoom4
 	.4byte LinkContestRoom5
 	.4byte LinkContestRoom6
-	.4byte InsideOfTruck
-	.4byte SSTidalCorridor
-	.4byte SSTidalLowerDeck
-	.4byte SSTidalRooms
 	.4byte BattlePyramidSquare01
 	.4byte BattlePyramidSquare02
 	.4byte BattlePyramidSquare03
@@ -386,10 +382,6 @@ gMapGroup27::
 	.4byte UnionRoom
 
 gMapGroup28::
-	.4byte SafariZone_Northwest
-	.4byte SafariZone_North
-	.4byte SafariZone_Southwest
-	.4byte SafariZone_South
 	.4byte BattleFrontier_OutsideWest
 	.4byte BattleFrontier_BattleTowerLobby
 	.4byte BattleFrontier_BattleTowerElevator
@@ -397,9 +389,6 @@ gMapGroup28::
 	.4byte BattleFrontier_BattleTowerBattleRoom
 	.4byte SouthernIsland_Exterior
 	.4byte SouthernIsland_Interior
-	.4byte SafariZone_RestHouse
-	.4byte SafariZone_Northeast
-	.4byte SafariZone_Southeast
 	.4byte BattleFrontier_OutsideEast
 	.4byte BattleFrontier_BattleTowerMultiBattleRoom
 	.4byte BattleFrontier_BattleTowerCorridor2
@@ -503,220 +492,33 @@ gMapGroup33::
 	.4byte PalletTown_ProfOaksLab
 
 gMapGroup34::
-	.4byte Route119_WeatherInstitute_1F
+	.4byte PacifidlogTown_PokemonCenter_1F
+	.4byte PacifidlogTown_PokemonCenter_2F
 
 gMapGroup35::
-	.4byte Route119_WeatherInstitute_2F
-	.4byte Route119_House
-	.4byte Route124_DivingTreasureHuntersHouse
-	.4byte LilycoveCity
-	.4byte MossdeepCity
-	.4byte SootopolisCity
-	.4byte EverGrandeCity
-	.4byte LavaridgeTown
-	.4byte PacifidlogTown
-	.4byte Route126
-	.4byte Route127
-	.4byte Route128
-	.4byte Route129
-	.4byte Route130
-	.4byte Route131
-	.4byte Route132
-	.4byte Route133
-	.4byte Route134
-	.4byte Underwater1
-	.4byte Underwater2
-	.4byte Underwater3
-	.4byte Underwater4
-	.4byte Underwater5
-	.4byte Underwater6
-	.4byte Underwater7
-	.4byte Route123_BerryMastersHouse
-	.4byte Route109_SeashoreHouse
-	.4byte Route110_TrickHouseEntrance
-	.4byte Route110_TrickHouseEnd
-	.4byte Route110_TrickHouseCorridor
-	.4byte Route110_TrickHousePuzzle1
-	.4byte Route110_TrickHousePuzzle2
-	.4byte Route110_TrickHousePuzzle3
-	.4byte Route110_TrickHousePuzzle4
-	.4byte Route110_TrickHousePuzzle5
-	.4byte Route110_TrickHousePuzzle6
-	.4byte Route110_TrickHousePuzzle7
-	.4byte Route110_TrickHousePuzzle8
-	.4byte Route110_SeasideCyclingRoadNorthEntrance
-	.4byte Route110_SeasideCyclingRoadSouthEntrance
-	.4byte Route104_Prototype
-	.4byte Route104_PrototypePrettyPetalFlowerShop
-	.4byte FortreeCity_House4
-	.4byte FortreeCity_House5
-	.4byte FortreeCity_DecorationShop
 	.4byte VerdanturfTown_BattleTentLobby
 	.4byte VerdanturfTown_BattleTentCorridor
 	.4byte VerdanturfTown_BattleTentBattleRoom
 	.4byte FallarborTown_BattleTentLobby
 	.4byte FallarborTown_BattleTentCorridor
 	.4byte FallarborTown_BattleTentBattleRoom
-	.4byte RustboroCity_Flat2_1F
-	.4byte RustboroCity_Flat2_2F
-	.4byte RustboroCity_Flat2_3F
-	.4byte SlateportCity_Harbor
-	.4byte LavaridgeTown_Gym_B1F
-	.4byte LavaridgeTown_Mart
 	.4byte LavaridgeTown_PokemonCenter_1F
 	.4byte LavaridgeTown_PokemonCenter_2F
-	.4byte PacifidlogTown_PokemonCenter_1F
-	.4byte PacifidlogTown_PokemonCenter_2F
-	.4byte PacifidlogTown_House1
-	.4byte PacifidlogTown_House2
-	.4byte PacifidlogTown_House3
-	.4byte PacifidlogTown_House4
-	.4byte PacifidlogTown_House5
-	.4byte LilycoveCity_CoveLilyMotel_2F
-	.4byte LilycoveCity_LilycoveMuseum_1F
-	.4byte LilycoveCity_LilycoveMuseum_2F
 	.4byte LilycoveCity_ContestLobby
 	.4byte LilycoveCity_ContestHall
 	.4byte LilycoveCity_PokemonCenter_1F
 	.4byte LilycoveCity_PokemonCenter_2F
-	.4byte LilycoveCity_PokemonTrainerFanClub
-	.4byte LilycoveCity_Harbor
-	.4byte LilycoveCity_MoveDeletersHouse
-	.4byte LilycoveCity_House1
-	.4byte LilycoveCity_House2
-	.4byte LilycoveCity_House3
-	.4byte LilycoveCity_House4
-	.4byte MossdeepCity_House1
-	.4byte MossdeepCity_House2
 	.4byte MossdeepCity_PokemonCenter_1F
 	.4byte MossdeepCity_PokemonCenter_2F
-	.4byte MossdeepCity_Mart
-	.4byte MossdeepCity_House3
-	.4byte MossdeepCity_StevensHouse
-	.4byte MossdeepCity_House4
-	.4byte MossdeepCity_SpaceCenter_1F
-	.4byte MossdeepCity_SpaceCenter_2F
-	.4byte MossdeepCity_GameCorner_1F
-	.4byte MossdeepCity_GameCorner_B1F
 	.4byte SootopolisCity_PokemonCenter_1F
 	.4byte SootopolisCity_PokemonCenter_2F
-	.4byte SootopolisCity_Mart
-	.4byte SootopolisCity_House1
-	.4byte SootopolisCity_House2
-	.4byte SootopolisCity_House3
-	.4byte SootopolisCity_House4
-	.4byte SootopolisCity_House5
-	.4byte SootopolisCity_House6
-	.4byte SootopolisCity_House7
-	.4byte SootopolisCity_LotadAndSeedotHouse
-	.4byte SootopolisCity_MysteryEventsHouse_1F
-	.4byte SootopolisCity_MysteryEventsHouse_B1F
-	.4byte EverGrandeCity_SidneysRoom
-	.4byte EverGrandeCity_PhoebesRoom
-	.4byte EverGrandeCity_GlaciasRoom
-	.4byte EverGrandeCity_DrakesRoom
-	.4byte EverGrandeCity_ChampionsRoom
-	.4byte EverGrandeCity_Hall1
-	.4byte EverGrandeCity_Hall2
-	.4byte EverGrandeCity_Hall3
-	.4byte EverGrandeCity_Hall4
-	.4byte EverGrandeCity_Hall5
-	.4byte EverGrandeCity_PokemonLeague_1F
-	.4byte EverGrandeCity_HallOfFame
 	.4byte EverGrandeCity_PokemonCenter_1F
 	.4byte EverGrandeCity_PokemonCenter_2F
-	.4byte EverGrandeCity_PokemonLeague_2F
-	.4byte Route104_MrBrineysHouse
-	.4byte Route104_PrettyPetalFlowerShop
-	.4byte Route111_WinstrateFamilysHouse
-	.4byte Route111_OldLadysRestStop
-	.4byte Route112_CableCarStation
-	.4byte MtChimney_CableCarStation
-	.4byte Route114_FossilManiacsHouse
-	.4byte Route114_FossilManiacsTunnel
-	.4byte Route116_TunnelersRestHouse
-	.4byte Route114_LanettesHouse
-	.4byte Route121_SafariZoneEntrance
 	.4byte SlateportCity_BattleTentLobby
 	.4byte SlateportCity_BattleTentCorridor
 	.4byte SlateportCity_BattleTentBattleRoom
-	.4byte MeteorFalls_B1F_2R
-	.4byte Underwater_SootopolisCity
-	.4byte DesertRuins
-	.4byte GraniteCave_StevensRoom
-	.4byte MtChimney
-	.4byte JaggedPass
-	.4byte FieryPath
-	.4byte MtPyre_1F
-	.4byte MtPyre_2F
-	.4byte MtPyre_3F
-	.4byte MtPyre_4F
-	.4byte MtPyre_5F
-	.4byte MtPyre_6F
-	.4byte MtPyre_Exterior
-	.4byte MtPyre_Summit
-	.4byte AquaHideout_1F
-	.4byte CaveOfOrigin_Entrance
-	.4byte CaveOfOrigin_1F
-	.4byte CaveOfOrigin_UnusedRubySapphireMap3
-	.4byte CaveOfOrigin_B1F
-	.4byte VictoryRoad_1F
-	.4byte VictoryRoad_B1F
-	.4byte VictoryRoad_B2F
-	.4byte ShoalCave_LowTideEntranceRoom
-	.4byte ShoalCave_LowTideInnerRoom
-	.4byte ShoalCave_LowTideStairsRoom
-	.4byte ShoalCave_LowTideLowerRoom
-	.4byte ShoalCave_HighTideEntranceRoom
-	.4byte ShoalCave_HighTideInnerRoom
-	.4byte NewMauville_Entrance
-	.4byte NewMauville_Inside
-	.4byte AbandonedShip_Deck
-	.4byte AbandonedShip_Corridors_1F
-	.4byte AbandonedShip_Rooms_1F
-	.4byte AbandonedShip_Corridors_B1F
-	.4byte AbandonedShip_Rooms_B1F
-	.4byte AbandonedShip_Rooms2_B1F
-	.4byte AbandonedShip_Underwater1
-	.4byte AbandonedShip_Room_B1F
-	.4byte AbandonedShip_Rooms2_1F
-	.4byte AbandonedShip_CaptainsOffice
-	.4byte AbandonedShip_Underwater2
-	.4byte AbandonedShip_HiddenFloorCorridors
-	.4byte AbandonedShip_HiddenFloorRooms
-	.4byte IslandCave
-	.4byte AncientTomb
-	.4byte Underwater_Route134
-	.4byte Underwater_SealedChamber
-	.4byte SealedChamber_OuterRoom
-	.4byte SealedChamber_InnerRoom
-	.4byte ScorchedSlab
-	.4byte SkyPillar_Entrance
-	.4byte SkyPillar_Outside
-	.4byte ShoalCave_LowTideIceRoom
-	.4byte MagmaHideout_1F
-	.4byte MagmaHideout_2F_1R
-	.4byte MagmaHideout_2F_2R
-	.4byte MagmaHideout_3F_1R
-	.4byte MagmaHideout_3F_2R
-	.4byte MagmaHideout_4F
-	.4byte MagmaHideout_3F_3R
-	.4byte MagmaHideout_2F_3R
-	.4byte MirageTower_1F
-	.4byte MirageTower_2F
-	.4byte MirageTower_3F
-	.4byte MirageTower_4F
-	.4byte DesertUnderpass
 	.4byte ArtisanCave_B1F
 	.4byte ArtisanCave_1F
-	.4byte Underwater_MarineCave
-	.4byte MarineCave_Entrance
-	.4byte MarineCave_End
-	.4byte TerraCave_Entrance
-	.4byte TerraCave_End
-	.4byte AlteringCave
-	.4byte MeteorFalls_StevensCave
-	.4byte Route113_GlassWorkshop
 
 	.align 2
 gMapGroups::
