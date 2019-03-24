@@ -1,13 +1,13 @@
 EventScript_2A4B4C:: @ 82A4B4C
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	setwarp MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 255, 2, 5
+	setwarp MAP_NEW_BARK_TOWN, 255, 2, 5
 	end
 
 EventScript_2A4B5D:: @ 82A4B5D
 	setvar VAR_SAFARI_ZONE_STATE, 1
 	special ExitSafariMode
-	warp MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 255, 2, 5
+	warp MAP_NEW_BARK_TOWN, 255, 2, 5
 	waitstate
 	end
 

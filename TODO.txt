@@ -26,4 +26,6 @@ TODO: Get Flash working in the field and make cave exits flicker in dark caves.
 
 TODO: Move the camera 8 pixels to the right.
 
-TODO: Set up the specific Unown encounters in the Ruins of Alph based on flags.1
+TODO: Set up the specific Unown encounters in the Ruins of Alph based on flags.
+
+TODO: The period character in the Pokegear's Time Card textbox isn't spaced correctly. It is too close to the "t" in "exit".

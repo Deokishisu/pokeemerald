@@ -20,7 +20,7 @@ static void InitTimeBasedEvents(void)
     FlagSet(FLAG_SYS_CLOCK_SET);
     RtcCalcLocalTime();
     gSaveBlock2Ptr->lastBerryTreeUpdate = gLocalTime;
-    VarSet(VAR_DAYS, gLocalTime.days);
+    //VarSet(VAR_DAYS, gLocalTime.days);
 }
 
 void DoTimeBasedEvents(void)
@@ -36,21 +36,21 @@ void DoTimeBasedEvents(void)
 static void UpdatePerDay(struct Time *localTime)
 {
     u16 *days = GetVarPointer(VAR_DAYS);
-    u16 daysSince;
+    u16 daysSince; //this doesn't make sense now with a perpetual 0-6 value for *days.
 
-    if (*days != localTime->days && *days <= localTime->days)
+    if (*days != localTime->days)
     {
         daysSince = localTime->days - *days;
         ClearDailyFlags();
-        UpdateDewfordTrendPerDay(daysSince);
-        UpdateTVShowsPerDay(daysSince);
-        UpdateWeatherPerDay(daysSince);
+        //UpdateDewfordTrendPerDay(daysSince);
+        //UpdateTVShowsPerDay(daysSince);
+        //UpdateWeatherPerDay(daysSince);
         UpdatePartyPokerusTime(daysSince);
-        UpdateMirageRnd(daysSince);
-        UpdateBirchState(daysSince);
+        //UpdateMirageRnd(daysSince);
+        //UpdateBirchState(daysSince);
         UpdateFrontierManiac(daysSince);
         UpdateFrontierGambler(daysSince);
-        SetShoalItemFlag(daysSince);
+        //SetShoalItemFlag(daysSince);
         SetRandomLotteryNumber(daysSince);
         *days = localTime->days;
     }

@@ -39,7 +39,7 @@ BattleFrontier_OutsideWest_EventScript_23D458:: @ 823D458
 	goto_if_eq BattleFrontier_OutsideWest_EventScript_23D4AE
 	msgbox BattleFrontier_OutsideWest_Text_23D94B, MSGBOX_DEFAULT
 	call BattleFrontier_OutsideWest_EventScript_23D4BA
-	warp MAP_SLATEPORT_CITY_HARBOR, 255, 8, 11
+	warp MAP_NEW_BARK_TOWN, 255, 8, 11
 	waitstate
 	release
 	end
@@ -50,7 +50,7 @@ BattleFrontier_OutsideWest_EventScript_23D483:: @ 823D483
 	goto_if_eq BattleFrontier_OutsideWest_EventScript_23D4AE
 	msgbox BattleFrontier_OutsideWest_Text_23D94B, MSGBOX_DEFAULT
 	call BattleFrontier_OutsideWest_EventScript_23D4BA
-	warp MAP_LILYCOVE_CITY_HARBOR, 255, 8, 11
+	warp MAP_NEW_BARK_TOWN, 255, 8, 11
 	waitstate
 	release
 	end

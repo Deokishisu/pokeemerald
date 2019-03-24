@@ -15,7 +15,7 @@ BirthIsland_Harbor_EventScript_26805D:: @ 826805D
 	hideobjectat 1, MAP_BIRTH_ISLAND_HARBOR
 	setvar VAR_0x8004, 2
 	call BirthIsland_Harbor_EventScript_272250
-	warp MAP_LILYCOVE_CITY_HARBOR, 255, 8, 11
+	warp MAP_NEW_BARK_TOWN, 255, 8, 11
 	waitstate
 	release
 	end

@@ -1306,9 +1306,11 @@
 #define FLAG_IS_VERSION_SILVER                      (SYSTEM_FLAGS + 0x22) // Marks version set to Silver.
 #define FLAG_IS_VERSION_CRYSTAL                     (SYSTEM_FLAGS + 0x23) // Marks version set to Crystal.
 
+//Pokegear-related flags
+#define FLAG_HAS_MAP_CARD                           (SYSTEM_FLAGS + 0x24)
+#define FLAG_HAS_RADIO_CARD                         (SYSTEM_FLAGS + 0x25)
+
 //unused
-#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
 

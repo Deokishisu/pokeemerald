@@ -272,7 +272,7 @@ u16 GetRecordedCyclingRoadResults(void) {
 }
 
 void UpdateCyclingRoadState(void) {
-    if (gLastUsedWarp.mapNum == MAP_NUM(ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE) && gLastUsedWarp.mapGroup == MAP_GROUP(ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE))
+    if (gLastUsedWarp.mapNum == MAP_NUM(NONE) && gLastUsedWarp.mapGroup == MAP_GROUP(NONE))
     {
         return;
     }
@@ -324,38 +324,38 @@ u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
         case 2:
             if (*varCruiseStepCount < 60)
             {
-                *mapNum = MAP_NUM(ROUTE134);
+                *mapNum = MAP_NUM(NONE);
                 *x = *varCruiseStepCount + 19;
             }
             else if (*varCruiseStepCount < 140)
             {
-                *mapNum = MAP_NUM(ROUTE133);
+                *mapNum = MAP_NUM(NONE);
                 *x = *varCruiseStepCount - 60;
             }
             else
             {
-                *mapNum = MAP_NUM(ROUTE132);
+                *mapNum = MAP_NUM(NONE);
                 *x = *varCruiseStepCount - 140;
             }
             break;
         case 7:
             if (*varCruiseStepCount < 66)
             {
-                *mapNum = MAP_NUM(ROUTE132);
+                *mapNum = MAP_NUM(NONE);
                 *x = 65 - *varCruiseStepCount;
             }
             else if (*varCruiseStepCount < 146) {
-                *mapNum = MAP_NUM(ROUTE133);
+                *mapNum = MAP_NUM(NONE);
                 *x = 145 - *varCruiseStepCount;
             }
             else
             {
-                *mapNum = MAP_NUM(ROUTE134);
+                *mapNum = MAP_NUM(NONE);
                 *x = 224 - *varCruiseStepCount;
             }
             break;
     }
-    *mapGroup = MAP_GROUP(ROUTE132);
+    *mapGroup = MAP_GROUP(NONE);
     *y = 20;
     return 0;
 }
@@ -949,11 +949,11 @@ void CableCarWarp(void)
 {
     if (gSpecialVar_0x8004 != 0)
     {
-        SetWarpDestination(MAP_GROUP(ROUTE112_CABLE_CAR_STATION), MAP_NUM(ROUTE112_CABLE_CAR_STATION), -1, 6, 4);
+        SetWarpDestination(MAP_GROUP(NONE), MAP_NUM(NONE), -1, 6, 4);
     }
     else
     {
-        SetWarpDestination(MAP_GROUP(MT_CHIMNEY_CABLE_CAR_STATION), MAP_NUM(MT_CHIMNEY_CABLE_CAR_STATION), -1, 6, 4);
+        SetWarpDestination(MAP_GROUP(NONE), MAP_NUM(NONE), -1, 6, 4);
     }
 }
 
@@ -3535,14 +3535,11 @@ bool8 UnusualWeatherHasExpired(void)
             }
         }
 		*/
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER3))
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NONE))
         {
             switch (gSaveBlock1Ptr->location.mapNum)
             {
-                case MAP_NUM(UNDERWATER3):
-                case MAP_NUM(UNDERWATER5):
-                case MAP_NUM(UNDERWATER6):
-                case MAP_NUM(UNDERWATER7):
+                case MAP_NUM(NONE):
                     VarSet(VAR_SHOULD_END_UNUSUAL_WEATHER, 1);
                     return FALSE;
                 default:
@@ -3869,7 +3866,7 @@ bool8 sub_813B9C0(void)
         MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F,
         MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F,
         MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F,
-        MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F,
+        //MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F,
         MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F,
         MAP_SINGLE_BATTLE_COLOSSEUM,
         MAP_TRADE_CENTER,

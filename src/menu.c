@@ -339,7 +339,7 @@ void WindowFunc_DrawStandardFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width
                             STD_WINDOW_PALETTE_NUM);
 }
 
-void WindowFunc_DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum)
+void WindowFunc_DrawDialogueFrame(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum) //standard message box
 {
     FillBgTilemapBufferRect(bg,
                             DLG_WINDOW_BASE_TILE_NUM,

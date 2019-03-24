@@ -20,7 +20,7 @@ SouthernIsland_Exterior_EventScript_2429D2:: @ 82429D2
 	hideobjectat 1, MAP_SOUTHERN_ISLAND_EXTERIOR
 	setvar VAR_0x8004, 2
 	call SouthernIsland_Exterior_EventScript_272250
-	warp MAP_LILYCOVE_CITY_HARBOR, 255, 8, 11
+	warp MAP_NEW_BARK_TOWN, 255, 8, 11
 	waitstate
 	release
 	end

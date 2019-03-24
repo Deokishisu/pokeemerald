@@ -3,10 +3,13 @@ AzaleaTown_CharcoalKiln_MapScripts:: @ 81FC3CD
 
 DewfordTown_House1_EventScript_1FC3CE:: @ 81FC3CE
 	msgbox DewfordTown_House1_Text_1FC3F3, MSGBOX_NPC
+	setflag FLAG_HAS_MAP_CARD
+	setvar VAR_DAYS 0x2
 	end
 
 DewfordTown_House1_EventScript_1FC3D7:: @ 81FC3D7
 	msgbox DewfordTown_House1_Text_1FC45B, MSGBOX_NPC
+	setflag FLAG_HAS_RADIO_CARD
 	end
 
 DewfordTown_House1_EventScript_1FC3E0:: @ 81FC3E0

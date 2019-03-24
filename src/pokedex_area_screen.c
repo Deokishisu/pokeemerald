@@ -259,7 +259,7 @@ static void FindMapsWithMon(u16 species)
                         SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                         break;
                     case MAP_GROUP(SPROUT_TOWER_1F):
-                    case MAP_GROUP(SAFARI_ZONE_NORTHWEST):
+                    case MAP_GROUP(NONE):
                         SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                         break;
                 }
@@ -276,7 +276,7 @@ static void FindMapsWithMon(u16 species)
                         SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                         break;
                     case MAP_GROUP(SPROUT_TOWER_1F):
-                    case MAP_GROUP(SAFARI_ZONE_NORTHWEST):
+                    case MAP_GROUP(NONE):
                         SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                         break;
                 }

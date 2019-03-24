@@ -1,5 +1,6 @@
 #include "global.h"
 #include "rtc.h"
+#include "event_data.h"
 #include "string_util.h"
 #include "text.h"
 
@@ -262,6 +263,11 @@ void FormatHexDate(u8 *dest, s32 year, s32 month, s32 day)
 
 void RtcCalcTimeDifference(struct SiiRtcInfo *rtc, struct Time *result, struct Time *t)
 {
+    //t is &gSaveBlock2Ptr->localTimeOffset
+    //result is &gLocalTime
+    u16 *weekday = GetVarPointer(VAR_DAYS); //days variable repurposed for weekday
+    u16 originalDayValue = result->days;
+
     u16 days = RtcGetDayCount(rtc);
     result->seconds = ConvertBcdToBinary(rtc->second) - t->seconds;
     result->minutes = ConvertBcdToBinary(rtc->minute) - t->minutes;
@@ -284,6 +290,15 @@ void RtcCalcTimeDifference(struct SiiRtcInfo *rtc, struct Time *result, struct T
     {
         result->hours += 24;
         --result->days;
+    }
+
+    if(originalDayValue != result->days) //day changed, weekday needs to change.
+    {
+        *weekday += 1;
+        if (*weekday > 6) //if greater than Saturday
+        {
+            *weekday = 0; //set to Sunday
+        }
     }
 }
 

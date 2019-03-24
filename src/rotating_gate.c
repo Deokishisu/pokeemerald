@@ -627,8 +627,8 @@ static s32 GetCurrentMapRotatingGatePuzzleType(void)
         return PUZZLE_FORTREE_CITY_GYM;
     }
 
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE110_TRICK_HOUSE_PUZZLE6) &&
-        gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE110_TRICK_HOUSE_PUZZLE6))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(NONE) &&
+        gSaveBlock1Ptr->location.mapNum == MAP_NUM(NONE))
     {
         return PUZZLE_ROUTE110_TRICK_HOUSE_PUZZLE6;
     }

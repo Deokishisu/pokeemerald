@@ -138,6 +138,7 @@ static void sub_80A08A4(u8 taskId);
 
 // Some other callback
 static bool8 sub_809FA00(void);
+extern void CB2_Pokegear(void);
 
 static const struct WindowTemplate sSafariBallsWindowTemplate = {0, 1, 1, 9, 4, 0xF, 8};
 
@@ -666,7 +667,7 @@ static bool8 StartMenuPokeNavCallback(void)
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_InitPokeNav);  // Display PokeNav
+        SetMainCallback2(CB2_Pokegear);  // Display PokeGear
 
         return TRUE;
     }
