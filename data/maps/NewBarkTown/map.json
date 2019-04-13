@@ -94,7 +94,7 @@
             "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_FAT_MAN",
-            "npc_palette": "NPC_PAL_GREEN",
+            "npc_palette": "PAL_NPC_GREEN",
             "movement_range_x": 0,
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",

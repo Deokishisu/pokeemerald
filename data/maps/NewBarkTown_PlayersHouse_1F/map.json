@@ -75,7 +75,7 @@
             "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_POKEFAN_F",
-            "npc_palette": "0",
+            "npc_palette": "PAL_NPC_RED",
             "movement_range_x": 0,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
