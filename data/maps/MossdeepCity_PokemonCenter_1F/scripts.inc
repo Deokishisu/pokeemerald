@@ -4,7 +4,6 @@ MossdeepCity_PokemonCenter_1F_MapScripts:: @ 822223F
 	.byte 0
 
 MossdeepCity_PokemonCenter_1F_MapScript1_22224A: @ 822224A
-	setrespawn HEAL_LOCATION_MOSSDEEP_CITY
 	end
 
 MossdeepCity_PokemonCenter_1F_EventScript_22224E:: @ 822224E

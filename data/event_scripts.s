@@ -2477,7 +2477,6 @@ EventScript_2736D9:: @ 82736D9
 	end
 
 EventScript_2736F4:: @ 82736F4
-	setrespawn HEAL_LOCATION_LAVARIDGE_TOWN
 	return
 
 EventScript_2736F8:: @ 82736F8
@@ -6932,3 +6931,5 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/PalletTown_RedsHouse_2F/scripts.inc"
 	.include "data/maps/PalletTown_BluesHouse/scripts.inc"
 	.include "data/maps/PalletTown_ProfOaksLab/scripts.inc"
+
+	.include "data/maps/ViridianCity_TrainerHouse_1F/scripts.inc"

@@ -425,6 +425,7 @@
 	.include "data/maps/PalletTown_ProfOaksLab/header.inc"
 	.include "data/maps/PacifidlogTown_PokemonCenter_1F/header.inc"
 	.include "data/maps/PacifidlogTown_PokemonCenter_2F/header.inc"
+	.include "data/maps/ViridianCity_TrainerHouse_1F/header.inc"
 	.include "data/maps/VerdanturfTown_BattleTentLobby/header.inc"
 	.include "data/maps/VerdanturfTown_BattleTentCorridor/header.inc"
 	.include "data/maps/VerdanturfTown_BattleTentBattleRoom/header.inc"

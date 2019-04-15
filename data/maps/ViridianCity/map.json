@@ -1,37 +1,180 @@
 {
-  "id": "MAP_VIRIDIAN_CITY",
-  "name": "ViridianCity",
-  "layout": "LAYOUT_VIRIDIAN_CITY",
-  "music": "MUS_DAN02",
-  "region_map_section": "MAPSEC_VIRIDIAN_CITY",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_CITY",
-  "map_palette": "0",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "down",
-      "offset": 20,
-      "map": "MAP_ROUTE1"
-    },
-    {
-      "direction": "left",
-      "offset": 8,
-      "map": "MAP_ROUTE22"
-    },
-    {
-      "direction": "up",
-      "offset": 10,
-      "map": "MAP_ROUTE2"
-    }
-  ],
-  "object_events": [],
-  "warp_events": [],
-  "coord_events": [],
-  "bg_events": []
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 17,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 27,
+            "y": 7
+        },
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 19,
+            "y": 1
+        },
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 21,
+            "y": 15
+        },
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 24,
+            "y": 25
+        },
+        {
+            "elevation": 3,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 30,
+            "y": 19
+        }
+    ],
+    "connections": [
+        {
+            "direction": "down",
+            "map": "MAP_ROUTE1",
+            "offset": 20
+        },
+        {
+            "direction": "left",
+            "map": "MAP_ROUTE22",
+            "offset": 8
+        },
+        {
+            "direction": "up",
+            "map": "MAP_ROUTE2",
+            "offset": 10
+        }
+    ],
+    "coord_events": [
+    ],
+    "id": "MAP_VIRIDIAN_CITY",
+    "layout": "LAYOUT_VIRIDIAN_CITY",
+    "map_palette": "0",
+    "map_type": "MAP_TYPE_CITY",
+    "music": "MUS_DAN02",
+    "name": "ViridianCity",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_OLD_MAN",
+            "movement_range_x": 2,
+            "movement_range_y": 2,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "npc_palette": "0",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 18,
+            "y": 5
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_OLD_MAN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_BLUE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 30,
+            "y": 8
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_FAT_MAN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_RED",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 6,
+            "y": 23
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+            "movement_range_x": 3,
+            "movement_range_y": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 17,
+            "y": 21
+        }
+    ],
+    "region_map_section": "MAPSEC_VIRIDIAN_CITY",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 32,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 21,
+            "y": 9
+        },
+        {
+            "dest_map": "MAP_VIRIDIAN_CITY_TRAINER_HOUSE_1F",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 23,
+            "y": 15
+        },
+        {
+            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_warp_id": 1,
+            "elevation": 3,
+            "x": 29,
+            "y": 19
+        },
+        {
+            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 23,
+            "y": 25
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
 }

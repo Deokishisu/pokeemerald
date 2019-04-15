@@ -4,7 +4,7 @@ gTileset_General:: @ 83DF704
 	.byte FALSE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_General
-	.4byte gTilesetPalettes_General, gTilesetPalettes_GeneralNite, gTilesetPalettes_GeneralMorn, gTilesetPalettes_General
+	.4byte gTilesetPalettes_General
 	.4byte gMetatiles_General
 	.4byte gMetatileAttributes_General
 	.4byte InitTilesetAnim_General
@@ -15,7 +15,7 @@ gTileset_Petalburg:: @ 83DF71C
 	.byte TRUE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_Petalburg
-	.4byte gTilesetPalettes_Petalburg, gTilesetPalettes_Petalburg, gTilesetPalettes_Petalburg, gTilesetPalettes_Petalburg
+	.4byte gTilesetPalettes_Petalburg
 	.4byte gMetatiles_Petalburg
 	.4byte gMetatileAttributes_Petalburg
 	.4byte InitTilesetAnim_Petalburg
@@ -26,7 +26,7 @@ gTileset_Building:: @ 83DF884
 	.byte FALSE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_InsideBuilding
-	.4byte gTilesetPalettes_InsideBuilding, gTilesetPalettes_InsideBuilding_Nite, gTilesetPalettes_InsideBuilding_DungeonDay, gTilesetPalettes_InsideBuilding_DungeonDark
+	.4byte gTilesetPalettes_InsideBuilding
 	.4byte gMetatiles_InsideBuilding
 	.4byte gMetatileAttributes_InsideBuilding
 	.4byte InitTilesetAnim_Building
@@ -37,7 +37,7 @@ gTileset_BikeShop:: @ 83DF9D4
 	.byte TRUE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_BikeShop
-	.4byte gTilesetPalettes_BikeShop, gTilesetPalettes_BikeShop, gTilesetPalettes_BikeShop, gTilesetPalettes_BikeShop
+	.4byte gTilesetPalettes_BikeShop
 	.4byte gMetatiles_BikeShop
 	.4byte gMetatileAttributes_BikeShop
 	.4byte InitTilesetAnim_BikeShop
@@ -48,7 +48,7 @@ gTileset_GenericBuilding:: @ 83DFB6C
 	.byte TRUE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_GenericBuilding
-	.4byte gTilesetPalettes_GenericBuilding, gTilesetPalettes_GenericBuilding, gTilesetPalettes_GenericBuilding, gTilesetPalettes_GenericBuilding
+	.4byte gTilesetPalettes_GenericBuilding
 	.4byte gMetatiles_GenericBuilding
 	.4byte gMetatileAttributes_GenericBuilding
 	.4byte NULL @ animation callback
@@ -59,7 +59,7 @@ gTileset_Building2:: @ 83DF704
 	.byte FALSE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_Building2
-	.4byte gTilesetPalettes_InsideBuilding, gTilesetPalettes_InsideBuilding_Nite, gTilesetPalettes_InsideBuilding_DungeonDay, gTilesetPalettes_InsideBuilding_DungeonDark
+	.4byte gTilesetPalettes_InsideBuilding
 	.4byte gMetatiles_Building2
 	.4byte gMetatileAttributes_Building2
 	.4byte NULL
@@ -70,7 +70,7 @@ gTileset_Special:: @ 83DF884
 	.byte FALSE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_Special
-	.4byte gTilesetPalettes_Special, gTilesetPalettes_Special, gTilesetPalettes_Special, gTilesetPalettes_Special
+	.4byte gTilesetPalettes_Special
 	.4byte gMetatiles_Special
 	.4byte gMetatileAttributes_Special
 	.4byte NULL

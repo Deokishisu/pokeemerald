@@ -497,6 +497,7 @@
 // Map Group 34
 #define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F (0 | (34 << 8))
 #define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_2F (1 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_1F    (2 | (34 << 8))
 
 // Map Group 35
 #define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (35 << 8))
