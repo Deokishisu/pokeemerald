@@ -1,4 +1,5 @@
 #include "global.h"
+#include "alloc.h"
 #include "bg.h"
 #include "decompress.h"
 #include "event_object_movement.h"
@@ -24,7 +25,7 @@
 
 //extern
 extern void AddTextPrinterParameterized4(u8 windowId, u8 fontId, u8 x, u8 y, u8 letterSpacing, u8 lineSpacing, const u8 *color, s8 speed, const u8 *str);
-extern void sub_8150948(struct Sprite *sprite);
+extern void *AllocZeroed(u32 size);
 
 // static declarations
 static void UpdateDateTime(u8 taskId);
@@ -39,6 +40,10 @@ static void SetUpTextPerPage(void);
 static void FormatPokegearTime(u8 *dest, s32 hour, s32 minute, s32 second);
 static u8 FindPlayerLocation(void);
 static void nothing(struct Sprite *sprite);
+static void LoadPokegearSpriteGfx(void);
+void InitPokegearScreen(void);
+static void PokegearMainCallback(void);
+static void PokegearVBlankCallback(void);
 
 //.rodata
 
@@ -51,6 +56,8 @@ static const u32 gTilemap_MapCardKanto[] = INCBIN_U32("graphics/pokegear/map_car
 static const u32 gTilemap_PhoneCard[] = INCBIN_U32("graphics/pokegear/phone_card.bin.lz");
 static const u32 gTilemap_RadioCard[] = INCBIN_U32("graphics/pokegear/radio_card.bin.lz");
 static const u16 gPalette_TextboxPal[] = INCBIN_U16("graphics/pokegear/pokegear_textbox.gbapal");
+static const u32 gMapCardCursor_Gfx[] = INCBIN_U32("graphics/pokegear/map_cursor.4bpp.lz");
+static const u32 sArrowCursor_Gfx[] = INCBIN_U32("graphics/pokegear/arrow.4bpp.lz");
 
 static const u8 gText_Switch[] = _("SWITCH▶");
 static const u8 gText_Exit[] = _("Press any button\nto exit.");
@@ -164,6 +171,76 @@ struct MapCardData
     u8 x;
     u8 y;
     const u8 *name;
+};
+
+#define MAP_CURSOR_TAG 0xD000
+#define ARROW_CURSOR_TAG 0xDEAD
+
+static const struct CompressedSpriteSheet sSpriteSheet_ArrowCursor =
+{
+    .data = sArrowCursor_Gfx,
+    .size = 76,
+    .tag ARROW_CURSOR_TAG,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_MapCursor =
+{
+    .data = gMapCardCursor_Gfx,
+    .size = 1132,
+    .tag MAP_CURSOR_TAG,
+};
+
+static const struct OamData gOamData_MapCursor =
+{
+    .y = 0,
+    .affineMode = 0,
+    .objMode = 0,
+    .mosaic = 0,
+    .bpp = 0,
+    .shape = 0,
+    .x = 0,
+    .matrixNum = 0,
+    .size = 1,
+    .tileNum = 0,
+    .priority = 4,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static const union AnimCmd sSpriteAnim_MapCursor[] =
+{
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd *const sSpriteAnimTable_MapCursor[] =
+{
+    sSpriteAnim_MapCursor,
+};
+
+void SpriteCb_None(struct Sprite *sprite)
+{}
+
+static const struct SpriteTemplate sSpriteTemplate_ArrowCursor =
+{
+    .tileTag = ARROW_CURSOR_TAG,
+    .paletteTag = MAP_CURSOR_TAG,
+    .oam = &gOamData_MapCursor,
+    .anims = sSpriteAnimTable_MapCursor,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCb_None
+};
+
+static const struct SpriteTemplate sSpriteTemplate_MapCursor =
+{
+    .tileTag = MAP_CURSOR_TAG,
+    .paletteTag = MAP_CURSOR_TAG,
+    .oam = &gOamData_MapCursor,
+    .anims = sSpriteAnimTable_MapCursor,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCb_None
 };
 
 //add 40 to x coords and 8 to y coords in code
@@ -280,98 +357,111 @@ static const struct MapCardData sMapCardDataKanto[] =
 #define SWITCH_WINDOW 3
 #define MAP_NAME_WINDOW 4
 
-static EWRAM_DATA u8 sPage = PAGE_TIME_CARD;
-static EWRAM_DATA u8 sPreviousPage = PAGE_MAP_CARD;
-static EWRAM_DATA u8 sMapCursorPosition = 0xFF;
-static EWRAM_DATA bool8 sMakeSprite = TRUE;
-
-const struct BgTemplate gBgTemplates_PokegearScreen[] =
+struct Pokegear
 {
-        {
-                .bg = 0,
-                .charBaseIndex = 0,
-                .mapBaseIndex = 28,
-                .screenSize = 0,
-                .paletteMode = 0,
-                .priority = 3,
-                .baseTile = 0
-        },
-        {
-                .bg = 1,
-                .charBaseIndex = 1,
-                .mapBaseIndex = 29,
-                .screenSize = 0,
-                .paletteMode = 0,
-                .priority = 2,
-                .baseTile = 0
-        },
-        {
-                .bg = 2,
-                .charBaseIndex = 2,
-                .mapBaseIndex = 30,
-                .screenSize = 0,
-                .paletteMode = 0,
-                .priority = 1,
-                .baseTile = 0
-        },
-        {
-                .bg = 3,
-                .charBaseIndex = 3,
-                .mapBaseIndex = 31,
-                .screenSize = 0,
-                .paletteMode = 0,
-                .priority = 2,
-                .baseTile = 0
-        },
+    u8 state;
+    u8 page;
+    u8 previousPage;
+    u8 arrowSpriteId;
+    u8 playerSpriteId;
+    u8 mapCursorSpriteId;
+    u8 mapCursorPosition;
+};
+
+static EWRAM_DATA struct Pokegear *sPokegear = NULL;
+
+//static EWRAM_DATA u8 sPage = 0;
+//static EWRAM_DATA u8 sPreviousPage = 0;
+//static EWRAM_DATA u8 sMapCursorPosition = 0;
+//static EWRAM_DATA bool8 sMakeSprite = 0;
+
+static const struct BgTemplate sBgTemplates_PokegearScreen[] =
+{
+    {
+        .bg = 0,
+        .charBaseIndex = 0,
+        .mapBaseIndex = 28,
+        .screenSize = 0,
+        .paletteMode = 0,
+        .priority = 3,
+        .baseTile = 0
+    },
+    {
+        .bg = 1,
+        .charBaseIndex = 1,
+        .mapBaseIndex = 29,
+        .screenSize = 0,
+        .paletteMode = 0,
+        .priority = 2,
+        .baseTile = 0x401
+    },
+    {
+        .bg = 2,
+        .charBaseIndex = 2,
+        .mapBaseIndex = 30,
+        .screenSize = 0,
+        .paletteMode = 0,
+        .priority = 1,
+        .baseTile = 0
+    },
+    {
+        .bg = 3,
+        .charBaseIndex = 3,
+        .mapBaseIndex = 31,
+        .screenSize = 0,
+        .paletteMode = 0,
+        .priority = 2,
+        .baseTile = 0
+    },
 };
 
 static const struct WindowTemplate sWindowTemplate_PokegearTimeCard[] =
 {
-        { // TEXTBOX_WINDOW
-                .bg =1,
-                .tilemapLeft = 6,
-                .tilemapTop = 14,
-                .width = 18,
-                .height = 4,
-                .paletteNum = 0,
-                .baseBlock = 0x1
-        },
-        {// DAY_WINDOW
-                .bg = 1,
-                .tilemapLeft = 11,
-                .tilemapTop = 7,
-                .width = 9,
-                .height = 1,
-                .paletteNum = 0,
-                .baseBlock = 0x79,
-        },
-        {// TIME_WINDOW
-                .bg = 1,
-                .tilemapLeft = 11,
-                .tilemapTop = 9,
-                .width = 8,
-                .height = 1,
-                .paletteNum = 0,
-                .baseBlock = 0x82,
-        },
-        {// SWITCH_WINDOW
-                .bg = 2,
-                .tilemapLeft = 18,
-                .tilemapTop = 2,
-                .width = 7,
-                .height = 1,
-                .paletteNum = 0,
-                .baseBlock = 0x8B,
-        },
-        {// MAP_NAME_WINDOW
-                .bg = 2,
-                .tilemapLeft = 14,
-                .tilemapTop = 1,
-                .width = 11,
-                .height = 4,
-                .paletteNum = 0,
-                .baseBlock = 0x9F,
-        },
+    { // TEXTBOX_WINDOW
+        .bg =1,
+        .tilemapLeft = 6,
+        .tilemapTop = 14,
+        .width = 18,
+        .height = 4,
+        .paletteNum = 0,
+        .baseBlock = 0x1
+    },
+    {// DAY_WINDOW
+        .bg = 1,
+        .tilemapLeft = 11,
+        .tilemapTop = 7,
+        .width = 9,
+        .height = 1,
+        .paletteNum = 0,
+        .baseBlock = 0x79,
+    },
+    {// TIME_WINDOW
+        .bg = 1,
+        .tilemapLeft = 11,
+        .tilemapTop = 9,
+        .width = 8,
+        .height = 1,
+        .paletteNum = 0,
+        .baseBlock = 0x82,
+    },
+    {// SWITCH_WINDOW
+        .bg = 2,
+        .tilemapLeft = 18,
+        .tilemapTop = 2,
+        .width = 7,
+        .height = 1,
+        .paletteNum = 0,
+        .baseBlock = 0x8B,
+    },
+    {// MAP_NAME_WINDOW
+        .bg = 2,
+        .tilemapLeft = 14,
+        .tilemapTop = 1,
+        .width = 11,
+        .height = 4,
+        .paletteNum = 0,
+        .baseBlock = 0x9F,
+    },
 };
 
 bool8 IsInJohto(void)
@@ -399,30 +489,31 @@ bool8 IsInJohto(void)
 
 void LoadBackgroundGraphics(void)
 {
-    LZ77UnCompVram(gGraphics_PokegearTileset, (void *)VRAM);
+    LZ77UnCompVram(gGraphics_PokegearTileset, (void *)BG_CHAR_ADDR(0));
     if(gSaveBlock2Ptr->playerGender == MALE)
         LoadPalette(gPalette_PokegearPalMale, 0x00, 0x20);
     else
         LoadPalette(gPalette_PokegearPalFemale, 0x00, 0x20);
-    switch(sPage)
+    InitBgsFromTemplates(0, sBgTemplates_PokegearScreen, ARRAY_COUNT(sBgTemplates_PokegearScreen));
+    switch(sPokegear->page)
     {
         case PAGE_TIME_CARD:
-            LZ77UnCompVram(gTilemap_TimeCard, (u16 *)BG_SCREEN_ADDR(28));
+            CopyToBgTilemapBuffer(0, gTilemap_TimeCard, 0, 0);
             break;
         case PAGE_MAP_CARD:
             if(IsInJohto())
-                LZ77UnCompVram(gTilemap_MapCardJohto, (u16 *)BG_SCREEN_ADDR(28));
+                CopyToBgTilemapBuffer(0, gTilemap_MapCardJohto, 0, 0);
             else
-                LZ77UnCompVram(gTilemap_MapCardKanto, (u16 *)BG_SCREEN_ADDR(28));
+                CopyToBgTilemapBuffer(0, gTilemap_MapCardKanto, 0, 0);
             break;
         case PAGE_PHONE_CARD:
-            LZ77UnCompVram(gTilemap_PhoneCard, (u16 *)BG_SCREEN_ADDR(28));
+            CopyToBgTilemapBuffer(0, gTilemap_PhoneCard, 0, 0);
             break;
         case PAGE_RADIO_CARD:
-            LZ77UnCompVram(gTilemap_RadioCard, (u16 *)BG_SCREEN_ADDR(28));
+            CopyToBgTilemapBuffer(0, gTilemap_RadioCard, 0, 0);
             break;
     }
-    InitBgsFromTemplates(0, gBgTemplates_PokegearScreen, ARRAY_COUNT(gBgTemplates_PokegearScreen));
+    CopyBgTilemapBufferToVram(0);
     ResetAllBgsCoordinates();
     ShowBg(0);
     ShowBg(1);
@@ -441,6 +532,7 @@ static void InitializeTextWindows(void)
 
 static void ShowConditionalCardIcons(void)
 {
+    SetBgTilemapBuffer(0, AllocZeroed(BG_SCREEN_SIZE));
     if(FlagGet(FLAG_HAS_MAP_CARD))
     {
         FillBgTilemapBufferRect(0, 16, 7, 1, 1, 1, 0);
@@ -455,8 +547,6 @@ static void ShowConditionalCardIcons(void)
         FillBgTilemapBufferRect(0, 34, 11, 2, 1, 1, 0);
         FillBgTilemapBufferRect(0, 35, 12, 2, 1, 1, 0);
     }
-    CopyBgTilemapBufferToVram(0);
-    ShowBg(0);
 }
 
 void VBlankCallback(void)
@@ -477,7 +567,22 @@ void Pokegear_MainCallback(void)
 
 void CB2_Pokegear(void)
 {
-    sPage = 0;
+    sPokegear->page = PAGE_TIME_CARD;
+    sPokegear->previousPage = PAGE_MAP_CARD;
+    switch(gMain.state)
+    {
+        case 0:
+        default:
+            BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
+            gMain.state++;
+            break;
+        case 1:
+            if(!gPaletteFade.active)
+            {
+                SetMainCallback2(InitPokegearScreen);
+            }
+            break;
+    }/*
     switch(gMain.state)
     {
         case 0:
@@ -500,7 +605,114 @@ void CB2_Pokegear(void)
             CreateTask(HandleKeyPresses, 0);
             CreateTask(UpdateDateTime, 1);
             break;
+    }*/
+}
+
+void InitPokegearScreen(void)
+{
+    //sPage = PAGE_TIME_CARD;
+    //sPokegear->previousPage = PAGE_MAP_CARD;
+    sPokegear = AllocZeroed(sizeof(*sPokegear));
+    sPokegear->page = PAGE_TIME_CARD;
+    sPokegear->previousPage = PAGE_MAP_CARD;
+
+    SetVBlankCallback(NULL);
+    ResetAllBgsCoordinates();
+    ResetVramOamAndBgCntRegs();
+    ResetBgsAndClearDma3BusyFlags(0);
+
+    LoadBackgroundGraphics();
+    //InitBgsFromTemplates(0, sBgTemplates_PokegearScreen, ARRAY_COUNT(sBgTemplates_PokegearScreen));
+    SetBgTilemapBuffer(0, AllocZeroed(BG_SCREEN_SIZE));
+    //DecompressAndLoadBgGfxUsingHeap(0, gGraphics_PokegearTileset, 1132, 0, 0);
+    CopyToBgTilemapBuffer(0, gTilemap_TimeCard, 0, 0);
+    ResetPaletteFade();
+    /*if(gSaveBlock2Ptr->playerGender == MALE)
+        LoadPalette(gPalette_PokegearPalMale, 0 , sizeof(gPalette_PokegearPalMale));
+    else
+        LoadPalette(gPalette_PokegearPalFemale, 0 , sizeof(gPalette_PokegearPalMale));*/
+    InitWindows(sWindowTemplate_PokegearTimeCard);
+    DeactivateAllTextPrinters();
+
+    ResetSpriteData();
+    FreeAllSpritePalettes();
+    LoadPokegearSpriteGfx();
+    //InitPokegearSprites();
+
+    //ShowConditionalCardIcons();
+    CopyBgTilemapBufferToVram(0);
+    SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_MODE_0 | DISPCNT_OBJ_1D_MAP | DISPCNT_OBJ_ON);
+    ShowBg(0);
+    BeginNormalPaletteFade(0xFFFFFFFF, 0, 16, 0, RGB_BLACK);
+    SetVBlankCallback(PokegearVBlankCallback);
+    SetMainCallback2(PokegearMainCallback);
+    CreateTask(HandleKeyPresses, 0);
+    CreateTask(UpdateDateTime, 1);
+}
+
+static void PokegearMainCallback(void)
+{
+    RunTasks();
+    AnimateSprites();
+    BuildOamBuffer();
+    RunTextPrinters();
+    UpdatePaletteFade();
+}
+
+static void PokegearVBlankCallback(void)
+{
+    LoadOam();
+    ProcessSpriteCopyRequests();
+    TransferPlttBuffer();
+}
+
+static void LoadPokegearSpriteGfx()
+{
+    //all page arrow sprite
+
+    //map card sprites
+    u8 playerGraphicsIds[2] = {EVENT_OBJ_GFX_GOLD_NORMAL, EVENT_OBJ_GFX_KRIS_NORMAL};
+    u8 currLocation = FindPlayerLocation();
+
+    //all page arrow sprite
+    if(GetSpriteTileStartByTag(ARROW_CURSOR_TAG) == 0xFFFF)
+    {
+        LoadCompressedSpriteSheet(&sSpriteSheet_ArrowCursor);
     }
+    sPokegear->arrowSpriteId = CreateSprite(&sSpriteTemplate_ArrowCursor, 0, 0, 0);
+    StartSpriteAnim(&gSprites[sPokegear->arrowSpriteId], 0);
+
+    //map card sprites
+    if(sPokegear->mapCursorPosition == 0)
+    {
+        sPokegear->mapCursorPosition = currLocation + 1;
+    }
+    if(IsInJohto())
+    {
+        sPokegear->playerSpriteId = AddPseudoEventObject(playerGraphicsIds[gSaveBlock2Ptr->playerGender], nothing, sMapCardDataJohto[currLocation].x + 40, sMapCardDataJohto[currLocation].y + 8, 0);
+        StartSpriteAnim(&gSprites[sPokegear->playerSpriteId], 4);
+        if (GetSpriteTileStartByTag(MAP_CURSOR_TAG) == 0xFFFF)
+        {
+            LoadCompressedSpriteSheet(&sSpriteSheet_MapCursor);
+        }
+        sPokegear->mapCursorSpriteId = CreateSprite(&sSpriteTemplate_MapCursor, sMapCardDataJohto[sPokegear->mapCursorPosition - 1].x + 40, sMapCardDataJohto[sPokegear->mapCursorPosition - 1].y + 8, 0);
+        StartSpriteAnim(&gSprites[sPokegear->mapCursorSpriteId], 0);
+        //AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataJohto[sMapCursorPosition - 1].name);
+    }
+    else
+    {
+        sPokegear->playerSpriteId = AddPseudoEventObject(playerGraphicsIds[gSaveBlock2Ptr->playerGender], nothing, sMapCardDataKanto[currLocation].x + 40, sMapCardDataKanto[currLocation].y + 8, 0);
+        StartSpriteAnim(&gSprites[sPokegear->playerSpriteId], 4);
+        if (GetSpriteTileStartByTag(MAP_CURSOR_TAG) == 0xFFFF)
+        {
+            LoadCompressedSpriteSheet(&sSpriteSheet_MapCursor);
+        }
+        sPokegear->mapCursorSpriteId = CreateSprite(&sSpriteTemplate_MapCursor, sMapCardDataKanto[sPokegear->mapCursorPosition - 1].x + 40, sMapCardDataKanto[sPokegear->mapCursorPosition - 1].y + 8, 0);
+        StartSpriteAnim(&gSprites[sPokegear->mapCursorSpriteId], 0);
+        //AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataKanto[sMapCursorPosition - 1].name);
+    }
+    gSprites[sPokegear->playerSpriteId].invisible = TRUE;
+    gSprites[sPokegear->mapCursorSpriteId].invisible = TRUE;
 }
 
 static void UpdateDateTime(u8 taskId)
@@ -510,7 +722,7 @@ static void UpdateDateTime(u8 taskId)
     {
         *dayOfWeek = 0;
     }
-    if(sPage != PAGE_TIME_CARD)
+    if(sPokegear->page != PAGE_TIME_CARD)
     {
         //do nothing
     }
@@ -541,20 +753,18 @@ static void nothing(struct Sprite *sprite)
 static void HandleKeyPresses(u8 taskId)
 {
     s16 *state = gTasks[taskId].data;
-    //u8 spriteId;
-    //spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_GOLD_NORMAL, nothing, 0, 0, 0);
 
     switch (state[0])
     {
         case 0:
             LoadBackgroundGraphics();
             InitializeTextWindows();
-            //ShowConditionalCardIcons();
+            ShowConditionalCardIcons();
             SetUpTextPerPage();
             state[0]++;
             break;
         case 1:
-            if (sPage == PAGE_TIME_CARD)
+            if (sPokegear->page == PAGE_TIME_CARD)
             {
                 if ((gMain.newKeys & A_BUTTON) || (gMain.newKeys & B_BUTTON)
                     || (gMain.newKeys & START_BUTTON) || (gMain.newKeys & SELECT_BUTTON)) //Anything but DPAD, close window
@@ -565,13 +775,13 @@ static void HandleKeyPresses(u8 taskId)
                 }
                 else if (gMain.newKeys & DPAD_RIGHT) //DPAD Right, move to next card
                 {
-                    sPreviousPage = sPage;
+                    sPokegear->previousPage = sPokegear->page;
                     //switch to next card. Check if map card unlocked
                     if (FlagGet(FLAG_HAS_MAP_CARD)) {
-                        sPage = PAGE_MAP_CARD;
+                        sPokegear->page = PAGE_MAP_CARD;
                         state[0] = 0;
                     } else {
-                        sPage = PAGE_PHONE_CARD;
+                        sPokegear->page = PAGE_PHONE_CARD;
                         state[0] = 0;
                     }
                 }
@@ -580,32 +790,51 @@ static void HandleKeyPresses(u8 taskId)
                     //Do Nothing
                 }
             }
-            else if (sPage == PAGE_MAP_CARD)
+            else if (sPokegear->page == PAGE_MAP_CARD)
             {
-                u8 spriteId;
+                //u8 spriteId;
+                //u8 cursorSpriteId;
                 u8 txtcolor[2];
-                u8 currLocation = FindPlayerLocation();
-                u8 playerGraphicsIds[2] = {EVENT_OBJ_GFX_GOLD_NORMAL, EVENT_OBJ_GFX_KRIS_NORMAL};
+                //u8 currLocation = FindPlayerLocation();
+                //u8 playerGraphicsIds[2] = {EVENT_OBJ_GFX_GOLD_NORMAL, EVENT_OBJ_GFX_KRIS_NORMAL};
                 txtcolor[0] = 0x0;
-                txtcolor[1] = 0x2;
-                //spriteId = AddPseudoEventObject(playerGraphicsIds[gSaveBlock2Ptr->playerGender], nothing, 0, 0, 0);
-                //StartSpriteAnim(&gSprites[spriteId], 4);
-                if(sMapCursorPosition > 48)
+                txtcolor[1] = 0x2;/*
+                if(sMapCursorPosition == 0)
                 {
-                    sMapCursorPosition = currLocation;
+                    sMapCursorPosition = currLocation + 1;
                 }
                 if(IsInJohto())
                 {
-                    spriteId = AddPseudoEventObject(playerGraphicsIds[gSaveBlock2Ptr->playerGender], nothing, sMapCardDataJohto[currLocation].x + 40, sMapCardDataJohto[currLocation].y + 8, 0);
-                    StartSpriteAnim(&gSprites[spriteId], 4);
-                    AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataJohto[sMapCursorPosition].name);
+                    if(sMakeSprite == 0)
+                    {
+                        spriteId = AddPseudoEventObject(playerGraphicsIds[gSaveBlock2Ptr->playerGender], nothing, sMapCardDataJohto[currLocation].x + 40, sMapCardDataJohto[currLocation].y + 8, 0);
+                        StartSpriteAnim(&gSprites[spriteId], 4);
+                        if (GetSpriteTileStartByTag(MAP_CURSOR_TAG) == 0xFFFF)
+                        {
+                            LoadCompressedSpriteSheet(&sSpriteSheet_MapCursor);
+                        }
+                        cursorSpriteId = CreateSprite(&sSpriteTemplate_MapCursor, sMapCardDataJohto[sMapCursorPosition - 1].x + 40, sMapCardDataJohto[sMapCursorPosition - 1].y + 8, 0);
+                        StartSpriteAnim(&gSprites[cursorSpriteId], 0);
+                        sMakeSprite = 1;
+                    }
+                    AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataJohto[sMapCursorPosition - 1].name);
                 }
                 else
                 {
-                    spriteId = AddPseudoEventObject(playerGraphicsIds[gSaveBlock2Ptr->playerGender], nothing, sMapCardDataKanto[currLocation].x + 40, sMapCardDataKanto[currLocation].y + 8, 0);
-                    StartSpriteAnim(&gSprites[spriteId], 4);
-                    AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataKanto[sMapCursorPosition].name);
-                }
+                    if(sMakeSprite == 0)
+                    {
+                        spriteId = AddPseudoEventObject(playerGraphicsIds[gSaveBlock2Ptr->playerGender], nothing, sMapCardDataKanto[currLocation].x + 40, sMapCardDataKanto[currLocation].y + 8, 0);
+                        StartSpriteAnim(&gSprites[spriteId], 4);
+                        if (GetSpriteTileStartByTag(MAP_CURSOR_TAG) == 0xFFFF)
+                        {
+                            LoadCompressedSpriteSheet(&sSpriteSheet_MapCursor);
+                        }
+                        cursorSpriteId = CreateSprite(&sSpriteTemplate_MapCursor, sMapCardDataKanto[sMapCursorPosition - 1].x + 40, sMapCardDataKanto[sMapCursorPosition - 1].y + 8, 0);
+                        StartSpriteAnim(&gSprites[cursorSpriteId], 0);
+                        sMakeSprite = 1;
+                    }
+                    AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataKanto[sMapCursorPosition - 1].name);
+                }*/
                 PutWindowTilemap(MAP_NAME_WINDOW);
                 CopyWindowToVram(MAP_NAME_WINDOW, 3);
                 if (gMain.newKeys & B_BUTTON) //B closes window
@@ -616,62 +845,70 @@ static void HandleKeyPresses(u8 taskId)
                 }
                 else if (gMain.newKeys & DPAD_RIGHT) //DPAD Right, move to next card
                 {
-                    sPreviousPage = sPage;
-                    sPage = PAGE_PHONE_CARD;
+                    sPokegear->previousPage = sPokegear->page;
+                    sPokegear->page = PAGE_PHONE_CARD;
                     state[0] = 0;
                 }
                 else if (gMain.newKeys & DPAD_LEFT) //DPAD Right, move to next card
                 {
-                    sPreviousPage = sPage;
-                    sPage = PAGE_TIME_CARD;
+                    sPokegear->previousPage = sPokegear->page;
+                    sPokegear->page = PAGE_TIME_CARD;
                     state[0] = 0;
                 }
                 else if (gMain.newAndRepeatedKeys & DPAD_UP)
                 {
-                    sMapCursorPosition++;
-                    if(sMapCursorPosition > 45 && IsInJohto())
+                    sPokegear->mapCursorPosition++;
+                    if(sPokegear->mapCursorPosition > 46 && IsInJohto())
                     {
-                        sMapCursorPosition = 0;
+                        sPokegear->mapCursorPosition = 1;
                     }
-                    else if(sMapCursorPosition > 47 && !IsInJohto())
+                    else if(sPokegear->mapCursorPosition > 48 && !IsInJohto())
                     {
-                        sMapCursorPosition = 0;
+                        sPokegear->mapCursorPosition = 1;
                     }
                     FillWindowPixelBuffer(MAP_NAME_WINDOW, PIXEL_FILL(0));
                     PutWindowTilemap(MAP_NAME_WINDOW);
                     CopyWindowToVram(MAP_NAME_WINDOW, 3);
                     if(IsInJohto())
                     {
-                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataJohto[sMapCursorPosition].name);
+                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataJohto[sPokegear->mapCursorPosition - 1].name);
+                        //gSprites[cursorSpriteId].pos1.x = sMapCardDataJohto[sPokegear->mapCursorPosition - 1].x + 40;
+                        //gSprites[cursorSpriteId].pos1.y = sMapCardDataJohto[sPokegear->mapCursorPosition - 1].y + 8;
                     }
                     else
                     {
-                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataKanto[sMapCursorPosition].name);
+                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataKanto[sPokegear->mapCursorPosition - 1].name);
+                        //gSprites[cursorSpriteId].pos1.x = sMapCardDataKanto[sPokegear->mapCursorPosition - 1].x + 40;
+                        //gSprites[cursorSpriteId].pos1.y = sMapCardDataKanto[sPokegear->mapCursorPosition - 1].y + 8;
                     }
                     PutWindowTilemap(MAP_NAME_WINDOW);
                     CopyWindowToVram(MAP_NAME_WINDOW, 3);
                 }
                 else if (gMain.newAndRepeatedKeys & DPAD_DOWN)
                 {
-                    if(sMapCursorPosition == 0 && IsInJohto())
+                    if(sPokegear->mapCursorPosition == 1 && IsInJohto())
                     {
-                        sMapCursorPosition = 46;
+                        sPokegear->mapCursorPosition = 47;
                     }
-                    else if(sMapCursorPosition == 0 &&!IsInJohto())
+                    else if(sPokegear->mapCursorPosition == 1 &&!IsInJohto())
                     {
-                        sMapCursorPosition = 48;
+                        sPokegear->mapCursorPosition = 49;
                     }
-                    sMapCursorPosition--;
+                    sPokegear->mapCursorPosition--;
                     FillWindowPixelBuffer(MAP_NAME_WINDOW, PIXEL_FILL(0));
                     PutWindowTilemap(MAP_NAME_WINDOW);
                     CopyWindowToVram(MAP_NAME_WINDOW, 3);
                     if(IsInJohto())
                     {
-                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataJohto[sMapCursorPosition].name);
+                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataJohto[sPokegear->mapCursorPosition - 1].name);
+                        //gSprites[cursorSpriteId].pos1.x = sMapCardDataJohto[sPokegear->mapCursorPosition - 1].x + 40;
+                        //gSprites[cursorSpriteId].pos1.y = sMapCardDataJohto[sPokegear->mapCursorPosition - 1].y + 8;
                     }
                     else
                     {
-                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataKanto[sMapCursorPosition].name);
+                        AddTextPrinterParameterized4(MAP_NAME_WINDOW, 1, 0, 0, 0, -8, txtcolor, 0, sMapCardDataKanto[sPokegear->mapCursorPosition - 1].name);
+                        //gSprites[cursorSpriteId].pos1.x = sMapCardDataKanto[sPokegear->mapCursorPosition - 1].x + 40;
+                        //gSprites[cursorSpriteId].pos1.y = sMapCardDataKanto[sPokegear->mapCursorPosition - 1].y + 8;
                     }
                     PutWindowTilemap(MAP_NAME_WINDOW);
                     CopyWindowToVram(MAP_NAME_WINDOW, 3);
@@ -681,7 +918,7 @@ static void HandleKeyPresses(u8 taskId)
                     //Do Nothing
                 }
             }
-            else if (sPage == PAGE_PHONE_CARD) {
+            else if (sPokegear->page == PAGE_PHONE_CARD) {
                 if (gMain.newKeys & B_BUTTON) //B closes window
                 {
                     BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
@@ -692,20 +929,20 @@ static void HandleKeyPresses(u8 taskId)
                 {
                     if (FlagGet(FLAG_HAS_RADIO_CARD))
                     {
-                        sPreviousPage = sPage;
-                        sPage = PAGE_RADIO_CARD;
+                        sPokegear->previousPage = sPokegear->page;
+                        sPokegear->page = PAGE_RADIO_CARD;
                         state[0] = 0;
                     }
                     //without radio card do nothing
                 }
                 else if (gMain.newKeys & DPAD_LEFT) //DPAD Left, move to previous card
                 {
-                    sPreviousPage = sPage;
+                    sPokegear->previousPage = sPokegear->page;
                     if (FlagGet(FLAG_HAS_MAP_CARD)) {
-                        sPage = PAGE_MAP_CARD;
+                        sPokegear->page = PAGE_MAP_CARD;
                         state[0] = 0;
                     } else {
-                        sPage = PAGE_TIME_CARD;
+                        sPokegear->page = PAGE_TIME_CARD;
                         state[0] = 0;
                     }
                 }
@@ -723,7 +960,7 @@ static void HandleKeyPresses(u8 taskId)
                     //Do Nothing
                 }
             }
-            else //sPage == PAGE_RADIO_CARD
+            else //sPokegear->page == PAGE_RADIO_CARD
             {
                 if (gMain.newKeys & B_BUTTON) //B closes window
                 {
@@ -733,8 +970,8 @@ static void HandleKeyPresses(u8 taskId)
                 }
                 else if (gMain.newKeys & DPAD_LEFT) //DPAD Left, move to previous card
                 {
-                    sPreviousPage = sPage;
-                    sPage = PAGE_PHONE_CARD;
+                    sPokegear->previousPage = sPokegear->page;
+                    sPokegear->page = PAGE_PHONE_CARD;
                     state[0] = 0;
                 }
                 else if (gMain.newKeys & DPAD_UP) //DPAD Up, tune radio
@@ -757,7 +994,7 @@ static void HandleKeyPresses(u8 taskId)
 
 static void SetUpTextPerPage(void)
 {
-    if(sPreviousPage == PAGE_TIME_CARD)
+    if(sPokegear->previousPage == PAGE_TIME_CARD)
     {
         FillWindowPixelBuffer(SWITCH_WINDOW, PIXEL_FILL(0));
         PutWindowTilemap(SWITCH_WINDOW);
@@ -772,13 +1009,13 @@ static void SetUpTextPerPage(void)
         PutWindowTilemap(TEXTBOX_WINDOW);
         CopyWindowToVram(TEXTBOX_WINDOW, 3);
     }
-    else if(sPreviousPage == PAGE_MAP_CARD)
+    else if(sPokegear->previousPage == PAGE_MAP_CARD)
     {
         FillWindowPixelBuffer(MAP_NAME_WINDOW, PIXEL_FILL(0));
         PutWindowTilemap(MAP_NAME_WINDOW);
         CopyWindowToVram(MAP_NAME_WINDOW, 3);
     }
-    if(sPage == PAGE_TIME_CARD)
+    if(sPokegear->page == PAGE_TIME_CARD)
     {
         u16 *dayOfWeek = GetVarPointer(VAR_DAYS);
         if(*dayOfWeek > 6)
@@ -810,7 +1047,7 @@ static void SetUpTextPerPage(void)
         CopyWindowToVram(TEXTBOX_WINDOW, 3);
 
     }
-    else if(sPage == PAGE_MAP_CARD)
+    else if(sPokegear->page == PAGE_MAP_CARD)
     {
     }
 }
@@ -877,7 +1114,7 @@ static void FormatPokegearTime(u8 *dest, s32 hour, s32 minute, s32 second)
 
 static void ChangePage(void)
 {
-    switch(sPage)
+    switch(sPokegear->page)
     {
         case PAGE_TIME_CARD:
             LZ77UnCompVram(gTilemap_TimeCard, (u16 *)BG_SCREEN_ADDR(28));
@@ -896,7 +1133,7 @@ static void ChangePage(void)
             break;
     }
 
-    InitBgsFromTemplates(0, gBgTemplates_PokegearScreen, ARRAY_COUNT(gBgTemplates_PokegearScreen));
+    InitBgsFromTemplates(0, sBgTemplates_PokegearScreen, ARRAY_COUNT(sBgTemplates_PokegearScreen));
     ResetAllBgsCoordinates();
     ShowBg(0);
 }
