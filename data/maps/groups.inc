@@ -495,6 +495,7 @@ gMapGroup34::
 	.4byte PacifidlogTown_PokemonCenter_1F
 	.4byte PacifidlogTown_PokemonCenter_2F
 	.4byte ViridianCity_TrainerHouse_1F
+	.4byte ViridianCity_TrainerHouse_B1F
 
 gMapGroup35::
 	.4byte VerdanturfTown_BattleTentLobby

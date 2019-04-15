@@ -465,3 +465,5 @@
 	.include "data/maps/PalletTown_RedsHouse_2F/events.inc"
 	.include "data/maps/PalletTown_BluesHouse/events.inc"
 	.include "data/maps/PalletTown_ProfOaksLab/events.inc"
+	.include "data/maps/ViridianCity_TrainerHouse_1F/events.inc"
+	.include "data/maps/ViridianCity_TrainerHouse_B1F/events.inc"

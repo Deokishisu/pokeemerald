@@ -3599,6 +3599,16 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
             "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/ViridianCity_TrainerHouse_B1F/map.bin",
+            "border_filepath": "data/layouts/ViridianCity_TrainerHouse_B1F/border.bin",
+            "height": 16,
+            "id": "LAYOUT_VIRIDIAN_CITY_TRAINER_HOUSE_B1F",
+            "name": "ViridianCity_TrainerHouse_B1F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
         }
     ],
     "layouts_table_label": "gMapLayouts"

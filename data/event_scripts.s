@@ -6933,3 +6933,5 @@ gText_082C877B:: @ 82C877B
 	.include "data/maps/PalletTown_ProfOaksLab/scripts.inc"
 
 	.include "data/maps/ViridianCity_TrainerHouse_1F/scripts.inc"
+
+	.include "data/maps/ViridianCity_TrainerHouse_B1F/scripts.inc"
