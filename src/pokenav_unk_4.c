@@ -843,7 +843,7 @@ static void sub_81CBEF8(struct Pokenav4Struct *state, int arg1)
     int x;
     int index = GetSelectedMatchCall() + arg1;
     int regionMapSection = sub_81CAEA4(index);
-    if (regionMapSection != MAPSEC_NONE)
+    if (regionMapSection != MAPSEC_NEW_BARK_TOWN)
         GetMapName(mapName, regionMapSection, 0);
     else
         StringCopy(mapName, gText_Unknown);

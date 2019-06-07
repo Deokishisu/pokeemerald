@@ -205,7 +205,7 @@
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "npc_palette": "0",
-            "script": "Route108_EventScript_290D4D",
+            "script": "Route108_EventScript_ItemStarPiece",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 0,

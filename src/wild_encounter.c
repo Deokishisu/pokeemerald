@@ -44,7 +44,7 @@ EWRAM_DATA static u32 sFeebasRngValue = 0;
 #include "data/wild_encounters.h"
 
 //Special Feebas-related data.
-const struct WildPokemon gWildFeebasRoute119Data = {20, 25, SPECIES_FEEBAS};
+const struct WildPokemon gWildFeebasRoute119Data = {0};
 
 const u16 gRoute119WaterTileData[] =
 {

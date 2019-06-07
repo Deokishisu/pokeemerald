@@ -312,7 +312,7 @@ void Task_HandlePorthole(u8 taskId)
 
 void sub_80FB6EC(void)
 {
-    u8 spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_SS_TIDAL, SpriteCallbackDummy, 112, 80, 0);
+    u8 spriteId = AddPseudoEventObject(EVENT_OBJ_GFX_ZSS_TIDAL, SpriteCallbackDummy, 112, 80, 0);
 
     gSprites[spriteId].coordOffsetEnabled = FALSE;
 

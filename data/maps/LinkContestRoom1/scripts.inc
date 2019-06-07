@@ -312,97 +312,97 @@ LinkContestRoom1_EventScript_23BB2B:: @ 823BB2B
 	return
 
 LinkContestRoom1_EventScript_23BB78:: @ 823BB78
-	createvobject EVENT_OBJ_GFX_NINJA_BOY, 20, 3, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_SCIENTIST_1, 24, 11, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 20, 3, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_SCIENTIST, 24, 11, 2, 3, 1
 	return
 
 LinkContestRoom1_EventScript_23BB8B:: @ 823BB8B
 	createvobject EVENT_OBJ_GFX_BEAUTY, 0, 2, 3, 3, 4
-	createvobject EVENT_OBJ_GFX_MAN_5, 1, 2, 4, 3, 4
-	createvobject EVENT_OBJ_GFX_HIKER, 2, 2, 7, 3, 4
-	createvobject EVENT_OBJ_GFX_SCIENTIST_1, 3, 2, 8, 3, 4
-	createvobject EVENT_OBJ_GFX_NINJA_BOY, 10, 12, 3, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_2, 11, 12, 4, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_3, 12, 12, 7, 3, 3
-	createvobject EVENT_OBJ_GFX_LITTLE_GIRL, 13, 12, 8, 3, 3
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 1, 2, 4, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 2, 2, 7, 3, 4
+	createvobject EVENT_OBJ_GFX_SCIENTIST, 3, 2, 8, 3, 4
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 10, 12, 3, 3, 3
+	createvobject EVENT_OBJ_GFX_LASS, 11, 12, 4, 3, 3
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 12, 12, 7, 3, 3
+	createvobject EVENT_OBJ_GFX_TWIN, 13, 12, 8, 3, 3
 	createvobject EVENT_OBJ_GFX_LASS, 20, 3, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_SCIENTIST_1, 24, 11, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_SCIENTIST, 24, 11, 2, 3, 1
 	return
 
 LinkContestRoom1_EventScript_23BBE6:: @ 823BBE6
 	createvobject EVENT_OBJ_GFX_BEAUTY, 0, 2, 3, 3, 4
-	createvobject EVENT_OBJ_GFX_MAN_5, 1, 2, 4, 3, 4
-	createvobject EVENT_OBJ_GFX_HIKER, 2, 2, 7, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 1, 2, 4, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 2, 2, 7, 3, 4
 	createvobject EVENT_OBJ_GFX_GENTLEMAN, 3, 2, 8, 3, 4
-	createvobject EVENT_OBJ_GFX_NINJA_BOY, 10, 12, 3, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_2, 11, 12, 4, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_3, 12, 12, 7, 3, 3
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 10, 12, 3, 3, 3
+	createvobject EVENT_OBJ_GFX_LASS, 11, 12, 4, 3, 3
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 12, 12, 7, 3, 3
 	createvobject EVENT_OBJ_GFX_BEAUTY, 13, 12, 8, 3, 3
-	createvobject EVENT_OBJ_GFX_EXPERT_F, 20, 3, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_MAN_2, 20, 6, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_WOMAN_5, 20, 7, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_SCIENTIST_1, 24, 8, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_OLD_WOMAN, 20, 3, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_FAT_MAN, 20, 6, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 20, 7, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_SCIENTIST, 24, 8, 2, 3, 1
 	createvobject EVENT_OBJ_GFX_GENTLEMAN, 24, 11, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_LITTLE_BOY, 25, 3, 9, 3, 2
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 25, 3, 9, 3, 2
 	createvobject EVENT_OBJ_GFX_YOUNGSTER, 26, 4, 9, 3, 2
 	createvobject EVENT_OBJ_GFX_FAT_MAN, 27, 5, 9, 3, 2
-	createvobject EVENT_OBJ_GFX_HEX_MANIAC, 28, 9, 9, 3, 2
-	createvobject EVENT_OBJ_GFX_SCHOOL_KID_M, 29, 10, 9, 3, 2
+	createvobject EVENT_OBJ_GFX_OLD_WOMAN, 28, 9, 9, 3, 2
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 29, 10, 9, 3, 2
 	createvobject EVENT_OBJ_GFX_MART_EMPLOYEE, 30, 11, 9, 3, 2
 	return
 
 LinkContestRoom1_EventScript_23BC92:: @ 823BC92
 	createvobject EVENT_OBJ_GFX_BEAUTY, 0, 2, 3, 3, 4
-	createvobject EVENT_OBJ_GFX_MAN_5, 1, 2, 4, 3, 4
-	createvobject EVENT_OBJ_GFX_HIKER, 2, 2, 7, 3, 4
-	createvobject EVENT_OBJ_GFX_LITTLE_GIRL, 3, 2, 8, 3, 4
-	createvobject EVENT_OBJ_GFX_MANIAC, 4, 1, 3, 3, 4
-	createvobject EVENT_OBJ_GFX_WOMAN_5, 6, 1, 5, 3, 4
-	createvobject EVENT_OBJ_GFX_WOMAN_4, 7, 1, 6, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 1, 2, 4, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 2, 2, 7, 3, 4
+	createvobject EVENT_OBJ_GFX_TWIN, 3, 2, 8, 3, 4
+	createvobject EVENT_OBJ_GFX_SUPER_NERD, 4, 1, 3, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 6, 1, 5, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 7, 1, 6, 3, 4
 	createvobject EVENT_OBJ_GFX_GENTLEMAN, 9, 1, 8, 3, 4
-	createvobject EVENT_OBJ_GFX_NINJA_BOY, 10, 12, 3, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_2, 11, 12, 4, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_3, 12, 12, 7, 3, 3
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 10, 12, 3, 3, 3
+	createvobject EVENT_OBJ_GFX_LASS, 11, 12, 4, 3, 3
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 12, 12, 7, 3, 3
 	createvobject EVENT_OBJ_GFX_BEAUTY, 13, 12, 8, 3, 3
-	createvobject EVENT_OBJ_GFX_FISHERMAN, 14, 13, 3, 3, 3
-	createvobject EVENT_OBJ_GFX_RUNNING_TRIATHLETE_F, 15, 13, 4, 3, 3
-	createvobject EVENT_OBJ_GFX_MAN_4, 17, 13, 6, 3, 3
+	createvobject EVENT_OBJ_GFX_FAT_MAN, 14, 13, 3, 3, 3
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 15, 13, 4, 3, 3
+	createvobject EVENT_OBJ_GFX_FAT_MAN, 17, 13, 6, 3, 3
 	createvobject EVENT_OBJ_GFX_MART_EMPLOYEE, 18, 13, 7, 3, 3
-	createvobject EVENT_OBJ_GFX_DEVON_EMPLOYEE, 19, 13, 8, 3, 3
+	createvobject EVENT_OBJ_GFX_GENTLEMAN, 19, 13, 8, 3, 3
 	createvobject EVENT_OBJ_GFX_POKEFAN_M, 20, 3, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_CAMPER, 21, 6, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_MAN_3, 22, 7, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_SCIENTIST_1, 24, 11, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_YOUNGSTER, 21, 6, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 22, 7, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_SCIENTIST, 24, 11, 2, 3, 1
 	createvobject EVENT_OBJ_GFX_SAILOR, 25, 3, 9, 3, 2
 	createvobject EVENT_OBJ_GFX_YOUNGSTER, 26, 4, 9, 3, 2
 	createvobject EVENT_OBJ_GFX_GENTLEMAN, 27, 5, 9, 3, 2
-	createvobject EVENT_OBJ_GFX_HEX_MANIAC, 28, 9, 9, 3, 2
-	createvobject EVENT_OBJ_GFX_SCHOOL_KID_M, 29, 10, 9, 3, 2
+	createvobject EVENT_OBJ_GFX_OLD_WOMAN, 28, 9, 9, 3, 2
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 29, 10, 9, 3, 2
 	createvobject EVENT_OBJ_GFX_MART_EMPLOYEE, 30, 11, 9, 3, 2
 	return
 
 LinkContestRoom1_EventScript_23BD86:: @ 823BD86
 	createvobject EVENT_OBJ_GFX_BEAUTY, 0, 2, 3, 3, 4
-	createvobject EVENT_OBJ_GFX_MAN_5, 1, 2, 4, 3, 4
-	createvobject EVENT_OBJ_GFX_HIKER, 2, 2, 7, 3, 4
-	createvobject EVENT_OBJ_GFX_LITTLE_GIRL, 3, 2, 8, 3, 4
-	createvobject EVENT_OBJ_GFX_MANIAC, 4, 1, 3, 3, 4
-	createvobject EVENT_OBJ_GFX_WOMAN_5, 6, 1, 5, 3, 4
-	createvobject EVENT_OBJ_GFX_WOMAN_4, 7, 1, 6, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 1, 2, 4, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 2, 2, 7, 3, 4
+	createvobject EVENT_OBJ_GFX_TWIN, 3, 2, 8, 3, 4
+	createvobject EVENT_OBJ_GFX_SUPER_NERD, 4, 1, 3, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 6, 1, 5, 3, 4
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 7, 1, 6, 3, 4
 	createvobject EVENT_OBJ_GFX_GENTLEMAN, 9, 1, 8, 3, 4
-	createvobject EVENT_OBJ_GFX_NINJA_BOY, 10, 12, 3, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_2, 11, 12, 4, 3, 3
-	createvobject EVENT_OBJ_GFX_WOMAN_3, 12, 12, 7, 3, 3
+	createvobject EVENT_OBJ_GFX_BUG_CATCHER, 10, 12, 3, 3, 3
+	createvobject EVENT_OBJ_GFX_LASS, 11, 12, 4, 3, 3
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 12, 12, 7, 3, 3
 	createvobject EVENT_OBJ_GFX_BEAUTY, 13, 12, 8, 3, 3
-	createvobject EVENT_OBJ_GFX_FISHERMAN, 14, 13, 3, 3, 3
-	createvobject EVENT_OBJ_GFX_RUNNING_TRIATHLETE_F, 15, 13, 4, 3, 3
-	createvobject EVENT_OBJ_GFX_MAN_4, 17, 13, 6, 3, 3
+	createvobject EVENT_OBJ_GFX_FAT_MAN, 14, 13, 3, 3, 3
+	createvobject EVENT_OBJ_GFX_POKEFAN_F, 15, 13, 4, 3, 3
+	createvobject EVENT_OBJ_GFX_FAT_MAN, 17, 13, 6, 3, 3
 	createvobject EVENT_OBJ_GFX_MART_EMPLOYEE, 18, 13, 7, 3, 3
-	createvobject EVENT_OBJ_GFX_DEVON_EMPLOYEE, 19, 13, 8, 3, 3
+	createvobject EVENT_OBJ_GFX_GENTLEMAN, 19, 13, 8, 3, 3
 	createvobject EVENT_OBJ_GFX_POKEFAN_M, 20, 3, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_CAMPER, 21, 6, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_MAN_3, 22, 7, 2, 3, 1
-	createvobject EVENT_OBJ_GFX_SCIENTIST_1, 24, 11, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_YOUNGSTER, 21, 6, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_POKEFAN_M, 22, 7, 2, 3, 1
+	createvobject EVENT_OBJ_GFX_SCIENTIST, 24, 11, 2, 3, 1
 	return
 
 LinkContestRoom1_EventScript_23BE44:: @ 823BE44

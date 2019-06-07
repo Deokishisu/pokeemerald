@@ -4,7 +4,6 @@ SootopolisCity_PokemonCenter_1F_MapScripts:: @ 82264F1
 	.byte 0
 
 SootopolisCity_PokemonCenter_1F_OnTransition: @ 82264FC
-	setrespawn HEAL_LOCATION_SOOTOPOLIS_CITY
 	end
 
 SootopolisCity_PokemonCenter_1F_EventScript_226500:: @ 8226500

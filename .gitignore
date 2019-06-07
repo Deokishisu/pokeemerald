@@ -36,3 +36,6 @@ make.exe.stackdump
 .idea/
 porymap.project.cfg
 .vscode/
+cmake-build-debug/CMakeFiles/clion-log.txt
+CMakeLists.txt
+results.txt
