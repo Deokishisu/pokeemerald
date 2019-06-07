@@ -28,6 +28,7 @@
 #include "item_menu_icons.h"
 #include "decompress.h"
 #include "international_string_util.h"
+#include "constants/rgb.h"
 
 // There are 4 windows used in berry tag screen.
 enum
@@ -279,7 +280,7 @@ static bool8 InitBerryTagScreen(void)
         gMain.state++;
         break;
     case 15:
-        BeginNormalPaletteFade(0xFFFFFFFF, 0, 0x10, 0, 0);
+        BeginNormalPaletteFade(0xFFFFFFFF, 0, 0x10, 0, RGB_BLACK);
         gPaletteFade.bufferTransferDisabled = 0;
         gMain.state++;
         break;
@@ -317,18 +318,18 @@ static bool8 LoadBerryTagGfx(void)
     {
     case 0:
         reset_temp_tile_data_buffers();
-        decompress_and_copy_tile_data_to_vram(2, gUnknown_08D9BB44, 0, 0, 0);
+        decompress_and_copy_tile_data_to_vram(2, gBerryCheck_Gfx, 0, 0, 0);
         sBerryTag->gfxState++;
         break;
     case 1:
         if (free_temp_tile_data_buffers_if_possible() != TRUE)
         {
-            LZDecompressWram(gUnknown_08D9BF98, sBerryTag->tilemapBuffers[0]);
+            LZDecompressWram(gBerryTag_Gfx, sBerryTag->tilemapBuffers[0]);
             sBerryTag->gfxState++;
         }
         break;
     case 2:
-        LZDecompressWram(gUnknown_08D9C13C, sBerryTag->tilemapBuffers[2]);
+        LZDecompressWram(gBerryTag_Pal, sBerryTag->tilemapBuffers[2]);
         sBerryTag->gfxState++;
         break;
     case 3:
@@ -345,15 +346,15 @@ static bool8 LoadBerryTagGfx(void)
         sBerryTag->gfxState++;
         break;
     case 4:
-        LoadCompressedPalette(gUnknown_08D9BEF0, 0, 0xC0);
+        LoadCompressedPalette(gBerryCheck_Pal, 0, 0xC0);
         sBerryTag->gfxState++;
         break;
     case 5:
-        LoadCompressedSpriteSheet(&gUnknown_0857FDEC);
+        LoadCompressedSpriteSheet(&gBerryCheckCircleSpriteSheet);
         sBerryTag->gfxState++;
         break;
     default:
-        LoadCompressedSpritePalette(&gUnknown_0857FDF4);
+        LoadCompressedSpritePalette(&gBerryCheckCirclePaletteTable);
         return TRUE; // done
     }
 
@@ -513,7 +514,7 @@ static void DestroyFlavorCircleSprites(void)
 static void PrepareToCloseBerryTagScreen(u8 taskId)
 {
     PlaySE(SE_SELECT);
-    BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 0x10, 0);
+    BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_CloseBerryTagScreen;
 }
 
@@ -547,7 +548,7 @@ static void Task_HandleInput(u8 taskId)
 static void TryChangeDisplayedBerry(u8 taskId, s8 toMove)
 {
     s16 *data = gTasks[taskId].data;
-    s16 currPocketPosition = gUnknown_0203CE58.scrollPosition[3] + gUnknown_0203CE58.cursorPosition[3];
+    s16 currPocketPosition = gBagPositionStruct.scrollPosition[3] + gBagPositionStruct.cursorPosition[3];
     u32 newPocketPosition = currPocketPosition + toMove;
     if (newPocketPosition < 46 && BagGetItemIdByPocketPosition(POCKET_BERRIES, newPocketPosition) != 0)
     {
@@ -565,8 +566,8 @@ static void TryChangeDisplayedBerry(u8 taskId, s8 toMove)
 
 static void HandleBagCursorPositionChange(s8 toMove)
 {
-    u16 *scrollPos = &gUnknown_0203CE58.scrollPosition[3];
-    u16 *cursorPos = &gUnknown_0203CE58.cursorPosition[3];
+    u16 *scrollPos = &gBagPositionStruct.scrollPosition[3];
+    u16 *cursorPos = &gBagPositionStruct.cursorPosition[3];
     if (toMove > 0)
     {
         if (*cursorPos < 4 || BagGetItemIdByPocketPosition(POCKET_BERRIES, *scrollPos + 8) == 0)

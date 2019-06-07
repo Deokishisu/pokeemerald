@@ -4,9 +4,10 @@
 #include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
 #include "berry.h"
+#include "berry_powder.h"
 #include "bike.h"
 #include "coins.h"
-#include "data2.h"
+#include "data.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "fieldmap.h"
@@ -36,22 +37,21 @@
 #include "constants/bg_event_constants.h"
 #include "constants/event_objects.h"
 #include "constants/flags.h"
+#include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/songs.h"
 #include "constants/vars.h"
 #include "event_obj_lock.h"
 
-extern u8 Route102_EventScript_274482[];
-extern u8 Route102_EventScript_2744C0[];
+extern u8 BerryTree_EventScript_274482[];
+extern u8 BerryTree_EventScript_2744C0[];
 extern u8 BattleFrontier_OutsideEast_EventScript_242CFC[];
-
-extern s32 sub_80247BC(void);
 
 void SetUpItemUseCallback(u8 taskId);
 void MapPostLoadHook_UseItem(void);
 void sub_80AF6D4(void);
 void Task_CallItemUseOnFieldCallback(u8 taskId);
-void bag_menu_inits_lists_menu(u8 taskId);
+void BagMenu_InitListsMenu(u8 taskId);
 void ItemUseOnFieldCB_Bike(u8 taskId);
 void ItemUseOnFieldCB_Rod(u8 taskId);
 void ItemUseOnFieldCB_Itemfinder(u8 taskId);
@@ -101,7 +101,7 @@ static const u8 gUnknown_085920E4[] = {DIR_NORTH, DIR_EAST, DIR_SOUTH, DIR_WEST}
 static const struct YesNoFuncTable gUnknown_085920E8 =
 {
     .yesFunc = sub_80FE03C,
-    .noFunc = bag_menu_inits_lists_menu,
+    .noFunc = BagMenu_InitListsMenu,
 };
 
 // .text
@@ -115,7 +115,7 @@ void SetUpItemUseCallback(u8 taskId)
         type = ItemId_GetType(gSpecialVar_ItemId) - 1;
     if (!InBattlePyramid())
     {
-        gUnknown_0203CE54->mainCallback2 = gUnknown_085920D8[type];
+        gBagMenu->mainCallback2 = gUnknown_085920D8[type];
         unknown_ItemMenu_Confirm(taskId);
     }
     else
@@ -154,7 +154,7 @@ void DisplayCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnFiel
     if (!isUsingRegisteredKeyItemOnField)
     {
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gStringVar4, bag_menu_inits_lists_menu);
+            DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
         else
             DisplayItemMessageInBattlePyramid(taskId, gText_DadsAdvice, sub_81C6714);
     }
@@ -199,7 +199,7 @@ void sub_80FD254(void)
 
 void ItemUseOutOfBattle_Mail(u8 taskId)
 {
-    gUnknown_0203CE54->mainCallback2 = sub_80FD254;
+    gBagMenu->mainCallback2 = sub_80FD254;
     unknown_ItemMenu_Confirm(taskId);
 }
 
@@ -390,7 +390,7 @@ bool8 sub_80FD6D4(const struct MapEvents *events, s16 x, s16 y)
 
 bool8 sub_80FD730(struct MapConnection *connection, int x, int y)
 {
-    
+
     u16 localX, localY;
     u32 localOffset;
     s32 localLength;
@@ -595,7 +595,7 @@ void ItemUseOutOfBattle_PokeblockCase(u8 taskId)
     }
     else if (gTasks[taskId].data[3] != TRUE)
     {
-        gUnknown_0203CE54->mainCallback2 = sub_80FDBEC;
+        gBagMenu->mainCallback2 = sub_80FDBEC;
         unknown_ItemMenu_Confirm(taskId);
     }
     else
@@ -628,7 +628,7 @@ void ItemUseOutOfBattle_CoinCase(u8 taskId)
 
     if (!gTasks[taskId].data[3])
     {
-        DisplayItemMessage(taskId, 1, gStringVar4, bag_menu_inits_lists_menu);
+        DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
     }
     else
     {
@@ -638,12 +638,12 @@ void ItemUseOutOfBattle_CoinCase(u8 taskId)
 
 void ItemUseOutOfBattle_PowderJar(u8 taskId)
 {
-    ConvertIntToDecimalStringN(gStringVar1, sub_80247BC(), 0, 5);
+    ConvertIntToDecimalStringN(gStringVar1, GetBerryPowder(), 0, 5);
     StringExpandPlaceholders(gStringVar4, gText_PowderQty);
 
     if (!gTasks[taskId].data[3])
     {
-        DisplayItemMessage(taskId, 1, gStringVar4, bag_menu_inits_lists_menu);
+        DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
     }
     else
     {
@@ -657,7 +657,7 @@ void sub_80FDD10(u8 taskId)
     {
         gUnknown_0203A0F4 = sub_80FDD74;
         gFieldCallback = MapPostLoadHook_UseItem;
-        gUnknown_0203CE54->mainCallback2 = CB2_ReturnToField;
+        gBagMenu->mainCallback2 = CB2_ReturnToField;
         unknown_ItemMenu_Confirm(taskId);
     }
     else
@@ -670,7 +670,7 @@ void sub_80FDD74(u8 taskId)
 {
     RemoveBagItem(gSpecialVar_ItemId, 1);
     ScriptContext2_Enable();
-    ScriptContext1_SetupScript(Route102_EventScript_274482);
+    ScriptContext1_SetupScript(BerryTree_EventScript_274482);
     DestroyTask(taskId);
 }
 
@@ -695,7 +695,7 @@ void ItemUseOutOfBattle_WailmerPail(u8 taskId)
 void sub_80FDE08(u8 taskId)
 {
     ScriptContext2_Enable();
-    ScriptContext1_SetupScript(Route102_EventScript_2744C0);
+    ScriptContext1_SetupScript(BerryTree_EventScript_2744C0);
     DestroyTask(taskId);
 }
 
@@ -782,7 +782,7 @@ void task08_0809AD8C(u8 taskId)
 
 void sub_80FE024(u8 taskId)
 {
-    bag_menu_yes_no(taskId, 6, &gUnknown_085920E8);
+    BagMenu_YesNo(taskId, 6, &gUnknown_085920E8);
 }
 
 void sub_80FE03C(u8 taskId)
@@ -813,7 +813,7 @@ void ItemUseOutOfBattle_Repel(u8 taskId)
     if (VarGet(VAR_REPEL_STEP_COUNT) == 0)
         gTasks[taskId].func = sub_80FE124;
     else if (!InBattlePyramid())
-        DisplayItemMessage(taskId, 1, gText_RepelEffectsLingered, bag_menu_inits_lists_menu);
+        DisplayItemMessage(taskId, 1, gText_RepelEffectsLingered, BagMenu_InitListsMenu);
     else
         DisplayItemMessageInBattlePyramid(taskId, gText_RepelEffectsLingered, sub_81C6714);
 }
@@ -837,7 +837,7 @@ void sub_80FE164(u8 taskId)
         VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(gSpecialVar_ItemId));
         sub_80FE058();
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gStringVar4, bag_menu_inits_lists_menu);
+            DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
         else
             DisplayItemMessageInBattlePyramid(taskId, gStringVar4, sub_81C6714);
     }
@@ -849,7 +849,7 @@ void sub_80FE1D0(u8 taskId)
     {
         PlaySE(SE_BIDORO);
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gStringVar4, bag_menu_inits_lists_menu);
+            DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
         else
             DisplayItemMessageInBattlePyramid(taskId, gStringVar4, sub_81C6714);
     }
@@ -928,7 +928,7 @@ void ItemUseInBattle_PokeBall(u8 taskId)
     }
     else if (!InBattlePyramid())
     {
-        DisplayItemMessage(taskId, 1, gText_BoxFull, bag_menu_inits_lists_menu);
+        DisplayItemMessage(taskId, 1, gText_BoxFull, BagMenu_InitListsMenu);
     }
     else
         DisplayItemMessageInBattlePyramid(taskId, gText_BoxFull, sub_81C6714);
@@ -965,7 +965,7 @@ void ItemUseInBattle_StatIncrease(u8 taskId)
     if (ExecuteTableBasedItemEffect(&gPlayerParty[partyId], gSpecialVar_ItemId, partyId, 0) != FALSE)
     {
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gText_WontHaveEffect, bag_menu_inits_lists_menu);
+            DisplayItemMessage(taskId, 1, gText_WontHaveEffect, BagMenu_InitListsMenu);
         else
             DisplayItemMessageInBattlePyramid(taskId, gText_WontHaveEffect, sub_81C6714);
     }
@@ -980,7 +980,7 @@ void sub_80FE54C(u8 taskId)
 {
     if (!InBattlePyramid())
     {
-        gUnknown_0203CE54->mainCallback2 = sub_81B89F0;
+        gBagMenu->mainCallback2 = sub_81B89F0;
         unknown_ItemMenu_Confirm(taskId);
     }
     else
@@ -1027,44 +1027,45 @@ void ItemUseInBattle_Escape(u8 taskId)
 
 void ItemUseOutOfBattle_EnigmaBerry(u8 taskId)
 {
-    switch (GetItemEffectType(gSpecialVar_ItemId) - 1)
+    switch (GetItemEffectType(gSpecialVar_ItemId))
     {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 10:
-    case 11:
-    case 12:
-    case 13:
-    case 14:
-    case 15:
-    case 16:
+    case ITEM_EFFECT_HEAL_HP:
+    case ITEM_EFFECT_CURE_POISON:
+    case ITEM_EFFECT_CURE_SLEEP:
+    case ITEM_EFFECT_CURE_BURN:
+    case ITEM_EFFECT_CURE_FREEZE:
+    case ITEM_EFFECT_CURE_PARALYSIS:
+    case ITEM_EFFECT_CURE_ALL_STATUS:
+    case ITEM_EFFECT_ATK_EV:
+    case ITEM_EFFECT_HP_EV:
+    case ITEM_EFFECT_SPATK_EV:
+    case ITEM_EFFECT_SPDEF_EV:
+    case ITEM_EFFECT_SPEED_EV:
+    case ITEM_EFFECT_DEF_EV:
         gTasks[taskId].data[4] = 1;
         ItemUseOutOfBattle_Medicine(taskId);
         break;
-    case 9:
+    case ITEM_EFFECT_SACRED_ASH:
         gTasks[taskId].data[4] = 1;
         ItemUseOutOfBattle_SacredAsh(taskId);
         break;
-    case 0:
+    case ITEM_EFFECT_RAISE_LEVEL:
         gTasks[taskId].data[4] = 1;
         ItemUseOutOfBattle_RareCandy(taskId);
         break;
-    case 18:
-    case 19:
+    case ITEM_EFFECT_PP_UP:
+    case ITEM_EFFECT_PP_MAX:
         gTasks[taskId].data[4] = 1;
         ItemUseOutOfBattle_PPUp(taskId);
         break;
-    case 20:
+    case ITEM_EFFECT_HEAL_PP:
         gTasks[taskId].data[4] = 1;
         ItemUseOutOfBattle_PPRecovery(taskId);
         break;
     default:
         gTasks[taskId].data[4] = 4;
         ItemUseOutOfBattle_CannotUse(taskId);
+        break;
     }
 }
 
@@ -1072,25 +1073,26 @@ void ItemUseInBattle_EnigmaBerry(u8 taskId)
 {
     switch (GetItemEffectType(gSpecialVar_ItemId))
     {
-    case 0:
+    case ITEM_EFFECT_X_ITEM:
         ItemUseInBattle_StatIncrease(taskId);
         break;
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 11:
+    case ITEM_EFFECT_HEAL_HP:
+    case ITEM_EFFECT_CURE_POISON:
+    case ITEM_EFFECT_CURE_SLEEP:
+    case ITEM_EFFECT_CURE_BURN:
+    case ITEM_EFFECT_CURE_FREEZE:
+    case ITEM_EFFECT_CURE_PARALYSIS:
+    case ITEM_EFFECT_CURE_ALL_STATUS:
+    case ITEM_EFFECT_CURE_CONFUSION:
+    case ITEM_EFFECT_CURE_INFATUATION:
         ItemUseInBattle_Medicine(taskId);
         break;
-    case 21:
+    case ITEM_EFFECT_HEAL_PP:
         ItemUseInBattle_PPRecovery(taskId);
         break;
     default:
         ItemUseOutOfBattle_CannotUse(taskId);
+        break;
     }
 }
 
