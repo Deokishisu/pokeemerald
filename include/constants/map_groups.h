@@ -326,63 +326,63 @@
 #define MAP_VICTORY_ROAD                            (87 | (26 << 8))
 
 // Map Group 27
-#define MAP_SECRET_BASE_RED_CAVE1    (0 | (27 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE1  (1 | (27 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE1   (2 | (27 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE1 (3 | (27 << 8))
-#define MAP_SECRET_BASE_TREE1        (4 | (27 << 8))
-#define MAP_SECRET_BASE_SHRUB1       (5 | (27 << 8))
-#define MAP_SECRET_BASE_RED_CAVE2    (6 | (27 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE2  (7 | (27 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE2   (8 | (27 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE2 (9 | (27 << 8))
-#define MAP_SECRET_BASE_TREE2        (10 | (27 << 8))
-#define MAP_SECRET_BASE_SHRUB2       (11 | (27 << 8))
-#define MAP_SECRET_BASE_RED_CAVE3    (12 | (27 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE3  (13 | (27 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE3   (14 | (27 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE3 (15 | (27 << 8))
-#define MAP_SECRET_BASE_TREE3        (16 | (27 << 8))
-#define MAP_SECRET_BASE_SHRUB3       (17 | (27 << 8))
-#define MAP_SECRET_BASE_RED_CAVE4    (18 | (27 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE4  (19 | (27 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE4   (20 | (27 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE4 (21 | (27 << 8))
-#define MAP_SECRET_BASE_TREE4        (22 | (27 << 8))
-#define MAP_SECRET_BASE_SHRUB4       (23 | (27 << 8))
-#define MAP_SINGLE_BATTLE_COLOSSEUM  (24 | (27 << 8))
-#define MAP_TRADE_CENTER             (25 | (27 << 8))
-#define MAP_RECORD_CORNER            (26 | (27 << 8))
-#define MAP_DOUBLE_BATTLE_COLOSSEUM  (27 | (27 << 8))
-#define MAP_LINK_CONTEST_ROOM1       (28 | (27 << 8))
-#define MAP_UNKNOWN_MAP_25_29        (29 | (27 << 8))
-#define MAP_UNKNOWN_MAP_25_30        (30 | (27 << 8))
-#define MAP_UNKNOWN_MAP_25_31        (31 | (27 << 8))
-#define MAP_UNKNOWN_MAP_25_32        (32 | (27 << 8))
-#define MAP_UNKNOWN_MAP_25_33        (33 | (27 << 8))
-#define MAP_UNKNOWN_MAP_25_34        (34 | (27 << 8))
-#define MAP_LINK_CONTEST_ROOM2       (35 | (27 << 8))
-#define MAP_LINK_CONTEST_ROOM3       (36 | (27 << 8))
-#define MAP_LINK_CONTEST_ROOM4       (37 | (27 << 8))
-#define MAP_LINK_CONTEST_ROOM5       (38 | (27 << 8))
-#define MAP_LINK_CONTEST_ROOM6       (39 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE01  (40 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE02  (41 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE03  (42 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE04  (43 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE05  (44 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE06  (45 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE07  (46 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE08  (47 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE09  (48 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE10  (49 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE11  (50 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE12  (51 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE13  (52 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE14  (53 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE15  (54 | (27 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE16  (55 | (27 << 8))
-#define MAP_UNION_ROOM               (56 | (27 << 8))
+#define MAP_SECRET_BASE_RED_CAVE1           (0 | (27 << 8))
+#define MAP_SECRET_BASE_BROWN_CAVE1         (1 | (27 << 8))
+#define MAP_SECRET_BASE_BLUE_CAVE1          (2 | (27 << 8))
+#define MAP_SECRET_BASE_YELLOW_CAVE1        (3 | (27 << 8))
+#define MAP_SECRET_BASE_TREE1               (4 | (27 << 8))
+#define MAP_SECRET_BASE_SHRUB1              (5 | (27 << 8))
+#define MAP_SECRET_BASE_RED_CAVE2           (6 | (27 << 8))
+#define MAP_SECRET_BASE_BROWN_CAVE2         (7 | (27 << 8))
+#define MAP_SECRET_BASE_BLUE_CAVE2          (8 | (27 << 8))
+#define MAP_SECRET_BASE_YELLOW_CAVE2        (9 | (27 << 8))
+#define MAP_SECRET_BASE_TREE2               (10 | (27 << 8))
+#define MAP_SECRET_BASE_SHRUB2              (11 | (27 << 8))
+#define MAP_SECRET_BASE_RED_CAVE3           (12 | (27 << 8))
+#define MAP_SECRET_BASE_BROWN_CAVE3         (13 | (27 << 8))
+#define MAP_SECRET_BASE_BLUE_CAVE3          (14 | (27 << 8))
+#define MAP_SECRET_BASE_YELLOW_CAVE3        (15 | (27 << 8))
+#define MAP_SECRET_BASE_TREE3               (16 | (27 << 8))
+#define MAP_SECRET_BASE_SHRUB3              (17 | (27 << 8))
+#define MAP_SECRET_BASE_RED_CAVE4           (18 | (27 << 8))
+#define MAP_SECRET_BASE_BROWN_CAVE4         (19 | (27 << 8))
+#define MAP_SECRET_BASE_BLUE_CAVE4          (20 | (27 << 8))
+#define MAP_SECRET_BASE_YELLOW_CAVE4        (21 | (27 << 8))
+#define MAP_SECRET_BASE_TREE4               (22 | (27 << 8))
+#define MAP_SECRET_BASE_SHRUB4              (23 | (27 << 8))
+#define MAP_SINGLE_BATTLE_COLOSSEUM         (24 | (27 << 8))
+#define MAP_TRADE_CENTER                    (25 | (27 << 8))
+#define MAP_RECORD_CORNER                   (26 | (27 << 8))
+#define MAP_DOUBLE_BATTLE_COLOSSEUM         (27 | (27 << 8))
+#define MAP_LINK_CONTEST_ROOM1              (28 | (27 << 8))
+#define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_29 (29 | (27 << 8))
+#define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_30 (30 | (27 << 8))
+#define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_31 (31 | (27 << 8))
+#define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_32 (32 | (27 << 8))
+#define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_33 (33 | (27 << 8))
+#define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_34 (34 | (27 << 8))
+#define MAP_LINK_CONTEST_ROOM2              (35 | (27 << 8))
+#define MAP_LINK_CONTEST_ROOM3              (36 | (27 << 8))
+#define MAP_LINK_CONTEST_ROOM4              (37 | (27 << 8))
+#define MAP_LINK_CONTEST_ROOM5              (38 | (27 << 8))
+#define MAP_LINK_CONTEST_ROOM6              (39 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE01         (40 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE02         (41 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE03         (42 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE04         (43 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE05         (44 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE06         (45 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE07         (46 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE08         (47 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE09         (48 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE10         (49 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE11         (50 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE12         (51 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE13         (52 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE14         (53 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE15         (54 | (27 << 8))
+#define MAP_BATTLE_PYRAMID_SQUARE16         (55 | (27 << 8))
+#define MAP_UNION_ROOM                      (56 | (27 << 8))
 
 // Map Group 28
 #define MAP_BATTLE_FRONTIER_OUTSIDE_WEST                         (0 | (28 << 8))
@@ -495,36 +495,93 @@
 #define MAP_PALLET_TOWN_PROF_OAKS_LAB (3 | (33 << 8))
 
 // Map Group 34
-#define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F (0 | (34 << 8))
-#define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_2F (1 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_1F    (2 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_B1F   (3 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F (0 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_POKEMON_CENTER_2F (1 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_1F  (2 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_B1F (3 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_GYM               (4 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_HOUSE             (5 | (34 << 8))
+#define MAP_VIRIDIAN_CITY_MART              (6 | (34 << 8))
 
 // Map Group 35
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (35 << 8))
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR    (1 | (35 << 8))
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM (2 | (35 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY        (3 | (35 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR     (4 | (35 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM  (5 | (35 << 8))
-#define MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F        (6 | (35 << 8))
-#define MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F        (7 | (35 << 8))
-#define MAP_LILYCOVE_CITY_CONTEST_LOBBY             (8 | (35 << 8))
-#define MAP_LILYCOVE_CITY_CONTEST_HALL              (9 | (35 << 8))
-#define MAP_LILYCOVE_CITY_POKEMON_CENTER_1F         (10 | (35 << 8))
-#define MAP_LILYCOVE_CITY_POKEMON_CENTER_2F         (11 | (35 << 8))
-#define MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F         (12 | (35 << 8))
-#define MAP_MOSSDEEP_CITY_POKEMON_CENTER_2F         (13 | (35 << 8))
-#define MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F       (14 | (35 << 8))
-#define MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_2F       (15 | (35 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F      (16 | (35 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F      (17 | (35 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY        (18 | (35 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR     (19 | (35 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM  (20 | (35 << 8))
-#define MAP_ARTISAN_CAVE_B1F                        (21 | (35 << 8))
-#define MAP_ARTISAN_CAVE_1F                         (22 | (35 << 8))
+#define MAP_PEWTER_CITY_POKEMON_CENTER_1F (0 | (35 << 8))
+#define MAP_PEWTER_CITY_POKEMON_CENTER_2F (1 | (35 << 8))
+#define MAP_PEWTER_CITY_GYM               (2 | (35 << 8))
+#define MAP_PEWTER_CITY_MART              (3 | (35 << 8))
+#define MAP_PEWTER_CITY_HOUSE1            (4 | (35 << 8))
+#define MAP_PEWTER_CITY_HOUSE2            (5 | (35 << 8))
 
-#define MAP_GROUPS_COUNT 36
+// Map Group 36
+
+// Map Group 37
+
+// Map Group 38
+
+// Map Group 39
+
+// Map Group 40
+
+// Map Group 41
+
+// Map Group 42
+
+// Map Group 43
+#define MAP_ROUTE2_HOUSE (0 | (43 << 8))
+#define MAP_ROUTE2_GATE  (1 | (43 << 8))
+
+// Map Group 44
+
+// Map Group 45
+
+// Map Group 46
+
+// Map Group 47
+
+// Map Group 48
+
+// Map Group 49
+
+// Map Group 50
+
+// Map Group 51
+
+// Map Group 52
+
+// Map Group 53
+
+// Map Group 54
+
+// Map Group 55
+
+// Map Group 56
+#define MAP_DIGLETTS_CAVE     (0 | (56 << 8))
+#define MAP_MT_MOON           (1 | (56 << 8))
+#define MAP_MT_MOON_SQUARE    (2 | (56 << 8))
+#define MAP_MT_MOON_GIFT_SHOP (3 | (56 << 8))
+
+// Map Group 57
+#define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (57 << 8))
+#define MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR    (1 | (57 << 8))
+#define MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM (2 | (57 << 8))
+#define MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY        (3 | (57 << 8))
+#define MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR     (4 | (57 << 8))
+#define MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM  (5 | (57 << 8))
+#define MAP_LILYCOVE_CITY_CONTEST_LOBBY             (6 | (57 << 8))
+#define MAP_LILYCOVE_CITY_CONTEST_HALL              (7 | (57 << 8))
+#define MAP_LILYCOVE_CITY_POKEMON_CENTER_1F         (8 | (57 << 8))
+#define MAP_LILYCOVE_CITY_POKEMON_CENTER_2F         (9 | (57 << 8))
+#define MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F         (10 | (57 << 8))
+#define MAP_MOSSDEEP_CITY_POKEMON_CENTER_2F         (11 | (57 << 8))
+#define MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F       (12 | (57 << 8))
+#define MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_2F       (13 | (57 << 8))
+#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F      (14 | (57 << 8))
+#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F      (15 | (57 << 8))
+#define MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY        (16 | (57 << 8))
+#define MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR     (17 | (57 << 8))
+#define MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM  (18 | (57 << 8))
+#define MAP_ARTISAN_CAVE_B1F                        (19 | (57 << 8))
+#define MAP_ARTISAN_CAVE_1F                         (20 | (57 << 8))
+
+#define MAP_GROUPS_COUNT 58
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

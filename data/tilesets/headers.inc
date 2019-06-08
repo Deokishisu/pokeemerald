@@ -15,7 +15,7 @@ gTileset_Petalburg:: @ 83DF71C
 	.byte TRUE @ is secondary tileset
 	.2byte 0 @ padding
 	.4byte gTilesetTiles_Petalburg
-	.4byte gTilesetPalettes_Petalburg, gTilesetPalettes_Petalburg, gTilesetPalettes_Petalburg, gTilesetPalettes_Petalburg
+	.4byte gTilesetPalettes_Petalburg, gTilesetPalettes_GeneralNite, gTilesetPalettes_GeneralMorn, gTilesetPalettes_Petalburg
 	.4byte gMetatiles_Petalburg
 	.4byte gMetatileAttributes_Petalburg
 	.4byte InitTilesetAnim_Petalburg

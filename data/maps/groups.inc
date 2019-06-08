@@ -1,4 +1,4 @@
-gMapGroup0::
+gOverworld::
 	.4byte NewBarkTown
 	.4byte CherrygroveCity
 	.4byte VioletCity
@@ -69,14 +69,14 @@ gMapGroup0::
 	.4byte Route27
 	.4byte Route28
 
-gMapGroup1::
+gNewBarkTownInteriors::
 	.4byte NewBarkTown_PlayersHouse_1F
 	.4byte NewBarkTown_PlayersHouse_2F
 	.4byte NewBarkTown_ProfElmsHouse
 	.4byte NewBarkTown_House
 	.4byte NewBarkTown_ProfElmsLab
 
-gMapGroup2::
+gCherrygroveCityInteriors::
 	.4byte CherrygroveCity_House1
 	.4byte CherrygroveCity_House2
 	.4byte CherrygroveCity_Guide_Gents_House
@@ -84,7 +84,7 @@ gMapGroup2::
 	.4byte CherrygroveCity_PokemonCenter_2F
 	.4byte CherrygroveCity_Mart
 
-gMapGroup3::
+gVioletCityInteriors::
 	.4byte VioletCity_EarlsPokemonAcademy
 	.4byte VioletCity_Gym
 	.4byte VioletCity_House1
@@ -93,7 +93,7 @@ gMapGroup3::
 	.4byte VioletCity_PokemonCenter_2F
 	.4byte VioletCity_Mart
 
-gMapGroup4::
+gAzaleaTownInteriors::
 	.4byte AzaleaTown_CharcoalKiln
 	.4byte AzaleaTown_PokemonCenter_1F
 	.4byte AzaleaTown_PokemonCenter_2F
@@ -101,7 +101,7 @@ gMapGroup4::
 	.4byte AzaleaTown_KurtsHouse
 	.4byte AzaleaTown_Mart
 
-gMapGroup5::
+gGoldenrodCityInteriors::
 	.4byte GoldenrodCity_PokemonCenter_1F
 	.4byte GoldenrodCity_PokemonCenter_2F
 	.4byte GoldenrodCity_Gym
@@ -126,7 +126,7 @@ gMapGroup5::
 	.4byte GoldenrodCity_DepartmentStoreRooftop
 	.4byte GoldenrodCity_DepartmentStoreElevator
 
-gMapGroup6::
+gEcruteakCityInteriors::
 	.4byte EcruteakCity_PokemonCenter_1F
 	.4byte EcruteakCity_PokemonCenter_2F
 	.4byte EcruteakCity_Mart
@@ -137,7 +137,7 @@ gMapGroup6::
 	.4byte EcruteakCity_TinTowerGate
 	.4byte EcruteakCity_WiseTriosRoom
 
-gMapGroup7::
+gOlivineCityInteriors::
 	.4byte OlivineCity_PokemonCenter_1F
 	.4byte OlivineCity_PokemonCenter_2F
 	.4byte OlivineCity_Mart
@@ -149,7 +149,7 @@ gMapGroup7::
 	.4byte OlivineCity_PortPassage
 	.4byte OlivineCity_Port
 
-gMapGroup8::
+gCianwoodCityInteriors::
 	.4byte CianwoodCity_PokemonCenter_1F
 	.4byte CianwoodCity_PokemonCenter_2F
 	.4byte CianwoodCity_Gym
@@ -159,14 +159,14 @@ gMapGroup8::
 	.4byte CianwoodCity_ManiasHouse
 	.4byte CianwoodCity_PokeSeersHouse
 
-gMapGroup9::
+gMahoganyTownInteriors::
 	.4byte MahoganyTown_PokemonCenter_1F
 	.4byte MahoganyTown_PokemonCenter_2F
 	.4byte MahoganyTown_Gym
 	.4byte MahoganyTown_House
 	.4byte MahoganyTown_Shop
 
-gMapGroup10::
+gBlackthornCityInteriors::
 	.4byte BlackthornCity_PokemonCenter_1F
 	.4byte BlackthornCity_PokemonCenter_2F
 	.4byte BlackthornCity_Mart
@@ -176,63 +176,63 @@ gMapGroup10::
 	.4byte BlackthornCity_House2
 	.4byte BlackthornCity_MoveDeletersHouse
 
-gMapGroup11::
+gLakeOfRageInteriors::
 	.4byte LakeOfRage_HiddenPowerHouse
 	.4byte LakeOfRage_FishingGurusHouse
 
-gMapGroup12::
+gRuinsOfAlphInteriors::
 	.4byte RuinsOfAlph_ResearchCenter
 
-gMapGroup13::
+gRoute29Interiors::
 	.4byte Route29_Gate
 
-gMapGroup14::
+gRoute30Interiors::
 	.4byte Route30_Berry_House
 	.4byte Route30_Mr_Pokemons_House
 
-gMapGroup15::
+gRoute31Interiors::
 	.4byte Route31_Gate
 
-gMapGroup16::
+gRoute32Interiors::
 	.4byte Route32_Gate
 	.4byte Route32_PokemonCenter_1F
 	.4byte Route32_PokemonCenter_2F
 
-gMapGroup17::
+gRoute34Interiors::
 	.4byte Route34_Gate1
 	.4byte Route34_Gate2
 	.4byte Route34_PokemonDayCare
 
-gMapGroup18::
+gRoute35Interiors::
 	.4byte Route35_Gate
 	.4byte Route35_National_Park_Gate
 
-gMapGroup19::
+gRoute36Interiors::
 	.4byte Route36_Gate
 	.4byte Route36_National_Park_Gate
 
-gMapGroup20::
+gRoute38Interiors::
 	.4byte Route38_Gate
 
-gMapGroup21::
+gRoute39Interiors::
 	.4byte Route39_MooMooFarmHouse
 	.4byte Route39_MooMooFarmBarn
 
-gMapGroup22::
+gRoute40Interiors::
 	.4byte Route40_BattleTower_Gate
 
-gMapGroup23::
+gRoute42Interiors::
 	.4byte Route42_Gate
 
-gMapGroup24::
+gRoute43Interiors::
 	.4byte Route43_Gate1
 	.4byte Route43_Gate2
 
-gMapGroup25::
+gSilverCaveInteriors::
 	.4byte SilverCave_Exterior_PokemonCenter_1F
 	.4byte SilverCave_Exterior_PokemonCenter_2F
 
-gMapGroup26::
+gJohtoDungeons::
 	.4byte DarkCave_Violet
 	.4byte DarkCave_Blackthorn
 	.4byte SproutTower_1F
@@ -465,14 +465,14 @@ gMapGroup28::
 	.4byte NavelRock_Bottom
 	.4byte TrainerHill_Elevator
 
-gMapGroup29::
+gRoute27Interiors::
 	.4byte Route27_House
 
-gMapGroup30::
+gRoute26Interiors::
 	.4byte Route26_House1
 	.4byte Route26_House2
 
-gMapGroup31::
+gIndigoPlateauInteriors::
 	.4byte IndigoPlateau_PokemonCenter_1F
 	.4byte IndigoPlateau_PokemonCenter_2F
 	.4byte IndigoPlateau_WillsRoom
@@ -482,30 +482,87 @@ gMapGroup31::
 	.4byte IndigoPlateau_LancesRoom
 	.4byte IndigoPlateau_HallOfFame
 
-gMapGroup32::
+gRoute28Interiors::
 	.4byte Route28_House
 
-gMapGroup33::
+gPalletTownInteriors::
 	.4byte PalletTown_RedsHouse_1F
 	.4byte PalletTown_RedsHouse_2F
 	.4byte PalletTown_BluesHouse
 	.4byte PalletTown_ProfOaksLab
 
-gMapGroup34::
-	.4byte PacifidlogTown_PokemonCenter_1F
-	.4byte PacifidlogTown_PokemonCenter_2F
+gViridianCityInteriors::
+	.4byte ViridianCity_PokemonCenter_1F
+	.4byte ViridianCity_PokemonCenter_2F
 	.4byte ViridianCity_TrainerHouse_1F
 	.4byte ViridianCity_TrainerHouse_B1F
+	.4byte ViridianCity_Gym
+	.4byte ViridianCity_House
+	.4byte ViridianCity_Mart
 
-gMapGroup35::
+gPewterCityInteriors::
+	.4byte PewterCity_PokemonCenter_1F
+	.4byte PewterCity_PokemonCenter_2F
+	.4byte PewterCity_Gym
+	.4byte PewterCity_Mart
+	.4byte PewterCity_House1
+	.4byte PewterCity_House2
+
+gCeruleanCityInteriors::
+
+gVermilionCityInteriors::
+
+gLavenderTownInteriors::
+
+gCeladonCityInteriors::
+
+gSaffronCityInteriors::
+
+gFuchsiaCityInteriors::
+
+gCinnabarIslandInteriors::
+
+gRoute2Interiors::
+	.4byte Route2_House
+	.4byte Route2_Gate
+
+gRoute5Interiors::
+
+gRoute6Interiors::
+
+gRoute7Interiors::
+
+gRoute8Interiors::
+
+gRoute10Interiors::
+
+gRoute12Interiors::
+
+gRoute15Interiors::
+
+gRoute16Interiors::
+
+gRoute17Interiors::
+
+gRoute19Interiors::
+
+gRoute20Interiors::
+
+gRoute25Interiors::
+
+gKantoDungeons::
+	.4byte DiglettsCave
+	.4byte MtMoon
+	.4byte MtMoon_Square
+	.4byte MtMoon_GiftShop
+
+gMapGroup36::
 	.4byte VerdanturfTown_BattleTentLobby
 	.4byte VerdanturfTown_BattleTentCorridor
 	.4byte VerdanturfTown_BattleTentBattleRoom
 	.4byte FallarborTown_BattleTentLobby
 	.4byte FallarborTown_BattleTentCorridor
 	.4byte FallarborTown_BattleTentBattleRoom
-	.4byte LavaridgeTown_PokemonCenter_1F
-	.4byte LavaridgeTown_PokemonCenter_2F
 	.4byte LilycoveCity_ContestLobby
 	.4byte LilycoveCity_ContestHall
 	.4byte LilycoveCity_PokemonCenter_1F
@@ -524,40 +581,62 @@ gMapGroup35::
 
 	.align 2
 gMapGroups::
-	.4byte gMapGroup0
-	.4byte gMapGroup1
-	.4byte gMapGroup2
-	.4byte gMapGroup3
-	.4byte gMapGroup4
-	.4byte gMapGroup5
-	.4byte gMapGroup6
-	.4byte gMapGroup7
-	.4byte gMapGroup8
-	.4byte gMapGroup9
-	.4byte gMapGroup10
-	.4byte gMapGroup11
-	.4byte gMapGroup12
-	.4byte gMapGroup13
-	.4byte gMapGroup14
-	.4byte gMapGroup15
-	.4byte gMapGroup16
-	.4byte gMapGroup17
-	.4byte gMapGroup18
-	.4byte gMapGroup19
-	.4byte gMapGroup20
-	.4byte gMapGroup21
-	.4byte gMapGroup22
-	.4byte gMapGroup23
-	.4byte gMapGroup24
-	.4byte gMapGroup25
-	.4byte gMapGroup26
+	.4byte gOverworld
+	.4byte gNewBarkTownInteriors
+	.4byte gCherrygroveCityInteriors
+	.4byte gVioletCityInteriors
+	.4byte gAzaleaTownInteriors
+	.4byte gGoldenrodCityInteriors
+	.4byte gEcruteakCityInteriors
+	.4byte gOlivineCityInteriors
+	.4byte gCianwoodCityInteriors
+	.4byte gMahoganyTownInteriors
+	.4byte gBlackthornCityInteriors
+	.4byte gLakeOfRageInteriors
+	.4byte gRuinsOfAlphInteriors
+	.4byte gRoute29Interiors
+	.4byte gRoute30Interiors
+	.4byte gRoute31Interiors
+	.4byte gRoute32Interiors
+	.4byte gRoute34Interiors
+	.4byte gRoute35Interiors
+	.4byte gRoute36Interiors
+	.4byte gRoute38Interiors
+	.4byte gRoute39Interiors
+	.4byte gRoute40Interiors
+	.4byte gRoute42Interiors
+	.4byte gRoute43Interiors
+	.4byte gSilverCaveInteriors
+	.4byte gJohtoDungeons
 	.4byte gMapGroup27
 	.4byte gMapGroup28
-	.4byte gMapGroup29
-	.4byte gMapGroup30
-	.4byte gMapGroup31
-	.4byte gMapGroup32
-	.4byte gMapGroup33
-	.4byte gMapGroup34
-	.4byte gMapGroup35
+	.4byte gRoute27Interiors
+	.4byte gRoute26Interiors
+	.4byte gIndigoPlateauInteriors
+	.4byte gRoute28Interiors
+	.4byte gPalletTownInteriors
+	.4byte gViridianCityInteriors
+	.4byte gPewterCityInteriors
+	.4byte gCeruleanCityInteriors
+	.4byte gVermilionCityInteriors
+	.4byte gLavenderTownInteriors
+	.4byte gCeladonCityInteriors
+	.4byte gSaffronCityInteriors
+	.4byte gFuchsiaCityInteriors
+	.4byte gCinnabarIslandInteriors
+	.4byte gRoute2Interiors
+	.4byte gRoute5Interiors
+	.4byte gRoute6Interiors
+	.4byte gRoute7Interiors
+	.4byte gRoute8Interiors
+	.4byte gRoute10Interiors
+	.4byte gRoute12Interiors
+	.4byte gRoute15Interiors
+	.4byte gRoute16Interiors
+	.4byte gRoute17Interiors
+	.4byte gRoute19Interiors
+	.4byte gRoute20Interiors
+	.4byte gRoute25Interiors
+	.4byte gKantoDungeons
+	.4byte gMapGroup36
 

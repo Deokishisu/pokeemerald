@@ -1,42 +1,46 @@
 {
-  "id": "MAP_CERULEAN_CITY",
-  "name": "CeruleanCity",
-  "layout": "LAYOUT_CERULEAN_CITY",
-  "music": "MUS_DAN02",
-  "region_map_section": "MAPSEC_CERULEAN_CITY",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_CITY",
-  "map_palette": "0",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "down",
-      "offset": 10,
-      "map": "MAP_ROUTE5"
-    },
-    {
-      "direction": "left",
-      "offset": 10,
-      "map": "MAP_ROUTE4"
-    },
-    {
-      "direction": "right",
-      "offset": 18,
-      "map": "MAP_ROUTE9"
-    },
-    {
-      "direction": "up",
-      "offset": 12,
-      "map": "MAP_ROUTE24"
-    }
-  ],
-  "object_events": [],
-  "warp_events": [],
-  "coord_events": [],
-  "bg_events": []
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": [
+        {
+            "direction": "down",
+            "map": "MAP_ROUTE5",
+            "offset": 10
+        },
+        {
+            "direction": "left",
+            "map": "MAP_ROUTE4",
+            "offset": 10
+        },
+        {
+            "direction": "right",
+            "map": "MAP_ROUTE9",
+            "offset": 18
+        },
+        {
+            "direction": "up",
+            "map": "MAP_ROUTE24",
+            "offset": 12
+        }
+    ],
+    "coord_events": [
+    ],
+    "id": "MAP_CERULEAN_CITY",
+    "layout": "LAYOUT_CERULEAN_CITY",
+    "map_palette": "0",
+    "map_type": "MAP_TYPE_CITY",
+    "music": "MUS_DAN02",
+    "name": "CeruleanCity",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_CERULEAN_CITY",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+    ],
+    "weather": "WEATHER_SUNNY"
 }

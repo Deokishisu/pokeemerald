@@ -4,6 +4,62 @@
     "allow_running": false,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 25,
+            "y": 23
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 11,
+            "y": 17
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 15,
+            "y": 9
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 33,
+            "y": 19
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 19,
+            "y": 29
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 14,
+            "y": 25
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "NULL",
+            "type": "sign",
+            "x": 24,
+            "y": 17
+        }
     ],
     "connections": [
         {
@@ -26,11 +82,116 @@
     "music": "MUS_DAN02",
     "name": "PewterCity",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_COOLTRAINER_F",
+            "movement_range_x": 2,
+            "movement_range_y": 2,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 19,
+            "y": 11
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BUG_CATCHER",
+            "movement_range_x": 2,
+            "movement_range_y": 2,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "npc_palette": "PAL_NPC_RED",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 14,
+            "y": 29
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_OLD_MAN",
+            "movement_range_x": 2,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+            "npc_palette": "PAL_NPC_BLUE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 29,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "npc_palette": "0",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 32,
+            "y": 3
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "npc_palette": "0",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 30,
+            "y": 3
+        }
     ],
     "region_map_section": "MAPSEC_PEWTER_CITY",
     "requires_flash": false,
     "show_map_name": false,
     "warp_events": [
+        {
+            "dest_map": "MAP_PEWTER_CITY_HOUSE2",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 29,
+            "y": 13
+        },
+        {
+            "dest_map": "MAP_PEWTER_CITY_GYM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 16,
+            "y": 17
+        },
+        {
+            "dest_map": "MAP_PEWTER_CITY_MART",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 23,
+            "y": 17
+        },
+        {
+            "dest_map": "MAP_PEWTER_CITY_POKEMON_CENTER_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 13,
+            "y": 25
+        },
+        {
+            "dest_map": "MAP_PEWTER_CITY_HOUSE1",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 7,
+            "y": 29
+        }
     ],
     "weather": "WEATHER_SUNNY"
 }

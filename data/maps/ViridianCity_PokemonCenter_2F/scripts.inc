@@ -1,4 +1,4 @@
-PacifidlogTown_PokemonCenter_2F_MapScripts:: @ 8203635
+ViridianCity_PokemonCenter_2F_MapScripts:: @ 8203635
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PacifidlogTown_PokemonCenter_2F_MapScript2_276C3B
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, PacifidlogTown_PokemonCenter_2F_MapScript2_276B6C
 	map_script MAP_SCRIPT_ON_LOAD, PacifidlogTown_PokemonCenter_2F_MapScript1_276BBE

@@ -3609,6 +3609,56 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
             "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/ViridianCity_Gym/map.bin",
+            "border_filepath": "data/layouts/ViridianCity_Gym/border.bin",
+            "height": 18,
+            "id": "LAYOUT_VIRIDIAN_CITY_GYM",
+            "name": "ViridianCity_Gym_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/PewterCity_Gym/map.bin",
+            "border_filepath": "data/layouts/PewterCity_Gym/border.bin",
+            "height": 14,
+            "id": "LAYOUT_PEWTER_CITY_GYM",
+            "name": "PewterCity_Gym_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/DiglettsCave/map.bin",
+            "border_filepath": "data/layouts/DiglettsCave/border.bin",
+            "height": 36,
+            "id": "LAYOUT_DIGLETTS_CAVE",
+            "name": "DiglettsCave_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/MtMoon/map.bin",
+            "border_filepath": "data/layouts/MtMoon/border.bin",
+            "height": 16,
+            "id": "LAYOUT_MT_MOON",
+            "name": "MtMoon_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 31
+        },
+        {
+            "blockdata_filepath": "data/layouts/MtMoon_Square/map.bin",
+            "border_filepath": "data/layouts/MtMoon_Square/border.bin",
+            "height": 18,
+            "id": "LAYOUT_MT_MOON_SQUARE",
+            "name": "MtMoon_Square_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 30
         }
     ],
     "layouts_table_label": "gMapLayouts"

@@ -141,14 +141,14 @@
     "show_map_name": false,
     "warp_events": [
         {
-            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_map": "MAP_VIRIDIAN_CITY_GYM",
             "dest_warp_id": 0,
             "elevation": 3,
             "x": 32,
             "y": 7
         },
         {
-            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_map": "MAP_VIRIDIAN_CITY_HOUSE",
             "dest_warp_id": 0,
             "elevation": 3,
             "x": 21,
@@ -162,14 +162,14 @@
             "y": 15
         },
         {
-            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_map": "MAP_VIRIDIAN_CITY_MART",
             "dest_warp_id": 1,
             "elevation": 3,
             "x": 29,
             "y": 19
         },
         {
-            "dest_map": "MAP_VIRIDIAN_CITY",
+            "dest_map": "MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F",
             "dest_warp_id": 0,
             "elevation": 3,
             "x": 23,
