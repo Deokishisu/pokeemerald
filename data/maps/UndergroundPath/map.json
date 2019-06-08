@@ -1,0 +1,55 @@
+{
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_TEMP_1",
+            "item": "ITEM_FULL_RESTORE",
+            "type": "hidden_item",
+            "x": 3,
+            "y": 9
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_TEMP_1",
+            "item": "ITEM_X_SPECIAL",
+            "type": "hidden_item",
+            "x": 1,
+            "y": 19
+        }
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_UNDERGROUND_PATH",
+    "layout": "LAYOUT_UNDERGROUND_PATH",
+    "map_palette": "PAL_NITE",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_DAN02",
+    "name": "UndergroundPath",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_UNDERGROUND_PATH",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE5_UNDERGROUND_PATH_ENTRANCE",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 3,
+            "y": 2
+        },
+        {
+            "dest_map": "MAP_ROUTE6_UNDERGROUND_PATH_ENTRANCE",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 3,
+            "y": 24
+        }
+    ],
+    "weather": "WEATHER_NONE"
+}

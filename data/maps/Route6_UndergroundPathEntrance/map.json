@@ -1,0 +1,46 @@
+{
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_ROUTE6_UNDERGROUND_PATH_ENTRANCE",
+    "layout": "LAYOUT_ROUTE5_UNDERGROUND_PATH_ENTRANCE",
+    "map_palette": "PAL_INDOOR",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_DAN02",
+    "name": "Route6_UndergroundPathEntrance",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_ROUTE_6",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE6",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 3,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_ROUTE6",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 4,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_UNDERGROUND_PATH",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 4,
+            "y": 3
+        }
+    ],
+    "weather": "WEATHER_NONE"
+}

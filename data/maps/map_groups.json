@@ -20,6 +20,13 @@
     "gCeladonCityInteriors": [
     ],
     "gCeruleanCityInteriors": [
+        "CeruleanCity_PokemonCenter_1F",
+        "CeruleanCity_PokemonCenter_2F",
+        "CeruleanCity_Gym",
+        "CeruleanCity_Mart",
+        "CeruleanCity_House1",
+        "CeruleanCity_House2",
+        "CeruleanCity_House3"
     ],
     "gCherrygroveCityInteriors": [
         "CherrygroveCity_House1",
@@ -183,7 +190,8 @@
         "DiglettsCave",
         "MtMoon",
         "MtMoon_Square",
-        "MtMoon_GiftShop"
+        "MtMoon_GiftShop",
+        "UndergroundPath"
     ],
     "gLakeOfRageInteriors": [
         "LakeOfRage_HiddenPowerHouse",
@@ -350,8 +358,6 @@
         "FallarborTown_BattleTentBattleRoom",
         "LilycoveCity_ContestLobby",
         "LilycoveCity_ContestHall",
-        "LilycoveCity_PokemonCenter_1F",
-        "LilycoveCity_PokemonCenter_2F",
         "MossdeepCity_PokemonCenter_1F",
         "MossdeepCity_PokemonCenter_2F",
         "SootopolisCity_PokemonCenter_1F",
@@ -483,6 +489,7 @@
     "gRoute20Interiors": [
     ],
     "gRoute25Interiors": [
+        "Route25_BillsHouse"
     ],
     "gRoute26Interiors": [
         "Route26_House1",
@@ -544,8 +551,13 @@
         "Route43_Gate2"
     ],
     "gRoute5Interiors": [
+        "Route5_House",
+        "Route5_Gate",
+        "Route5_UndergroundPathEntrance"
     ],
     "gRoute6Interiors": [
+        "Route6_UndergroundPathEntrance",
+        "Route6_Gate"
     ],
     "gRoute7Interiors": [
     ],

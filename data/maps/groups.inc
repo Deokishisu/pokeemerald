@@ -509,6 +509,13 @@ gPewterCityInteriors::
 	.4byte PewterCity_House2
 
 gCeruleanCityInteriors::
+	.4byte CeruleanCity_PokemonCenter_1F
+	.4byte CeruleanCity_PokemonCenter_2F
+	.4byte CeruleanCity_Gym
+	.4byte CeruleanCity_Mart
+	.4byte CeruleanCity_House1
+	.4byte CeruleanCity_House2
+	.4byte CeruleanCity_House3
 
 gVermilionCityInteriors::
 
@@ -527,8 +534,13 @@ gRoute2Interiors::
 	.4byte Route2_Gate
 
 gRoute5Interiors::
+	.4byte Route5_House
+	.4byte Route5_Gate
+	.4byte Route5_UndergroundPathEntrance
 
 gRoute6Interiors::
+	.4byte Route6_UndergroundPathEntrance
+	.4byte Route6_Gate
 
 gRoute7Interiors::
 
@@ -549,12 +561,14 @@ gRoute19Interiors::
 gRoute20Interiors::
 
 gRoute25Interiors::
+	.4byte Route25_BillsHouse
 
 gKantoDungeons::
 	.4byte DiglettsCave
 	.4byte MtMoon
 	.4byte MtMoon_Square
 	.4byte MtMoon_GiftShop
+	.4byte UndergroundPath
 
 gMapGroup36::
 	.4byte VerdanturfTown_BattleTentLobby
@@ -565,8 +579,6 @@ gMapGroup36::
 	.4byte FallarborTown_BattleTentBattleRoom
 	.4byte LilycoveCity_ContestLobby
 	.4byte LilycoveCity_ContestHall
-	.4byte LilycoveCity_PokemonCenter_1F
-	.4byte LilycoveCity_PokemonCenter_2F
 	.4byte MossdeepCity_PokemonCenter_1F
 	.4byte MossdeepCity_PokemonCenter_2F
 	.4byte SootopolisCity_PokemonCenter_1F
