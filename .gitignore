@@ -39,3 +39,6 @@ porymap.project.cfg
 cmake-build-debug/CMakeFiles/clion-log.txt
 CMakeLists.txt
 results.txt
+tools/mapjson/libgcc_s_seh-1.dll
+tools/mapjson/libstdc++-6.dll
+tools/mapjson/libwinpthread-1.dll

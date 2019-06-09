@@ -518,8 +518,26 @@ gCeruleanCityInteriors::
 	.4byte CeruleanCity_House3
 
 gVermilionCityInteriors::
+	.4byte VermilionCity_PokemonCenter_1F
+	.4byte VermilionCity_PokemonCenter_2F
+	.4byte VermilionCity_Gym
+	.4byte VermilionCity_Mart
+	.4byte VermilionCity_PokemonFanClub
+	.4byte VermilionCity_PortPassage
+	.4byte VermilionCity_Port
+	.4byte VermilionCity_House1
+	.4byte VermilionCity_House2
+	.4byte VermilionCity_House3
 
 gLavenderTownInteriors::
+	.4byte LavenderTown_PokemonCenter_1F
+	.4byte LavenderTown_PokemonCenter_2F
+	.4byte LavenderTown_Mart
+	.4byte LavenderTown_RadioTower_1F
+	.4byte LavenderTown_MrFujisHouse
+	.4byte LavenderTown_SoulHouse
+	.4byte LavenderTown_NameRatersHouse
+	.4byte LavenderTown_House
 
 gCeladonCityInteriors::
 
@@ -579,10 +597,6 @@ gMapGroup36::
 	.4byte FallarborTown_BattleTentBattleRoom
 	.4byte LilycoveCity_ContestLobby
 	.4byte LilycoveCity_ContestHall
-	.4byte MossdeepCity_PokemonCenter_1F
-	.4byte MossdeepCity_PokemonCenter_2F
-	.4byte SootopolisCity_PokemonCenter_1F
-	.4byte SootopolisCity_PokemonCenter_2F
 	.4byte EverGrandeCity_PokemonCenter_1F
 	.4byte EverGrandeCity_PokemonCenter_2F
 	.4byte SlateportCity_BattleTentLobby

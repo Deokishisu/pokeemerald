@@ -30,4 +30,4 @@ TODO: Set up the specific Unown encounters in the Ruins of Alph based on flags.
 
 TODO: The period character in the Pokegear's Time Card textbox isn't spaced correctly. It is too close to the "t" in "exit".
 
-TODO: Cinnabar Island's ledges are not set to the correct movement permissions.
+TODO: Snorlax and presumably the other big dolls are not aligned correctly on the tile grid.

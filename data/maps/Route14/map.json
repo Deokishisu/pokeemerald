@@ -1,32 +1,36 @@
 {
-  "id": "MAP_ROUTE14",
-  "name": "Route14",
-  "layout": "LAYOUT_ROUTE14",
-  "music": "MUS_DAN02",
-  "region_map_section": "MAPSEC_ROUTE_14",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_ROUTE",
-  "map_palette": "0",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "up",
-      "offset": 0,
-      "map": "MAP_ROUTE13"
-    },
-    {
-      "direction": "left",
-      "offset": 18,
-      "map": "MAP_ROUTE15"
-    }
-  ],
-  "object_events": [],
-  "warp_events": [],
-  "coord_events": [],
-  "bg_events": []
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": [
+        {
+            "direction": "up",
+            "map": "MAP_ROUTE13",
+            "offset": 0
+        },
+        {
+            "direction": "left",
+            "map": "MAP_ROUTE15",
+            "offset": 18
+        }
+    ],
+    "coord_events": [
+    ],
+    "id": "MAP_ROUTE14",
+    "layout": "LAYOUT_ROUTE14",
+    "map_palette": "0",
+    "map_type": "MAP_TYPE_ROUTE",
+    "music": "MUS_DAN02",
+    "name": "Route14",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_ROUTE_14",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+    ],
+    "weather": "WEATHER_SUNNY"
 }

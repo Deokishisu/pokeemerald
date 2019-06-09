@@ -1,4 +1,4 @@
-SootopolisCity_PokemonCenter_2F_MapScripts:: @ 822676D
+LavenderTown_PokemonCenter_2F_MapScripts:: @ 822676D
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SootopolisCity_PokemonCenter_2F_MapScript2_276C3B
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SootopolisCity_PokemonCenter_2F_MapScript2_276B6C
 	map_script MAP_SCRIPT_ON_LOAD, SootopolisCity_PokemonCenter_2F_MapScript1_276BBE

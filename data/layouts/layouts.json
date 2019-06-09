@@ -3689,6 +3689,66 @@
             "primary_tileset": "gTileset_Building2",
             "secondary_tileset": "gTileset_BikeShop",
             "width": 6
+        },
+        {
+            "blockdata_filepath": "data/layouts/VermilionCity_PokemonFanClub/map.bin",
+            "border_filepath": "data/layouts/VermilionCity_PokemonFanClub/border.bin",
+            "height": 8,
+            "id": "LAYOUT_VERMILION_CITY_POKEMON_FAN_CLUB",
+            "name": "VermilionCity_PokemonFanClub_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/VermilionCity_Gym/map.bin",
+            "border_filepath": "data/layouts/VermilionCity_Gym/border.bin",
+            "height": 18,
+            "id": "LAYOUT_VERMILION_CITY_GYM",
+            "name": "VermilionCity_Gym_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/VermilionCity_Port/map.bin",
+            "border_filepath": "data/layouts/VermilionCity_Port/border.bin",
+            "height": 36,
+            "id": "LAYOUT_VERMILION_CITY_PORT",
+            "name": "VermilionCity_Port_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/LavenderTown_MrFujisHouse/map.bin",
+            "border_filepath": "data/layouts/LavenderTown_MrFujisHouse/border.bin",
+            "height": 8,
+            "id": "LAYOUT_LAVENDER_TOWN_MR_FUJIS_HOUSE",
+            "name": "LavenderTown_MrFujisHouse_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/LavenderTown_SoulHouse/map.bin",
+            "border_filepath": "data/layouts/LavenderTown_SoulHouse/border.bin",
+            "height": 8,
+            "id": "LAYOUT_LAVENDER_TOWN_SOUL_HOUSE",
+            "name": "LavenderTown_SoulHouse_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/LavenderTown_RadioTower_1F/map.bin",
+            "border_filepath": "data/layouts/LavenderTown_RadioTower_1F/border.bin",
+            "height": 8,
+            "id": "LAYOUT_LAVENDER_TOWN_RADIO_TOWER_1F",
+            "name": "LavenderTown_RadioTower_1F_Layout",
+            "primary_tileset": "gTileset_Special",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 20
         }
     ],
     "layouts_table_label": "gMapLayouts"

@@ -1,9 +1,9 @@
-SootopolisCity_PokemonCenter_1F_MapScripts:: @ 82264F1
-	map_script MAP_SCRIPT_ON_TRANSITION, SootopolisCity_PokemonCenter_1F_OnTransition
+LavenderTown_PokemonCenter_1F_MapScripts:: @ 82264F1
+	map_script MAP_SCRIPT_ON_TRANSITION, LavenderTown_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SootopolisCity_PokemonCenter_1F_MapScript1_277C30
 	.byte 0
 
-SootopolisCity_PokemonCenter_1F_OnTransition: @ 82264FC
+LavenderTown_PokemonCenter_1F_OnTransition: @ 82264FC
 	end
 
 SootopolisCity_PokemonCenter_1F_EventScript_226500:: @ 8226500
