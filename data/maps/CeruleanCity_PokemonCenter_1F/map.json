@@ -10,7 +10,7 @@
     ],
     "id": "MAP_CERULEAN_CITY_POKEMON_CENTER_1F",
     "layout": "LAYOUT_POKEMON_CENTER_1F",
-    "map_palette": "0",
+    "map_palette": "PAL_INDOOR",
     "map_type": "MAP_TYPE_INDOOR",
     "music": "MUS_POKECEN",
     "name": "CeruleanCity_PokemonCenter_1F",
