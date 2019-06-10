@@ -134,7 +134,7 @@ $(EVENTOBJGFXDIR)/people/gym_leaders/janine.4bpp: %.4bpp: %.png
 $(EVENTOBJGFXDIR)/people/gym_leaders/sabrina.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
-$(EVENTOBJGFXDIR)/people/blaine.4bpp: %.4bpp: %.png
+$(EVENTOBJGFXDIR)/people/gym_leaders/blaine.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/people/may/walking.4bpp: %.4bpp: %.png
