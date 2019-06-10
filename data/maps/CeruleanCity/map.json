@@ -203,7 +203,7 @@
     ],
     "region_map_section": "MAPSEC_CERULEAN_CITY",
     "requires_flash": false,
-    "show_map_name": false,
+    "show_map_name": true,
     "warp_events": [
         {
             "dest_map": "MAP_CERULEAN_CITY_HOUSE1",

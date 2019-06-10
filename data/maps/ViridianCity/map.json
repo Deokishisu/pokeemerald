@@ -138,7 +138,7 @@
     ],
     "region_map_section": "MAPSEC_VIRIDIAN_CITY",
     "requires_flash": false,
-    "show_map_name": false,
+    "show_map_name": true,
     "warp_events": [
         {
             "dest_map": "MAP_VIRIDIAN_CITY_GYM",

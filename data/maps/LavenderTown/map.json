@@ -138,7 +138,7 @@
     ],
     "region_map_section": "MAPSEC_LAVENDER_TOWN",
     "requires_flash": false,
-    "show_map_name": false,
+    "show_map_name": true,
     "warp_events": [
         {
             "dest_map": "MAP_LAVENDER_TOWN_POKEMON_CENTER_1F",

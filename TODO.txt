@@ -31,3 +31,13 @@ TODO: Set up the specific Unown encounters in the Ruins of Alph based on flags.
 TODO: The period character in the Pokegear's Time Card textbox isn't spaced correctly. It is too close to the "t" in "exit".
 
 TODO: Snorlax and presumably the other big dolls are not aligned correctly on the tile grid.
+
+TODO: Biker OW sprites do not do their movement frames correctly.
+
+TODO: Blaine's OW is messed up.
+
+TODO: Figure out Janine Trainers transformation in Fuchsia Gym and the Pokemon Center, as well as Copycat's transformation.
+
+TODO: Celadon Dept. Store 6F needs the upstairs tile hidden by setmaptile script. It shares its layout with Goldenrod's Dept. Store 6F which has a rooftop. Celadon does not.
+
+TODO: Fix Celadon Mansion Rooftop Palettes. The blue border is not accurate, the top of the fence is not accurate, and the grays are possibly not accurate.

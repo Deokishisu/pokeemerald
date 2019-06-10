@@ -381,16 +381,6 @@
             "width": 8
         },
         {
-            "blockdata_filepath": "data/layouts/NewBarkTown_House/map.bin",
-            "border_filepath": "data/layouts/NewBarkTown_House/border.bin",
-            "height": 8,
-            "id": "LAYOUT_NEW_BARK_TOWN_HOUSE",
-            "name": "NewBarkTown_House_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 8
-        },
-        {
             "blockdata_filepath": "data/layouts/NewBarkTown_ProfElmsLab/map.bin",
             "border_filepath": "data/layouts/NewBarkTown_ProfElmsLab/border.bin",
             "height": 12,
@@ -451,16 +441,6 @@
             "width": 12
         },
         {
-            "blockdata_filepath": "data/layouts/House3/map.bin",
-            "border_filepath": "data/layouts/House3/border.bin",
-            "height": 8,
-            "id": "LAYOUT_HOUSE3",
-            "name": "House3_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 10
-        },
-        {
             "blockdata_filepath": "data/layouts/AzaleaTown_Gym/map.bin",
             "border_filepath": "data/layouts/AzaleaTown_Gym/border.bin",
             "height": 16,
@@ -479,16 +459,6 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
             "width": 16
-        },
-        {
-            "blockdata_filepath": "data/layouts/House4/map.bin",
-            "border_filepath": "data/layouts/House4/border.bin",
-            "height": 9,
-            "id": "LAYOUT_HOUSE4",
-            "name": "House4_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 10
         },
         {
             "blockdata_filepath": "data/layouts/EcruteakCity_TinTowerGate/map.bin",
@@ -511,26 +481,6 @@
             "width": 10
         },
         {
-            "blockdata_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/map.bin",
-            "border_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/border.bin",
-            "height": 9,
-            "id": "LAYOUT_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
-            "name": "LavaridgeTown_PokemonCenter_1F_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 14
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_08428450/map.bin",
-            "border_filepath": "data/layouts/Unknown_08428450/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_08428450",
-            "name": "Unknown_08428450_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_Contest",
-            "width": 1
-        },
-        {
             "blockdata_filepath": "data/layouts/MahoganyTown_Shop/map.bin",
             "border_filepath": "data/layouts/MahoganyTown_Shop/border.bin",
             "height": 8,
@@ -548,16 +498,6 @@
             "name": "VioletCity_Gym_Layout",
             "primary_tileset": "gTileset_Building2",
             "secondary_tileset": "gTileset_BikeShop",
-            "width": 10
-        },
-        {
-            "blockdata_filepath": "data/layouts/HouseWithBed/map.bin",
-            "border_filepath": "data/layouts/HouseWithBed/border.bin",
-            "height": 8,
-            "id": "LAYOUT_HOUSE_WITH_BED",
-            "name": "HouseWithBed_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_GenericBuilding",
             "width": 10
         },
         {
@@ -579,26 +519,6 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
             "width": 8
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_084294C4/map.bin",
-            "border_filepath": "data/layouts/Unknown_084294C4/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_084294C4",
-            "name": "Unknown_084294C4_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_Contest",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_084294E8/map.bin",
-            "border_filepath": "data/layouts/Unknown_084294E8/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_084294E8",
-            "name": "Unknown_084294E8_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_Contest",
-            "width": 1
         },
         {
             "blockdata_filepath": "data/layouts/GoldenrodCity_UndergroundSwitchRoomEntrances/map.bin",
@@ -629,16 +549,6 @@
             "primary_tileset": "gTileset_Building2",
             "secondary_tileset": "gTileset_BikeShop",
             "width": 20
-        },
-        {
-            "blockdata_filepath": "data/layouts/Harbor/map.bin",
-            "border_filepath": "data/layouts/Harbor/border.bin",
-            "height": 15,
-            "id": "LAYOUT_HARBOR",
-            "name": "Harbor_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 24
         },
         {
             "blockdata_filepath": "data/layouts/GoldenrodCity_Gym/map.bin",
@@ -1019,146 +929,6 @@
             "primary_tileset": "gTileset_Building2",
             "secondary_tileset": "gTileset_BikeShop",
             "width": 20
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E6C0/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E6C0/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E6C0",
-            "name": "Unknown_0843E6C0_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E6E4/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E6E4/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E6E4",
-            "name": "Unknown_0843E6E4_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E708/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E708/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E708",
-            "name": "Unknown_0843E708_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E72C/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E72C/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E72C",
-            "name": "Unknown_0843E72C_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E750/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E750/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E750",
-            "name": "Unknown_0843E750_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E774/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E774/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E774",
-            "name": "Unknown_0843E774_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E798/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E798/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E798",
-            "name": "Unknown_0843E798_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E7BC/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E7BC/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E7BC",
-            "name": "Unknown_0843E7BC_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E7E0/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E7E0/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E7E0",
-            "name": "Unknown_0843E7E0_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E804/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E804/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E804",
-            "name": "Unknown_0843E804_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E828/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E828/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E828",
-            "name": "Unknown_0843E828_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E84C/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E84C/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E84C",
-            "name": "Unknown_0843E84C_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E870/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E870/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E870",
-            "name": "Unknown_0843E870_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_0843E894/map.bin",
-            "border_filepath": "data/layouts/Unknown_0843E894/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_0843E894",
-            "name": "Unknown_0843E894_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 1
         },
         {
             "blockdata_filepath": "data/layouts/SecretBase_RedCave1/map.bin",
@@ -1559,16 +1329,6 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Contest",
             "width": 15
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_08447028/map.bin",
-            "border_filepath": "data/layouts/Unknown_08447028/border.bin",
-            "height": 26,
-            "id": "LAYOUT_UNKNOWN_08447028",
-            "name": "Unknown_08447028_Layout",
-            "primary_tileset": "gTileset_General",
-            "secondary_tileset": "0",
-            "width": 58
         },
         {
             "blockdata_filepath": "data/layouts/GoldenrodCity_DepartmentStore_1F/map.bin",
@@ -2039,16 +1799,6 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_BattlePike",
             "width": 9
-        },
-        {
-            "blockdata_filepath": "data/layouts/Unknown_084693AC/map.bin",
-            "border_filepath": "data/layouts/Unknown_084693AC/border.bin",
-            "height": 1,
-            "id": "LAYOUT_UNKNOWN_084693AC",
-            "name": "Unknown_084693AC_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_BattlePike",
-            "width": 1
         },
         {
             "blockdata_filepath": "data/layouts/BattleFrontier_BattlePyramidLobby/map.bin",
@@ -2569,16 +2319,6 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_BattleFrontier",
             "width": 6
-        },
-        {
-            "blockdata_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLabWithTable/map.bin",
-            "border_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLabWithTable/border.bin",
-            "height": 13,
-            "id": "LAYOUT_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB_WITH_TABLE",
-            "name": "LittlerootTown_ProfessorBirchsLabWithTable_Layout",
-            "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_Petalburg",
-            "width": 13
         },
         {
             "blockdata_filepath": "data/layouts/North_South_Gate/map.bin",
@@ -3749,6 +3489,386 @@
             "primary_tileset": "gTileset_Special",
             "secondary_tileset": "gTileset_Petalburg",
             "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/RockTunnel_1F/map.bin",
+            "border_filepath": "data/layouts/RockTunnel_1F/border.bin",
+            "height": 27,
+            "id": "LAYOUT_ROCK_TUNNEL_1F",
+            "name": "RockTunnel_1F_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 30
+        },
+        {
+            "blockdata_filepath": "data/layouts/RockTunnel_B1F/map.bin",
+            "border_filepath": "data/layouts/RockTunnel_B1F/border.bin",
+            "height": 27,
+            "id": "LAYOUT_ROCK_TUNNEL_B1F",
+            "name": "RockTunnel_B1F_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 30
+        },
+        {
+            "blockdata_filepath": "data/layouts/Route10_PowerPlant/map.bin",
+            "border_filepath": "data/layouts/Route10_PowerPlant/border.bin",
+            "height": 18,
+            "id": "LAYOUT_ROUTE10_POWER_PLANT",
+            "name": "Route10_PowerPlant_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/Route20_SeafoamGym/map.bin",
+            "border_filepath": "data/layouts/Route20_SeafoamGym/border.bin",
+            "height": 8,
+            "id": "LAYOUT_ROUTE20_SEAFOAM_GYM",
+            "name": "Route20_SeafoamGym_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/FuchsiaCity_Gym/map.bin",
+            "border_filepath": "data/layouts/FuchsiaCity_Gym/border.bin",
+            "height": 18,
+            "id": "LAYOUT_FUCHSIA_CITY_GYM",
+            "name": "FuchsiaCity_Gym_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/SaffronCity_Gym/map.bin",
+            "border_filepath": "data/layouts/SaffronCity_Gym/border.bin",
+            "height": 18,
+            "id": "LAYOUT_SAFFRON_CITY_GYM",
+            "name": "SaffronCity_Gym_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/SaffronCity_FightingDojo/map.bin",
+            "border_filepath": "data/layouts/SaffronCity_FightingDojo/border.bin",
+            "height": 12,
+            "id": "LAYOUT_SAFFRON_CITY_FIGHTING_DOJO",
+            "name": "SaffronCity_FightingDojo_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/SaffronCity_MagnetTrainStation/map.bin",
+            "border_filepath": "data/layouts/SaffronCity_MagnetTrainStation/border.bin",
+            "height": 18,
+            "id": "LAYOUT_SAFFRON_CITY_MAGNET_TRAIN_STATION",
+            "name": "SaffronCity_MagnetTrainStation_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/SaffronCity_SilphCo_1F/map.bin",
+            "border_filepath": "data/layouts/SaffronCity_SilphCo_1F/border.bin",
+            "height": 8,
+            "id": "LAYOUT_SAFFRON_CITY_SILPH_CO_1F",
+            "name": "SaffronCity_SilphCo_1F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 16
+        },
+        {
+            "blockdata_filepath": "data/layouts/SaffronCity_CopycatsHouse_1F/map.bin",
+            "border_filepath": "data/layouts/SaffronCity_CopycatsHouse_1F/border.bin",
+            "height": 8,
+            "id": "LAYOUT_SAFFRON_CITY_COPYCATS_HOUSE_1F",
+            "name": "SaffronCity_CopycatsHouse_1F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 8
+        },
+        {
+            "blockdata_filepath": "data/layouts/SaffronCity_CopycatsHouse_2F/map.bin",
+            "border_filepath": "data/layouts/SaffronCity_CopycatsHouse_2F/border.bin",
+            "height": 6,
+            "id": "LAYOUT_SAFFRON_CITY_COPYCATS_HOUSE_2F",
+            "name": "SaffronCity_CopycatsHouse_2F_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 8
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_Gym/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_Gym/border.bin",
+            "height": 18,
+            "id": "LAYOUT_CELADON_CITY_GYM",
+            "name": "CeladonCity_Gym_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_GameCorner/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_GameCorner/border.bin",
+            "height": 14,
+            "id": "LAYOUT_CELADON_CITY_GAME_CORNER",
+            "name": "CeladonCity_GameCorner_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_PrizeRoom/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_PrizeRoom/border.bin",
+            "height": 6,
+            "id": "LAYOUT_CELADON_CITY_PRIZE_ROOM",
+            "name": "CeladonCity_PrizeRoom_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 6
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_Cafe/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_Cafe/border.bin",
+            "height": 8,
+            "id": "LAYOUT_CELADON_CITY_CAFE",
+            "name": "CeladonCity_Cafe_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 12
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_Mansion_1F/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_Mansion_1F/border.bin",
+            "height": 10,
+            "id": "LAYOUT_CELADON_CITY_MANSION_1F",
+            "name": "CeladonCity_Mansion_1F_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 8
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_Mansion_2F/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_Mansion_2F/border.bin",
+            "height": 10,
+            "id": "LAYOUT_CELADON_CITY_MANSION_2F",
+            "name": "CeladonCity_Mansion_2F_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 8
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_Mansion_3F/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_Mansion_3F/border.bin",
+            "height": 10,
+            "id": "LAYOUT_CELADON_CITY_MANSION_3F",
+            "name": "CeladonCity_Mansion_3F_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 8
+        },
+        {
+            "blockdata_filepath": "data/layouts/CeladonCity_MansionRooftop/map.bin",
+            "border_filepath": "data/layouts/CeladonCity_MansionRooftop/border.bin",
+            "height": 10,
+            "id": "LAYOUT_CELADON_CITY_MANSION_ROOFTOP",
+            "name": "CeladonCity_MansionRooftop_Layout",
+            "primary_tileset": "gTileset_Building2",
+            "secondary_tileset": "gTileset_BikeShop",
+            "width": 8
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_084294C4/map.bin",
+            "border_filepath": "data/layouts/Unknown_084294C4/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_084294C4",
+            "name": "Unknown_084294C4_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Contest",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_084294E8/map.bin",
+            "border_filepath": "data/layouts/Unknown_084294E8/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_084294E8",
+            "name": "Unknown_084294E8_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Contest",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E6C0/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E6C0/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E6C0",
+            "name": "Unknown_0843E6C0_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E6E4/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E6E4/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E6E4",
+            "name": "Unknown_0843E6E4_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E708/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E708/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E708",
+            "name": "Unknown_0843E708_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E72C/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E72C/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E72C",
+            "name": "Unknown_0843E72C_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E750/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E750/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E750",
+            "name": "Unknown_0843E750_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E774/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E774/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E774",
+            "name": "Unknown_0843E774_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E798/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E798/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E798",
+            "name": "Unknown_0843E798_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E7BC/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E7BC/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E7BC",
+            "name": "Unknown_0843E7BC_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E7E0/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E7E0/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E7E0",
+            "name": "Unknown_0843E7E0_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E804/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E804/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E804",
+            "name": "Unknown_0843E804_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E828/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E828/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E828",
+            "name": "Unknown_0843E828_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E84C/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E84C/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E84C",
+            "name": "Unknown_0843E84C_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E870/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E870/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E870",
+            "name": "Unknown_0843E870_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_0843E894/map.bin",
+            "border_filepath": "data/layouts/Unknown_0843E894/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_0843E894",
+            "name": "Unknown_0843E894_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "gTileset_Petalburg",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_08447028/map.bin",
+            "border_filepath": "data/layouts/Unknown_08447028/border.bin",
+            "height": 26,
+            "id": "LAYOUT_UNKNOWN_08447028",
+            "name": "Unknown_08447028_Layout",
+            "primary_tileset": "gTileset_General",
+            "secondary_tileset": "0",
+            "width": 58
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_08428450/map.bin",
+            "border_filepath": "data/layouts/Unknown_08428450/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_08428450",
+            "name": "Unknown_08428450_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Contest",
+            "width": 1
+        },
+        {
+            "blockdata_filepath": "data/layouts/Unknown_084693AC/map.bin",
+            "border_filepath": "data/layouts/Unknown_084693AC/border.bin",
+            "height": 1,
+            "id": "LAYOUT_UNKNOWN_084693AC",
+            "name": "Unknown_084693AC_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_BattlePike",
+            "width": 1
         }
     ],
     "layouts_table_label": "gMapLayouts"

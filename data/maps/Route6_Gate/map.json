@@ -35,7 +35,7 @@
     "show_map_name": false,
     "warp_events": [
         {
-            "dest_map": "MAP_ROUTE6_GATE",
+            "dest_map": "MAP_SAFFRON_CITY",
             "dest_warp_id": 11,
             "elevation": 0,
             "x": 4,

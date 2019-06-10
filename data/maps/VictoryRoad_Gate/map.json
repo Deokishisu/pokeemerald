@@ -1,131 +1,132 @@
 {
-  "id": "MAP_VICTORY_ROAD_GATE",
-  "name": "VictoryRoad_Gate",
-  "layout": "LAYOUT_VICTORY_ROAD_GATE",
-  "music": "MUS_DAN02",
-  "region_map_section": "MAPSEC_ROUTE_26",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_INDOOR",
-  "map_palette": "PAL_INDOOR",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
-  "object_events": [
-    {
-      "graphics_id": "EVENT_OBJ_GFX_OFFICER",
-      "npc_palette": "0",
-      "x": 8,
-      "y": 11,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_BLACK_BELT",
-      "npc_palette": "0",
-      "x": 7,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_BLACK_BELT",
-      "npc_palette": "0",
-      "x": 12,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    }
-  ],
-  "warp_events": [
-    {
-      "x": 17,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE22",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 18,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE22",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 9,
-      "y": 17,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE26",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 10,
-      "y": 17,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE26",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 9,
-      "y": 0,
-      "elevation": 3,
-      "dest_map": "MAP_VICTORY_ROAD",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 10,
-      "y": 0,
-      "elevation": 3,
-      "dest_map": "MAP_VICTORY_ROAD",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 1,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE28",
-      "dest_warp_id": 1
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE28",
-      "dest_warp_id": 1
-    }
-  ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 11,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
-    }
-  ],
-  "bg_events": []
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+        {
+            "elevation": 3,
+            "script": "NULL",
+            "type": "trigger",
+            "var": "VAR_TEMP_0",
+            "var_value": "0",
+            "x": 10,
+            "y": 11
+        }
+    ],
+    "id": "MAP_VICTORY_ROAD_GATE",
+    "layout": "LAYOUT_VICTORY_ROAD_GATE",
+    "map_palette": "PAL_INDOOR",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_DAN02",
+    "name": "VictoryRoad_Gate",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_OFFICER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "npc_palette": "0",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 8,
+            "y": 11
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BLACK_BELT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "npc_palette": "0",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 7,
+            "y": 4
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BLACK_BELT",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "npc_palette": "0",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 12,
+            "y": 4
+        }
+    ],
+    "region_map_section": "MAPSEC_ROUTE_26",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE22",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 17,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_ROUTE22",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 18,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_ROUTE26",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 9,
+            "y": 17
+        },
+        {
+            "dest_map": "MAP_ROUTE26",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 10,
+            "y": 17
+        },
+        {
+            "dest_map": "MAP_VICTORY_ROAD",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 9,
+            "y": 0
+        },
+        {
+            "dest_map": "MAP_VICTORY_ROAD",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 10,
+            "y": 0
+        },
+        {
+            "dest_map": "MAP_ROUTE28",
+            "dest_warp_id": 1,
+            "elevation": 3,
+            "x": 1,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_ROUTE28",
+            "dest_warp_id": 1,
+            "elevation": 3,
+            "x": 2,
+            "y": 7
+        }
+    ],
+    "weather": "WEATHER_NONE"
 }

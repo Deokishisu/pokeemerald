@@ -465,26 +465,6 @@ gMapGroup28::
 	.4byte NavelRock_Bottom
 	.4byte TrainerHill_Elevator
 
-gRoute27Interiors::
-	.4byte Route27_House
-
-gRoute26Interiors::
-	.4byte Route26_House1
-	.4byte Route26_House2
-
-gIndigoPlateauInteriors::
-	.4byte IndigoPlateau_PokemonCenter_1F
-	.4byte IndigoPlateau_PokemonCenter_2F
-	.4byte IndigoPlateau_WillsRoom
-	.4byte IndigoPlateau_KogasRoom
-	.4byte IndigoPlateau_BrunosRoom
-	.4byte IndigoPlateau_KarensRoom
-	.4byte IndigoPlateau_LancesRoom
-	.4byte IndigoPlateau_HallOfFame
-
-gRoute28Interiors::
-	.4byte Route28_House
-
 gPalletTownInteriors::
 	.4byte PalletTown_RedsHouse_1F
 	.4byte PalletTown_RedsHouse_2F
@@ -540,12 +520,59 @@ gLavenderTownInteriors::
 	.4byte LavenderTown_House
 
 gCeladonCityInteriors::
+	.4byte CeladonCity_PokemonCenter_1F
+	.4byte CeladonCity_PokemonCenter_2F
+	.4byte CeladonCity_Gym
+	.4byte CeladonCity_GameCorner
+	.4byte CeladonCity_PrizeRoom
+	.4byte CeladonCity_Cafe
+	.4byte CeladonCity_Mansion_1F
+	.4byte CeladonCity_Mansion_2F
+	.4byte CeladonCity_Mansion_3F
+	.4byte CeladonCity_MansionRooftop
+	.4byte CeladonCity_Mansion_Penthouse
+	.4byte CeladonCity_DepartmentStore_1F
+	.4byte CeladonCity_DepartmentStore_2F
+	.4byte CeladonCity_DepartmentStore_3F
+	.4byte CeladonCity_DepartmentStore_4F
+	.4byte CeladonCity_DepartmentStore_5F
+	.4byte CeladonCity_DepartmentStore_6F
+	.4byte CeladonCity_DepartmentStoreElevator
 
 gSaffronCityInteriors::
+	.4byte SaffronCity_PokemonCenter_1F
+	.4byte SaffronCity_PokemonCenter_2F
+	.4byte SaffronCity_Mart
+	.4byte SaffronCity_Gym
+	.4byte SaffronCity_FightingDojo
+	.4byte SaffronCity_MagnetTrainStation
+	.4byte SaffronCity_SilphCo_1F
+	.4byte SaffronCity_CopycatsHouse_1F
+	.4byte SaffronCity_CopycatsHouse_2F
+	.4byte SaffronCity_MrPsychicsHouse
 
 gFuchsiaCityInteriors::
+	.4byte FuchsiaCity_PokemonCenter_1F
+	.4byte FuchsiaCity_PokemonCenter_2F
+	.4byte FuchsiaCity_Mart
+	.4byte FuchsiaCity_Gym
+	.4byte FuchsiaCity_SafariZoneOffice
+	.4byte FuchsiaCity_WardensHouse
+	.4byte FuchsiaCity_House
 
 gCinnabarIslandInteriors::
+	.4byte CinnabarIsland_PokemonCenter_1F
+	.4byte CinnabarIsland_PokemonCenter_2F
+
+gIndigoPlateauInteriors::
+	.4byte IndigoPlateau_PokemonCenter_1F
+	.4byte IndigoPlateau_PokemonCenter_2F
+	.4byte IndigoPlateau_WillsRoom
+	.4byte IndigoPlateau_KogasRoom
+	.4byte IndigoPlateau_BrunosRoom
+	.4byte IndigoPlateau_KarensRoom
+	.4byte IndigoPlateau_LancesRoom
+	.4byte IndigoPlateau_HallOfFame
 
 gRoute2Interiors::
 	.4byte Route2_House
@@ -561,25 +588,47 @@ gRoute6Interiors::
 	.4byte Route6_Gate
 
 gRoute7Interiors::
+	.4byte Route7_Gate
 
 gRoute8Interiors::
+	.4byte Route8_Gate
 
 gRoute10Interiors::
+	.4byte Route10_PowerPlant
+	.4byte Route10_PokemonCenter_1F
+	.4byte Route10_PokemonCenter_2F
 
 gRoute12Interiors::
+	.4byte Route12_House
 
 gRoute15Interiors::
+	.4byte Route15_Gate
 
 gRoute16Interiors::
+	.4byte Route16_Gate
+	.4byte Route16_House
 
 gRoute17Interiors::
+	.4byte Route17_Gate
 
 gRoute19Interiors::
+	.4byte Route19_Gate
 
 gRoute20Interiors::
+	.4byte Route20_SeafoamGym
 
 gRoute25Interiors::
 	.4byte Route25_BillsHouse
+
+gRoute26Interiors::
+	.4byte Route26_House1
+	.4byte Route26_House2
+
+gRoute27Interiors::
+	.4byte Route27_House
+
+gRoute28Interiors::
+	.4byte Route28_House
 
 gKantoDungeons::
 	.4byte DiglettsCave
@@ -587,6 +636,8 @@ gKantoDungeons::
 	.4byte MtMoon_Square
 	.4byte MtMoon_GiftShop
 	.4byte UndergroundPath
+	.4byte RockTunnel_1F
+	.4byte RockTunnel_B1F
 
 gMapGroup36::
 	.4byte VerdanturfTown_BattleTentLobby
@@ -597,8 +648,6 @@ gMapGroup36::
 	.4byte FallarborTown_BattleTentBattleRoom
 	.4byte LilycoveCity_ContestLobby
 	.4byte LilycoveCity_ContestHall
-	.4byte EverGrandeCity_PokemonCenter_1F
-	.4byte EverGrandeCity_PokemonCenter_2F
 	.4byte SlateportCity_BattleTentLobby
 	.4byte SlateportCity_BattleTentCorridor
 	.4byte SlateportCity_BattleTentBattleRoom
@@ -636,10 +685,6 @@ gMapGroups::
 	.4byte gJohtoDungeons
 	.4byte gMapGroup27
 	.4byte gMapGroup28
-	.4byte gRoute27Interiors
-	.4byte gRoute26Interiors
-	.4byte gIndigoPlateauInteriors
-	.4byte gRoute28Interiors
 	.4byte gPalletTownInteriors
 	.4byte gViridianCityInteriors
 	.4byte gPewterCityInteriors
@@ -650,6 +695,7 @@ gMapGroups::
 	.4byte gSaffronCityInteriors
 	.4byte gFuchsiaCityInteriors
 	.4byte gCinnabarIslandInteriors
+	.4byte gIndigoPlateauInteriors
 	.4byte gRoute2Interiors
 	.4byte gRoute5Interiors
 	.4byte gRoute6Interiors
@@ -663,6 +709,9 @@ gMapGroups::
 	.4byte gRoute19Interiors
 	.4byte gRoute20Interiors
 	.4byte gRoute25Interiors
+	.4byte gRoute26Interiors
+	.4byte gRoute27Interiors
+	.4byte gRoute28Interiors
 	.4byte gKantoDungeons
 	.4byte gMapGroup36
 

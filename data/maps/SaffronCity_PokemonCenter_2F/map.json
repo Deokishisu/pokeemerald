@@ -1,0 +1,32 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_SAFFRON_CITY_POKEMON_CENTER_2F",
+    "layout": "LAYOUT_POKEMON_CENTER_2F",
+    "map_palette": "PAL_INDOOR",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_DAN02",
+    "name": "SaffronCity_PokemonCenter_2F",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_SAFFRON_CITY",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_SAFFRON_CITY_POKEMON_CENTER_1F",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 0,
+            "y": 7
+        }
+    ],
+    "weather": "WEATHER_NONE"
+}

@@ -4,6 +4,22 @@
     "allow_running": false,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 3,
+            "flag": "FLAG_TEMP_1",
+            "item": "ITEM_MAX_ETHER",
+            "type": "hidden_item",
+            "x": 9,
+            "y": 54
+        },
+        {
+            "elevation": 3,
+            "flag": "FLAG_TEMP_1",
+            "item": "ITEM_MAX_ELIXIR",
+            "type": "hidden_item",
+            "x": 8,
+            "y": 77
+        }
     ],
     "connections": [
         {
@@ -26,11 +42,81 @@
     "music": "MUS_DAN02",
     "name": "Route17",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BIKER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "npc_palette": "PAL_NPC_BROWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "4",
+            "trainer_type": "1",
+            "x": 4,
+            "y": 17
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BIKER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_BROWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "1",
+            "trainer_type": "1",
+            "x": 9,
+            "y": 68
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BIKER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "npc_palette": "PAL_NPC_BROWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "3",
+            "trainer_type": "1",
+            "x": 3,
+            "y": 53
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BIKER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "npc_palette": "PAL_NPC_BROWN",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "4",
+            "trainer_type": "1",
+            "x": 6,
+            "y": 80
+        }
     ],
     "region_map_section": "MAPSEC_ROUTE_17",
     "requires_flash": false,
-    "show_map_name": false,
+    "show_map_name": true,
     "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE17_GATE",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 17,
+            "y": 82
+        },
+        {
+            "dest_map": "MAP_ROUTE17_GATE",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 17,
+            "y": 83
+        }
     ],
     "weather": "WEATHER_SUNNY"
 }

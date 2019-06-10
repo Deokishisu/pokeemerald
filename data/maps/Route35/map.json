@@ -1,209 +1,211 @@
 {
-  "id": "MAP_ROUTE35",
-  "name": "Route35",
-  "layout": "LAYOUT_ROUTE35",
-  "music": "MUS_NEXTROAD",
-  "region_map_section": "MAPSEC_ROUTE_35",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_ROUTE",
-  "map_palette": "PAL_CYCLE",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "up",
-      "offset": 0,
-      "map": "MAP_ROUTE36"
-    },
-    {
-      "direction": "down",
-      "offset": -10,
-      "map": "MAP_GOLDENROD_CITY"
-    }
-  ],
-  "object_events": [
-    {
-      "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
-      "npc_palette": "PAL_NPC_GREEN",
-      "x": 4,
-      "y": 19,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route107_EventScript_1EE595",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
-      "npc_palette": "PAL_NPC_GREEN",
-      "x": 8,
-      "y": 20,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route107_EventScript_1EE5AC",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LASS",
-      "npc_palette": "PAL_NPC_GREEN",
-      "x": 7,
-      "y": 20,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route107_EventScript_1EE60E",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LASS",
-      "npc_palette": "PAL_NPC_GREEN",
-      "x": 10,
-      "y": 26,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route107_EventScript_1EE625",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
-      "npc_palette": "PAL_NPC_BLUE",
-      "x": 14,
-      "y": 28,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route107_EventScript_1EE63C",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_FAT_MAN",
-      "npc_palette": "PAL_NPC_RED",
-      "x": 2,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route107_EventScript_1EE657",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_BUG_CATCHER",
-      "npc_palette": "PAL_NPC_BROWN",
-      "x": 16,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route107_EventScript_1EE672",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
-      "npc_palette": "PAL_NPC_BLUE",
-      "x": 5,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route107_EventScript_1EE657",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_OFFICER",
-      "npc_palette": "PAL_NPC_BLUE",
-      "x": 5,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route107_EventScript_1EE657",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
-      "npc_palette": "0",
-      "x": 2,
-      "y": 25,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route107_EventScript_1EE657",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-      "npc_palette": "0",
-      "x": 13,
-      "y": 16,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route107_EventScript_1EE657",
-      "flag": "0"
-    }
-  ],
-  "warp_events": [
-    {
-      "x": 9,
-      "y": 33,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE35_GATE",
-      "dest_warp_id": 2
-    },
-    {
-      "x": 10,
-      "y": 33,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE35_GATE",
-      "dest_warp_id": 3
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE35_NATIONAL_PARK_GATE",
-      "dest_warp_id": 0
-    }
-  ],
-  "coord_events": [],
-  "bg_events": []
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": [
+        {
+            "direction": "up",
+            "map": "MAP_ROUTE36",
+            "offset": 0
+        },
+        {
+            "direction": "down",
+            "map": "MAP_GOLDENROD_CITY",
+            "offset": -10
+        }
+    ],
+    "coord_events": [
+    ],
+    "id": "MAP_ROUTE35",
+    "layout": "LAYOUT_ROUTE35",
+    "map_palette": "PAL_CYCLE",
+    "map_type": "MAP_TYPE_ROUTE",
+    "music": "MUS_NEXTROAD",
+    "name": "Route35",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "Route107_EventScript_1EE595",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 4,
+            "y": 19
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "Route107_EventScript_1EE5AC",
+            "trainer_sight_or_berry_tree_id": "3",
+            "trainer_type": "1",
+            "x": 8,
+            "y": 20
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_LASS",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "Route107_EventScript_1EE60E",
+            "trainer_sight_or_berry_tree_id": "3",
+            "trainer_type": "1",
+            "x": 7,
+            "y": 20
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_LASS",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "Route107_EventScript_1EE625",
+            "trainer_sight_or_berry_tree_id": "1",
+            "trainer_type": "1",
+            "x": 10,
+            "y": 26
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_BLUE",
+            "script": "Route107_EventScript_1EE63C",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "1",
+            "x": 14,
+            "y": 28
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_FAT_MAN",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
+            "npc_palette": "PAL_NPC_RED",
+            "script": "Route107_EventScript_1EE657",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 2,
+            "y": 10
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BUG_CATCHER",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+            "npc_palette": "PAL_NPC_BROWN",
+            "script": "Route107_EventScript_1EE672",
+            "trainer_sight_or_berry_tree_id": "3",
+            "trainer_type": "1",
+            "x": 16,
+            "y": 7
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_SUPER_NERD",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "npc_palette": "PAL_NPC_BLUE",
+            "script": "Route107_EventScript_1EE657",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 5,
+            "y": 10
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_OFFICER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_BLUE",
+            "script": "Route107_EventScript_1EE657",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 5,
+            "y": 6
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "0",
+            "script": "Route107_EventScript_1EE657",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 2,
+            "y": 25
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "0",
+            "script": "Route107_EventScript_1EE657",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 13,
+            "y": 16
+        }
+    ],
+    "region_map_section": "MAPSEC_ROUTE_35",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE35_GATE",
+            "dest_warp_id": 2,
+            "elevation": 3,
+            "x": 9,
+            "y": 33
+        },
+        {
+            "dest_map": "MAP_ROUTE35_GATE",
+            "dest_warp_id": 3,
+            "elevation": 3,
+            "x": 10,
+            "y": 33
+        },
+        {
+            "dest_map": "MAP_ROUTE35_NATIONAL_PARK_GATE",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 3,
+            "y": 5
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
 }

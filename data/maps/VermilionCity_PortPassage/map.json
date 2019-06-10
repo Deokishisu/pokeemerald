@@ -57,7 +57,7 @@
         },
         {
             "dest_map": "MAP_VERMILION_CITY_PORT_PASSAGE",
-            "dest_warp_id": 3,
+            "dest_warp_id": 2,
             "elevation": 0,
             "x": 3,
             "y": 13

@@ -1,148 +1,149 @@
 {
-  "id": "MAP_ROUTE46",
-  "name": "Route46",
-  "layout": "LAYOUT_ROUTE46",
-  "music": "MUS_ROUTE_118",
-  "region_map_section": "MAPSEC_ROUTE_46",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_ROUTE",
-  "map_palette": "PAL_CYCLE",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "down",
-      "offset": -20,
-      "map": "MAP_ROUTE29"
-    },
-    {
-      "direction": "right",
-      "offset": -72,
-      "map": "MAP_ROUTE45"
-    }
-  ],
-  "object_events": [
-    {
-      "graphics_id": "EVENT_OBJ_GFX_POKEFAN_M",
-      "npc_palette": "PAL_NPC_BROWN",
-      "x": 12,
-      "y": 19,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
-      "npc_palette": "PAL_NPC_GREEN",
-      "x": 4,
-      "y": 14,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_LASS",
-      "npc_palette": "PAL_NPC_GREEN",
-      "x": 2,
-      "y": 13,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "1",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
-      "npc_palette": "0",
-      "x": 7,
-      "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
-      "npc_palette": "0",
-      "x": 8,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
-      "npc_palette": "PAL_NPC_RED",
-      "x": 1,
-      "y": 15,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    }
-  ],
-  "warp_events": [
-    {
-      "x": 7,
-      "y": 33,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE29_GATE",
-      "dest_warp_id": 1
-    },
-    {
-      "x": 8,
-      "y": 33,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE29_GATE",
-      "dest_warp_id": 3
-    },
-    {
-      "x": 14,
-      "y": 5,
-      "elevation": 3,
-      "dest_map": "MAP_DARK_CAVE_VIOLET",
-      "dest_warp_id": 2
-    }
-  ],
-  "coord_events": [],
-  "bg_events": [
-    {
-      "type": "sign",
-      "x": 9,
-      "y": 27,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    }
-  ]
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 9,
+            "y": 27
+        }
+    ],
+    "connections": [
+        {
+            "direction": "down",
+            "map": "MAP_ROUTE29",
+            "offset": -20
+        },
+        {
+            "direction": "right",
+            "map": "MAP_ROUTE45",
+            "offset": -72
+        }
+    ],
+    "coord_events": [
+    ],
+    "id": "MAP_ROUTE46",
+    "layout": "LAYOUT_ROUTE46",
+    "map_palette": "PAL_CYCLE",
+    "map_type": "MAP_TYPE_ROUTE",
+    "music": "MUS_ROUTE_118",
+    "name": "Route46",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_POKEFAN_M",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "npc_palette": "PAL_NPC_BROWN",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 12,
+            "y": 19
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_UP",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 4,
+            "y": 14
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_LASS",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "PAL_NPC_GREEN",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "2",
+            "trainer_type": "1",
+            "x": 2,
+            "y": 13
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "npc_palette": "0",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 7,
+            "y": 5
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BERRY_TREE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "npc_palette": "0",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 8,
+            "y": 6
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "npc_palette": "PAL_NPC_RED",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 1,
+            "y": 15
+        }
+    ],
+    "region_map_section": "MAPSEC_ROUTE_46",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE29_GATE",
+            "dest_warp_id": 1,
+            "elevation": 3,
+            "x": 7,
+            "y": 33
+        },
+        {
+            "dest_map": "MAP_ROUTE29_GATE",
+            "dest_warp_id": 3,
+            "elevation": 3,
+            "x": 8,
+            "y": 33
+        },
+        {
+            "dest_map": "MAP_DARK_CAVE_VIOLET",
+            "dest_warp_id": 2,
+            "elevation": 3,
+            "x": 14,
+            "y": 5
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
 }

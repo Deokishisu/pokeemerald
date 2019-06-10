@@ -97,8 +97,8 @@ const struct WildPokemon gRoute12_13_WaterMons[3][3] =
 
 const struct WildWaterPokemonInfo gRoute12_13_WaterMonsInfo = {15, gRoute12_13_WaterMons}; //6% encounter rate
 
-//Routes 19, 20, 21, Pallet Town, Vermillion City, Cinnabar Island, 
-const struct WildPokemon gPallet_Vermillion_Cinnabar_R19_R20_R21_WaterMons[3][3] = 
+//Routes 19, 20, 21, Pallet Town, Vermilion City, Cinnabar Island, 
+const struct WildPokemon gPallet_Vermilion_Cinnabar_R19_R20_R21_WaterMons[3][3] = 
 {
 	{ 
 			//Gold    [0][?]
@@ -120,7 +120,7 @@ const struct WildPokemon gPallet_Vermillion_Cinnabar_R19_R20_R21_WaterMons[3][3]
 	},
 };
 
-const struct WildWaterPokemonInfo gPallet_Vermillion_Cinnabar_R19_R20_R21_WaterMonsInfo = {15, gPallet_Vermillion_Cinnabar_R19_R20_R21_WaterMons}; //6% encounter rate
+const struct WildWaterPokemonInfo gPallet_Vermilion_Cinnabar_R19_R20_R21_WaterMonsInfo = {15, gPallet_Vermilion_Cinnabar_R19_R20_R21_WaterMons}; //6% encounter rate
 
 //Route 22, Viridian City, 
 const struct WildPokemon gViridianCity_Route22_WaterMons[3][3] = 
@@ -267,7 +267,7 @@ const struct WildPokemon gCeladonCity_WaterMons[3][3] =
 
 const struct WildWaterPokemonInfo gCeladonCity_WaterMonsInfo = {5, gCeladonCity_WaterMons}; //2% encounter rate
 
-const struct WildPokemon gFuschiaCity_WaterMons[3][3] = 
+const struct WildPokemon gFuchsiaCity_WaterMons[3][3] = 
 {
 	{ 
 			//Gold    [0][?]
@@ -289,9 +289,9 @@ const struct WildPokemon gFuschiaCity_WaterMons[3][3] =
 	},
 };
 
-const struct WildWaterPokemonInfo gFuschiaCity_WaterMonsInfo = {5, gFuschiaCity_WaterMons}; //2% encounter rate
+const struct WildWaterPokemonInfo gFuchsiaCity_WaterMonsInfo = {5, gFuchsiaCity_WaterMons}; //2% encounter rate
 
-const struct WildPokemon gVermillionCity_Dock_WaterMons[3][3] = 
+const struct WildPokemon gVermilionCity_Dock_WaterMons[3][3] = 
 {
 	{ 
 			//Gold    [0][?]
@@ -313,7 +313,7 @@ const struct WildPokemon gVermillionCity_Dock_WaterMons[3][3] =
 	},
 };
 
-const struct WildWaterPokemonInfo gVermillionCity_Dock_WaterMonsInfo = {5, gVermillionCity_Dock_WaterMons}; //2% encounter rate
+const struct WildWaterPokemonInfo gVermilionCity_Dock_WaterMonsInfo = {5, gVermilionCity_Dock_WaterMons}; //2% encounter rate
 
 /* BLANK TEMPLATE
 

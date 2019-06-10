@@ -18,6 +18,24 @@
         "BlackthornCity_MoveDeletersHouse"
     ],
     "gCeladonCityInteriors": [
+        "CeladonCity_PokemonCenter_1F",
+        "CeladonCity_PokemonCenter_2F",
+        "CeladonCity_Gym",
+        "CeladonCity_GameCorner",
+        "CeladonCity_PrizeRoom",
+        "CeladonCity_Cafe",
+        "CeladonCity_Mansion_1F",
+        "CeladonCity_Mansion_2F",
+        "CeladonCity_Mansion_3F",
+        "CeladonCity_MansionRooftop",
+        "CeladonCity_Mansion_Penthouse",
+        "CeladonCity_DepartmentStore_1F",
+        "CeladonCity_DepartmentStore_2F",
+        "CeladonCity_DepartmentStore_3F",
+        "CeladonCity_DepartmentStore_4F",
+        "CeladonCity_DepartmentStore_5F",
+        "CeladonCity_DepartmentStore_6F",
+        "CeladonCity_DepartmentStoreElevator"
     ],
     "gCeruleanCityInteriors": [
         "CeruleanCity_PokemonCenter_1F",
@@ -47,6 +65,8 @@
         "CianwoodCity_PokeSeersHouse"
     ],
     "gCinnabarIslandInteriors": [
+        "CinnabarIsland_PokemonCenter_1F",
+        "CinnabarIsland_PokemonCenter_2F"
     ],
     "gEcruteakCityInteriors": [
         "EcruteakCity_PokemonCenter_1F",
@@ -60,6 +80,13 @@
         "EcruteakCity_WiseTriosRoom"
     ],
     "gFuchsiaCityInteriors": [
+        "FuchsiaCity_PokemonCenter_1F",
+        "FuchsiaCity_PokemonCenter_2F",
+        "FuchsiaCity_Mart",
+        "FuchsiaCity_Gym",
+        "FuchsiaCity_SafariZoneOffice",
+        "FuchsiaCity_WardensHouse",
+        "FuchsiaCity_House"
     ],
     "gGoldenrodCityInteriors": [
         "GoldenrodCity_PokemonCenter_1F",
@@ -191,7 +218,9 @@
         "MtMoon",
         "MtMoon_Square",
         "MtMoon_GiftShop",
-        "UndergroundPath"
+        "UndergroundPath",
+        "RockTunnel_1F",
+        "RockTunnel_B1F"
     ],
     "gLakeOfRageInteriors": [
         "LakeOfRage_HiddenPowerHouse",
@@ -366,8 +395,6 @@
         "FallarborTown_BattleTentBattleRoom",
         "LilycoveCity_ContestLobby",
         "LilycoveCity_ContestHall",
-        "EverGrandeCity_PokemonCenter_1F",
-        "EverGrandeCity_PokemonCenter_2F",
         "SlateportCity_BattleTentLobby",
         "SlateportCity_BattleTentCorridor",
         "SlateportCity_BattleTentBattleRoom",
@@ -479,18 +506,28 @@
         "PewterCity_House2"
     ],
     "gRoute10Interiors": [
+        "Route10_PowerPlant",
+        "Route10_PokemonCenter_1F",
+        "Route10_PokemonCenter_2F"
     ],
     "gRoute12Interiors": [
+        "Route12_House"
     ],
     "gRoute15Interiors": [
+        "Route15_Gate"
     ],
     "gRoute16Interiors": [
+        "Route16_Gate",
+        "Route16_House"
     ],
     "gRoute17Interiors": [
+        "Route17_Gate"
     ],
     "gRoute19Interiors": [
+        "Route19_Gate"
     ],
     "gRoute20Interiors": [
+        "Route20_SeafoamGym"
     ],
     "gRoute25Interiors": [
         "Route25_BillsHouse"
@@ -564,13 +601,25 @@
         "Route6_Gate"
     ],
     "gRoute7Interiors": [
+        "Route7_Gate"
     ],
     "gRoute8Interiors": [
+        "Route8_Gate"
     ],
     "gRuinsOfAlphInteriors": [
         "RuinsOfAlph_ResearchCenter"
     ],
     "gSaffronCityInteriors": [
+        "SaffronCity_PokemonCenter_1F",
+        "SaffronCity_PokemonCenter_2F",
+        "SaffronCity_Mart",
+        "SaffronCity_Gym",
+        "SaffronCity_FightingDojo",
+        "SaffronCity_MagnetTrainStation",
+        "SaffronCity_SilphCo_1F",
+        "SaffronCity_CopycatsHouse_1F",
+        "SaffronCity_CopycatsHouse_2F",
+        "SaffronCity_MrPsychicsHouse"
     ],
     "gSilverCaveInteriors": [
         "SilverCave_Exterior_PokemonCenter_1F",
@@ -636,10 +685,6 @@
         "gJohtoDungeons",
         "gMapGroup27",
         "gMapGroup28",
-        "gRoute27Interiors",
-        "gRoute26Interiors",
-        "gIndigoPlateauInteriors",
-        "gRoute28Interiors",
         "gPalletTownInteriors",
         "gViridianCityInteriors",
         "gPewterCityInteriors",
@@ -650,6 +695,7 @@
         "gSaffronCityInteriors",
         "gFuchsiaCityInteriors",
         "gCinnabarIslandInteriors",
+        "gIndigoPlateauInteriors",
         "gRoute2Interiors",
         "gRoute5Interiors",
         "gRoute6Interiors",
@@ -663,6 +709,9 @@
         "gRoute19Interiors",
         "gRoute20Interiors",
         "gRoute25Interiors",
+        "gRoute26Interiors",
+        "gRoute27Interiors",
+        "gRoute28Interiors",
         "gKantoDungeons",
         "gMapGroup36"
     ],

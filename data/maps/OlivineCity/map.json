@@ -1,243 +1,243 @@
 {
-  "id": "MAP_OLIVINE_CITY",
-  "name": "OlivineCity",
-  "layout": "LAYOUT_OLIVINE_CITY",
-  "music": "MUS_RG_NANA67",
-  "region_map_section": "MAPSEC_OLIVINE_CITY",
-  "requires_flash": 0,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_CITY",
-  "map_palette": "PAL_CYCLE",
-  "allow_bike": true,
-  "allow_escape_rope": false,
-  "allow_running": false,
-  "show_map_name": 1,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "direction": "up",
-      "offset": 10,
-      "map": "MAP_ROUTE39"
-    },
-    {
-      "direction": "left",
-      "offset": 18,
-      "map": "MAP_ROUTE40"
-    }
-  ],
-  "object_events": [
-    {
-      "graphics_id": "EVENT_OBJ_GFX_SAILOR",
-      "npc_palette": "0",
-      "x": 26,
-      "y": 27,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 1,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
-      "npc_palette": "PAL_NPC_RED",
-      "x": 20,
-      "y": 13,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_SAILOR",
-      "npc_palette": "0",
-      "x": 17,
-      "y": 21,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "EVENT_OBJ_GFX_RIVAL",
-      "npc_palette": "0",
-      "x": 10,
-      "y": 11,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "0",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "0x0",
-      "flag": "0"
-    }
-  ],
-  "warp_events": [
-    {
-      "x": 13,
-      "y": 21,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_POKEMON_CENTER_1F",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 10,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_GYM",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 25,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_HOUSE2",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 29,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_HOUSE3",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 13,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_HOUSE1",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 7,
-      "y": 21,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_CAFE",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 19,
-      "y": 17,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_MART",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 29,
-      "y": 27,
-      "elevation": 0,
-      "dest_map": "MAP_LIGHTHOUSE_1F",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 19,
-      "y": 27,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_PORT_PASSAGE",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 20,
-      "y": 27,
-      "elevation": 0,
-      "dest_map": "MAP_OLIVINE_CITY_PORT_PASSAGE",
-      "dest_warp_id": 1
-    }
-  ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 12,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "1",
-      "script": "0x0"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 13,
-      "elevation": 3,
-      "var": "VAR_TEMP_0",
-      "var_value": "1",
-      "script": "0x0"
-    }
-  ],
-  "bg_events": [
-    {
-      "type": "sign",
-      "x": 17,
-      "y": 11,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 20,
-      "y": 24,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 7,
-      "y": 11,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 30,
-      "y": 28,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 3,
-      "y": 23,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 14,
-      "y": 21,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    },
-    {
-      "type": "sign",
-      "x": 20,
-      "y": 17,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "0x0"
-    }
-  ]
+    "allow_bike": true,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 17,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 20,
+            "y": 24
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 7,
+            "y": 11
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 30,
+            "y": 28
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 3,
+            "y": 23
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 14,
+            "y": 21
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "0x0",
+            "type": "sign",
+            "x": 20,
+            "y": 17
+        }
+    ],
+    "connections": [
+        {
+            "direction": "up",
+            "map": "MAP_ROUTE39",
+            "offset": 10
+        },
+        {
+            "direction": "left",
+            "map": "MAP_ROUTE40",
+            "offset": 18
+        }
+    ],
+    "coord_events": [
+        {
+            "elevation": 3,
+            "script": "0x0",
+            "type": "trigger",
+            "var": "VAR_TEMP_0",
+            "var_value": "1",
+            "x": 13,
+            "y": 12
+        },
+        {
+            "elevation": 3,
+            "script": "0x0",
+            "type": "trigger",
+            "var": "VAR_TEMP_0",
+            "var_value": "1",
+            "x": 13,
+            "y": 13
+        }
+    ],
+    "id": "MAP_OLIVINE_CITY",
+    "layout": "LAYOUT_OLIVINE_CITY",
+    "map_palette": "PAL_CYCLE",
+    "map_type": "MAP_TYPE_CITY",
+    "music": "MUS_RG_NANA67",
+    "name": "OlivineCity",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_SAILOR",
+            "movement_range_x": 0,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+            "npc_palette": "0",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 26,
+            "y": 27
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "npc_palette": "PAL_NPC_RED",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 20,
+            "y": 13
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_SAILOR",
+            "movement_range_x": 1,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "npc_palette": "0",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 17,
+            "y": 21
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_RIVAL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+            "npc_palette": "0",
+            "script": "0x0",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 10,
+            "y": 11
+        }
+    ],
+    "region_map_section": "MAPSEC_OLIVINE_CITY",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_OLIVINE_CITY_POKEMON_CENTER_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 13,
+            "y": 21
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_GYM",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 10,
+            "y": 11
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_HOUSE2",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 25,
+            "y": 11
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 0,
+            "y": 0
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_HOUSE3",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 29,
+            "y": 11
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_HOUSE1",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 13,
+            "y": 15
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_CAFE",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 7,
+            "y": 21
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_MART",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 19,
+            "y": 17
+        },
+        {
+            "dest_map": "MAP_LIGHTHOUSE_1F",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 29,
+            "y": 27
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_PORT_PASSAGE",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 19,
+            "y": 27
+        },
+        {
+            "dest_map": "MAP_OLIVINE_CITY_PORT_PASSAGE",
+            "dest_warp_id": 1,
+            "elevation": 0,
+            "x": 20,
+            "y": 27
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
 }

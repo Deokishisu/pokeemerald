@@ -36,7 +36,7 @@
     "object_events": [
         {
             "elevation": 3,
-            "flag": "FLAG_SYS_POKEMON_GET",
+            "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_POKEFAN_M",
             "movement_range_x": 0,
             "movement_range_y": 0,
@@ -51,7 +51,7 @@
     ],
     "region_map_section": "MAPSEC_ROUTE_5",
     "requires_flash": false,
-    "show_map_name": false,
+    "show_map_name": true,
     "warp_events": [
         {
             "dest_map": "MAP_ROUTE5_UNDERGROUND_PATH_ENTRANCE",

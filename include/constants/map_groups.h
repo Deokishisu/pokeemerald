@@ -469,120 +469,169 @@
 #define MAP_TRAINER_HILL_ELEVATOR                                (81 | (28 << 8))
 
 // Map Group 29
-#define MAP_ROUTE27_HOUSE (0 | (29 << 8))
+#define MAP_PALLET_TOWN_REDS_HOUSE_1F (0 | (29 << 8))
+#define MAP_PALLET_TOWN_REDS_HOUSE_2F (1 | (29 << 8))
+#define MAP_PALLET_TOWN_BLUES_HOUSE   (2 | (29 << 8))
+#define MAP_PALLET_TOWN_PROF_OAKS_LAB (3 | (29 << 8))
 
 // Map Group 30
-#define MAP_ROUTE26_HOUSE1 (0 | (30 << 8))
-#define MAP_ROUTE26_HOUSE2 (1 | (30 << 8))
+#define MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F (0 | (30 << 8))
+#define MAP_VIRIDIAN_CITY_POKEMON_CENTER_2F (1 | (30 << 8))
+#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_1F  (2 | (30 << 8))
+#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_B1F (3 | (30 << 8))
+#define MAP_VIRIDIAN_CITY_GYM               (4 | (30 << 8))
+#define MAP_VIRIDIAN_CITY_HOUSE             (5 | (30 << 8))
+#define MAP_VIRIDIAN_CITY_MART              (6 | (30 << 8))
 
 // Map Group 31
-#define MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F (0 | (31 << 8))
-#define MAP_INDIGO_PLATEAU_POKEMON_CENTER_2F (1 | (31 << 8))
-#define MAP_INDIGO_PLATEAU_WILLS_ROOM        (2 | (31 << 8))
-#define MAP_INDIGO_PLATEAU_KOGAS_ROOM        (3 | (31 << 8))
-#define MAP_INDIGO_PLATEAU_BRUNOS_ROOM       (4 | (31 << 8))
-#define MAP_INDIGO_PLATEAU_KARENS_ROOM       (5 | (31 << 8))
-#define MAP_INDIGO_PLATEAU_LANCES_ROOM       (6 | (31 << 8))
-#define MAP_INDIGO_PLATEAU_HALL_OF_FAME      (7 | (31 << 8))
+#define MAP_PEWTER_CITY_POKEMON_CENTER_1F (0 | (31 << 8))
+#define MAP_PEWTER_CITY_POKEMON_CENTER_2F (1 | (31 << 8))
+#define MAP_PEWTER_CITY_GYM               (2 | (31 << 8))
+#define MAP_PEWTER_CITY_MART              (3 | (31 << 8))
+#define MAP_PEWTER_CITY_HOUSE1            (4 | (31 << 8))
+#define MAP_PEWTER_CITY_HOUSE2            (5 | (31 << 8))
 
 // Map Group 32
-#define MAP_ROUTE28_HOUSE (0 | (32 << 8))
+#define MAP_CERULEAN_CITY_POKEMON_CENTER_1F (0 | (32 << 8))
+#define MAP_CERULEAN_CITY_POKEMON_CENTER_2F (1 | (32 << 8))
+#define MAP_CERULEAN_CITY_GYM               (2 | (32 << 8))
+#define MAP_CERULEAN_CITY_MART              (3 | (32 << 8))
+#define MAP_CERULEAN_CITY_HOUSE1            (4 | (32 << 8))
+#define MAP_CERULEAN_CITY_HOUSE2            (5 | (32 << 8))
+#define MAP_CERULEAN_CITY_HOUSE3            (6 | (32 << 8))
 
 // Map Group 33
-#define MAP_PALLET_TOWN_REDS_HOUSE_1F (0 | (33 << 8))
-#define MAP_PALLET_TOWN_REDS_HOUSE_2F (1 | (33 << 8))
-#define MAP_PALLET_TOWN_BLUES_HOUSE   (2 | (33 << 8))
-#define MAP_PALLET_TOWN_PROF_OAKS_LAB (3 | (33 << 8))
+#define MAP_VERMILION_CITY_POKEMON_CENTER_1F (0 | (33 << 8))
+#define MAP_VERMILION_CITY_POKEMON_CENTER_2F (1 | (33 << 8))
+#define MAP_VERMILION_CITY_GYM               (2 | (33 << 8))
+#define MAP_VERMILION_CITY_MART              (3 | (33 << 8))
+#define MAP_VERMILION_CITY_POKEMON_FAN_CLUB  (4 | (33 << 8))
+#define MAP_VERMILION_CITY_PORT_PASSAGE      (5 | (33 << 8))
+#define MAP_VERMILION_CITY_PORT              (6 | (33 << 8))
+#define MAP_VERMILION_CITY_HOUSE1            (7 | (33 << 8))
+#define MAP_VERMILION_CITY_HOUSE2            (8 | (33 << 8))
+#define MAP_VERMILION_CITY_HOUSE3            (9 | (33 << 8))
 
 // Map Group 34
-#define MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F (0 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_POKEMON_CENTER_2F (1 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_1F  (2 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_TRAINER_HOUSE_B1F (3 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_GYM               (4 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_HOUSE             (5 | (34 << 8))
-#define MAP_VIRIDIAN_CITY_MART              (6 | (34 << 8))
+#define MAP_LAVENDER_TOWN_POKEMON_CENTER_1F (0 | (34 << 8))
+#define MAP_LAVENDER_TOWN_POKEMON_CENTER_2F (1 | (34 << 8))
+#define MAP_LAVENDER_TOWN_MART              (2 | (34 << 8))
+#define MAP_LAVENDER_TOWN_RADIO_TOWER_1F    (3 | (34 << 8))
+#define MAP_LAVENDER_TOWN_MR_FUJIS_HOUSE    (4 | (34 << 8))
+#define MAP_LAVENDER_TOWN_SOUL_HOUSE        (5 | (34 << 8))
+#define MAP_LAVENDER_TOWN_NAME_RATERS_HOUSE (6 | (34 << 8))
+#define MAP_LAVENDER_TOWN_HOUSE             (7 | (34 << 8))
 
 // Map Group 35
-#define MAP_PEWTER_CITY_POKEMON_CENTER_1F (0 | (35 << 8))
-#define MAP_PEWTER_CITY_POKEMON_CENTER_2F (1 | (35 << 8))
-#define MAP_PEWTER_CITY_GYM               (2 | (35 << 8))
-#define MAP_PEWTER_CITY_MART              (3 | (35 << 8))
-#define MAP_PEWTER_CITY_HOUSE1            (4 | (35 << 8))
-#define MAP_PEWTER_CITY_HOUSE2            (5 | (35 << 8))
+#define MAP_CELADON_CITY_POKEMON_CENTER_1F         (0 | (35 << 8))
+#define MAP_CELADON_CITY_POKEMON_CENTER_2F         (1 | (35 << 8))
+#define MAP_CELADON_CITY_GYM                       (2 | (35 << 8))
+#define MAP_CELADON_CITY_GAME_CORNER               (3 | (35 << 8))
+#define MAP_CELADON_CITY_PRIZE_ROOM                (4 | (35 << 8))
+#define MAP_CELADON_CITY_CAFE                      (5 | (35 << 8))
+#define MAP_CELADON_CITY_MANSION_1F                (6 | (35 << 8))
+#define MAP_CELADON_CITY_MANSION_2F                (7 | (35 << 8))
+#define MAP_CELADON_CITY_MANSION_3F                (8 | (35 << 8))
+#define MAP_CELADON_CITY_MANSION_ROOFTOP           (9 | (35 << 8))
+#define MAP_CELADON_CITY_MANSION_PENTHOUSE         (10 | (35 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE_1F       (11 | (35 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE_2F       (12 | (35 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE_3F       (13 | (35 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE_4F       (14 | (35 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE_5F       (15 | (35 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE_6F       (16 | (35 << 8))
+#define MAP_CELADON_CITY_DEPARTMENT_STORE_ELEVATOR (17 | (35 << 8))
 
 // Map Group 36
-#define MAP_CERULEAN_CITY_POKEMON_CENTER_1F (0 | (36 << 8))
-#define MAP_CERULEAN_CITY_POKEMON_CENTER_2F (1 | (36 << 8))
-#define MAP_CERULEAN_CITY_GYM               (2 | (36 << 8))
-#define MAP_CERULEAN_CITY_MART              (3 | (36 << 8))
-#define MAP_CERULEAN_CITY_HOUSE1            (4 | (36 << 8))
-#define MAP_CERULEAN_CITY_HOUSE2            (5 | (36 << 8))
-#define MAP_CERULEAN_CITY_HOUSE3            (6 | (36 << 8))
+#define MAP_SAFFRON_CITY_POKEMON_CENTER_1F    (0 | (36 << 8))
+#define MAP_SAFFRON_CITY_POKEMON_CENTER_2F    (1 | (36 << 8))
+#define MAP_SAFFRON_CITY_MART                 (2 | (36 << 8))
+#define MAP_SAFFRON_CITY_GYM                  (3 | (36 << 8))
+#define MAP_SAFFRON_CITY_FIGHTING_DOJO        (4 | (36 << 8))
+#define MAP_SAFFRON_CITY_MAGNET_TRAIN_STATION (5 | (36 << 8))
+#define MAP_SAFFRON_CITY_SILPH_CO_1F          (6 | (36 << 8))
+#define MAP_SAFFRON_CITY_COPYCATS_HOUSE_1F    (7 | (36 << 8))
+#define MAP_SAFFRON_CITY_COPYCATS_HOUSE_2F    (8 | (36 << 8))
+#define MAP_SAFFRON_CITY_MR_PSYCHICS_HOUSE    (9 | (36 << 8))
 
 // Map Group 37
-#define MAP_VERMILION_CITY_POKEMON_CENTER_1F (0 | (37 << 8))
-#define MAP_VERMILION_CITY_POKEMON_CENTER_2F (1 | (37 << 8))
-#define MAP_VERMILION_CITY_GYM               (2 | (37 << 8))
-#define MAP_VERMILION_CITY_MART              (3 | (37 << 8))
-#define MAP_VERMILION_CITY_POKEMON_FAN_CLUB  (4 | (37 << 8))
-#define MAP_VERMILION_CITY_PORT_PASSAGE      (5 | (37 << 8))
-#define MAP_VERMILION_CITY_PORT              (6 | (37 << 8))
-#define MAP_VERMILION_CITY_HOUSE1            (7 | (37 << 8))
-#define MAP_VERMILION_CITY_HOUSE2            (8 | (37 << 8))
-#define MAP_VERMILION_CITY_HOUSE3            (9 | (37 << 8))
+#define MAP_FUCHSIA_CITY_POKEMON_CENTER_1F  (0 | (37 << 8))
+#define MAP_FUCHSIA_CITY_POKEMON_CENTER_2F  (1 | (37 << 8))
+#define MAP_FUCHSIA_CITY_MART               (2 | (37 << 8))
+#define MAP_FUCHSIA_CITY_GYM                (3 | (37 << 8))
+#define MAP_FUCHSIA_CITY_SAFARI_ZONE_OFFICE (4 | (37 << 8))
+#define MAP_FUCHSIA_CITY_WARDENS_HOUSE      (5 | (37 << 8))
+#define MAP_FUCHSIA_CITY_HOUSE              (6 | (37 << 8))
 
 // Map Group 38
-#define MAP_LAVENDER_TOWN_POKEMON_CENTER_1F (0 | (38 << 8))
-#define MAP_LAVENDER_TOWN_POKEMON_CENTER_2F (1 | (38 << 8))
-#define MAP_LAVENDER_TOWN_MART              (2 | (38 << 8))
-#define MAP_LAVENDER_TOWN_RADIO_TOWER_1F    (3 | (38 << 8))
-#define MAP_LAVENDER_TOWN_MR_FUJIS_HOUSE    (4 | (38 << 8))
-#define MAP_LAVENDER_TOWN_SOUL_HOUSE        (5 | (38 << 8))
-#define MAP_LAVENDER_TOWN_NAME_RATERS_HOUSE (6 | (38 << 8))
-#define MAP_LAVENDER_TOWN_HOUSE             (7 | (38 << 8))
+#define MAP_CINNABAR_ISLAND_POKEMON_CENTER_1F (0 | (38 << 8))
+#define MAP_CINNABAR_ISLAND_POKEMON_CENTER_2F (1 | (38 << 8))
 
 // Map Group 39
+#define MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F (0 | (39 << 8))
+#define MAP_INDIGO_PLATEAU_POKEMON_CENTER_2F (1 | (39 << 8))
+#define MAP_INDIGO_PLATEAU_WILLS_ROOM        (2 | (39 << 8))
+#define MAP_INDIGO_PLATEAU_KOGAS_ROOM        (3 | (39 << 8))
+#define MAP_INDIGO_PLATEAU_BRUNOS_ROOM       (4 | (39 << 8))
+#define MAP_INDIGO_PLATEAU_KARENS_ROOM       (5 | (39 << 8))
+#define MAP_INDIGO_PLATEAU_LANCES_ROOM       (6 | (39 << 8))
+#define MAP_INDIGO_PLATEAU_HALL_OF_FAME      (7 | (39 << 8))
 
 // Map Group 40
+#define MAP_ROUTE2_HOUSE (0 | (40 << 8))
+#define MAP_ROUTE2_GATE  (1 | (40 << 8))
 
 // Map Group 41
+#define MAP_ROUTE5_HOUSE                     (0 | (41 << 8))
+#define MAP_ROUTE5_GATE                      (1 | (41 << 8))
+#define MAP_ROUTE5_UNDERGROUND_PATH_ENTRANCE (2 | (41 << 8))
 
 // Map Group 42
+#define MAP_ROUTE6_UNDERGROUND_PATH_ENTRANCE (0 | (42 << 8))
+#define MAP_ROUTE6_GATE                      (1 | (42 << 8))
 
 // Map Group 43
-#define MAP_ROUTE2_HOUSE (0 | (43 << 8))
-#define MAP_ROUTE2_GATE  (1 | (43 << 8))
+#define MAP_ROUTE7_GATE (0 | (43 << 8))
 
 // Map Group 44
-#define MAP_ROUTE5_HOUSE                     (0 | (44 << 8))
-#define MAP_ROUTE5_GATE                      (1 | (44 << 8))
-#define MAP_ROUTE5_UNDERGROUND_PATH_ENTRANCE (2 | (44 << 8))
+#define MAP_ROUTE8_GATE (0 | (44 << 8))
 
 // Map Group 45
-#define MAP_ROUTE6_UNDERGROUND_PATH_ENTRANCE (0 | (45 << 8))
-#define MAP_ROUTE6_GATE                      (1 | (45 << 8))
+#define MAP_ROUTE10_POWER_PLANT       (0 | (45 << 8))
+#define MAP_ROUTE10_POKEMON_CENTER_1F (1 | (45 << 8))
+#define MAP_ROUTE10_POKEMON_CENTER_2F (2 | (45 << 8))
 
 // Map Group 46
+#define MAP_ROUTE12_HOUSE (0 | (46 << 8))
 
 // Map Group 47
+#define MAP_ROUTE15_GATE (0 | (47 << 8))
 
 // Map Group 48
+#define MAP_ROUTE16_GATE  (0 | (48 << 8))
+#define MAP_ROUTE16_HOUSE (1 | (48 << 8))
 
 // Map Group 49
+#define MAP_ROUTE17_GATE (0 | (49 << 8))
 
 // Map Group 50
+#define MAP_ROUTE19_GATE (0 | (50 << 8))
 
 // Map Group 51
+#define MAP_ROUTE20_SEAFOAM_GYM (0 | (51 << 8))
 
 // Map Group 52
+#define MAP_ROUTE25_BILLS_HOUSE (0 | (52 << 8))
 
 // Map Group 53
+#define MAP_ROUTE26_HOUSE1 (0 | (53 << 8))
+#define MAP_ROUTE26_HOUSE2 (1 | (53 << 8))
 
 // Map Group 54
+#define MAP_ROUTE27_HOUSE (0 | (54 << 8))
 
 // Map Group 55
-#define MAP_ROUTE25_BILLS_HOUSE (0 | (55 << 8))
+#define MAP_ROUTE28_HOUSE (0 | (55 << 8))
 
 // Map Group 56
 #define MAP_DIGLETTS_CAVE     (0 | (56 << 8))
@@ -590,6 +639,8 @@
 #define MAP_MT_MOON_SQUARE    (2 | (56 << 8))
 #define MAP_MT_MOON_GIFT_SHOP (3 | (56 << 8))
 #define MAP_UNDERGROUND_PATH  (4 | (56 << 8))
+#define MAP_ROCK_TUNNEL_1F    (5 | (56 << 8))
+#define MAP_ROCK_TUNNEL_B1F   (6 | (56 << 8))
 
 // Map Group 57
 #define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (57 << 8))
@@ -600,13 +651,11 @@
 #define MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM  (5 | (57 << 8))
 #define MAP_LILYCOVE_CITY_CONTEST_LOBBY             (6 | (57 << 8))
 #define MAP_LILYCOVE_CITY_CONTEST_HALL              (7 | (57 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F      (8 | (57 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F      (9 | (57 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY        (10 | (57 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR     (11 | (57 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM  (12 | (57 << 8))
-#define MAP_ARTISAN_CAVE_B1F                        (13 | (57 << 8))
-#define MAP_ARTISAN_CAVE_1F                         (14 | (57 << 8))
+#define MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY        (8 | (57 << 8))
+#define MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR     (9 | (57 << 8))
+#define MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM  (10 | (57 << 8))
+#define MAP_ARTISAN_CAVE_B1F                        (11 | (57 << 8))
+#define MAP_ARTISAN_CAVE_1F                         (12 | (57 << 8))
 
 #define MAP_GROUPS_COUNT 58
 
